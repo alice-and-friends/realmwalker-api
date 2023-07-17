@@ -10,10 +10,10 @@ class Dungeon < RealmLocation
   end
 
   after_create do |location|
-    puts "Spawned a new dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
+    puts "📌 Spawned a new dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
   after_destroy do |location|
-    puts "Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
+    puts "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
   def battle

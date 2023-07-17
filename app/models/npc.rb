@@ -3,10 +3,10 @@ class Npc < RealmLocation
   before_validation :random_name!, :on => :create
 
   after_create do |npc|
-    puts "Spawned a new NPC, say hello to #{npc.name}. There are now #{Npc.count} NPCs."
+    puts "📌 Spawned a new NPC, say hello to #{npc.name}. There are now #{Npc.count} NPCs."
   end
   after_destroy do |npc|
-    puts "Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
+    puts "❌ Destroyed NPC #{npc.name}. There are now #{Npc.count} NPCs."
   end
 
   private
