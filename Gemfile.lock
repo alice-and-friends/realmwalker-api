@@ -92,6 +92,7 @@ GEM
     builder (3.2.4)
     case_transform (0.2)
       activesupport
+    colorize (1.1.0)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
@@ -218,6 +219,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.13)
   auth0
   bootsnap
+  colorize
   debug
   dotenv-rails
   faker!

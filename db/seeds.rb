@@ -29,12 +29,12 @@ end
                     created_at: (counter*2).hours.ago,
                     status: rand(2).odd? ? Dungeon.statuses[:active] : Dungeon.statuses[:defeated]
                   })
-  d.save
+  d.save!
 end
 3.times do |counter|
   npc = Npc.new({
                     created_at: (counter*12).hours.ago,
                   })
-  npc.save
+  npc.save!
 end
 Rake::Task["dungeon:despawn"].execute

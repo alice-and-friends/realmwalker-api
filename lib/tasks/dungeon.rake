@@ -4,10 +4,10 @@ namespace :dungeon  do
 
     # If any dungeons have been defeated for an hour, destroy them.
     # Defeated dungeons don't need a cooldown period because they are replaced by battlefields.
-    set = Dungeon.defeated.where("updated_at < ?", 1.hour.ago).destroy_all
-    if set.count
-      puts "#{set.count} defeated dungeons destroyed"
-    end
+    # set = Dungeon.defeated.where("defeated_at < ?", 1.hour.ago).destroy_all
+    # if set.count
+    #   puts "#{set.count} defeated dungeons destroyed"
+    # end
 
     # If any dungeons have been active for 48 hours, disable them and begin a cooldown period
     set = Dungeon.active.where("created_at < ?", 2.days.ago)

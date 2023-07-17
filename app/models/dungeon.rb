@@ -1,4 +1,7 @@
 class Dungeon < RealmLocation
+  has_one :battlefield
+  belongs_to :defeated_by, class_name: 'User', optional: true
+
   validates :level, presence: true
   enum status: { active: 1, defeated: 2, expired: 0 }
 
@@ -16,13 +19,17 @@ class Dungeon < RealmLocation
     puts "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
-  def battle
-    battle_won!
+  def battle_as(user)
+    defeated_by! user
   end
 
-  def battle_won!
+  def defeated_by!(user)
+    self.defeated_at = Time.now
+    self.defeated_by = user
+    self.save!
     Battlefield.create({
-                         real_world_location: self.real_world_location
+                         real_world_location: self.real_world_location,
+                         dungeon: self
                        })
     self.defeated! if self.active?
     self.defeated?
