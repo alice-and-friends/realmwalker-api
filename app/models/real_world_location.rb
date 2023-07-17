@@ -1,4 +1,5 @@
 class RealWorldLocation < ApplicationRecord
+	self.inheritance_column = nil
 	# attr_accessor :name, :type, :coordinates, :ext_id
 	validates :name, presence: true
 	validates :type, presence: true

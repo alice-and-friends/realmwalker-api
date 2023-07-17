@@ -24,4 +24,17 @@ csv.each do |row|
   end
 end
 
-Location.generate_dungeon!
+30.times do |counter|
+  d = Dungeon.new({
+                    created_at: (counter*2).hours.ago,
+                    status: rand(2).odd? ? Dungeon.statuses[:active] : Dungeon.statuses[:defeated]
+                  })
+  d.save
+end
+3.times do |counter|
+  npc = Npc.new({
+                    created_at: (counter*12).hours.ago,
+                  })
+  npc.save
+end
+Rake::Task["dungeon:despawn"].execute

@@ -3,4 +3,14 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  namespace :api do
+    namespace :v1 do
+      get 'users/me' => 'users#me', as: :me
+
+      resources :realm_locations, only: [:index]
+      resources :dungeons, only: [:show]
+      post '/dungeons/:id/battle' => 'dungeons#battle', :as => :battle
+    end
+  end
 end

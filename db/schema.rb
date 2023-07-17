@@ -10,17 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_04_204528) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_16_164144) do
   # These are extensions that must be enabled in order to support this database
+  enable_extension "hstore"
   enable_extension "plpgsql"
 
-  create_table "locations", force: :cascade do |t|
+  create_table "battlefields", force: :cascade do |t|
     t.bigint "real_world_location_id"
     t.integer "status", default: 1
     t.integer "level", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["real_world_location_id"], name: "index_locations_on_real_world_location_id"
+    t.index ["real_world_location_id"], name: "index_battlefields_on_real_world_location_id"
+  end
+
+  create_table "dungeons", force: :cascade do |t|
+    t.bigint "real_world_location_id"
+    t.integer "status", default: 1
+    t.integer "level", default: 1
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["real_world_location_id"], name: "index_dungeons_on_real_world_location_id"
+  end
+
+  create_table "npcs", force: :cascade do |t|
+    t.bigint "real_world_location_id"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["real_world_location_id"], name: "index_npcs_on_real_world_location_id"
   end
 
   create_table "real_world_locations", force: :cascade do |t|
@@ -28,6 +46,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_04_204528) do
     t.string "type", null: false
     t.string "ext_id", null: false
     t.point "coordinates", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "realm_locations", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "auth0_user_id"
+    t.json "auth0_user_data"
+    t.hstore "preferences"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
