@@ -1,15 +1,16 @@
 class Dungeon < RealmLocation
   has_one :battlefield
+  belongs_to :monster
   belongs_to :defeated_by, class_name: 'User', optional: true
 
   validates :level, presence: true
   enum status: { active: 1, defeated: 2, expired: 0 }
 
   before_validation :set_real_world_location, :on => :create
-  before_validation :randomize_level!, :on => :create
+  before_validation :randomize_level_and_monster!, :on => :create
 
   def name
-    'Hello world'
+    self.monster.name
   end
 
   after_create do |location|
@@ -44,7 +45,7 @@ class Dungeon < RealmLocation
                            .limit(1)
                            .first
   end
-  def randomize_level!
+  def randomize_level_and_monster!
     diffs = []
     (1..10).each { |level|
       (10 - level).times do
@@ -52,5 +53,7 @@ class Dungeon < RealmLocation
       end
     }
     self.level = diffs.sample
+
+    self.monster = Monster.for_level(self.level)
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_14_193031) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_18_132328) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
@@ -29,12 +29,22 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_14_193031) do
     t.bigint "real_world_location_id"
     t.integer "status", default: 1
     t.integer "level", default: 1
+    t.bigint "monster_id"
     t.datetime "defeated_at"
     t.bigint "defeated_by_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["defeated_by_id"], name: "index_dungeons_on_defeated_by_id"
+    t.index ["monster_id"], name: "index_dungeons_on_monster_id"
     t.index ["real_world_location_id"], name: "index_dungeons_on_real_world_location_id"
+  end
+
+  create_table "monsters", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "description", null: false
+    t.integer "level", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "npcs", force: :cascade do |t|
