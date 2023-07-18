@@ -8,22 +8,6 @@
 
 require 'csv'
 
-# CREATE MONSTERS
-csv_text = File.read(Rails.root.join('lib', 'seeds', 'monsters.csv'))
-csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
-csv.each do |row|
-  mon = Monster.new()
-  mon.name = row['name']
-  mon.description = row['description']
-  mon.level = row['level']
-  if mon.valid?
-    mon.save
-    puts "CREATED #{mon.name}"
-  else
-    puts mon.errors.inspect
-  end
-end
-
 # CREATE REAL WORLD LOCATIONS
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'real_world_locations.csv'))
 csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
@@ -33,13 +17,25 @@ csv.each do |row|
   loc.ext_id = row['ext_id']
   loc.type = row['type']
   loc.coordinates = ActiveRecord::Point.new(row['lat'], row['lon'])
-  if loc.valid?
-    loc.save
-    puts "CREATED #{loc.name}"
-  else
+  unless loc.save
     puts loc.errors.inspect
   end
 end
+puts "🌱 Seeded #{RealWorldLocation.count} real world locations."
+
+# CREATE MONSTERS
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'monsters.csv'))
+csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
+csv.each do |row|
+  mon = Monster.new()
+  mon.name = row['name']
+  mon.description = row['description']
+  mon.level = row['level']
+  unless mon.save
+    puts mon.errors.inspect
+  end
+end
+puts "🌱 Seeded #{Monster.count} monsters."
 
 # CREATE DUNGEONS
 30.times do |counter|
