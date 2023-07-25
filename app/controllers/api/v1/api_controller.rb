@@ -34,19 +34,4 @@ class Api::V1::ApiController < ApplicationController
       render json: { message: 'Unable to set current resource owner due to validation errors, please check the server log.' }, status: :internal_server_error
     end
   end
-
-=begin
-  def set_current_resource_owner
-    err, auth0_user = Auth0Helper.identify(http_token)
-    if err
-      render status: :internal_server_error
-    end
-    unless auth0_user[:sub]
-      puts "auth0[:sub] was #{auth0_user[:sub]}"
-      render json: { errors: ['Authentication failed'] }, status: :unauthorized
-    end
-    @current_resource_owner ||= User.find(auth0_user[:sub])
-    puts @current_resource_owner
-  end
-=end
 end

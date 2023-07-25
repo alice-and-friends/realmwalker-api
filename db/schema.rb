@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_18_132328) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_14_193031) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
@@ -43,6 +43,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_18_132328) do
     t.string "name", null: false
     t.string "description", null: false
     t.integer "level", null: false
+    t.string "classification", null: false
+    t.text "tags", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -73,6 +75,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_18_132328) do
     t.string "auth0_user_id"
     t.json "auth0_user_data"
     t.hstore "preferences"
+    t.integer "xp", default: 0
+    t.integer "level", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

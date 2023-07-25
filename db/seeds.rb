@@ -31,6 +31,8 @@ csv.each do |row|
   mon.name = row['name']
   mon.description = row['description']
   mon.level = row['level']
+  mon.classification = row['classification']
+  #mon.tags = row['tags'].split(' ')
   unless mon.save
     puts mon.errors.inspect
   end
@@ -38,10 +40,10 @@ end
 puts "🌱 Seeded #{Monster.count} monsters."
 
 # CREATE DUNGEONS
-30.times do |counter|
+20.times do |counter|
   d = Dungeon.new({
                     created_at: (counter*2).hours.ago,
-                    status: rand(2).odd? ? Dungeon.statuses[:active] : Dungeon.statuses[:defeated]
+                    status: Dungeon.statuses[:active] ##rand(2).odd? ? Dungeon.statuses[:active] : Dungeon.statuses[:defeated]
                   })
   d.save!
 end

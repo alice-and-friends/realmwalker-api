@@ -13,10 +13,10 @@ class Dungeon < RealmLocation
     self.monster.name
   end
 
-  after_create do |location|
-    puts "📌 Spawned a new dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
+  after_create do |d|
+    puts "📌 Spawned a new dungeon, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
-  after_destroy do |location|
+  after_destroy do |d|
     puts "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
@@ -47,11 +47,20 @@ class Dungeon < RealmLocation
   end
   def randomize_level_and_monster!
     diffs = []
-    (1..10).each { |level|
-      (10 - level).times do
+
+    # Lower level = Should have higher chance of spawning
+    # Higher level = Should have lower chance of spawning
+    # So we generate an array like [10, 9, 9, 8, 8, 8, 7, 7, 7, 7 ...] to be used for weighted randomization.
+    (1..9).each { |level|
+      (2*(10 - level)).floor.times do
         diffs << level
       end
     }
+
+    # Level 10 dungeons are considered bosses, there can only be one active at any time.
+    diffs << 10 if Dungeon.active.where(level: 10).count.zero?
+
+    # Pick the difficulty level
     self.level = diffs.sample
 
     self.monster = Monster.for_level(self.level)
