@@ -1,9 +1,26 @@
 class Monster < ApplicationRecord
-  CLASSIFICATIONS = %w[aberration beast celestial construct dragon elemental fey fiend giant humanoid monstrosity ooze plant undead]
-  TAGS = %w[]
-
   validate :has_classification
   validate :tags_are_valid
+
+  CLASSIFICATIONS = %w[aberration beast celestial construct dragon elemental fey fiend giant humanoid monstrosity ooze plant undead]
+  enum classification: {
+    aberration: 'aberration',
+    beast: 'beast',
+    celestial: 'celestial',
+    construct: 'construct',
+    dragon: 'dragon',
+    elemental: 'elemental',
+    fey: 'fey',
+    fiend: 'fiend',
+    giant: 'giant',
+    humanoid: 'humanoid',
+    monstrosity: 'monstrosity',
+    ooze: 'ooze',
+    plant: 'plant',
+    undead: 'undead',
+  }
+  TAGS = %w[]
+
 
   def self.for_level(level)
     m = Monster.where(level: level).sample
@@ -12,7 +29,7 @@ class Monster < ApplicationRecord
   end
 
   def xp
-    standard_rate = (10*l)**2 + (l*100)
+    standard_rate = (10*self.level)**2 + (self.level*100)
     level_10_bonus = 4000
     return standard_rate + level_10_bonus if self.level == 10
     standard_rate
@@ -23,7 +40,6 @@ class Monster < ApplicationRecord
     # Should have one or more primary type(s)
     unless classification.in? CLASSIFICATIONS
       errors.add(:classification, "has invalid classification #{classification}")
-      puts self.inspect
     end
   end
   def tags_are_valid

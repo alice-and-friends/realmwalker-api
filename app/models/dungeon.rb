@@ -12,6 +12,12 @@ class Dungeon < RealmLocation
   def name
     self.monster.name
   end
+  def location_map_detail
+    {
+      level: level,
+      monster_classification: monster.classification,
+    }
+  end
 
   after_create do |d|
     puts "📌 Spawned a new dungeon, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
@@ -21,19 +27,32 @@ class Dungeon < RealmLocation
   end
 
   def battle_as(user)
-    defeated_by! user
+    defeated_by! user # Mark dungeon as defeated
+    {
+      battle_result: {
+        user_won: true,
+        user_died: false
+      },
+      inventory_result: {
+        inventory_lost: false,
+        equipment_lost: false,
+        amulet_of_loss_consumed: false,
+        amulet_of_loss_life: false,
+      },
+      xp_level_change: user.gains_or_loses_xp(monster.xp),
+      xp_level_report: user.xp_level_report,
+    }
   end
 
   def defeated_by!(user)
+    self.defeated!
     self.defeated_at = Time.now
     self.defeated_by = user
-    self.save!
+    save!
     Battlefield.create({
                          real_world_location: self.real_world_location,
                          dungeon: self
                        })
-    self.defeated! if self.active?
-    self.defeated?
   end
 
   private

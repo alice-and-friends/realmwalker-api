@@ -5,11 +5,19 @@ class RealmLocation < ApplicationRecord
   validates_associated :real_world_location
   validates_uniqueness_of :real_world_location_id
 
+  def self.real_world_location_ids_currently_in_use
+    Dungeon.pluck(:real_world_location_id) + Battlefield.pluck(:real_world_location_id) + Npc.pluck(:real_world_location_id)
+  end
+
   def coordinates
     real_world_location.coordinates
   end
 
   def location_type
     self.class.name
+  end
+
+  def location_map_detail
+    nil
   end
 end

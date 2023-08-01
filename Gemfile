@@ -48,6 +48,11 @@ group :development do
   # gem "spring"
 end
 
+group :test do
+  gem 'database_cleaner-active_record'
+end
+
+
 gem "net-http"
 
 gem "active_model_serializers", "~> 0.10.13"
@@ -55,3 +60,5 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main
 
 gem "auth0"
 gem 'jwt'
+
+gem "olive_branch"

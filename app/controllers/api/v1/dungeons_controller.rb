@@ -1,23 +1,29 @@
 class Api::V1::DungeonsController < Api::V1::ApiController
   before_action :authorize
-  before_action :find_dungeon, only: [:show, :battle]
+  before_action :find_active_dungeon, only: [:show, :battle]
 
   def show
-    if @dungeon.active?
-      render json: @dungeon
-    else
-      render :status => 404
-    end
+    render json: @dungeon
   end
 
   def battle
     puts "⚔️ #{@current_user.given_name} started battle against #{@dungeon}"
-    defeated = @dungeon.battle_as(@current_user)
-    render json: {success: defeated}
+    battle_report = @dungeon.battle_as(@current_user)
+    render json: battle_report
   end
 
   private
-  def find_dungeon
-    @dungeon = Dungeon.active.find(params[:id])
+  def find_active_dungeon
+    @dungeon = Dungeon.find(params[:id])
+    if @dungeon.active? == false
+      render json: {
+        message: 'This dungeon is no longer active.',
+        battlefield_id: Battlefield.find_by_dungeon_id(@dungeon.id).id
+      }, :status => :see_other
+    elsif @dungeon.expired?
+      render json: {
+        message: 'This dungeon is no longer active.'
+      }, :status => :gone
+    end
   end
 end

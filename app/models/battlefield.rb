@@ -9,4 +9,8 @@ class Battlefield < RealmLocation
   def name
     'Hello world'
   end
+
+  def loot
+
+  end
 end

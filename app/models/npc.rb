@@ -13,7 +13,7 @@ class Npc < RealmLocation
   def set_real_world_location
     self.real_world_location = RealWorldLocation
                                  .for_npc
-                                 .where.not(id: [Dungeon.pluck(:real_world_location_id)])
+                                 .where.not(id: [RealmLocation::real_world_location_ids_currently_in_use])
                                  .order("RANDOM()")
                                  .limit(1)
                                  .first

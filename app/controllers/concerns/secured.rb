@@ -19,6 +19,7 @@ module Secured
   }.freeze
 
   def authorize
+    puts 'authorize'
     token = token_from_request
 
     return if performed?

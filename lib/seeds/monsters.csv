@@ -17,10 +17,13 @@ level,classification,tags,name,description
 1,construct,,Rusty Automaton,"A clunky, old mechanical construct that may malfunction at any moment."
 1,beast,,Stealing Monkey,"Hey, give that back!"
 1,beast,,Angry bird,"It's a bird with no wings, of course it's angry."
-1,beast,,Fire Snake,What's your favorite part - the fire or the snake?
+1,beast,,Fire Snake,It will bite and it will burn.
 1,humanoid,,Snarky Gnome,Prepare for sarcastic remarks.
 1,beast,,Tunneling Corgi,An adorable dog with a penchant for digging... and a taste for blood? Bad dog!
-3,monstrosity,,Owlbear,Sounds like a hoot.
+1,construct,,Monodrone,We are Modron.
+1,plant,,Myconid Sprout,It's a baby mushroom.
+1,beast,,Badger,Badger Badger Badger Badger Badger Badger Badger Badger ...
+1,beast,,Boar,Are you bored?
 2,fey,,Mischievous Sprite,"Dancing, pranking, and causing mischief."
 2,undead,,Skeleton Warrior,An animated skeleton wielding a rusty sword and shield.
 2,giant,,Ogre,A hulking and aggressive creature with a taste for violence.
@@ -35,17 +38,25 @@ level,classification,tags,name,description
 2,humanoid,,Black Knight,Tis but a scratch!
 2,fey,,Electric Sprite,"A sprite that crackles with electricity, capable of shocking opponents."
 2,humanoid,,Sneaky Halfling Rogue,A nimble and sly halfling skilled in stealth and backstabbing.
-3,elemental,,Icy Elemental,Did it just get colder in here?
 2,construct,,Stone Golem,Rock hard.
 2,humanoid,,Goblin Shaman,A goblin spellcaster... and we're using that word loosely.
 2,humanoid,,Troll,"Hmm, bugs."
 2,beast,,Enraged Chihuahua,"Small, but filled with endless fury."
 2,humanoid,,Goblin Bard,His songs can be quite irritating.
+2,beast,,Angry Squirrel,Don't underestimate its acorn barrage.
+2,construct,,Cursed Painting,Its subjects don't appreciate your critiques.
+2,fey,,Prankster Pixie,"Tiny, giggling, and master of trickery."
+2,construct,,Duodrone,"""We are the ultimate law. All other law is tainted when compared to us."""
+2,elemental,,Flail snail,A massive snail with flails attached to it's head.
+2,plant,,Myconid,"Mushroom people. Walks like people, taste like mushroom."
+2,elemental,,Air Elemental,This is your Marilyn Monroe moment
+2,fey,,Blink dog,A dog that teleports
+2,ooze,,Plasmoid Explorer,A wobbly and gelatinous blob with a personality as fluid as its form.
+3,monstrosity,,Owlbear,Sounds like a hoot.
+3,elemental,,Icy Elemental,Did it just get colder in here?
 3,beast,,Manticore,"Body of a lion, wings of a bat, and a tail with venomous spikes."
 3,undead,,Zombie Accountant,Constantly crunching numbers... and brains.
-2,beast,,Angry Squirrel,Don't underestimate its acorn barrage.
 3,ooze,,Gelatinous Pizza,It slimes and tastes delicious.
-2,construct,,Cursed Painting,Its subjects don't appreciate your critiques.
 3,construct,,Enchanted Garden Gnome,Practitioner of gnome magic and terrible puns.
 3,beast,,Dancing Swordfish,"It dances through the air, sword first."
 3,ooze,,Gelatinous cube,Three dimensions is better than four.
@@ -53,10 +64,18 @@ level,classification,tags,name,description
 3,beast,,Gargantuan Pigeon,"It's just a really, really big bird."
 3,humanoid,,Arcane Trickster,"A rogue with magical prowess, adept at illusions and sneak attacks."
 3,humanoid,,Thunderous Minotaur,A minotaur warrior whose powerful hooves create shockwaves.
-4,fiend,,Swarm of Fiendish Imps,"A horde of tiny, mischievous imps that overwhelm their opponents."
-4,humanoid,,Raging Barbarian,"A fierce warrior consumed by battle rage, capable of dealing devastating blows."
 3,humanoid,,Anti-vax Cultist,A follower of dark rituals who spreads diseases and curses.
 3,beast,,Dire wolf,"Like a regular wolf, but dire."
+3,fey,,Pyromaniac Pixie,Sets everything on fire for the fun of it.
+3,construct,,Tridrone,"""We are structure. All other structure crumbles when brought against us."""
+3,giant,,Hill Giant,Hill-arious.
+3,giant,,Cyclops,"With a singular eye for detail, the Cyclops has a knack for seeing things from a unique perspective."
+3,monstrosity,,Basilisk,"It has a ""stone-cold"" sense of humor."
+3,plant,,Sovreign Myconid,"Mushroom people. Walks like people, taste like mushroom."
+3,fey,,Dryad,The trees are watching.
+3,ooze,,Plasmoid Warrior,A wobbly and gelatinous blob with a personality as fluid as its form.
+4,fiend,,Swarm of Fiendish Imps,"A horde of tiny, mischievous imps that overwhelm their opponents."
+4,humanoid,,Raging Barbarian,"A fierce warrior consumed by battle rage, capable of dealing devastating blows."
 4,humanoid,,Librarian,"They never forget, and they never forgive"
 4,beast,,"Fluffy, the Killer Bunny","Aww, it's so cute... and deadly."
 4,undead,,Vampire Postal Worker,Your mail will never be the same again.
@@ -69,7 +88,6 @@ level,classification,tags,name,description
 4,humanoid,,Misguided Bardbarian,"Part bard, part barbarian, all confused."
 4,aberration,,Floating Eyeball,It's watching... and judging.
 4,elemental,,Bardic Gargoyle,Turns battlefields into singing competitions.
-3,fey,,Pyromaniac Pixie,Sets everything on fire for the fun of it.
 4,humanoid,,Goblin Illusionist,Tricks your mind while emptying your pockets.
 4,humanoid,,Sneaky Kobold Artificer,Small but brimming with traps and inventions.
 4,monstrosity,,Inflatable Mimic,You'll never trust another balloon.
@@ -77,7 +95,15 @@ level,classification,tags,name,description
 4,undead,,Poltergeist Chef,Throws utensils and serves ghostly food.
 4,humanoid,,Epic Bardic Battle Band,Instruments of war and melodies of mayhem.
 4,humanoid,,Goblin Mechanic,Engineers deadly contraptions with questionable safety.
-2,fey,,Prankster Pixie,"Tiny, giggling, and master of trickery."
+4,construct,,Quadrone,"""We are order. All other order disappears when held to our light."""
+4,humanoid,,Witch,"""I'll get you, my pretty, and your little dog, too!"""
+4,giant,,Stone Giant,"Their impressive bouldering skills and a penchant for sculpting masterpieces out of stone make them a ""rock""-star in their own right."
+4,ooze,,Gelatinous Cube,Anyone up for jello shots?
+4,elemental,,Fire Elemental,A hot mess
+4,elemental,,Earth Elemental,Seems pretty solid
+4,fiend,,Bone Devil,"Beware, getting in a battle of wits with a Bone Devil might leave you ""bonely"" defeated."
+4,aberration,,Supreme Cube,A geometrically grandiose being that exudes an aura of mathematical mystery. 
+4,ooze,,Plasmoid Boss,A wobbly and gelatinous blob with a personality as fluid as its form.
 5,elemental,,Djinn,"Grants wishes, or just straight up kills you. Stick around and find out?"
 5,monstrosity,,Hydra,Each head has its own sassy personality.
 5,monstrosity,,Sassy Sphinx,Prepare for riddles and sass in equal measure.
@@ -86,6 +112,12 @@ level,classification,tags,name,description
 5,beast,,Kung Fu Kangaroo,Delivers punches and kicks with expert precision.
 5,humanoid,,Explosive Gnome Alchemist,Handles explosives... with mixed results.
 5,fey,,Master of Puns,Wields words with deadly accuracy... of humor.
+5,celestial,,Unicorn,Blblbl bl blbl blbl.
+5,construct,,Pentadrone,"""We are perfect law."""
+5,dragon,,Blue Dragon Wyrmling,"A tiny, newly hatched dragon with shimmering blue scales, it may be small, but it's already showing a big attitude."
+5,dragon,,Black Dragon Wyrmling,"A small and crafty dragonling, honing its dark abilities while testing its ""bite-sized"" acid breath."
+5,fey,,Hag,"""I'm not super comfortable in my skin."""
+5,giant,,Storm Giant,"Majestic, with a stormy personality, they toss lightning bolts like confetti and create weather with a flair for the dramatic."
 6,undead,,Vampire Telemarketer,Calls you even after the sun sets.
 6,monstrosity,,Sewer Kraken,Rises from the depths with a stinky vengeance.
 6,humanoid,,Drunken Master Monk,"Intoxicated, but more dangerous than ever."
@@ -94,12 +126,21 @@ level,classification,tags,name,description
 6,monstrosity,,Raging Barbarian Sheep,Its fury is as wooly as its coat.
 6,humanoid,,Goblin Technomancer,Hacks reality with gadgets and witty comebacks.
 6,humanoid,,The Singing Siren,Her voice enchants... and annoys.
-8,dragon,,Red Dragon,Hot-headed and not good at sharing.
+6,dragon,,Young Red Dragon,"Fiery and fierce, this ""teenage"" dragon has some serious scales to settle with adventurers who dare cross its path."
+6,dragon,,Young Blue Dragon,"A juvenile with electric-blue scales, eager to prove its strength and show off its ""shocking"" personality."
+6,dragon,,Young Black Dragon,"A glossy black-scaled hunter, perfecting stealth and ambush tactics with the grace of a shadowy dance."
+6,dragon,,Red Dragon Wyrmling,"A young dragon with fiery instincts and a desire to grow strong—it's still learning to control its ""temper."""
+6,elemental,,Phoenix,You can't spell Rebirth without Fiery Death
 7,fiend,,Narcissistic Succubus,"Beauty, charm, and an obsession with selfies."
 7,monstrosity,,Dimension-Hopping Mimic,"It's a mimic, and it's everywhere."
 7,monstrosity,,Medusa,Turns adventurers to stone....
 7,humanoid,,Goblin Warlock,Deals in dark magic and dark humor.
 7,aberration,,Beholder,Let me take a look at you.
+7,dragon,,Blue Dragon,"Majestic and lightning-fast, this dazzling dragon will strike you with awe—and perhaps a well-timed lightning bolt."
+7,dragon,,Black Dragon,"Sinister and cunning, stalking from shadows with corrosive acid breath - Talk about having a ""colorful"" personality."
+7,aberration,,Mind Flayer,A mastermind of psychic manipulation and domination.
+7,celestial,,Voidwalker,A celestial being with the ability to traverse the void between stars and wield dark energies from the cosmos.
+8,dragon,,Red Dragon,Hot-headed and not good at sharing.
 8,fiend,,Pit Fiend,Not your pit friend. Definitely not.
 8,monstrosity,,Purple Worm,"It's purple, slimy, and very hungry."
 8,undead,,Dracolich,A skeletal dragon with a bone to pick.
@@ -107,12 +148,15 @@ level,classification,tags,name,description
 8,fey,,Mischievous Archfey,Toying with mortals just for laughs.
 8,humanoid,,Time-Warping Sorcerer,Messing with time and making it groovy.
 8,construct,,Infinite Gnome Loop,"Short, chaotic, and replicating."
-9,fiend,,Demon,CHAMEK ATH UTHUL ARAK!
+8,undead,,Lich,Laughs through eternity and beyond.
+8,dragon,,Ancient Black Dragon,"Colossal and malevolent, it's been around so long it's probably mastered ""ancient"" dad jokes."
+8,dragon,,Ancient Blue Dragon,"Legendary and imposing, this old-timer loves sharing tales of ancient storms, even if they're a bit ""windy."""
+8,fiend,,Demon,CHAMEK ATH UTHUL ARAK!
+9,monstrosity,,Astral Leviathan,"An immense and ancient creature dwelling in the celestial depths, whose movements are said to cause celestial phenomena."
 9,monstrosity,,Tarrasque,What do you mean it's not Godzilla?
 9,celestial,,Cosmic Prankster,"Plays jokes across the stars, even on deities."
 9,dragon,,Ancient Red Dragon,"Old, wise, and still very, very angry."
 9,monstrosity,,Illusory Sphinx,"Riddles within riddles, with a side of illusions."
-8,undead,,Lich,Laughs through eternity and beyond.
 9,aberration,,Soul Devourer,Consumes the very essence of life and souls.
 9,celestial,,Avatar of Destruction,Unleashes cataclysmic forces upon the world.
 9,aberration,,Time Manipulator,Controls the flow of time to their advantage.
@@ -120,6 +164,7 @@ level,classification,tags,name,description
 9,fiend,,Grim Reaper,Harbinger of death and collector of souls.
 9,elemental,,Elemental Lord,Commands the raw power of the elemental planes.
 9,humanoid,,Archmage,A master of arcane arts with unlimited power.
+10,monstrosity,,Astral Dreadnought,"Prepare for cosmic trouble, and make it double."
 10,aberration,,Void Behemoth,An embodiment of cosmic emptiness and chaos.
 10,dragon,,Ether Drake,A dragon that soars through the fabric of reality.
 10,fey,,Shard,A crystalline entity that shatters expectations.
@@ -129,48 +174,6 @@ level,classification,tags,name,description
 10,giant,,Primordial Titan,An ancient and colossal force of primal power.
 10,celestial,,Celestial Arbiter,Enforces divine justice with unparalleled might.
 10,aberration,,The Unbound,A being who has broken free from the constraints of reality.
-5,celestial,,Unicorn,Blblbl bl blbl blbl.
-1,construct,,Monodrone,We are Modron.
-2,construct,,Duodrone,"""We are the ultimate law. All other law is tainted when compared to us."""
-3,construct,,Tridrone,"""We are structure. All other structure crumbles when brought against us."""
-4,construct,,Quadrone,"""We are order. All other order disappears when held to our light."""
-5,construct,,Pentadrone,"""We are perfect law."""
-6,dragon,,Young Red Dragon,"Fiery and fierce, this ""teenage"" dragon has some serious scales to settle with adventurers who dare cross its path."
-7,dragon,,Blue Dragon,"Majestic and lightning-fast, this dazzling dragon will strike you with awe—and perhaps a well-timed lightning bolt."
-6,dragon,,Young Blue Dragon,"A juvenile with electric-blue scales, eager to prove its strength and show off its ""shocking"" personality."
-7,dragon,,Black Dragon,"Sinister and cunning, stalking from shadows with corrosive acid breath—talk about having a ""colorful"" personality."
-6,dragon,,Young Black Dragon,"A glossy black-scaled hunter, perfecting stealth and ambush tactics with the grace of a shadowy dance."
-8,dragon,,Ancient Black Dragon,"Colossal and malevolent, it's been around so long it's probably mastered ""ancient"" dad jokes."
-8,dragon,,Ancient Blue Dragon,"Legendary and imposing, this old-timer loves sharing tales of ancient storms, even if they're a bit ""windy."""
-5,dragon,,Blue Dragon Wyrmling,"A tiny, newly hatched dragon with shimmering blue scales, it may be small, but it's already showing a big attitude."
-6,dragon,,Red Dragon Wyrmling,"A young dragon with fiery instincts and a desire to grow strong—it's still learning to control its ""temper."""
-5,dragon,,Black Dragon Wyrmling,"A small and crafty dragonling, honing its dark abilities while testing its ""bite-sized"" acid breath."
-2,elemental,,Flail snail,A massive snail with flails attached to it's head.
-5,fey,,Hag,"""I'm not super comfortable in my skin."""
-4,humanoid,,Witch,"""I'll get you, my pretty, and your little dog, too!"""
-5,giant,,Storm Giant,"Majestic, with a stormy personality, they toss lightning bolts like confetti and create weather with a flair for the dramatic."
-3,giant,,Hill Giant,Hill-arious.
-3,giant,,Cyclops,"With a singular eye for detail, the Cyclops has a knack for seeing things from a unique perspective."
-4,giant,,Stone Giant,"Their impressive bouldering skills and a penchant for sculpting masterpieces out of stone make them a ""rock""-star in their own right."
-3,monstrosity,,Basilisk,"It has a ""stone-cold"" sense of humor."
-4,ooze,,Gelatinous Cube,Anyone up for jello shots?
-1,plant,,Myconid Sprout,It's a baby mushroom.
-2,plant,,Myconid,"Mushroom people. Walks like people, taste like mushroom."
-3,plant,,Sovreign Myconid,"Mushroom people. Walks like people, taste like mushroom."
-7,aberration,,Mind Flayer,A mastermind of psychic manipulation and domination.
-1,beast,,Badger,Badger Badger Badger Badger Badger Badger Badger Badger ...
-1,beast,,Boar,Are you bored?
-7,celestial,,Voidwalker,A celestial being with the ability to traverse the void between stars and wield dark energies from the cosmos.
-8,monstrosity,,Astral Leviathan,"An immense and ancient creature dwelling in the celestial depths, whose movements are said to cause celestial phenomena."
-9,monstrosity,,Astral Dreadnought,"Prepare for cosmic trouble, and make it double."
-2,elemental,,Air Elemental,This is your Marilyn Monroe moment
-4,elemental,,Fire Elemental,A hot mess
-4,elemental,,Earth Elemental,Seems pretty solid
-6,elemental,,Phoenix,You can't spell Rebirth without Fiery Death
-2,fey,,Blink dog,A dog that teleports
-3,fey,,Dryad,The trees are watching.
-4,fiend,,Bone Devil,"Beware, getting in a battle of wits with a Bone Devil might leave you ""bonely"" defeated."
-4,aberration,,Supreme Cube,A geometrically grandiose being that exudes an aura of mathematical mystery.
-2,ooze,,Plasmoid Explorer,A wobbly and gelatinous blob with a personality as fluid as its form.
-3,ooze,,Plasmoid Warrior,A wobbly and gelatinous blob with a personality as fluid as its form.
-4,ooze,,Plasmoid Boss,A wobbly and gelatinous blob with a personality as fluid as its form.
+8,celestial,,Celestial Dice,Determines your fate
+1,beast,,Scorpion,Drowning frogs since 1933
+2,beast,,Bearlin Raver,"A poor furry beast, his mind burned out on poppers"

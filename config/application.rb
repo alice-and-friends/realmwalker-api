@@ -37,6 +37,15 @@ module RealmwalkerApi
       end
     end
 
+    # Olive branch lets your API users pass in and receive camelCased or dash-cased keys,
+    # while your Rails app receives and produces snake_cased ones.
+    # https://github.com/vigetlabs/olive_branch
+    excluded_routes = ->(env) { !env["PATH_INFO"].match(%r{^/api}) }
+    config.middleware.use OliveBranch::Middleware,
+                          inflection:       "camel",
+                          exclude_params:   excluded_routes,
+                          exclude_response: excluded_routes
+
     # Game
     config.max_dungeons = 20
   end

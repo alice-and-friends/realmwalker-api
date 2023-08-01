@@ -1,6 +1,7 @@
 # All other API controllers are subclasses of this class
 class Api::V1::ApiController < ApplicationController
   include Secured
+  before_action :authorize
   before_action :identify_user
 
   private
@@ -12,6 +13,8 @@ class Api::V1::ApiController < ApplicationController
   end
 
   def identify_user
+    return if http_token.nil?
+
     auth0_user = Auth0Helper.identify(http_token)
     @current_user = User.find_by(auth0_user_id: auth0_user.sub)
 

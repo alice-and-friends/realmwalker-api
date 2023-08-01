@@ -1,15 +1,14 @@
 class Api::V1::UsersController < Api::V1::ApiController
   before_action :authorize
-  #before_action :set_api_v1_user, only: [:show, :update, :destroy]
+  before_action :set_api_v1_user, only: [:show, :update, :destroy]
 
   def me
-    render json: @current_user, only: [:id, :preferences], methods: [:email, :given_name, :family_name], status: :ok
+    render json: @current_user, status: :ok
   end
 
   # GET /api/v1/users
   def index
     @api_v1_users = User.all
-
     render json: @api_v1_users.to_json(:include => [:app_sessions])
   end
 

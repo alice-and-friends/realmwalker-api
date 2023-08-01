@@ -1,3 +1,3 @@
 class MonsterSerializer < ActiveModel::Serializer
-  attributes :name, :description, :level, :types
+  attributes :name, :description, :level, :classification, :tags
 end

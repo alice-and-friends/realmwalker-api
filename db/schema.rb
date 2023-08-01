@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_14_193031) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
@@ -37,6 +37,36 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_14_193031) do
     t.index ["defeated_by_id"], name: "index_dungeons_on_defeated_by_id"
     t.index ["monster_id"], name: "index_dungeons_on_monster_id"
     t.index ["real_world_location_id"], name: "index_dungeons_on_real_world_location_id"
+  end
+
+  create_table "inventory_items", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "item_id"
+    t.boolean "is_equipped", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["item_id"], name: "index_inventory_items_on_item_id"
+    t.index ["user_id"], name: "index_inventory_items_on_user_id"
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "type", null: false
+    t.string "rarity", null: false
+    t.string "dropped_by_classification", default: [], array: true
+    t.integer "dropped_by_level"
+    t.boolean "two_handed"
+    t.integer "attack_bonus", limit: 2, default: 0
+    t.integer "defense_bonus", limit: 2, default: 0
+    t.string "classification_bonus"
+    t.integer "classification_attack_bonus", limit: 2, default: 0
+    t.integer "classification_defense_bonus", limit: 2, default: 0
+    t.float "xp_bonus", default: 0.0
+    t.float "loot_bonus", default: 0.0
+    t.integer "npc_buy"
+    t.integer "npc_sell"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "monsters", force: :cascade do |t|
@@ -77,9 +107,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_14_193031) do
     t.hstore "preferences"
     t.integer "xp", default: 0
     t.integer "level", default: 1
+    t.text "achievements", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   add_foreign_key "dungeons", "users", column: "defeated_by_id"
+  add_foreign_key "inventory_items", "items"
+  add_foreign_key "inventory_items", "users"
 end

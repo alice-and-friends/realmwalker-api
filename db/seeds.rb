@@ -39,6 +39,32 @@ csv.each do |row|
 end
 puts "🌱 Seeded #{Monster.count} monsters."
 
+# CREATE ITEMS
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'items.csv'))
+csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
+csv.each do |row|
+  item = Item.new()
+  item.name = row['name']
+  item.type = row['type'].downcase
+  item.rarity = row['rarity'].downcase
+  item.dropped_by_classification = row['dropped_by_classification'].split(', ')
+  item.dropped_by_level = row['dropped_by_level']
+  item.two_handed = row['two_handed']
+  item.attack_bonus = row['attack_bonus']
+  item.defense_bonus = row['defense_bonus']
+  item.classification_bonus = row['classification_bonus']
+  item.classification_attack_bonus = row['classification_attack_bonus']
+  item.classification_defense_bonus = row['classification_defense_bonus']
+  item.xp_bonus = row['xp_bonus']
+  item.loot_bonus = row['loot_bonus']
+  item.npc_buy = row['npc_buy']
+  item.npc_sell = row['npc_sell']
+  unless item.save
+    puts 'seed error:', item.inspect, item.errors.inspect
+  end
+end
+puts "🌱 Seeded #{Item.count} items."
+
 # CREATE DUNGEONS
 20.times do |counter|
   d = Dungeon.new({
@@ -47,7 +73,7 @@ puts "🌱 Seeded #{Monster.count} monsters."
                   })
   d.save!
 end
-Rake::Task["dungeon:despawn"].execute
+# Rake::Task["dungeon:despawn"].execute
 
 # CREATE NPCS
 3.times do |counter|
