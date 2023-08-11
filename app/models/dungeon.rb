@@ -9,6 +9,10 @@ class Dungeon < RealmLocation
   before_validation :set_real_world_location, :on => :create
   before_validation :randomize_level_and_monster!, :on => :create
 
+  def self.max_dungeons
+    RealWorldLocation.count / 40
+  end
+
   def name
     self.monster.name
   end

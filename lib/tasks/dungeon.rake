@@ -40,7 +40,7 @@ namespace :dungeon  do
 
   task spawn: :environment do
     # Create a new dungeon if the current active count is below desired
-    if Dungeon.active.count < Rails.configuration.max_dungeons
+    if Dungeon.active.count < Dungeon.max_dungeons
       Dungeon.create!
     end
   end
