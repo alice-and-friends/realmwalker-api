@@ -16,8 +16,4 @@ class RealmLocation < ApplicationRecord
   def location_type
     self.class.name
   end
-
-  def location_map_detail
-    nil
-  end
 end

@@ -65,13 +65,19 @@ class Auth0Helper
   end
 
   def self.get_user
+    puts 'GET USER CALLED ' + @access_token
     uri = URI("#{domain_url}userinfo")
     req = Net::HTTP::Get.new(uri)
     req['Authorization'] = "Bearer #{@access_token}"
     res = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) {|http|
       http.request(req)
     }
+    puts res.inspect
     json = JSON.parse(res.body, symbolize_names: true)
-    return Auth0UserData.new(json)
+    if res.kind_of? Net::HTTPSuccess
+      return Auth0UserData.new(json), nil
+    else
+      return nil, res
+    end
   end
 end

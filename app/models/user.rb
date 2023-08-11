@@ -1,11 +1,12 @@
 class User < ApplicationRecord
-  has_many :inventory_items
+  has_many :inventory_items, :dependent => :delete_all
   has_many :items, through: :inventory_items
 
   ACHIEVEMENTS = %w[]
 
   serialize :auth0_user_data, Auth0UserData
 
+  after_create :give_starting_equipment
   validates :auth0_user_id, presence: true, uniqueness: true
   validate :valid_auth0_user_data
   validate :achievements_are_valid
@@ -18,15 +19,12 @@ class User < ApplicationRecord
   def email
     auth0_user_data.email
   end
-  def given_name
+  def name
     auth0_user_data.given_name
-  end
-  def family_name
-    auth0_user_data.family_name
   end
 
   def equipped_items
-    inventory_items.where(is_equipped: true).map(&:items)
+    inventory_items.joins(:item).where(is_equipped: true)
   end
   def gain_item(item)
     inventory_items.create(item: item)
@@ -34,13 +32,47 @@ class User < ApplicationRecord
   def lose_item(item)
     inventory_items.find_by(item: item).destroy
   end
-  def equip_item(item)
-    equipment_item = inventory_items.find_by(item: item)
-    equipment_item.update(is_equipped: true)
+  # Equips an item, or advises the player that some items will be unequipped if the requested item is equipped
+  #
+  # @param [InventoryItem] inventory_item The InventoryItem to equip
+  # @param [Boolean] force If true, will not warn that other items will become unequipped to make room
+  # @return [Boolean] Whether the item was equipped
+  # @return [InventoryItem[]] Which items need to be unequipped, or if force=true which items were unequipped by this function
+  def equip_item(inventory_item, force=false)
+    max_items_of_type = inventory_item.item.type == 'ring' ? 2 : 1
+    items_to_unequip = []
+
+    # NB: You probably don't change the order of these checks
+    equipped_items_of_this_type = equipped_items.where("items.type": inventory_item.item.type)
+    if inventory_item.item.two_handed == true
+      items_to_unequip += equipped_items.where("type IN (?)", ['weapon', 'shield'])
+    elsif equipped_items_of_this_type.count >= max_items_of_type
+      if max_items_of_type > 1
+        items_to_unequip << equipped_items_of_this_type.first
+      else
+        items_to_unequip += equipped_items_of_this_type
+      end
+    elsif inventory_item.item.type == 'shield'
+      items_to_unequip += equipped_items.where("items.two_handed": true)
+    end
+
+    if items_to_unequip.length.zero?
+      inventory_item.update!(is_equipped: true)
+      return true, []
+    else
+      if force
+        items_to_unequip.each do |unequip_this|
+          self.unequip_item(unequip_this)
+        end
+        inventory_item.update!(is_equipped: true)
+        return true, items_to_unequip
+      else
+        return false, items_to_unequip
+      end
+    end
   end
-  def unequip_item(item)
-    equipment_item = inventory_items.find_by(item: item)
-    equipment_item.update(is_equipped: false)
+  def unequip_item(inventory_item)
+    inventory_item.update!(is_equipped: false)
   end
 
   def set_level
@@ -96,6 +128,19 @@ class User < ApplicationRecord
   def dies
     xp_loss = (0.02*self.xp)+(100*(self.level-1))
     xp_change = gains_or_loses_xp(xp_loss*-1)
+  end
+
+  def give_starting_equipment
+    ['Shortsword', 'Leather Armor', 'Iron Helmet'].each do |item_name|
+    #['Amulet of Abundance', 'Ring of Treasure Hunter', 'Angelic Axe', 'Demon Shield', 'Prismatic Helmet', 'Scale Armor'].each do |item_name|
+      item = Item.find_by(name: item_name)
+      inventory_item = self.gain_item(item)
+      self.equip_item(inventory_item)
+    end
+    ['Angelic Axe'].each do |item_name|
+      item = Item.find_by(name: item_name)
+      self.gain_item(item)
+    end
   end
 
   private

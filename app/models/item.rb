@@ -1,19 +1,7 @@
 class Item < ApplicationRecord
   self.inheritance_column = nil
-  validates :name, presence: true, uniqueness: true
-  validates :type, presence: true
-  validates :rarity, presence: true
-  validate :classifications_valid
-  validate :classification_bonuses_valid
-  validate :lootable_from_any_monster
 
-  scope :common, -> { where(rarity: Item.rarities[:common]) }
-  scope :uncommon, -> { where(rarity: Item.rarities[:uncommon]) }
-  scope :rare, -> { where(rarity: Item.rarities[:rare]) }
-  scope :epic, -> { where(rarity: Item.rarities[:epic]) }
-  scope :legendary, -> { where(rarity: Item.rarities[:legendary]) }
-
-  enum type: [
+  enum item_types: [
     :amulet,
     :armor,
     :helmet,
@@ -21,7 +9,7 @@ class Item < ApplicationRecord
     :shield,
     :weapon,
   ]
-  enum rarity: {
+  enum rarity_tiers: {
     always: 1,
     common: 5,
     uncommon: 10,
@@ -30,6 +18,31 @@ class Item < ApplicationRecord
     legendary: 100,
   }
 
+  validates :name, presence: true, uniqueness: true
+  validates :type, inclusion: { in: item_types.keys }
+  validates :rarity, inclusion: { in: rarity_tiers.keys }
+  validate :classifications_valid
+  validate :classification_bonuses_valid
+  validate :lootable_from_any_monster
+
+  scope :common, -> { where(rarity: Item.rarity_tiers[:common]) }
+  scope :uncommon, -> { where(rarity: Item.rarity_tiers[:uncommon]) }
+  scope :rare, -> { where(rarity: Item.rarity_tiers[:rare]) }
+  scope :epic, -> { where(rarity: Item.rarity_tiers[:epic]) }
+  scope :legendary, -> { where(rarity: Item.rarity_tiers[:legendary]) }
+
+  def bonuses
+    bonuses = []
+    bonuses << "+#{attack_bonus} attack" unless attack_bonus.zero?
+    bonuses << "+#{defense_bonus} defense" unless defense_bonus.zero?
+    bonuses << "+#{classification_attack_bonus} attack against #{classification_bonus}s" unless classification_attack_bonus.zero?
+    bonuses << "+#{classification_defense_bonus} defense against #{classification_bonus}s" unless classification_defense_bonus.zero?
+    bonuses << "+#{100*xp_bonus.to_i}% xp" unless xp_bonus.zero?
+    bonuses << "+#{100*loot_bonus.to_i}% loot" unless loot_bonus.zero?
+    bonuses
+  end
+
+  private
   def lootable_from_any_monster
     if self.dropped_by_level.present? or self.dropped_by_classification.present?
       test = Monster.where('classification IN (?)', self.dropped_by_classification).find_by("level >= ?", self.dropped_by_level)
@@ -38,8 +51,6 @@ class Item < ApplicationRecord
       end
     end
   end
-
-  private
   def classifications_valid
     if classification_bonus.present?
       errors.add(:classification_bonus, "#{classification_bonus} is not a valid classification") unless classification_bonus.in? Monster.classifications

@@ -23,7 +23,7 @@ module Serializable
       if obj.is_a?(self)
         obj.to_json
       else
-        raise StandardException, "Expected #{self}, got #{obj.class}"
+        raise StandardError, "Expected #{self}, got #{obj.class}"
       end
     end
   end

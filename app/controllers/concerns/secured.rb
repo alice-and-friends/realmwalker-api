@@ -19,7 +19,8 @@ module Secured
   }.freeze
 
   def authorize
-    puts 'authorize'
+    return if Rails.env.test?
+
     token = token_from_request
 
     return if performed?

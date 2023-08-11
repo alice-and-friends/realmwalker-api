@@ -59,9 +59,7 @@ csv.each do |row|
   item.loot_bonus = row['loot_bonus']
   item.npc_buy = row['npc_buy']
   item.npc_sell = row['npc_sell']
-  unless item.save
-    puts 'seed error:', item.inspect, item.errors.inspect
-  end
+  item.save!
 end
 puts "🌱 Seeded #{Item.count} items."
 

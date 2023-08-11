@@ -12,12 +12,6 @@ class Dungeon < RealmLocation
   def name
     self.monster.name
   end
-  def location_map_detail
-    {
-      level: level,
-      monster_classification: monster.classification,
-    }
-  end
 
   after_create do |d|
     puts "📌 Spawned a new dungeon, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
