@@ -32,7 +32,7 @@ class Api::V1::InventoryControllerTest < ActionDispatch::IntegrationTest
     assert_not InventoryItem.find_by(id: WEAPON_2.id).is_equipped
     json = JSON.parse(response.body)
     assert_not json['equipped']
-    assert 1, json['unequipItems'].length
+    assert_equal 1, json['unequipItems'].length
 
     # Confirm weapon switch
     post SET_EQUIPPED_PATH, params: {

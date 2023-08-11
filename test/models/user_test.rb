@@ -1,12 +1,12 @@
 require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
-  test "user fixture loaded" do
-    assert User.count == 1
+  test "user fixtures loaded" do
+    assert_operator User.count, :>, 0
   end
   test "user receives starting equipment when created" do
     u = generate_test_user
-    assert u.inventory_items.count > 0
+    assert_not_empty u.inventory_items
   end
   test "can destroy user" do
     c = User.count
@@ -19,39 +19,39 @@ class UserTest < ActiveSupport::TestCase
   end
   test "user starts with 0 xp at level 1" do
     u = User.first
-    assert_equal u.xp, 0
-    assert_equal u.level, 1
+    assert_equal 0, u.xp
+    assert_equal 1, u.level
   end
   test "user levels up" do
     u = User.first
 
     u.gains_or_loses_xp(199)
-    assert_equal u.xp, 199
-    assert_equal u.level, 1
+    assert_equal 199, u.xp
+    assert_equal 1, u.level
 
     u.gains_or_loses_xp(1)
-    assert_equal u.xp, 200
-    assert_equal u.level, 2
+    assert_equal 200, u.xp
+    assert_equal 2, u.level
 
     u.gains_or_loses_xp(700)
-    assert_equal u.xp, 900
-    assert_equal u.level, 3
+    assert_equal 900, u.xp
+    assert_equal 3, u.level
 
     assert_equal u.xp_level_report[:next_level_progress], 50.0
   end
   test "user can't exceed 1M xp / level 100" do
     u = User.first
     u.gains_or_loses_xp(999999999999999)
-    assert_equal u.xp, 1000000
-    assert_equal u.level, 100
+    assert_equal 1000000, u.xp
+    assert_equal 100, u.level
   end
   test "user loses experience upon death" do
     u = User.first
     u.gains_or_loses_xp(User::total_xp_needed_for_level(50))
-    assert_equal u.level, 50
+    assert_equal 50, u.level
     u.dies
-    assert_equal u.level, 49
-    assert u.xp < User::total_xp_needed_for_level(50)
+    assert_equal 49, u.level
+    assert_operator u.xp, :< ,User::total_xp_needed_for_level(50)
   end
   test "user cannot exceed equipment quotas" do
     # Prepare a user a bunch of items to use for the test

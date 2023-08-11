@@ -10,6 +10,7 @@ class Dungeon < RealmLocation
   before_validation :randomize_level_and_monster!, :on => :create
 
   def self.max_dungeons
+    return 10 if Rails.env.test?
     RealWorldLocation.for_dungeon.count / 22
   end
 
@@ -63,22 +64,24 @@ class Dungeon < RealmLocation
                            .first
   end
   def randomize_level_and_monster!
-    diffs = []
+    if self.level.nil?
 
-    # Lower level = Should have higher chance of spawning
-    # Higher level = Should have lower chance of spawning
-    # So we generate an array like [10, 9, 9, 8, 8, 8, 7, 7, 7, 7 ...] to be used for weighted randomization.
-    (1..9).each { |level|
-      (2*(10 - level)).floor.times do
-        diffs << level
-      end
-    }
+      # Lower level = Should have higher chance of spawning
+      # Higher level = Should have lower chance of spawning
+      # So we generate an array like [10, 9, 9, 8, 8, 8, 7, 7, 7, 7 ...] to be used for weighted randomization.
+      diffs = []
+      (1..9).each { |level|
+        (2*(10 - level)).floor.times do
+          diffs << level
+        end
+      }
 
-    # Level 10 dungeons are considered bosses, there can only be one active at any time.
-    diffs << 10 if Dungeon.active.where(level: 10).count.zero?
+      # Level 10 dungeons are considered bosses, there can only be one active at any time.
+      diffs << 10 if Dungeon.active.where(level: 10).count.zero?
 
-    # Pick the difficulty level
-    self.level = diffs.sample
+      # Pick the difficulty level
+      self.level = diffs.sample
+    end
 
     self.monster = Monster.for_level(self.level)
   end

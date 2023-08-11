@@ -21,7 +21,7 @@ class ActiveSupport::TestCase
     User.create!(
       auth0_user_id: 'test_user_unique',
       auth0_user_data: Auth0UserData.new(
-        sub: `test|#{test_user_unique}`,
+        sub: "test|#{test_user_unique}",
         given_name: test_user_name,
         family_name: '',
         email: Faker::Internet.email(name: test_user_name)

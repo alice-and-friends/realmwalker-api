@@ -4,7 +4,7 @@ class RealmLocationTest < ActiveSupport::TestCase
   test "gets list of currently active real world locations" do
     # Check that we get a list
     list = RealmLocation::real_world_location_ids_currently_in_use
-    assert list.length > 1
+    assert_operator list.length, :>, 1
 
     # Find a location from the list
     location_id = list.first
@@ -13,11 +13,11 @@ class RealmLocationTest < ActiveSupport::TestCase
       Battlefield.where(real_world_location_id: location_id) +
       Npc.where(real_world_location_id: location_id)
     ).first
-    assert a_current_location.present?
+    assert_not_nil a_current_location
 
     # Destroy the location and check if it disappears from the list
     a_current_location.destroy!
     new_list = RealmLocation::real_world_location_ids_currently_in_use
-    assert_not location_id.in? new_list
+    assert_not_includes new_list, location_id
   end
 end
