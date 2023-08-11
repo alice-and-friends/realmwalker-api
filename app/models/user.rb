@@ -100,7 +100,7 @@ class User < ApplicationRecord
       level: self.level,
       next_level_at: next_level_at,
       to_next_level: next_level_at - self.xp,
-      next_level_progress: level_xp_surplus.to_f / levels_xp_diff.to_f * 100.0
+      next_level_progress: (level_xp_surplus.to_f / levels_xp_diff.to_f * 100.0).floor
     }
   end
 
