@@ -17,12 +17,12 @@ class Api::V1::DungeonsController < Api::V1::ApiController
     @dungeon = Dungeon.find(params[:id])
     if @dungeon.active? == false
       render json: {
-        message: 'This dungeon is no longer active.',
+        message: 'This dungeon is no longer active (defeated).',
         battlefield_id: Battlefield.find_by_dungeon_id(@dungeon.id).id
       }, :status => :see_other
     elsif @dungeon.expired?
       render json: {
-        message: 'This dungeon is no longer active.'
+        message: 'This dungeon is no longer active (expired).'
       }, :status => :gone
     end
   end
