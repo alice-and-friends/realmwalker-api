@@ -28,7 +28,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
   create_table "dungeons", force: :cascade do |t|
     t.bigint "real_world_location_id"
     t.integer "status", default: 1
-    t.integer "level", default: 1
+    t.integer "level", null: false
     t.bigint "monster_id"
     t.datetime "defeated_at"
     t.bigint "defeated_by_id"
