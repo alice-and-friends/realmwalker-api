@@ -7,7 +7,7 @@ class Api::V1::DungeonsController < Api::V1::ApiController
   end
 
   def battle
-    puts "⚔️ #{@current_user.given_name} started battle against #{@dungeon}"
+    puts "⚔️ #{@current_user.name} started battle against #{@dungeon}"
     battle_report = @dungeon.battle_as(@current_user)
     render json: battle_report
   end
