@@ -64,7 +64,7 @@ end
 puts "🌱 Seeded #{Item.count} items."
 
 # CREATE DUNGEONS
-20.times do |counter|
+Dungeon.max_dungeons.times do |counter|
   d = Dungeon.new({
                     created_at: (counter*2).hours.ago,
                     status: Dungeon.statuses[:active] ##rand(2).odd? ? Dungeon.statuses[:active] : Dungeon.statuses[:defeated]

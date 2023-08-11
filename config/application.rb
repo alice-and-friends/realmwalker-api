@@ -45,8 +45,5 @@ module RealmwalkerApi
                           inflection:       "camel",
                           exclude_params:   excluded_routes,
                           exclude_response: excluded_routes
-
-    # Game
-    config.max_dungeons = 20
   end
 end
