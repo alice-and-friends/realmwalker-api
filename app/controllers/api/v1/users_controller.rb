@@ -42,13 +42,14 @@ class Api::V1::UsersController < Api::V1::ApiController
   # end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    # def set_api_v1_user
-    #   @api_v1_user = User.find(params[:id])
-    # end
-    #
-    # # Only allow a trusted parameter "white list" through.
-    # def api_v1_user_params
-    #   params.require(:user).permit(:id, :name)
-    # end
+
+  # Use callbacks to share common setup or constraints between actions.
+  # def set_api_v1_user
+  #   @api_v1_user = User.find(params[:id])
+  # end
+  #
+  # # Only allow a trusted parameter "white list" through.
+  # def api_v1_user_params
+  #   params.require(:user).permit(:id, :name)
+  # end
 end

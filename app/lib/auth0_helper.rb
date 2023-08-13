@@ -13,36 +13,37 @@ class Auth0Helper
     def validate_permissions(permissions)
       required_permissions = Set.new permissions
       scopes = token[0]['scope']
-      token_permissions = scopes.present? ? Set.new(scopes.split(" ")) : Set.new
+      token_permissions = scopes.present? ? Set.new(scopes.split(' ')) : Set.new
       required_permissions <= token_permissions
     end
   end
 
   # Helper Functions
   def self.domain_url
-    "https://#{ENV['AUTH0_DOMAIN']}/"
+    "https://#{ENV.fetch('AUTH0_DOMAIN')}/"
   end
 
   def self.decode_token(token, jwks_hash)
     JWT.decode(token, nil, true, {
-      algorithm: 'RS256',
-      iss: domain_url,
-      verify_iss: true,
-      aud: ENV['AUTH0_AUDIENCE'],
-      verify_aud: true,
-      jwks: { keys: jwks_hash[:keys] }
-    })
+                 algorithm: 'RS256',
+                 iss: domain_url,
+                 verify_iss: true,
+                 aud: ENV.fetch('AUTH0_AUDIENCE'),
+                 verify_aud: true,
+                 jwks: { keys: jwks_hash[:keys] },  
+               })
   end
 
-  def self.get_jwks
+  def self.jwks
     jwks_uri = URI("#{domain_url}.well-known/jwks.json")
     Net::HTTP.get_response jwks_uri
   end
 
-  # Token Validation
   public
+
+  # Token Validation
   def self.validate_token(token)
-    jwks_response = get_jwks
+    jwks_response = jwks
 
     unless jwks_response.is_a? Net::HTTPSuccess
       error = Error.new(message: 'Unable to verify credentials', status: :internal_server_error)
@@ -61,7 +62,7 @@ class Auth0Helper
 
   def self.identify(access_token)
     @access_token = access_token
-    return self.get_user
+    get_user
   end
 
   def self.get_user
@@ -72,10 +73,9 @@ class Auth0Helper
       http.request(req)
     }
     json = JSON.parse(res.body, symbolize_names: true)
-    if res.kind_of? Net::HTTPSuccess
-      return Auth0UserData.new(json), nil
-    else
-      return nil, res
-    end
+
+    return Auth0UserData.new(json), nil if res.is_a? Net::HTTPSuccess
+
+    [nil, res]
   end
 end

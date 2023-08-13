@@ -47,10 +47,13 @@ Layout/ClassStructure:
   Enabled: true
 
 Layout/RedundantLineBreak:
-  Enabled: true
+  Enabled: false
 
 Layout/TrailingWhitespace:
   AllowInHeredoc: false
+
+Layout/ArgumentAlignment:
+  Enabled: false
 
 Lint/AmbiguousBlockAssociation:
   Exclude:
@@ -65,7 +68,7 @@ Layout/HashAlignment:
     - table
 
 Layout/LineLength:
-  Max: 100
+  Max: 120
   AllowedPatterns:
     - !ruby/regexp /\A +(it|describe|context|shared_examples|include_examples|it_behaves_like) ["']/
 
@@ -81,6 +84,9 @@ Lint/UselessAccessModifier:
 Lint/EmptyFile:
   Exclude:
 
+Metrics/AbcSize:
+  Enabled: false
+
 Metrics/BlockLength:
   Exclude:
     - 'Rakefile'
@@ -89,11 +95,14 @@ Metrics/BlockLength:
     - '**/*.gemspec'
 
 Metrics/ClassLength:
-  Exclude:
+  Enabled: false
 
 Metrics/ModuleLength:
   Exclude:
     - 'spec/**/*.rb'
+
+Metrics/MethodLength:
+  Enabled: false
 
 Naming/InclusiveLanguage:
   Enabled: true
@@ -169,3 +178,9 @@ Gemspec/DependencyVersion:
 
 Style/RequireOrder:
   Enabled: true
+
+Style/OptionalBooleanParameter:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false

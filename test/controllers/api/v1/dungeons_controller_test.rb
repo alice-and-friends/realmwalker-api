@@ -1,18 +1,16 @@
-require "test_helper"
+require 'test_helper'
 
 class Api::V1::DungeonsControllerTest < ActionDispatch::IntegrationTest
-  test "should get battle prediction" do
+  test 'should get battle prediction' do
     d = Dungeon.create!(level: 1)
     get "/api/v1/dungeons/#{d.id}/analyze"
     assert_equal 200, status
-    json = JSON.parse(response.body)
-    assert_instance_of Integer, json['chanceOfSuccess']
+    assert_instance_of Integer, response.parsed_body['chanceOfSuccess']
   end
-  test "should get xpLevelReport after battle" do
+  test 'should get xpLevelReport after battle' do
     d = Dungeon.create!(level: 1)
     post "/api/v1/dungeons/#{d.id}/battle"
     assert_equal 200, status
-    json = JSON.parse(response.body)
-    assert_not_nil json['xpLevelReport']
+    assert_not_nil response.parsed_body['xpLevelReport']
   end
 end

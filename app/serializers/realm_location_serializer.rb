@@ -5,6 +5,7 @@ class RealmLocationSerializer < ActiveModel::Serializer
   def dungeon?
     object.location_type == Dungeon.name
   end
+
   def dungeon_details
     {
       level: object.level,

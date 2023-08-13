@@ -22,9 +22,9 @@ class Api::V1::ApiController < ApplicationController
 
     auth0_user, err = Auth0Helper.identify(http_token)
     if err.kind_of? Net::HTTPTooManyRequests
-      render json: { message: "Too many requests" }, status: :too_many_requests and return
+      render json: { message: 'Too many requests' }, status: :too_many_requests and return
     elsif err
-      render json: { message: "Unknown error from Auth0 helper in identify_user" }, status: :internal_server_error and return
+      render json: { message: 'Unknown error from Auth0 helper in identify_user' }, status: :internal_server_error and return
     end
 
     @current_user = User.find_by(auth0_user_id: auth0_user.sub)

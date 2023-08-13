@@ -9,9 +9,7 @@ class RealmLocation < ApplicationRecord
     Dungeon.pluck(:real_world_location_id) + Battlefield.pluck(:real_world_location_id) + Npc.pluck(:real_world_location_id)
   end
 
-  def coordinates
-    real_world_location.coordinates
-  end
+  delegate :coordinates, to: :real_world_location
 
   def location_type
     self.class.name

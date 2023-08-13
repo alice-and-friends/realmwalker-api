@@ -1,9 +1,9 @@
-require "test_helper"
+require 'test_helper'
 
 class RealmLocationTest < ActiveSupport::TestCase
-  test "gets list of currently active real world locations" do
+  test 'gets list of currently active real world locations' do
     # Check that we get a list
-    list = RealmLocation::real_world_location_ids_currently_in_use
+    list = RealmLocation.real_world_location_ids_currently_in_use
     assert_operator list.length, :>, 1
 
     # Find a location from the list
@@ -17,7 +17,7 @@ class RealmLocationTest < ActiveSupport::TestCase
 
     # Destroy the location and check if it disappears from the list
     a_current_location.destroy!
-    new_list = RealmLocation::real_world_location_ids_currently_in_use
+    new_list = RealmLocation.real_world_location_ids_currently_in_use
     assert_not_includes new_list, location_id
   end
 end

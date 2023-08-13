@@ -12,8 +12,8 @@ class Api::V1::InventoryController < Api::V1::ApiController
       render json: {error: 'No such item'}, status: :not_found and return
     end
 
-    if "#{params[:equipped]}" == 'true'
-      equipped, unequip_items = @current_user.equip_item(item, force="#{params[:force]}"=='true')
+    if params[:equipped].to_s == 'true'
+      equipped, unequip_items = @current_user.equip_item(item, force = params[:force].to_s == 'true')
       render json: {
         equipped: equipped,
         unequip_items: ActiveModelSerializers::SerializableResource.new(unequip_items, each_serializer: InventoryItemSerializer),
@@ -30,6 +30,7 @@ class Api::V1::InventoryController < Api::V1::ApiController
   end
 
   private
+
   def find_inventory
     @current_user_inventory = InventoryItem.ordered
   end

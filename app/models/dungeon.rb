@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
 class Dungeon < RealmLocation
-  has_one :battlefield
+  has_one :battlefield, dependent: :nullify # TODO: Should we just preserve the Dungeon for as long as Battlefield exists?
   belongs_to :monster
   belongs_to :defeated_by, class_name: 'User', optional: true
 
   validates :level, presence: true
   enum status: { active: 1, defeated: 2, expired: 0 }
 
-  before_validation :set_real_world_location, :on => :create
-  before_validation :randomize_level_and_monster!, :on => :create
+  before_validation :set_real_world_location, on: :create
+  before_validation :randomize_level_and_monster!, on: :create
 
   def self.max_dungeons
     return 10 if Rails.env.test?
@@ -17,15 +17,13 @@ class Dungeon < RealmLocation
     RealWorldLocation.for_dungeon.count / 22
   end
 
-  def name
-    monster.name
-  end
+  delegate :name, to: :monster
 
   after_create do |d|
-    puts "📌 Spawned a new dungeon, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
+    Rails.logger.debug "📌 Spawned a new dungeon, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
   after_destroy do |d|
-    puts "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
+    Rails.logger.debug "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
   def difficulty_multiplier
@@ -45,7 +43,7 @@ class Dungeon < RealmLocation
 
   def battle_prediction_for(user)
     # Calculate baseline based on player level and dungeon level
-    base_difficulty_score = ((difficulty_multiplier * (user.level.to_f / 2)).floor)
+    base_difficulty_score = (difficulty_multiplier * (user.level.to_f / 2)).floor
     base_difficulty_score = 100 if base_difficulty_score > 100
     base_difficulty_score = 0 if base_difficulty_score < 1
 
@@ -87,14 +85,14 @@ class Dungeon < RealmLocation
     chance_of_death = 100 - chance_of_success
     if user.amulet_of_life?
       chance_of_death = 0
-      modifier_descriptors_death << 'Your Amulet of Life will protect you from death'
+      modifier_descriptors_death << 'Your Amulet of Life protects you from death. The amulet will be destroyed if you lose the battle.'
     end
     chance_of_inventory_loss = chance_of_death
     chance_of_equipment_loss = chance_of_death / 10
     if user.amulet_of_loss?
       chance_of_inventory_loss = 0
       chance_of_equipment_loss = 0
-      modifier_descriptors_death << 'Your Amulet of Loss will protect you from losing any items'
+      modifier_descriptors_death << 'Your Amulet of Loss will protect you from losing any items. The amulet will be destroyed if you lose the battle'
     end
 
     {
@@ -111,7 +109,7 @@ class Dungeon < RealmLocation
   end
 
   def battle_as(user)
-    puts "⚔️ #{user.name} started battle against #{monster.name}"
+    Rails.logger.debug { "⚔️ #{user.name} started battle against #{monster.name}" }
     defeated_by! user # Mark dungeon as defeated
     {
       battle_result: {
@@ -130,37 +128,36 @@ class Dungeon < RealmLocation
   end
 
   def defeated_by!(user)
-    self.defeated!
-    self.defeated_at = Time.now
+    defeated!
+    self.defeated_at = Time.current
     self.defeated_by = user
     save!
-    Battlefield.create({
-                         real_world_location: real_world_location,
-                         dungeon: self
-                       })
+    Battlefield.create({ real_world_location: real_world_location, dungeon: self })
   end
 
   private
+
   def set_real_world_location
     self.real_world_location = RealWorldLocation
-                           .for_dungeon
-                           .where.not(id: [Dungeon.pluck(:real_world_location_id)])
-                           .order('RANDOM()')
-                           .limit(1)
-                           .first
+                               .for_dungeon
+                               .where.not(id: [Dungeon.pluck(:real_world_location_id)])
+                               .order('RANDOM()')
+                               .limit(1)
+                               .first
   end
+
   def randomize_level_and_monster!
-    if self.level.nil?
+    if level.nil?
 
       # Lower level = Should have higher chance of spawning
       # Higher level = Should have lower chance of spawning
       # So we generate an array like [10, 9, 9, 8, 8, 8, 7, 7, 7, 7 ...] to be used for weighted randomization.
       diffs = []
-      (1..9).each { |level|
-        (2*(10 - level)).floor.times do
+      (1..9).each do |level|
+        (2 * (10 - level)).floor.times do
           diffs << level
         end
-      }
+      end
 
       # Level 10 dungeons are considered bosses, there can only be one active at any time.
       diffs << 10 if Dungeon.active.where(level: 10).count.zero?

@@ -1,28 +1,28 @@
-require "test_helper"
+require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  test "user fixtures loaded" do
+  test 'user fixtures loaded' do
     assert_operator User.count, :>, 0
   end
-  test "user receives starting equipment when created" do
+  test 'user receives starting equipment when created' do
     u = generate_test_user
     assert_not_empty u.inventory_items
   end
-  test "can destroy user" do
+  test 'can destroy user' do
     c = User.count
     u = generate_test_user
     u.destroy
     assert_equal c, User.count
   end
-  test "no xp needed for level 1" do
-    assert_equal User::total_xp_needed_for_level(1), 0
+  test 'no xp needed for level 1' do
+    assert_equal User.total_xp_needed_for_level(1), 0
   end
-  test "user starts with 0 xp at level 1" do
+  test 'user starts with 0 xp at level 1' do
     u = User.first
     assert_equal 0, u.xp
     assert_equal 1, u.level
   end
-  test "user levels up" do
+  test 'user levels up' do
     u = User.first
 
     u.gains_or_loses_xp(199)
@@ -41,19 +41,19 @@ class UserTest < ActiveSupport::TestCase
   end
   test "user can't exceed 1M xp / level 100" do
     u = User.first
-    u.gains_or_loses_xp(999999999999999)
-    assert_equal 1000000, u.xp
+    u.gains_or_loses_xp(999_999_999)
+    assert_equal 1_000_000, u.xp
     assert_equal 100, u.level
   end
-  test "user loses experience upon death" do
+  test 'user loses experience upon death' do
     u = User.first
-    u.gains_or_loses_xp(User::total_xp_needed_for_level(50))
+    u.gains_or_loses_xp(User.total_xp_needed_for_level(50))
     assert_equal 50, u.level
     u.dies
     assert_equal 49, u.level
-    assert_operator u.xp, :< ,User::total_xp_needed_for_level(50)
+    assert_operator u.xp, :<, User.total_xp_needed_for_level(50)
   end
-  test "user cannot exceed equipment quotas" do
+  test 'user cannot exceed equipment quotas' do
     # Prepare a user a bunch of items to use for the test
     u = User.first
     HELMET_1 = u.gain_item Item.find_by(type: 'helmet')
@@ -74,38 +74,38 @@ class UserTest < ActiveSupport::TestCase
     assert_equal 15, u.inventory_items.count
 
     # Test equipping a bunch of stuff - it should only be possible to equip one item of each type
-    u.equip_item(HELMET_1, force=true)
-    u.equip_item(HELMET_2, force=true)
+    u.equip_item(HELMET_1, true)
+    u.equip_item(HELMET_2, true)
     assert_equal 1, u.equipped_items.where('item.type': 'helmet').count
 
-    u.equip_item(ARMOR_1, force=true)
-    u.equip_item(ARMOR_2, force=true)
+    u.equip_item(ARMOR_1, true)
+    u.equip_item(ARMOR_2, true)
     assert_equal 1, u.equipped_items.where('item.type': 'armor').count,
 
-    u.equip_item(SHIELD_1, force=true)
-    u.equip_item(SHIELD_2, force=true)
+    u.equip_item(SHIELD_1, true)
+    u.equip_item(SHIELD_2, true)
     assert_equal 1, u.equipped_items.where('item.type': 'shield').count,
 
-    u.equip_item(AMULET_1, force=true)
-    u.equip_item(AMULET_2, force=true)
+    u.equip_item(AMULET_1, true)
+    u.equip_item(AMULET_2, true)
     assert_equal 1, u.equipped_items.where('item.type': 'amulet').count,
 
-    u.equip_item(ONE_HANDED_WEAPON_1, force=true)
-    u.equip_item(ONE_HANDED_WEAPON_2, force=true)
+    u.equip_item(ONE_HANDED_WEAPON_1, true)
+    u.equip_item(ONE_HANDED_WEAPON_2, true)
     assert_equal 1, u.equipped_items.where('item.type': 'weapon').count,
 
     # With rings, we allow equipping 2 rather than 1
-    u.equip_item(RING_1, force=true)
-    u.equip_item(RING_2, force=true)
-    u.equip_item(RING_3, force=true)
+    u.equip_item(RING_1, true)
+    u.equip_item(RING_2, true)
+    u.equip_item(RING_3, true)
     assert_equal 2, u.equipped_items.where('item.type': 'ring').count
 
     # Two handed weapons also work differently, in that you can't use them together with a shield
-    u.equip_item(TWO_HANDED_WEAPON_1, force=true)
+    u.equip_item(TWO_HANDED_WEAPON_1, true)
     assert_equal 0, u.equipped_items.where('item.type': 'shield').count # <- Shield should no longer be equipped
-    u.equip_item(TWO_HANDED_WEAPON_2, force=true)
+    u.equip_item(TWO_HANDED_WEAPON_2, true)
     assert_equal 1, u.equipped_items.where('item.type': 'weapon').count,
-    u.equip_item(SHIELD_1, force=true)
+    u.equip_item(SHIELD_1, true)
     assert_equal 0, u.equipped_items.where('item.type': 'weapon').count # <- Weapon should no longer be equipped
   end
 end
