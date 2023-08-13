@@ -17,8 +17,16 @@ class DungeonTest < ActiveSupport::TestCase
   end
   test "player defeats monster and gains xp" do
     u = User.first
-    d = Dungeon.create!
+    d = Dungeon.create!(level: 1)
     d.battle_as(u)
     assert_equal d.monster.xp, u.xp
+  end
+  test "fresh player character always defeats level 1 dungeon" do
+    5.times do
+      u = User.first
+      d = Dungeon.create!(level: 1)
+      battle = d.battle_as(u)
+      assert battle[:battle_result][:user_won]
+    end
   end
 end

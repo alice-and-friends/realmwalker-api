@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
   has_many :inventory_items, :dependent => :delete_all
   has_many :items, through: :inventory_items
 
-  ACHIEVEMENTS = %w[]
+  ACHIEVEMENTS = %w[].freeze
 
   serialize :auth0_user_data, Auth0UserData
 
@@ -11,9 +13,9 @@ class User < ApplicationRecord
   validate :valid_auth0_user_data
   validate :achievements_are_valid
 
-  XP_CAP = 1000000
+  XP_CAP = 1_000_000
   def self.total_xp_needed_for_level(l)
-    (10*(l-1))**2 + ((l-1)*100)
+    ((10 * (l - 1))**2) + ((l - 1) * 100)
   end
 
   def email
@@ -56,7 +58,7 @@ class User < ApplicationRecord
       items_to_unequip += equipped_items.where("items.two_handed": true)
     end
 
-    if items_to_unequip.length.zero?
+    if items_to_unequip.empty?
       inventory_item.update!(is_equipped: true)
       return true, []
     else
@@ -75,26 +77,53 @@ class User < ApplicationRecord
     inventory_item.update!(is_equipped: false)
   end
 
+  def weapon
+    equipped_items.find_by(items: { type: 'weapon' })
+  end
+  def amulet_of_loss?
+    equipped_items.find_by(items: { name: 'Amulet of Loss' }).present?
+  end
+  def amulet_of_life?
+    equipped_items.find_by(items: { name: 'Amulet of Life' }).present?
+  end
+
+  BASE_ATTACK = 10
+  def attack_bonus(classification = nil)
+    modifier = equipped_items.sum('items.attack_bonus')
+    if classification
+      modifier += equipped_items.where(items: { classification_bonus: classification }).sum("items.classification_attack_bonus")
+    end
+    modifier
+  end
+
+  def defense_bonus(classification = nil)
+    modifier = equipped_items.sum('items.defense_bonus')
+    if classification
+      modifier += equipped_items.where(items: { classification_bonus: classification }).sum('items.classification_defense_bonus')
+    end
+    modifier
+  end
+
   def set_level
     # Check if current level is accurate
-    current_level_xp_req = User::total_xp_needed_for_level(self.level)
-    next_level_xp_req = User::total_xp_needed_for_level(self.level+1)
+    current_level_xp_req = User.total_xp_needed_for_level(self.level)
+    next_level_xp_req = User.total_xp_needed_for_level(self.level + 1)
     if self.xp >= current_level_xp_req and self.xp < next_level_xp_req
       return
     end
 
     # Calculate new level
     n = 1
-    while User::total_xp_needed_for_level(n) <= self.xp
+    while User.total_xp_needed_for_level(n) <= self.xp
       n += 1
     end
-    self.level = n-1
+    self.level = n - 1
   end
 
   def xp_level_report
-    next_level_at = User::total_xp_needed_for_level(self.level+1)
-    levels_xp_diff = User::total_xp_needed_for_level(self.level+1) - User::total_xp_needed_for_level(self.level)
-    level_xp_surplus = self.xp - User::total_xp_needed_for_level(self.level)
+    next_level_at = User.total_xp_needed_for_level(self.level + 1)
+    levels_xp_diff = User.total_xp_needed_for_level(self.level + 1) - User.total_xp_needed_for_level(self.level)
+    level_xp_surplus = self.xp - User.total_xp_needed_for_level(self.level)
     {
       xp: self.xp,
       level: self.level,
@@ -126,8 +155,8 @@ class User < ApplicationRecord
   end
 
   def dies
-    xp_loss = (0.02*self.xp)+(100*(self.level-1))
-    xp_change = gains_or_loses_xp(xp_loss*-1)
+    xp_loss = (0.02 * self.xp) + (100 * (self.level - 1))
+    xp_change = gains_or_loses_xp(xp_loss * -1)
   end
 
   def give_starting_equipment

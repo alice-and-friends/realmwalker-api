@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
       resources :realm_locations, only: [:index]
       resources :dungeons, only: [:show]
+      get '/dungeons/:id/analyze' => 'dungeons#analyze', :as => :analyze
       post '/dungeons/:id/battle' => 'dungeons#battle', :as => :battle
     end
   end

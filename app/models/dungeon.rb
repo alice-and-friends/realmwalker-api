@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Dungeon < RealmLocation
   has_one :battlefield
   belongs_to :monster
@@ -11,11 +13,12 @@ class Dungeon < RealmLocation
 
   def self.max_dungeons
     return 10 if Rails.env.test?
+
     RealWorldLocation.for_dungeon.count / 22
   end
 
   def name
-    self.monster.name
+    monster.name
   end
 
   after_create do |d|
@@ -25,7 +28,90 @@ class Dungeon < RealmLocation
     puts "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
+  def difficulty_multiplier
+    {
+      1 => 180.0,
+      2 => 22.2,
+      3 => 6.0,
+      4 => 3.0,
+      5 => 2.0,
+      6 => 1.8,
+      7 => 1.6,
+      8 => 1.4,
+      9 => 1.2,
+      10 => 1.0,
+    }[level]
+  end
+
+  def battle_prediction_for(user)
+    # Calculate baseline based on player level and dungeon level
+    base_difficulty_score = ((difficulty_multiplier * (user.level.to_f / 2)).floor)
+    base_difficulty_score = 100 if base_difficulty_score > 100
+    base_difficulty_score = 0 if base_difficulty_score < 1
+
+    # Descriptions of modifiers which will be displayed to end user
+    modifier_descriptors_positive = []
+    modifier_descriptors_negative = []
+
+    # Player attack bonuses
+    modifier_descriptors_positive << "+#{User::BASE_ATTACK} base attack"
+    player_attack_bonus = user.attack_bonus(monster.classification)
+    modifier_descriptors_positive << "+#{player_attack_bonus} from equipment" unless player_attack_bonus.zero?
+
+    # Player attack penalties
+    player_attack_penalty = 0
+    if user.weapon.present? == false
+      player_attack_penalty += 10
+      modifier_descriptors_negative << "-#{player_attack_penalty} penalty for not wearing a weapon"
+    end
+
+    # Player defense
+    player_defense_bonus = user.defense_bonus(monster.classification)
+
+    # Monster defense
+    monster_defense = monster.defense
+    modifier_descriptors_negative << "-#{monster_defense} from monster defense" unless monster_defense.zero?
+
+    # Calculate effective difficulty and possible overkill
+    overkill = 0
+    chance_of_success = base_difficulty_score + User::BASE_ATTACK + player_attack_bonus - player_attack_penalty - monster_defense
+    if chance_of_success > 100
+      overkill = chance_of_success - 100
+      chance_of_success = 100
+    elsif chance_of_success < 1
+      chance_of_success = 0
+    end
+
+    # Calculate chance of bad stuff
+    modifier_descriptors_death = []
+    chance_of_death = 100 - chance_of_success
+    if user.amulet_of_life?
+      chance_of_death = 0
+      modifier_descriptors_death << 'Your Amulet of Life will protect you from death'
+    end
+    chance_of_inventory_loss = chance_of_death
+    chance_of_equipment_loss = chance_of_death / 10
+    if user.amulet_of_loss?
+      chance_of_inventory_loss = 0
+      chance_of_equipment_loss = 0
+      modifier_descriptors_death << 'Your Amulet of Loss will protect you from losing any items'
+    end
+
+    {
+      base_chance: base_difficulty_score,
+      chance_of_success: chance_of_success,
+      overkill: overkill,
+      modifiers_positive: modifier_descriptors_positive,
+      modifiers_negative: modifier_descriptors_negative,
+      chance_of_death: chance_of_death,
+      chance_of_inventory_loss: chance_of_inventory_loss,
+      chance_of_equipment_loss: chance_of_equipment_loss,
+      modifiers_death: modifier_descriptors_death,
+    }
+  end
+
   def battle_as(user)
+    puts "⚔️ #{user.name} started battle against #{monster.name}"
     defeated_by! user # Mark dungeon as defeated
     {
       battle_result: {
@@ -49,7 +135,7 @@ class Dungeon < RealmLocation
     self.defeated_by = user
     save!
     Battlefield.create({
-                         real_world_location: self.real_world_location,
+                         real_world_location: real_world_location,
                          dungeon: self
                        })
   end
@@ -59,7 +145,7 @@ class Dungeon < RealmLocation
     self.real_world_location = RealWorldLocation
                            .for_dungeon
                            .where.not(id: [Dungeon.pluck(:real_world_location_id)])
-                           .order("RANDOM()")
+                           .order('RANDOM()')
                            .limit(1)
                            .first
   end

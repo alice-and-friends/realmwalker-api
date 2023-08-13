@@ -1,0 +1,171 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-rake
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'tmp/**/*'
+    - '.git/**/*'
+    - 'bin/*'
+  TargetRubyVersion: 2.7
+  SuggestExtensions: false
+
+Style/Documentation:
+  Enabled: false
+
+Naming/PredicateName:
+  # Method define macros for dynamically generated method.
+  MethodDefinitionMacros:
+    - define_method
+    - define_singleton_method
+    - def_node_matcher
+    - def_node_search
+
+Style/AccessorGrouping:
+  Exclude:
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+
+Style/FormatStringToken:
+  # Because we parse a lot of source codes from strings. Percent arrays
+  # look like unannotated format string tokens to this cop.
+  Exclude:
+    - spec/**/*
+
+Style/IpAddresses:
+  Exclude:
+
+Layout/EndOfLine:
+  EnforcedStyle: lf
+
+Layout/ClassStructure:
+  Enabled: true
+
+Layout/RedundantLineBreak:
+  Enabled: true
+
+Layout/TrailingWhitespace:
+  AllowInHeredoc: false
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle:
+    - key
+    - table
+  EnforcedColonStyle:
+    - key
+    - table
+
+Layout/LineLength:
+  Max: 100
+  AllowedPatterns:
+    - !ruby/regexp /\A +(it|describe|context|shared_examples|include_examples|it_behaves_like) ["']/
+
+Lint/InterpolationCheck:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Lint/UselessAccessModifier:
+  MethodCreatingMethods:
+    - 'def_matcher'
+    - 'def_node_matcher'
+
+Lint/EmptyFile:
+  Exclude:
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+    - '**/*.gemspec'
+
+Metrics/ClassLength:
+  Exclude:
+
+Metrics/ModuleLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Naming/InclusiveLanguage:
+  Enabled: true
+  CheckStrings: true
+  FlaggedTerms:
+    ' a offense':
+      Suggestions:
+        - an offense
+    auto-correct:
+      Suggestions:
+        - autocorrect
+    auto_correct:
+      Suggestions:
+        - autocorrect
+    behaviour:
+      Suggestions:
+        - behavior
+    offence:
+      Suggestions:
+        - offense
+    'does not registers':
+      Suggestions:
+        - does not register
+  Exclude:
+    - lib/rubocop/cop/naming/inclusive_language.rb
+    - lib/rubocop/cop/mixin/auto_corrector.rb
+    - spec/rubocop/cop/naming/inclusive_language_spec.rb
+
+#RSpec:
+#  Language:
+#    Expectations:
+#      - expect_autocorrect_options_for_autocorrect
+#      - expect_autocorrect_options_for_autocorrect_all
+#      - expect_autocorrect_options_for_fix_layout
+#      - expect_correction
+#      - expect_feature_loader
+#      - expect_no_offenses
+#      - expect_offense
+#
+#RSpec/FilePath:
+#  Exclude:
+#    - spec/rubocop/cop/internal_affairs/redundant_let_rubocop_config_new_spec.rb
+#    - spec/rubocop/formatter/junit_formatter_spec.rb
+#
+#RSpec/PredicateMatcher:
+#  EnforcedStyle: explicit
+#
+#RSpec/MessageSpies:
+#  EnforcedStyle: receive
+#
+#RSpec/NestedGroups:
+#  Max: 7
+#
+#RSpec/MultipleMemoizedHelpers:
+#  Enabled: false
+#
+#RSpec/StubbedMock:
+#  Enabled: false
+
+Performance/CollectionLiteralInLoop:
+  Exclude:
+    - 'Rakefile'
+    - 'spec/**/*.rb'
+
+Performance/EndWith:
+  SafeMultiline: false
+
+Performance/StartWith:
+  SafeMultiline: false
+
+Gemspec/DependencyVersion:
+  Enabled: true
+
+Style/RequireOrder:
+  Enabled: true
