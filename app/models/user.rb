@@ -140,8 +140,7 @@ class User < ApplicationRecord
 
     self.xp += n
     self.xp = 0 if self.xp.negative? # xp can never be less than 0
-    # don't exceed xp limit, this enforces max level = 100
-    self.xp = User::XP_CAP if self.xp > User::XP_CAP
+    self.xp = User::XP_CAP if self.xp > User::XP_CAP # don't exceed xp limit, this enforces max level = 100
     set_level
     save!
     {
@@ -156,13 +155,10 @@ class User < ApplicationRecord
     }
   end
 
-  def dies
-    raise 'dies called for user wearing amulet of life, always check for amulet before calling.' if amulet_of_life?
-
-    xp_loss = -1 * (
+  def death_xp_penalty
+    -(
       (0.02 * self.xp) + (100 * (level - 1))
     )
-    gains_or_loses_xp(xp_loss)
   end
 
   def give_starting_equipment

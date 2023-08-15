@@ -110,11 +110,24 @@ class Dungeon < RealmLocation
 
   def battle_as(user)
     Rails.logger.debug { "⚔️ #{user.name} started battle against #{monster.name}" }
-    defeated_by! user # Mark dungeon as defeated
+
+    prediction = battle_prediction_for(user)
+    r = rand(1..100)
+    user_won = (r <= prediction[:chance_of_success])
+
+    if user_won
+      defeated_by! user # Mark dungeon as defeated
+      xp_level_change = user.gains_or_loses_xp(monster.xp)
+    elsif user.amulet_of_life?
+      xp_level_change = user.gains_or_loses_xp(0)
+    else
+      xp_level_change = user.gains_or_loses_xp(user.death_xp_penalty)
+    end
+
     {
       battle_result: {
-        user_won: true,
-        user_died: false
+        user_won: user_won,
+        user_died: !user_won
       },
       inventory_result: {
         inventory_lost: false,
@@ -122,7 +135,7 @@ class Dungeon < RealmLocation
         amulet_of_loss_consumed: false,
         amulet_of_loss_life: false,
       },
-      xp_level_change: user.gains_or_loses_xp(monster.xp),
+      xp_level_change: xp_level_change,
       xp_level_report: user.xp_level_report,
     }
   end

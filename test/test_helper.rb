@@ -17,9 +17,9 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
   def generate_test_user
     test_user_name = Faker::Name.first_name
-    test_user_unique = Faker::Number.unique
+    test_user_unique = Faker::Number.unique.number(digits: 10)
     User.create!(
-      auth0_user_id: 'test_user_unique',
+      auth0_user_id: test_user_unique,
       auth0_user_data: Auth0UserData.new(
         sub: "test|#{test_user_unique}",
         given_name: test_user_name,
