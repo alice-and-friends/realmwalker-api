@@ -3,8 +3,11 @@
 class User < ApplicationRecord
   has_many :inventory_items, dependent: :delete_all
   has_many :items, through: :inventory_items
+  has_many :dungeons, inverse_of: :defeated_by, foreign_key: 'defeated_by_id', dependent: :nullify
 
-  BASE_ATTACK = 10.freeze
+  MAX_XP = 1_000_000
+  BASE_ATTACK = 10
+  BASE_DEFENSE = 10
   ACHIEVEMENTS = %w[].freeze
 
   serialize :auth0_user_data, Auth0UserData
@@ -14,7 +17,6 @@ class User < ApplicationRecord
   validate :valid_auth0_user_data
   validate :achievements_are_valid
 
-  XP_CAP = 1_000_000
   def self.total_xp_needed_for_level(l)
     ((10 * (l - 1))**2) + ((l - 1) * 100)
   end
@@ -85,12 +87,16 @@ class User < ApplicationRecord
     equipped_items.find_by(items: { type: 'weapon' })
   end
 
-  def amulet_of_loss?
-    equipped_items.find_by(items: { name: 'Amulet of Loss' }).present?
+  def amulet_of_loss
+    equipped_items.find_by(items: { name: 'Amulet of Loss' })
   end
 
-  def amulet_of_life?
-    equipped_items.find_by(items: { name: 'Amulet of Life' }).present?
+  def amulet_of_life
+    equipped_items.find_by(items: { name: 'Amulet of Life' })
+  end
+
+  def equipped?(item_name)
+    equipped_items.find_by(items: { name: item_name }).present?
   end
 
   def attack_bonus(classification = nil)
@@ -113,7 +119,7 @@ class User < ApplicationRecord
     # Check if current level is accurate
     current_level_xp_req = User.total_xp_needed_for_level(level)
     next_level_xp_req = User.total_xp_needed_for_level(level + 1)
-    return if xp >= current_level_xp_req and xp < next_level_xp_req
+    return if (xp >= current_level_xp_req) && (xp < next_level_xp_req)
 
     # Calculate new level
     n = 1
@@ -130,17 +136,40 @@ class User < ApplicationRecord
       level: level,
       next_level_at: next_level_at,
       to_next_level: next_level_at - xp,
-      next_level_progress: (level_xp_surplus.to_f / levels_xp_diff.to_f * 100.0).floor
+      next_level_progress: (level_xp_surplus.to_f / levels_xp_diff * 100.0).floor
     }
   end
 
-  def gains_or_loses_xp(n)
+  def xp_multiplier
+    1.0 + equipped_items.sum('items.xp_bonus')
+  end
+
+  def loot_bonus
+    equipped_items.sum('items.loot_bonus')
+  end
+
+  def gains_or_loses_gold(amount)
+    prev_gold = gold.freeze
+
+    self.gold += amount
+    self.gold = 0 if self.gold.negative? # Can't have less than 0 gold
+    save!
+    {
+      prev_gold: prev_gold,
+      current_gold: self.gold,
+      gold_diff: self.gold - prev_gold,
+    }
+  end
+
+  def gains_or_loses_xp(amount)
     prev_xp = xp.freeze
     prev_level = level.freeze
 
-    self.xp += n
+    (amount *= xp_multiplier).to_i if amount.positive?
+
+    self.xp += amount
     self.xp = 0 if self.xp.negative? # xp can never be less than 0
-    self.xp = User::XP_CAP if self.xp > User::XP_CAP # don't exceed xp limit, this enforces max level = 100
+    self.xp = User::MAX_XP if self.xp > User::MAX_XP # don't exceed xp limit, this enforces max level = 100
     set_level
     save!
     {
@@ -155,22 +184,62 @@ class User < ApplicationRecord
     }
   end
 
+  def gains_loot(loot_container)
+    throw('not a loot container') unless loot_container.is_a? LootContainer
+
+    gains_or_loses_gold(loot_container.gold) if loot_container.gold.positive?
+    loot_container.items.each do |item|
+      gain_item item
+    end
+  end
+
   def death_xp_penalty
     -(
       (0.02 * self.xp) + (100 * (level - 1))
     )
   end
 
+  def handle_death
+    inventory_changes = {
+      inventory_lost: false,
+      equipment_lost: false,
+      amulet_of_loss_consumed: false,
+      amulet_of_life_consumed: false,
+    }
+
+    if amulet_of_life.present?
+      xp_level_change = gains_or_loses_xp(0)
+      amulet_of_life.destroy!
+      inventory_changes[:amulet_of_life_consumed] = true
+    else
+      xp_level_change = gains_or_loses_xp(death_xp_penalty)
+
+      if amulet_of_loss.present?
+        amulet_of_loss.destroy!
+        inventory_changes[:amulet_of_loss_consumed] = true
+      else
+        inventory_items.where(is_equipped: false).destroy_all
+        inventory_changes[:inventory_lost] = true
+
+        # 10% chance of equipment loss
+        if equipped_items.empty? == false && rand(1..10) == 1
+          equipped_items.sample.destroy!
+          inventory_changes[:equipment_lost] = true
+        end
+      end
+    end
+
+    [xp_level_change, inventory_changes]
+  end
+
   def give_starting_equipment
-    ['Shortsword', 'Leather Armor', 'Iron Helmet'].each do |item_name|
-    #['Amulet of Abundance', 'Ring of Treasure Hunter', 'Angelic Axe', 'Demon Shield', 'Prismatic Helmet', 'Scale Armor'].each do |item_name|
+    starting_equipment = ['Shortsword', 'Leather Armor', 'Iron Helmet'] # Changing this may result in failing tests
+    #starting_equipment += ['Angelic Axe', 'Amulet of Loss', 'Amulet of Life', 'Amulet of Abundance', 'Ring of Treasure Hunter', 'Relic Sword', 'Shield of Destiny'] if Rails.env.development?
+
+    starting_equipment.each do |item_name|
       item = Item.find_by(name: item_name)
       inventory_item = gain_item(item)
-      equip_item(inventory_item)
-    end
-    ['Angelic Axe'].each do |item_name|
-      item = Item.find_by(name: item_name)
-      gain_item(item)
+      equip_item(inventory_item, true)
     end
   end
 

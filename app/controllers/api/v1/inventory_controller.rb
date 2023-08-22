@@ -3,7 +3,10 @@ class Api::V1::InventoryController < Api::V1::ApiController
   before_action :find_inventory
 
   def index
-    render json: @current_user_inventory, each_serializer: InventoryItemSerializer, status: :ok
+    render json: {
+      gold: @current_user.gold,
+      items: ActiveModelSerializers::SerializableResource.new(@current_user_inventory, each_serializer: InventoryItemSerializer)
+    }, status: :ok
   end
 
   def set_equipped

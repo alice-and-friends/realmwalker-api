@@ -107,6 +107,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
     t.hstore "preferences"
     t.integer "xp", default: 0
     t.integer "level", default: 1
+    t.integer "gold", default: 10
     t.text "achievements", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

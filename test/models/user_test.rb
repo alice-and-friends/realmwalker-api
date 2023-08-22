@@ -5,8 +5,24 @@ class UserTest < ActiveSupport::TestCase
     assert_operator User.count, :>, 0
   end
   test 'user receives starting equipment when created' do
+    assert_not_empty generate_test_user.inventory_items
+  end
+  test 'new user starts with a small amount of gold' do
     u = generate_test_user
-    assert_not_empty u.inventory_items
+    assert_includes 1..100, u.gold
+  end
+  test 'user gains and loses gold' do
+    u = generate_test_user
+    starting_gold = u.gold
+    u.gains_or_loses_gold(2)
+    assert_equal starting_gold + 2, u.gold
+    u.gains_or_loses_gold(-1)
+    assert_equal starting_gold + 1, u.gold
+  end
+  test "user can't have less than 0 gold" do
+    u = User.first
+    u.gains_or_loses_gold(-999_999_999)
+    assert_equal 0, u.gold
   end
   test 'can destroy user' do
     c = User.count
@@ -41,17 +57,36 @@ class UserTest < ActiveSupport::TestCase
   end
   test "user can't exceed 1M xp / level 100" do
     u = User.first
-    u.gains_or_loses_xp(999_999_999)
-    assert_equal 1_000_000, u.xp
+    u.gains_or_loses_xp(User::MAX_XP + 999_999_999)
+    assert_equal User::MAX_XP, u.xp
     assert_equal 100, u.level
   end
-  test 'user loses experience upon death' do
+  test "user can't have less than 0 xp / level 1" do
     u = User.first
-    u.gains_or_loses_xp(User.total_xp_needed_for_level(50))
-    assert_equal 50, u.level
-    u.dies
-    assert_equal 49, u.level
-    assert_operator u.xp, :<, User.total_xp_needed_for_level(50)
+    u.gains_or_loses_xp(-(User::MAX_XP + 999_999_999))
+    assert_equal 0, u.xp
+    assert_equal 1, u.level
+  end
+  test 'new user gains loot at standard rate' do
+    assert_equal 0.0, generate_test_user.loot_bonus
+  end
+  test 'user has a loot bonus when wearing ring of treasure hunter' do
+    u = generate_test_user
+    u.equip_item u.gain_item Item.find_by(name: 'Ring of Treasure Hunter')
+    assert u.loot_bonus.positive?
+  end
+  test 'new user gains xp at standard rate' do
+    u = generate_test_user
+    assert_equal 1, u.xp_multiplier
+    u.gains_or_loses_xp 100
+    assert_equal 100, u.xp
+  end
+  test 'user gains more xp when wearing amulet of abundance' do
+    u = generate_test_user
+    u.equip_item u.gain_item Item.find_by(name: 'Amulet of Abundance')
+    assert_operator u.xp_multiplier, :>, 1.0
+    u.gains_or_loses_xp 100
+    assert_operator u.xp, :>, 100
   end
   test 'user cannot exceed equipment quotas' do
     # Prepare a user a bunch of items to use for the test
@@ -107,5 +142,26 @@ class UserTest < ActiveSupport::TestCase
     assert_equal 1, u.equipped_items.where('item.type': 'weapon').count,
     u.equip_item(SHIELD_1, true)
     assert_equal 0, u.equipped_items.where('item.type': 'weapon').count # <- Weapon should no longer be equipped
+  end
+  test "user has higher defense bonus after equipping legendary shield" do
+    u = generate_test_user
+    orig_defense_bonus = u.defense_bonus
+    shield = u.gain_item Item.find_by(type: 'shield', rarity: 'legendary')
+    u.equip_item(shield, true)
+    assert_operator u.defense_bonus, :>, orig_defense_bonus
+  end
+  test 'user loses experience upon death' do
+    u = generate_test_user
+    u.gains_or_loses_xp User.total_xp_needed_for_level(5)
+    assert_equal 5, u.level
+    u.handle_death
+    assert_equal 4, u.level
+    assert_operator u.xp, :<, User.total_xp_needed_for_level(5)
+  end
+  test 'user loses inventory upon death' do
+    u = generate_test_user
+    u.gain_item Item.first
+    u.handle_death
+    assert_equal 0, u.inventory_items.where(is_equipped: false).count
   end
 end

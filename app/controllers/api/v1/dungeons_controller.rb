@@ -17,6 +17,7 @@ class Api::V1::DungeonsController < Api::V1::ApiController
   end
 
   private
+
   def find_active_dungeon
     @dungeon = Dungeon.find(params[:id])
     if @dungeon.active? == false

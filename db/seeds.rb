@@ -8,6 +8,8 @@
 
 require 'csv'
 
+puts 'Seeding the database...'
+
 # CREATE REAL WORLD LOCATIONS
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'real_world_locations.csv'))
 csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
@@ -62,6 +64,8 @@ csv.each do |row|
   item.save!
 end
 puts "🌱 Seeded #{Item.count} items."
+
+return if Rails.env.production?
 
 # CREATE DUNGEONS
 Dungeon.max_dungeons.times do |counter|

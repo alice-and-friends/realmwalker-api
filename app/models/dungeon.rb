@@ -26,6 +26,10 @@ class Dungeon < RealmLocation
     Rails.logger.debug "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
+  def desc
+    "level #{level} #{monster.classification}"
+  end
+
   def difficulty_multiplier
     {
       1 => 180.0,
@@ -41,11 +45,15 @@ class Dungeon < RealmLocation
     }[level]
   end
 
+  def loot_container_for(user)
+    loot_generator = LootGenerator.new(user.loot_bonus)
+    loot_generator.set_loot_table(monster.level, monster.classification)
+    loot_generator.generate_loot
+  end
+
   def battle_prediction_for(user)
     # Calculate baseline based on player level and dungeon level
-    base_difficulty_score = (difficulty_multiplier * (user.level.to_f / 2)).floor
-    base_difficulty_score = 100 if base_difficulty_score > 100
-    base_difficulty_score = 0 if base_difficulty_score < 1
+    base_difficulty_score = (difficulty_multiplier * (user.level.to_f / 2)).floor.clamp(0, 100)
 
     # Descriptions of modifiers which will be displayed to end user
     modifier_descriptors_positive = []
@@ -56,44 +64,33 @@ class Dungeon < RealmLocation
     player_attack_bonus = user.attack_bonus(monster.classification)
     modifier_descriptors_positive << "+#{player_attack_bonus} from equipment" unless player_attack_bonus.zero?
 
+    # Monster defense
+    monster_defense = monster.defense
+    modifier_descriptors_negative << "-#{monster_defense} from monster defense" unless monster_defense.zero?
+
     # Player attack penalties
     player_attack_penalty = 0
-    if user.weapon.present? == false
-      player_attack_penalty += 10
-      modifier_descriptors_negative << "-#{player_attack_penalty} penalty for not wearing a weapon"
+    if user.weapon.nil?
+      player_attack_penalty = 10
+      modifier_descriptors_negative << "-#{player_attack_penalty} attack penalty for equipping a weapon"
     end
 
     # Player defense
     player_defense_bonus = user.defense_bonus(monster.classification)
 
-    # Monster defense
-    monster_defense = monster.defense
-    modifier_descriptors_negative << "-#{monster_defense} from monster defense" unless monster_defense.zero?
-
     # Calculate effective difficulty and possible overkill
     overkill = 0
-    chance_of_success = base_difficulty_score + User::BASE_ATTACK + player_attack_bonus - player_attack_penalty - monster_defense
-    if chance_of_success > 100
-      overkill = chance_of_success - 100
-      chance_of_success = 100
-    elsif chance_of_success < 1
-      chance_of_success = 0
-    end
+    chance_of_success = (
+      base_difficulty_score + User::BASE_ATTACK + player_attack_bonus - player_attack_penalty - monster_defense
+    ).clamp(0, 100)
 
     # Calculate chance of bad stuff
-    modifier_descriptors_death = []
-    chance_of_death = 100 - chance_of_success
-    if user.amulet_of_life?
-      chance_of_death = 0
-      modifier_descriptors_death << 'Your Amulet of Life protects you from death. The amulet will be destroyed if you lose the battle.'
-    end
-    chance_of_inventory_loss = chance_of_death
-    chance_of_equipment_loss = chance_of_death / 10
-    if user.amulet_of_loss?
-      chance_of_inventory_loss = 0
-      chance_of_equipment_loss = 0
-      modifier_descriptors_death << 'Your Amulet of Loss will protect you from losing any items. The amulet will be destroyed if you lose the battle'
-    end
+    # modifier_descriptors_death = []
+    chance_of_defeat = 100 - chance_of_success
+    chance_of_escape = User::BASE_DEFENSE + player_defense_bonus
+    risk_of_death_on_defeat = 100 - chance_of_escape
+    # chance_of_inventory_loss = chance_of_death
+    # chance_of_equipment_loss = chance_of_death / 10
 
     {
       base_chance: base_difficulty_score,
@@ -101,40 +98,59 @@ class Dungeon < RealmLocation
       overkill: overkill,
       modifiers_positive: modifier_descriptors_positive,
       modifiers_negative: modifier_descriptors_negative,
-      chance_of_death: chance_of_death,
-      chance_of_inventory_loss: chance_of_inventory_loss,
-      chance_of_equipment_loss: chance_of_equipment_loss,
-      modifiers_death: modifier_descriptors_death,
+      # chance_of_defeat: chance_of_defeat,
+      chance_of_escape: chance_of_escape,
+      risk_of_death: {
+        on_defeat: risk_of_death_on_defeat,
+        overall: risk_of_death_on_defeat * chance_of_defeat / 100
+      }
+      # chance_of_inventory_loss: chance_of_inventory_loss,
+      # chance_of_equipment_loss: chance_of_equipment_loss,
+      # modifiers_death: modifier_descriptors_death,
     }
   end
 
   def battle_as(user)
-    Rails.logger.debug { "⚔️ #{user.name} started battle against #{monster.name}" }
+    Rails.logger.debug "⚔️ #{user.name} started battle against #{monster.name}"
 
+    # Defaults
+    monster_died = user_died = false
+    inventory_changes = nil
+
+    # Let's go
     prediction = battle_prediction_for(user)
-    r = rand(1..100)
-    user_won = (r <= prediction[:chance_of_success])
-
+    Rails.logger.debug "⚔️ #{user.name} has #{prediction[:chance_of_success]}% chance of success, #{prediction[:chance_of_escape]}% chance of escape"
+    roll = rand(1..100)
+    user_won = (roll <= prediction[:chance_of_success])
+    Rails.logger.debug "⚔️ #{user.name} rolled a #{roll} and #{user_won ? 'won' : 'lost'}"
     if user_won
       defeated_by! user # Mark dungeon as defeated
       xp_level_change = user.gains_or_loses_xp(monster.xp)
-    elsif user.amulet_of_life?
-      xp_level_change = user.gains_or_loses_xp(0)
-    else
-      xp_level_change = user.gains_or_loses_xp(user.death_xp_penalty)
+
+      monster_died = (rand(1..100) > monster.defense)
+      if monster_died
+        loot_container = loot_container_for(user)
+        user.gains_loot(loot_container)
+        inventory_changes = {
+          loot: loot_container
+        }
+      end
+    else # user lost
+      user_died = (rand(1..100) <= prediction[:risk_of_death][:on_defeat])
+      if user_died
+        xp_level_change, inventory_changes = user.handle_death
+      else
+        xp_level_change = user.gains_or_loses_xp(0)
+      end
     end
 
     {
       battle_result: {
         user_won: user_won,
-        user_died: !user_won
+        user_died: user_died,
+        monster_died: monster_died,
       },
-      inventory_result: {
-        inventory_lost: false,
-        equipment_lost: false,
-        amulet_of_loss_consumed: false,
-        amulet_of_loss_life: false,
-      },
+      inventory_changes: inventory_changes,
       xp_level_change: xp_level_change,
       xp_level_report: user.xp_level_report,
     }
@@ -154,9 +170,7 @@ class Dungeon < RealmLocation
     self.real_world_location = RealWorldLocation
                                .for_dungeon
                                .where.not(id: [Dungeon.pluck(:real_world_location_id)])
-                               .order('RANDOM()')
-                               .limit(1)
-                               .first
+                               .sample
   end
 
   def randomize_level_and_monster!
@@ -164,10 +178,10 @@ class Dungeon < RealmLocation
 
       # Lower level = Should have higher chance of spawning
       # Higher level = Should have lower chance of spawning
-      # So we generate an array like [10, 9, 9, 8, 8, 8, 7, 7, 7, 7 ...] to be used for weighted randomization.
+      # So we generate an array like [10, 9, 9, 9, 8, 8, 7, 7, 7, 7 ...] to be used for weighted randomization.
       diffs = []
       (1..9).each do |level|
-        (2 * (10 - level)).floor.times do
+        (2.5 * (10 - level)).floor.times do
           diffs << level
         end
       end
