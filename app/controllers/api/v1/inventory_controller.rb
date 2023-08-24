@@ -1,5 +1,4 @@
 class Api::V1::InventoryController < Api::V1::ApiController
-  before_action :authorize
   before_action :find_inventory
 
   def index

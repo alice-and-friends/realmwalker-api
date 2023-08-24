@@ -1,5 +1,4 @@
 class Api::V1::DungeonsController < Api::V1::ApiController
-  before_action :authorize
   before_action :find_active_dungeon, only: [:show, :analyze, :battle]
 
   def show

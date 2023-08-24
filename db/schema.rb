@@ -102,15 +102,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "auth0_user_id"
+    t.string "auth0_user_id", null: false
     t.json "auth0_user_data"
     t.hstore "preferences"
     t.integer "xp", default: 0
     t.integer "level", default: 1
     t.integer "gold", default: 10
     t.text "achievements", default: [], array: true
+    t.text "access_token"
+    t.datetime "access_token_expires_at", precision: nil
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["auth0_user_id"], name: "index_users_on_auth0_user_id", unique: true
   end
 
   add_foreign_key "dungeons", "users", column: "defeated_by_id"

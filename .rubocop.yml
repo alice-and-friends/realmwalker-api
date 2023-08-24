@@ -31,6 +31,9 @@ Style/AccessorGrouping:
 Style/TrailingCommaInHashLiteral:
   Enabled: false
 
+Style/TrailingCommaInArguments:
+  Enabled: false
+
 Style/FormatStringToken:
   # Because we parse a lot of source codes from strings. Percent arrays
   # look like unannotated format string tokens to this cop.
@@ -183,4 +186,7 @@ Style/OptionalBooleanParameter:
   Enabled: false
 
 Style/ClassAndModuleChildren:
+  Enabled: false
+
+Rails/Output:
   Enabled: false

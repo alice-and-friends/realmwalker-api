@@ -9,14 +9,14 @@ class Auth0Helper
   Error = Struct.new(:message, :status)
   Response = Struct.new(:decoded_token, :error)
 
-  Token = Struct.new(:token) do
-    def validate_permissions(permissions)
-      required_permissions = Set.new permissions
-      scopes = token[0]['scope']
-      token_permissions = scopes.present? ? Set.new(scopes.split(' ')) : Set.new
-      required_permissions <= token_permissions
-    end
-  end
+  # Token = Struct.new(:token) do
+  #   def validate_permissions(permissions)
+  #     required_permissions = Set.new permissions
+  #     scopes = token[0]['scope']
+  #     token_permissions = scopes.present? ? Set.new(scopes.split(' ')) : Set.new
+  #     required_permissions <= token_permissions
+  #   end
+  # end
 
   # Helper Functions
   def self.domain_url
@@ -30,16 +30,15 @@ class Auth0Helper
                  verify_iss: true,
                  aud: ENV.fetch('AUTH0_AUDIENCE'),
                  verify_aud: true,
-                 jwks: { keys: jwks_hash[:keys] },  
+                 jwks: { keys: jwks_hash[:keys] },
                })
   end
 
+  # Get JSON Web Key Set from Auth0
   def self.jwks
     jwks_uri = URI("#{domain_url}.well-known/jwks.json")
     Net::HTTP.get_response jwks_uri
   end
-
-  public
 
   # Token Validation
   def self.validate_token(token)
@@ -54,28 +53,25 @@ class Auth0Helper
 
     decoded_token = decode_token(token, jwks_hash)
 
-    Response.new(Token.new(decoded_token), nil)
+    # Response.new(Token.new(decoded_token), nil)
+    [decoded_token, nil]
   rescue JWT::VerificationError, JWT::DecodeError => e
     error = Error.new('Bad credentials', :unauthorized)
-    Response.new(nil, error)
+    # Response.new(nil, error)
+    [nil, error]
   end
 
-  def self.identify(access_token)
-    @access_token = access_token
-    get_user
-  end
-
-  def self.get_user
+  def self.get_user(access_token)
     uri = URI("#{domain_url}userinfo")
     req = Net::HTTP::Get.new(uri)
-    req['Authorization'] = "Bearer #{@access_token}"
-    res = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) {|http|
+    req['Authorization'] = "Bearer #{access_token}"
+    res = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) do |http|
       http.request(req)
-    }
+    end
     json = JSON.parse(res.body, symbolize_names: true)
 
     return Auth0UserData.new(json), nil if res.is_a? Net::HTTPSuccess
 
-    [nil, res]
+    [nil, res] # error
   end
 end

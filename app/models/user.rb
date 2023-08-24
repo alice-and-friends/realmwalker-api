@@ -16,9 +16,19 @@ class User < ApplicationRecord
   validates :auth0_user_id, presence: true, uniqueness: true
   validate :valid_auth0_user_data
   validate :achievements_are_valid
+  validate :access_token_expires
 
   def self.total_xp_needed_for_level(l)
     ((10 * (l - 1))**2) + ((l - 1) * 100)
+  end
+
+  def self.find_by_access_token(access_token)
+    return nil if access_token.nil?
+
+    user = User.find_by(access_token: access_token)
+    return nil unless user
+
+    user.access_token_expires_at > Time.current ? user : nil
   end
 
   delegate :email, to: :auth0_user_data
@@ -250,6 +260,12 @@ class User < ApplicationRecord
     errors.add(:auth0_user_data, 'is missing property given_name') if auth0_user_data.given_name.nil?
     errors.add(:auth0_user_data, 'is missing property family_name') if auth0_user_data.family_name.nil?
     # errors.add(:auth0_user_data, 'is missing property email') if auth0_user_data.email.nil?
+  end
+
+  def access_token_expires
+    if access_token.present? && access_token_expires_at.nil?
+      errors.add(:base, 'access token without expiration date is not allowed')
+    end
   end
 
   private
