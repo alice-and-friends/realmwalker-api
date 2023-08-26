@@ -55,7 +55,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
     t.string "rarity", null: false
     t.string "dropped_by_classification", default: [], array: true
     t.integer "dropped_by_level"
-    t.boolean "two_handed"
+    t.integer "drop_max_amount"
+    t.boolean "two_handed", default: false, null: false
     t.integer "attack_bonus", limit: 2, default: 0
     t.integer "defense_bonus", limit: 2, default: 0
     t.string "classification_bonus"
@@ -63,10 +64,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
     t.integer "classification_defense_bonus", limit: 2, default: 0
     t.float "xp_bonus", default: 0.0
     t.float "loot_bonus", default: 0.0
-    t.integer "npc_buy"
-    t.integer "npc_sell"
+    t.integer "armorer_buy"
+    t.integer "armorer_sell"
+    t.integer "jeweller_buy"
+    t.integer "jeweller_sell"
+    t.integer "magic_shop_buy"
+    t.integer "magic_shop_sell"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_items_on_name", unique: true
   end
 
   create_table "monsters", force: :cascade do |t|
@@ -82,6 +88,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
   create_table "npcs", force: :cascade do |t|
     t.bigint "real_world_location_id"
     t.string "name"
+    t.string "role"
+    t.string "shop_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["real_world_location_id"], name: "index_npcs_on_real_world_location_id"
