@@ -69,6 +69,9 @@ GEM
       activesupport (= 7.0.6)
     activerecord-import (1.5.0)
       activerecord (>= 4.2)
+    activerecord-postgis-adapter (8.0.2)
+      activerecord (~> 7.0.0)
+      rgeo-activerecord (~> 7.0.0)
     activestorage (7.0.6)
       actionpack (= 7.0.6)
       activejob (= 7.0.6)
@@ -218,6 +221,10 @@ GEM
       netrc (~> 0.8)
     retryable (3.0.5)
     rexml (3.2.6)
+    rgeo (3.0.0)
+    rgeo-activerecord (7.0.1)
+      activerecord (>= 5.0)
+      rgeo (>= 1.0.0)
     rubocop (1.56.0)
       base64 (~> 0.1.1)
       json (~> 2.3)
@@ -263,6 +270,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.10.13)
   activerecord-import
+  activerecord-postgis-adapter
   auth0
   bootsnap
   database_cleaner-active_record

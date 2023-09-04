@@ -2,7 +2,7 @@
 
 class NpcSerializer < RealmLocationSerializer
   attributes :species, :gender, :role, :portrait
-  attributes :shop_type, :buy_offers, :sell_offers if :shop?
+  attributes :shop_type, :buy_offers, :sell_offers, :spooked if :shop?
 
   def portrait
     object.portrait.name

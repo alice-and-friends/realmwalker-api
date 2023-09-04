@@ -10,6 +10,7 @@ class Npc < RealmLocation
 
   ROLES = %w[shopkeeper].freeze
   SHOP_TYPES = %w[armorer jeweller magic].freeze
+  SPOOK_DISTANCE = 500 # meters
   before_validation :set_real_world_location!, on: :create
   before_validation :assign_species!, on: :create
   before_validation :assign_gender!, on: :create
@@ -63,6 +64,14 @@ class Npc < RealmLocation
       .includes(item: :trade_offers) # Eager load associated records
       .distinct
       .sort_by { |offer| offer.item.name }
+  end
+
+  delegate :coordinates, to: :real_world_location
+
+  def spooked
+    Dungeon.active.joins(:real_world_location).where(
+      "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{SPOOK_DISTANCE})", coordinates: coordinates
+    ).exists?
   end
 
   private

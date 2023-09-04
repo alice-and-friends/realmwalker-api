@@ -14,6 +14,7 @@ ActiveRecord::Schema[7.0].define(version: 403) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
+  enable_extension "postgis"
 
   create_table "battlefields", force: :cascade do |t|
     t.bigint "real_world_location_id"
@@ -114,7 +115,7 @@ ActiveRecord::Schema[7.0].define(version: 403) do
     t.string "name", null: false
     t.string "type", null: false
     t.string "ext_id", null: false
-    t.point "coordinates", null: false
+    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

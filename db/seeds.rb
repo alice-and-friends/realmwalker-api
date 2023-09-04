@@ -27,10 +27,12 @@ execution_time = Benchmark.measure do
       name: row['name'],
       ext_id: row['ext_id'],
       type: row['type'],
-      coordinates: ActiveRecord::Point.new(row['lat'], row['lon'])
+      # coordinates: ActiveRecord::Point.new(row['lat'], row['lon']),
+      coordinates: "POINT(#{row['lat']} #{row['lon']})",
     )
     location.type = 'shop' if location.ext_id[-2..].in? %w[00 01]
     locations << location
+    puts location.errors.inspect, location.coordinates unless location.valid?
   end
   RealWorldLocation.import locations
   puts "🌱 Seeded #{RealWorldLocation.count} real world locations."
