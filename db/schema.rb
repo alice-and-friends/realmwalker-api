@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
+ActiveRecord::Schema[7.0].define(version: 403) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
@@ -40,9 +40,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
   end
 
   create_table "inventory_items", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "item_id"
-    t.boolean "is_equipped", default: false
+    t.bigint "user_id", null: false
+    t.bigint "item_id", null: false
+    t.boolean "is_equipped", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["item_id"], name: "index_inventory_items_on_item_id"
@@ -52,6 +52,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
   create_table "items", force: :cascade do |t|
     t.string "name", null: false
     t.string "type", null: false
+    t.string "icon", null: false
     t.string "rarity", null: false
     t.string "dropped_by_classification", default: [], array: true
     t.integer "dropped_by_level"
@@ -64,12 +65,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
     t.integer "classification_defense_bonus", limit: 2, default: 0
     t.float "xp_bonus", default: 0.0
     t.float "loot_bonus", default: 0.0
-    t.integer "armorer_buy"
-    t.integer "armorer_sell"
-    t.integer "jeweller_buy"
-    t.integer "jeweller_sell"
-    t.integer "magic_shop_buy"
-    t.integer "magic_shop_sell"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_items_on_name", unique: true
@@ -88,11 +83,31 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
   create_table "npcs", force: :cascade do |t|
     t.bigint "real_world_location_id"
     t.string "name"
+    t.string "species"
+    t.string "gender", limit: 1
     t.string "role"
     t.string "shop_type"
+    t.bigint "portrait_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["portrait_id"], name: "index_npcs_on_portrait_id"
     t.index ["real_world_location_id"], name: "index_npcs_on_real_world_location_id"
+  end
+
+  create_table "npcs_trade_offer_lists", id: false, force: :cascade do |t|
+    t.bigint "npc_id"
+    t.bigint "trade_offer_list_id"
+    t.index ["npc_id"], name: "index_npcs_trade_offer_lists_on_npc_id"
+    t.index ["trade_offer_list_id"], name: "index_npcs_trade_offer_lists_on_trade_offer_list_id"
+  end
+
+  create_table "portraits", force: :cascade do |t|
+    t.string "name"
+    t.string "species", default: [], array: true
+    t.string "genders", default: [], array: true
+    t.string "groups", default: [], array: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "real_world_locations", force: :cascade do |t|
@@ -107,6 +122,28 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
   create_table "realm_locations", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "trade_offer_lists", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "trade_offer_lists_trade_offers", id: false, force: :cascade do |t|
+    t.bigint "trade_offer_list_id"
+    t.bigint "trade_offer_id"
+    t.index ["trade_offer_id"], name: "index_trade_offer_lists_trade_offers_on_trade_offer_id"
+    t.index ["trade_offer_list_id"], name: "index_trade_offer_lists_trade_offers_on_trade_offer_list_id"
+  end
+
+  create_table "trade_offers", force: :cascade do |t|
+    t.bigint "item_id"
+    t.integer "buy_offer"
+    t.integer "sell_offer"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["item_id"], name: "index_trade_offers_on_item_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -127,4 +164,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_221221) do
   add_foreign_key "dungeons", "users", column: "defeated_by_id"
   add_foreign_key "inventory_items", "items"
   add_foreign_key "inventory_items", "users"
+  add_foreign_key "npcs", "portraits"
+  add_foreign_key "trade_offers", "items"
 end

@@ -181,7 +181,7 @@ class Dungeon < RealmLocation
       # So we generate an array like [10, 9, 9, 9, 8, 8, 7, 7, 7, 7 ...] to be used for weighted randomization.
       diffs = []
       (1..9).each do |level|
-        (2.5 * (10 - level)).floor.times do
+        (3 * (10 - level)).floor.times do
           diffs << level
         end
       end

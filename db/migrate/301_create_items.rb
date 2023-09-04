@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+
 class CreateItems < ActiveRecord::Migration[7.0]
   def change
     create_table :items do |t|
       t.string :name,                           null: false, index: { unique: true }
       t.string :type,                           null: false
+      t.string :icon,                           null: false
 
       # Lootable?
       t.string :rarity,                         null: false
@@ -21,12 +24,12 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.float :loot_bonus,                      default: 0.0
 
       # Tradable?
-      t.integer :armorer_buy
-      t.integer :armorer_sell
-      t.integer :jeweller_buy
-      t.integer :jeweller_sell
-      t.integer :magic_shop_buy
-      t.integer :magic_shop_sell
+      # t.integer :armorer_buy
+      # t.integer :armorer_sell
+      # t.integer :jeweller_buy
+      # t.integer :jeweller_sell
+      # t.integer :magic_shop_buy
+      # t.integer :magic_shop_sell
 
       t.timestamps
     end

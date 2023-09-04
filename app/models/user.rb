@@ -37,6 +37,10 @@ class User < ApplicationRecord
     auth0_user_data.given_name
   end
 
+  def inventory_count_by_item_id(item_id)
+    inventory_items.where(item_id: item_id).count
+  end
+
   def equipped_items
     inventory_items.joins(:item).where(is_equipped: true)
   end
@@ -243,11 +247,12 @@ class User < ApplicationRecord
   end
 
   def give_starting_equipment
-    starting_equipment = ['Shortsword', 'Leather Armor', 'Iron Helmet'] # Changing this may result in failing tests
+    starting_equipment = ['Shortsword', 'Leather Armor', 'Brass Helmet'] # Changing this may result in failing tests
     #starting_equipment += ['Angelic Axe', 'Amulet of Loss', 'Amulet of Life', 'Amulet of Abundance', 'Ring of Treasure Hunter', 'Relic Sword', 'Shield of Destiny'] if Rails.env.development?
 
     starting_equipment.each do |item_name|
       item = Item.find_by(name: item_name)
+      throw("No such item as #{item_name}") if item.nil?
       inventory_item = gain_item(item)
       equip_item(inventory_item, true)
     end

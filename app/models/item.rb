@@ -3,26 +3,35 @@
 class Item < ApplicationRecord
   self.inheritance_column = nil
 
-  enum item_types: { amulet: 0, armor: 1, helmet: 2, ring: 3, shield: 4, weapon: 5, valuable: 6, creature_product: 7 }
-  enum rarity_tiers: { always: 0, common: 1, uncommon: 2, rare: 3, epic: 4, legendary: 5 }
+  has_many :trade_offers, dependent: :destroy
 
+  ITEM_TYPES = %w[amulet armor helmet ring shield weapon valuable creature_product].freeze
+  EQUIPMENT_TYPES = %w[amulet armor helmet ring shield weapon].freeze
+  RARITIES = %w[always common uncommon rare epic legendary].freeze
+  validates :type, presence: true, inclusion: { in: ITEM_TYPES }
+  validates :rarity, presence: true, inclusion: { in: RARITIES }
   validate :weapons_can_be_two_handed
-  validates :armorer_buy, :armorer_sell, :jeweller_buy, :jeweller_sell, :magic_shop_buy, :magic_shop_sell, exclusion: { in: [0] }
   validates :name, presence: true, uniqueness: true
-  validates :type, inclusion: { in: item_types.keys }
-  validates :rarity, inclusion: { in: rarity_tiers.keys }
   validate :classifications_valid
   validate :classification_bonuses_valid
   validate :lootable_from_any_monster
 
-  scope :common, -> { where(rarity: Item.rarity_tiers[:common]) }
-  scope :uncommon, -> { where(rarity: Item.rarity_tiers[:uncommon]) }
-  scope :rare, -> { where(rarity: Item.rarity_tiers[:rare]) }
-  scope :epic, -> { where(rarity: Item.rarity_tiers[:epic]) }
-  scope :legendary, -> { where(rarity: Item.rarity_tiers[:legendary]) }
+  scope :common, -> { where(rarity: 'common') }
+  scope :uncommon, -> { where(rarity: 'uncommon') }
+  scope :rare, -> { where(rarity: 'rare') }
+  scope :epic, -> { where(rarity: 'epic') }
+  scope :legendary, -> { where(rarity: 'legendary') }
+
+  def sold_by_npc?(npc)
+    id.in? npc.sell_offers.pluck(:item_id)
+  end
+
+  def bought_by_npc?(npc)
+    id.in? npc.buy_offers.pluck(:item_id)
+  end
 
   def equipable?
-    type.in? %w[amulet armor helmet ring shield weapon]
+    type.in? EQUIPMENT_TYPES
   end
 
   def weapon?
@@ -31,12 +40,12 @@ class Item < ApplicationRecord
 
   def bonuses
     bonuses = []
-    bonuses << "+#{attack_bonus} attack" unless attack_bonus.zero?
-    bonuses << "+#{defense_bonus} defense" unless defense_bonus.zero?
-    bonuses << "+#{classification_attack_bonus} attack against #{classification_bonus}s" unless classification_attack_bonus.zero?
-    bonuses << "+#{classification_defense_bonus} defense against #{classification_bonus}s" unless classification_defense_bonus.zero?
-    bonuses << "+#{(100 * xp_bonus).to_i}% xp" unless xp_bonus.zero?
-    bonuses << "+#{(100 * loot_bonus).to_i}% loot" unless loot_bonus.zero?
+    bonuses << "+#{attack_bonus} attack" if attack_bonus&.positive?
+    bonuses << "+#{defense_bonus} defense" if defense_bonus&.positive?
+    bonuses << "+#{classification_attack_bonus} attack against #{classification_bonus}s" if classification_attack_bonus&.positive?
+    bonuses << "+#{classification_defense_bonus} defense against #{classification_bonus}s" if classification_defense_bonus&.positive?
+    bonuses << "+#{(100 * xp_bonus).to_i}% xp" if xp_bonus&.positive?
+    bonuses << "+#{(100 * loot_bonus).to_i}% loot" if loot_bonus&.positive?
     bonuses
   end
 

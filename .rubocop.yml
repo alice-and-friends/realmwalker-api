@@ -85,7 +85,11 @@ Lint/UselessAccessModifier:
     - 'def_node_matcher'
 
 Lint/EmptyFile:
+  Enabled: true
+
+Lint/ConstantDefinitionInBlock:
   Exclude:
+    - 'test/**/*'
 
 Metrics/AbcSize:
   Enabled: false
@@ -189,4 +193,7 @@ Style/ClassAndModuleChildren:
   Enabled: false
 
 Rails/Output:
+  Enabled: false
+
+Rails/HasAndBelongsToMany:
   Enabled: false

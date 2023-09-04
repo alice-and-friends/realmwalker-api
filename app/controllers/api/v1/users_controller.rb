@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Api::V1::UsersController < Api::V1::ApiController
   # before_action :set_api_v1_user, only: [:show, :update, :destroy]
 

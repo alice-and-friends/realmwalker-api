@@ -3,6 +3,7 @@
 class LootGenerator
   def initialize(player_loot_bonus = 0.0)
     @player_loot_bonus = player_loot_bonus
+    @monster_classification = nil
     @loot_tiers = {
       'legendary' => 0.01, # 1 in 100
       'epic' => 0.02, # 2 in 100
@@ -27,6 +28,7 @@ class LootGenerator
   end
 
   def set_loot_table(monster_level, monster_classification)
+    @monster_classification = monster_classification
     @loot_table = Item.where(
       ':classification = ANY(dropped_by_classification) AND :level >= dropped_by_level',
       classification: monster_classification,
@@ -35,6 +37,7 @@ class LootGenerator
     @gold_range = @gold_ranges[monster_level]
   end
 
+  # Returns a loot container, with a small chance of extra contents from a second generated container
   def generate_loot
     loot = generate_loot_single_set
 
@@ -46,26 +49,66 @@ class LootGenerator
 
   private
 
+  # Generates a standard loot container
   def generate_loot_single_set
     loot_container = LootContainer.new
 
+    loot_container.add_gold(random_gold_amount)
+    loot_container.add_item(random_equipment_or_none)
+    loot_container.add_item(random_valuable_or_none)
+    loot_container.add_item(random_creature_product_or_none)
+
+    # Dragon bonus: Dragons can drop twice as much gold and valuables
+    if @monster_classification == 'dragon'
+      loot_container.add_gold(random_gold_amount)
+      loot_container.add_item(random_valuable_or_none)
+    end
+
+    loot_container
+  end
+
+  # Returns a random tier to randomize loot from, for a specific set of item types, or nil
+  def random_tier_for_item_types(item_types)
+    Throw('need one or more item types') if item_types.blank?
+
     tier = nil
     @loot_tiers.each do |loot_tier, probability|
-      if rand < probability
+      if rand < probability && @loot_table.exists?(rarity: loot_tier, type: item_types)
         tier = loot_tier
         break
       end
     end
+    tier
+  end
 
-    if tier && @loot_table.exists? && !@loot_table.empty?
-      loot_container.add_item(@loot_table.sample)
+  # Returns a random piece of equipment or nil
+  def random_equipment_or_none
+    random_item_from_types(Item::EQUIPMENT_TYPES) if @loot_table.exists?
+  end
+
+  # Returns a random valuable or nil
+  def random_valuable_or_none
+    random_item_from_types(['valuable']) if @loot_table.exists?
+  end
+
+  # Returns a random creature product or nil
+  def random_creature_product_or_none
+    random_item_from_types(['creature_product']) if @loot_table.exists?
+  end
+
+  # Returns a random item from a specific set of types, or nil
+  def random_item_from_types(item_types)
+    tier = random_tier_for_item_types(item_types)
+    if tier
+      tier_table = @loot_table.where(rarity: tier, type: item_types)
+      return tier_table.sample unless tier_table.empty?
     end
+    nil
+  end
 
+  # Returns a random amount of gold
+  def random_gold_amount
     # Check if gold should be dropped based on a 90% chance (10% chance of no gold)
-    if rand >= 0.1
-      loot_container.add_gold(rand(@gold_range))
-    end
-
-    loot_container
+    rand >= 0.1 ? rand(@gold_range) : 0
   end
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RealmLocationSerializer < ActiveModel::Serializer
   attributes :id, :location_type, :name, :coordinates
   attribute :dungeon_details, if: :dungeon?

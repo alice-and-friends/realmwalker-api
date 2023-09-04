@@ -1,10 +1,13 @@
+# frozen_string_literal: true
+
 class InventoryItem < ApplicationRecord
   belongs_to :user
   belongs_to :item
 
-  scope :ordered, -> { joins(:item).order(is_equipped: :desc, "items.name": :asc) }
+  scope :alphabetical, -> { joins(:item).order('items.name': :asc) }
+  scope :ordered, -> { joins(:item).order(is_equipped: :desc, 'items.name': :asc) }
 
-  def equipable?
-    true
+  def equipped?
+    is_equipped
   end
 end

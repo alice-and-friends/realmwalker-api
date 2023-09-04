@@ -1,6 +1,14 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class Api::V1::DungeonsControllerTest < ActionDispatch::IntegrationTest
+  test 'should get dungeon' do
+    d = Dungeon.first
+    get "/api/v1/dungeons/#{d.id}"
+    assert_equal 200, status
+    assert_equal d.id, response.parsed_body['id']
+  end
   test 'should get battle prediction' do
     d = Dungeon.create!(level: 1)
     get "/api/v1/dungeons/#{d.id}/analyze"

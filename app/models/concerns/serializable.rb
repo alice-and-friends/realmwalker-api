@@ -1,5 +1,6 @@
-# https://codeburst.io/json-serialized-columns-with-rails-a610a410fcdf
+# frozen_string_literal: true
 
+# https://codeburst.io/json-serialized-columns-with-rails-a610a410fcdf
 module Serializable
   extend ActiveSupport::Concern
   def initialize(json)

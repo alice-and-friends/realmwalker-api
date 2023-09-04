@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # All other API controllers are subclasses of this class
 class Api::V1::ApiController < ApplicationController
   before_action :authorize

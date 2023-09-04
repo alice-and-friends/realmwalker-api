@@ -67,6 +67,8 @@ GEM
     activerecord (7.0.6)
       activemodel (= 7.0.6)
       activesupport (= 7.0.6)
+    activerecord-import (1.5.0)
+      activerecord (>= 4.2)
     activestorage (7.0.6)
       actionpack (= 7.0.6)
       activejob (= 7.0.6)
@@ -260,6 +262,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.13)
+  activerecord-import
   auth0
   bootsnap
   database_cleaner-active_record

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class InventoryItemSerializer < ActiveModel::Serializer
-  attributes :id, :item_id, :item_type, :name, :icon, :rarity, :bonuses, :equipable, :two_handed, :equipped
+class TradeOfferSerializer < ActiveModel::Serializer
+  attributes :id, :item_id, :item_type, :name, :icon, :rarity, :bonuses, :equipable, :two_handed, :buy_offer, :sell_offer
 
   def item_type
     object.item.type
@@ -29,9 +29,5 @@ class InventoryItemSerializer < ActiveModel::Serializer
 
   def two_handed
     object.item.two_handed
-  end
-
-  def equipped
-    object.equipped?
   end
 end

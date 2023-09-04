@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class Api::V1::InventoryControllerTest < ActionDispatch::IntegrationTest
@@ -19,7 +21,7 @@ class Api::V1::InventoryControllerTest < ActionDispatch::IntegrationTest
       equipped: true,
     }
     assert_equal 200, status
-    assert InventoryItem.find_by(id: WEAPON_1.id).is_equipped
+    assert InventoryItem.find(WEAPON_1.id).equipped?
     assert response.parsed_body['equipped']
 
     # Attempt to equip a second weapon, get a warning that the current weapon would be replaced
@@ -28,7 +30,7 @@ class Api::V1::InventoryControllerTest < ActionDispatch::IntegrationTest
       equipped: true,
     }
     assert_equal 200, status
-    assert_not InventoryItem.find_by(id: WEAPON_2.id).is_equipped
+    assert_not InventoryItem.find(WEAPON_2.id).equipped?
     assert_not response.parsed_body['equipped']
     assert_equal 1, response.parsed_body['unequipItems'].length
 
@@ -39,8 +41,8 @@ class Api::V1::InventoryControllerTest < ActionDispatch::IntegrationTest
       force: true,
     }
     assert_equal 200, status
-    assert_not InventoryItem.find_by(id: WEAPON_1.id).is_equipped
-    assert InventoryItem.find_by(id: WEAPON_2.id).is_equipped
+    assert_not InventoryItem.find(WEAPON_1.id).equipped?
+    assert InventoryItem.find(WEAPON_2.id).equipped?
     assert response.parsed_body['equipped']
 
     # Unequip
@@ -49,6 +51,6 @@ class Api::V1::InventoryControllerTest < ActionDispatch::IntegrationTest
       equipped: false,
     }
     assert_equal 200, status
-    assert_not InventoryItem.find_by(id: WEAPON_2.id).is_equipped
+    assert_not InventoryItem.find(WEAPON_2.id).equipped?
   end
 end

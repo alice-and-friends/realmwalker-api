@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Api::V1::InventoryController < Api::V1::ApiController
   before_action :find_inventory
 
@@ -11,7 +13,7 @@ class Api::V1::InventoryController < Api::V1::ApiController
   def set_equipped
     item = InventoryItem.find_by(id: params[:item_id])
     if item.nil?
-      render json: {error: 'No such item'}, status: :not_found and return
+      render json: { error: 'No such item' }, status: :not_found and return
     end
 
     if params[:equipped].to_s == 'true'
@@ -19,14 +21,20 @@ class Api::V1::InventoryController < Api::V1::ApiController
       render json: {
         equipped: equipped,
         unequip_items: ActiveModelSerializers::SerializableResource.new(unequip_items, each_serializer: InventoryItemSerializer),
-        inventory: ActiveModelSerializers::SerializableResource.new(InventoryItem.ordered, each_serializer: InventoryItemSerializer),
+        inventory: {
+          gold: @current_user.gold,
+          items: ActiveModelSerializers::SerializableResource.new(@current_user.inventory_items.ordered, each_serializer: InventoryItemSerializer)
+        },
       }
     else
       @current_user.unequip_item(item)
       render json: {
         equipped: false,
         unequip_items: ActiveModelSerializers::SerializableResource.new([item], each_serializer: InventoryItemSerializer),
-        inventory: ActiveModelSerializers::SerializableResource.new(InventoryItem.ordered, each_serializer: InventoryItemSerializer),
+        inventory: {
+          gold: @current_user.gold,
+          items: ActiveModelSerializers::SerializableResource.new(@current_user.inventory_items.ordered, each_serializer: InventoryItemSerializer)
+        },
       }
     end
   end

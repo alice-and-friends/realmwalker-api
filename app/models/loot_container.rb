@@ -13,7 +13,7 @@ class LootContainer
   end
 
   def add_item(item)
-    @items << item
+    rand(1..item.drop_max_amount).times { @items << item } unless item.nil?
   end
 
   def merge(other_inventory)
