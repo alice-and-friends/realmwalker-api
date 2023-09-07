@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
-  has_many :inventory_items, dependent: :delete_all
-  has_many :items, through: :inventory_items
+  belongs_to :inventory, dependent: :destroy
   has_many :dungeons, inverse_of: :defeated_by, foreign_key: 'defeated_by_id', dependent: :nullify
 
   MAX_XP = 1_000_000
@@ -12,8 +11,11 @@ class User < ApplicationRecord
 
   serialize :auth0_user_data, Auth0UserData
 
+  before_validation :create_inventory
+  before_create :save_inventory
   after_create :give_starting_equipment
   validates :auth0_user_id, presence: true, uniqueness: true
+  validates :inventory_id, uniqueness: true
   validate :valid_auth0_user_data
   validate :achievements_are_valid
   validate :access_token_expires
@@ -36,6 +38,8 @@ class User < ApplicationRecord
   def name
     auth0_user_data.given_name
   end
+
+  delegate :inventory_items, to: :inventory
 
   def inventory_count_by_item_id(item_id)
     inventory_items.where(item_id: item_id).count
@@ -274,6 +278,14 @@ class User < ApplicationRecord
   end
 
   private
+
+  def create_inventory
+    self.inventory = Inventory.new if inventory.nil? && inventory_id.nil?
+  end
+
+  def save_inventory
+    inventory.save!
+  end
 
   def achievements_are_valid
     # Should have only valid types

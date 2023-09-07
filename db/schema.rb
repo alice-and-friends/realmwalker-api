@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 403) do
+ActiveRecord::Schema[7.0].define(version: 602) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
@@ -40,14 +40,19 @@ ActiveRecord::Schema[7.0].define(version: 403) do
     t.index ["real_world_location_id"], name: "index_dungeons_on_real_world_location_id"
   end
 
+  create_table "inventories", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "inventory_items", force: :cascade do |t|
-    t.bigint "user_id", null: false
+    t.bigint "inventory_id", null: false
     t.bigint "item_id", null: false
     t.boolean "is_equipped", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["inventory_id"], name: "index_inventory_items_on_inventory_id"
     t.index ["item_id"], name: "index_inventory_items_on_item_id"
-    t.index ["user_id"], name: "index_inventory_items_on_user_id"
   end
 
   create_table "items", force: :cascade do |t|
@@ -156,15 +161,17 @@ ActiveRecord::Schema[7.0].define(version: 403) do
     t.integer "gold", default: 10
     t.text "achievements", default: [], array: true
     t.text "access_token"
+    t.bigint "inventory_id", null: false
     t.datetime "access_token_expires_at", precision: nil
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["auth0_user_id"], name: "index_users_on_auth0_user_id", unique: true
+    t.index ["inventory_id"], name: "index_users_on_inventory_id", unique: true
   end
 
   add_foreign_key "dungeons", "users", column: "defeated_by_id"
+  add_foreign_key "inventory_items", "inventories"
   add_foreign_key "inventory_items", "items"
-  add_foreign_key "inventory_items", "users"
   add_foreign_key "npcs", "portraits"
   add_foreign_key "trade_offers", "items"
 end

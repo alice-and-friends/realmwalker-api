@@ -10,23 +10,30 @@ class ActiveSupport::TestCase
   parallelize(workers: :number_of_processors)
 
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  DatabaseCleaner.strategy = :truncation
-  DatabaseCleaner.clean
+  DatabaseCleaner.strategy = :deletion, { except: %w[spatial_ref_sys] }
+  DatabaseCleaner.clean_with :truncation, { except: %w[spatial_ref_sys] }
   Rails.application.load_seed
   self.use_instantiated_fixtures = true
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+
+  def generate_headers
+    { Geolocation: '59.911682, 10.748688' }
+  end
+
   def generate_test_user
     test_user_name = Faker::Name.first_name
     test_user_unique = Faker::Number.unique.number(digits: 10)
+    inventory = Inventory.create!
     User.create!(
       auth0_user_id: test_user_unique,
       auth0_user_data: Auth0UserData.new(
         sub: "test|#{test_user_unique}",
         given_name: test_user_name,
         family_name: '',
-        email: Faker::Internet.email(name: test_user_name)
+        email: Faker::Internet.email(name: test_user_name),
+        inventory: inventory
       )
     )
   end

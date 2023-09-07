@@ -5,11 +5,4 @@
 # below each fixture, per the syntax in the comments below
 #
 
-jane_doe:
-  auth0_user_id: '1'
-  auth0_user_data: {
-                     sub: 'missive',
-                     given_name: 'Jane',
-                     family_name: 'Doe',
-  }
-  inventory: jane_does_inventory
+jane_does_inventory: {}

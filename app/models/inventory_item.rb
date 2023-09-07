@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class InventoryItem < ApplicationRecord
-  belongs_to :user
+  belongs_to :inventory
   belongs_to :item
 
   scope :alphabetical, -> { joins(:item).order('items.name': :asc) }

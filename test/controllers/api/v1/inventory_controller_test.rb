@@ -5,8 +5,7 @@ require 'test_helper'
 class Api::V1::InventoryControllerTest < ActionDispatch::IntegrationTest
   SET_EQUIPPED_PATH = '/api/v1/inventory/set_equipped'
   test 'should return 404 when trying to equip non-existing item' do
-    post SET_EQUIPPED_PATH, params: { item_id: 999,
-                                              equipped: true }
+    post SET_EQUIPPED_PATH, params: { item_id: 999, equipped: true }, headers: generate_headers
     assert_equal 404, status
   end
 
@@ -19,7 +18,7 @@ class Api::V1::InventoryControllerTest < ActionDispatch::IntegrationTest
     post SET_EQUIPPED_PATH, params: {
       item_id: WEAPON_1.id,
       equipped: true,
-    }
+    }, headers: generate_headers
     assert_equal 200, status
     assert InventoryItem.find(WEAPON_1.id).equipped?
     assert response.parsed_body['equipped']
@@ -28,7 +27,7 @@ class Api::V1::InventoryControllerTest < ActionDispatch::IntegrationTest
     post SET_EQUIPPED_PATH, params: {
       item_id: WEAPON_2.id,
       equipped: true,
-    }
+    }, headers: generate_headers
     assert_equal 200, status
     assert_not InventoryItem.find(WEAPON_2.id).equipped?
     assert_not response.parsed_body['equipped']
@@ -39,7 +38,7 @@ class Api::V1::InventoryControllerTest < ActionDispatch::IntegrationTest
       item_id: WEAPON_2.id,
       equipped: true,
       force: true,
-    }
+    }, headers: generate_headers
     assert_equal 200, status
     assert_not InventoryItem.find(WEAPON_1.id).equipped?
     assert InventoryItem.find(WEAPON_2.id).equipped?
@@ -49,7 +48,7 @@ class Api::V1::InventoryControllerTest < ActionDispatch::IntegrationTest
     post SET_EQUIPPED_PATH, params: {
       item_id: WEAPON_2.id,
       equipped: false,
-    }
+    }, headers: generate_headers
     assert_equal 200, status
     assert_not InventoryItem.find(WEAPON_2.id).equipped?
   end
