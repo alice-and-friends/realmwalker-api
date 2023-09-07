@@ -68,6 +68,7 @@ class Npc < RealmLocation
 
   delegate :coordinates, to: :real_world_location
 
+  # TODO: This generates a crazy amount of db queries. Use materialized view?
   def spooked
     Dungeon.active.joins(:real_world_location).where(
       "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{SPOOK_DISTANCE})", coordinates: coordinates

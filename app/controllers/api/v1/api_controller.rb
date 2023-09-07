@@ -2,10 +2,20 @@
 
 # All other API controllers are subclasses of this class
 class Api::V1::ApiController < ApplicationController
+  before_action :geolocate
   before_action :authorize
   before_action :auth_debug if Rails.env.development?
 
   private
+
+  def geolocate
+    lat, lng = request.headers['Geolocation']&.split&.map(&:to_f)
+    if lat.positive? && lng.positive?
+      @current_user_geolocation = { lat: lat, lng: lng }
+    else
+      render render json: { message: 'Geolocation missing' }, status: :bad_geolocation
+    end
+  end
 
   def authorize
     if Rails.env.test?

@@ -284,6 +284,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.6)
+  rgeo-activerecord
   rubocop
   rubocop-performance
   rubocop-rails

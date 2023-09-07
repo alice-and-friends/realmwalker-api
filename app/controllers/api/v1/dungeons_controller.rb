@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Api::V1::DungeonsController < Api::V1::ApiController
-  before_action :find_active_dungeon, only: [:show, :analyze, :battle]
+  before_action :find_active_dungeon, only: %i[show analyze battle]
 
   def show
     render json: @dungeon

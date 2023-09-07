@@ -69,4 +69,5 @@ gem 'jwt'
 
 gem 'activerecord-import'
 gem 'activerecord-postgis-adapter'
+gem 'rgeo-activerecord'
 gem 'olive_branch'
