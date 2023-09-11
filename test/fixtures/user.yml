@@ -12,4 +12,3 @@ jane_doe:
                      given_name: 'Jane',
                      family_name: 'Doe',
   }
-  inventory: jane_does_inventory

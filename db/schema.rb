@@ -41,8 +41,10 @@ ActiveRecord::Schema[7.0].define(version: 602) do
   end
 
   create_table "inventories", force: :cascade do |t|
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_inventories_on_user_id", unique: true
   end
 
   create_table "inventory_items", force: :cascade do |t|
@@ -161,12 +163,10 @@ ActiveRecord::Schema[7.0].define(version: 602) do
     t.integer "gold", default: 10
     t.text "achievements", default: [], array: true
     t.text "access_token"
-    t.bigint "inventory_id", null: false
     t.datetime "access_token_expires_at", precision: nil
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["auth0_user_id"], name: "index_users_on_auth0_user_id", unique: true
-    t.index ["inventory_id"], name: "index_users_on_inventory_id", unique: true
   end
 
   add_foreign_key "dungeons", "users", column: "defeated_by_id"

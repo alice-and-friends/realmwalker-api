@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
-  belongs_to :inventory, dependent: :destroy
+  has_one :inventory, dependent: :destroy
   has_many :dungeons, inverse_of: :defeated_by, foreign_key: 'defeated_by_id', dependent: :nullify
 
   MAX_XP = 1_000_000
@@ -12,12 +12,10 @@ class User < ApplicationRecord
   serialize :auth0_user_data, Auth0UserData
 
   # Create inventory and grant starting equipment to new players
-  before_validation { self.inventory = Inventory.new if inventory.nil? && inventory_id.nil? }
-  before_create { inventory.save! }
+  after_create { self.inventory = Inventory.create!(user: self) }
   after_create :give_starting_equipment
 
   validates :auth0_user_id, presence: true, uniqueness: true
-  validates :inventory_id, uniqueness: true
   validate :valid_auth0_user_data
   validate :achievements_are_valid
   validate :access_token_expires

@@ -5,4 +5,5 @@
 # below each fixture, per the syntax in the comments below
 #
 
-jane_does_inventory: {}
+jane_does_inventory:
+  user: jane_doe
