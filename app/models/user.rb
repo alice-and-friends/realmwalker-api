@@ -11,9 +11,11 @@ class User < ApplicationRecord
 
   serialize :auth0_user_data, Auth0UserData
 
-  before_validation :create_inventory
-  before_create :save_inventory
+  # Create inventory and grant starting equipment to new players
+  before_validation { self.inventory = Inventory.new if inventory.nil? && inventory_id.nil? }
+  before_create { inventory.save! }
   after_create :give_starting_equipment
+
   validates :auth0_user_id, presence: true, uniqueness: true
   validates :inventory_id, uniqueness: true
   validate :valid_auth0_user_data
@@ -33,13 +35,12 @@ class User < ApplicationRecord
     user.access_token_expires_at > Time.current ? user : nil
   end
 
+  delegate :inventory_items, to: :inventory
   delegate :email, to: :auth0_user_data
 
   def name
     auth0_user_data.given_name
   end
-
-  delegate :inventory_items, to: :inventory
 
   def inventory_count_by_item_id(item_id)
     inventory_items.where(item_id: item_id).count
@@ -278,14 +279,6 @@ class User < ApplicationRecord
   end
 
   private
-
-  def create_inventory
-    self.inventory = Inventory.new if inventory.nil? && inventory_id.nil?
-  end
-
-  def save_inventory
-    inventory.save!
-  end
 
   def achievements_are_valid
     # Should have only valid types
