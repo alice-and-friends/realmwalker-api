@@ -12,12 +12,15 @@ class RealmLocation < ApplicationRecord
     joins(:real_world_location)
       .where(
         "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{PLAYER_VISION_RADIUS})",
-        coordinates: RGeo::Geos.factory(srid: 0).point(geolocation[:lat], geolocation[:lng])
+        coordinates: RGeo::Geos.factory(srid: 0).point(geolocation[:lat], geolocation[:lon])
       )
   }
 
   def self.real_world_location_ids_currently_in_use
-    Dungeon.pluck(:real_world_location_id) + Battlefield.pluck(:real_world_location_id) + Npc.pluck(:real_world_location_id)
+    Dungeon.pluck(:real_world_location_id) +
+      Battlefield.pluck(:real_world_location_id) +
+      Npc.pluck(:real_world_location_id) +
+      Base.pluck(:real_world_location_id)
   end
 
   delegate :coordinates, to: :real_world_location

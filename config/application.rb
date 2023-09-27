@@ -29,14 +29,6 @@ module RealmwalkerApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
-    # CORS
-    config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
-      allow do
-        origins '*'
-        resource '*', :headers => :any, :methods => [:get, :post, :options]
-      end
-    end
-
     # Olive branch lets your API users pass in and receive camelCased or dash-cased keys,
     # while your Rails app receives and produces snake_cased ones.
     # https://github.com/vigetlabs/olive_branch

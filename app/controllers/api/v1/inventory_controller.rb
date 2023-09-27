@@ -3,11 +3,8 @@
 class Api::V1::InventoryController < Api::V1::ApiController
   before_action :find_inventory
 
-  def index
-    render json: {
-      gold: @current_user.gold,
-      items: ActiveModelSerializers::SerializableResource.new(@current_user_inventory, each_serializer: InventoryItemSerializer)
-    }, status: :ok
+  def show
+    render json: @current_user_inventory, status: :ok, serializer: InventorySerializer
   end
 
   def set_equipped
@@ -21,20 +18,14 @@ class Api::V1::InventoryController < Api::V1::ApiController
       render json: {
         equipped: equipped,
         unequip_items: ActiveModelSerializers::SerializableResource.new(unequip_items, each_serializer: InventoryItemSerializer),
-        inventory: {
-          gold: @current_user.gold,
-          items: ActiveModelSerializers::SerializableResource.new(@current_user.inventory_items.ordered, each_serializer: InventoryItemSerializer)
-        },
+        inventory: ActiveModelSerializers::SerializableResource.new(@current_user_inventory, serializer: InventorySerializer),
       }
     else
       @current_user.unequip_item(item)
       render json: {
         equipped: false,
         unequip_items: ActiveModelSerializers::SerializableResource.new([item], each_serializer: InventoryItemSerializer),
-        inventory: {
-          gold: @current_user.gold,
-          items: ActiveModelSerializers::SerializableResource.new(@current_user.inventory_items.ordered, each_serializer: InventoryItemSerializer)
-        },
+        inventory: ActiveModelSerializers::SerializableResource.new(@current_user_inventory, serializer: InventorySerializer),
       }
     end
   end
@@ -42,6 +33,6 @@ class Api::V1::InventoryController < Api::V1::ApiController
   private
 
   def find_inventory
-    @current_user_inventory = InventoryItem.ordered
+    @current_user_inventory = @current_user.inventory
   end
 end

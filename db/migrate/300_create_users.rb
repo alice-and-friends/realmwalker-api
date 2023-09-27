@@ -8,7 +8,6 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.hstore :preferences
       t.integer :xp,           default: 0
       t.integer :level,        default: 1
-      t.integer :gold,         default: 10
       t.text :achievements,    array: true, default: []
       t.text :access_token
       t.timestamp :access_token_expires_at

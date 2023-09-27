@@ -16,6 +16,15 @@ ActiveRecord::Schema[7.0].define(version: 602) do
   enable_extension "plpgsql"
   enable_extension "postgis"
 
+  create_table "bases", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "real_world_location_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["real_world_location_id"], name: "index_bases_on_real_world_location_id"
+    t.index ["user_id"], name: "index_bases_on_user_id", unique: true
+  end
+
   create_table "battlefields", force: :cascade do |t|
     t.bigint "real_world_location_id"
     t.bigint "dungeon_id"
@@ -42,8 +51,11 @@ ActiveRecord::Schema[7.0].define(version: 602) do
 
   create_table "inventories", force: :cascade do |t|
     t.bigint "user_id"
+    t.bigint "base_id"
+    t.integer "gold", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["base_id"], name: "index_inventories_on_base_id", unique: true
     t.index ["user_id"], name: "index_inventories_on_user_id", unique: true
   end
 
@@ -121,10 +133,11 @@ ActiveRecord::Schema[7.0].define(version: 602) do
   create_table "real_world_locations", force: :cascade do |t|
     t.string "name", null: false
     t.string "type", null: false
-    t.string "ext_id", null: false
+    t.string "ext_id"
     t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["ext_id"], name: "index_real_world_locations_on_ext_id", unique: true
   end
 
   create_table "realm_locations", force: :cascade do |t|
@@ -160,7 +173,6 @@ ActiveRecord::Schema[7.0].define(version: 602) do
     t.hstore "preferences"
     t.integer "xp", default: 0
     t.integer "level", default: 1
-    t.integer "gold", default: 10
     t.text "achievements", default: [], array: true
     t.text "access_token"
     t.datetime "access_token_expires_at", precision: nil

@@ -20,7 +20,8 @@ class Api::V1::DungeonsController < Api::V1::ApiController
   private
 
   def find_active_dungeon
-    @dungeon = Dungeon.find(params[:id])
+    dungeon_id = params[:action] == 'show' ? params[:id] : params[:dungeon_id]
+    @dungeon = Dungeon.find(dungeon_id)
     if @dungeon.active? == false
       render json: {
         message: 'This dungeon is no longer active (defeated).',

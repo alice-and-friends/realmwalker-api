@@ -9,9 +9,13 @@ class Api::V1::ApiController < ApplicationController
   private
 
   def geolocate
-    lat, lng = request.headers['Geolocation']&.split&.map(&:to_f)
-    if lat.positive? && lng.positive?
-      @current_user_geolocation = { lat: lat, lng: lng }
+    lat, lon = request.headers['Geolocation']&.split&.map(&:to_f)
+    if lat.positive? && lon.positive?
+      @current_user_geolocation = {
+        lat: lat,
+        lon: lon,
+        point: RGeo::Geos.factory(srid: 0).point(lat, lon),
+      }
     else
       render render json: { message: 'Geolocation missing' }, status: :bad_geolocation
     end

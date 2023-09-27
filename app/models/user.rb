@@ -2,6 +2,7 @@
 
 class User < ApplicationRecord
   has_one :inventory, dependent: :destroy
+  has_one :base, dependent: :destroy
   has_many :dungeons, inverse_of: :defeated_by, foreign_key: 'defeated_by_id', dependent: :nullify
 
   MAX_XP = 1_000_000
@@ -20,6 +21,10 @@ class User < ApplicationRecord
   validate :achievements_are_valid
   validate :access_token_expires
 
+  delegate :gold, to: :inventory
+  delegate :inventory_items, to: :inventory
+  delegate :email, to: :auth0_user_data
+
   def self.total_xp_needed_for_level(l)
     ((10 * (l - 1))**2) + ((l - 1) * 100)
   end
@@ -33,11 +38,12 @@ class User < ApplicationRecord
     user.access_token_expires_at > Time.current ? user : nil
   end
 
-  delegate :inventory_items, to: :inventory
-  delegate :email, to: :auth0_user_data
-
   def name
     auth0_user_data.given_name
+  end
+
+  def player_tag
+    "#{name}##{id}"
   end
 
   def inventory_count_by_item_id(item_id)
@@ -166,15 +172,15 @@ class User < ApplicationRecord
   end
 
   def gains_or_loses_gold(amount)
-    prev_gold = gold.freeze
+    prev_gold = inventory.gold.freeze
 
-    self.gold += amount
-    self.gold = 0 if self.gold.negative? # Can't have less than 0 gold
-    save!
+    inventory.gold += amount
+    inventory.gold = 0 if inventory.gold.negative? # Can't have less than 0 gold
+    inventory.save!
     {
       prev_gold: prev_gold,
-      current_gold: self.gold,
-      gold_diff: self.gold - prev_gold,
+      current_gold: inventory.gold,
+      gold_diff: inventory.gold - prev_gold,
     }
   end
 
@@ -259,6 +265,25 @@ class User < ApplicationRecord
       inventory_item = gain_item(item)
       equip_item(inventory_item, true)
     end
+
+    gains_or_loses_gold 10
+  end
+
+  def construct_base_at(point)
+    raise('User already owns a structure') if base.present?
+
+    real_world_location = RealWorldLocation.new(
+      type: 'user_owned',
+      name: "#{name}'s base'",
+      coordinates: point,
+    )
+    raise('Failed to validate real world location') unless real_world_location.valid?
+
+    real_world_location.save!
+    self.base = Base.create!(
+      user: self,
+      real_world_location: real_world_location,
+    )
   end
 
   protected

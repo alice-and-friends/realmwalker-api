@@ -9,10 +9,16 @@
 
 # Rails.application.config.middleware.insert_before 0, Rack::Cors do
 #   allow do
-#     origins "example.com"
+#     origins 'localhost'
 #
-#     resource "*",
+#     resource '*',
 #       headers: :any,
-#       methods: [:get, :post, :put, :patch, :delete, :options, :head]
+#       methods: %i[get post put patch options head]
 #   end
 # end
+Rails.application.config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
+  allow do
+    origins '*'
+    resource '*', headers: :any, methods: %i[get put patch post options]
+  end
+end
