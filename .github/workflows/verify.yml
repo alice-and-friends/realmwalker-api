@@ -9,10 +9,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Ruby and install gems
+      - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7.2
+
       - run: bundle install
 
       - name: Run linters
@@ -40,10 +41,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Ruby and install gems
+      - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          bundler-cache: true
+          ruby-version: 2.7.2
+
+      - run: bundle install
 
       - name: Setup test database
         env:
@@ -52,4 +55,4 @@ jobs:
           bin/rails db:setup
 
       - name: Run tests
-        run: bin/rake test
+        run: bin/rails test
