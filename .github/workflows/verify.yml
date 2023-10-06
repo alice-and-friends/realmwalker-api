@@ -9,7 +9,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Ruby
+      - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7.2
@@ -32,16 +32,18 @@ jobs:
       postgres:
         image: postgres:15.4
         env:
-          POSTGRES_USER: realmwalker
-          POSTGRES_DB: realmwalker_test
-          POSTGRES_PASSWORD: realmwalker
-        ports: ["5432:5432"]
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: db_test
+        ports:
+          - 5432:5432
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Ruby
+      - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7.2
@@ -51,8 +53,11 @@ jobs:
       - name: Setup test database
         env:
           RAILS_ENV: test
-        run: |
-          bin/rails db:setup
+          POSTGRES_HOST: localhost
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_PORT: 5432
+        run: bin/rails db:setup
 
       - name: Run tests
         run: bin/rails test
