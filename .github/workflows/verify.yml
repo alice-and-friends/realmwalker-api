@@ -16,7 +16,7 @@ jobs:
 
       - name: Run linters
         run: |
-          bin/rubocop --parallel
+          rubocop --parallel
 
       - name: Run security checks
         run: |
