@@ -4,12 +4,23 @@ class Dungeon < RealmLocation
   has_one :battlefield, dependent: :nullify # TODO: Should we just preserve the Dungeon for as long as Battlefield exists?
   belongs_to :monster
   belongs_to :defeated_by, class_name: 'User', optional: true
+  has_many :spooks, dependent: :destroy
+  has_many :npcs, through: :spooks
 
   validates :level, presence: true
   enum status: { active: 1, defeated: 2, expired: 0 }
 
   before_validation :set_real_world_location, on: :create
   before_validation :randomize_level_and_monster!, on: :create
+  after_create do |d|
+    Rails.logger.debug "📌 Spawned a new dungeon, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
+
+    spook_nearby_shopkeepers!
+  end
+  after_update :remove_spooks!
+  after_destroy do |d|
+    Rails.logger.debug "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
+  end
 
   def self.max_dungeons
     return 10 if Rails.env.test?
@@ -18,13 +29,6 @@ class Dungeon < RealmLocation
   end
 
   delegate :name, to: :monster
-
-  after_create do |d|
-    Rails.logger.debug "📌 Spawned a new dungeon, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
-  end
-  after_destroy do |d|
-    Rails.logger.debug "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
-  end
 
   def desc
     "level #{level} #{monster.classification}"
@@ -125,6 +129,8 @@ class Dungeon < RealmLocation
     Rails.logger.debug "⚔️ #{user.name} rolled a #{roll} and #{user_won ? 'won' : 'lost'}"
     if user_won
       defeated_by! user # Mark dungeon as defeated
+      remove_spooks! # Unspook nearby npcs
+
       xp_level_change = user.gains_or_loses_xp(monster.xp)
 
       monster_died = (rand(1..100) > monster.defense)
@@ -162,6 +168,28 @@ class Dungeon < RealmLocation
     self.defeated_by = user
     save!
     Battlefield.create({ real_world_location: real_world_location, dungeon: self })
+  end
+
+  def spook_nearby_shopkeepers!
+    return unless active? # No one should be spooked by an inactive dungeon
+
+    nearby_shopkeepers = Npc.shopkeepers.joins(:real_world_location).where(
+      "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{Npc::SPOOK_DISTANCE})", coordinates: coordinates
+    )
+
+    nearby_shopkeepers.each do |npc|
+      npc.dungeons << self
+    end
+
+    Rails.logger.debug "😱 Spooked #{nearby_shopkeepers.size} shopkeepers"
+  end
+
+  def remove_spooks!
+    return if active?
+
+    c = spooks.size
+    spooks.destroy_all
+    Rails.logger.debug "❌ Removed #{c} spooks"
   end
 
   private

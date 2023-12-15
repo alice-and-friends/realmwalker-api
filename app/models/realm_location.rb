@@ -16,6 +16,8 @@ class RealmLocation < ApplicationRecord
       )
   }
 
+  delegate :coordinates, to: :real_world_location
+
   def self.real_world_location_ids_currently_in_use
     Dungeon.pluck(:real_world_location_id) +
       Battlefield.pluck(:real_world_location_id) +

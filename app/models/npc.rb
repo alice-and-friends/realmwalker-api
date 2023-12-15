@@ -7,10 +7,12 @@ class Npc < RealmLocation
   belongs_to :portrait
   has_and_belongs_to_many :trade_offer_lists, join_table: 'npcs_trade_offer_lists'
   has_many :trade_offers, through: :trade_offer_lists
+  has_many :spooks
+  has_many :dungeons, through: :spooks
 
   ROLES = %w[shopkeeper].freeze
   SHOP_TYPES = %w[armorer jeweller magic].freeze
-  SPOOK_DISTANCE = 500 # meters
+  SPOOK_DISTANCE = 450 # meters
   before_validation :set_real_world_location!, on: :create
   before_validation :assign_species!, on: :create
   before_validation :assign_gender!, on: :create
@@ -22,6 +24,8 @@ class Npc < RealmLocation
   validates :shop_type, inclusion: { in: SHOP_TYPES }
   validate :shopkeeper_has_shop_type, if: :shop?
   validate :shopkeeper_has_trade_offer_list, if: :shop?
+
+  scope :shopkeepers, -> { where(role: 'shopkeeper') }
 
   after_create do |npc|
     Rails.logger.debug "📌 Spawned a new NPC, say hello to #{npc.name}. There are now #{Npc.count} NPCs."
@@ -66,13 +70,8 @@ class Npc < RealmLocation
       .sort_by { |offer| offer.item.name }
   end
 
-  delegate :coordinates, to: :real_world_location
-
-  # TODO: This generates a crazy amount of db queries. Use materialized view?
-  def spooked
-    Dungeon.active.joins(:real_world_location).where(
-      "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{SPOOK_DISTANCE})", coordinates: coordinates
-    ).exists?
+  def spooked?
+    spooks.any?
   end
 
   private

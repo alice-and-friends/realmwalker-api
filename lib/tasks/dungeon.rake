@@ -1,4 +1,6 @@
-namespace :dungeon  do
+# frozen_string_literal: true
+
+namespace :dungeon do
   task despawn: :environment do
     puts 'Running Despawn task...'
 
@@ -13,7 +15,7 @@ namespace :dungeon  do
     set = Dungeon.active.where("created_at < ?", 2.days.ago)
     if set.count
       puts "#{set.count} active dungeon expired"
-      set.update_all(status: Dungeon.statuses[:expired])
+      set.update(status: Dungeon.statuses[:expired])
     end
 
     # If any dungeons have been expired for 48 hours, end the cooldown period by destroying the record
@@ -27,7 +29,7 @@ namespace :dungeon  do
     set = Battlefield.active.where("updated_at < ?", 2.days.ago)
     if set.count
       puts "#{set.count} active battlefields expired"
-      set.update_all(status: Battlefield.statuses[:expired])
+      set.update(status: Battlefield.statuses[:expired])
     end
 
     # If any battlefields have been expired for 48 hours, end the cooldown period by destroying the record

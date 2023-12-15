@@ -31,7 +31,7 @@ class RealmLocationSerializer < ActiveModel::Serializer
     {
       role: object.role,
       shop_type: object.shop_type,
-      spooked: object.spooked,
+      spooked: object.spooked?,
     }
   end
 end
