@@ -16,50 +16,66 @@ puts 'Seeding the database...'
 
 execution_time = Benchmark.measure do
 
-  # CREATE REAL WORLD LOCATIONS
+  # REAL WORLD LOCATIONS
   locations = []
-  filename = 'real_world_locations.csv'
-  # filename = 'real_world_locations_oslo.csv' if Rails.env.development?
+  filename = 'real_world_locations_osm.csv'
+  # filename = 'real_world_locations_osm_short.csv'
+  # filename = 'real_world_locations_osm_bounded.csv' # if Rails.env.development?
+  def parse_tags(tags_str)
+    tags_str.split(';').map do |tag|
+      key, value = tag.split(':')
+      { key => value }
+    end.reduce({}, :merge)
+  end
   csv_text = Rails.root.join('lib', 'seeds', filename).read
-  csv = CSV.parse(csv_text, headers: true, encoding: 'ISO-8859-1')
+  csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
   csv.each do |row|
     location = RealWorldLocation.new(
-      name: row['name'],
       ext_id: row['ext_id'],
-      type: row['type'],
-      # coordinates: ActiveRecord::Point.new(row['lat'], row['lon']),
-      coordinates: "POINT(#{row['lat']} #{row['lon']})",
+      type: 'unassigned',
+      coordinates: "POINT(#{row['coordinates']})",
+      tags: parse_tags(row['tags'])
     )
-    location.type = 'shop' if location.ext_id[-2..].in? %w[00 01]
-    locations << location
-    puts location.errors.inspect, location.coordinates unless location.valid?
+
+    percentile = location.ext_id[-2..].to_i
+    location.type = 'shop' if percentile.in? 0..12
+
+    if location.valid?
+      locations << location
+    else
+      puts "🛑 #{location.errors.inspect}"
+    end
   end
   RealWorldLocation.import locations
   puts "🌱 Seeded #{RealWorldLocation.count} real world locations."
 
-  # CREATE MONSTERS
+  # MONSTERS
   monsters = []
   csv_text = Rails.root.join('lib/seeds/monsters.csv').read
-  csv = CSV.parse(csv_text, headers: true, encoding: 'ISO-8859-1')
+  csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
   csv.each do |row|
-    monster = Monster.new()
+    monster = Monster.new
     monster.name = row['name']
     monster.description = row['description']
     monster.level = row['level']
     monster.classification = row['classification']
     # monster.tags = row['tags'].split(' ')
-    monsters << monster
+    if monster.valid?
+      monsters << monster
+    else
+      puts "🛑 #{monster.errors.inspect}"
+    end
   end
   Monster.import monsters
   puts "🌱 Seeded #{Monster.count} monsters."
 
-  # CREATE ITEMS
+  # ITEMS
   armorer_offer_list = TradeOfferList.find_or_create_by(name: 'armorer')
   jeweller_offer_list = TradeOfferList.find_or_create_by(name: 'jeweller')
   magic_shop_offer_list = TradeOfferList.find_or_create_by(name: 'magic shop')
 
   csv_text = Rails.root.join('lib/seeds/items.csv').read
-  csv = CSV.parse(csv_text, headers: true, encoding: 'ISO-8859-1')
+  csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
   csv.each do |row|
     item = Item.new
     item.name = row['name']
@@ -123,7 +139,7 @@ execution_time = Benchmark.measure do
   puts "🌱 Seeded #{TradeOffer.count} trade offers."
   puts "🌱 Seeded #{TradeOfferList.count} trade offer lists."
 
-  # CREATE PORTRAITS
+  # PORTRAITS
   portraits = []
   # portraits << Portrait.new(name: 'alchemist', species: %w[human elf dwarf giant troll goblin kenku], genders: %w[f m x], groups: %w[armorer jeweller magic])
   portraits << Portrait.new(name: 'barbarian', species: %w[human elf], genders: %w[m x], groups: %w[armorer])
@@ -157,18 +173,18 @@ execution_time = Benchmark.measure do
   end
   puts "🌱 Seeded #{Portrait.count} portraits."
 
-  # CREATE SHOPS
-  RealWorldLocation.where(type: 'shop').pluck(:id).each do |rwl_id|
-    last_digit = rwl_id.digits[0]
+  # SHOPS
+  RealWorldLocation.where(type: 'shop').each do |rwl|
+    random_digit = (Math.sqrt(rwl.ext_id.to_i) * 100).to_i.digits[0]
     npc = Npc.new({
                     role: 'shopkeeper',
-                    real_world_location_id: rwl_id,
+                    real_world_location_id: rwl.id,
                   })
 
-    if last_digit.in? 0..2
+    if random_digit.in? 0..2
       npc.shop_type = 'magic'
       npc.trade_offer_lists << magic_shop_offer_list
-    elsif last_digit.in? 3..5
+    elsif random_digit.in? 3..5
       npc.shop_type = 'jeweller'
       npc.trade_offer_lists << jeweller_offer_list
     else
@@ -176,25 +192,25 @@ execution_time = Benchmark.measure do
       npc.trade_offer_lists << armorer_offer_list
     end
 
-    unless npc.save
-      puts "🛑 #{npc.errors.inspect}"
-    end
+    puts "🛑 #{npc.errors.inspect}" unless npc.save!
   end
   puts "🌱 Seeded #{Npc.where(role: 'shopkeeper').count} shops."
 
   return if Rails.env.production?
 
-  # CREATE DUNGEONS
+  # DUNGEONS
   Dungeon.max_dungeons.times do |counter|
-    d = Dungeon.new({
+    dungeon = Dungeon.new({
                       created_at: counter.hours.ago,
                       status: Dungeon.statuses[:active] ##rand(2).odd? ? Dungeon.statuses[:active] : Dungeon.statuses[:defeated]
                     })
-    d.save!
+    puts "🛑 #{dungeon.errors.inspect}" unless dungeon.save!
   end
+  puts "🌱 Seeded #{Dungeon.count} dungeons."
+
   # Rake::Task["dungeon:despawn"].execute
 
-  # CREATE NPCS
+  # NPCS
   # 3.times do |counter|
   #   npc = Npc.new({
   #                   created_at: (counter*12).hours.ago,

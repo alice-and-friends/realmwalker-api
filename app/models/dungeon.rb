@@ -8,13 +8,12 @@ class Dungeon < RealmLocation
   validates :level, presence: true
   enum status: { active: 1, defeated: 2, expired: 0 }
 
-  before_validation :set_real_world_location, on: :create
   before_validation :randomize_level_and_monster!, on: :create
 
   def self.max_dungeons
     return 10 if Rails.env.test?
 
-    RealWorldLocation.for_dungeon.count / 22
+    RealWorldLocation.for_dungeon.count / 14
   end
 
   delegate :name, to: :monster
@@ -111,7 +110,7 @@ class Dungeon < RealmLocation
   end
 
   def battle_as(user)
-    Rails.logger.debug "⚔️ #{user.name} started battle against #{monster.name}"
+    Rails.logger.debug { "⚔️ #{user.name} started battle against #{monster.name}" }
 
     # Defaults
     monster_died = user_died = false
@@ -119,10 +118,10 @@ class Dungeon < RealmLocation
 
     # Let's go
     prediction = battle_prediction_for(user)
-    Rails.logger.debug "⚔️ #{user.name} has #{prediction[:chance_of_success]}% chance of success, #{prediction[:chance_of_escape]}% chance of escape"
+    Rails.logger.debug { "⚔️ #{user.name} has #{prediction[:chance_of_success]}% chance of success, #{prediction[:chance_of_escape]}% chance of escape" }
     roll = rand(1..100)
     user_won = (roll <= prediction[:chance_of_success])
-    Rails.logger.debug "⚔️ #{user.name} rolled a #{roll} and #{user_won ? 'won' : 'lost'}"
+    Rails.logger.debug { "⚔️ #{user.name} rolled a #{roll} and #{user_won ? 'won' : 'lost'}" }
     if user_won
       defeated_by! user # Mark dungeon as defeated
       xp_level_change = user.gains_or_loses_xp(monster.xp)
@@ -165,13 +164,6 @@ class Dungeon < RealmLocation
   end
 
   private
-
-  def set_real_world_location
-    self.real_world_location = RealWorldLocation
-                               .for_dungeon
-                               .where.not(id: [Dungeon.pluck(:real_world_location_id)])
-                               .sample
-  end
 
   def randomize_level_and_monster!
     if level.nil?

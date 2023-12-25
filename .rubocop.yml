@@ -11,6 +11,8 @@ AllCops:
     - 'tmp/**/*'
     - '.git/**/*'
     - 'bin/*'
+    - 'lib/seeds/**/*'
+    - '.idea/**/*'
   TargetRubyVersion: 2.7
   SuggestExtensions: false
 
@@ -113,6 +115,9 @@ Metrics/ModuleLength:
     - 'spec/**/*.rb'
 
 Metrics/MethodLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
   Enabled: false
 
 Naming/InclusiveLanguage:

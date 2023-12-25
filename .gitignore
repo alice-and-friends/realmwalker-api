@@ -34,3 +34,6 @@
 
 # IDE
 .idea
+
+# Open Street Maps data
+**/*.pbf

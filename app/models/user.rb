@@ -274,7 +274,6 @@ class User < ApplicationRecord
 
     real_world_location = RealWorldLocation.new(
       type: 'user_owned',
-      name: "#{name}'s base'",
       coordinates: point,
     )
     raise('Failed to validate real world location') unless real_world_location.valid?

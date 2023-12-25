@@ -131,12 +131,13 @@ ActiveRecord::Schema[7.0].define(version: 602) do
   end
 
   create_table "real_world_locations", force: :cascade do |t|
-    t.string "name", null: false
     t.string "type", null: false
     t.string "ext_id"
     t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
+    t.jsonb "tags"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["coordinates"], name: "index_real_world_locations_on_coordinates", unique: true
     t.index ["ext_id"], name: "index_real_world_locations_on_ext_id", unique: true
   end
 

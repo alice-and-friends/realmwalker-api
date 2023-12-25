@@ -10,8 +10,7 @@ class Npc < RealmLocation
 
   ROLES = %w[shopkeeper].freeze
   SHOP_TYPES = %w[armorer jeweller magic].freeze
-  SPOOK_DISTANCE = 500 # meters
-  before_validation :set_real_world_location!, on: :create
+  SPOOK_DISTANCE = 450 # meters
   before_validation :assign_species!, on: :create
   before_validation :assign_gender!, on: :create
   before_validation :assign_name!, on: :create
@@ -76,15 +75,6 @@ class Npc < RealmLocation
   end
 
   private
-
-  def set_real_world_location!
-    return if real_world_location_id.present?
-
-    self.real_world_location = RealWorldLocation
-                               .for_npc
-                               .where.not(id: [RealmLocation.real_world_location_ids_currently_in_use])
-                               .sample
-  end
 
   def assign_species!
     r = rand(1..100)

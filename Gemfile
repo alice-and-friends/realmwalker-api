@@ -58,16 +58,18 @@ group :test do
   gem 'database_cleaner-active_record'
 end
 
-
-gem 'net-http'
-
-gem 'active_model_serializers', '~> 0.10.13'
+# Seeds and generators
+gem 'activerecord-import'
 gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'main'
 
+# API
+gem 'net-http'
+gem 'active_model_serializers', '~> 0.10.13'
+gem 'olive_branch'
 gem 'auth0'
 gem 'jwt'
 
-gem 'activerecord-import'
+# Geography and location stuff
 gem 'activerecord-postgis-adapter'
 gem 'rgeo-activerecord'
-gem 'olive_branch'
+

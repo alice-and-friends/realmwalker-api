@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Auth0UserData
   attr_accessor :sub, :given_name, :family_name, :email
 

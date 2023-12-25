@@ -145,7 +145,7 @@ class UserTest < ActiveSupport::TestCase
     u.equip_item(SHIELD_1, true)
     assert_equal 0, u.equipped_items.where('item.type': 'weapon').count # <- Weapon should no longer be equipped
   end
-  test "user has higher defense bonus after equipping legendary shield" do
+  test 'user has higher defense bonus after equipping legendary shield' do
     u = generate_test_user
     orig_defense_bonus = u.defense_bonus
     shield = u.gain_item Item.find_by(type: 'shield', rarity: 'legendary')

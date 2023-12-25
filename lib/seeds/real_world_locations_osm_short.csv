@@ -1,0 +1,647 @@
+ext_id,coordinates,tags
+682977,59.9180035 10.7401616,image:https://photos.app.goo.gl/9E4uJyGiRutpAVeQ9;name:St. Olavs plass;source:bing;tourism:artwork;wikidata:Q12002560
+28380722,59.918655 10.709961,amenity:cinema;name:Frogner kino;wikidata:Q14449028
+30488448,57.6971416 11.9366462,tourism:viewpoint
+33730394,59.918446 10.734108,"brand:Radisson Blu;brand:wikidata:Q7281341;brand:wikipedia:en:Radisson Blu;name:Radisson Blu Scandinavia Hotel, Oslo;tourism:hotel;website:https://www.radissonblu.com/scandinaviahotel-oslo;wheelchair:yes;wikidata:Q4573522"
+40162687,59.5632454 11.7036585,alt_name:no:Mellomrøysa;description:Riksrøys 35;height:1.45-2.00;historic:boundary_stone;man_made:cairn;name:no:Hansebakkrøysa;name:sv:Mellanröset;ref:Rr35;source:Kartverket/Riksgrenseprotokollene;start_date:1753
+40168940,59.8939448 12.1261044,description:Riksrøys 62;historic:boundary_stone;man_made:cairn;name:no:Linnatjernrøysa;name:sv:Åretjärnsröset;ref:Rr62;source:Kartverket/Riksgrenseprotokollene;start_date:1754
+40175023,59.8346339 11.847513,description:Riksrøys 53;historic:boundary_stone;man_made:cairn;name:sv:Hynnehedsröset;old_name:Hyneheds Røset;ref:Rr53;source:Kartverket/Riksgrenseprotokollene;start_date:1753
+73913604,58.1480414 12.1342723,amenity:fuel;brand:OKQ8;name:OKQ8;operator:OKQ8
+115640561,59.44589 10.704978,"amenity:fuel;branch:Mosseporten;brand:Circle K;car_wash:yes;email:53957@circlekeurope.com;fuel:diesel:yes;fuel:octane_95:yes;fuel:propane:yes;name:Circle K Mosseporten;opening_hours:Mo-Fr 06:00-23:00, Sa 07:00-23:00, Su 08:00-23:00;phone:+4769254210;ref:circlek:53957;trailer:rental:yes;wheelchair:limited"
+210202954,59.4336373 10.6643936,amenity:place_of_worship;religion:muslim
+213574600,59.4384403 10.6675407,alt_name:SF kino Moss;amenity:cinema;branch:Moss;brand:ODEON Kino;brand:wikidata:Q28717922;name:ODEON Moss;toilets:wheelchair:yes;wheelchair:yes
+247134970,58.3522175 12.3908294,"addr:city:Tunhemsvägen 3, 468 30 Vargönargön;addr:country:SE;addr:housenumber:3;addr:postcode:468 30;addr:street:Tunhemsvägen;amenity:fuel;branch:Vargön Trollhättevägen;brand:Preem;brand:wikidata:Q598835;contact:phone:+46 521-221269;contact:website:http://www.preem.se;fuel:diesel:yes;fuel:octane_98:yes;name:Preem;operator:Preem;self_service:yes;source:Preem.se"
+247135037,58.9293203 12.2945858,addr:city:Dals Långed;addr:country:SE;addr:housenumber:32;addr:postcode:660 10;addr:street:Stenebyvägen;amenity:fuel;branch:Dals Långed;brand:din-X;fuel:diesel:yes;fuel:octane_95:yes;name:din-X;shop:no
+247135103,57.7337402 12.0826796,amenity:fuel;branch:Sävedalen;brand:Preem;brand:wikidata:Q598835;contact:phone:+46 70-4501815;contact:website:http://www.preem.se;name:Preem;operator:Preem;source:Preem.se
+247135119,58.0521454 11.521916,amenity:fuel;branch:Klövedal Björholmen;brand:Preem;contact:phone:+46 304-663900;contact:website:http://www.preem.se;name:Preem;operator:Preem;source:Preem.se
+247135162,57.75408 11.99521,amenity:fuel;branch:Hisings-Backa Importgatan;brand:Preem;contact:phone:+46-31-520590;name:Preem;operator:Preem;source:Preem.se;website:https://www.preem.se/
+247135235,57.1256229 12.2930004,amenity:fuel;branch:Varberg Trb;brand:Preem;name:Preem;operator:Preem;source:Preem.se;website:https://www.preem.se/
+247135326,57.66354 12.54783,amenity:fuel;branch:Bollebygd;brand:Preem;contact:phone:+46 33-284102;contact:website:http://www.preem.se;name:Preem;operator:Preem;source:Preem.se
+247135444,57.7059631 11.8493073,amenity:fuel;branch:Göteborg Arendal;brand:Ingo;check_date:2023-05-24;contact:city:GÖTEBORG / Hisingen;contact:postcode:41878;contact:street:Torslandavägen / Arendalsvägen;fuel:diesel:yes;fuel:e85:yes;fuel:octane_95:yes;name:Ingo;operator:Ingo;self_service:yes
+247135475,57.8780074 11.9847043,amenity:fuel;branch:Kungälv;brand:Ingo;contact:city:Kungälv;contact:postcode:44234;contact:street:Smedmästaregatan 1;fuel:diesel:yes;fuel:e85:yes;fuel:octane_95:yes;fuel:octane_96:yes;fuel:octane_98:yes;name:Ingo;operator:Ingo
+247135659,59.935479 10.744153,amenity:fuel;branch:Oslo;brand:Automat1;name:Automat1 Oslo
+247135704,58.35591 12.31765,amenity:fuel;contact:street:Johannesbergsv.1;name:Tanka-Vänersborg;operator:Tanka;source:www.volvokort.com
+247135823,57.80073 12.04155,amenity:fuel;contact:street:Rävebergsvägen;name:Tanka-Göteborg;operator:Tanka;source:www.volvokort.com
+247135867,59.6601388 12.6101304,amenity:fuel;contact:street:Åkaregatan 5;name:Tanka-Arvika;operator:Tanka;source:www.volvokort.com
+253560727,59.4280279 11.343274,amenity:townhall;name:Rakkestad rådhus;ref:3016;website:http://rakkestad.kommune.no/
+260642493,59.9285181 10.6963704,artist_name:Gustav Vigeland;artwork_type:sculpture;image:https://photos.app.goo.gl/WVRZ5nqXQjihF8zw7;mapillary:3873775589371020;name:Livshjulet;tourism:artwork;wikidata:Q21948556;wikipedia:no:Livshjulet (Gustav Vigeland)
+265629014,59.0939309 10.9209009,name:Kystmuséet;tourism:museum
+267432579,58.2669185 12.7722374,historic:church;name:Malma kyrkoruin;religion:christian;ruins:building:church;tourism:attraction;was:amenity:place_of_worship
+275005873,59.957293 11.0487203,name:Thon Hotel Lillestrøm;tourism:hotel
+283257111,57.7078625 11.9713061,addr:city:Göteborg;addr:country:SE;addr:county:Västra Götaland;addr:housenumber:23;addr:postcode:41103;addr:province:Västergötland;addr:street:Nils Ericsonsgatan;brand:ProfilHotels;contact:email:hotelopera@profilhotels.se;contact:fax:+46 31-80 58 17;contact:phone:+46 31-80 50 80;contact:website:https://ligula.se/profilhotels/hotel-opera;internet_access:wlan;name:Hotel Opera;operator:Ligula Hospitality Group;rooms:198;smoking:no;tourism:hotel;wikidata:Q111410113
+287537691,57.634645 11.932871,amenity:fuel;branch:Göteborg Sisjön;brand:Circle K;compressed_air:yes;contact:phone:+46-31-281147;name:Circle K
+292869097,59.9813516 11.0141488,amenity:place_of_worship;denomination:lutheran;name:Oslo Kristne Senter;religion:christian
+293400186,59.8512651 10.6868102,amenity:arts_centre;name:Hellviktangen;sport:swimming;website:https://www.hellviktangen.no/
+294521393,58.707529 12.3381178,tourism:picnic_site
+298715485,59.925469 10.494298,amenity:fuel;automated:yes;branch:Rykkinn;brand:Esso;fuel:HGV_diesel:yes;fuel:diesel:yes;fuel:octane_95:yes;fuel:octane_98:yes;name:Esso Express Rykkinn;opening_hours:24/7;operator:RAM AS;phone:+47 22971007;ref:esso:100115664
+302022048,57.5549379 12.0517554,amenity:fuel;branch:Sandsjöbackamotet;brand:Shell;name:Shell;operator:Shell;shop:kiosk
+305511535,59.3046295 10.4424378,amenity:school;name:Klokkeråsen skole
+306226096,59.1826631 10.9316646,archaeological_site:tumulus;historic:archaeological_site;name:Holtevarden;wheelchair:no
+309121877,57.2330529 12.192032,created_by:Potlatch 0.10f;man_made:windmill
+312531486,59.890557 10.768363,amenity:bench;backrest:no;material:wood;seats:4;tourism:viewpoint
+316468638,57.3329412 10.5339795,artist_name:Marit Benthe Norheim;artwork_type:statue;attraction:yes;name:Fruen fra Havet;start_date:2001;tourism:artwork
+323126225,59.6113041 10.4075818,amenity:bank;atm:yes;branch:Svelvik;brand:Sparebanken Øst;name:Sparebanken Øst Svelvik;opening_hours:Mo-Fr 10:00-15:00;phone:-47 33 51 38 32;ref:bankorg:912851737;website:https://www.oest.no/
+325136490,59.4383293 10.6715327,amenity:place_of_worship;name:Moss Frikirke;religion:christian
+327701253,57.7249112 12.9376034,museum:art;name:Textilmuseet;tourism:museum
+331298134,59.8582639 10.4769232,"amenity:fuel;branch:Hvalstad;brand:YX 7-Eleven;email:711no7584@7-eleven.no;fuel:HGV_diesel:yes;fuel:diesel:yes;fuel:octane_95:yes;hgv:yes;name:YX 7-Eleven Hvalstad;opening_hours:Mo-Fr 06:00-23:00, Sa 08:00-23:00, Su 09:00-23:00;phone:+47 66845572;ref:7eleven:445;ref:yx:10417584;shop:yes;wheelchair:yes"
+339853692,59.7325956 11.7431199,name:Rømskog Spa & Resort;old_name:Zen Resort & Spa;source:survey;tourism:hotel
+355581051,59.9102095 10.7395665,historic:monument;name:Hanske-fontenen;website:https://www.flickr.com/photos/dionhinchcliffe/3977602064/
+360448380,57.6098754 12.0501321,addr:city:Kållered;addr:country:SE;addr:housenumber:9;addr:postcode:42832;addr:street:Hagabäcksleden;amenity:library;name:Kållereds bibliotek;wikidata:Q61752232
+376571925,59.915673 10.7405,check_date:2022-12-25;email:stefan@thonhotels.no;fax:+47 23315555;internet_access:wlan;internet_access:fee:no;name:Thon Hotel Rosenkrantz;operator:Thon Hotels;parking:underground;phone:+47 23315500;rooms:150;tourism:hotel;website:https://www.thonhotels.no/hoteller/land/norge/oslo/thon-hotel-stefan/;wheelchair:yes
+388130524,57.7500293 11.9846347,name:Pojken och Fågeln;tourism:artwork;wikidata:Q34451835
+409838970,59.7253013 10.4289285,historic:ruins;name:Tyvekollen Bygdeborg;tourism:viewpoint
+411816158,59.229328 10.910531,"amenity:fuel;branch:Gressvik;brand:Best;car_wash:yes;email:bestgressvik@beststasjon.no;fast_food:yes;fuel:adblue:yes;hgv:yes;name:Best Gressvik;opening_hours:Mo-Fr 06:00-21:00, Sa 08:00-23:00, Su 09:00-23:00;operator:Best;phone:+47 69327717;ref:best:351;service:vehicle:car_repair:yes;service:vehicle:tyres:yes;shop:yes"
+416047709,59.9339448 11.5396035,historic:fort;name:Urskog fort;tourism:museum
+431825407,57.7070811 12.4627035,caravans:yes;name:Hindås Camping;shower:yes;tents:yes;toilets:yes;tourism:camp_site
+436624629,59.8670366 10.4356332,name:Djupedalsåsen;tourism:viewpoint
+441918566,57.4085955 10.5160193,"fee:yes;name:Kystmuseet Bangsbo Fort - Bunker Museum;opening_hours:Jun,Aug-Oct Mo-Fr 10:00-16:00; Jun,Aug-Oct PH,Sa,Su 11:00-16:00; Jul Mo-Fr 10:00-17:00; Jul PH,Sa,Su 11:00-17:00;tourism:museum;website:https://www.kystmuseet.dk/;wheelchair:yes"
+444819374,57.7249784 12.9286129,amenity:school;name:Norrbyskolan
+448828213,59.2680646 10.4044789,name:Hotell Klubben;tourism:hotel;wheelchair:yes
+454713669,57.6814454 11.6711837,barbeque:yes;tourism:picnic_site
+461878436,57.9879336 12.4406061,description:en:12km narrow gauge preserved railway with running trains and museum.;historic:yes;name:Anten-Gräfsnäs Järnväg;name:en:Anten-Gräfsnäs Preserved Railway;tourism:attraction;website:https://www.agj.net/;wheelchair:limited;wikidata:Q10413126
+469879032,58.9664609 12.6143601,amenity:restaurant;name:Tössestugan;opening_hours:Mo-Su 09:00-19:00;tourism:hotel;url:http://www.tossestugan.se/
+474750505,59.785079 10.4250143,tourism:viewpoint
+478975153,59.3657382 11.5832462,height:17;man_made:tower;name:Linnekleppen;tourism:viewpoint;tower:construction:tower;tower:type:observation
+483372801,59.3538463 11.5802103,tourism:picnic_site
+494405904,59.727544 10.5189369,alt_name:Fagertun;amenity:school;name:Fagertun skole
+508572909,57.7094385 11.9604717,description:Fartygsmuseum;description:en:Exhibition of many old big ships;museum:maritime;name:Maritiman;official_name:Maritiman - Göteborgs Maritima Centrum;start_date:1987;tourism:museum;website:https://www.maritiman.se;wikidata:Q3293750
+529008913,59.2977972 10.8323597,man_made:tower;name:Rørfjell;tourism:viewpoint
+543393255,57.6583262 12.1203833,amenity:fuel;brand:Circle K;kiosk:yes;name:Circle K;operator:Circle K
+557078887,59.2378128 11.8261169,description:Riksrøys 19. Riksmerke 39/42;ele:108.7;height:1.6;historic:boundary_stone;man_made:cairn;name:no:Salholmsrøysa;name:sv:Salholmsröset;old_name:Salholms Røset;ref:Rr19;source:Kartverket/Riksgrenseprotokollene;start_date:1752;width:2.3
+557079873,59.1607601 11.7763466,description:Riksrøys 12B;ele:169.1;historic:boundary_stone;man_made:cairn;ref:Rr12B;source:Kartverket/Riksgrenseprotokollene;start_date:1960
+557080903,59.0336756 11.7105158,alt_name:no:Tåkeholmrøysa;description:Riksrøys 3;ele:168.0;historic:boundary_stone;man_made:cairn;name:no:Riksrøys 3;name:sv:Tågholmsröset;ref:Rr3;source:Kartverket/Riksgrenseprotokollene;start_date:1752
+557128714,59.374413 11.7915927,description:Riksrøys 26;historic:boundary_stone;man_made:cairn;name:no:Nordre Morøysa;name:sv:Norra Moröset;ref:Rr26;source:Kartverket/Riksgrenseprotokollene;start_date:1752
+568794852,57.3888064 12.6773139,amenity:fuel;brand:Qstar;name:Qstar;operator:Qstar
+589015015,59.6556604 12.592489,name:Scandic Arvika;operator:Rica Hotels;tourism:hotel;website:http://www.oscarstatt.se/
+598581183,57.7264844 11.946001,amenity:fuel;brand:St1;name:St1;operator:St1
+606965525,57.6335423 11.9373694,amenity:library;name:Askims Bibliotek;wikidata:Q36796014
+617333603,59.9348401 10.484875,ele:252;name:Store Olaven;tourism:viewpoint
+626930006,59.7872424 10.4206701,historic:ruins
+635773205,59.660973 12.6132285,amenity:fuel;brand:Shell;brand:wikidata:Q154950;brand:wikipedia:en:Royal Dutch Shell;kiosk:operator:7-eleven;name:Shell;operator:Shell;shop:kiosk
+663582562,57.6684115 11.9186532,tourism:picnic_site
+671679367,57.704978 11.703401,man_made:lighthouse;name:Lilla Varholmen fyr övre;seamark:light:1:character:Iso;seamark:light:1:colour:red;seamark:light:1:height:29;seamark:light:1:period:3;seamark:light:1:range:5;seamark:light:1:sector_end:79;seamark:light:1:sector_start:61;seamark:light:2:character:Iso;seamark:light:2:colour:green;seamark:light:2:height:29;seamark:light:2:period:3;seamark:light:2:range:4;seamark:light:2:sector_end:105;seamark:light:2:sector_start:79;seamark:light:3:character:Iso;seamark:light:3:colour:red;seamark:light:3:height:29;seamark:light:3:period:3;seamark:light:3:range:5;seamark:light:3:sector_end:114;seamark:light:3:sector_start:105;seamark:light:4:category:upper;leading;seamark:light:4:character:Iso;seamark:light:4:colour:white;seamark:light:4:height:29;seamark:light:4:period:3;seamark:light:4:range:10;seamark:light:4:sector_end:314;seamark:light:4:sector_start:314;seamark:light:reference:C 0552.1;seamark:name:Lilla Varholmen;seamark:type:light_minor;source:US NGA Pub. 116. 2021-03-27.;wikidata:Q39629600
+683250128,57.9243372 12.3544641,historic:archaeological_site;name:Östad Gravfält;name:en:Östad grave field
+698837336,59.1899056 11.1355472,historic:monument;internal_name:Kongegrava;name:Østbyrøysene;source:survey;tourism:attraction
+703975404,59.1896458 11.1639814,man_made:tower;tower:type:diving_platform
+707216336,57.6904788 11.9076669,addr:city:Göteborg;addr:country:SE;addr:housenumber:1;addr:postcode:41451;addr:street:Klippan;branch:Göteborg;contact:email:info@hotelwaterfront.se;contact:phone:+46-31-720 22 20;contact:website:hotelwaterfront.se;name:Best Western Plus Hotel Waterfront;rooms:151;tourism:hotel;wheelchair:limited
+725413326,59.151188 10.8294437,man_made:lighthouse;name:Strømtangen fyr;source:knowledge;wikidata:Q8975271
+731260731,57.6409213 12.1202412,tourism:viewpoint
+736602686,59.910825 10.820581,"amenity:fuel;branch:Bryn;brand:Circle K;car_wash:yes;compressed_air:yes;email:52929@circlekeurope.com;fuel:diesel:yes;fuel:octane_95:yes;fuel:propane:yes;internet_access:wlan;name:Circle K Bryn;opening_hours:Mo-Fr 06:00-22:00, Sa-Su 08:00-22:00;phone:+4722648922;ref:circlek:52929"
+737790795,59.7665808 10.467366,tourism:viewpoint
+747443846,58.2520859 11.5513312,historic:monastery;name:Dragsmarks klosterruin;ruins:building:monastery;wikipedia:sv:Dragsmarks kloster
+760650500,59.7934288 10.4971015,man_made:tower;source:survey
+772328323,59.4178675 10.4869727,amenity:public_building;name:Paviljongen
+788567051,56.6395337 12.9222609,historic:memorial;memorial:stele;name:Slaget vid Fyllebro
+795363786,58.8784997 11.5351019,description:Riksrøys KAa;ele:42.0;height:2.0;historic:boundary_stone;note:wooden post;ref:RrKAa;source:Kartverket/Riksgrenseprotokollene;start_date:1984
+798882834,59.8499039 11.0097833,capacity:6;dnt:classification:ubetjent;dnt:iid:219;dnt:lock:yes;ele:190;name:Røyrivannskoia;network:Den Norske Turistforening;operator:DNT Oslo og Omegn;ref:kartverket:hytte:1113;tourism:wilderness_hut;website:https://ut.no/hytte/roeyrivannskoia;wikidata:Q11998957
+803471779,59.9329541 11.4360093,amenity:fuel;branch:Aurskog;brand:LPG Norge;fuel:lpg:yes;name:LPG Aurskog;opening_hours:24/7;operator:Nytteprodukter A/S;phone:+47 63 86 33 21
+807130322,59.985025 10.6702472,aeroway:light:obstacle;communication:mobile_phone:yes;communication:tv:yes;ele:515;height:209;man_made:communications_tower;name:Tryvann hovedsender;note:Hovedsender;operator:Telenor;ref:hinder:2190;tower:construction:lattice;tower:type:communication
+826208278,59.1374099 11.052099,tourism:viewpoint
+834100847,57.6430573 10.4082024,tourism:picnic_site
+842210402,59.9627651 10.8482007,alt_name:Rødtvet gruve;historic:mine;man_made:mineshaft;name:Gothalfske Gruver;tourism:attraction
+849400333,59.9211552 10.4161865,archaeological_site:tumulus;historic:archaeological_site;name:Røverkulåsen gravrøys
+849975307,59.9209437 10.7509695,amenity:fuel;automated:yes;branch:Fredensborg;brand:Uno-X;check_date:2023-03-05;email:automat@unox.no;fuel:diesel:yes;fuel:octane_95:yes;name:Uno-X Fredensborg;old_ref:yx:168;ref:unox:387;wheelchair:yes
+849975995,59.4632425 10.6888393,amenity:fuel;automated:yes;branch:Kambo;brand:Uno-X;email:automat@unox.no;fuel:diesel:yes;fuel:octane_95:yes;name:Uno-X Kambo;old_ref:yx:201;ref:unox:383
+856632026,57.6663054 12.1344154,description:L Utsikten;tourism:viewpoint
+864702449,57.9790431 12.4379065,check_date:2022-10-23;direction:-10;note:Amazing view of the river and hills;source:survey;tourism:viewpoint
+873861069,59.6122862 10.4605948,amenity:place_of_worship;denomination:pentecostal;name:Pinsemenigheten i Hurum;religion:christian
+893006135,59.2733231 12.7718868,amenity:fuel;fuel:diesel:yes;fuel:octane_91:yes;fuel:octane_95:yes;name:Bilisten;operator:Bilisten
+900906373,59.4237677 10.6792334,amenity:kindergarten;name:Ørejordet barnehage;wheelchair:limited
+912390489,59.9234458 10.5254593,tourism:viewpoint
+919687887,59.9191226 10.5198667,archaeological_site:fortification;fortification_type:hill_fort;historic:archaeological_site;name:Østveggen;position:fixme
+931144807,57.7298664 10.6169384,tourism:viewpoint
+936837194,56.7107469 12.8943473,archaeological_site:tumulus;historic:archaeological_site;name:Ivars Kulle;tourism:attraction
+961872558,59.8625823 10.4790837,archaeological_site:tumulus;historic:archaeological_site
+973872552,59.9229511 10.7223842,name:Ellingsens Pensjonat;tourism:hotel;website:https://www.ellingsenspensjonat.no/
+986576970,58.357034 12.3941668,amenity:place_of_worship;church:EFK = Evangeliska Frikyrkan;denomination:baptist;name:Salemkyrkan;religion:christian
+1029187441,57.6893512 11.995322,addr:country:SE;addr:housenumber:22;addr:postcode:40020;addr:street:Mölndalsvägen;amenity:bank;atm:yes;brand:Handelsbanken;brand:wikidata:Q1421630;brand:wikipedia:sv:Handelsbanken;name:Handelsbanken;operator:Handelsbanken
+1070506783,56.6772072 12.8591089,artist_name:Peter Mandl;artwork_type:fountain;material:Glass;name:Neptunus;start_date:1990;tourism:artwork
+1093889261,59.3413493 11.0091221,tourism:viewpoint
+1118387359,56.71644 11.5156195,man_made:tower;seamark:landmark:category:mast;seamark:landmark:function:television;seamark:type:landmark;source:Fugro (2005);tower:construction:lattice;tower:type:communication
+1149696893,57.6594553 11.8045466,man_made:lighthouse;name:Rivö fyr;seamark:light:1:character:Fl;seamark:light:1:colour:green;seamark:light:1:height:2;seamark:light:1:period:3;seamark:light:1:range:3;seamark:light:1:sector_end:172;seamark:light:1:sector_start:170;seamark:light:1:sequence:0.7+(2.3);seamark:light:2:character:Fl;seamark:light:2:colour:white;seamark:light:2:height:2;seamark:light:2:period:3;seamark:light:2:range:3;seamark:light:2:sector_end:178;seamark:light:2:sector_start:172;seamark:light:2:sequence:0.7+(2.3);seamark:light:3:character:Fl;seamark:light:3:colour:red;seamark:light:3:height:2;seamark:light:3:period:3;seamark:light:3:range:3;seamark:light:3:sector_end:199;seamark:light:3:sector_start:178;seamark:light:3:sequence:0.7+(2.3);seamark:light:4:character:Fl;seamark:light:4:colour:white;seamark:light:4:height:2;seamark:light:4:period:3;seamark:light:4:range:1;seamark:light:4:sector_end:326.5;seamark:light:4:sector_start:199;seamark:light:4:sequence:0.7+(2.3);seamark:light:4:visibility:unintensified;seamark:light:5:character:Fl;seamark:light:5:colour:green;seamark:light:5:height:2;seamark:light:5:period:3;seamark:light:5:range:3;seamark:light:5:sector_end:340;seamark:light:5:sector_start:326.5;seamark:light:5:sequence:0.7+(2.3);seamark:light:6:character:Fl;seamark:light:6:colour:white;seamark:light:6:height:2;seamark:light:6:period:3;seamark:light:6:range:6;seamark:light:6:sector_end:345.5;seamark:light:6:sector_start:340;seamark:light:6:sequence:0.7+(2.3);seamark:light:7:character:Fl;seamark:light:7:colour:white;seamark:light:7:height:2;seamark:light:7:period:3;seamark:light:7:range:6;seamark:light:7:sector_end:345.5;seamark:light:7:sector_start:340;seamark:light:7:sequence:0.7+(2.3);seamark:light:8:character:Fl;seamark:light:8:colour:red;seamark:light:8:height:2;seamark:light:8:period:3;seamark:light:8:range:4;seamark:light:8:sector_end:352;seamark:light:8:sector_start:345.5;seamark:light:8:sequence:0.7+(2.3);seamark:light:reference:C 0652;seamark:name:Rivö;seamark:type:light_minor;source:US NGA Pub. 116. 2011-07-07.;wikidata:Q42310434
+1179510583,57.6201101 11.8228787,light:category:flood;man_made:lighthouse;seamark:light:1:character:Fl;seamark:light:1:colour:green;seamark:light:1:group:2;seamark:light:1:height:4;seamark:light:1:period:6;seamark:light:1:range:6;seamark:light:1:sector_end:4.5;seamark:light:1:sector_start:0;seamark:light:2:character:Fl;seamark:light:2:colour:white;seamark:light:2:group:2;seamark:light:2:height:4;seamark:light:2:period:6;seamark:light:2:range:10;seamark:light:2:sector_end:5.5;seamark:light:2:sector_start:4.5;seamark:light:3:character:Fl;seamark:light:3:colour:red;seamark:light:3:group:2;seamark:light:3:height:4;seamark:light:3:period:6;seamark:light:3:range:7;seamark:light:3:sector_end:32.5;seamark:light:3:sector_start:5.5;seamark:light:4:character:Fl;seamark:light:4:colour:white;seamark:light:4:group:2;seamark:light:4:height:4;seamark:light:4:period:6;seamark:light:4:range:6;seamark:light:4:sector_end:142.5;seamark:light:4:sector_start:32.5;seamark:light:5:character:Fl;seamark:light:5:colour:green;seamark:light:5:group:2;seamark:light:5:height:4;seamark:light:5:period:6;seamark:light:5:range:10;seamark:light:5:sector_end:164;seamark:light:5:sector_start:142.5;seamark:light:6:character:Fl;seamark:light:6:colour:white;seamark:light:6:group:2;seamark:light:6:height:4;seamark:light:6:period:6;seamark:light:6:sector_end:166.5;seamark:light:6:sector_start:164;seamark:light:7:character:Fl;seamark:light:7:colour:red;seamark:light:7:group:2;seamark:light:7:height:4;seamark:light:7:period:6;seamark:light:7:sector_end:173;seamark:light:7:sector_start:166.5;seamark:light:reference:C 0636;seamark:name:Knarrholmen;seamark:type:light_minor;source:US NGA Pub. 116. 2011-07-07.;wikidata:Q42310338
+1215846924,57.565663 11.7813484,tourism:viewpoint
+1240055066,59.1639241 10.9337246,historic:ruins
+1246978838,59.9231297 10.841093,amenity:fuel;branch:Oslo;brand:Automat1;name:Automat1 Oslo;opening_hours:24/7
+1259481519,58.4364467 12.7230249,museum:military;name:F 7 Gårds- och flottiljmuseum;source:http://www.sunnersberg.com/flygplan/om_f7_museum.htm;tourism:museum
+1270613123,59.7353481 10.8065502,archaeological_site:tumulus;historic:archaeological_site
+1282600813,58.806879 12.4368669,fee:no;museum:art;name:Dalsland Konstmuseum;opening_hours:11:00-17:00;phone:046-530-300 98;046-70-5742185;tourism:museum;website:https://www.dalslandskonstmuseum.se/;wikidata:Q10466272
+1291612263,59.479517 11.659585,access:yes;amenity:library;name:Marker folkebibliotek;phone:+47 69 81 05 00;ref:isil:NO-2011900;website:http://www.marker.kommune.no/bibliotek.241185.no.html;wheelchair:no
+1304227936,57.8078832 12.4139393,description:Stålebo våtmarksområde;tourism:viewpoint
+1318874201,57.6678227 12.5684029,addr:city:Bollebygd;addr:country:SE;addr:housenumber:3;addr:postcode:51722;addr:street:Stationsvägen;amenity:bank;atm:yes;brand:Handelsbanken;brand:wikidata:Q1421630;brand:wikipedia:sv:Handelsbanken;name:Handelsbanken;operator:Handelsbanken
+1330409854,59.5273925 11.1879527,historic:fort;name:Staås batteri;start_date:1902;wikidata:Q19390373;wikipedia:no:Staås batteri
+1350746637,59.8915619 10.555802,artwork_type:sculpture;image:https://images.mapillary.com/ZdaYczCvjJbgeBvYQP2ThQ/thumb-2048.jpg;mapillary:763731674336941;ref:12;tourism:artwork
+1357274684,59.7535457 10.7866892,description:no:Gammelt jaktstup (dyrefelle).;historic:archaeological_site;name:Elgjartun;place:locality;source:name:signpost
+1364613527,59.3554647 10.6792141,man_made:tower;tourism:viewpoint
+1374031801,58.9443332 11.1592256,name:Strömstad Spa;tourism:hotel;wheelchair:yes
+1377624091,58.4632532 11.3637469,tourism:viewpoint
+1382680654,59.0348393 12.1920181,amenity:bbq;covered:no;fireplace:yes;fuel:wood;tourism:picnic_site
+1388500114,59.8999315 10.7838611,tourism:viewpoint
+1395977342,57.6506055 11.9522303,amenity:fuel;branch:Göteborg Högsbo;brand:Fordonsgas;compressed_air:no;fuel:1_25:no;fuel:1_50:no;fuel:GTL_diesel:no;fuel:HGV_diesel:no;fuel:biodiesel:no;fuel:biogas:yes;fuel:cng:yes;fuel:diesel:no;fuel:e10:no;fuel:e85:no;fuel:electricity:no;fuel:lpg:no;fuel:octane_100:no;fuel:octane_91:no;fuel:octane_95:no;fuel:octane_98:no;name:Fordonsgas;operator:Fordonsgas
+1399819641,58.4353475 11.2994081,amenity:cinema;name:Hunnebo bio;wikidata:Q117074456
+1407679945,57.7249434 12.0332872,addr:city:Göteborg;addr:country:SE;addr:county:Västra Götaland;addr:housenumber:6;addr:postcode:416 73;addr:province:Västergötland;addr:street:Torpavallsgatan;contact:phone:+46-31-251100;name:Apple Hotel;rooms:116;tourism:hotel
+1425503084,59.881815 10.9566039,ele:358;name:Tronfjellet;natural:peak;note:The view isn't that good; maybe this doesn't qualify as viewpoint;source:survey;tourism:viewpoint
+1445780803,59.8922427 10.6019147,description:da:Fugletårn;description:de:Vogelbeobachtungsturm;description:en:Bird watching tower;description:nl:Vogelkijktoren;leisure:bird_hide;man_made:tower;name:Fugletorn;observation:wild_animal;source:Bing;survey;tower:type:observation;viewpoint:yes;wheelchair:yes
+1457866173,57.747423 12.0368811,amenity:kindergarten
+1484798088,59.9594019 10.9205515,amenity:kindergarten;capacity:72;max_age:5;min_age:1;name:Nedre Fossum gård barnehage;no-barnehage:nsrid:991963170;operator:Oslo kommune;operator:type:public
+1498236034,58.3516212 11.9348462,addr:country:SE;addr:housenumber:26;addr:postcode:451 31;addr:street:Norra Drottninggatan;name:Carlia;operator:Best Western;tourism:hotel;website:https://www.carlia.com/
+1527183541,57.215402 11.8284,man_made:lighthouse;name:Fladen;seamark:light:1:character:LFl;seamark:light:1:colour:white;seamark:light:1:height:24;seamark:light:1:period:8;seamark:light:1:range:9;seamark:light:1:sector_end:360;seamark:light:1:sector_start:0;seamark:light:2:character:Fl;seamark:light:2:colour:yellow;seamark:light:2:height:26;seamark:light:2:period:3;seamark:light:3:range:3;seamark:light:reference:C 0671;seamark:name:Fladen;seamark:radar_transponder:category:racon;seamark:radar_transponder:group:N;seamark:radar_transponder:period:30;seamark:type:light_major;source:US NGA Pub. 116. 2011-07-07.
+1531071003,57.3736698 11.8553455,man_made:lighthouse;name:Hallands Svartskär;seamark:light:10:character:Fl;seamark:light:10:colour:white;seamark:light:10:height:10;seamark:light:10:period:3;seamark:light:10:range:9;seamark:light:10:sector_end:328;seamark:light:10:sector_start:324;seamark:light:11:character:Fl;seamark:light:11:colour:red;seamark:light:11:height:10;seamark:light:11:period:3;seamark:light:11:range:6;seamark:light:11:sector_end:340;seamark:light:11:sector_start:328;seamark:light:12:character:Fl;seamark:light:12:colour:green;seamark:light:12:height:10;seamark:light:12:period:3;seamark:light:12:range:6;seamark:light:12:sector_end:353;seamark:light:12:sector_start:340;seamark:light:13:character:Fl;seamark:light:13:colour:white;seamark:light:13:height:10;seamark:light:13:period:3;seamark:light:13:range:9;seamark:light:13:sector_end:0;seamark:light:13:sector_start:353;seamark:light:14:character:Fl;seamark:light:14:colour:red;seamark:light:14:height:10;seamark:light:14:period:3;seamark:light:14:range:6;seamark:light:14:sector_end:17;seamark:light:14:sector_start:0;seamark:light:1:character:Fl;seamark:light:1:colour:green;seamark:light:1:height:10;seamark:light:1:period:3;seamark:light:1:range:6;seamark:light:1:sector_end:174;seamark:light:1:sector_start:165;seamark:light:2:character:Fl;seamark:light:2:colour:white;seamark:light:2:height:10;seamark:light:2:period:3;seamark:light:2:range:9;seamark:light:2:sector_end:179;seamark:light:2:sector_start:174;seamark:light:3:character:Fl;seamark:light:3:colour:red;seamark:light:3:height:10;seamark:light:3:period:3;seamark:light:3:range:6;seamark:light:3:sector_end:197;seamark:light:3:sector_start:179;seamark:light:4:character:Fl;seamark:light:4:colour:red;seamark:light:4:height:10;seamark:light:4:period:3;seamark:light:4:range:6;seamark:light:4:sector_end:260;seamark:light:4:sector_start:197;seamark:light:4:visibility:unintensified;seamark:light:5:character:Fl;seamark:light:5:colour:green;seamark:light:5:height:10;seamark:light:5:period:3;seamark:light:5:range:9;seamark:light:5:sector_end:264;seamark:light:5:sector_start:260;seamark:light:5:visibility:unintensified;seamark:light:6:character:Fl;seamark:light:6:colour:white;seamark:light:6:height:10;seamark:light:6:period:3;seamark:light:6:range:9;seamark:light:6:sector_end:266;seamark:light:6:sector_start:264;seamark:light:6:visibility:unintensified;seamark:light:7:character:Fl;seamark:light:7:colour:red;seamark:light:7:height:10;seamark:light:7:period:3;seamark:light:7:range:6;seamark:light:7:sector_end:287;seamark:light:7:sector_start:266;seamark:light:7:visibility:unintensified;seamark:light:8:character:Fl;seamark:light:8:colour:red;seamark:light:8:height:10;seamark:light:8:period:3;seamark:light:8:range:6;seamark:light:8:sector_end:295.5;seamark:light:8:sector_start:287;seamark:light:9:character:Fl;seamark:light:9:colour:green;seamark:light:9:height:10;seamark:light:9:period:3;seamark:light:9:range:6;seamark:light:9:sector_end:324;seamark:light:9:sector_start:295.5;seamark:light:reference:C 0660;seamark:name:Hallands Svartskar;seamark:national_name:Hallands Svartskär;seamark:type:light_minor;source:US NGA Pub. 116. 2011-07-07.
+1531083655,57.6390129 11.6140342,man_made:lighthouse;name:Köttstycket fyr;seamark:light:character:Fl;seamark:light:colour:red;seamark:light:group:2;seamark:light:height:9;seamark:light:period:6;seamark:light:range:4;seamark:light:reference:C 0564.5;seamark:light:sequence:0.5+(1)+0.5+(4);seamark:name:Köttstycket;seamark:radar_reflector:yes;seamark:type:light_minor;source:US NGA Pub. 116. 2011-07-07.;wikidata:Q42309167
+1531109899,57.732409 11.6616259,man_made:lighthouse;name:Hälsö nedre;seamark:light:10:category:lower;seamark:light:10:character:Iso;seamark:light:10:colour:red;seamark:light:10:height:7;seamark:light:10:period:4;seamark:light:10:range:7;seamark:light:10:sector_end:4;seamark:light:10:sector_start:353;seamark:light:1:category:lower;seamark:light:1:character:Iso;seamark:light:1:colour:green;seamark:light:1:height:7;seamark:light:1:period:4;seamark:light:1:range:6;seamark:light:1:sector_end:177;seamark:light:1:sector_start:168;seamark:light:2:character:Iso;seamark:light:2:colour:white;seamark:light:2:height:7;seamark:light:2:period:4;seamark:light:2:range:10;seamark:light:2:sector_end:185;seamark:light:2:sector_start:177;seamark:light:3:category:lower;seamark:light:3:character:Iso;seamark:light:3:colour:red;seamark:light:3:height:7;seamark:light:3:period:4;seamark:light:3:range:7;seamark:light:3:sector_end:210;seamark:light:3:sector_start:185;seamark:light:4:category:lower;seamark:light:4:character:Iso;seamark:light:4:colour:green;seamark:light:4:height:7;seamark:light:4:period:4;seamark:light:4:range:6;seamark:light:4:sector_end:239;seamark:light:4:sector_start:210;seamark:light:4:visibility:unintensified;seamark:light:5:category:lower;seamark:light:5:character:Iso;seamark:light:5:colour:white;seamark:light:5:height:7;seamark:light:5:period:4;seamark:light:5:range:10;seamark:light:5:sector_end:257;seamark:light:5:sector_start:239;seamark:light:5:visibility:unintensified;seamark:light:6:category:lower;seamark:light:6:character:Iso;seamark:light:6:colour:red;seamark:light:6:height:7;seamark:light:6:period:4;seamark:light:6:range:7;seamark:light:6:sector_end:280;seamark:light:6:sector_start:257;seamark:light:6:visibility:unintensified;seamark:light:7:category:lower;seamark:light:7:character:Iso;seamark:light:7:colour:white;seamark:light:7:height:7;seamark:light:7:period:4;seamark:light:7:range:10;seamark:light:7:sector_end:338;seamark:light:7:sector_start:280;seamark:light:8:category:lower;seamark:light:8:character:Iso;seamark:light:8:colour:green;seamark:light:8:height:7;seamark:light:8:period:4;seamark:light:8:range:6;seamark:light:8:sector_end:349;seamark:light:8:sector_start:338;seamark:light:9:category:lower;seamark:light:9:character:Iso;seamark:light:9:colour:white;seamark:light:9:height:7;seamark:light:9:period:4;seamark:light:9:range:10;seamark:light:9:sector_end:353;seamark:light:9:sector_start:349;seamark:light:reference:C 0536;seamark:name:Hällsö nedre;seamark:type:light_minor;source:US NGA Pub. 116. 2011-07-07.;wikidata:Q39646801
+1531117957,58.2010908 11.8467057,man_made:lighthouse;name:Strandanäs fyr;seamark:light:1:character:Fl;seamark:light:1:colour:green;seamark:light:1:height:4;seamark:light:1:period:3;seamark:light:1:range:3;seamark:light:1:sector_end:178;seamark:light:1:sector_start:175;seamark:light:2:character:Fl;seamark:light:2:colour:white;seamark:light:2:height:4;seamark:light:2:period:3;seamark:light:2:range:6;seamark:light:2:sector_end:185.5;seamark:light:2:sector_start:178;seamark:light:3:character:Fl;seamark:light:3:colour:red;seamark:light:3:height:4;seamark:light:3:period:3;seamark:light:3:range:4;seamark:light:3:sector_end:242;seamark:light:3:sector_start:185.5;seamark:light:4:character:Fl;seamark:light:4:colour:white;seamark:light:4:height:4;seamark:light:4:period:3;seamark:light:4:range:6;seamark:light:4:sector_end:310;seamark:light:4:sector_start:242;seamark:light:4:visibility:unintensified;seamark:light:5:character:Fl;seamark:light:5:colour:green;seamark:light:5:height:4;seamark:light:5:period:3;seamark:light:5:range:3;seamark:light:5:sector_end:352;seamark:light:5:sector_start:310;seamark:light:6:character:Fl;seamark:light:6:colour:white;seamark:light:6:height:4;seamark:light:6:period:3;seamark:light:6:range:6;seamark:light:6:sector_end:356;seamark:light:6:sector_start:352;seamark:light:7:character:Fl;seamark:light:7:colour:red;seamark:light:7:height:4;seamark:light:7:period:3;seamark:light:7:range:4;seamark:light:7:sector_end:8;seamark:light:7:sector_start:356;seamark:light:reference:C 0512;seamark:name:Strandanäs;seamark:type:light_minor;source:US NGA Pub. 116. 2011-07-07.;wikidata:Q41799399
+1531129056,57.863658 11.458697,man_made:lighthouse;name:Hätteberget fyr;seamark:light:1:character:Fl;seamark:light:1:colour:white;seamark:light:1:group:2;seamark:light:1:height:26;seamark:light:1:period:12;seamark:light:1:range:21;seamark:light:1:sector_end:110;seamark:light:1:sector_start:8;seamark:light:1:sequence:1.5+(2)+1.5+(7);seamark:light:2:character:Fl;seamark:light:2:colour:red;seamark:light:2:group:2;seamark:light:2:height:26;seamark:light:2:period:12;seamark:light:2:range:18;seamark:light:2:sector_end:152;seamark:light:2:sector_start:110;seamark:light:2:sequence:1.5+(2)+1.5+(7);seamark:light:3:character:Fl;seamark:light:3:colour:green;seamark:light:3:group:2;seamark:light:3:height:26;seamark:light:3:period:12;seamark:light:3:range:16;seamark:light:3:sector_end:225;seamark:light:3:sector_start:152;seamark:light:3:sequence:1.5+(2)+1.5+(7);seamark:light:4:character:Fl;seamark:light:4:colour:white;seamark:light:4:group:2;seamark:light:4:height:26;seamark:light:4:period:12;seamark:light:4:range:18;seamark:light:4:sector_end:260;seamark:light:4:sector_start:225;seamark:light:4:sequence:1.5+(2)+1.5+(7);seamark:light:5:character:Fl;seamark:light:5:colour:red;seamark:light:5:group:2;seamark:light:5:height:26;seamark:light:5:period:12;seamark:light:5:range:15;seamark:light:5:sector_end:346;seamark:light:5:sector_start:260;seamark:light:5:sequence:1.5+(2)+1.5+(7);seamark:light:6:character:Fl;seamark:light:6:colour:green;seamark:light:6:group:2;seamark:light:6:height:26;seamark:light:6:period:12;seamark:light:6:range:18;seamark:light:6:sector_end:8;seamark:light:6:sector_start:346;seamark:light:6:sequence:1.5+(2)+1.5+(7);seamark:light:reference:C 0489;seamark:name:Hatteberget;seamark:national_name:Hätteberget;seamark:radar_transponder:category:racon;seamark:radar_transponder:group:G;seamark:radar_transponder:period:30;seamark:type:light_major;source:US NGA Pub. 116. 2021-03-27.
+1531131223,58.0293808 11.4816537,contact:website:http://rabbehuvud.blogspot.se/;man_made:lighthouse;name:Räbbehuvud fyr;seamark:light:character:LFl;seamark:light:colour:white;seamark:light:period:12;seamark:light:reference:C 0464;seamark:name:Räbbehuvud;seamark:type:light_minor;source:http://www.sjofartsverket.se/UfsPdf/606SV.pdf;wikidata:Q39286425
+1531132006,58.168957 11.402894,man_made:lighthouse;name:Strömholmen;seamark:light:1:category:upper;seamark:light:1:character:Fl;seamark:light:1:colour:green;seamark:light:1:height:9;seamark:light:1:period:3;seamark:light:1:range:4;seamark:light:1:sector_end:186.5;seamark:light:1:sector_start:163;seamark:light:2:category:upper;seamark:light:2:character:Fl;seamark:light:2:colour:white;seamark:light:2:height:9;seamark:light:2:period:3;seamark:light:2:range:6;seamark:light:2:sector_end:14;seamark:light:2:sector_start:186.5;seamark:light:3:category:upper;seamark:light:3:character:Fl;seamark:light:3:colour:red;seamark:light:3:height:9;seamark:light:3:period:3;seamark:light:3:range:4;seamark:light:3:sector_end:29.5;seamark:light:3:sector_start:14;seamark:light:reference:C 0426;seamark:name:Strömholmen;seamark:type:light_minor;source:US NGA Pub. 116. 2011-07-07.;wikidata:Q41799407
+1531135127,58.201374 11.405454,man_made:lighthouse;name:Islandsberg fyr;seamark:light:1:character:Fl;seamark:light:1:colour:green;seamark:light:1:group:4;seamark:light:1:height:13;seamark:light:1:period:12;seamark:light:1:range:4;seamark:light:1:sector_end:31.5;seamark:light:1:sector_start:310;seamark:light:2:character:Fl;seamark:light:2:colour:white;seamark:light:2:group:4;seamark:light:2:height:13;seamark:light:2:period:12;seamark:light:2:range:7;seamark:light:2:sector_end:34.2;seamark:light:2:sector_start:31.5;seamark:light:3:character:Fl;seamark:light:3:colour:red;seamark:light:3:group:4;seamark:light:3:height:13;seamark:light:3:period:12;seamark:light:3:range:5;seamark:light:3:sector_end:38.6;seamark:light:3:sector_start:34.2;seamark:light:4:character:Fl;seamark:light:4:colour:red;seamark:light:4:group:4;seamark:light:4:height:13;seamark:light:4:period:12;seamark:light:4:range:5;seamark:light:4:sector_end:47.9;seamark:light:4:sector_start:44.4;seamark:light:5:character:Fl;seamark:light:5:colour:green;seamark:light:5:group:4;seamark:light:5:height:13;seamark:light:5:period:12;seamark:light:5:range:4;seamark:light:5:sector_end:85.5;seamark:light:5:sector_start:47.9;seamark:light:6:character:Fl;seamark:light:6:colour:red;seamark:light:6:group:4;seamark:light:6:height:13;seamark:light:6:period:12;seamark:light:6:range:5;seamark:light:6:sector_end:125.6;seamark:light:6:sector_start:85.5;seamark:light:7:character:Fl;seamark:light:7:colour:green;seamark:light:7:group:4;seamark:light:7:height:13;seamark:light:7:period:12;seamark:light:7:range:4;seamark:light:7:sector_end:181.2;seamark:light:7:sector_start:125.6;seamark:light:8:character:Fl;seamark:light:8:colour:white;seamark:light:8:group:4;seamark:light:8:height:13;seamark:light:8:period:12;seamark:light:8:range:7;seamark:light:8:sector_end:184.9;seamark:light:8:sector_start:181.2;seamark:light:9:character:Fl;seamark:light:9:colour:red;seamark:light:9:group:4;seamark:light:9:height:13;seamark:light:9:period:12;seamark:light:9:range:5;seamark:light:9:sector_end:235;seamark:light:9:sector_start:184.9;seamark:light:reference:C 0400;seamark:name:Islandsberg;seamark:type:light_minor;source:US NGA Pub. 116. 2015-05-30.;wikidata:Q10537326
+1531150316,58.3250323 11.3609375,man_made:lighthouse;name:Kåvra fyr;seamark:light:1:character:Fl;seamark:light:1:colour:white;seamark:light:1:height:10;seamark:light:1:period:3;seamark:light:1:range:9;seamark:light:1:sector_end:46;seamark:light:1:sector_start:234;seamark:light:2:character:Fl;seamark:light:2:colour:red;seamark:light:2:height:10;seamark:light:2:period:3;seamark:light:2:range:6;seamark:light:2:sector_end:96;seamark:light:2:sector_start:46;seamark:light:3:character:Fl;seamark:light:3:colour:green;seamark:light:3:height:10;seamark:light:3:period:3;seamark:light:3:range:5;seamark:light:3:sector_end:149;seamark:light:3:sector_start:96;seamark:light:4:character:Fl;seamark:light:4:colour:red;seamark:light:4:height:10;seamark:light:4:period:3;seamark:light:4:range:6;seamark:light:4:sector_end:170;seamark:light:4:sector_start:149;seamark:light:reference:C 0378.4;seamark:name:Kåvra;seamark:type:light_minor;source:US NGA Pub. 116. 2011-07-07.
+1531156501,58.3524217 11.255655,man_made:lighthouse;name:Kolebådan fyr;seamark:light:1:character:Iso;seamark:light:1:colour:green;seamark:light:1:height:6;seamark:light:1:period:3;seamark:light:1:range:6;seamark:light:1:sector_end:84;seamark:light:1:sector_start:4.5;seamark:light:2:character:Iso;seamark:light:2:colour:white;seamark:light:2:height:6;seamark:light:2:period:3;seamark:light:2:range:10;seamark:light:2:sector_end:87.5;seamark:light:2:sector_start:84;seamark:light:3:character:Iso;seamark:light:3:colour:red;seamark:light:3:height:6;seamark:light:3:period:3;seamark:light:3:range:7;seamark:light:3:sector_end:179;seamark:light:3:sector_start:87.5;seamark:light:4:character:Iso;seamark:light:4:colour:white;seamark:light:4:height:6;seamark:light:4:period:3;seamark:light:4:range:10;seamark:light:4:sector_end:4.5;seamark:light:4:sector_start:179;seamark:light:reference:C 0361;seamark:name:Kolebådan;seamark:type:light_minor;source:US NGA Pub. 116. 2011-07-07.;wikidata:Q41806001
+1531157339,58.541924 11.030617,man_made:lighthouse;name:Väderöbod;seamark:landmark:category:tower;seamark:landmark:colour:red;seamark:light:1:character:LFl;seamark:light:1:colour:white;seamark:light:1:height:32;seamark:light:1:period:8;seamark:light:1:range:6;seamark:light:1:sector_end:360;seamark:light:1:sector_start:0;seamark:light:reference:B 2126;seamark:name:Väderöbod;seamark:source:ref C 0335;seamark:type:landmark;source:US NGA Pub. 116. 2021-03-27;start_date:1964;wikidata:Q7944301
+1531160093,58.6539139 11.1573312,man_made:lighthouse;name:Brämskär fyr;seamark:light:10:character:Fl;seamark:light:10:colour:green;seamark:light:10:height:10;seamark:light:10:period:6;seamark:light:10:range:5;seamark:light:10:sector_end:287.5;seamark:light:10:sector_start:272;seamark:light:11:character:Fl;seamark:light:11:colour:white;seamark:light:11:height:10;seamark:light:11:period:6;seamark:light:11:range:8;seamark:light:11:sector_end:306;seamark:light:11:sector_start:287.5;seamark:light:12:character:Fl;seamark:light:12:colour:red;seamark:light:12:height:10;seamark:light:12:period:6;seamark:light:12:range:6;seamark:light:12:sector_end:328;seamark:light:12:sector_start:306;seamark:light:1:character:Fl;seamark:light:1:colour:green;seamark:light:1:height:10;seamark:light:1:period:6;seamark:light:1:range:5;seamark:light:1:sector_end:10;seamark:light:1:sector_start:2;seamark:light:2:character:Fl;seamark:light:2:colour:white;seamark:light:2:height:10;seamark:light:2:period:6;seamark:light:2:range:8;seamark:light:2:sector_end:15;seamark:light:2:sector_start:10;seamark:light:3:character:Fl;seamark:light:3:colour:red;seamark:light:3:height:10;seamark:light:3:period:6;seamark:light:3:range:6;seamark:light:3:sector_end:20;seamark:light:3:sector_start:15;seamark:light:4:character:Fl;seamark:light:4:colour:green;seamark:light:4:height:10;seamark:light:4:period:6;seamark:light:4:range:5;seamark:light:4:sector_end:67.5;seamark:light:4:sector_start:20;seamark:light:5:character:Fl;seamark:light:5:colour:white;seamark:light:5:height:10;seamark:light:5:period:6;seamark:light:5:range:8;seamark:light:5:sector_end:97;seamark:light:5:sector_start:67.5;seamark:light:6:character:Fl;seamark:light:6:colour:red;seamark:light:6:height:10;seamark:light:6:period:6;seamark:light:6:range:6;seamark:light:6:sector_end:118;seamark:light:6:sector_start:97;seamark:light:7:character:Fl;seamark:light:7:colour:green;seamark:light:7:height:10;seamark:light:7:period:6;seamark:light:7:range:5;seamark:light:7:sector_end:255.5;seamark:light:7:sector_start:248;seamark:light:8:character:Fl;seamark:light:8:colour:white;seamark:light:8:height:10;seamark:light:8:period:6;seamark:light:8:range:8;seamark:light:8:sector_end:258;seamark:light:8:sector_start:255.5;seamark:light:9:character:Fl;seamark:light:9:colour:red;seamark:light:9:height:10;seamark:light:9:period:6;seamark:light:9:range:6;seamark:light:9:sector_end:272;seamark:light:9:sector_start:258;seamark:light:reference:C 0324;seamark:name:Brämskär;seamark:type:light_minor;source:US NGA Pub. 116. 2011-07-07.;wikidata:Q32228639
+1531161736,58.9132777 11.0941803,man_made:lighthouse;name:Käbblingarna fyr;seamark:light:1:character:Fl;seamark:light:1:colour:red;seamark:light:1:height:5;seamark:light:1:period:9;seamark:light:1:range:4;seamark:light:1:sector_end:201;seamark:light:1:sector_start:185.5;seamark:light:2:character:Fl;seamark:light:2:colour:green;seamark:light:2:height:5;seamark:light:2:period:9;seamark:light:2:range:3;seamark:light:2:sector_end:36;seamark:light:2:sector_start:201;seamark:light:3:character:Fl;seamark:light:3:colour:white;seamark:light:3:height:5;seamark:light:3:period:9;seamark:light:3:range:6;seamark:light:3:sector_end:62;seamark:light:3:sector_start:36;seamark:light:4:character:Fl;seamark:light:4:colour:red;seamark:light:4:height:5;seamark:light:4:period:9;seamark:light:4:range:4;seamark:light:4:sector_end:75.5;seamark:light:4:sector_start:62;seamark:light:reference:B 2181;seamark:name:Kabblingarna;seamark:type:light_minor;source:US NGA Pub. 116. 2021-03-27;wikidata:Q42247974
+1542282228,57.7135618 11.8849717,fireplace:yes;tourism:picnic_site
+1561492411,58.3734514 11.9263003,amenity:school;name:Hovhultsskolan
+1592337859,58.5031934 11.5678169,contact:email:info@angensgard.com;contact:website:http://www.angensgard.com/;name:Ängens Gård;tourism:hostel;website:http://www.angensgard.com/
+1608585185,57.4890879 12.0776048,contact:website:http://www.hotel-halland.se/;name:Hotell Halland;tourism:hotel
+1612525848,57.69839 11.961627,artist_name:Charlotte Gyllenhammar;artwork_type:sculpture;height:2.45;material:concrete;name:Raoul Wallenberg minnesmärke;official_name:Göteborgs Stads minnesmärke över Raoul Wallenberg;start_date:2007;tourism:artwork;website:https://goteborgkonst.se/artwork/minnesmarke-raoul-wallenberg;wikidata:Q10512845;wikipedia:sv:Minnesmärke – Raoul Wallenberg
+1622045830,59.2821118 11.1135565,alt_name:SF Kino Sarpsborg;amenity:cinema;name:ODEON Sarpsborg;website:https://www.odeonkino.no
+1634666023,59.6865611 10.6505693,amenity:kindergarten;name:Grendehusets barnehage;wheelchair:limited
+1654009258,58.3487892 11.9254901,addr:city:Uddevala;addr:country:SE;addr:housenumber:2;addr:postcode:451 50;addr:street:Museigatan;contact:phone:+46 522-331 30;email:info@hotelriverside.nu;name:Hotel Riverside;tourism:hotel;website:https://hotelriverside.nu/
+1673515676,58.2776272 12.2738367,amenity:bench;tourism:viewpoint
+1678198919,57.7570253 12.9142328,fireplace:yes;tourism:picnic_site
+1681581507,58.2761924 12.26862,tourism:viewpoint
+1694639938,59.921613 10.752348,amenity:theatre;check_date:2022-12-22;email:info@dansenshus.com;fax:+47 23709401;name:Dansens Hus;phone:+47 23709400;website:https://www.dansenshus.com/;wheelchair:yes
+1704718130,57.1071274 12.2403128,name:Fästningens vandrarhem;tourism:hostel;website:https://www.fastningensvandrarhem.se/
+1707550087,56.6910282 11.5395236,ele:48;name:Sønderbjerg;tourism:viewpoint
+1717507267,57.6606685 11.8866814,historic:archaeological_site
+1734612105,59.8508674 10.8803672,man_made:tower
+1749083452,59.9172896 10.7592889,historic:monument;image:https://photos.app.goo.gl/TpWmEf1RssqviRFp9;name:Kroghstøtten
+1758659173,59.5812408 10.8077361,amenity:community_centre;name:Gardarheim;ssr:stedsnr:83186
+1770252341,57.6854256 11.8385472,alt_name:Nya Älvsborg;castle_type:fortress;historic:castle;name:Nya Älvsborgs fästning;name:en:Alvsborg Fortress;old_name:Nya Elfsborg;seamark:fortified_structure:category:fort;seamark:type:fortified_structure;tourism:yes;wikidata:Q1481707;wikipedia:sv:Nya Älvsborg
+1775501469,59.435398 10.660263,amenity:theatre;name:Parkteatret;operator:Moss kommune;website:https://www.mosskulturhus.no/;wheelchair:limited;wikidata:Q11994787;wikipedia:no:Parkteatret i Moss
+1780649210,57.1067372 12.2435323,amenity:fountain
+1782948508,57.4338848 10.5206974,amenity:fuel;branch:Frederikshavn;brand:F24;brand:wikidata:Q12310853;fuel:diesel:yes;fuel:octane_92:yes;fuel:octane_95:yes;name:F24;opening_hours:24/7;shop:no
+1790097391,59.8455 10.8275,amenity:kindergarten;capacity:53;max_age:5;min_age:1;name:Lofsrud barnehage;no-barnehage:nsrid:975316270;operator:Oslo kommune;operator:type:public;start_date:1989-01-02
+1801880382,58.9810584 12.279647,tourism:picnic_site
+1810342148,56.6762698 12.8584239,addr:city:Halmstad;addr:country:SE;addr:housename:Röda Kvarn;addr:housenumber:3;addr:postcode:30243;addr:street:Bankgatan;amenity:cinema;name:Röda Kvarn;operator:Svenska Bio;wikidata:Q10658840
+1824906743,57.7167816 12.0172036,"amenity:library;name:Biblioteket, Kulturhuset Kåken"
+1834248283,57.6789593 11.9737751,artist_name:Ivar Lindekrantz;artwork_type:sculpture;name:Havre och betong;start_date:1956;tourism:artwork;wikidata:Q10518635;wikipedia:sv:Havre och betong
+1838250207,59.9784802 10.6808033,historic:monument
+1846934939,59.9770559 10.8158687,amenity:kindergarten;name:Solemskogen naturbarnehage;source:survey
+1853413791,57.6934201 11.9198152,access:yes;addr:city:Göteborg;addr:country:SE;addr:housenumber:5;addr:postcode:41454;addr:street:Chapmans Torg;amenity:library;contact:email:majorna.bibliotek@majornalinne.goteborg.se;contact:phone:+46-31-3659551;entrance:yes;name:Majornas bibliotek;opening_hours:Mo-Th 10:00-19:00; Fr 10:00-17:00; Sa 11:00-15:00;operator:Göteborgs Stad;wikidata:Q26253513
+1861989567,59.6556911 10.668589,alt_name:Skansåsen bygdeborg;archaeological_site:fortification;fortification_type:hill_fort;historic:archaeological_site;name:Skanseåsen bygdeborg
+1869395582,58.2285896 11.4845264,tourism:picnic_site
+1882629594,58.8891194 11.4916958,description:Riksrøys Kb;ele:144.1;historic:boundary_stone;note:wooden post;ref:RrKb;source:Kartverket/Riksgrenseprotokollene;start_date:1960
+1882633902,59.9914576 12.3693583,description:Riksrøys 70;historic:boundary_stone;man_made:cairn;name:no:Engbråterøysa;name:sv:Ängbråteröset;ref:Rr70;source:Kartverket/Riksgrenseprotokollene;start_date:1754
+1887885536,59.7314638 10.8032149,historic:ruins;name:Bua - Gammel husmannsplass
+1913412887,59.9942638 10.8288449,note:Limited view; maybe it should not qualify as a viewpoint;source:survey;tourism:viewpoint
+1916796372,59.6560325 12.5880414,amenity:library;name:Arvika Stadsbibliotek
+1924201381,57.7091796 11.9859064,addr:city:Göteborg;addr:country:SE;addr:county:Västra Götaland;addr:housenumber:4;addr:postcode:41102;addr:province:Västergötland;addr:street:Baldersgatan;contact:phone:+4631158380;internet_access:yes;internet_access:fee:no;name:Hotell Arena;stars:3;tourism:hotel;wheelchair:limited;wifi:free
+1935599885,59.913428 10.938271,amenity:school;capacity:164;email:lorenskog@steinerskolen.no;fee:yes;grades:1-10;isced:level:1;2;name:Rudolf steinerskolen Lørenskog;operator:Rudolf steinerskolen Lørenskog;operator:type:private;phone:+47 67914000;ref:gsi:2294;ref:udir_nsr:873084022;ref:udir_nsr_old:1003376;website:https://rsil.no/
+1944560186,59.928942 10.716447,amenity:bank;atm:yes;branch:Majorstuen;brand:DNB;name:DNB Majorstuen;ref:dnb:81
+1956113863,59.9586084 10.4456893,tourism:viewpoint
+1968482372,58.2721537 12.2764608,addr:country:SE;addr:housenumber:18;addr:postcode:46129;addr:street:Åkerssjövägen;museum:transport;name:Saab Car Museum;tourism:museum;website:http://www.saabbilmuseum.se/
+1982882170,59.7752505 10.9999384,name:Andersrudåsen S;source:survey;tourism:viewpoint
+1990332524,59.930309 10.715419,amenity:place_of_worship;denomination:evangelical;email:post@misjonskirken.no;name:Misjonskirken;phone:+47 98812519;religion:christian;website:https://www.misjonskirken.no/
+2023955883,57.7131125 11.7937756,building:yes;description:da:Fugletårn;description:de:Vogelbeobachtungsturm;description:en:Bird watching tower;description:nl:Vogelkijktoren;leisure:bird_hide;man_made:tower;observation:wild_animal;tower:type:observation;viewpoint:yes
+2047311378,59.893238 10.9011262,leisure:picnic_table;source:Bing;survey;tourism:picnic_site
+2055207217,59.9050406 10.9119543,leisure:picnic_table;source:survey;tourism:picnic_site
+2103867822,58.8137456 12.4375544,tourism:picnic_site
+2130362153,59.1946589 12.1066975,addr:country:SE;addr:housenumber:10-12;addr:postcode:66693;addr:street:Bruksvägen;name:Alcatraz;tourism:hostel;website:https://www.alcatraz.se/
+2168909869,57.6977995 11.9629661,amenity:place_of_worship;contact:website:http://lutherska.nu/;denomination:mission_covenant_church_of_sweden;name:Lutherska Missionskyrkan;religion:christian;wikidata:Q10571052
+2218264090,59.9821707 10.8116113,building:ruins;historic:ruins;source:survey
+2260276604,59.9353636 10.6039871,amenity:kindergarten
+2288267805,59.9104354 10.4783533,tourism:artwork
+2301065310,56.6443726 12.732468,man_made:tower;tower:type:bell_tower
+2323987424,57.6509499 12.8274517,amenity:shelter;fireplace:yes;shelter_type:lean_to;tourism:picnic_site
+2342484365,59.961402 10.4934887,amenity:fountain
+2366341560,59.0217245 12.2928,amenity:kindergarten
+2378146498,59.906422 10.5083652,amenity:kindergarten;name:Rud barnehage avd. Levre
+2385222175,57.689392 11.9765695,historic:memorial;material:metal;memorial:sculpture;name:Propellern
+2387391293,56.6738081 12.799255,amenity:fuel;branch:Halmstad Flygstaden;brand:Ingo;fuel:diesel:yes;fuel:e85:yes;fuel:octane_95:yes;name:Ingo;operator:Ingo
+2401934630,56.7844305 12.8331242,archaeological_site:petroglyph;description:En gravhäll med runinskrifter inmurad i kyrkoväggen;historic:archaeological_site;name:Danmarks runeindskrifter 354;wikidata:Q18287769;wikipedia:sv:Danmarks runeindskrifter 354
+2409835465,59.1196437 11.3952251,historic:city_gate
+2417530711,59.737906 10.5109641,source:survey;tourism:viewpoint
+2423975707,58.716456 11.3331411,historic:rune_stone;name:Kallebystenen;ref:Bo KJ61 $U;wikidata:Q10542752;wikipedia:sv:Kallebystenen
+2427077723,59.3173802 12.4419113,tourism:picnic_site
+2434905906,59.9900967 10.5199243,tourism:viewpoint
+2447003358,57.4387767 10.5335231,amenity:bank;name:Sparekassen Vendsyssel;opening_hours:Mo-Fr 10:00-16:00;source:local_knowledge
+2458366767,59.9379181 10.4682433,tourism:viewpoint
+2486501067,59.461311 10.799346,amenity:school;capacity:242;email:vaak@vaak.gs.of.no;fee:no;grades:1-7;isced:level:1;name:Våk skole;operator:Våler kommune;operator:type:public;phone:+47 69 28 92 50;ref:gsi:1100;ref:udir_nsr:975295028;ref:udir_nsr_old:1007922;website:http://vaak.gs.of.no/
+2502427292,59.9475908 10.9672025,archaeological_site:tumulus;historic:archaeological_site;source:map on information board
+2515672695,57.6989711 11.9330397,historic:memorial;memorial:statue;name:Chapmanstoden;source:survey;survey:date:2013-08-01
+2589668970,59.8235 10.8249777,archaeological_site:tumulus;historic:archaeological_site;ref:3
+2600498856,59.1198365 11.3975059,historic:city_gate
+2619427294,59.8435794 10.4386929,archaeological_site:tumulus;historic:archaeological_site
+2637267271,59.8956784 10.7691047,archaeological_site:tumulus;historic:archaeological_site
+2675335561,59.6758955 10.7676963,archaeological_site:tumulus;field:yes;historic:archaeological_site;source:no:Reguleringsplan for Einarstujordet; selvsyn
+2705313461,57.0568621 12.2676546,man_made:lighthouse;seamark:light:1:character:Fl;seamark:light:1:colour:green;seamark:light:1:group:3;seamark:light:1:height:9;seamark:light:1:period:9;seamark:light:1:range:6;seamark:light:1:sector_end:58;seamark:light:1:sector_start:351;seamark:light:2:character:Fl;seamark:light:2:colour:white;seamark:light:2:group:3;seamark:light:2:height:9;seamark:light:2:period:9;seamark:light:2:range:9;seamark:light:2:sector_end:91.5;seamark:light:2:sector_start:58;seamark:light:3:character:Fl;seamark:light:3:colour:red;seamark:light:3:group:3;seamark:light:3:height:9;seamark:light:3:period:9;seamark:light:3:range:7;seamark:light:3:sector_end:119;seamark:light:3:sector_start:91.5;seamark:light:reference:C 0706;seamark:name:Träslöv;seamark:type:light_minor;source:US NGA Pub. 116. 2011-07-07.
+2724832381,57.7648689 12.0313097,description:en:View over Hjällbo;source:Survey;tourism:viewpoint
+2772119306,59.9279283 10.741911,artist_name:H. Stuetzer;artwork_type:statue;material:metal;name:Løvinne med unger;tourism:artwork
+2785920876,59.90803 10.744209,amenity:events_venue;name:Oslo Event Hub;website:https://www.osloeventhub.com
+2795700215,59.874679 10.841395,amenity:kindergarten;capacity:43;contact:website:http://www.ostensjostua.barnehage.no;max_age:5;min_age:1;name:Østensjøstua barnehage;no-barnehage:nsrid:973949608;operator:Østensjøstua barnehage SA;operator:type:private
+2810066998,59.5474257 10.5507184,source:survey;tourism:viewpoint
+2815091987,59.924627 10.553381,amenity:kindergarten;name:Åsterud barnehage;preschool:yes
+2837819802,59.5061981 11.8477758,name:Victoria Gränshotell;tourism:hotel;website:https://www.granshotellet.se/
+2870894264,58.9440703 11.1855048,"addr:city:Strömstad;addr:country:SE;addr:housenumber:42;addr:postcode:452 35;addr:street:Oslovägen;amenity:fuel;brand:Circle K;fuel:diesel:yes;fuel:e85:yes;fuel:octane_95:yes;fuel:octane_98:yes;name:Circle K;opening_hours:Mo-Fr 06:00-24:00; Sa-Su 08:00-24:00;operator:Alimentation Couche-Tard, Inc;shop:convenience"
+2902955132,57.665569 11.9159026,tourism:picnic_site
+2932698002,57.719601 11.944878,amenity:bank;brand:Nordea;brand:wikidata:Q1123823;brand:wikipedia:sv:Nordea;name:Nordea;opening_hours:Mo 10:00-18:00; Tu-We 10:00-16:00; Th 10:00-18:00; Fr 10:00-16:00
+2955539169,57.6694257 12.5583549,amenity:school;name:Bollebygdsskolan
+2962774144,59.5136643 12.6877333,historic:archaeological_site;name:Gravröse
+2968662238,57.9319646 11.6097313,tourism:viewpoint
+2986798752,58.1192176 11.5337983,description:en:Lunden megalithic grave;historic:archaeological_site
+3002193057,59.1814399 10.9305061,name:Holte;tourism:viewpoint
+3022942158,59.22516 10.406836,amenity:place_of_worship;denomination:lutheran;name:Borgheim menighetssenter;religion:christian
+3039853632,59.9081161 10.51199,"amenity:fuel;branch:Kolsås;brand:YX 7-Eleven;email:711no7585@7-eleven.no;fuel:HGV_diesel:yes;fuel:diesel:yes;fuel:octane_95:yes;hgv:yes;name:YX 7-Eleven Kolsås;opening_hours:Mo-Fr 06:00-24:00, Sa-Su 09:00-24:00;phone:+47 67131223;ref:7eleven:446;ref:yx:10417585;shop:yes"
+3055117520,59.4503097 11.8532541,note:sailing boat painted on rock;tourism:artwork
+3097488876,59.65714 12.4805169,tourism:picnic_site
+3105082731,57.727823 11.861154,amenity:bank;brand:Handelsbanken;brand:wikidata:Q1421630;brand:wikipedia:sv:Handelsbanken;drive_through:no;name:Handelsbanken;opening_hours:Mo-We 09:30-16:00; Th 07:30-16:00; Fr 09:30-16:00
+3122636929,59.282141 11.115773,amenity:community_centre;name:Aktivitetshuset EPA;website:https://www.sarpsborg.com/aktivitetshuset
+3122793941,59.428566 11.339347,amenity:fuel;automated:yes;branch:Rakkestad;brand:Esso;brand:wikidata:Q867662;brand:wikipedia:en:Esso;fuel:diesel:yes;fuel:octane_95:yes;fuel:taxfree_diesel:yes;name:Esso Express Rakkestad;opening_hours:24/7;phone:+47 22971007;ref:esso:100115359
+3139174848,57.705064 11.9363108,amenity:fountain;source:Bing; local_knowledge
+3153643453,58.8225587 12.4169438,tourism:picnic_site
+3179669974,57.4343195 10.5181073,amenity:fuel;fuel:diesel:yes;fuel:octane_92:yes;fuel:octane_95:yes;name:Bonus;opening_hours:24/7;shop:no
+3197258604,58.2570608 12.3521835,historic:milestone;inscription:1/2 Mil 1754;material:stone;start_date:1754
+3228607561,57.709684 11.98121,name:Scandic No. 25;rooms:112;tourism:hotel;wheelchair:yes
+3263118577,59.2674867 11.1855706,tourism:picnic_site
+3309564788,59.953704 10.933088,amenity:community_centre;name:Stovner velhus;website:http://stovnervel.velnettbeta.no/
+3372174231,57.490451 10.4977427,amenity:school;name:Strandby Skole
+3395983855,57.2545144 11.0021152,amenity:bank;name:Dronninglund Sparekasse
+3400007616,57.20559 10.48454,amenity:kindergarten;name:Udgård;website:https://dagtilbud-odderby.skoleporten.dk/sp/p477036/foreside?pageId=a7f7bf44-9227-4adc-bcc4-b0516fa8c046
+3420297348,59.8404175 10.8899471,dnt:classification:ubetjent;dnt:lock:yes;ele:187;name:Dølerud;network:Den Norske Turistforening;operator:DNT Oslo og Omegn;ref:kartverket:hytte:1537;tourism:wilderness_hut
+3431324502,59.9112324 10.7256096,amenity:clock;date:yes;display:digital;man_made:monitoring_station;monitoring:bicycle:yes;name:Munkedamsveien;source:bing:orto;start_date:2011;support:pole;visibility:street;website:http://www.bicyclecounter.dk/BicycleCounter/BC_Oslo_Munkedamsveien.jsp
+3437218612,57.112946 12.2528696,amenity:school;name:Varbergs Montessoriskola
+3460310896,59.8875718 10.5575129,ref:18;tourism:artwork
+3464247387,57.7281968 12.9396867,amenity:clock;date:yes;display:digital;man_made:monitoring_station;monitoring:bicycle:yes;name:Skaraborgsvägen;start_date:2010;support:pole;visibility:street;website:http://www.boras.se/forvaltningar/tekniskaforvaltningen/tekniskaforvaltningen/gatorochvagar/cyklaiboras/cykelstatistik.4.4d290882129b65b4da0800062393.html
+3497554755,57.9833129 12.6747936,historic:archaeological_site
+3528808942,57.9318897 12.8559259,amenity:fuel;name:Topp
+3553443101,57.7196131 11.9632134,amenity:clock;date:yes;display:digital;man_made:monitoring_station;monitoring:bicycle:yes;name:Hjalmar Brantingsgatan;source:bing:orto;start_date:2005;support:pole;visibility:street
+3605805483,59.7208223 10.8375411,amenity:place_of_worship;name:Ski menighetshus;religion:christian
+3647798420,57.8201764 12.0158696,addr:city:Surte;addr:country:SE;addr:county:Västra Götaland;addr:housenumber:24-26;addr:postcode:44557;addr:province:Västergötland;addr:street:Göteborgsvägen;name:Surte;tourism:hotel;url:http://www.hotelsurte.se
+3653523884,59.2701667 11.0225622,tourism:picnic_site
+3662420188,59.1291714 11.2721971,internet_access:yes;name:Motell Svinesundparken;smoking:no;tourism:motel;wheelchair:no
+3663314974,59.38992 10.653337,int_name:Acc6073;name:Fuglevik Camping;phone:+47 69 26 50 89;tourism:camp_site
+3663315424,59.08305 10.449992,int_name:Acc6686;name:Kruge Leirskole Og Hytteutleie;phone:+47 33 39 30 10;+47 917 71 466;tourism:camp_site;website:http://krugeleirskole.tjome.kommune.no
+3663316191,59.085887 10.414859,int_name:Acc6427;name:Scandic Havna Camping;phone:+47 33 30 30 00;tourism:camp_site
+3665751734,59.2371175 10.9590158,tourism:picnic_site
+3676460044,59.6294193 12.6417697,tourism:viewpoint
+3682978410,59.9639513 10.9222322,amenity:kindergarten;capacity:54;max_age:5;min_age:1;name:Vestlisletta barnehage;no-barnehage:nsrid:975291820;operator:Oslo kommune;operator:type:public
+3702732210,58.2741861 11.4260373,contact:website:http://www.llaurin.se/;museum:technology;name:Skandiamuséet;opening_hours:Th 17:00-21:00;operator:Föreningen L. Laurin;tourism:museum;wheelchair:yes;wikidata:Q28936186
+3707518282,58.28909 12.2899807,artwork_type:sculpture;tourism:artwork
+3717473421,58.392202 11.651873,tourism:museum
+3737771460,59.967058 11.000967,amenity:fuel;atm:yes;branch:Skjetten;brand:Esso;car_wash:yes;fuel:diesel:yes;fuel:octane_95:yes;fuel:octane_98:yes;fuel:propane:yes;name:Esso Skjetten;opening_hours:24/7;phone:+47 63841393;ref:esso:100356898
+3767581170,57.734124 11.9692119,tourism:viewpoint
+3794258567,59.886995 10.5160704,tourism:viewpoint
+3826138160,59.945549 10.4662746,name:Haugskollen;tourism:viewpoint
+3837160224,57.9848268 12.7568848,historic:milestone
+3902873399,59.8947345 10.6307604,artwork_type:installation;image:https://photos.app.goo.gl/nUzqK86KVGUXPD5LA;mapillary:459101455190937;tourism:artwork;wikidata:Q365691;wikipedia:fr:Olafur Eliasson
+3981233157,59.943615 10.718416,amenity:library;level:0;name:Informatikkbiblioteket;name:en:Informatics Library;name:nn:Informatikkbiblioteket;name:no:Informatikkbiblioteket;phone:+4722852546
+4024537826,58.7039939 11.3778484,man_made:telescope;seamark:landmark:category:dish_aerial;seamark:type:landmark;telescope:type:radio;tower:construction:dish
+4039724674,59.586485 11.13505,amenity:school;designation:Adult education;name:Indre Østfold migrasjonssenter avd. Voksenopplæring;old_name:Delta voksenopplæring; Sesam
+4073958548,57.699503 11.9465737,amenity:bank;atm:yes;brand:Handelsbanken;brand:wikidata:Q1421630;brand:wikipedia:sv:Handelsbanken;name:Handelsbanken;operator:Svenska Handelsbanken AB (publ);wheelchair:no
+4131423612,59.0923802 11.5661471,description:view of Kverntjern;tourism:viewpoint
+4176983389,59.220038 10.9024647,name:Fjellhesten;tourism:viewpoint
+4198825614,59.9353587 10.752404,artist_name:Nina Sundbye;artwork_type:sculpture;name:Hønse-Lovisa;tourism:artwork
+4232837415,57.320184 11.127174,branch:Læsø;fvst:navnelbnr:941315;name:Lyngfeldts Badehotel;phone:+45 61661010;ref:DK:cvr:41287225;tourism:hotel;website:https://www.lyngfeldts.dk/
+4268722294,58.1501311 11.8227101,tourism:viewpoint
+4289063872,59.9145136 10.7187088,amenity:fountain
+4298093511,58.083762 12.8260747,archaeological_site:megalith;historic:archaeological_site;megalith_type:menhir;name:Lundskullen Standing Stones
+4298472638,58.2849335 11.5429297,archaeological_site:megalith;historic:archaeological_site;megalith_type:cist;name:Axel's Grave
+4298667371,58.7207651 11.3024796,archaeological_site:megalith;description:de:Ganggrab;description:en:Passage grave;historic:archaeological_site;megalith_type:passage_grave;name:Säm gånggrift;tourism:attraction
+4298743815,58.9296773 11.3171073,"archaeological_site:megalith;historic:archaeological_site;megalith_type:stone_circle;name:Dårskilds Högar, stone circle #2"
+4311684581,57.4518952 12.6979685,name:Två Skyttlar;tourism:hotel
+4325295816,58.37331 12.3485591,amenity:kindergarten
+4336177890,58.2626842 11.6798112,tourism:viewpoint
+4340846527,58.1058064 11.364102,amenity:public_bath;bath:open_air:yes;bath:sand_bath:no;bath:type:sea;location:outdoor;name:Dambad / Kallbadhusen
+4348489286,59.658691 10.9485945,amenity:kindergarten;name:Skotbu barnhage
+4358633792,59.8245813 10.7968687,name:Rush Trampoline Park Norway;tourism:attraction
+4373311989,59.8930324 11.8604988,name:oude sluis;tourism:attraction
+4393132187,58.3780183 12.32104,amenity:fountain
+4407021707,59.4413306 10.6717257,designation:Bunker;historic:ruins;name:Old Bunker
+4428118751,59.4384045 10.668316,name:Moss by - og industrimuseum;name:en:Moss Town- And Industry Museum;tourism:museum
+4458442820,57.722705 10.595459,fvst:name:HOTEL STRANDLY SKAGEN;fvst:navnelbnr:1272686;name:Strandly Skagen;phone:+45 98441131;ref:DK:cvr:43627139;ref:DK:cvr:pnummer:1028726593;tourism:hotel;website:https://www.hotelstrandly.dk/
+4476153537,59.5087878 11.8388751,amenity:place_of_worship;denomination:mission_covenant_church_of_sweden;name:Töcksfors Missionskyrka;religion:christian
+4513705035,59.9434466 10.4391635,historic:ruins
+4573005007,57.2633085 11.0318393,description:Mindre stubmølle hørende til Lynggården;functional:yes;man_made:windmill;windmill:type:post;windmill:vanes:yes
+4584296807,59.7868193 10.4200407,tourism:viewpoint
+4637376887,59.9142808 10.7504213,amenity:theatre;name:Folketeatret;wikidata:Q5464537
+4640116698,58.350811 11.9401077,tourism:artwork
+4649904961,58.35618 11.9229252,tourism:artwork
+4679304889,59.9462446 10.900997,amenity:kindergarten
+4713524774,57.7967412 12.0536653,artwork_type:sculpture;name:Bullig Staty;tourism:artwork
+4730879584,58.066986 11.8171717,amenity:fountain
+4746829242,59.8599917 10.4482787,tourism:viewpoint;wheelchair:no
+4796906802,57.5952319 10.4098472,amenity:library;name:Ålbæk Bibliotek;wikidata:Q21098816
+4841272860,57.9147238 12.3686475,amenity:library;name:Sjöviks bibliotek;website:https://bibliotek.lerum.se/web/arena/sjovik;wikidata:Q61752258
+4859369761,59.7760516 10.4933898,amenity:kindergarten;name:Furulia familiebarnehage;source:Røyken kommune
+4885558665,59.9202287 11.0249288,tourism:viewpoint
+4915752321,59.2040297 10.4263492,name:en:Vardåstoppen;tourism:viewpoint
+4934240824,57.9862104 11.5569528,amenity:fuel;branch:Tjörn Skärhamn;brand:OKQ8;name:OKQ8;operator:OKQ8;post_office:post_partner;post_office:brand:DHL Servicepoint
+4948734810,57.5481295 12.5508716,name:Torberg;tourism:viewpoint
+4972336531,59.7015651 10.5617679,name:en:Free camping site;tourism:camp_site
+4986418531,59.5103092 11.3184661,board_type:history;information:board;name:Nisseklemma;tourism:attraction
+4994504216,59.8934505 10.6189144,amenity:fountain
+5006070764,59.9127174 10.7011587,tourism:artwork
+5017479489,59.0003358 12.2480822,tourism:picnic_site
+5030793827,57.6643459 12.1211697,name:Str Vandrahem Wendelsberg;tourism:hostel;wheelchair:yes
+5040735390,58.9665351 12.282927,fireplace:no;leisure:picnic_table;tourism:picnic_site
+5045390141,59.4818529 11.4626562,historic:boundary_stone;man_made:cairn
+5060373395,59.9547564 10.9078652,artist_name:Geir Stormoen;artwork_type:stone;name:Rød megalitt 2009;tourism:artwork
+5064333429,58.9807244 11.4571166,description:Riksrøys B;historic:boundary_stone;man_made:cairn;name:no:Stenbudalsåsrøysa;ref:RrB;source:Kartverket/Riksgrenseprotokollene;start_date:1835
+5064334877,58.8907158 11.5906295,description:Riksrøys KBc;historic:boundary_stone;man_made:cairn;ref:RrKBc;source:Kartverket/Riksgrenseprotokollene;start_date:1960
+5074256722,57.4271309 10.5258103,name:solur;tourism:artwork
+5094714628,59.9301758 11.0298814,tourism:artwork
+5107981255,59.6467686 11.8333721,description:Riksrøys 44C;height:0.6;historic:boundary_stone;man_made:cairn;ref:Rr44C;source:Kartverket/Riksgrenseprotokollene;start_date:1929;width:1.5
+5109535083,57.6740556 12.2877778,airmark:beacon;beacon:frequency:329.90;beacon:type:ILS;man_made:tower;source:LFV AIP
+5117995410,59.1209861 11.2286632,tourism:viewpoint
+5139840986,57.7288671 11.9256631,amenity:fuel;branch:Göteborg Bjurslättstorg;brand:Preem;compressed_air:yes;contact:phone:+46-31-232155;fuel:diesel:yes;fuel:e85:yes;fuel:octane_95:yes;fuel:octane_98:yes;name:Preem;opening_hours:Mo-Fr 06:00-21:00; Sa 09:00-21:00; Su 09:00-21:00;operator:Preem;source:Preem.se;website:https://www.preem.se/
+5142041554,57.6602686 11.8882849,amenity:fuel;branch:Västra Frölunda;brand:Ingo;brand:wikidata:Q17048617;name:Ingo;operator:Ingo
+5169467011,59.2397953 10.8850445,amenity:shelter;historic:ruins;name:Jordkjelleren
+5177810576,57.60169 12.0518813,amenity:fuel;branch:Kållered;brand:OKQ8;check_date:2023-04-20;internet_access:wlan;internet_access:fee:no;name:OKQ8;operator:OKQ8;payment:mastercard:yes;payment:visa:yes
+5180347460,57.7045084 11.9789064,amenity:fuel;brand:St1;brand:wikidata:Q7592214;brand:wikipedia:sv:St1;contact:phone:+46 771-369 369;fuel:diesel:yes;fuel:e85:yes;fuel:octane_95:yes;name:St1;opening_hours:24/7;operator:St1
+5185807560,58.2304356 11.9093929,amenity:fuel;branch:Ljungskile;brand:Shell;contact:phone:+46-52221100;fuel:diesel:yes;fuel:e85:yes;fuel:octane_95:yes;fuel:octane_98:yes;name:Shell;opening_hours:24/7;operator:Shell;shop:yes
+5200396125,59.9866602 11.2466284,"access:yes;amenity:library;name:Sørum bibliotek, Sørumsand;phone:+47 63 86 94 50;ref:isil:NO-2022600;website:http://bibliotekrom.no/sorum/"
+5222044619,58.0597053 11.8789257,addr:city:Stenungsund;addr:country:SE;addr:county:Västra Götaland;addr:housenumber:10;addr:street:Ucklumsvägen;amenity:fuel;branch:Stenungsund Stenungsundsmotet;brand:Preem;brand:wikidata:Q598835;brand:wikipedia:sv:Preem;fuel:HGV_diesel:yes;fuel:adblue:yes;fuel:biodiesel:yes;fuel:diesel:yes;fuel:e85:yes;fuel:octane_95:yes;fuel:octane_98:yes;name:Preem;operator:Preem;payment:cash:yes;payment:coins:yes;payment:mastercard:yes;self_service:yes
+5223972299,56.8863659 12.5119579,amenity:fuel;branch:Falkenberg;brand:Qstar;brand:wikidata:Q10647961;brand:wikipedia:sv:Qstar;fuel:diesel:yes;fuel:e85:yes;fuel:octane_95:yes;name:Qstar
+5238589921,59.6634678 10.6289165,access:yes;amenity:library;name:Frogn bibliotek;name:en:Drøbak Bibliotek;phone:+47 64 90 64 60;ref:isil:NO-2021500;website:https://www.frogn.kommune.no/frognbibliotek
+5273893261,59.9088024 10.7562348,description:Manmade litt waterfall. Akerselva exits the tunnel and surfaces for the last time before entering the ocean.;ele:4;man_made:yes;tourism:attraction;waterway:waterfall
+5306753334,57.3672903 10.4205487,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/12862/
+5308584254,57.2593398 10.424208,archaeological_site:tumulus;historic:archaeological_site;source_url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/11312/
+5308606015,57.2216924 10.4371501,archaeological_site:tumulus;historic:archaeological_site;source_url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/11401/
+5312739307,59.8467 10.8077,amenity:kindergarten;capacity:54;contact:website:http://www.oslo.kommune.no/barnehage/finn-barnehage-i-oslo/bydel-sondre-nordstrand/elverhoy-barnehage;max_age:5;min_age:1;name:Elverhøy barnehage;no-barnehage:nsrid:975316211;operator:Oslo kommune;operator:type:public;start_date:1989-01-02
+5335903055,59.9587591 10.80342,tourism:viewpoint
+5349290410,57.420494 10.5064615,artwork_type:stone;name:Fenrisulven;tourism:artwork
+5364208110,57.4412978 10.5339565,artwork_type:sculpture;tourism:artwork
+5379314697,59.906896 10.6854859,amenity:place_of_worship;deanery:Oslo Domprosti;denomination:lutheran;diocese:Oslo;name:Norsk kirkekunst;operator:Norsk folkemuseum;parish:Bygdøy;religion:christian;start_date:1935
+5387129585,59.1261509 11.3785402,historic:memorial;inscription:1851-1931;memorial:bust;name:Oscar Borg
+5399830921,59.911343 10.766744,"amenity:community_centre;description:""Aktivitetssenteret 31 B er for mennesker med erfaring fra psykiatrien. Stedet er åpent for alle og du trenger ikke henvisning for å gå her.""   Tilbud: mediaverksted, grafikkverksted, rammeverksted, tekstilrom, galleri og sykkelverksted.;name:Aktivitetssenteret 31B;opening_hours:Mo 17:00-21:00, Tu-Fr 10:00-15:00;operator:Oslo kommune;service:bicycle:repair:yes;website:https://www.oslo.kommune.no/helse-og-omsorg/psykisk-helse/aktivitetshus/aktivitetssenteret-31-b/"
+5418813585,57.4407199 10.4176083,archaeological_site:tumulus;historic:archaeological_site;source_url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/14118/
+5420181249,57.4230555 10.4663421,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/13227/
+5420298587,57.425186 10.4716233,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/13234/
+5420306324,57.4116799 10.4238102,archaeological_site:tumulus;historic:archaeological_site;name:Slotshøj;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/13418/;wikidata:Q30114336
+5420308203,57.3975949 10.4280174,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/13398/
+5420321875,57.3900775 10.444361,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/13389/
+5420339146,57.4184958 10.4463404,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/120966/
+5427225456,57.3510178 10.4751009,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/13084/
+5427238694,57.324986 10.4685963,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/13051/
+5427250172,57.3447254 10.4755489,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/113970/
+5434115782,57.2517528 10.4386739,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/11339/
+5434126001,57.2433004 10.4524992,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/11351/
+5438386449,57.2535721 10.475771,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/11258/
+5438400046,57.249541 10.5022613,archaeological_site:tumulus;historic:archaeological_site;name:Kjelding Høje;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/11225/;wikidata:Q30113311
+5440950107,57.2849394 10.4821848,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/13013/
+5448750130,57.2231885 10.4494294,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/11393/
+5448773681,57.2292176 10.4513213,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/11385/
+5448785992,57.2217681 10.5125455,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/11432/
+5480459305,59.8341286 10.8283832,artwork_type:statue;description:Boy playing with dog.;name:Gutten og Hunden;source:survey;tourism:artwork;website:http://www.solsidenvelforening.no/2017/09/26/avduking-av-skulptur-pa-solsiden/
+5530091131,57.9365467 12.5060322,building:yes;description:da:Fugletårn;description:de:Vogelbeobachtungsturm;description:en:Bird watching tower;description:nl:Vogelkijktoren;leisure:bird_hide;man_made:tower;observation:wild_animal;tower:type:observation;viewpoint:yes
+5557009414,59.4239284 10.4878864,name:Lokalhistorisk senter;tourism:museum
+5574644226,59.937636 10.7531095,ele:74;height:52;man_made:tower;name:Sagene kirke;tower:type:bell_tower
+5574644289,59.936674 10.7289796,ele:97;height:47;man_made:tower;name:Vestre Aker kirke;tower:type:bell_tower
+5575678267,59.3987097 12.1280523,amenity:fuel
+5577897474,59.8950987 10.7663874,artist_name:Damien Hirst;artwork_type:sculpture;image:https://photos.app.goo.gl/LxN1TooBMusjqPvv6;mapillary:338851310904164;name:Anatomy of an Angel;tourism:artwork;website:https://ekebergparken.com/en/kunst/anatomy-angel
+5580846629,59.9232807 10.70037,artwork_type:sculpture;image:https://images.mapillary.com/mmPGycXD4qITpWYdrNYsWU/thumb-2048.jpg;mapillary:303850687808105;material:granite;tourism:artwork
+5600807028,57.7632236 12.2620967,amenity:fuel;brand:Circle K;brand:wikidata:Q3268010;brand:wikipedia:sv:Circle K;name:Circle K;operator:Circle K
+5631190443,59.055715 12.7103172,tourism:caravan_site
+5654194821,59.9103086 10.7330498,artwork_type:mural;image:https://photos.app.goo.gl/bSJYuNWw7CfdPmFb6;mapillary:979514465921038;tourism:artwork
+5658189804,58.0231043 12.7907561,amenity:fuel;branch:Vårgårda Hjultorp;brand:Preem;name:Preem;operator:Preem
+5685960691,58.3390546 11.9190853,tourism:artwork
+5703415521,59.7715908 10.4243652,tourism:viewpoint
+5739153358,58.2636518 12.2371468,name:Nyckelberget;tourism:viewpoint
+5753226975,58.3396964 11.9089075,artist_name:Mohannad Solaiman;artwork_type:statue;material:metal;name:Syrian Horse;tourism:artwork
+5765194501,58.3763441 11.9323971,tourism:artwork
+5781485354,58.287685 12.2971178,tourism:artwork
+5795244502,56.821532 12.7405986,name:Getinge Restaurang & Pizzeria & Motell;tourism:motel
+5809510488,57.8637806 11.6959264,tourism:picnic_site
+5827023727,59.331724 10.42432,amenity:school;capacity:116;email:post@tonsbergmontessori.no;fee:yes;grades:1-10;isced:level:1;2;name:Tønsberg Montessoriskole;operator:Stiftelsen Tønsberg Montessori grunnskole;operator:type:private;phone:+47 33380133;ref:gsi:7066;ref:udir_nsr:973131621;ref:udir_nsr_old:1004129;website:http://tonsbergmontessori.no
+5827378710,59.277376 11.103273,amenity:school;capacity:412;email:sandesundsveien.barneskole@sarpsborg.com;fee:no;grades:1-7;isced:level:1;name:Sandesundsveien barneskole;operator:Sarpsborg kommune;operator:type:public;phone:+47 69 11 60 30;ref:gsi:1021;ref:udir_nsr:975280373;ref:udir_nsr_old:1007125
+5827378724,59.625223 11.024012,amenity:school;capacity:317;email:knapstad.skole@io.kommune.no;fee:no;grades:1-10;isced:level:1;2;name:Knapstad barne- og ungdomsskole;operator:Indre Østfold kommune;operator:type:public;phone:+47 69681000;ref:gsi:1004;ref:udir_nsr:974631857;ref:udir_nsr_old:1006009;website:https://www.io.kommune.no/tjenester/skole-og-utdanning/alle-grunnskoler/knapstad-barne-og-ungdomsskole/
+5827378738,59.596631 11.068201,amenity:school;capacity:196;email:spydeberg.skole@io.kommune.no;fee:no;grades:1-7;isced:level:1;name:Spydeberg skole;operator:Indre Østfold kommune;operator:type:public;phone:+47 69 68 22 70;ref:gsi:1131;ref:udir_nsr:975280586;ref:udir_nsr_old:1007143;website:https://www.io.kommune.no/tjenester/skole-og-utdanning/alle-grunnskoler/spydeberg-skole/
+5830063881,59.9486158 10.7331824,amenity:school;capacity:66;email:post@humanistskolen.no;fee:yes;grades:8-10;isced:level:2;name:Humanistskolen;operator:Humanistskolen AS;operator:type:private;ref:gsi:3287;ref:udir_nsr:914415942;ref:udir_nsr_old:1012492;website:https://www.humanistskolen.no/
+5830068503,59.936248 10.881155,amenity:school;email:post@natur.vgs.no;fee:yes;grades:11-13;isced:level:3;name:Natur videregående skole;operator:Natur videregående skole;operator:type:private;phone:+47 22 90 86 00;ref:udir_nsr:974714426;ref:udir_nsr_old:1006051;ref:vgs:223;website:https://natur.vgs.no/;wikidata:Q19360161
+5830483746,59.8920932 10.5417283,amenity:school;capacity:9;grades:8-10;isced:level:2;name:Sandviksbukta skole;operator:Bærum kommune;operator:type:public;ref:gsi:2422
+5830614459,58.3439965 11.9536455,amenity:fountain
+5859227408,59.646476 10.829585,artwork_type:architecture;designation:Artwork;material:concrete;name:Optical illution wall;source:local-knowledge;tourism:artwork
+5881469956,59.9197982 10.8557641,artist_name:Per Hurum;artwork_type:statue;name:Arabesk 1970;tourism:artwork
+5893380159,57.7192305 12.0235901,amenity:community_centre;community_centre:parish_hall;denomination:lutheran;name:Härlanda församlingshem;operator:Svenska kyrkan;religion:christian
+5894815451,59.9345184 11.9944684,covered:yes;tourism:picnic_site
+5906356205,57.857245 12.2379867,tourism:picnic_site
+5933989184,57.4797127 10.47986,amenity:school
+5956630923,59.6022845 10.7478499,amenity:townhall;name:Vestby rådhus;ref:3019;website:http://vestby.kommune.no/
+5964803367,57.4152576 10.4190612,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/14188/
+5976209853,57.368422 10.4219436,archaeological_site:tumulus;historic:archaeological_site;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/12865/
+5976239548,57.3750807 10.4377079,archaeological_site:tumulus;historic:archaeological_site;name:Møllehøje;source:url:http://www.kulturarv.dk/fundogfortidsminder/Lokalitet/12835/;wikidata:Q30114158
+5984223568,59.523519 10.686018,"access:yes;amenity:library;internet_access:yes;internet_access:fee:no;name:Vestby bibliotek, Son;operator:Vestby kommune;phone:+47 64 98 00 60;ref:isil:NO-2021111;website:http://www.vestby.kommune.no/biblioteket.80639.no.html"
+6024657867,57.4063707 11.9880795,amenity:kindergarten;name:Iserås förskola;operator:Kungsbacka kommun
+6027103883,59.5246826 10.6959538,historic:ruins;historic:civilization:medieval;name:Munkenes kapell
+6033098455,59.5229963 10.6857843,amenity:fountain
+6039044536,59.946444 10.6436558,access:yes;amenity:library;name:Deichman Røa;phone:+47 23 43 27 90;ref:isil:NO-2032400;website:https://www.deichman.no/roa
+6058921322,59.5287656 12.4386075,tourism:viewpoint
+6066506154,59.99068 10.93759,amenity:fuel;branch:Gjelleråsen;brand:Circle K;fuel:HGV_diesel:yes;fuel:adblue:yes;fuel:diesel:yes;hgv:yes;name:Circle K Truck Gjelleråsen;opening_hours:24/7;phone:+4722962530;ref:circlek:55473
+6066756868,57.4355378 12.154237,amenity:fuel;branch:Fjärås;brand:Shell;compressed_air:yes;name:Shell
+6071847007,57.8488377 12.450377,man_made:tower;tower:type:diving
+6083183959,59.555376 11.326097,amenity:fuel;branch:Bergerkrysset;brand:Shell;fuel:diesel:yes;fuel:octane_95:yes;name:Shell Bergerkrysset;opening_hours:24/7;phone:+47 69847030;ref:st1:9494
+6083185942,59.8342473 10.8076173,amenity:fuel;automated:yes;branch:Prinsdalen;brand:Shell;fuel:diesel:yes;fuel:octane_95:yes;name:Shell Express Prinsdalen;opening_hours:24/7;phone:+47 22665600;ref:st1:4407
+6094004702,59.936165 10.928132,amenity:fuel;branch:Karihaugen;brand:Esso;car_wash:yes;fuel:HGV_diesel:yes;fuel:adblue:yes;fuel:diesel:yes;fuel:octane_95:yes;fuel:octane_98:yes;fuel:taxfree_diesel:yes;hgv:yes;name:Esso Karihaugen;opening_hours:24/7;phone:+47 22322700;ref:esso:100356899
+6104219407,57.7567775 12.2572285,amenity:school;name:Rydsbergsskolan
+6120027123,59.4161773 10.4913728,amenity:fuel;automated:yes;branch:Lystlunden;brand:Uno-X;email:automat@unox.no;fuel:diesel:yes;fuel:octane_95:yes;name:Uno-X Lystlunden;old_ref:yx:232;ref:unox:764
+6120221732,59.2928481 11.1079822,"amenity:fuel;branch:Kurland Lande;brand:YX 7-Eleven;car_wash:yes;email:711no7560@7-eleven.no;fuel:HGV_diesel:yes;fuel:diesel:yes;fuel:octane_95:yes;fuel:propane:yes;hgv:yes;name:YX 7-Eleven Kurland Lande;opening_hours:Mo-Fr 06:00-23:00, Sa-Su 08:00-23:00;phone:+47 69101474;ref:7eleven:425;ref:yx:10417560;shop:yes"
+6129366052,59.9128854 10.8390219,tourism:artwork
+6174820435,57.6916445 11.9474008,addr:city:Göteborg;addr:country:SE;addr:county:Västra Götaland;addr:housenumber:61B;addr:postcode:411 13;addr:province:Västergötland;addr:street:Nordostpassagen;amenity:theatre;contact:phone:+46317115296;contact:website:http://www.amanda.nu;name:Amandas teater;operator:Sångensemblen Amanda;wheelchair:no
+6207441812,59.9440357 10.9532073,artwork_type:statue;name:Barna;tourism:artwork
+6253310580,59.2257519 11.699749,access:yes;amenity:library;name:Aremark folkebibliotek;phone:+47 48 94 77 47;ref:isil:NO-2011800;website:http://www.aremark.kommune.no/aremark-folkebibliotek.236688.no.html
+6253386349,59.8768808 11.2181639,"access:yes;amenity:library;name:Dalen skole, biblioteket;phone:+47 63 88 37 88;ref:isil:NO-4022702;website:http://wiki.fetskolene.no/index.php/Dalen_skole"
+6264815851,59.3316412 11.2928675,capacity:20;dnt:classification:ubetjent;name:Østtorphytta;ref:kartverket:hytte:1552;ssr:stedsnr:978157;tourism:wilderness_hut
+6302055873,59.253311 10.994997,amenity:fuel;atm:yes;branch:Rolvsøy;brand:Esso;car_wash:yes;fuel:diesel:yes;fuel:octane_95:yes;fuel:octane_98:yes;fuel:propane:yes;name:Esso Rolvsøy;opening_hours:24/7;phone:+47 69382520;ref:esso:100115392;trailer:rental:yes
+6328839135,58.2856312 12.2979429,amenity:fountain;name:Hästfontänen
+6376406637,59.0674242 10.4335731,man_made:tower
+6415013530,57.8157759 12.0402876,artwork_type:statue;material:stone;name:Ada I Karlavagnen;tourism:artwork
+6422523387,56.706812 12.6854389,tourism:picnic_site
+6432565416,58.5971465 11.2920704,amenity:library;name:Fjällbacka bibliotek;operator:Tanums kommun;wikidata:Q61752273
+6465581384,59.881875 10.4085139,name:Furuholmen;ssr:stedsnr:429845;tourism:hotel
+6478033055,59.4299112 10.6528341,man_made:lighthouse
+6482120504,59.9334384 10.7727987,amenity:school;capacity:136;email:joanna.horczak@oslorealfagsskole.no;fee:yes;grades:7-10;isced:level:1;2;name:Akademiet realfagsskole Oslo;operator:Akademiet realfagsskole Oslo AS;operator:type:private;ref:gsi:3295;ref:udir_nsr:919233532;ref:udir_nsr_old:1027171;website:https://heltberg.no/realfagsskole/oslo/
+6539397885,59.8873108 10.8681589,tourism:picnic_site
+6564522059,59.5153868 10.7276004,amenity:fuel;branch:Sonsveien;brand:YX 7-Eleven;car_wash:yes;email:711no7704@7-eleven.no;fuel:HGV_diesel:yes;fuel:adblue:yes;fuel:diesel:yes;fuel:octane_95:yes;fuel:propane:yes;hgv:yes;name:YX 7-Eleven Sonsveien;ref:yx:10417704;shop:yes;trailer:rental:yes
+6591537388,59.2797001 11.4648528,name:Sandbekk mølle;tourism:museum
+6591537403,59.544842 11.306691,name:Folkenborg museum;tourism:museum
+6593405630,59.8491827 10.4427912,name:Jansløkka skolemuseum;tourism:museum
+6614598735,57.340386 12.0707184,archaeological_site:tumulus;historic:archaeological_site
+6627526913,59.4314207 10.6524065,artist_name:Ørnulf Bast;artwork_type:statue;height:2.5;material:bronze;name:The Norwegian Lady;start_date:1962;tourism:artwork
+6634745806,59.9458744 12.9105797,amenity:fuel;brand:din-X;brand:wikidata:Q10472858;brand:wikipedia:sv:Din-X;name:Din-X
+6680565511,57.717747 10.58181,fvst:navnelbnr:802506;name:Skagen Harbour Hotel;phone:+45 98446716;ref:DK:cvr:33318359;ref:DK:cvr:pnummer:1024636484;tourism:hotel;website:https://skagenharbourhotel.dk/
+6699452810,58.2760807 11.4412794,addr:city:Lysekil;addr:country:SE;addr:housenumber:2A;addr:postcode:45335;addr:street:Landsvägsgatan;internet_access:wlan;internet_access:fee:no;name:Lokus Hotell;rooms:13;tourism:hotel;website:http://lokushotel.se
+6752035113,58.1473574 12.6011317,man_made:windmill;name:Stora Melby Väderkvarnar
+6762558055,59.5869564 11.1560076,artwork_type:statue;material:bronze;name:Bjarne Thoresen;source:https://io.nkdb.no/objekt/471643/Bjarne+Thoresen;tourism:artwork;year_of_construction:1995
+6775616085,59.2246 11.107606,name:en:Amphiteater;name:pl:Amfiteatr;tourism:attraction
+6802559326,59.1249209 11.3749091,name:Clarion Collection Hotel Park Halden;tourism:hotel
+6832923665,59.5379896 12.2946455,name:Isgrotta;natural:rock;tourism:attraction
+6863780307,58.2759108 12.2756065,amenity:fountain
+6874391714,59.9553795 11.0492345,check_date:2022-12-13;name:Galleri Godt Gjort;tourism:gallery
+6928717368,57.055277 12.8788052,archaeological_site:tumulus;historic:archaeological_site;historic:civilization:bronze-age
+7017998767,59.8360398 10.4340818,amenity:bank;branch:Asker;brand:Nordea;name:Nordea Asker;ref:nordea:211010
+7041741974,59.9168541 12.2689987,historic:ruins;military:bunker
+7086977205,59.6435492 12.4782732,access:yes;archaeological_site:ruins;historic:archaeological_site;historic:civilization:modern;name:Älgå bruk
+7105733838,59.7637574 12.1819502,historic:archaeological_site;source:Ekonomiska kartan
+7105733881,59.8182062 12.3119221,alt_name:Wijnblad;historic:fort;name:Skans Ettan;source:Ekonomiska kartan;start_date:1808
+7125225430,58.968265 11.848749,bench:yes;description:Längs led: utmed skogsvägar Totalbetyg (1-10): 2 Det är ganska ruckligt inuti. Ved: kanske Grillplats: Ja Bänkar/Bord (platser): bänkar utomhus Antal personer (sovande i skydd): 10 (4) Anslutning: Skogsvägar Närmaste stad: Dals Ed (10km);fireplace:yes;name:Lilla Vrångstjärn Stuga;source:Facebook group Vindskydd i Norden;source:url:https://is.gd/rjlDvK;tourism:wilderness_hut
+7129436691,59.9414592 10.7708947,amenity:fountain
+7152040993,58.0244629 12.2362831,tourism:picnic_site
+7235552792,59.9658546 10.5360637,tourism:viewpoint
+7249473532,59.29509 10.415858,amenity:school;capacity:186;email:tonsberg@wang.no;fee:yes;grades:8-13;isced:level:2;3;name:Wang Tønsberg;operator:Wang Tønsberg AS;operator:type:private;phone:+47 97 71 54 44;ref:udir_nsr:995354071;ref:udir_nsr_old:1010414;ref:vgs:229;website:https://wang.no/
+7318591299,59.57357 11.2864188,artwork_type:statue;tourism:artwork
+7329043476,59.9259359 10.7342294,artwork_type:statue;name:Grete Waitz;tourism:artwork
+7345553571,59.3065304 10.7278809,tourism:picnic_site
+7387117397,59.0249962 11.0365336,access:yes;amenity:library;changing_table:no;name:Hvaler folkebibliotek;operator:Hvaler kommune;phone:+47 69 37 50 60;ref:isil:NO-2011100;toilets:yes;toilets:access:customers;website:https://www.hvaler.kommune.no/Tjenester/Skolene-pa-Hvaler/Hvaler-oppvekst-og-kultursenter/Hvaler-Folkebibliotek/;wheelchair:yes
+7428571966,59.2866465 11.0869007,amenity:fuel;automated:yes;branch:Tunejordet;brand:Uno-X;email:automat@unox.no;fuel:diesel:yes;fuel:octane_95:yes;name:Uno-X Tunejordet;old_ref:yx:313;ref:unox:711
+7499138459,59.0953074 11.2006782,historic:fort;name:Mørvik fort;old_name:HKB 6./980 Zug Mörvik
+7536538209,59.2655322 11.1013793,tourism:picnic_site
+7553374676,59.9297244 10.7111816,artist_name:Nils Aas;artwork_type:statue;image:https://photos.app.goo.gl/4iiip1msEtyB35zPA;mapillary:1142057952926868;material:metal;name:Chaplin;source:https://bogstadveien.no/2017/04/28/kunst-gatelangs/;tourism:artwork
+7555056668,59.9234597 10.6941626,artist_name:Nina Sundbye;artwork_type:statue;image:https://photos.app.goo.gl/KVvdGydFnwBNctS76;mapillary:136643975161542;material:bronze;name:Peer Gynt;start_date:1994;tourism:artwork
+7589318780,57.7169408 11.905229,access:yes;archaeological_site:petroglyph;description:en:those are cup and ring marks;historic:archaeological_site;historic:civilization:bronze-age
+7616366293,59.1303445 11.4880116,fireplace:yes;name:Vanninga;tourism:picnic_site
+7636817227,59.8384296 10.4353695,amenity:fountain;image:https://images.mapillary.com/OkstyODajycWcGc7KZWLA7/thumb-2048.jpg;mapillary:168741128513245
+7656748905,59.8814465 10.9859896,artwork_type:sculpture;image:https://images.mapillary.com/DwT9pBd4EO2m6eEEiJzYBL/thumb-2048.jpg;mapillary:195389652406854;material:stone;tourism:artwork
+7660699157,59.9584842 11.0477146,historic:memorial;image:https://photos.app.goo.gl/9MzYJpBR1jTZUud28;mapillary:1714239578964498;material:stone;memorial:statue;name:Reist av Lillestrøms innbyggere
+7688712560,59.9374634 10.606999,amenity:fuel;automated:yes;branch:Østerås;brand:Uno-X;car_wash:yes;compressed_air:no;email:automat@unox.no;fuel:diesel:yes;fuel:octane_95:yes;name:Uno-X Østerås;old_ref:yx:341;opening_hours:24/7;ref:unox:688;wheelchair:yes
+7707604695,58.1054435 11.5041016,amenity:public_bath;wikidata:Q106707002
+7728366985,57.6861568 12.080515,tourism:picnic_site
+7769844218,58.2428532 11.4482636,tourism:viewpoint
+7799491366,59.3201631 12.3094296,amenity:school;name:Svensbyns skola
+7824454061,57.6870724 12.0509505,name:Edsåsen;tourism:viewpoint
+7832545085,59.8353949 10.6408105,tourism:picnic_site
+7855292616,59.2805509 11.1100191,artist_name:Birthe Marie Løveid;artwork_type:statue;image:https://photos.app.goo.gl/n7mmXic98yspx3DQ6;name:Dronning Astrid;tourism:artwork
+7862908968,59.9622603 10.7908194,tourism:picnic_site
+7877625085,57.5805355 11.7824849,tourism:picnic_site
+7897389260,59.9209776 10.6364882,artwork_type:bust;name:Christian Haslerud;tourism:artwork
+7929502840,59.9421716 10.8895833,man_made:tower;tower:type:bell_tower
+7944170091,59.63789 11.323199,amenity:school;capacity:231;email:elisabeth.asplund@io.kommune.no;fee:no;grades:1-7;isced:level:1;name:Skjønhaug skole;operator:Indre Østfold kommune;operator:type:public;phone:+47 69 68 16 80;ref:udir_nsr:974602377;ref:udir_nsr_old:1005698;website:https://www.io.kommune.no/tjenester/skole-og-utdanning/alle-grunnskoler/skjonhaug-skole/
+7960993045,57.7272865 11.9498976,air_conditioning:no;guest_house:hostel;internet_access:wlan;internet_access:fee:customers;name:Backa;smoking:outside;tourism:hostel;wheelchair:no
+7982004837,57.7331749 11.9673211,tourism:viewpoint
+8003577365,59.9068624 10.746507,"artist_name:Bjarte Agdestein, Endre Skandfer and Ronald Kabcek;artwork_type:installation;name:Havnepromenaden infopunkt 9: Langkaia;tourism:artwork"
+8044851917,58.2027921 11.4088971,direction:0-360;tourism:viewpoint
+8091977113,59.918461 10.719421,amenity:arts_centre;name:Galleri Briskeby;opening_hours:Tu-Fr 12:00-18:00; Sa 12:00-16:00; Su 12:00-15:00;website:https://www.galleribriskeby.no/
+8171561655,58.2105201 12.0724315,name:Store Valeklinten;tourism:viewpoint
+8198514950,59.9988795 10.9808055,amenity:clock;display:sundial
+8260211640,59.9364874 10.7170159,direction:220;tourism:viewpoint
+8286166366,57.7920193 11.9822937,description:Bord och bänkar;tourism:picnic_site
+8356096546,58.5167348 11.6594808,amenity:public_bath
+8403266659,57.6648696 12.0045724,tourism:viewpoint
+8463391061,59.9243488 10.8344831,artwork_type:graffiti;barrier:gate;name:Hells Angels MC Oslo;tourism:artwork
+8528346413,59.9242452 10.6549452,amenity:fountain;fountain:decorative;height:4;name:Fontene
+8604168605,59.3191929 12.3114533,name:Silleruds station;tourism:hotel;website:https://www.sillerudsstation.se/
+8672583007,59.9360293 10.4783875,tourism:viewpoint
+8721719960,59.9362488 10.7357058,amenity:clock
+8764757187,59.8249048 10.4429512,artwork_type:stone;tourism:artwork
+8789085612,58.3577526 11.9466565,direction:S;tourism:viewpoint
+8842940279,59.8244066 10.7723502,historic:boundary_stone;image:https://photos.app.goo.gl/dnZ8DbrGNrN7GbZM9;name:155
+8895280083,56.6742745 12.8493177,artist_name:Elina Metso;artwork_type:mural;name:Mellan rum;tourism:artwork
+8922107359,59.333109 10.9403916,historic:fort;name:Gyllerås batteri;start_date:1902;wikidata:Q11973470;wikipedia:no:Gyllerås batteri
+8945028921,57.1128023 12.226768,tourism:picnic_site
+8960558145,59.9863377 11.2448486,artwork_type:sculpture;image:https://photos.app.goo.gl/S2GL6ptUTyHr5BoH9;name:Nr. 91 Stomperud;tourism:artwork
+8972775593,58.9311334 11.1913236,addr:city:Strömstad;addr:country:SE;addr:housenumber:8;addr:postcode:45233;addr:street:Sältegatan;amenity:fuel;fuel:cng:yes;name:CNG Strömstad;operator:BRC Gas Equipment
+8977963660,57.4785575 12.0826116,addr:city:Kungsbacka;addr:country:SE;addr:housenumber:34;addr:street:Hantverksgatan;amenity:fuel;fuel:cng:yes;name:CNG S.Kungsbacka;operator:FordonsGas Sverige AB;payment:fordonsgas:yes;payment:mastercard:yes;payment:svensk_biogas:yes;payment:visa:yes;payment:volvokort:yes;self_service:yes
+8989641068,57.7373714 12.0349012,man_made:tower;tower:type:lighting
+8989977347,57.7048365 12.0115103,man_made:tower;tower:type:lighting
+8993656839,57.6365124 11.9242239,man_made:tower;tower:type:lighting
+8996494635,57.5372848 12.6582214,tourism:viewpoint
+8996915690,57.6898155 11.9356632,man_made:tower;tower:type:lighting
+8997742734,57.7664565 12.0277765,man_made:tower;tower:type:lighting
+8999658754,57.6364645 11.8863091,man_made:tower;tower:type:lighting
+8999673916,57.6546837 11.8831406,man_made:tower;tower:type:lighting
+8999682519,57.6552196 11.8824839,man_made:tower;tower:type:lighting
+9000575529,57.6927906 11.8660267,man_made:tower;tower:type:lighting
+9000642207,57.7261163 11.9520025,man_made:tower;tower:type:lighting
+9019407234,57.6694618 11.91885,tourism:picnic_site
+9028078994,57.2097647 12.555644,tourism:picnic_site
+9041848386,57.6692347 12.0105264,amenity:bank;brand:SEB;brand:wikidata:Q975655;brand:wikipedia:sv:Skandinaviska Enskilda Banken;name:SEB
+9042037763,57.6912847 11.8590585,man_made:tower;tower:type:lighting
+9042037792,57.6930194 11.8501741,man_made:tower;tower:type:lighting
+9042037813,57.6946839 11.8418234,man_made:tower;tower:type:lighting
+9042038134,57.6909975 11.8300318,man_made:tower;tower:type:lighting
+9042510339,57.6549499 11.9582723,man_made:tower;tower:type:lighting
+9047980520,56.6488041 12.9045581,tourism:picnic_site
+9054745144,59.3793727 10.7222418,artist:wikidata:Q13653170;artist_name:Nic Schiøll;artwork_subject:figurative;artwork_type:statue;height:1.3;material:bronze;name:To rådyr;start_date:1957;subject:wikidata:Q1622217;tourism:artwork
+9074324616,59.9110702 10.6429571,artwork_type:mural;tourism:artwork
+9104907555,57.6711203 12.0060117,amenity:community_centre;community_centre:community_hall;community_centre:for:senior;name:Träffpunkt Krokslätt;official_name:Miniträffpunkt Krokslätt;opening_hours:We 10:00-12:00;operator:Mölndals Stad
+9124563337,57.5186414 12.6435214,historic:archaeological_site;name:Offerkast
+9216273584,59.914074 10.726713,amenity:conference_centre;name:Ingeniørenes Hus Møtesenter;website:https://www.compass-group.no/konferanseselskap/vare-konferansesenter/ingeniorenes-hus-motesenter/
+9222673191,57.7186163 12.0371957,amenity:kindergarten;name:Torpagatan 32 förskola;operator:Göteborgs Stad;operator:type:government;pedagogy:mainstream
+9254382466,57.4423054 10.4940565,amenity:fuel;fuel:biogas:yes;fuel:cng:yes;name:CNG Frederikshavn;opening_hours:24/7;operator:Nature Energy;payment:dankort:yes;payment:eurocard:yes;payment:maestro:yes;payment:visa:yes;phone:+45 70 22 40 00;self_service:yes;website:https://tankbiogas.dk/find-gastankstationerne/
+9254444336,59.4258865 11.3432364,amenity:bank;branch:Rakkestad;brand:Marker Sparebank;name:Marker Sparebank Rakkestad;ref:bankorg:980676374
+9258384869,59.6010985 10.7461083,amenity:bank;branch:Vestby;brand:Sparebank 1 Østfold Akershus;name:Sparebank 1 Østfold Akershus Vestby;ref:bankorg:984000359
+9264453789,59.9112825 10.6380433,amenity:bank;branch:Lysaker;brand:Handelbanken;email:lysaker@handelsbanken.no;name:Handelsbanken Lysaker;opening_hours:Mo-Fr 09:00-15:00;phone:+47 67 52 83 00;ref:handelsbanken:8397
+9310588331,59.929484 10.862384,amenity:fuel;fuel:biogas:yes;fuel:cng:yes;name:CNG Stubberud;opening_hours:24/7;operator:Gasum;self_service:yes
+9318949709,56.6503782 12.7399805,amenity:fountain
+9370588112,59.273259 10.425399,amenity:fuel;branch:Tønsberg;brand:Circle K;car_wash:yes;email:lars.gullichsen@circlekeurope.com;fuel:HGV_diesel:yes;fuel:diesel:yes;fuel:octane_95:yes;fuel:propane:yes;fuel:taxfree_diesel:yes;hgv:yes;name:Circle K Tønsberg;opening_hours:24/7;phone:+4733312758;ref:circlek:51669;shop:yes;trailer:rental:yes;wheelchair:yes
+9389462389,59.2063248 10.9425022,artwork_type:bust;tourism:artwork
+9423413894,59.8217971 10.7806082,tourism:camp_site
+9465995933,57.7069556 11.7621456,amenity:school;name:Skutehagsskolan F-6;phone:+46-31-366 51 98;website:https://goteborg.se/wps/portal/enhetssida/skutehagen
+9631902017,57.7213074 11.9760797,name:La Mare Resort;phone:+46730941400;tourism:hotel
+9645096527,59.9066795 10.8470939,name:Skulptural front-non figurativt;tourism:artwork
+9678588018,59.885311 10.7138077,name:de:Heggholmen Leuchtturmhaus;name:en:Heggholmen Lighthouse;name:no:Heggholmen Fyr;tourism:attraction
+9704923528,59.8937255 10.8093374,tourism:picnic_site
+9718915945,57.5898001 12.7510191,name:Kunskapsträdet;tourism:artwork
+9760490220,57.7379735 12.3473771,tourism:camp_site
+9809568917,58.137194 11.5553132,archaeological_site:megalith;historic:archaeological_site;megalith_type:dolmen;name:Leby gånggrift;name:en:Leby passage grave;name:nl:Leby ganggraf
+9845758528,57.9375655 12.0033079,backcountry:yes;capacity:2;caravans:yes;fee:no;internet_access:no;opening_hours:24/7;reservation:no;sanitary_dump_station:no;tents:no;tourism:camp_site
+9858628735,59.9700702 10.9265702,artwork_type:statue;tourism:artwork
+9865874023,59.2677557 10.4112298,tourism:artwork
+9885818700,59.8680889 11.881339,historic:boundary_stone;man_made:cairn;name:Fisketjernet;old_name:Fiskvandet;place:locality;ssr:stedsnr:959319
+9895595956,58.7169335 11.2436378,archaeological_site:fortification;historic:archaeological_site
+9907553545,58.9379068 12.2861294,capacity:caravans:4;fee:yes;tourism:caravan_site
+9921437816,58.7929838 12.4242555,name:Tomtemuseum;tourism:museum
+9937733893,59.5213007 12.7010027,historic:archaeological_site
+9946864700,57.7112646 12.1420625,man_made:tower;tower:type:diving
+9952642605,57.6891684 11.9515682,amenity:fountain;drinking_water:no;indoor:no;lit:no
+9968719964,57.4618909 12.1818499,amenity:library
+9983554811,59.2849649 11.1353028,direction:0;tourism:viewpoint
+10005081631,58.8510035 11.5413473,archaeological_site:fortification;fortification_type:earthworks;historic:archaeological_site;name:Holkekärrnäs skans
+10028867873,57.7351409 11.6923354,name:Göteborgs Friluftsförening;nudism:yes;short_name:GFF;tourism:camp_site
+10040773828,57.7077009 11.9767551,artwork_type:mural;image:https://photos.app.goo.gl/tGJeiA5Ts4Sk59ZM8;tourism:artwork
+10086867288,59.9603911 10.6660944,artist_name:Gustav Lærum;artwork_type:statue;description:Statue of Henrik (1861-1922) 1923 by Gustav Lærum Metal;name:Henrik August Angell;tourism:artwork
+10116172274,59.4091232 10.668004,artist_name:Kirsten Kokkin;artwork_type:statue;height:2.3;material:bronze;name:Felespiller;tourism:artwork
+10135621459,59.6201169 11.0925618,"artist_name:Knut Oddvar Solberg;artwork_type:painting,_poem;inscription:Deiligst av alle gleder, er gleden av slett ingenting, ikke for noe du kan eller vil. Geden for intet, og gleden for alt, gleden fordi du er til.;name:Deiligst av alle gleder;survey_date:2022-09-29;tourism:artwork"
+10177993234,57.6920953 11.9854846,direction:69;tourism:viewpoint
+10229455188,59.4322217 10.6633096,artist_name:Arne Durban;artwork_type:statue;height:1.5;material:bronze;name:Mor med barn;start_date:1956;tourism:artwork
+10268632464,59.8521689 10.4524503,amenity:events_venue;email:post@askermuseum.no;name:Ut i solen-stua;operator:Asker museum;operator:type:government;website:https://mia.no/askermuseum/utleie-ut-i-solen
+10294033410,58.8101637 12.4180806,amenity:school;name:Åsens skola
+10314250522,57.7176773 11.9488013,amenity:school;name:Språkcentrum
+10539029925,59.8650299 10.8391047,amenity:kindergarten;capacity:52;contact:website:http://www.oslo.kommune.no/barnehage/finn-barnehage-i-oslo/gartnerboligen-barnehage/;max_age:5;min_age:1;name:Gartnerboligen barnehage;no-barnehage:nsrid:975316688;operator:Oslo kommune;operator:type:public
+10543802070,59.253097 10.4165708,name:Ditt Galleri;tourism:gallery
+10569479558,59.7982288 11.46772,amenity:community_centre;name:Aspehaug;owner:Løken Sokn;ref:anlegg:9669
+10592589142,59.460774 10.8021891,amenity:school;capacity:212;email:postmottak@valer.kommune.no;fee:no;grades:8-10;isced:level:2;name:Våler ungdomsskole;note:Midlertidig plassering til nye skole blir ferdig i Kirkebygden 2024/25;operator:Våler kommune;operator:type:public;phone:+47 69289222;ref:gsi:1007;ref:udir_nsr:975280802;ref:udir_nsr_old:1007162;website:https://vaaler.ungdomsskole.no/;wheelchair:yes
+10631202721,57.6863441 11.9103174,name:Fixgalleriet;operator:HSB Göteborg;tourism:gallery
+10692459599,59.9507428 11.3227348,artwork_type:sculpture;tourism:artwork
+10761178334,58.2615506 11.9856148,artwork_type:statue;tourism:artwork
+10804197361,57.7513355 11.9834991,artwork_type:sculpture;tourism:artwork
+10845818021,57.7250069 11.945212,artwork_type:sculpture;tourism:artwork
+10856130781,59.1792033 10.4389084,amenity:community_centre;name:Torød flerfunksjonshus;owner:Færder kommune;ref:anlegg:517
+10861364517,59.9658768 11.0380277,artwork_type:sculpture;tourism:artwork
+10879225505,59.2106923 10.9450507,amenity:community_centre;name:St.Croix huset;owner:Fredrikstad kommune;ref:anlegg:11215
+10879225522,59.3184195 11.1625806,amenity:community_centre;name:Hasle menighetssenter;owner:Hasle Menighetssenter;ref:anlegg:11022;wikidata:Q6493255
+10881607481,59.4914013 10.85545,amenity:community_centre;name:Kirkebygden grendehus;owner:Stiftelsen Kirkebygden Barnehage og Grendehus;ref:anlegg:11219
+10881607496,59.5825452 11.2655123,amenity:community_centre;name:Slitu samfunnshus;owner:Slitu i F;ref:anlegg:55233
+10887461083,59.7201458 11.0511645,amenity:community_centre;name:Mari menighetshus;owner:Mari Menighetssenter;ref:anlegg:55667
+10887461093,59.7334153 11.1323598,amenity:community_centre;name:Bøndenes hus;owner:Enebakk Bygdeungdomslag;ref:anlegg:55669
+10887477305,59.8427152 10.4233003,amenity:community_centre;name:Frydendallåven;owner:Asker Røde Kors;ref:anlegg:55676
+10893943740,57.8462559 11.7925097,amenity:library;email:biblioteket.karna@kungalv.se;name:Kärna bibliotek;phone:0303-23 80 56
+10901616538,57.6920303 11.9623386,ele:67;tourism:viewpoint
+10921272437,59.9174948 10.8151649,amenity:kindergarten;capacity:89;max_age:5;min_age:1;name:Frelsesarmeens barnehager avd. Regnbuen;no-barnehage:nsrid:973111965;operator:Frelsesarmeens barnehager AS;operator:type:private
+10933989954,57.682432 11.9523093,artwork_type:sculpture;lit:yes;material:stone;tourism:artwork
+10943600353,59.9146802 10.7945454,amenity:kindergarten;capacity:63;contact:website:http://alleen.barnehage.no/;max_age:5;min_age:1;name:Alleen barnehage;no-barnehage:nsrid:894436662;operator:Ulna AS;operator:type:private
+10958958527,59.9261692 10.7676771,amenity:kindergarten;capacity:63;contact:website:http://laringsverkstedet.no/barnehage/konfektfabrikken;max_age:5;min_age:1;name:Læringsverkstedet barnehage Konfektfabrikken;no-barnehage:nsrid:899164512;operator:Læringsverkstedet AS;operator:type:private
+10971322887,57.7464296 12.2800815,addr:city:Lerum;addr:country:SE;addr:housenumber:80;addr:postcode:443 92;addr:street:Östra Stamsjövägen;amenity:community_centre;community_centre:events_venue;name:Knappekulla lägergård;operator:Frälsningsarmen;operator:type:religious;website:https://www.fralsningsarmen.se/lilla-bommen/vardkedjan-goteborg/knappekulla-var-lagergard/
+10982639277,58.2732709 11.4192208,name:Jättegrytor;tourism:attraction
+11002457834,59.2861977 11.0962141,man_made:tower;tower:type:lighting
+11012279821,56.7439989 12.8757024,archaeological_site:tumulus;historic:archaeological_site
+11012279832,56.7115982 12.9067108,archaeological_site:tumulus;historic:archaeological_site;tourism:attraction
+11043024295,57.4627038 10.5373746,caravan_site:type:harbour;charge:DKK 160;fee:yes;name:Rønnerhavnen;power_supply:yes;power_supply:charge:DKK 4/kWh;power_supply:fee:yes;sanitary_dump_station:yes;shower:yes;toilets:yes;tourism:caravan_site
+11052618783,59.2292326 10.4057961,historic:memorial;memorial:war_memorial
+11069087418,57.6592094 12.124393,tourism:artwork
+11070269348,57.4925833 10.5046111,capacity:10;charge:DKK 120;description:different places on the harbour;fee:yes;name:Strandby Lystbådehavn;power_supply:yes;power_supply:fee:yes;shower:charge:DKK 5;shower:fee:yes;toilets:yes;tourism:caravan_site;water_point:yes;water_point:fee:no
+11075244405,58.3748616 11.9360323,amenity:kindergarten;name:Snäckans Förskola
+11084423759,57.793673 12.0499825,amenity:fuel;branch:Göteborg Angered;brand:St1;brand:wikidata:Q7592214;compressed_air:no;name:St1;opening_hours:24/7;operator:St1;wheelchair:yes
+11091265905,59.9771561 12.0611878,tourism:museum
+11111559210,59.9549411 10.7210374,amenity:kindergarten;capacity:49;max_age:5;min_age:1;name:Eplehagen kanvas-barnehage;no-barnehage:nsrid:975316947;operator:Stiftelsen Kanvas;operator:type:private
+11141880020,57.7037739 12.1061705,tourism:picnic_site

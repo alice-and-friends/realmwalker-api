@@ -47,8 +47,9 @@ development:
 test:
   adapter: postgis
   encoding: unicode
-  database: realmwalker_test
+  database: db_test
   pool: 5
-  username: realmwalker
-  password: oasjdkasd7jasdkla_
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  host: <%= ENV['POSTGRES_HOST'] %>
   timeout: 5000
