@@ -16,7 +16,7 @@ class RealWorldLocation < ApplicationRecord
     )
   }
   # scope :for_npc, -> { where(type: 'npc') }
-  # scope :for_dungeon, -> { where(type: 'unassigned') }
+  scope :for_dungeon, -> { where(type: 'unassigned') }
 
   scope :near, lambda { |latitude, longitude, distance|
     where("ST_Distance(location,

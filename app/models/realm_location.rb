@@ -17,7 +17,6 @@ class RealmLocation < ApplicationRecord
     )
   }
 
-
   delegate :coordinates, to: :real_world_location
 
   def set_real_world_location!

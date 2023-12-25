@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 602) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_15_141841) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
@@ -146,6 +146,15 @@ ActiveRecord::Schema[7.0].define(version: 602) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "spooks", force: :cascade do |t|
+    t.bigint "npc_id", null: false
+    t.bigint "dungeon_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["dungeon_id"], name: "index_spooks_on_dungeon_id"
+    t.index ["npc_id"], name: "index_spooks_on_npc_id"
+  end
+
   create_table "trade_offer_lists", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", null: false
@@ -186,5 +195,7 @@ ActiveRecord::Schema[7.0].define(version: 602) do
   add_foreign_key "inventory_items", "inventories"
   add_foreign_key "inventory_items", "items"
   add_foreign_key "npcs", "portraits"
+  add_foreign_key "spooks", "dungeons"
+  add_foreign_key "spooks", "npcs"
   add_foreign_key "trade_offers", "items"
 end

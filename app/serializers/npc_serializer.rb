@@ -4,6 +4,10 @@ class NpcSerializer < RealmLocationSerializer
   attributes :species, :gender, :role, :portrait
   attributes :shop_type, :buy_offers, :sell_offers, :spooked if :shop?
 
+  def spooked
+    object.spooked?
+  end
+
   def portrait
     object.portrait.name
   end
