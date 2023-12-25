@@ -21,43 +21,90 @@ class GeoJsonWriter(o.SimpleHandler):
         # Store the coordinates of previously added points
         self.previous_coordinates = []
 
+    def is_desirable(self, obj):
+        # Tag categories
+        amenity_tags = ['college', 'kindergarten', 'library', 'research_institute', 'music_school',
+                        'school', 'place_of_worship', 'traffic_park', 'university', 'fuel', 'bank',
+                        'arts_centre', 'cinema', 'community_centre', 'conference_centre', 'events_venue',
+                        'exhibition_centre', 'fountain', 'planetarium', 'public_bookcase', 'social_centre',
+                        'theatre', 'courthouse', 'ranger_station', 'townhall', 'clock', 'marketplace',
+                        'public_bath', 'public_building']
+        historic_tags = ['aqueduct', 'archaeological_site', 'battlefield', 'bomb_crater', 'boundary_stone',
+                         'building', 'castle', 'church', 'city_gate', 'fort', 'milestone', 'monastery',
+                         'monument', 'mosque', 'ogham_stone', 'ruins', 'rune_stone', 'stone', 'tower']
+        man_made_tags = ['communications_tower', 'lighthouse', 'obelisk', 'observatory', 'pier',
+                         'telescope', 'torii', 'tower', 'windmill']
+        memorial_tags = ['war_memorial', 'statue', 'bust', 'stele', 'stone', 'obelisk', 'sculpture']
+        tourism_tags = ['alpine_hut', 'aquarium', 'artwork', 'attraction', 'camp_pitch', 'camp_site',
+                        'caravan_site', 'gallery', 'hostel', 'hotel', 'motel', 'museum', 'picnic_site',
+                        'theme_park', 'viewpoint', 'wilderness_hut']
+
+        tag_categories = {
+            'amenity': amenity_tags,
+            'historic': historic_tags,
+            'man_made': man_made_tags,
+            'memorial': memorial_tags,
+            'tourism': tourism_tags
+        }
+
+        for category, tags in tag_categories.items():
+            if category in obj.tags and obj.tags[category] in tags:
+                return True
+        return False
+
+    def process_object(self, obj, coordinates, tags):
+        # Check if the point is in the test area
+        if not (56.63 < coordinates[0] < 60.00 and 10.40 < coordinates[1] < 12.94):
+            return
+
+        row = [
+            obj.id,
+            f"{coordinates[0]} {coordinates[1]}"
+        ]
+
+        tag_dict = dict((tag.k, tag.v) for tag in tags)
+        tag_string = ';'.join([f"{key}:{value}" for key, value in tag_dict.items()]).replace('\n', ' ')
+        row.append(tag_string)
+        self.csv_writer.writerow(row)
+
     def node(self, o):
-        if o.tags:
-            if 'fixme' in o.tags:
-                # self.print_progress(o.id, "bad data")
-                return  # Skip this node
+        if not self.is_desirable(o):
+            return
 
-            if 'access' in o.tags and o.tags['access'] != 'yes':
-                # self.print_progress(o.id, "inaccessible")
-                return  # Skip this node
+        coordinates = (o.location.lat, o.location.lon)
 
-            amenity_tags = ['college', 'kindergarten', 'library', 'research_institute', 'music_school', 'school', 'place_of_worship', 'traffic_park', 'university', 'fuel', 'bank', 'arts_centre', 'cinema', 'community_centre', 'conference_centre', 'events_venue', 'exhibition_centre', 'fountain', 'planetarium', 'public_bookcase', 'social_centre', 'theatre', 'courthouse', 'ranger_station', 'townhall', 'clock', 'marketplace', 'public_bath', 'public_building']
-            historic_tags = ['aqueduct', 'archaeological_site', 'battlefield', 'bomb_crater', 'boundary_stone', 'building', 'castle', 'church', 'city_gate', 'fort', 'milestone', 'monastery', 'monument', 'mosque', 'ogham_stone', 'ruins', 'rune_stone', 'stone', 'tower']
-            man_made_tags = ['communications_tower', 'lighthouse', 'obelisk', 'observatory', 'pier', 'telescope', 'torii', 'tower', 'windmill']
-            memorial_tags = ['war_memorial', 'statue', 'bust', 'stele', 'stone', 'obelisk', 'sculpture']
-            tourism_tags = ['alpine_hut', 'aquarium', 'artwork', 'attraction', 'camp_pitch', 'camp_site', 'caravan_site', 'gallery', 'hostel', 'hotel', 'motel', 'museum', 'picnic_site', 'theme_park', 'viewpoint', 'wilderness_hut']
+        # Check for nearby points
+        if self.has_points_nearby(coordinates, 1, 42.0):
+            return
+        if self.has_points_nearby(coordinates, 5, 300.0):
+            return
 
-            if 'amenity' in o.tags and o.tags['amenity'] in amenity_tags:
-                self.print_object(o, geojsonfab.create_point(o), o.tags)
-                return
+        self.previous_coordinates.append(coordinates)
+        self.process_object(o, coordinates, o.tags)
 
-            if 'historic' in o.tags and o.tags['historic'] in historic_tags:
-                self.print_object(o, geojsonfab.create_point(o), o.tags)
-                return
+    def way(self, o):
+        if not self.is_desirable(o):
+            return
 
-            if 'man_made' in o.tags and o.tags['man_made'] in man_made_tags:
-                self.print_object(o, geojsonfab.create_point(o), o.tags)
-                return
+        try:
+            first_node = next(o.nodes)
+            coordinates = (first_node.lat, first_node.lon)
+        except StopIteration:
+            return
 
-            if 'memorial' in o.tags and o.tags['memorial'] in memorial_tags:
-                self.print_object(o, geojsonfab.create_point(o), o.tags)
-                return
+        self.process_object(o, coordinates, o.tags)
 
-            if 'tourism' in o.tags and o.tags['tourism'] in tourism_tags:
-                self.print_object(o, geojsonfab.create_point(o), o.tags)
-                return
+    def area(self, o):
+        if not self.is_desirable(o):
+            return
 
-            # self.print_progress(o.id, "undesirable")
+        try:
+            first_node = next(o.outer_rings()[0].nodes)
+            coordinates = (first_node.lat, first_node.lon)
+        except (StopIteration, IndexError):
+            return
+
+        self.process_object(o, coordinates, o.tags)
 
     def progress(self, index):
         percent = int(index)/11150000000*100
@@ -68,44 +115,6 @@ class GeoJsonWriter(o.SimpleHandler):
         
     def print_progress(self, id, message):
         print(f'{self.progress(id)} {message}')
-
-    def print_object(self, o, geojson, tags):
-        geom = json.loads(geojson)
-        if geom:
-            coordinates = (geom['coordinates'][1], geom['coordinates'][0])
-
-            # Check if the point is in the test area
-            # if not (59.903 < coordinates[0] < 59.936 and 10.691 < coordinates[1] < 10.767): # Oslo
-            # if not (59.65 < coordinates[0] < 60.00 and 10.40 < coordinates[1] < 11.13): # Oslo surroundings
-            if not (56.63 < coordinates[0] < 60.00 and 10.40 < coordinates[1] < 12.94): # Oslo - Halmstad
-                # print(f'out of bounds {self.progress(o.id)} @ {coordinates[1]}, {coordinates[0]}')
-                return  # Skip this point
-
-            # Check if the new point is within the minimum distance of previously added points
-            if self.has_points_nearby(coordinates, 1, 42.0):
-                self.print_progress(o.id, "too close to other point")
-                return  # Skip this point
-            if self.has_points_nearby(coordinates, 5, 300.0):
-                self.print_progress(o.id, "too many points in immediate area")
-                return  # Skip this point
-
-            # Add the new point to the list of previously added points
-            self.previous_coordinates.append(coordinates)
-
-            row = [
-                o.id,
-                f"{coordinates[0]} {coordinates[1]}"
-            ]
-
-            # Convert tags (TagList) to a dictionary
-            tag_dict = dict((tag.k, tag.v) for tag in tags)
-
-            # Convert the dictionary to a semicolon-separated string
-            tag_string = ';'.join([f"{key}:{value}" for key, value in tag_dict.items()]).replace('\n', ' ')
-            row.append(tag_string)  # Append the tag_string to the row
-            self.print_progress(o.id, row)
-
-            self.csv_writer.writerow(row)  # Write the row to the CSV file
 
     def has_points_nearby(self, new_coordinates, num_points=1, min_distance=25.0):
         """
