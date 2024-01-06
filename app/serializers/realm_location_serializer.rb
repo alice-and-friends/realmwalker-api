@@ -28,6 +28,7 @@ class RealmLocationSerializer < ActiveModel::Serializer
   end
 
   def npc_details
+    puts object.inspect
     {
       role: object.role,
       shop_type: object.shop_type,

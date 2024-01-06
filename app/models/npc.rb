@@ -25,6 +25,11 @@ class Npc < RealmLocation
   validate :shopkeeper_has_trade_offer_list, if: :shop?
 
   scope :shopkeepers, -> { where(role: 'shopkeeper') }
+  scope :with_spook_status, lambda {
+    left_outer_joins(:spooks)
+      .select('npcs.*, COUNT(spooks.id) > 0 AS spooked')
+      .group('npcs.id')
+  }
 
   after_create do |npc|
     Rails.logger.debug "📌 Spawned a new NPC, say hello to #{npc.name}. There are now #{Npc.count} NPCs."
@@ -69,7 +74,12 @@ class Npc < RealmLocation
       .sort_by { |offer| offer.item.name }
   end
 
+  # Deprecated, use the with_spook_status scope instead!
   def spooked?
+    # This optimization shortcut works when using the "with_spook_status" scope
+    return spooked if respond_to?(:spooked)
+
+    # Fallback solution is to join the spooks table
     spooks.any?
   end
 
