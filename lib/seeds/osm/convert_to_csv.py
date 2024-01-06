@@ -1,17 +1,17 @@
 import sys
 import osmium as o
 import csv
-import json
-import math
 import time
 from geopy.distance import geodesic
+import shapely.wkb as wkblib
 
-geojsonfab = o.geom.GeoJSONFactory()
+wkbfab = o.geom.WKBFactory()
 
 # Define the CSV headers
 CSV_HEADERS = ["ext_id", "coordinates", "tags"]
 
-class GeoJsonWriter(o.SimpleHandler):
+
+class CSVWriter(o.SimpleHandler):
     def __init__(self, output_file):
         super().__init__()
         self.output_file = output_file
@@ -21,7 +21,18 @@ class GeoJsonWriter(o.SimpleHandler):
         # Store the coordinates of previously added points
         self.previous_coordinates = []
 
+        self.c_node = 0
+        self.c_way = 0
+
     def is_desirable(self, obj):
+        # osmium tags-filter planet-230828.osm.pbf amenity historic leisure man_made memorial tourism -o planet-filtered.osm.pbf --overwrite
+
+        if 'fixme' in obj.tags:
+            return False  # Skip this node
+
+        if 'access' in obj.tags and obj.tags['access'] != 'yes':
+            return False  # Skip this node
+
         # Tag categories
         amenity_tags = ['college', 'kindergarten', 'library', 'research_institute', 'music_school',
                         'school', 'place_of_worship', 'traffic_park', 'university', 'fuel', 'bank',
@@ -32,7 +43,9 @@ class GeoJsonWriter(o.SimpleHandler):
         historic_tags = ['aqueduct', 'archaeological_site', 'battlefield', 'bomb_crater', 'boundary_stone',
                          'building', 'castle', 'church', 'city_gate', 'fort', 'milestone', 'monastery',
                          'monument', 'mosque', 'ogham_stone', 'ruins', 'rune_stone', 'stone', 'tower']
-        man_made_tags = ['communications_tower', 'lighthouse', 'obelisk', 'observatory', 'pier',
+        leisure_tags = ['amusement_arcade', 'dog_park', 'firepit', 'ice_rink', 'park',
+                        'sports_centre', 'sports_hall', 'stadium', 'water_park']
+        man_made_tags = ['communications_tower', 'lighthouse', 'obelisk', 'observatory',
                          'telescope', 'torii', 'tower', 'windmill']
         memorial_tags = ['war_memorial', 'statue', 'bust', 'stele', 'stone', 'obelisk', 'sculpture']
         tourism_tags = ['alpine_hut', 'aquarium', 'artwork', 'attraction', 'camp_pitch', 'camp_site',
@@ -42,6 +55,7 @@ class GeoJsonWriter(o.SimpleHandler):
         tag_categories = {
             'amenity': amenity_tags,
             'historic': historic_tags,
+            'leisure': leisure_tags,
             'man_made': man_made_tags,
             'memorial': memorial_tags,
             'tourism': tourism_tags
@@ -53,6 +67,7 @@ class GeoJsonWriter(o.SimpleHandler):
         return False
 
     def process_object(self, obj, coordinates, tags):
+
         # Check if the point is in the test area
         if not (56.63 < coordinates[0] < 60.00 and 10.40 < coordinates[1] < 12.94):
             return
@@ -67,54 +82,96 @@ class GeoJsonWriter(o.SimpleHandler):
         row.append(tag_string)
         self.csv_writer.writerow(row)
 
+        if obj.id % 50 == 0:
+            self.print_progress()
+
     def node(self, o):
         if not self.is_desirable(o):
             return
 
+        self.c_node = o.id
+
         coordinates = (o.location.lat, o.location.lon)
+        if coordinates in self.previous_coordinates:
+            return
 
         # Check for nearby points
         if self.has_points_nearby(coordinates, 1, 42.0):
             return
-        if self.has_points_nearby(coordinates, 5, 300.0):
+        if self.has_points_nearby(coordinates, 4, 400.0):
             return
 
         self.previous_coordinates.append(coordinates)
         self.process_object(o, coordinates, o.tags)
 
     def way(self, o):
+        # if o.is_closed():
+        #    return  # It's probably an area?
+
         if not self.is_desirable(o):
             return
 
+        self.c_way = o.id
+
         try:
-            first_node = next(o.nodes)
+            first_node = o.nodes[0]
             coordinates = (first_node.lat, first_node.lon)
         except StopIteration:
             return
 
+        if coordinates in self.previous_coordinates:
+            return
+
+        # Check for nearby points
+        if self.has_points_nearby(coordinates, 1, 245.0):
+            return
+        if self.has_points_nearby(coordinates, 2, 300.0):
+            return
+
+        self.previous_coordinates.append(coordinates)
         self.process_object(o, coordinates, o.tags)
 
     def area(self, o):
         if not self.is_desirable(o):
             return
 
+        self.c_way = o.id
+
         try:
-            first_node = next(o.outer_rings()[0].nodes)
-            coordinates = (first_node.lat, first_node.lon)
-        except (StopIteration, IndexError):
+            wkb = wkbfab.create_multipolygon(o)
+            poly = wkblib.loads(wkb, hex=True)
+            centroid = poly.representative_point()
+            coordinates = (centroid.x, centroid.y)
+        except (StopIteration, IndexError, RuntimeError) as e:
+            print(f"Encountered an error with area_id={o.id}: {e}")
             return
 
+        if coordinates in self.previous_coordinates:
+            return
+
+        # Check for nearby points
+        if self.has_points_nearby(coordinates, 1, 500.0):
+            return
+        if self.has_points_nearby(coordinates, 2, 4000.0):
+            return
+
+        self.previous_coordinates.append(coordinates)
         self.process_object(o, coordinates, o.tags)
 
-    def progress(self, index):
-        percent = int(index)/11150000000*100
+    def progress_bar(self, index, total):
+        percent = int(index) / total * 100
         length = 25
-        filledLength = int(percent/100*length)
+        filledLength = int(percent / 100 * length)
         bar = '█' * filledLength + '-' * (length - filledLength)
         return f'|{bar}| {"%.2f" % round(percent, 2)}%'
-        
-    def print_progress(self, id, message):
-        print(f'{self.progress(id)} {message}')
+
+    def print_progress(self):
+        x_node = 11149219605
+        x_way = 1202659334
+        print("{} {}/{} nodes, {} {}/{} ways".format(
+            self.progress_bar(self.c_node, x_node), self.c_node, x_node,
+            self.progress_bar(self.c_way, x_way), self.c_way, x_way,
+        ), end='\r')
 
     def has_points_nearby(self, new_coordinates, num_points=1, min_distance=25.0):
         """
@@ -143,16 +200,23 @@ class GeoJsonWriter(o.SimpleHandler):
         # If the loop completes without finding a point that is too close, return False
         return False
 
+
 def main(osmfile):
     with open("real_world_locations_osm.csv", "w", newline='') as f:  # Open in write mode to create a new CSV file
-        handler = GeoJsonWriter(f)
+        handler = CSVWriter(f)
 
-        # Add a header row
+        print('Parsing file...')
+        time_start = time.perf_counter()
+
         handler.csv_writer.writerow(CSV_HEADERS)
-
         handler.apply_file(osmfile)
 
+        time_end = time.perf_counter()
+        time_duration = time_end - time_start
+        print(f"\nDone! {len(handler.previous_coordinates)} ({handler.c_node}+{handler.c_way}) locations in {time_duration:.3f} seconds")
+
     return 0
+
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:

@@ -11,10 +11,10 @@ class RealmLocation < ApplicationRecord
   PLAYER_VISION_RADIUS = 10_000 # meters
   scope :player_vision_radius, lambda { |geolocation|
     joins(:real_world_location)
-    .where(
-      "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{PLAYER_VISION_RADIUS})",
-      coordinates: RGeo::Geos.factory(srid: 0).point(geolocation[:lat], geolocation[:lon])
-    )
+    # .where(
+    #   "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{PLAYER_VISION_RADIUS})",
+    #   coordinates: RGeo::Geos.factory(srid: 0).point(geolocation[:lat], geolocation[:lon])
+    # )
   }
 
   delegate :coordinates, to: :real_world_location

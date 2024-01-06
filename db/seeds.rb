@@ -38,10 +38,15 @@ execution_time = Benchmark.measure do
     )
 
     percentile = location.ext_id[-2..].to_i
-    location.type = 'shop' if percentile.in? 0..12
+    location.type = 'shop' if percentile.in? 0..10
 
     if location.valid?
       locations << location
+
+      # unless location.save
+      #   puts "🛑 #{location.errors.inspect}"
+      #   next
+      # end
     else
       puts "🛑 #{location.errors.inspect}"
     end
