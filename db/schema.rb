@@ -19,24 +19,29 @@ ActiveRecord::Schema[7.0].define(version: 603) do
   create_table "bases", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "real_world_location_id", null: false
+    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["coordinates"], name: "index_bases_on_coordinates", unique: true
     t.index ["real_world_location_id"], name: "index_bases_on_real_world_location_id"
     t.index ["user_id"], name: "index_bases_on_user_id", unique: true
   end
 
   create_table "battlefields", force: :cascade do |t|
     t.bigint "real_world_location_id"
+    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.bigint "dungeon_id"
     t.integer "status", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["coordinates"], name: "index_battlefields_on_coordinates", unique: true
     t.index ["dungeon_id"], name: "index_battlefields_on_dungeon_id"
     t.index ["real_world_location_id"], name: "index_battlefields_on_real_world_location_id"
   end
 
   create_table "dungeons", force: :cascade do |t|
     t.bigint "real_world_location_id"
+    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.integer "status", default: 1
     t.integer "level", null: false
     t.bigint "monster_id"
@@ -44,6 +49,7 @@ ActiveRecord::Schema[7.0].define(version: 603) do
     t.bigint "defeated_by_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["coordinates"], name: "index_dungeons_on_coordinates", unique: true
     t.index ["defeated_by_id"], name: "index_dungeons_on_defeated_by_id"
     t.index ["monster_id"], name: "index_dungeons_on_monster_id"
     t.index ["real_world_location_id"], name: "index_dungeons_on_real_world_location_id"
@@ -102,6 +108,7 @@ ActiveRecord::Schema[7.0].define(version: 603) do
 
   create_table "npcs", force: :cascade do |t|
     t.bigint "real_world_location_id"
+    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.string "name"
     t.string "species"
     t.string "gender", limit: 1
@@ -110,6 +117,7 @@ ActiveRecord::Schema[7.0].define(version: 603) do
     t.bigint "portrait_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["coordinates"], name: "index_npcs_on_coordinates", unique: true
     t.index ["portrait_id"], name: "index_npcs_on_portrait_id"
     t.index ["real_world_location_id"], name: "index_npcs_on_real_world_location_id"
   end
@@ -139,11 +147,6 @@ ActiveRecord::Schema[7.0].define(version: 603) do
     t.datetime "updated_at", null: false
     t.index ["coordinates"], name: "index_real_world_locations_on_coordinates", unique: true
     t.index ["ext_id"], name: "index_real_world_locations_on_ext_id", unique: true
-  end
-
-  create_table "realm_locations", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "spooks", force: :cascade do |t|

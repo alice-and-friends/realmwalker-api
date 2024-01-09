@@ -74,7 +74,6 @@ class Npc < RealmLocation
       .sort_by { |offer| offer.item.name }
   end
 
-  # Deprecated, use the with_spook_status scope instead!
   def spooked?
     # This optimization shortcut works when using the "with_spook_status" scope
     return spooked if respond_to?(:spooked)

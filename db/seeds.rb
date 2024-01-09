@@ -20,7 +20,7 @@ execution_time = Benchmark.measure do
   locations = []
   filename = 'real_world_locations_osm.csv'
   # filename = 'real_world_locations_osm_short.csv'
-  # filename = 'real_world_locations_osm_bounded.csv' # if Rails.env.development?
+  filename = 'real_world_locations_osm_bounded.csv' # if Rails.env.development?
   def parse_tags(tags_str)
     tags_str.split(';').map do |tag|
       key, value = tag.split(':')
@@ -43,15 +43,15 @@ execution_time = Benchmark.measure do
     if location.valid?
       locations << location
 
-      # unless location.save
-      #   puts "🛑 #{location.errors.inspect}"
-      #   next
-      # end
+      unless location.save
+        puts "🛑 #{location.errors.inspect}"
+        next
+      end
     else
       puts "🛑 #{location.errors.inspect}"
     end
   end
-  RealWorldLocation.import locations
+  # RealWorldLocation.import locations
   puts "🌱 Seeded #{RealWorldLocation.count} real world locations."
 
   # MONSTERS

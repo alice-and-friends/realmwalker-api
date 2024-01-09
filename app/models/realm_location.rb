@@ -6,23 +6,20 @@ class RealmLocation < ApplicationRecord
   belongs_to :real_world_location
   validates_associated :real_world_location
   validate :unique_real_world_location_id, on: :create
+  validates :coordinates, presence: true, uniqueness: true, coordinates: true
   before_validation :set_real_world_location!, on: :create
 
   PLAYER_VISION_RADIUS = 10_000 # meters
   scope :player_vision_radius, lambda { |geolocation|
-    joins(:real_world_location)
-    # .where(
-    #   "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{PLAYER_VISION_RADIUS})",
-    #   coordinates: RGeo::Geos.factory(srid: 0).point(geolocation[:lat], geolocation[:lon])
-    # )
+    where(
+      "ST_DWithin(#{table_name}.coordinates::geography, :player_coordinates, #{PLAYER_VISION_RADIUS})",
+      player_coordinates: RGeo::Geos.factory(srid: 0).point(geolocation[:lat], geolocation[:lon])
+    )
   }
 
-  delegate :coordinates, to: :real_world_location
-
   def set_real_world_location!
-    return if real_world_location_id.present?
-
-    self.real_world_location = RealWorldLocation.free.sample #.for(self.class)
+    self.real_world_location = RealWorldLocation.free.sample if real_world_location_id.blank?
+    self.coordinates = real_world_location.coordinates
   end
 
   def location_type

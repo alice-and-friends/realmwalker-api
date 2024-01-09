@@ -23,12 +23,11 @@ class RealmLocationSerializer < ActiveModel::Serializer
   def dungeon_details
     {
       level: object.level,
-      monster_classification: object.monster.classification,
+      monster_classification: object.respond_to?(:monster_classification) ? object.monster_classification : object.monster.classification
     }
   end
 
   def npc_details
-    puts object.inspect
     {
       role: object.role,
       shop_type: object.shop_type,

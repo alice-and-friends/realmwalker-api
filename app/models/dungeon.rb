@@ -21,13 +21,23 @@ class Dungeon < RealmLocation
     Rails.logger.debug "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
+  scope :with_monster_info, lambda {
+    joins(:monster)
+      .select('dungeons.*, monsters.name AS monster_name, monsters.classification AS monster_classification')
+  }
+
   def self.max_dungeons
     return 10 if Rails.env.test?
 
     RealWorldLocation.for_dungeon.count / 14
   end
 
-  delegate :name, to: :monster
+  # delegate :name, to: :monster
+  def name
+    return monster_name if respond_to?(:monster_name)
+
+    monster.name
+  end
 
   def desc
     "level #{level} #{monster.classification}"
