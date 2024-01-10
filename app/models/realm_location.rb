@@ -13,7 +13,7 @@ class RealmLocation < ApplicationRecord
   scope :player_vision_radius, lambda { |geolocation|
     where(
       "ST_DWithin(#{table_name}.coordinates::geography, :player_coordinates, #{PLAYER_VISION_RADIUS})",
-      player_coordinates: RGeo::Geos.factory(srid: 0).point(geolocation[:lat], geolocation[:lon])
+      player_coordinates: RGeo::Geos.factory(srid: 0).point(geolocation[:lon], geolocation[:lat])
     )
   }
 
@@ -24,6 +24,10 @@ class RealmLocation < ApplicationRecord
 
   def location_type
     self.class.name
+  end
+
+  def debug
+    "https://www.google.com/maps/place/#{coordinates.lat},#{coordinates.lon}"
   end
 
   private

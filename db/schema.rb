@@ -22,7 +22,7 @@ ActiveRecord::Schema[7.0].define(version: 603) do
     t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["coordinates"], name: "index_bases_on_coordinates", unique: true
+    t.index ["coordinates"], name: "bases_coordinates_excl", using: :gist
     t.index ["real_world_location_id"], name: "index_bases_on_real_world_location_id"
     t.index ["user_id"], name: "index_bases_on_user_id", unique: true
   end
@@ -34,7 +34,7 @@ ActiveRecord::Schema[7.0].define(version: 603) do
     t.integer "status", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["coordinates"], name: "index_battlefields_on_coordinates", unique: true
+    t.index ["coordinates"], name: "battlefields_coordinates_excl", using: :gist
     t.index ["dungeon_id"], name: "index_battlefields_on_dungeon_id"
     t.index ["real_world_location_id"], name: "index_battlefields_on_real_world_location_id"
   end
@@ -49,7 +49,7 @@ ActiveRecord::Schema[7.0].define(version: 603) do
     t.bigint "defeated_by_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["coordinates"], name: "index_dungeons_on_coordinates", unique: true
+    t.index ["coordinates"], name: "dungeons_coordinates_excl", using: :gist
     t.index ["defeated_by_id"], name: "index_dungeons_on_defeated_by_id"
     t.index ["monster_id"], name: "index_dungeons_on_monster_id"
     t.index ["real_world_location_id"], name: "index_dungeons_on_real_world_location_id"
@@ -117,7 +117,7 @@ ActiveRecord::Schema[7.0].define(version: 603) do
     t.bigint "portrait_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["coordinates"], name: "index_npcs_on_coordinates", unique: true
+    t.index ["coordinates"], name: "npcs_coordinates_excl", using: :gist
     t.index ["portrait_id"], name: "index_npcs_on_portrait_id"
     t.index ["real_world_location_id"], name: "index_npcs_on_real_world_location_id"
   end
@@ -145,7 +145,7 @@ ActiveRecord::Schema[7.0].define(version: 603) do
     t.jsonb "tags"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["coordinates"], name: "index_real_world_locations_on_coordinates", unique: true
+    t.index ["coordinates"], name: "real_world_locations_coordinates_excl", using: :gist
     t.index ["ext_id"], name: "index_real_world_locations_on_ext_id", unique: true
   end
 

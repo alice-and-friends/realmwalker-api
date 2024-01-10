@@ -12,7 +12,7 @@ class Npc < RealmLocation
 
   ROLES = %w[shopkeeper].freeze
   SHOP_TYPES = %w[armorer jeweller magic].freeze
-  SPOOK_DISTANCE = 450 # meters
+  SPOOK_DISTANCE = 225 # meters
   before_validation :assign_species!, on: :create
   before_validation :assign_gender!, on: :create
   before_validation :assign_name!, on: :create
@@ -80,6 +80,20 @@ class Npc < RealmLocation
 
     # Fallback solution is to join the spooks table
     spooks.any?
+  end
+
+  def nearest_similar_shop
+    throw('Unable to determine competitive proximity for shop') if coordinates.blank? || shop_type.blank?
+
+    point = "ST_GeographyFromText('POINT(#{coordinates.lon} #{coordinates.lat})')"
+    distance_query = Arel.sql("ST_Distance(coordinates::geography, #{point})")
+
+    shop = Npc.where(role: 'shopkeeper', shop_type: shop_type).where.not(id: id)
+       .select("npcs.id, npcs.role, npcs.shop_type, #{distance_query}")
+       .order(distance_query)
+       .limit(1)
+
+    [shop, shop.pick(distance_query)] if shop.present?
   end
 
   private

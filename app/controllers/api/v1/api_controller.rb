@@ -14,7 +14,7 @@ class Api::V1::ApiController < ApplicationController
       @current_user_geolocation = {
         lat: lat,
         lon: lon,
-        point: RGeo::Geos.factory(srid: 0).point(lat, lon),
+        point: RGeo::Geos.factory(srid: 0).point(lon, lat),
       }
     else
       render render json: { message: 'Geolocation missing' }, status: :bad_geolocation

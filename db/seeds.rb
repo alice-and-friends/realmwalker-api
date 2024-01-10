@@ -30,10 +30,11 @@ execution_time = Benchmark.measure do
   csv_text = Rails.root.join('lib', 'seeds', filename).read
   csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
   csv.each do |row|
+    lat, lon = row['coordinates'].split
     location = RealWorldLocation.new(
       ext_id: row['ext_id'],
       type: 'unassigned',
-      coordinates: "POINT(#{row['coordinates']})",
+      coordinates: "POINT(#{lon} #{lat})",
       tags: parse_tags(row['tags'])
     )
 
@@ -184,6 +185,7 @@ execution_time = Benchmark.measure do
     npc = Npc.new({
                     role: 'shopkeeper',
                     real_world_location_id: rwl.id,
+                    coordinates: rwl.coordinates,
                   })
 
     if random_digit.in? 0..2
@@ -195,6 +197,15 @@ execution_time = Benchmark.measure do
     else
       npc.shop_type = 'armorer'
       npc.trade_offer_lists << armorer_offer_list
+    end
+
+    # Avoid placing identical shops right next to each other
+    _, distance = npc.nearest_similar_shop
+    if distance.present? && distance <= 200.0
+      puts "🛑 Voiding #{npc.shop_type} at location ##{rwl.id} (#{rwl.coordinates.lon} #{rwl.coordinates.lat}), too close to similar shop"
+      npc.destroy!
+      rwl.update!(type: 'unassigned')
+      next
     end
 
     puts "🛑 #{npc.errors.inspect}" unless npc.save!
