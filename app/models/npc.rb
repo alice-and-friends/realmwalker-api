@@ -12,7 +12,6 @@ class Npc < RealmLocation
 
   ROLES = %w[shopkeeper].freeze
   SHOP_TYPES = %w[armorer jeweller magic].freeze
-  SPOOK_DISTANCE = 225 # meters
   before_validation :assign_species!, on: :create
   before_validation :assign_gender!, on: :create
   before_validation :assign_name!, on: :create

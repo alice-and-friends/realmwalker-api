@@ -4,7 +4,7 @@ class Api::V1::RealmLocationsController < Api::V1::ApiController
   def index
 
     # Common locations
-    @locations = Dungeon.with_monster_info.player_vision_radius(@current_user_geolocation).active +
+    @locations = Dungeon.player_vision_radius(@current_user_geolocation).active.includes(:monster) +
                  Battlefield.player_vision_radius(@current_user_geolocation).active +
                  Npc.with_spook_status.player_vision_radius(@current_user_geolocation)
 

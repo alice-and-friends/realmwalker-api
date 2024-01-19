@@ -17,17 +17,15 @@ class RealmLocation < ApplicationRecord
     )
   }
 
+  delegate :debug, to: :real_world_location
+
   def set_real_world_location!
     self.real_world_location = RealWorldLocation.free.sample if real_world_location_id.blank?
-    self.coordinates = real_world_location.coordinates
+    self.coordinates = real_world_location.coordinates # Don't worry about this linter warning
   end
 
   def location_type
     self.class.name
-  end
-
-  def debug
-    "https://www.google.com/maps/place/#{coordinates.lat},#{coordinates.lon}"
   end
 
   private

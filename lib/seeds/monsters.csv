@@ -1,179 +1,160 @@
-level,classification,tags,name,description
-1,beast,,Angry bird,"It's a bird with no wings, of course it's angry."
-1,construct,,Babbling Book,A sentient book that babbles incessantly and can bore adventurers to death.
-1,beast,,Badger,Badger Badger Badger Badger Badger Badger Badger Badger ...
-1,beast,,Bat,Hopefully not a vampire.
-1,beast,,Boar,Are you bored?
-1,undead,,Bone Gnawer,A skeletal creature with an insatiable appetite for bones.
-1,humanoid,,Crying Child,"What is this, an airplane?"
-1,beast,,Daddy Long legs,More annoying than dangerous.
-1,beast,,Fat Rat,"Ratatouille, is that you?"
-1,beast,,Fire Snake,It will bite and it will burn.
-1,beast,,Giant Centipede,Or is it a millipede?
-1,beast,,Giant Frog,Lick it before it licks you.
-1,fiend,,Giggling Imp,"A mischievous imp that finds everything amusing, even in battle."
-1,humanoid,,Goblin Peasant,Carries a pitchfork and a grumpy attitude.
-1,monstrosity,,Land Fish,It's walking towards you.
-1,construct,,Monodrone,We are Modron.
-1,plant,,Myconid Sprout,It's a baby mushroom.
-1,fey,,Pixie,A tiny fairy with colorful wings. It's a real distraction.
-1,construct,,Rusty Automaton,"A clunky, old mechanical construct that may malfunction at any moment."
-1,beast,,Scorpion,Drowning frogs since 1933
-1,fiend,,Slapstick Imp,Pranks and chaos are its specialties.
-1,humanoid,,Snarky Gnome,Prepare for sarcastic remarks.
-1,beast,,Stealing Monkey,"Hey, give that back!"
-1,beast,,Tunneling Corgi,An adorable dog with a penchant for digging... and a taste for blood? Bad dog!
-1,beast,,Wolf,"Definitely an alpha, look at those teeth."
-1,undead,,Zombie Pigeon,Undead birds... they're everywhere.
-2,ooze,,Acidic Ooze,A slimy creature that loves corrosive hugs.
-2,elemental,,Air Elemental,This is your Marilyn Monroe moment
-2,beast,,Angry Squirrel,Don't underestimate its acorn barrage.
-2,beast,,Bearlin Raver,"A poor furry beast, his mind burned out on poppers"
-2,humanoid,,Black Knight,Tis but a scratch!
-2,fey,,Blink dog,A dog that teleports
-2,humanoid,,Bumbling Minotaur,Charges with determination but frequently trips.
-2,construct,,Cursed Painting,Its subjects don't appreciate your critiques.
-2,construct,,Duodrone,"""We are the ultimate law. All other law is tainted when compared to us."""
-2,fey,,Electric Sprite,"A sprite that crackles with electricity, capable of shocking opponents."
-2,beast,,Enraged Chihuahua,"Small, but filled with endless fury."
-2,beast,,Fiery Salamander,"A lizard-like creature engulfed in flames, resistant to fire."
-2,elemental,,Flail snail,A massive snail with flails attached to it's head.
-2,humanoid,,Goblin Bard,His songs can be quite irritating.
-2,humanoid,,Goblin Chef,"Deadly with a spatula, worse with jokes."
-2,humanoid,,Goblin Shaman,A goblin spellcaster... and we're using that word loosely.
-2,construct,,Haunted Teddy Bear,"Soft, cuddly... and possessed by vengeful spirits."
-2,undead,,Howling Banshee,A ghostly apparition that emits eerie wails to unsettle its foes.
-2,fey,,Mischievous Sprite,"Dancing, pranking, and causing mischief."
-2,plant,,Myconid,"Mushroom people. Walks like people, taste like mushroom."
-2,giant,,Ogre,A hulking and aggressive creature with a taste for violence.
-2,ooze,,Plasmoid Explorer,A wobbly and gelatinous blob with a personality as fluid as its form.
-2,fey,,Prankster Pixie,"Tiny, giggling, and master of trickery."
-2,beast,,Shadowy Stalker,"A stealthy creature that disappears into the darkness, striking from behind."
-2,undead,,Skeleton Warrior,An animated skeleton wielding a rusty sword and shield.
-2,humanoid,,Sneaky Halfling Rogue,A nimble and sly halfling skilled in stealth and backstabbing.
-2,construct,,Stone Golem,Rock hard.
-2,humanoid,,Troll,"Hmm, bugs."
-2,beast,,Viper,A snake with potent venom that strikes with deadly accuracy.
-3,humanoid,,Anti-vax Cultist,A follower of dark rituals who spreads diseases and curses.
-3,humanoid,,Arcane Trickster,"A rogue with magical prowess, adept at illusions and sneak attacks."
-3,monstrosity,,Basilisk,"It has a ""stone-cold"" sense of humor."
-3,giant,,Cyclops,"With a singular eye for detail, the Cyclops has a knack for seeing things from a unique perspective."
-3,beast,,Dancing Swordfish,"It dances through the air, sword first."
-3,beast,,Dire wolf,"Like a regular wolf, but dire."
-3,fey,,Dryad,The trees are watching.
-3,construct,,Enchanted Garden Gnome,Practitioner of gnome magic and terrible puns.
-3,beast,,Gargantuan Pigeon,"It's just a really, really big bird."
-3,ooze,,Gelatinous cube,Three dimensions is better than four.
-3,ooze,,Gelatinous Pizza,It slimes and tastes delicious.
-3,giant,,Hill Giant,Hill-arious.
-3,elemental,,Icy Elemental,Did it just get colder in here?
-3,beast,,Manticore,"Body of a lion, wings of a bat, and a tail with venomous spikes."
-3,monstrosity,,Owlbear,Sounds like a hoot.
-3,ooze,,Plasmoid Warrior,A wobbly and gelatinous blob with a personality as fluid as its form.
-3,fey,,Pyromaniac Pixie,Sets everything on fire for the fun of it.
-3,undead,,Snarky Banshee,Your misfortune is her punchline.
-3,plant,,Sovreign Myconid,"Mushroom people. Walks like people, taste like mushroom."
-3,humanoid,,Thunderous Minotaur,A minotaur warrior whose powerful hooves create shockwaves.
-3,construct,,Tridrone,"""We are structure. All other structure crumbles when brought against us."""
-3,undead,,Zombie Accountant,Constantly crunching numbers... and brains.
-4,elemental,,Bardic Gargoyle,Turns battlefields into singing competitions.
-4,fiend,,Bone Devil,"Beware, getting in a battle of wits with a Bone Devil might leave you ""bonely"" defeated."
-4,beast,,Chaotic Chameleon,"Changes colors, emotions, and alliances."
-4,humanoid,,Disco Orc,Fights with sick dance moves and a killer groove.
-4,elemental,,Earth Elemental,Seems pretty solid
-4,humanoid,,Epic Bardic Battle Band,Instruments of war and melodies of mayhem.
-4,elemental,,Fire Elemental,A hot mess
-4,aberration,,Floating Eyeball,It's watching... and judging.
-4,beast,,"Fluffy, the Killer Bunny","Aww, it's so cute... and deadly."
-4,ooze,,Gelatinous Cube,Anyone up for jello shots?
-4,humanoid,,Goblin Artificer,Invents strange gadgets that may or may not explode.
-4,humanoid,,Goblin Firework Engineer,Handle with extreme caution... or run.
-4,humanoid,,Goblin Illusionist,Tricks your mind while emptying your pockets.
-4,humanoid,,Goblin Mechanic,Engineers deadly contraptions with questionable safety.
-4,monstrosity,,Inflatable Mimic,You'll never trust another balloon.
-4,humanoid,,Librarian,"They never forget, and they never forgive"
-4,humanoid,,Marauding Monkey Gang,They're cheeky and they know it.
-4,humanoid,,Misguided Bardbarian,"Part bard, part barbarian, all confused."
-4,beast,,Pirate duck,Quack!
-4,ooze,,Plasmoid Boss,A wobbly and gelatinous blob with a personality as fluid as its form.
-4,undead,,Poltergeist Chef,Throws utensils and serves ghostly food.
-4,construct,,Quadrone,"""We are order. All other order disappears when held to our light."""
-4,humanoid,,Raging Barbarian,"A fierce warrior consumed by battle rage, capable of dealing devastating blows."
-4,humanoid,,Sneaky Kobold Artificer,Small but brimming with traps and inventions.
-4,giant,,Stone Giant,"Their impressive bouldering skills and a penchant for sculpting masterpieces out of stone make them a ""rock""-star in their own right."
-4,aberration,,Supreme Cube,A geometrically grandiose being that exudes an aura of mathematical mystery. 
-4,fiend,,Swarm of Fiendish Imps,"A horde of tiny, mischievous imps that overwhelm their opponents."
-4,fey,,Tooth Fairy Bandit,Steals more than just teeth.
-4,undead,,Vampire Postal Worker,Your mail will never be the same again.
-4,humanoid,,Witch,"""I'll get you, my pretty, and your little dog, too!"""
-5,dragon,,Black Dragon Wyrmling,"A small and crafty dragonling, honing its dark abilities while testing its ""bite-sized"" acid breath."
-5,dragon,,Blue Dragon Wyrmling,"A tiny, newly hatched dragon with shimmering blue scales, it may be small, but it's already showing a big attitude."
-5,elemental,,Djinn,"Grants wishes, or just straight up kills you. Stick around and find out?"
-5,humanoid,,Explosive Gnome Alchemist,Handles explosives... with mixed results.
-5,plant,,Grumpy Treant,Has a bad case of tree-mper tantrums.
-5,fey,,Hag,"""I'm not super comfortable in my skin."""
-5,monstrosity,,Hydra,Each head has its own sassy personality.
-5,beast,,Kung Fu Kangaroo,Delivers punches and kicks with expert precision.
-5,fey,,Master of Puns,Wields words with deadly accuracy... of humor.
-5,construct,,Pentadrone,"""We are perfect law."""
-5,construct,,Pun Golem,It wields terrible jokes as weapons.
-5,monstrosity,,Sassy Sphinx,Prepare for riddles and sass in equal measure.
-5,giant,,Storm Giant,"Majestic, with a stormy personality, they toss lightning bolts like confetti and create weather with a flair for the dramatic."
-5,celestial,,Unicorn,Blblbl bl blbl blbl.
-6,humanoid,,Cursed Jester,"Laughs, pranks, and curses... all at once."
-6,humanoid,,Drunken Master Monk,"Intoxicated, but more dangerous than ever."
-6,humanoid,,Epic Rap Battle Bard,Rhymes sharp enough to cut through armor.
-6,humanoid,,Goblin Technomancer,Hacks reality with gadgets and witty comebacks.
-6,elemental,,Phoenix,You can't spell Rebirth without Fiery Death
-6,monstrosity,,Raging Barbarian Sheep,Its fury is as wooly as its coat.
-6,dragon,,Red Dragon Wyrmling,"A young dragon with fiery instincts and a desire to grow strong—it's still learning to control its ""temper."""
-6,monstrosity,,Sewer Kraken,Rises from the depths with a stinky vengeance.
-6,humanoid,,The Singing Siren,Her voice enchants... and annoys.
-6,undead,,Vampire Telemarketer,Calls you even after the sun sets.
-6,dragon,,Young Black Dragon,"A glossy black-scaled hunter, perfecting stealth and ambush tactics with the grace of a shadowy dance."
-6,dragon,,Young Blue Dragon,"A juvenile with electric-blue scales, eager to prove its strength and show off its ""shocking"" personality."
-6,dragon,,Young Red Dragon,"Fiery and fierce, this ""teenage"" dragon has some serious scales to settle with adventurers who dare cross its path."
-7,aberration,,Beholder,Let me take a look at you.
-7,dragon,,Black Dragon,"Sinister and cunning, stalking from shadows with corrosive acid breath—talk about having a ""colorful"" personality."
-7,dragon,,Blue Dragon,"Majestic and lightning-fast, this dazzling dragon will strike you with awe—and perhaps a well-timed lightning bolt."
-7,monstrosity,,Dimension-Hopping Mimic,"It's a mimic, and it's everywhere."
-7,humanoid,,Goblin Warlock,Deals in dark magic and dark humor.
-7,monstrosity,,Medusa,Turns adventurers to stone....
-7,aberration,,Mind Flayer,A mastermind of psychic manipulation and domination.
-7,fiend,,Narcissistic Succubus,"Beauty, charm, and an obsession with selfies."
-7,celestial,,Voidwalker,A celestial being with the ability to traverse the void between stars and wield dark energies from the cosmos.
-8,dragon,,Ancient Black Dragon,"Colossal and malevolent, it's been around so long it's probably mastered ""ancient"" dad jokes."
-8,dragon,,Ancient Blue Dragon,"Legendary and imposing, this old-timer loves sharing tales of ancient storms, even if they're a bit ""windy."""
-8,construct,,Animated Garden Gnome Army,"They march, they fight, and they're hilarious."
-8,celestial,,Celestial Dice,Determines your fate
-8,fiend,,Demon,CHAMEK ATH UTHUL ARAK!
-8,monstrosity,,Illusory Sphinx,"Riddles within riddles, with a side of illusions."
-8,construct,,Infinite Gnome Loop,"Short, chaotic, and replicating."
-8,undead,,Lich,Laughs through eternity and beyond.
-8,fey,,Mischievous Archfey,Toying with mortals just for laughs.
-8,fiend,,Pit Fiend,Not your pit friend. Definitely not.
-8,monstrosity,,Purple Worm,"It's purple, slimy, and very hungry."
-8,dragon,,Red Dragon,Hot-headed and not good at sharing.
-8,humanoid,,Time-Warping Sorcerer,Messing with time and making it groovy.
-9,dragon,,Ancient Red Dragon,"Old, wise, and still very, very angry."
-9,humanoid,,Archmage,A master of arcane arts with unlimited power.
-9,monstrosity,,Astral Leviathan,"An immense and ancient creature dwelling in the celestial depths, whose movements are said to cause celestial phenomena."
-9,celestial,,Avatar of Destruction,Unleashes cataclysmic forces upon the world.
-9,celestial,,Cosmic Prankster,"Plays jokes across the stars, even on deities."
-9,undead,,Dracolich,A skeletal dragon with a bone to pick.
-9,elemental,,Elemental Lord,Commands the raw power of the elemental planes.
-9,fiend,,Grim Reaper,Harbinger of death and collector of souls.
-9,aberration,,Mind Flayer Overlord,A mastermind of psychic manipulation and domination.
-9,giant,,Primordial Titan,An ancient and colossal force of primal power.
-9,aberration,,Soul Devourer,Consumes the very essence of life and souls.
-9,monstrosity,,Tarrasque,What do you mean it's not Godzilla?
-9,aberration,,Time Manipulator,Controls the flow of time to their advantage.
-10,monstrosity,,Astral Dreadnought,"Prepare for cosmic trouble, and make it double."
-10,celestial,,Celestial Arbiter,Enforces divine justice with unparalleled might.
-10,aberration,,Dimensional Worm,Jumps between dimensions and loves puzzles.
-10,dragon,,Ether Drake,A dragon that soars through the fabric of reality.
-10,fey,,Shard,A crystalline entity that shatters expectations.
-10,fiend,,The Great Impostor,"Assumes the form of anything, including your friends."
-10,aberration,,The Unbound,A being who has broken free from the constraints of reality.
-10,aberration,,Void Behemoth,An embodiment of cosmic emptiness and chaos.
-10,celestial,,World Eater,Devours entire realms and civilizations.
+level,classification,tags,name,icon,description
+1,beast,,Badger,Badger,Badger Badger Badger Badger Badger Badger Badger Badger ...
+1,beast,,Bat,Bat,"Nocturnal flying mammals, using echolocation to navigate in the dark. They are often found in caves or old ruins, hanging from the ceiling in large colonies."
+1,beast,,Cobra,Cobra,Venomous snakes known for their deadly bite and mesmerizing dance.
+1,beast,,Dragonfly,Dragonfly,"Swift and agile insects, masters of aerial maneuvers."
+1,beast,,Plague Rat,Rat,"Diseased rats that swarm and spread illness, thriving in unclean places."
+1,beast,,Scorpion,Scorpion,"Dangerous arachnids with a deadly sting in their tails, lurking in sandy and rocky terrains, waiting for unsuspecting prey."
+1,beast,,Snake,Snake,"Slithering serpents, silent and deadly in their approach."
+1,beast,,Spider,Long legged spider,"Large, web-spinning arachnids, lying in wait for their prey."
+1,beast,,Stealing Monkey,Monkey,"Clever and mischievous primates known for their thieving habits, often snatching items from unwary travelers."
+1,elemental,,Fire Salamander,Gecko,A lizard-like elemental.
+1,elemental,,Spark spirit,Spark spirit,"Tiny beings of flame and ash, dancing in fire and leaving trails of embers."
+1,fey,,Lunar Moth,Cigale,"Enormous, luminescent moths that appear under moonlight, known for their hypnotic patterns."
+1,fey,,Wisp,Sparkles,"Elusive forest spirits, leading or misleading those who encounter them."
+1,ooze,,Slime,Slime,"This gelatinous creature slowly oozes through corridors, absorbing organic matter and growing larger with each meal."
+1,plant,,Myconid Sprout,Chanterelle,It's a baby mushroom.
+2,aberration,,Shadow Leech,Tadpole,"Parasitic entities that thrive in darkness, draining energy from living beings."
+2,undead,,Zombie Pigeon,Dove,"Once ordinary city birds, now undead creatures. They flock in large numbers, pestering the living with their relentless presence and eerie cooing."
+2,beast,,Gargantuan Pigeon,Finch,"It's just a really, really big bird."
+2,beast,,Giant Centipede,Centipede,"Enormous, multi-legged insects that scurry through the underbrush. Their venomous bite is feared by many smaller creatures."
+2,beast,,Giant Frog,Frog,Oversized amphibians with a powerful leap and a tongue that can snatch prey from a distance. They dwell in marshes and wetlands.
+2,beast,,Iron Viper,Snake tongue,Metallic snakes known for their unyielding grip and lethal bite.
+2,beast,,Bear,Bear head,"Mighty forest dwellers, formidable in size and strength."
+2,beast,,Boar,Boar,"Wild and unpredictable, these stout animals are known for their sharp tusks and aggressive behavior, especially when cornered or protecting their young."
+2,beast,,Bramble Wolf,Wolf head,"Wolves with thorn-covered fur, adept at moving through dense forests and underbrush."
+2,beast,,Crocodile,Croc jaw,"Ambush predators, lurking just below the water's surface."
+2,beast,,Fire Snake,Sand snake,It will bite and it will burn.
+2,construct,,Awakened Book,Evil book,A sentient book that babbles incessantly and can bore adventurers to death.
+2,construct,,Cursed Painting,Mona Lisa,Its subjects don't appreciate your critiques.
+2,construct,,Gargoyle,Gargoyle,"Stone creatures that perch in caves and ruins, springing to life to guard their domain."
+2,elemental,,Inferno Spider,Mite,"Arachnids with the ability to weave webs of fire, found in volcanic regions."
+2,fey,,Aurora Fox,Fox,"Mystical foxes with shimmering fur, reflecting the colors of the aurora."
+2,humanoid,,Troll,Troll,"Large, brutish beings, known for their strength and aggression."
+2,ooze,,Acid Blob,Acid Blob,"A pulsating mass of corrosive acid, this creature can dissolve metal, stone, and flesh with ease. It moves slowly, but its mere touch is deadly."
+2,ooze,,Aggressive Foam,Aggressive Foam,A seemingly innocuous froth that rapidly expands and engulfs anything nearby. It is surprisingly forceful and can suffocate or crush its victims.
+2,ooze,,Ink Blob,Ink Blob,"A dark, viscous ooze that secretes a thick ink. It can blind its enemies by shooting jets of ink and is capable of slipping through tiny cracks and crevices."
+2,plant,,Myconid,Chanterelle big,"Mushroom people. Walks like people, taste like mushroom."
+2,undead,,Skeleton,Skeleton,An animated skeleton wielding a rusty sword and shield.
+3,beast,,Iron Boar,Boar ensign,Metallic-skinned boars with incredible toughness.
+3,beast,,Mystic Stag,Deer,"A graceful, elusive creature radiating natural magic, sought for its earth connection."
+3,beast,,War Falcon,Egyptian bird,"A trained bird of prey, scouting and attacking with precision and agility."
+3,construct,,Rusty Automaton,Robot golem,"A clunky, old mechanical construct that may malfunction at any moment."
+3,aberration,,Scout,Spider bot,"Sleek, mechanical creatures, using stealth and advanced sensors to gather information and report back to their masters."
+3,beast,,Dire wolf,Direwolf,"Like a regular wolf, but dire."
+3,beast,,Panther,Saber toothed cat head,"Sleek, shadowy felines with onyx-black fur, stalking silently in the night."
+4,beast,,Roc,Dove,"Gigantic birds, often referred to as Sky Titans."
+3,beast,,Tiger,Tiger head,"Stealthy and powerful felines, apex predators of their domain."
+3,celestial,,Sunbird,Freedom dove,"Radiant birds that soar in daylight, embodying the sun's energy."
+3,construct,,Stone Golem,Rock golem,"Animated stone beings, often guardians of ancient sites and treasures."
+3,elemental,,Dust Devil,Tornado,"Whirling air elementals found in arid places, stirring up clouds of dust and sand."
+3,fey,,Pixie,Fairy,A tiny fairy with colorful wings. It's a real distraction.
+3,fey,,Centaur,Centaur,"Half-human, half-horse creatures guarding sacred groves and ancient pathways."
+3,fey,,Dryad,Icicles aura,Tree spirit guardian.
+3,fey,,Kirin,Vine flower,"Tiny, thorn-covered beings that protect natural groves with mischievous magic."
+3,giant,,Cyclops,Cyclops,"With a singular eye for detail, the Cyclops has a knack for seeing things from a unique perspective."
+3,giant,,Hill Giant,Giant,"Massive and often ill-tempered beings, Hill Giants roam hilly terrains, using their great size and strength to bully smaller creatures and take what they want with little regard for others."
+3,giant,,Ogre,Ogre,A hulking and aggressive creature with a taste for violence.
+3,humanoid,,Blood Priest,Iron mask,"Dark summoner, worshipping the dark powers."
+3,humanoid,,Minotaur,Minotaur,Charges with determination but frequently trips.
+3,humanoid,,Orc,Orc head,"Ferocious warriors, known for their brute strength and tribal loyalty."
+3,humanoid,,Sun Priest,Sun priest,"Devotees of the sun, wielding light and fire in divine rituals."
+3,monstrosity,,Troglodyte,Troglodyte,"Primitive, cave-dwelling creatures, known for their stealth and savagery."
+3,ooze,,Gobbler,Gobbler,"A voracious creature that consumes everything in its path. Its endless hunger makes it a dangerous foe, as it can devour objects, creatures, and even magic."
+3,ooze,,Invisible Ink Blob,Invisible Ink Blob,"A unique variant of the Ink Blob, this creature is nearly transparent and extremely hard to detect until it attacks, leaving its victims drenched in its revealing ink."
+3,plant,,Entangler,Light thorny triskelion,Plant-like beings that use their vines to ensnare and immobilize trespassers in forests.
+3,plant,,Hypnotic Flower,Worm mouth,"Enchanting flowers with mesmerizing colors and patterns, capable of putting those who gaze upon them into a trance-like state."
+3,plant,,Shambling Mound,Shambling Mound,"Amalgams of rotting vegetation and plant matter, moving slowly but with overwhelming strength, engulfing and decomposing anything in their path."
+3,plant,,Sovreign Myconid,Chanterelles,"Mushroom people. Walks like people, taste like mushroom."
+3,undead,,Ghost,Ghost,"Ethereal spirits of the deceased, haunting the living world, their presence bringing chills and whispers from beyond the grave."
+3,undead,,Ghoul,Dead head,"Flesh-eating undead, preying upon the living in desolate places."
+3,undead,,Mummy,Mummy head,"Ancient undead, wrapped in bandages."
+3,undead,,Undead Horse,Undead horse,"Fiery-maned horses from the underworld, capable of traversing dreams and nightmares."
+3,beast,,Rotworm,Rotworm,Rotworms dig in the earth and wait for unconscious victims which they devour in one piece.
+4,aberration,,Extractor,Nano bot,"Tiny, almost invisible entities, adept at extracting information or essence from targets without detection."
+4,beast,,Runebound Bear,Polar bear,"A massive bear covered in mystical runes, with enhanced strength and magical resistance."
+3,beast,,Sky Manta,Manta ray,"Manta-like creatures floating in the sky, blending seamlessly with clouds."
+4,celestial,,Pegasus,Pegasus,"Majestic winged horses, soaring across the heavens."
+4,construct,,Sentinel Automaton,Battle Mech,Harder. Better. Faster. Stronger.
+4,dragon,,Sky Serpent,Sky-serpent,"An enormous, flying serpent inhabiting high altitudes, majestic and awe-inspiring."
+4,elemental,,Air Elemental,Swirl ring,"Ethereal beings of air, capable of creating powerful gusts and storms."
+4,elemental,,Earth Elemental,Rock golem,Seems pretty solid.
+4,fiend,,Bone Devil,Desert skull,"Beware, getting in a battle of wits with a Bone Devil might leave you ""bonely"" defeated."
+4,fiend,,Imp,Imp,Mischievous demons that whisper temptations and lead heroes astray.
+4,giant,,Frost Giant,Ice golem,"Towering beings of the frozen wastes, wielding icy power and immense strength."
+4,giant,,Stone Giant,Monk face,"Their impressive bouldering skills and a penchant for sculpting masterpieces out of stone make them a ""rock""-star in their own right."
+4,humanoid,,Arcane Trickster,Hooded figure,"A rogue with magical prowess, adept at illusions and sneak attacks."
+4,humanoid,,Ironclad Minotaur,Brute,"A heavily armored warrior, testing combat skills and strategic prowess."
+4,humanoid,,Vicious Grandmaster,Barbute,Tis but a scratch!
+4,humanoid,,Siren,Mermaid,Her voice enchants... and annoys.
+4,humanoid,,Renegade Knight,Mounted Knight,"Armored warriors on horseback, wielding power from their steeds' speed and strength. They are skilled combatants, often driven by personal codes of honor, which may not always align with the common good."
+4,monstrosity,,Cyclops Spider,Spider Eye,"Giant spiders with a singular, unnerving eye, stalking their prey in dark places."
+4,monstrosity,,Giant Spider,Spider,"Enormous arachnids, capable of ensnaring even the largest of creatures in their webs."
+4,monstrosity,,Harpy,Harpy,"Winged creatures with shrill cries, known for their magical abilities and cunning."
+4,ooze,,Mutagen,Mutagen,Small creature with the ability to poison and create sickness wherever it goes.
+5,ooze,,Midnight Spawn,Midnight Spawn,"Born from the essence of darkness, this entity thrives in the absence of light. It's stronger under the cover of night and can meld into shadows."
+4,undead,,Zombie,Shambling zombie,"Undead creatures corrupted by dark magic, spreading decay wherever they roam."
+4,undead,,Shadow Stalker,Double face mask,"Ghostly predators that hunt in the shadows, barely visible to the naked eye."
+4,undead,,Bone Gnawer,Bone Gnawer,A skeletal creature with an insatiable appetite for bones.
+4,undead,,Banshee,Spectre,A ghostly apparition that emits eerie wails to unsettle its foes.
+5,aberration,,Injector,Virus,"Tiny entities that poison and infiltrate living hosts, altering their thoughts and actions."
+5,aberration,,Eyestalk,Eyestalk,"Mobile, sentient eyestalks, surveilling areas and reporting to their otherworldly masters."
+6,aberration,,Onlooker,Behold,"Floating orbs with multiple eyes, observing and analyzing with a dispassionate curiosity"
+5,beast,,Griffin,Griffin symbol,"Majestic creatures with golden feathers, symbolizing nobility and courage."
+5,beast,,Manticore,Lion,"Body of a lion, wings of a bat, and a tail with venomous spikes."
+6,celestial,,Nebula Seraph,Abstract 061,"Ethereal beings that embody the beauty and mystery of the cosmos, wielding starlight."
+5,celestial,,Unicorn,Unicorn,Blblbl bl blbl blbl.
+5,dragon,,Dragon Wyrmling,Dragon-wyrming,"A tiny, newly hatched dragon with shimmering scales, it may be small, but it's already showing a big attitude."
+5,dragon,,Wyvern,Wyvern,"Winged reptiles with poisonous barbs, ruling the skies with terror."
+5,elemental,,Fire Elemental,Unfriendly fire,"Ethereal beings of pure fire, leaving trails of embers and destruction."
+5,elemental,,Magma Bear,Bear face,"Bears with molten fur, inhabiting areas with volcanic activity."
+5,elemental,,Magma Elemental,Ifrit,"Fiery beings born from volcanic eruptions, embodying the raw power of magma."
+5,giant,,Storm Giant,Spartan,"Majestic, with a stormy personality, they toss lightning bolts like confetti and create weather with a flair for the dramatic."
+5,humanoid,,Necromancer,Hood,"Masters of the undead, summoning and controlling dark creatures."
+5,humanoid,,Raging Barbarian,Barbarian,"A fierce warrior consumed by battle rage, capable of dealing devastating blows."
+5,humanoid,,Witch,Witch,"""I'll get you, my pretty, and your little dog, too!"""
+5,humanoid,,Werewolf,Werewolf,"Cursed beings, transforming into ferocious wolves under the full moon."
+5,plant,,Treant,Evil tree,"Ancient and wise tree beings, guardians of the forest. They are slow to anger, but formidable in battle, using their massive limbs to crush those who threaten their home."
+5,undead,,Wraith,Haunting,"A ghostly entity lurking in shadows, attacking with dark magic and stealth."
+5,undead,,Spectral Knight,Cloaked figure on horseback,"Ghostly warriors clad in ethereal armor, haunting battlefields and ancient castles."
+9,celestial,,Celestial Warden,Star prominences,"A guardian embodying celestial energy, challenging with light-based magic."
+6,elemental,,Phoenix,Hawk emblem,"A radiant bird that rejuvenates itself in flames, symbolizing rebirth and renewal."
+6,fiend,,Burning eye,Burning eye,"A floating orb of fire and malevolence, its gaze burns into the soul, instilling fear and pain in its victims."
+6,humanoid,,Ice Witch,Ice iris,"A solitary spellcaster in frozen lands, wielding ice magic with mastery."
+6,monstrosity,,Basilisk,Snake spiral,"Reptilian predators with a petrifying gaze, camouflaged among rocks and cliffs."
+6,monstrosity,,Gorgon,Medusa head,"A creature with a petrifying gaze, reflecting the deepest fears of those who look at it."
+6,monstrosity,,Hydra,Hydra,Each head has its own sassy personality.
+6,plant,,Forest Guardian,Ent mouth,"An enchanted being resembling a tree, protecting natural order with wisdom."
+6,undead,,Vampire,Female vampire,"An ancient and powerful undead, ruling over cursed lands with dark authority."
+7,aberration,,Dimensional Worm,Leeching worm,Jumps between dimensions and eats everything.
+7,aberration,,Supervisor,Floating tentacles,"Tentacled overseers from another dimension, monitoring and controlling lesser aberrations."
+6,aberration,,Voidwalker,Trinacria,A celestial being with the ability to traverse the void between stars and wield dark energies from the cosmos.
+7,dragon,,Young Dragon,Dragon-young,"Fiery and fierce, this ""teenage"" dragon has some serious scales to settle with adventurers who dare cross its path."
+7,elemental,,Lava Leviathan,Purple tentacle,"A colossal being residing in volcanic areas, formidable and dangerously powerful."
+7,humanoid,,Warlock,Embraced energy,Deals in dark magic and dark humor.
+7,monstrosity,,Sphinx,Greek sphinx,Enigmatic creatures that pose riddles and guard ancient secrets.
+7,undead,,Vampire Lord,Vampire dracula,"An ancient and powerful undead, ruling over cursed lands with dark authority."
+8,celestial,,Celestial Dice,Cubes,Determines your fate
+8,dragon,,Adult Dragon,Dragon-adult,"Old, wise, and still very, very angry."
+8,fey,,Mischievous Archfey,Cultist,Toying with mortals just for laughs.
+8,fiend,,Demon,Horned skull,CHAMEK ATH UTHUL ARAK!
+8,fiend,,Grim Reaper,Grim reaper,Harbinger of death and collector of souls.
+5,fiend,,Hellhound,Hound,"Demonic dogs with smoldering eyes and fiery breath, hunting in packs from the underworld."
+8,fiend,,Pit Fiend,Devil mask,Not your pit friend. Definitely not.
+8,undead,,Lich,Crowned skull,Laughs through eternity and beyond.
+9,fiend,,Soul Devourer,Swallow,"Eerie creatures that feast on the souls of the living, leaving behind empty husks."
+9,aberration,,Supreme Cube,Abstract 050,"A geometric anomaly, its shifting form disorients and confounds."
+9,aberration,,Time Manipulator,Extra time,"Masters of temporal magic, capable of slowing or hastening the flow of time."
+9,dragon,,Ancient Dragon,Dragon-ancient,"An ancient dragon, known for its cunning and power."
+9,elemental,,Elemental Lord,Pyromaniac,Commands the raw power of the elemental planes.
+9,giant,,Primordial Titan,Atlas / Crested Helmet,An ancient and colossal force of primal power.
+9,humanoid,,Archmage,Wizard,A master of arcane arts with unlimited power.
+9,undead,,Dracolich,Dragon head (skull),"A terrifying fusion of draconic power and necromantic magic. Such creatures are often bound to the will of a powerful necromancer or act as guardians of ancient, cursed treasures."
+10,aberration,,Avatar of Destruction,Abstract 016,Unleashes cataclysmic forces upon the world.
+10,aberration,,Nihilith,Giant squid,"An extradimensional horror, presenting bizarre challenges with formidable powers."
+10,aberration,,The Unbound,Jellyfish,"Strange entities from the depths of space, defying physical laws and constraints."
+10,aberration,,Void Behemoth,Axolotl,"Gargantuan creatures of the void, swallowing worlds in their abyssal maw."
+10,celestial,,Celestial Arbiter,Abstract 079,Enforces divine justice with unparalleled might.
+10,dragon,,Ether Drake,Evil bat,A dragon that soars through the fabric of reality.
+10,fey,,Shard,Snowflake,A crystalline entity that shatters expectations.
+10,monstrosity,,World Eater,Insect Jaws,Devours entire realms and civilizations.

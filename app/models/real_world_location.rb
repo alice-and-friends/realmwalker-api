@@ -19,30 +19,17 @@ class RealWorldLocation < ApplicationRecord
   scope :for_dungeon, -> { where(type: 'unassigned') }
 
   scope :near, lambda { |latitude, longitude, distance|
-    where("ST_Distance(location,
-                           "+"'POINT(#{latitude} #{longitude})') < #{distance}")}
+    where("ST_DWithin(coordinates, 'POINT(#{longitude} #{latitude})', #{distance})")
+  }
 
-  scope :nearest, lambda { |latitude, longitude, distance|
-    where("ST_Distance(location,
-                           "+"'POINT(#{latitude} #{longitude})') < #{distance}")
-      .order("ST_Distance(coordinates, ST_GeographyFromText('POINT(#{latitude} #{longitude})'))").limit(1)}
-
-  # def self.for(model)
-  #   case model.name
-  #   when 'Npc'
-  #     free.for_npc.sample
-  #   when 'Dungeon'
-  #     free.for_dungeon.sample
-  #   else
-  #     throw('NOT IMPLEMENTED')
-  #   end
-  # end
-
-  # Find the nearest unused location to a set of coordinates. Useful for spawning an NPC close to a player.
-  def self.unused_near(latitude, longitude)
-    free.order(Arel.sql(
-      "ST_Distance(coordinates, ST_GeographyFromText('POINT(#{latitude.to_s} #{longitude.to_s})'))"
+  scope :nearest, lambda { |latitude, longitude|
+    order(Arel.sql(
+      "ST_Distance(coordinates, ST_GeographyFromText('POINT(#{longitude.to_s} #{latitude.to_s})'))"
     )).first
+  }
+
+  def debug
+    "https://www.google.com/maps/place/#{coordinates.lat},#{coordinates.lon} (cmd + double click)"
   end
 
   def self.ids_currently_in_use

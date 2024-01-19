@@ -2,7 +2,7 @@
 
 class RealmLocationSerializer < ActiveModel::Serializer
   attributes :id, :location_type, :name, :coordinates
-  attribute :dungeon_details, if: :dungeon?
+  attribute :monster, if: :dungeon?
   attribute :npc_details, if: :npc?
 
   def coordinates
@@ -20,11 +20,8 @@ class RealmLocationSerializer < ActiveModel::Serializer
     object.location_type == Npc.name
   end
 
-  def dungeon_details
-    {
-      level: object.level,
-      monster_classification: object.respond_to?(:monster_classification) ? object.monster_classification : object.monster.classification
-    }
+  def monster
+    ActiveModelSerializers::SerializableResource.new(object.monster, serializer: MonsterSerializer)
   end
 
   def npc_details

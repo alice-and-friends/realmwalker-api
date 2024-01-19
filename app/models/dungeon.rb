@@ -12,8 +12,9 @@ class Dungeon < RealmLocation
 
   before_validation :randomize_level_and_monster!, on: :create
   after_create do |d|
-    Rails.logger.debug "📌 Spawned a new dungeon, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
+    Rails.logger.debug "📌 Spawned a new dungeon ##{d.id}, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
 
+    expire_nearby_monsters! if boss?
     spook_nearby_shopkeepers!
   end
   after_update :remove_spooks!
@@ -21,22 +22,20 @@ class Dungeon < RealmLocation
     Rails.logger.debug "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
-  scope :with_monster_info, lambda {
-    joins(:monster)
-      .select('dungeons.*, monsters.name AS monster_name, monsters.classification AS monster_classification')
-  }
-
   def self.max_dungeons
     return 10 if Rails.env.test?
 
     RealWorldLocation.for_dungeon.count / 14
   end
 
-  # delegate :name, to: :monster
-  def name
-    return monster_name if respond_to?(:monster_name)
+  delegate :name, to: :monster
 
-    monster.name
+  def boss?
+    level == 10
+  end
+
+  def spook_distance
+    boss? ? 1500 : 225 # meters
   end
 
   def desc
@@ -183,7 +182,8 @@ class Dungeon < RealmLocation
     return unless active? # No one should be spooked by an inactive dungeon
 
     nearby_shopkeepers = Npc.shopkeepers.joins(:real_world_location).where(
-      "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{Npc::SPOOK_DISTANCE})", coordinates: coordinates
+      "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{spook_distance})",
+      coordinates: coordinates
     )
 
     nearby_shopkeepers.each do |npc|
@@ -202,6 +202,17 @@ class Dungeon < RealmLocation
   end
 
   private
+
+  def expire_nearby_monsters!
+    radius = 500
+    Dungeon.joins(:real_world_location)
+           .where(
+             "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{radius})",
+             coordinates: coordinates
+           )
+           .where.not(id: id)
+           .find_each(&:expired!)
+  end
 
   def randomize_level_and_monster!
     if level.nil?

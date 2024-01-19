@@ -32,6 +32,9 @@ Rails.application.routes.draw do
         get 'analyze', to: 'dungeons#analyze', as: :analyze
         post 'battle', to: 'dungeons#battle', as: :battle
       end
+      
+      # Debug
+      get 'monsters', to: 'monsters#index', as: :monsters
     end
   end
 end
