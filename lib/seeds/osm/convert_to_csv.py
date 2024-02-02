@@ -89,7 +89,7 @@ class CSVWriter(o.SimpleHandler):
                         'exhibition_centre', 'fountain', 'planetarium', 'public_bookcase', 'social_centre',
                         'theatre', 'courthouse', 'ranger_station', 'townhall', 'clock', 'marketplace',
                         'public_bath', 'public_building']
-        historic_tags = ['aqueduct', 'archaeological_site', 'battlefield', 'bomb_crater', 'boundary_stone',
+        historic_tags = ['aqueduct', 'archaeological_site', 'battlefield', 'bomb_crater',
                          'building', 'castle', 'church', 'city_gate', 'fort', 'milestone', 'monastery',
                          'monument', 'mosque', 'ogham_stone', 'ruins', 'rune_stone', 'stone', 'tower']
         leisure_tags = ['amusement_arcade', 'dog_park', 'firepit', 'ice_rink', 'park',

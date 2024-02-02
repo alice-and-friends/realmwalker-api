@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 603) do
+ActiveRecord::Schema[7.0].define(version: 604) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
@@ -35,6 +35,7 @@ ActiveRecord::Schema[7.0].define(version: 603) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["coordinates"], name: "battlefields_coordinates_excl", using: :gist
+    t.index ["coordinates"], name: "battlefields_coordinates_excl1", using: :gist
     t.index ["dungeon_id"], name: "index_battlefields_on_dungeon_id"
     t.index ["real_world_location_id"], name: "index_battlefields_on_real_world_location_id"
   end
@@ -94,6 +95,14 @@ ActiveRecord::Schema[7.0].define(version: 603) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_items_on_name", unique: true
+  end
+
+  create_table "ley_lines", force: :cascade do |t|
+    t.bigint "real_world_location_id"
+    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["real_world_location_id"], name: "index_ley_lines_on_real_world_location_id"
   end
 
   create_table "monsters", force: :cascade do |t|

@@ -12,6 +12,7 @@ class RealWorldLocation < ApplicationRecord
       OR EXISTS (SELECT 1 FROM battlefields WHERE battlefields.real_world_location_id = real_world_locations.id)
       OR EXISTS (SELECT 1 FROM npcs WHERE npcs.real_world_location_id = real_world_locations.id)
       OR EXISTS (SELECT 1 FROM bases WHERE bases.real_world_location_id = real_world_locations.id)
+      OR EXISTS (SELECT 1 FROM ley_lines WHERE ley_lines.real_world_location_id = real_world_locations.id)
     SQL
     )
   }
@@ -28,14 +29,29 @@ class RealWorldLocation < ApplicationRecord
     )).first
   }
 
-  def debug
-    "https://www.google.com/maps/place/#{coordinates.lat},#{coordinates.lon} (cmd + double click)"
-  end
-
   def self.ids_currently_in_use
     Dungeon.pluck(:real_world_location_id) +
       Battlefield.pluck(:real_world_location_id) +
       Npc.pluck(:real_world_location_id) +
-      Base.pluck(:real_world_location_id)
+      Base.pluck(:real_world_location_id) +
+      LeyLine.pluck(:real_world_location_id)
+  end
+
+  def debug
+    "https://www.google.com/maps/place/#{coordinates.lat},#{coordinates.lon} (cmd + double click)"
+  end
+
+  def nearest_real_world_location
+    throw('Coordinates blank') if coordinates.blank?
+
+    point = "ST_GeographyFromText('POINT(#{coordinates.lon} #{coordinates.lat})')"
+    distance_query = Arel.sql("ST_Distance(coordinates::geography, #{point})")
+
+    rwl = RealWorldLocation.where.not(id: id)
+                      .select("real_world_locations.id, #{distance_query}")
+                      .order(distance_query)
+                      .limit(1)
+
+    [rwl, rwl.pick(distance_query)] if rwl.present?
   end
 end

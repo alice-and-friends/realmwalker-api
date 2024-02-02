@@ -20,7 +20,7 @@ execution_time = Benchmark.measure do
   locations = []
   filename = 'real_world_locations_osm.csv'
   # filename = 'real_world_locations_osm_short.csv'
-  filename = 'real_world_locations_osm_bounded.csv' # if Rails.env.development?
+  # filename = 'real_world_locations_osm_bounded.csv' # if Rails.env.development?
   def parse_tags(tags_str)
     tags_str.split(';').map do |tag|
       key, value = tag.split(':')
@@ -40,6 +40,15 @@ execution_time = Benchmark.measure do
 
     percentile = location.ext_id[-2..].to_i
     location.type = 'shop' if percentile.in? 0..10
+    location.type = 'ley-line' if percentile.in? 11..15
+
+    # Enforce minimum distance between locations
+    _, distance = location.nearest_real_world_location
+    if distance.present? && distance <= 40.0
+      location.destroy!
+      puts "❌ Nixed OSM location ##{row['ext_id']} (#{lon} #{lat}), too close to other location"
+      next
+    end
 
     if location.valid?
       locations << location
@@ -202,9 +211,9 @@ execution_time = Benchmark.measure do
     # Avoid placing identical shops right next to each other
     _, distance = npc.nearest_similar_shop
     if distance.present? && distance <= 200.0
-      puts "❌ Voiding shop (#{npc.shop_type}) at location ##{rwl.id} (#{rwl.coordinates.lon} #{rwl.coordinates.lat}), too close to similar shop"
       npc.destroy!
       rwl.update!(type: 'unassigned')
+      puts "❌ Nixed shop (#{npc.shop_type}) at location ##{rwl.id} (#{rwl.coordinates.lon} #{rwl.coordinates.lat}), too close to similar shop"
       next
     end
 
@@ -212,14 +221,34 @@ execution_time = Benchmark.measure do
   end
   puts "🌱 Seeded #{Npc.where(role: 'shopkeeper').count} shops."
 
+  # LEY LINES
+  RealWorldLocation.where(type: 'ley-line').each do |rwl|
+    ley_line = LeyLine.new({
+                             real_world_location_id: rwl.id,
+                             coordinates: rwl.coordinates,
+                           })
+
+    # Avoid placing ley lines right next to each other
+    _, distance = ley_line.nearest_ley_line
+    if distance.present? && distance <= 850.0
+      ley_line.destroy!
+      rwl.update!(type: 'unassigned')
+      puts "❌ Nixed ley line at location ##{rwl.id} (#{rwl.coordinates.lon} #{rwl.coordinates.lat}), too close to other ley line"
+      next
+    end
+
+    puts "🛑 #{ley_line.errors.inspect}" unless ley_line.save!
+  end
+  puts "🌱 Seeded #{LeyLine.count} ley lines."
+
   return if Rails.env.production?
 
   # DUNGEONS
   Dungeon.max_dungeons.times do |counter|
     dungeon = Dungeon.new({
-                      created_at: counter.hours.ago,
-                      status: Dungeon.statuses[:active] ##rand(2).odd? ? Dungeon.statuses[:active] : Dungeon.statuses[:defeated]
-                    })
+                            created_at: counter.hours.ago,
+                            status: Dungeon.statuses[:active] ##rand(2).odd? ? Dungeon.statuses[:active] : Dungeon.statuses[:defeated]
+                          })
     puts "🛑 #{dungeon.errors.inspect}" unless dungeon.save!
   end
   puts "🌱 Seeded #{Dungeon.count} dungeons."
