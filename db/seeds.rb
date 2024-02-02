@@ -202,7 +202,7 @@ execution_time = Benchmark.measure do
     # Avoid placing identical shops right next to each other
     _, distance = npc.nearest_similar_shop
     if distance.present? && distance <= 200.0
-      puts "🛑 Voiding shop (#{npc.shop_type}) at location ##{rwl.id} (#{rwl.coordinates.lon} #{rwl.coordinates.lat}), too close to similar shop"
+      puts "❌ Voiding shop (#{npc.shop_type}) at location ##{rwl.id} (#{rwl.coordinates.lon} #{rwl.coordinates.lat}), too close to similar shop"
       npc.destroy!
       rwl.update!(type: 'unassigned')
       next

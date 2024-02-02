@@ -35,7 +35,7 @@ class Dungeon < RealmLocation
   end
 
   def spook_distance
-    boss? ? 1500 : 225 # meters
+    boss? ? 1400 : 225 # meters
   end
 
   def desc
