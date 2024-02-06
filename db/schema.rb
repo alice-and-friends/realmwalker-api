@@ -107,7 +107,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.string "role"
     t.string "shop_type"
     t.bigint "portrait_id"
-    t.integer "status", default: 1
+    t.string "status"
     t.integer "level"
     t.bigint "monster_id"
     t.datetime "defeated_at"

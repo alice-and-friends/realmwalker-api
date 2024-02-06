@@ -22,7 +22,7 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       t.references :portrait, null: true, foreign_key: true
 
       # Dungeon
-      t.column :status, :integer, default: 1
+      t.column :status, :string
       t.column :level, :integer
       t.references :monster
       t.column :defeated_at, :datetime

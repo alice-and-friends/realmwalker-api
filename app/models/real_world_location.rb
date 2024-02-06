@@ -25,10 +25,6 @@ class RealWorldLocation < ApplicationRecord
     )).first
   }
 
-  def self.ids_currently_in_use
-    RealmLocation.pluck(:real_world_location_id)
-  end
-
   def debug
     "https://www.google.com/maps/place/#{coordinates.lat},#{coordinates.lon} (cmd + double click)"
   end

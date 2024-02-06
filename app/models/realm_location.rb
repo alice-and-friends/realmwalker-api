@@ -24,8 +24,4 @@ class RealmLocation < ApplicationRecord
     self.real_world_location = RealWorldLocation.free.sample if real_world_location_id.blank?
     self.coordinates = real_world_location.coordinates # Don't worry about this linter warning
   end
-
-  def location_type
-    self.class.name
-  end
 end

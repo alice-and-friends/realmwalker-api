@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 class Api::V1::DungeonsController < Api::V1::ApiController
-  before_action :find_active_dungeon, only: %i[show analyze battle]
+  before_action :find_dungeon
+  before_action :must_not_be_expired
+  before_action :must_not_be_defeated, only: %i[analyze battle]
 
   def show
     render json: @dungeon
@@ -19,18 +21,27 @@ class Api::V1::DungeonsController < Api::V1::ApiController
 
   private
 
-  def find_active_dungeon
+  def find_dungeon
     dungeon_id = params[:action] == 'show' ? params[:id] : params[:dungeon_id]
     @dungeon = Dungeon.find(dungeon_id)
-    if @dungeon.active? == false
-      render json: {
-        message: 'This dungeon is no longer active (defeated).',
-        battlefield_id: Battlefield.find(@dungeon.id).pluck(:id)
-      }, status: :see_other
-    elsif @dungeon.expired?
-      render json: {
-        message: 'This dungeon is no longer active (expired).'
-      }, status: :gone
-    end
+    return if @dungeon.present?
+
+    render status: :not_found
+  end
+
+  def must_not_be_expired
+    return unless @dungeon.expired?
+
+    render json: {
+      message: 'This dungeon is no longer active (expired).',
+    }, status: :gone
+  end
+
+  def must_not_be_defeated
+    return unless @dungeon.defeated?
+
+    render json: {
+      message: 'This dungeon is no longer active (defeated).',
+    }, status: :method_not_allowed
   end
 end

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class RealmLocationSerializer < ActiveModel::Serializer
-  attributes :id, :location_type, :name, :coordinates
+  attributes :id, :type, :status, :name, :coordinates
   attribute :monster, if: :dungeon?
   attribute :npc_details, if: :npc?
 
@@ -13,11 +13,11 @@ class RealmLocationSerializer < ActiveModel::Serializer
   end
 
   def dungeon?
-    object.location_type == Dungeon.name
+    object.type == Dungeon.name
   end
 
   def npc?
-    object.location_type == Npc.name
+    object.type == Npc.name
   end
 
   def monster

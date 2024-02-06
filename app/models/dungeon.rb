@@ -1,20 +1,19 @@
 # frozen_string_literal: true
 
 class Dungeon < RealmLocation
-  has_one :battlefield, dependent: :nullify # TODO: Should we just preserve the Dungeon for as long as Battlefield exists?
   belongs_to :monster
   belongs_to :defeated_by, class_name: 'User', optional: true
   has_many :spooks, dependent: :destroy
-  has_many :npcs, through: :spooks
+  has_many :spooked_npcs, class_name: 'Npc', through: :spooks
 
   validates :level, presence: true
-  enum status: { active: 1, defeated: 2, expired: 0 }
+  enum status: { active: 'active', defeated: 'defeated', expired: 'expired' }
 
   before_validation :randomize_level_and_monster!, on: :create
   after_create do |d|
     Rails.logger.debug "📌 Spawned a new dungeon ##{d.id}, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
 
-    expire_nearby_monsters! if boss?
+    expire_nearby_dungeons! if boss?
     spook_nearby_shopkeepers!
   end
   after_update :remove_spooks!
@@ -149,7 +148,7 @@ class Dungeon < RealmLocation
           loot: loot_container
         }
       end
-    else # user lost
+    else # user lost the battle
       user_died = (rand(1..100) <= prediction[:risk_of_death][:on_defeat])
       if user_died
         xp_level_change, inventory_changes = user.handle_death
@@ -175,7 +174,6 @@ class Dungeon < RealmLocation
     self.defeated_at = Time.current
     self.defeated_by = user
     save!
-    # Battlefield.create({ real_world_location: real_world_location, realm_location: self })
   end
 
   def spook_nearby_shopkeepers!
@@ -203,7 +201,7 @@ class Dungeon < RealmLocation
 
   private
 
-  def expire_nearby_monsters!
+  def expire_nearby_dungeons!
     radius = 500
     Dungeon.joins(:real_world_location)
            .where(
