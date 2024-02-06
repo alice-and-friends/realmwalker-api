@@ -20,7 +20,7 @@ execution_time = Benchmark.measure do
   locations = []
   filename = 'real_world_locations_osm.csv'
   # filename = 'real_world_locations_osm_short.csv'
-  # filename = 'real_world_locations_osm_bounded.csv' # if Rails.env.development?
+  filename = 'real_world_locations_osm_bounded.csv' # if Rails.env.development?
   def parse_tags(tags_str)
     tags_str.split(';').map do |tag|
       key, value = tag.split(':')
@@ -43,12 +43,12 @@ execution_time = Benchmark.measure do
     location.type = 'ley-line' if percentile.in? 11..15
 
     # Enforce minimum distance between locations
-    _, distance = location.nearest_real_world_location
-    if distance.present? && distance <= 40.0
-      location.destroy!
-      puts "❌ Nixed OSM location ##{row['ext_id']} (#{lon} #{lat}), too close to other location"
-      next
-    end
+    # _, distance = location.nearest_real_world_location
+    # if distance.present? && distance <= 40.0
+    #   location.destroy!
+    #   puts "❌ Nixed OSM location ##{row['ext_id']} (#{lon} #{lat}), too close to other location"
+    #   next
+    # end
 
     if location.valid?
       locations << location

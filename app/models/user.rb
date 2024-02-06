@@ -2,7 +2,7 @@
 
 class User < ApplicationRecord
   has_one :inventory, dependent: :destroy
-  has_one :base, dependent: :destroy
+  has_one :base, class_name: 'RealmLocation', dependent: :destroy
   has_many :dungeons, inverse_of: :defeated_by, foreign_key: 'defeated_by_id', dependent: :nullify
 
   MAX_XP = 1_000_000

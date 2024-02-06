@@ -2,9 +2,7 @@
 
 class Base < RealmLocation
   belongs_to :user
-  has_one :inventory, dependent: :destroy
-  after_create { self.inventory = Inventory.create!(base: self) }
-  delegate :inventory_items, to: :inventory
+  after_create { Inventory.create!(realm_location: self) }
 
   def name
     "#{user.name}'s base"

@@ -10,59 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 604) do
+ActiveRecord::Schema[7.0].define(version: 601) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "hstore"
   enable_extension "plpgsql"
   enable_extension "postgis"
 
-  create_table "bases", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "real_world_location_id", null: false
-    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["coordinates"], name: "bases_coordinates_excl", using: :gist
-    t.index ["real_world_location_id"], name: "index_bases_on_real_world_location_id"
-    t.index ["user_id"], name: "index_bases_on_user_id", unique: true
-  end
-
-  create_table "battlefields", force: :cascade do |t|
-    t.bigint "real_world_location_id"
-    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
-    t.bigint "dungeon_id"
-    t.integer "status", default: 1
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["coordinates"], name: "battlefields_coordinates_excl", using: :gist
-    t.index ["coordinates"], name: "battlefields_coordinates_excl1", using: :gist
-    t.index ["dungeon_id"], name: "index_battlefields_on_dungeon_id"
-    t.index ["real_world_location_id"], name: "index_battlefields_on_real_world_location_id"
-  end
-
-  create_table "dungeons", force: :cascade do |t|
-    t.bigint "real_world_location_id"
-    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
-    t.integer "status", default: 1
-    t.integer "level", null: false
-    t.bigint "monster_id"
-    t.datetime "defeated_at"
-    t.bigint "defeated_by_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["coordinates"], name: "dungeons_coordinates_excl", using: :gist
-    t.index ["defeated_by_id"], name: "index_dungeons_on_defeated_by_id"
-    t.index ["monster_id"], name: "index_dungeons_on_monster_id"
-    t.index ["real_world_location_id"], name: "index_dungeons_on_real_world_location_id"
-  end
-
   create_table "inventories", force: :cascade do |t|
     t.bigint "user_id"
-    t.bigint "base_id"
+    t.bigint "realm_location_id"
     t.integer "gold", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["base_id"], name: "index_inventories_on_base_id", unique: true
+    t.index ["realm_location_id"], name: "index_inventories_on_realm_location_id", unique: true
     t.index ["user_id"], name: "index_inventories_on_user_id", unique: true
   end
 
@@ -97,14 +57,6 @@ ActiveRecord::Schema[7.0].define(version: 604) do
     t.index ["name"], name: "index_items_on_name", unique: true
   end
 
-  create_table "ley_lines", force: :cascade do |t|
-    t.bigint "real_world_location_id"
-    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["real_world_location_id"], name: "index_ley_lines_on_real_world_location_id"
-  end
-
   create_table "monsters", force: :cascade do |t|
     t.string "name", null: false
     t.string "description", null: false
@@ -113,22 +65,6 @@ ActiveRecord::Schema[7.0].define(version: 604) do
     t.text "tags", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "npcs", force: :cascade do |t|
-    t.bigint "real_world_location_id"
-    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
-    t.string "name"
-    t.string "species"
-    t.string "gender", limit: 1
-    t.string "role"
-    t.string "shop_type"
-    t.bigint "portrait_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["coordinates"], name: "npcs_coordinates_excl", using: :gist
-    t.index ["portrait_id"], name: "index_npcs_on_portrait_id"
-    t.index ["real_world_location_id"], name: "index_npcs_on_real_world_location_id"
   end
 
   create_table "npcs_trade_offer_lists", id: false, force: :cascade do |t|
@@ -156,6 +92,32 @@ ActiveRecord::Schema[7.0].define(version: 604) do
     t.datetime "updated_at", null: false
     t.index ["coordinates"], name: "real_world_locations_coordinates_excl", using: :gist
     t.index ["ext_id"], name: "index_real_world_locations_on_ext_id", unique: true
+  end
+
+  create_table "realm_locations", force: :cascade do |t|
+    t.string "type"
+    t.bigint "real_world_location_id", null: false
+    t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.string "name"
+    t.string "species"
+    t.string "gender", limit: 1
+    t.string "role"
+    t.string "shop_type"
+    t.bigint "portrait_id"
+    t.integer "status", default: 1
+    t.integer "level"
+    t.bigint "monster_id"
+    t.datetime "defeated_at"
+    t.bigint "defeated_by_id"
+    t.index ["coordinates"], name: "realm_locations_coordinates_excl", using: :gist
+    t.index ["defeated_by_id"], name: "index_realm_locations_on_defeated_by_id"
+    t.index ["monster_id"], name: "index_realm_locations_on_monster_id"
+    t.index ["portrait_id"], name: "index_realm_locations_on_portrait_id"
+    t.index ["real_world_location_id"], name: "index_realm_locations_on_real_world_location_id", unique: true
+    t.index ["user_id"], name: "index_realm_locations_on_user_id", unique: true
   end
 
   create_table "spooks", force: :cascade do |t|
@@ -203,11 +165,11 @@ ActiveRecord::Schema[7.0].define(version: 604) do
     t.index ["auth0_user_id"], name: "index_users_on_auth0_user_id", unique: true
   end
 
-  add_foreign_key "dungeons", "users", column: "defeated_by_id"
   add_foreign_key "inventory_items", "inventories"
   add_foreign_key "inventory_items", "items"
-  add_foreign_key "npcs", "portraits"
-  add_foreign_key "spooks", "dungeons"
-  add_foreign_key "spooks", "npcs"
+  add_foreign_key "realm_locations", "portraits"
+  add_foreign_key "realm_locations", "users", column: "defeated_by_id"
+  add_foreign_key "spooks", "realm_locations", column: "dungeon_id"
+  add_foreign_key "spooks", "realm_locations", column: "npc_id"
   add_foreign_key "trade_offers", "items"
 end

@@ -26,8 +26,8 @@ class Npc < RealmLocation
   scope :shopkeepers, -> { where(role: 'shopkeeper') }
   scope :with_spook_status, lambda {
     left_outer_joins(:spooks)
-      .select('npcs.*, COUNT(spooks.id) > 0 AS spooked')
-      .group('npcs.id')
+      .select('realm_locations.*, COUNT(spooks.id) > 0 AS spooked')
+      .group('realm_locations.id')
   }
 
   after_create do |npc|
@@ -88,7 +88,7 @@ class Npc < RealmLocation
     distance_query = Arel.sql("ST_Distance(coordinates::geography, #{point})")
 
     shop = Npc.where(role: 'shopkeeper', shop_type: shop_type).where.not(id: id)
-       .select("npcs.id, npcs.role, npcs.shop_type, #{distance_query}")
+       .select("realm_locations.id, realm_locations.role, realm_locations.shop_type, #{distance_query}")
        .order(distance_query)
        .limit(1)
 

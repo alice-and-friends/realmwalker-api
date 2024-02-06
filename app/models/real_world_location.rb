@@ -8,11 +8,7 @@ class RealWorldLocation < ApplicationRecord
   validates :coordinates, presence: true, uniqueness: true, coordinates: true
   scope :free, lambda {
     where.not(<<-SQL.squish
-      EXISTS (SELECT 1 FROM dungeons WHERE dungeons.real_world_location_id = real_world_locations.id)
-      OR EXISTS (SELECT 1 FROM battlefields WHERE battlefields.real_world_location_id = real_world_locations.id)
-      OR EXISTS (SELECT 1 FROM npcs WHERE npcs.real_world_location_id = real_world_locations.id)
-      OR EXISTS (SELECT 1 FROM bases WHERE bases.real_world_location_id = real_world_locations.id)
-      OR EXISTS (SELECT 1 FROM ley_lines WHERE ley_lines.real_world_location_id = real_world_locations.id)
+      EXISTS (SELECT 1 FROM realm_locations WHERE realm_locations.real_world_location_id = real_world_locations.id)
     SQL
     )
   }
@@ -30,11 +26,7 @@ class RealWorldLocation < ApplicationRecord
   }
 
   def self.ids_currently_in_use
-    Dungeon.pluck(:real_world_location_id) +
-      Battlefield.pluck(:real_world_location_id) +
-      Npc.pluck(:real_world_location_id) +
-      Base.pluck(:real_world_location_id) +
-      LeyLine.pluck(:real_world_location_id)
+    RealmLocation.pluck(:real_world_location_id)
   end
 
   def debug

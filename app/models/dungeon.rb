@@ -175,7 +175,7 @@ class Dungeon < RealmLocation
     self.defeated_at = Time.current
     self.defeated_by = user
     save!
-    Battlefield.create({ real_world_location: real_world_location, dungeon: self })
+    # Battlefield.create({ real_world_location: real_world_location, realm_location: self })
   end
 
   def spook_nearby_shopkeepers!

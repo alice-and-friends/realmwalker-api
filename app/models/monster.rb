@@ -4,6 +4,7 @@ class Monster < ApplicationRecord
   validate :has_classification
   validate :tags_are_valid
 
+  # TODO: Duplication
   CLASSIFICATIONS = %w[aberration beast celestial construct dragon elemental fey fiend giant humanoid monstrosity ooze plant undead].freeze
   enum classification: {
     aberration: 'aberration',

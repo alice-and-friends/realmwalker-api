@@ -15,7 +15,7 @@ class LeyLine < RealmLocation
     distance_query = Arel.sql("ST_Distance(coordinates::geography, #{point})")
 
     ley_line = LeyLine.where.not(id: id)
-                  .select("ley_lines.id, #{distance_query}")
+                  .select("realm_locations.id, #{distance_query}")
                   .order(distance_query)
                   .limit(1)
 
