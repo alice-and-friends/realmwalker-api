@@ -2,12 +2,17 @@
 
 class RealmLocation < ApplicationRecord
   belongs_to :real_world_location
+  has_one :inventory, dependent: :destroy
+
   validates_associated :real_world_location
   validates :real_world_location_id, uniqueness: true
   validates :coordinates, presence: true, uniqueness: true, coordinates: true
   before_validation :set_real_world_location!, on: :create
 
-  has_one :inventory, dependent: :destroy
+  scope :near, lambda { |latitude, longitude, distance|
+    where("ST_DWithin(coordinates, 'POINT(#{longitude} #{latitude})', #{distance})")
+  }
+
   delegate :inventory_items, to: :inventory
 
   PLAYER_VISION_RADIUS = 10_000 # meters

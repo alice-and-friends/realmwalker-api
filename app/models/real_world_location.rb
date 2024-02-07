@@ -6,11 +6,8 @@ class RealWorldLocation < ApplicationRecord
   validates :type, presence: true
   validates :ext_id, uniqueness: true, allow_nil: true
   validates :coordinates, presence: true, uniqueness: true, coordinates: true
-  scope :free, lambda {
-    where.not(<<-SQL.squish
-      EXISTS (SELECT 1 FROM realm_locations WHERE realm_locations.real_world_location_id = real_world_locations.id)
-    SQL
-    )
+  scope :free, -> {
+    where.not(id: RealmLocation.select(:real_world_location_id))
   }
   # scope :for_npc, -> { where(type: 'npc') }
   scope :for_dungeon, -> { where(type: 'unassigned') }

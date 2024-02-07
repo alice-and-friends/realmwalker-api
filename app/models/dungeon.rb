@@ -6,10 +6,12 @@ class Dungeon < RealmLocation
   has_many :spooks, dependent: :destroy
   has_many :spooked_npcs, class_name: 'Npc', through: :spooks
 
-  validates :level, presence: true
   enum status: { active: 'active', defeated: 'defeated', expired: 'expired' }
 
+  before_validation :set_active_status, on: :create
   before_validation :randomize_level_and_monster!, on: :create
+  validates :level, :status, presence: true
+
   after_create do |d|
     Rails.logger.debug "📌 Spawned a new dungeon ##{d.id}, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
 
@@ -21,10 +23,10 @@ class Dungeon < RealmLocation
     Rails.logger.debug "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
-  def self.max_dungeons
+  def self.min_dungeons
     return 10 if Rails.env.test?
 
-    RealWorldLocation.for_dungeon.count / 14
+    [10, RealWorldLocation.for_dungeon.count / 100].max
   end
 
   delegate :name, to: :monster
@@ -34,7 +36,7 @@ class Dungeon < RealmLocation
   end
 
   def spook_distance
-    boss? ? 1400 : 225 # meters
+    boss? ? 1100 : 225 # meters
   end
 
   def desc
@@ -210,6 +212,10 @@ class Dungeon < RealmLocation
            )
            .where.not(id: id)
            .find_each(&:expired!)
+  end
+
+  def set_active_status
+    active! if status.nil?
   end
 
   def randomize_level_and_monster!

@@ -241,13 +241,11 @@ execution_time = Benchmark.measure do
   end
   puts "🌱 Seeded #{LeyLine.count} ley lines."
 
-  return if Rails.env.production?
-
   # DUNGEONS
-  Dungeon.max_dungeons.times do |counter|
+  Dungeon.min_dungeons.times do |counter|
     dungeon = Dungeon.new({
                             created_at: counter.hours.ago,
-                            status: Dungeon.statuses[:active] ##rand(2).odd? ? Dungeon.statuses[:active] : Dungeon.statuses[:defeated]
+                            status: Dungeon.statuses[:active],
                           })
     puts "🛑 #{dungeon.errors.inspect}" unless dungeon.save!
   end
