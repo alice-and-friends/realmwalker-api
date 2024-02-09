@@ -5,7 +5,7 @@ class RealWorldLocation < ApplicationRecord
   # validates :name, presence: true
   validates :type, presence: true
   validates :ext_id, uniqueness: true, allow_nil: true
-  validates :coordinates, presence: true, uniqueness: true, coordinates: true
+  validates :coordinates, presence: true, coordinates: true
   scope :free, -> {
     where.not(id: RealmLocation.select(:real_world_location_id))
   }

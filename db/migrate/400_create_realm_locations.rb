@@ -30,8 +30,6 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
     end
 
     # Coordinates GIST index
-    execute <<-SQL
-      ALTER TABLE realm_locations ADD EXCLUDE USING gist (coordinates WITH &&);
-    SQL
+    add_index :realm_locations, :coordinates, using: :gist
   end
 end

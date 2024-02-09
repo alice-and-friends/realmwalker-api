@@ -225,6 +225,7 @@ class CSVWriter(o.SimpleHandler):
 
 
 def main(osmfile):
+    output_file = osmfile.replace('.osm.pbf', '.csv')
     with open("real_world_locations_osm.csv", "w", newline='') as f:  # Open in write mode to create a new CSV file
         handler = CSVWriter(f)
 
@@ -237,7 +238,8 @@ def main(osmfile):
         time_end = time.perf_counter()
         time_duration = time_end - time_start
         print(
-            f"\nDone! {handler.c_node + handler.c_way + handler.c_area} ({handler.c_node}+{handler.c_way}+{handler.c_area}) locations in {time_duration:.3f} seconds")
+            f"\nDone! {handler.c_node + handler.c_way + handler.c_area} ({handler.c_node}+{handler.c_way}+{handler.c_area}) locations in {time_duration:.3f} seconds"
+        )
 
     return 0
 

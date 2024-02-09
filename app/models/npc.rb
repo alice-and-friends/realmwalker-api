@@ -12,6 +12,7 @@ class Npc < RealmLocation
 
   ROLES = %w[shopkeeper].freeze
   SHOP_TYPES = %w[armorer jeweller magic].freeze
+  before_validation :set_real_world_location!, on: :create
   before_validation :assign_species!, on: :create
   before_validation :assign_gender!, on: :create
   before_validation :assign_name!, on: :create
@@ -96,6 +97,10 @@ class Npc < RealmLocation
   end
 
   private
+
+  def set_real_world_location!
+    self.real_world_location = RealWorldLocation.free.first if real_world_location_id.nil?
+  end
 
   def assign_species!
     r = rand(1..100)

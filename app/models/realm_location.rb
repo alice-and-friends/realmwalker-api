@@ -4,10 +4,10 @@ class RealmLocation < ApplicationRecord
   belongs_to :real_world_location
   has_one :inventory, dependent: :destroy
 
+  before_validation :set_coordinates!
   validates_associated :real_world_location
   validates :real_world_location_id, uniqueness: true
-  validates :coordinates, presence: true, uniqueness: true, coordinates: true
-  before_validation :set_real_world_location!, on: :create
+  validates :coordinates, presence: true, coordinates: true
 
   scope :near, lambda { |latitude, longitude, distance|
     where("ST_DWithin(coordinates, 'POINT(#{longitude} #{latitude})', #{distance})")
@@ -25,8 +25,9 @@ class RealmLocation < ApplicationRecord
 
   delegate :debug, to: :real_world_location
 
-  def set_real_world_location!
-    self.real_world_location = RealWorldLocation.free.sample if real_world_location_id.blank?
-    self.coordinates = real_world_location.coordinates # Don't worry about this linter warning
+  private
+
+  def set_coordinates!
+    self.coordinates = real_world_location.coordinates if real_world_location.present?
   end
 end

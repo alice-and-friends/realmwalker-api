@@ -9,6 +9,7 @@ class Dungeon < RealmLocation
   enum status: { active: 'active', defeated: 'defeated', expired: 'expired' }
 
   before_validation :set_active_status, on: :create
+  before_validation :set_real_world_location!, on: :create
   before_validation :randomize_level_and_monster!, on: :create
   validates :level, :status, presence: true
 
@@ -203,6 +204,14 @@ class Dungeon < RealmLocation
 
   private
 
+  def set_real_world_location!
+    return if real_world_location_id.present?
+
+    occupied = Dungeon.select(:real_world_location_id)
+    self.real_world_location = RealWorldLocation.for_dungeon.where.not(id: occupied).first
+    self.coordinates = real_world_location.coordinates
+  end
+
   def expire_nearby_dungeons!
     radius = 500
     Dungeon.joins(:real_world_location)
@@ -215,7 +224,7 @@ class Dungeon < RealmLocation
   end
 
   def set_active_status
-    active! if status.nil?
+    self.status = 'active' if status.nil?
   end
 
   def randomize_level_and_monster!

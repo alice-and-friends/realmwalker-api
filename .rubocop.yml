@@ -34,11 +34,14 @@ Naming/PredicateName:
 Style/AccessorGrouping:
   Exclude:
 
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
 Style/TrailingCommaInHashLiteral:
-  Enabled: false
+  EnforcedStyleForMultiline: consistent_comma
 
 Style/TrailingCommaInArguments:
-  Enabled: false
+  EnforcedStyleForMultiline: consistent_comma
 
 Style/FormatStringToken:
   # Because we parse a lot of source codes from strings. Percent arrays

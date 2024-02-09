@@ -65,6 +65,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.text "tags", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_monsters_on_name", unique: true
   end
 
   create_table "npcs_trade_offer_lists", id: false, force: :cascade do |t|
@@ -87,11 +88,15 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.string "type", null: false
     t.string "ext_id"
     t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
+    t.float "latitude"
+    t.float "longitude"
     t.jsonb "tags"
+    t.string "source_file"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["coordinates"], name: "real_world_locations_coordinates_excl", using: :gist
+    t.index ["coordinates"], name: "index_real_world_locations_on_coordinates", using: :gist
     t.index ["ext_id"], name: "index_real_world_locations_on_ext_id", unique: true
+    t.index ["latitude", "longitude"], name: "index_real_world_locations_on_latitude_and_longitude", unique: true
   end
 
   create_table "realm_locations", force: :cascade do |t|
@@ -112,7 +117,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.bigint "monster_id"
     t.datetime "defeated_at"
     t.bigint "defeated_by_id"
-    t.index ["coordinates"], name: "realm_locations_coordinates_excl", using: :gist
+    t.index ["coordinates"], name: "index_realm_locations_on_coordinates", using: :gist
     t.index ["defeated_by_id"], name: "index_realm_locations_on_defeated_by_id"
     t.index ["monster_id"], name: "index_realm_locations_on_monster_id"
     t.index ["portrait_id"], name: "index_realm_locations_on_portrait_id"

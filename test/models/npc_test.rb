@@ -8,15 +8,30 @@ class NpcTest < ActiveSupport::TestCase
   end
   test 'can generate npc' do
     initial_count = Npc.count
-    Npc.create!(role: 'shopkeeper', shop_type: Npc::SHOP_TYPES.first, trade_offer_lists: [TradeOfferList.create])
+    Npc.create!(
+      role: 'shopkeeper',
+      shop_type: Npc::SHOP_TYPES.first,
+      trade_offer_lists: [TradeOfferList.create],
+      real_world_location: RealWorldLocation.free.first,
+    )
     assert_operator Npc.count, :>, initial_count
   end
   test "can't create shopkeeper npc without a valid shop type" do
-    invalid_npc = Npc.new(role: 'shopkeeper', shop_type: 'invalid shop type', trade_offer_lists: [TradeOfferList.create])
+    invalid_npc = Npc.new(
+      role: 'shopkeeper',
+      shop_type: 'invalid shop type',
+      trade_offer_lists: [TradeOfferList.create],
+      real_world_location: RealWorldLocation.free.first,
+    )
     assert_not invalid_npc.valid?
   end
   test 'new npc should receive gender and name' do
-    new_npc = Npc.create!(role: 'shopkeeper', shop_type: Npc::SHOP_TYPES.first, trade_offer_lists: [TradeOfferList.create])
+    new_npc = Npc.create!(
+      role: 'shopkeeper',
+      shop_type: Npc::SHOP_TYPES.first,
+      trade_offer_lists: [TradeOfferList.create],
+      real_world_location: RealWorldLocation.free.first,
+    )
     assert_not_empty new_npc.gender
     assert_not_empty new_npc.name
   end
