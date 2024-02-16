@@ -17,30 +17,44 @@ class SeedHelper
   @geography = ''
 
   def geographies
-    return ['Test-Geography'] if Rails.env.test?
+    if ENV['geographies']
+      geographies = ENV['geographies'].split(',').map(&:strip)
+      geographies.each do |geography|
+        Throw "Unknown geography '#{geography}'" unless Rails.root.join('lib', 'seeds', 'geographies', "#{geography}.csv").exist?
+      end
+      return geographies
+    end
 
-    [
-      # 'Oslo',
-      'Norway',
-    ]
+    []
   end
 
   def init
+    unless ENV['globals'] || ENV['geographies']
+      puts "INFO: db:seed requires at least one parameter to run. Available parameters are:
+  globals=yes # Seeds non-geographical data such as monsters, items, etc
+  geographies=Sweden,Norway # Instructs which geographies to seed locations for"
+      exit
+    end
+
     puts 'Seeding the database... This might take a while.'
     execution_time = Benchmark.measure do
-      seed(:monsters)
-      seed(:items)
-      seed(:trade_offers)
-      seed(:portraits)
-      geographies.each_with_index do |geography, index|
-        puts "🌍 Seeding geography #{index + 1} of #{geographies.length} '#{geography}'..."
-        @geography = geography
-        seed(:real_world_locations)
-        seed(:ley_lines)
-        seed(:shops)
-        seed(:dungeons)
+      if ENV['globals']
+        seed(:monsters)
+        seed(:items)
+        seed(:trade_offers)
+        seed(:portraits)
       end
-      puts "🙀 #{Spook.count} spooks in effect."
+      if ENV['geographies']
+        geographies.each_with_index do |geography, index|
+          puts "🌍 Seeding geography #{index + 1} of #{geographies.length} '#{geography}'..."
+          @geography = geography
+          seed(:real_world_locations)
+          seed(:ley_lines)
+          seed(:shops)
+          seed(:dungeons)
+        end
+        puts "🙀 #{Spook.count} spooks in effect."
+      end
     end
     puts "Finished! (#{execution_time.real.round(2)}s)"
   end
@@ -56,7 +70,7 @@ class SeedHelper
   def real_world_locations
     locations = []
     filename = "#{@geography}.csv"
-    csv_text = Rails.root.join('lib', 'seeds', filename).read
+    csv_text = Rails.root.join('lib', 'seeds', 'geographies', filename).read
     csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
     csv.each do |row|
       lat, lon = row['coordinates'].split
@@ -66,23 +80,16 @@ class SeedHelper
         coordinates: "POINT(#{lon} #{lat})",
         tags: parse_tags(row['tags']),
         source_file: filename,
+        region: @geography,
       )
 
       percentile = location.ext_id[-2..].to_i
       location.type = 'shop' if percentile.in? 0..10
-      location.type = 'ley-line' if percentile.in? 11..15
-
-      # Enforce minimum distance between locations
-      _, distance = location.nearest_real_world_location
-      if distance.present? && distance <= 40.0
-        location.destroy!
-        puts "❌ Nixed OSM location ##{row['ext_id']} (#{lon} #{lat}), too close to other location" if ENV['verbose']
-        next
-      end
+      location.type = 'ley-line' if percentile.in? 11..17
 
       locations << location
     end
-    import(RealWorldLocation, locations, pre_validate: false, validate: false, skip_duplicates: true)
+    import(RealWorldLocation, locations, bulk: false)
   end
 
   def monsters
@@ -212,7 +219,7 @@ class SeedHelper
     puts '⚠️ Error: armorer_offer_list should not be blank' and return 0 if armorer_offer_list.nil?
 
     npcs = []
-    RealWorldLocation.where(type: 'shop').each do |rwl|
+    RealWorldLocation.where(type: 'shop').find_each do |rwl|
       random_digit = (Math.sqrt(rwl.ext_id.to_i) * 100).to_i.digits[0]
       npc = Npc.new({
                       role: 'shopkeeper',
@@ -231,48 +238,27 @@ class SeedHelper
         npc.trade_offer_lists << armorer_offer_list
       end
 
-      # Avoid placing identical shops right next to each other
-      _, distance = npc.nearest_similar_shop
-      if distance.present? && distance <= 200.0
-        npc.destroy!
-        rwl.update!(type: 'unassigned')
-        puts "❌ Nixed shop (#{npc.shop_type}) at location ##{rwl.id} (#{rwl.coordinates.lon} #{rwl.coordinates.lat}), too close to similar shop" if ENV['verbose']
-        next
-      end
-
-      next if npc.save
-
-      puts "🛑 #{npc.errors.inspect}" if ENV['verbose']
+      npcs << npc if npc.valid?
     end
-    Npc.shopkeepers.count
+    import(Npc, npcs, bulk: false, recycle_locations: 'shop')
   end
 
   def ley_lines
     ley_lines = []
-    RealWorldLocation.where(type: 'ley-line').each do |rwl|
+    RealWorldLocation.where(type: 'ley-line').find_each do |rwl|
       ley_line = LeyLine.new({
                                real_world_location_id: rwl.id,
                                coordinates: rwl.coordinates,
                              })
-
-      # Avoid placing ley lines right next to each other
-      _, distance = ley_line.nearest_ley_line
-      if distance.present? && distance <= 850.0
-        ley_line.destroy!
-        rwl.update!(type: 'unassigned')
-        puts "❌ Nixed ley line at location ##{rwl.id} (#{rwl.coordinates.lon} #{rwl.coordinates.lat}), too close to other ley line" if ENV['verbose']
-        next
-      end
-
       ley_lines << ley_line
     end
-    import(LeyLine, ley_lines)
+    import(LeyLine, ley_lines, bulk: false, recycle_locations: 'ley-line')
   end
 
   def dungeons
     dungeons = []
-    locations = RealWorldLocation.for_dungeon.pluck(:id).shuffle
-    Dungeon.min_dungeons.times do |counter|
+    locations = RealWorldLocation.for_dungeon.where(region: @geography).pluck(:id).shuffle
+    Dungeon.min_dungeons(@geography).times do |counter|
       dungeon = Dungeon.new({
                               status: Dungeon.statuses[:active],
                               real_world_location_id: locations.pop,
@@ -285,23 +271,43 @@ class SeedHelper
 
   private
 
-  def import(model, data, pre_validate = true, validate = true, skip_duplicates = false)
+  # Split into two (bulk- and non-bulk) import methods?
+  def import(model, data, bulk: true, pre_validate: true, validate: true, skip_duplicates: false, recycle_locations: '')
     count_before_seeding = model.count
-    data_to_import = []
+    discarded_locations = []
 
-    if pre_validate
+    if bulk
+      data_to_import = []
+      if pre_validate
+        data.each do |o|
+          if o.valid?
+            data_to_import << o
+          elsif ENV['verbose']
+            puts "🛑 #{o.errors.inspect}"
+          end
+        end
+      else
+        data_to_import = data
+      end
+      model.import(data_to_import, batch_size: @batch_size, validate: validate, on_duplicate_key_ignore: skip_duplicates)
+    else
       data.each do |o|
         if o.valid?
-          data_to_import << o
-        elsif ENV['verbose']
-          puts "🛑 #{o.errors.inspect}"
+          o.save!
+          next
         end
+        if recycle_locations != '' && o.errors[:coordinates]
+          discarded_locations << o.real_world_location_id
+          next
+        end
+        puts "🛑 #{o.errors.inspect}" if ENV['verbose']
       end
-    else
-      data_to_import = data
+      unless discarded_locations.empty?
+        RealWorldLocation.where(id: discarded_locations).update!(type: 'unassigned')
+        puts "♻️  Recycled #{discarded_locations.size} real world locations ('#{recycle_locations}'=>'unassigned')" if ENV['verbose']
+      end
     end
 
-    model.import data_to_import, batch_size: @batch_size, validate: validate, on_duplicate_key_ignore: skip_duplicates
     model.count - count_before_seeding
   end
 
@@ -313,5 +319,12 @@ class SeedHelper
   end
 end
 
+# Test config
+if Rails.env.test?
+  ENV['globals'] = 'yes'
+  ENV['geographies'] = '_Test-Geography'
+end
+
+# Execute
 seed_helper = SeedHelper.new
 seed_helper.init

@@ -28,11 +28,11 @@ class ActivePlayerArea
     max_new_dungeons_per_activation = 9 # The highest number of dungeons that can be spawned by a single call to this function
 
     DESIRED_DUNGEONS.each do |layer|
-      dungeons_in_range = Dungeon.near(geolocation[:lat], geolocation[:lon], layer[:distance]).count
+      dungeons_in_range = Dungeon.near(geolocation[:latitude], geolocation[:longitude], layer[:distance]).count
       missing = layer[:target] - dungeons_in_range
       next if missing <= 0
 
-      potential_locations = RealWorldLocation.free.near(geolocation[:lat], geolocation[:lon], layer[:distance]).pluck(:id)
+      potential_locations = RealWorldLocation.free.near(geolocation[:latitude], geolocation[:longitude], layer[:distance]).pluck(:id)
       next if potential_locations.empty?
 
       missing.times do

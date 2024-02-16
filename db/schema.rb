@@ -88,6 +88,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.string "type", null: false
     t.string "ext_id"
     t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
+    t.string "region", null: false
     t.float "latitude"
     t.float "longitude"
     t.jsonb "tags"
@@ -103,6 +104,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.string "type"
     t.bigint "real_world_location_id", null: false
     t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
+    t.string "region", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"

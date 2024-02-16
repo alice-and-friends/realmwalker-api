@@ -9,12 +9,14 @@ class Api::V1::ApiController < ApplicationController
   private
 
   def geolocate
-    lat, lon = request.headers['Geolocation']&.split&.map(&:to_f)
-    if lat.positive? && lon.positive?
+    latitude, longitude = request.headers['Geolocation']&.split&.map(&:to_f)
+    if latitude.positive? && longitude.positive?
+      factory_store = RGeo::ActiveRecord::SpatialFactoryStore.instance # Access the SpatialFactoryStore instance
+      point_factory = factory_store.factory(geo_type: 'point') # Fetch the factory registered for point columns
       @current_user_geolocation = {
-        lat: lat,
-        lon: lon,
-        point: RGeo::Geos.factory(srid: 0).point(lon, lat),
+        latitude: latitude,
+        longitude: longitude,
+        point: point_factory.point(longitude, latitude), # Use the point factory to create a new point,
       }
     else
       render render json: { message: 'Geolocation missing' }, status: :bad_geolocation

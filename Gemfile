@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.0.6'
+gem 'rails', '~> 7.0.8'
 
 gem 'dotenv-rails', groups: [:development, :test]
 
@@ -71,5 +71,5 @@ gem 'jwt'
 
 # Geography and location stuff
 gem 'activerecord-postgis-adapter'
+gem 'rgeo'
 gem 'rgeo-activerecord'
-

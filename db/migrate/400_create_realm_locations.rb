@@ -7,7 +7,8 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       # ALL
       t.string :type # required for inheritance
       t.belongs_to :real_world_location, null: false, index: { unique: true }
-      t.st_point :coordinates, geographic: true
+      t.st_point :coordinates, geographic: true, limit: { srid: 4326 }
+      t.string :region, null: false
       t.timestamps
 
       # BASE
@@ -26,7 +27,7 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       t.column :level, :integer
       t.references :monster
       t.column :defeated_at, :datetime
-      t.references :defeated_by, index: true, foreign_key: { to_table: :users }, optional: true
+      t.references :defeated_by, index: true, foreign_key: { to_table: :users }
     end
 
     # Coordinates GIST index

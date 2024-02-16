@@ -10,6 +10,7 @@ class Dungeon < RealmLocation
 
   before_validation :set_active_status, on: :create
   before_validation :set_real_world_location!, on: :create
+  before_validation :set_region_and_coordinates!, on: :create
   before_validation :randomize_level_and_monster!, on: :create
   validates :level, :status, presence: true
 
@@ -24,10 +25,14 @@ class Dungeon < RealmLocation
     Rails.logger.debug "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
-  def self.min_dungeons
+  def self.min_dungeons(region = '')
     return 10 if Rails.env.test?
 
-    [10, RealWorldLocation.for_dungeon.count / 100].max
+    query = RealWorldLocation.for_dungeon
+    query = query.where(region: region) if region.present?
+    count = query.count
+
+    [10, count / 100].max
   end
 
   delegate :name, to: :monster
@@ -209,7 +214,6 @@ class Dungeon < RealmLocation
 
     occupied = Dungeon.select(:real_world_location_id)
     self.real_world_location = RealWorldLocation.for_dungeon.where.not(id: occupied).first
-    self.coordinates = real_world_location.coordinates
   end
 
   def expire_nearby_dungeons!

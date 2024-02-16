@@ -272,16 +272,18 @@ class User < ApplicationRecord
   def construct_base_at(point)
     raise('User already owns a structure') if base.present?
 
-    real_world_location = RealWorldLocation.new(
+    nearest_real_world_location = RealWorldLocation.nearest(point.lat, point.lon)
+    base_real_world_location = RealWorldLocation.new(
       type: 'user_owned',
       coordinates: point,
+      region: nearest_real_world_location.region,
     )
-    raise('Failed to validate real world location') unless real_world_location.valid?
+    raise('Failed to validate real world location') unless base_real_world_location.valid?
 
-    real_world_location.save!
+    base_real_world_location.save!
     self.base = Base.create!(
       user: self,
-      real_world_location: real_world_location,
+      real_world_location: base_real_world_location,
     )
   end
 
