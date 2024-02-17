@@ -17,14 +17,19 @@ class SeedHelper
   @geography = ''
 
   def geographies
-    if ENV['geographies']
+    if ENV['geographies'] == 'all'
+      all_files = Dir.glob("#{directory}/*").reject { |file| File.basename(file) == "_Test-Geography.csv" }
+      filenames = all_files.select { |file| File.extname(file) == '.csv' }.map do |file|
+        File.basename(file, '.csv')  # This removes the .csv extension directly
+      end
+      return filenames.join(', ')
+    elsif ENV['geographies']
       geographies = ENV['geographies'].split(',').map(&:strip)
       geographies.each do |geography|
         Throw "Unknown geography '#{geography}'" unless Rails.root.join('lib', 'seeds', 'geographies', "#{geography}.csv").exist?
       end
       return geographies
     end
-
     []
   end
 

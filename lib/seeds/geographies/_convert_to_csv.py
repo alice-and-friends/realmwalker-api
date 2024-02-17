@@ -18,6 +18,7 @@ amenity_tags = ['college', 'kindergarten', 'library', 'research_institute', 'mus
                 'exhibition_centre', 'fountain', 'planetarium', 'public_bookcase', 'social_centre',
                 'theatre', 'courthouse', 'ranger_station', 'townhall', 'clock', 'marketplace',
                 'public_bath', 'public_building']
+highway_tags = ['bus_stop']
 historic_tags = ['aqueduct', 'archaeological_site', 'battlefield', 'bomb_crater',
                  'building', 'castle', 'church', 'city_gate', 'fort', 'milestone', 'monastery',
                  'monument', 'mosque', 'ogham_stone', 'ruins', 'rune_stone', 'stone', 'tower']
@@ -26,17 +27,22 @@ leisure_tags = ['amusement_arcade', 'dog_park', 'firepit', 'ice_rink', 'park',
 man_made_tags = ['communications_tower', 'lighthouse', 'obelisk', 'observatory',
                  'telescope', 'torii', 'tower', 'windmill']
 memorial_tags = ['war_memorial', 'statue', 'bust', 'stele', 'stone', 'obelisk', 'sculpture']
+public_transport_tags = ['stop_position']
+railway_tags = ['tram_stop', 'station']
 tourism_tags = ['alpine_hut', 'aquarium', 'artwork', 'attraction', 'camp_pitch', 'camp_site',
                 'caravan_site', 'gallery', 'hostel', 'hotel', 'motel', 'museum', 'picnic_site',
                 'theme_park', 'viewpoint', 'wilderness_hut']
 
 tag_categories = {
     'amenity': amenity_tags,
+    'highway': highway_tags,
     'historic': historic_tags,
     'leisure': leisure_tags,
     'man_made': man_made_tags,
     'memorial': memorial_tags,
-    'tourism': tourism_tags
+    'public_transport': public_transport_tags,
+    'railway': railway_tags
+    'tourism': tourism_tags,
 }
 
 class CoordinatesManager:
