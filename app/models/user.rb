@@ -274,7 +274,7 @@ class User < ApplicationRecord
 
     nearest_real_world_location = RealWorldLocation.nearest(point.latitude, point.longitude)
     base_real_world_location = RealWorldLocation.new(
-      type: 'user_owned',
+      type: RealWorldLocation.types[:user_owned],
       coordinates: point,
       region: nearest_real_world_location.region,
     )

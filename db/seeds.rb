@@ -84,7 +84,7 @@ class SeedHelper
       lat, lon = row['coordinates'].split
       location = RealWorldLocation.find_or_initialize_by(ext_id: row['ext_id'])
       location.assign_attributes(
-        type: 'unassigned',
+        type: RealWorldLocation.types[:unassigned],
         coordinates: "POINT(#{lon} #{lat})",
         latitude: lat,
         longitude: lon,
@@ -94,8 +94,8 @@ class SeedHelper
       )
 
       percentile = location.ext_id[-2..].to_i
-      location.type = 'shop' if percentile.in? 0..10
-      location.type = 'ley-line' if percentile.in? 11..17
+      location.type = RealWorldLocation.types[:shop] if percentile.in? 0..10
+      location.type = RealWorldLocation.types[:ley_line] if percentile.in? 11..17
 
       locations << location
     end
@@ -231,7 +231,7 @@ class SeedHelper
     puts '⚠️ Error: armorer_offer_list should not be blank' and return 0 if armorer_offer_list.nil?
 
     npcs = []
-    RealWorldLocation.where(type: 'shop').find_each do |rwl|
+    RealWorldLocation.where(type: RealWorldLocation.types[:shop]).find_each do |rwl|
       random_digit = (Math.sqrt(rwl.ext_id.partition('/').last.to_i) * 100).to_i.digits[0]
       npc = Npc.new({
                       role: 'shopkeeper',
@@ -257,14 +257,14 @@ class SeedHelper
 
   def ley_lines
     ley_lines = []
-    RealWorldLocation.where(type: 'ley-line').find_each do |rwl|
+    RealWorldLocation.where(type: RealWorldLocation.types[:ley_line]).find_each do |rwl|
       ley_line = LeyLine.new({
                                real_world_location_id: rwl.id,
                                coordinates: rwl.coordinates,
                              })
       ley_lines << ley_line
     end
-    import(LeyLine, ley_lines, bulk: false, recycle_locations: 'ley-line')
+    import(LeyLine, ley_lines, bulk: false, recycle_locations: 'ley_line')
   end
 
   def dungeons
@@ -315,8 +315,8 @@ class SeedHelper
         puts "🛑 #{o.errors.inspect}" if ENV['verbose']
       end
       unless discarded_locations.empty?
-        RealWorldLocation.where(id: discarded_locations).update!(type: 'unassigned')
-        puts "♻️  Recycled #{discarded_locations.size} real world locations ('#{recycle_locations}'=>'unassigned')" if ENV['verbose']
+        RealWorldLocation.where(id: discarded_locations).update!(type: RealWorldLocation.types[:unassigned])
+        puts "♻️  Recycled #{discarded_locations.size} real world locations ('#{recycle_locations}'=>'#{RealWorldLocation.types[:unassigned]}')" if ENV['verbose']
       end
     end
 
