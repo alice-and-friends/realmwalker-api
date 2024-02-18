@@ -35,8 +35,6 @@ class Dungeon < RealmLocation
     [10, count / 100].max
   end
 
-  delegate :name, to: :monster
-
   def boss?
     level == 10
   end
@@ -209,6 +207,10 @@ class Dungeon < RealmLocation
 
   private
 
+  def set_active_status
+    self.status = 'active' if status.nil?
+  end
+
   def set_real_world_location!
     return if real_world_location_id.present?
 
@@ -225,10 +227,6 @@ class Dungeon < RealmLocation
            )
            .where.not(id: id)
            .find_each(&:expired!)
-  end
-
-  def set_active_status
-    self.status = 'active' if status.nil?
   end
 
   def randomize_level_and_monster!
@@ -252,5 +250,6 @@ class Dungeon < RealmLocation
     end
 
     self.monster = Monster.for_level(self.level)
+    self.name = monster.name
   end
 end

@@ -5,11 +5,11 @@ class CreateRealWorldLocations < ActiveRecord::Migration[7.0]
     create_table :real_world_locations do |t|
       # t.string    :name,        null: false
       t.string    :type,        null: false
-      t.string    :ext_id,      null: true, index: { unique: true }
+      t.string    :ext_id,      null: true, index: { unique: true } # Can be null for user-generated locations
       t.st_point  :coordinates, geographic: true, limit: { srid: 4326 }
       t.string    :region,      null: false
-      t.float     :latitude     # Add latitude column
-      t.float     :longitude    # Add longitude column
+      t.float     :latitude,    null: false
+      t.float     :longitude,   null: false
       t.jsonb     :tags
       t.string    :source_file
       t.timestamps

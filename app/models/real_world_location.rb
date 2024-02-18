@@ -4,9 +4,10 @@ class RealWorldLocation < ApplicationRecord
   include ComfyCoordinates
   self.inheritance_column = nil
   # validates :name, presence: true
-  validates :type, presence: true
+  validates :type, presence: true # TODO: Should have a validator
   validates :ext_id, uniqueness: true, allow_nil: true
   validate :minimum_distance
+  before_validation :set_latitude_and_longitude!, on: :create
 
   scope :free, -> {
     where.not(id: RealmLocation.select(:real_world_location_id))
@@ -15,6 +16,15 @@ class RealWorldLocation < ApplicationRecord
   scope :for_dungeon, -> { where(type: 'unassigned') }
 
   private
+
+  def set_latitude_and_longitude!
+    throw('Coordinates blank') if coordinates.blank?
+
+    return unless latitude.nil? || longitude.nil?
+
+    self.latitude = coordinates.latitude
+    self.longitude = coordinates.longitude
+  end
 
   def minimum_distance
     throw('Coordinates blank') if coordinates.blank?

@@ -17,16 +17,19 @@ class SeedHelper
   @geography = ''
 
   def geographies
+    directory = Rails.root.join('lib/seeds/geographies')
     if ENV['geographies'] == 'all'
-      all_files = Dir.glob("#{directory}/*").reject { |file| File.basename(file) == "_Test-Geography.csv" }
-      filenames = all_files.select { |file| File.extname(file) == '.csv' }.map do |file|
-        File.basename(file, '.csv')  # This removes the .csv extension directly
+      all_files = Dir.glob("#{directory}/*[!_]*.csv")
+      geographies = all_files.map do |file|
+        File.basename(file, '.csv') # This removes the .csv extension directly
       end
-      return filenames.join(', ')
+      geographies_string = geographies.join(', ')
+      puts "geographies=#{geographies_string}"
+      return geographies_string
     elsif ENV['geographies']
       geographies = ENV['geographies'].split(',').map(&:strip)
       geographies.each do |geography|
-        Throw "Unknown geography '#{geography}'" unless Rails.root.join('lib', 'seeds', 'geographies', "#{geography}.csv").exist?
+        Throw "Unknown geography '#{geography}'" unless directory.join("#{geography}.csv").exist?
       end
       return geographies
     end
@@ -61,7 +64,7 @@ class SeedHelper
         puts "🙀 #{Spook.count} spooks in effect."
       end
     end
-    puts "Finished! (#{execution_time.real.round(2)}s)"
+    puts "Finished! (#{execution_time.real.round(2).to_fs(:delimited)}s)"
   end
 
   def seed(func)
@@ -69,7 +72,7 @@ class SeedHelper
     execution_time = Benchmark.measure do
       count = method(func).call
     end
-    puts "🌱 Seeded #{count.to_fs(:delimited)} #{func.to_s.tr('_', ' ')} in #{execution_time.real.round(2)} seconds."
+    puts "🌱 Seeded #{count.to_fs(:delimited)} #{func.to_s.tr('_', ' ')} in #{execution_time.real.round(2).to_fs(:delimited)} seconds."
   end
 
   def real_world_locations
@@ -79,10 +82,12 @@ class SeedHelper
     csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
     csv.each do |row|
       lat, lon = row['coordinates'].split
-      location = RealWorldLocation.new(
-        ext_id: row['ext_id'],
+      location = RealWorldLocation.find_or_initialize_by(ext_id: row['ext_id'])
+      location.assign_attributes(
         type: 'unassigned',
         coordinates: "POINT(#{lon} #{lat})",
+        latitude: lat,
+        longitude: lon,
         tags: parse_tags(row['tags']),
         source_file: filename,
         region: @geography,
@@ -95,6 +100,8 @@ class SeedHelper
       locations << location
     end
     import(RealWorldLocation, locations, bulk: false)
+
+    # TODO: Delete any locations that are not in the geography file
   end
 
   def monsters
@@ -225,7 +232,7 @@ class SeedHelper
 
     npcs = []
     RealWorldLocation.where(type: 'shop').find_each do |rwl|
-      random_digit = (Math.sqrt(rwl.ext_id.to_i) * 100).to_i.digits[0]
+      random_digit = (Math.sqrt(rwl.ext_id.partition('/').last.to_i) * 100).to_i.digits[0]
       npc = Npc.new({
                       role: 'shopkeeper',
                       real_world_location_id: rwl.id,
@@ -271,7 +278,7 @@ class SeedHelper
                             })
       dungeons << dungeon
     end
-    import(Dungeon, dungeons, pre_validate: true, validate: true)
+    import(Dungeon, dungeons, pre_validate: false, validate: true)
   end
 
   private

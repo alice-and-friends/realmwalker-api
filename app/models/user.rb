@@ -272,7 +272,7 @@ class User < ApplicationRecord
   def construct_base_at(point)
     raise('User already owns a structure') if base.present?
 
-    nearest_real_world_location = RealWorldLocation.nearest(point.lat, point.lon)
+    nearest_real_world_location = RealWorldLocation.nearest(point.latitude, point.longitude)
     base_real_world_location = RealWorldLocation.new(
       type: 'user_owned',
       coordinates: point,

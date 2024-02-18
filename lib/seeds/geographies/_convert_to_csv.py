@@ -41,7 +41,7 @@ tag_categories = {
     'man_made': man_made_tags,
     'memorial': memorial_tags,
     'public_transport': public_transport_tags,
-    'railway': railway_tags
+    'railway': railway_tags,
     'tourism': tourism_tags,
 }
 
@@ -128,9 +128,9 @@ class CSVWriter(o.SimpleHandler):
 
         return False
 
-    def process_object(self, obj, coordinates, tags):
+    def process_object(self, type, obj, coordinates, tags):
         row = [
-            obj.id,
+            f"{type}/{obj.id}",
             f"{coordinates[0]} {coordinates[1]}"
         ]
 
@@ -153,13 +153,13 @@ class CSVWriter(o.SimpleHandler):
         # Check for nearby points
         if self.coordinates_manager.has_nodes_nearby(coordinates, 1, 42.0):
             return
-        if self.coordinates_manager.has_nodes_nearby(coordinates, 4, 400.0):
+        if self.coordinates_manager.has_nodes_nearby(coordinates, 3, 300.0):
             return
 
         self.id_node = o.id
         self.c_node += 1
         self.coordinates_manager.append(coordinates, item_type='node')
-        self.process_object(o, coordinates, o.tags)
+        self.process_object('node', o, coordinates, o.tags)
 
     def way(self, o):
         # if o.is_closed():
@@ -186,7 +186,7 @@ class CSVWriter(o.SimpleHandler):
         self.id_way = o.id
         self.c_way += 1
         self.coordinates_manager.append(coordinates, item_type='way')
-        self.process_object(o, coordinates, o.tags)
+        self.process_object('way', o, coordinates, o.tags)
 
     def area(self, o):
         return
@@ -214,7 +214,7 @@ class CSVWriter(o.SimpleHandler):
         #
         # self.c_area += 1
         # self.coordinates_manager.append(coordinates, item_type='area')
-        # self.process_object(o, coordinates, o.tags)
+        # self.process_object('way', o, coordinates, o.tags)
 
     def progress_bar(self, index, total):
         percent = int(index) / total * 100
@@ -281,6 +281,9 @@ def main(osmfile):
         handler.csv_writer.writerow(CSV_HEADERS)
         handler.apply_file(filtered_osmfile)
 
+        print('Cleaning up...')
+        os.remove(filtered_osmfile)
+
         time_end = time.perf_counter()
         time_duration = time_end - time_start
         print(
@@ -288,7 +291,6 @@ def main(osmfile):
         )
 
     return 0
-
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:

@@ -30,6 +30,9 @@ scope :near, lambda { |latitude, longitude, distance|
   where("ST_DWithin(coordinates, 'POINT(#{longitude} #{latitude})', #{distance})")
 }
 ```
+**Geographies and Regions**:
+"Geography" or "Geographies" refers to datasets gathered from OpenStreetMaps, before importing to RealmWalker. In this context, "geographies" refers to the different geographic characteristics of a region, as described in OSM.
+"Region(s)" is used to categorize location data after import. Geographies and regions typically map 1-to-1, though this is not guaranteed.
 
 ## Testing
 `rails test`
