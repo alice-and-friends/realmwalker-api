@@ -3,15 +3,17 @@
 class RealWorldLocation < ApplicationRecord
   include ComfyCoordinates
   self.inheritance_column = nil
+
+  enum type: { shop: 'shop', ley_line: 'ley_line', user_owned: 'user_owned', unassigned: 'unassigned' }
+
   validates :type, presence: true
   validates :ext_id, uniqueness: true, allow_nil: true
   validate :minimum_distance
+
   before_validation :set_latitude_and_longitude!, on: :create
 
   scope :free, -> { where.not(id: RealmLocation.select(:real_world_location_id)) }
   scope :for_dungeon, -> { where(type: RealWorldLocation.types[:unassigned]) }
-
-  enum type: { shop: 'shop', ley_line: 'ley_line', user_owned: 'user_owned', unassigned: 'unassigned' }
 
   private
 

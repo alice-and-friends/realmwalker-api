@@ -4,10 +4,10 @@ class InventoryItem < ApplicationRecord
   belongs_to :inventory
   belongs_to :item
 
+  before_save :unequip!, if: :will_save_change_to_inventory_id?
+
   scope :alphabetical, -> { joins(:item).order('items.name': :asc) }
   scope :ordered, -> { joins(:item).order(is_equipped: :desc, 'items.name': :asc) }
-
-  before_save :unequip!, if: :will_save_change_to_inventory_id?
 
   def equipped?
     is_equipped

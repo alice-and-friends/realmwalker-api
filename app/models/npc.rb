@@ -4,20 +4,15 @@ class Npc < RealmLocation
   include Species
   include Gender
 
+  ROLES = %w[shopkeeper].freeze
+  SHOP_TYPES = %w[armorer jeweller magic].freeze
+
   belongs_to :portrait
   has_and_belongs_to_many :trade_offer_lists, join_table: 'npcs_trade_offer_lists'
   has_many :trade_offers, through: :trade_offer_lists
-  has_many :spooks
+  has_many :spooks, dependent: :destroy
   has_many :dungeons, through: :spooks
 
-  ROLES = %w[shopkeeper].freeze
-  SHOP_TYPES = %w[armorer jeweller magic].freeze
-  before_validation :set_real_world_location!, on: :create
-  before_validation :set_region_and_coordinates!, on: :create
-  before_validation :assign_species!, on: :create
-  before_validation :assign_gender!, on: :create
-  before_validation :assign_name!, on: :create
-  before_validation :assign_portrait!, on: :create
   validates :species, inclusion: { in: Species::SPECIES }
   validates :gender, inclusion: { in: Gender::GENDERS }
   validates :role, presence: true, inclusion: { in: ROLES }
@@ -26,12 +21,12 @@ class Npc < RealmLocation
   validate :shopkeeper_has_trade_offer_list, if: :shop?
   validate :minimum_distance, if: :shop?
 
-  scope :shopkeepers, -> { where(role: 'shopkeeper') }
-  scope :with_spook_status, lambda {
-    left_outer_joins(:spooks)
-      .select('realm_locations.*, COUNT(spooks.id) > 0 AS spooked')
-      .group('realm_locations.id')
-  }
+  before_validation :set_real_world_location!, on: :create
+  before_validation :set_region_and_coordinates!, on: :create
+  before_validation :assign_species!, on: :create
+  before_validation :assign_gender!, on: :create
+  before_validation :assign_name!, on: :create
+  before_validation :assign_portrait!, on: :create
 
   after_create do |npc|
     Rails.logger.debug "📌 Spawned a new NPC, say hello to #{npc.name}. There are now #{Npc.count} NPCs."
@@ -39,6 +34,13 @@ class Npc < RealmLocation
   after_destroy do |npc|
     Rails.logger.debug "❌ Destroyed NPC #{npc.name}. There are now #{Npc.count} NPCs."
   end
+
+  scope :shopkeepers, -> { where(role: 'shopkeeper') }
+  scope :with_spook_status, lambda {
+    left_outer_joins(:spooks)
+      .select('realm_locations.*, COUNT(spooks.id) > 0 AS spooked')
+      .group('realm_locations.id')
+  }
 
   def shop?
     role == 'shopkeeper'

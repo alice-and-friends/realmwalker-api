@@ -1,12 +1,8 @@
 # frozen_string_literal: true
 
 class Monster < ApplicationRecord
-  validates :name, presence: true, uniqueness: true
-  validate :has_classification
-  validate :tags_are_valid
+  # TAGS = %w[].freeze
 
-  # TODO: Duplication
-  CLASSIFICATIONS = %w[aberration beast celestial construct dragon elemental fey fiend giant humanoid monstrosity ooze plant undead].freeze
   enum classification: {
     aberration: 'aberration',
     beast: 'beast',
@@ -23,8 +19,10 @@ class Monster < ApplicationRecord
     plant: 'plant',
     undead: 'undead',
   }
-  TAGS = %w[].freeze
 
+  validates :name, presence: true, uniqueness: true
+  validates :classification, presence: true
+  # validate :tags_are_valid
 
   def self.for_level(level)
     m = Monster.where(level: level).sample
@@ -46,17 +44,10 @@ class Monster < ApplicationRecord
 
   private
 
-  def has_classification
-    # Should have one or more primary type(s)
-    unless classification.in? CLASSIFICATIONS
-      errors.add(:classification, "has invalid classification #{classification}")
-    end
-  end
-
-  def tags_are_valid
-    # Should have only valid types
-    tags.each do |tag|
-      errors.add(:tags, "contains an invalid tag '#{tags}'") unless tag.in? TAGS
-    end
-  end
+  # def tags_are_valid
+  #   # Should have only valid types
+  #   tags.each do |tag|
+  #     errors.add(:tags, "contains an invalid tag '#{tags}'") unless tag.in? TAGS
+  #   end
+  # end
 end

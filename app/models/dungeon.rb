@@ -8,11 +8,12 @@ class Dungeon < RealmLocation
 
   enum status: { active: 'active', defeated: 'defeated', expired: 'expired' }
 
+  validates :level, :status, presence: true
+
   before_validation :set_active_status, on: :create
   before_validation :set_real_world_location!, on: :create
   before_validation :set_region_and_coordinates!, on: :create
   before_validation :randomize_level_and_monster!, on: :create
-  validates :level, :status, presence: true
 
   after_create do |d|
     Rails.logger.debug "📌 Spawned a new dungeon ##{d.id}, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."

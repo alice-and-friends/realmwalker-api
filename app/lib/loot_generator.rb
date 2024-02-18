@@ -13,16 +13,16 @@ class LootGenerator
     }
     @loot_table = Item.none # We will populate this based on monster level and classification
     @gold_ranges = {
-      1 => 3..20,     # Range: 17   Average: 11.5
-      2 => 5..40,     # Range: 35   Average: 22.5
-      3 => 8..100,    # Range: 92   Average: 54
-      4 => 21..180,   # Range: 159  Average: 100.5
-      5 => 110..300,  # Range: 190  Average: 205
-      6 => 160..550,  # Range: 390  Average: 355
-      7 => 180..600,  # Range: 420  Average: 390
-      8 => 250..700,  # Range: 450  Average: 475
-      9 => 300..800,  # Range: 500  Average: 550
-      10 => 600..1100 # Range: 500  Average: 850
+      1 => 3..20,      # Range: 17   Average: 11.5
+      2 => 5..40,      # Range: 35   Average: 22.5
+      3 => 8..100,     # Range: 92   Average: 54
+      4 => 21..180,    # Range: 159  Average: 100.5
+      5 => 110..300,   # Range: 190  Average: 205
+      6 => 160..550,   # Range: 390  Average: 355
+      7 => 180..600,   # Range: 420  Average: 390
+      8 => 250..700,   # Range: 450  Average: 475
+      9 => 300..800,   # Range: 500  Average: 550
+      10 => 600..1100, # Range: 500  Average: 850
     }
     @gold_range = nil # We will populate this based on monster level
   end
@@ -32,7 +32,7 @@ class LootGenerator
     @loot_table = Item.where(
       ':classification = ANY(dropped_by_classification) AND :level >= dropped_by_level',
       classification: monster_classification,
-      level: monster_level
+      level: monster_level,
     )
     @gold_range = @gold_ranges[monster_level]
   end

@@ -32,7 +32,7 @@ Naming/PredicateName:
     - def_node_search
 
 Style/AccessorGrouping:
-  Exclude:
+  Enabled: true
 
 Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: consistent_comma
@@ -57,6 +57,56 @@ Layout/EndOfLine:
 
 Layout/ClassStructure:
   Enabled: true
+  Categories:
+    module_inclusion:
+      - include
+      - prepend
+      - extend
+    associations:
+      - belongs_to
+      - has_one
+      - has_many
+      - has_and_belongs_to_many
+    enums:
+      - enum
+    validations:
+      - validates
+      - validate
+    callbacks:
+      - before_validation
+      - after_validation
+      - before_save
+      - around_save
+      - after_save
+      - before_create
+      - around_create
+      - after_create
+      - before_update
+      - around_update
+      - after_update
+      - before_destroy
+      - around_destroy
+      - after_destroy
+      - after_commit
+      - after_rollback
+    scopes:
+      - scope
+    constants:
+      - constant
+    class_methods:
+      - def self.method_name
+    instance_methods:
+      - def method_name
+  ExpectedOrder:
+    - module_inclusion
+    - constants
+    - associations
+    - enums
+    - validations
+    - callbacks
+    - scopes
+    - class_methods
+    - instance_methods
 
 Layout/RedundantLineBreak:
   Enabled: false
@@ -205,7 +255,7 @@ Style/OptionalBooleanParameter:
   Enabled: false
 
 Style/ClassAndModuleChildren:
-  Enabled: false
+  Enabled: true
 
 Rails/Output:
   Enabled: false

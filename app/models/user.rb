@@ -1,32 +1,32 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
-  has_one :inventory, dependent: :destroy
-  has_one :base, class_name: 'RealmLocation', dependent: :destroy
-  has_many :dungeons, inverse_of: :defeated_by, foreign_key: 'defeated_by_id', dependent: :nullify
-
   MAX_XP = 1_000_000
   BASE_ATTACK = 10
   BASE_DEFENSE = 10
   ACHIEVEMENTS = %w[].freeze
 
-  serialize :auth0_user_data, Auth0UserData
+  has_one :inventory, dependent: :destroy
+  has_one :base, class_name: 'RealmLocation', dependent: :destroy
+  has_many :dungeons, inverse_of: :defeated_by, foreign_key: 'defeated_by_id', dependent: :nullify
 
-  # Create inventory and grant starting equipment to new players
-  after_create { self.inventory = Inventory.create!(user: self) }
-  after_create :give_starting_equipment
+  serialize :auth0_user_data, Auth0UserData
 
   validates :auth0_user_id, presence: true, uniqueness: true
   validate :valid_auth0_user_data
   validate :achievements_are_valid
   validate :access_token_expires
 
+  # Create inventory and grant starting equipment to new players
+  after_create { self.inventory = Inventory.create!(user: self) }
+  after_create :give_starting_equipment
+
   delegate :gold, to: :inventory
   delegate :inventory_items, to: :inventory
   delegate :email, to: :auth0_user_data
 
-  def self.total_xp_needed_for_level(l)
-    ((10 * (l - 1))**2) + ((l - 1) * 100)
+  def self.total_xp_needed_for_level(level)
+    ((10 * (level - 1))**2) + ((level - 1) * 100)
   end
 
   def self.find_by_access_token(access_token)
@@ -203,7 +203,7 @@ class User < ApplicationRecord
       prev_level: prev_level,
       current_level: level,
       level_diff: level - prev_level,
-      level_changed: level != prev_level
+      level_changed: level != prev_level,
     }
   end
 

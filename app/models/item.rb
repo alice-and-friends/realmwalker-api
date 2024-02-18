@@ -2,13 +2,13 @@
 
 class Item < ApplicationRecord
   self.inheritance_column = nil
+  ITEM_TYPES = %w[amulet armor helmet ring shield weapon valuable creature_product].freeze
+  EQUIPMENT_TYPES = %w[amulet armor helmet ring shield weapon].freeze
+  RARITIES = %w[always common uncommon rare epic legendary].freeze
 
   has_many :trade_offers, dependent: :destroy
   has_many :inventory_items, dependent: :destroy
 
-  ITEM_TYPES = %w[amulet armor helmet ring shield weapon valuable creature_product].freeze
-  EQUIPMENT_TYPES = %w[amulet armor helmet ring shield weapon].freeze
-  RARITIES = %w[always common uncommon rare epic legendary].freeze
   validates :type, presence: true, inclusion: { in: ITEM_TYPES }
   validates :rarity, presence: true, inclusion: { in: RARITIES }
   validate :weapons_can_be_two_handed

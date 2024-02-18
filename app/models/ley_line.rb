@@ -3,8 +3,8 @@
 class LeyLine < RealmLocation
   # enum status: { active: 1, expired: 0 }
   # store :properties, accessors: [ :level, :defeated_at, :defeated_by ], coder: JSON
-  before_validation :set_region_and_coordinates!, on: :create
   validate :minimum_distance
+  before_validation :set_region_and_coordinates!, on: :create
 
   def name
     'Ley line'
