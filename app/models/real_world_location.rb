@@ -3,15 +3,12 @@
 class RealWorldLocation < ApplicationRecord
   include ComfyCoordinates
   self.inheritance_column = nil
-  # validates :name, presence: true
   validates :type, presence: true # TODO: Should have a validator
   validates :ext_id, uniqueness: true, allow_nil: true
   validate :minimum_distance
   before_validation :set_latitude_and_longitude!, on: :create
 
-  scope :free, -> {
-    where.not(id: RealmLocation.select(:real_world_location_id))
-  }
+  scope :free, -> { where.not(id: RealmLocation.select(:real_world_location_id)) }
   # scope :for_npc, -> { where(type: 'npc') }
   scope :for_dungeon, -> { where(type: 'unassigned') }
 
@@ -29,7 +26,7 @@ class RealWorldLocation < ApplicationRecord
   def minimum_distance
     throw('Coordinates blank') if coordinates.blank?
 
-    point = "ST_GeographyFromText('POINT(#{coordinates.lon} #{coordinates.lat})')"
+    point = "ST_GeographyFromText('POINT(#{coordinates.longitude} #{coordinates.latitude})')"
     distance_query = Arel.sql("ST_Distance(coordinates::geography, #{point}) <= 40.0")
 
     exists_query = RealWorldLocation.where(region: region)
