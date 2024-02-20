@@ -1,0 +1,402 @@
+ext_id,coordinates,tags
+node/625056,42.5330014 1.5784228,bus:yes;highway:bus_stop;public_transport:stop_position
+node/51404642,42.5073157 1.5280457,bus:yes;highway:bus_stop;public_transport:stop_position
+node/51408872,42.5143731 1.5488713,name:Mirador Coll de Jou;tourism:viewpoint
+node/53275640,42.5479837 1.5907555,name:Toll Bullidor;name:ca:Toll Bullidor;tourism:attraction;waterway:waterfall
+node/258356188,42.5370251 1.490656,leisure:sports_centre;name:Vallnord: Sector Pal;name:ca:Vallnord: Sector Pal;sport:skiing
+node/258356379,42.5736172 1.4707472,leisure:sports_centre;name:Vallnord: Sector Arinsal;name:ca:Vallnord: Sector Arinsal;sport:skiing
+node/258357981,42.6313913 1.5003889,leisure:sports_centre;name:Vallnord: Sector Arcalís;name:ca:Vallnord: Sector Arcalís;sport:skiing
+node/262472865,42.5549682 1.5722207,name:Coll d'Ordino;name:ca:Coll d'Ordino;tourism:viewpoint
+node/262473157,42.5690931 1.5877545,artist_name:Jorge Dubon;artwork_type:totem_pole;name:Estructures Autogeneradores;tourism:artwork
+node/268096174,42.5684921 1.4896011,created_by:Potlatch 0.9c;name:Hotel Xalet Besoli;tourism:hotel;wikidata:Q111877849
+node/271939031,42.57958 1.6400616,addr:city:Ransol;amenity:fuel;brand:BP;brand:wikidata:Q152057;brand:wikipedia:en:BP;name:BP;operator:BP
+node/278752636,42.5776839 1.6506788,created_by:Potlatch 0.9c;name:Hotel Nordic;tourism:hotel
+node/281694408,42.5558367 1.5352907,addr:city:Ordino;addr:postcode:AD300;addr:street:Carrer del Camp de la Tanada;dog:allowed;email:hotelcoma@hotelcoma.com;internet_access:wlan;internet_access:fee:no;name:Hotel la Coma;phone:+376 736 100;tourism:hotel;website:https://hotelcoma.com/
+node/283680492,42.5569178 1.5347739,amenity:arts_centre;created_by:Potlatch 0.10b;name:Auditori Nacional d'Andorra;name:ca:Auditori Nacional d'Andorra;wikidata:Q17587283;wikipedia:ca:Auditori Nacional d'Andorra
+node/292503717,42.5466649 1.7306629,amenity:fuel;brand:Gasopas;operator:Gasopas
+node/442881217,42.5476038 1.513549,addr:city:La Massana;addr:housenumber:1;addr:postcode:AD400;addr:street:Avinguda del Ravell;internet_access:wlan;internet_access:fee:customers;name:Hotel Magic Ski;phone:+376 734900;rooms:84;stars:4;tourism:hotel;website:https://www.hotelmagicski.com/;wikidata:Q111877841
+node/442881670,42.5470493 1.5137876,name:Hotel Font;tourism:hotel;wikidata:Q111112016
+node/442881710,42.5471619 1.5149412,addr:city:La Massana;addr:housenumber:7;addr:postcode:AD400;addr:street:Avinguda el Travès;internet_access:wlan;internet_access:fee:customers;name:Hotel Magic;phone:+376 735900;rooms:108;stars:4;tourism:hotel;website:https://www.hotelmagicmassana.com/;wikidata:Q111412168
+node/442881842,42.5426353 1.5170824,name:Hotel Marco Polo;phone:+376 738 363;rooms:128;stars:3;tourism:hotel;website:https://www.hotelmarcopolo.com/;wikidata:Q111877833
+node/442882272,42.5366401 1.5167992,name:Hotel Burna;tourism:hotel
+node/442882581,42.543523 1.5228025,addr:city:L’Aldosa;addr:postcode:AD400;name:Residential de l'Aldosa;tourism:hotel
+node/470343766,42.589862 1.517808,tourism:viewpoint
+node/522788283,42.5771889 1.4797788,bus:yes;highway:bus_stop;public_transport:platform
+node/529940889,42.5562347 1.5367648,amenity:school
+node/590463656,42.5714552 1.4858474,name:Hotel Solana;tourism:hotel
+node/590463661,42.5742341 1.4830294,"addr:street:Prat Del Verdú, Carretera General D'Arinsal, AD400 Arinsal, Andorra;name:Hotel Xalet Verdu;phone:+376 737 140;tourism:hotel;website:https://xaletverdu.com;wikidata:Q111412178"
+node/590463663,42.577688 1.4788261,name:Hotel Yomo Patagonia;phone:00376882000;tourism:hotel;website:https://www.yomohotels.com/en/hotels/patagonia/
+node/590463669,42.5732923 1.4831734,name:Hotel Ayma;tourism:hotel
+node/590538926,42.5737679 1.4826865,name:Hotel Arinsal;tourism:hotel;wikidata:Q111877853
+node/663953196,42.6324748 1.4958015,"artist_name:Mauro Staccioli;inscription:ca:Simposi d'esculture amb motiu del 25è aniversari de la Caixa Andorrana de Seguretat Social.;inscription:ca:2:La circumferència, símbol de la perfecció i de l'eternitat, és, en aquest espai, una finestra al paisatge que l'envolta, que juga amb la llei de la gravetat en estar col-locada com si estigès apunt d’iniciar el descens per la vall.;inscription:en:This work was created at the sculpture symposium that was held to commemorate the 25th anniversary of the Andorran Social Security.;inscription:en:2:This, ring a symbol of perfection and eternity, forms a window on the surrounding landscape in this place. Positioned as if it were about to roll down the valley, it seems to play with the law of gravity.;inscription:es:Simposio de esculturas con motivo del 25 aniversario de la Caja Andorrana de Seguridad Social.;inscription:es:2:La circunferencia, símbolo da la perfección y de la eternidad, es, en este espacio, una ventana al paisaje que la rodea, que juega con la ley de la gravedad al estar colocada como si fuera a iniciar el descenso por el valle.;inscription:fr:Symposium de sculpture à l'occasion du 25e anniversaire de la Caisse Andorrane Sécurité Sociale.;inscription:fr:2:La circonférence, symbole de la perfection et de l’éternité, constitue en ces lieux une fenêtre sur le paysages qui l’entoure;elle joue avec la loi de la pesanteur et semble, vu sa position, prête à rouler en direction de la vallée.;name:l'Anella d'Ordino;start_date:1991;tourism:artwork"
+node/690708508,42.5435351 1.7345643,amenity:school;name:Centre de Autoaprenentatge
+node/690708523,42.5429738 1.7320093,amenity:bank;atm:yes;operator:AndBanc
+node/690708533,42.5393546 1.7333881,addr:city:Pas de La Casa;addr:housenumber:39;addr:postcode:AD200;addr:street:Avinguda d'Encamp;internet_access:wlan;name:Apartaments Frontera Blanca;name:ca:Apartaments Frontera Blanca;stars:2;tourism:hotel
+node/690708538,42.5425731 1.731984,name:Màgic Pas;name:ca:Màgic Pas;stars:4;tourism:hotel
+node/820954183,42.576807 1.666509,addr:city:Soldeu;addr:postcode:AD100;name:Hotel Bruxelles;tourism:hotel
+node/895601487,42.5174397 1.5684365,highway:bus_stop;shelter:no
+node/899526058,42.6334407 1.5114513,"description:2021-09 : Solide abris en pierre . Place pour 4-5 matelas sur une réhausse en béton. Emplacement pour feu. Bancs et table. Proche rivière.  Bémol : Très sombre, pas super propre et route à proximité.;ele:1838;fireplace:yes;name:Cabana de la Pleta del Castellar;tourism:wilderness_hut;wikidata:Q3649144;wikipedia:ca:Cabana del Castellar"
+node/1051444040,42.5784829 1.6576396,name:Hotel Euro Esqui;tourism:hotel
+node/1051748851,42.58032 1.6492304,addr:city:El Tarter;addr:postcode:AD100;name:Hotel Del Clos;tourism:hotel
+node/1386872680,42.5220951 1.5595241,amenity:fuel;brand:BP;brand:wikidata:Q152057;brand:wikipedia:en:BP;name:BP;operator:BP
+node/1386872681,42.5216523 1.5594823,amenity:fuel;name:Cepsa
+node/1397132076,42.5084573 1.5370477,addr:housenumber:93;addr:street:Avinguda Carlemany;name:Les Closes;phone:828393;tourism:hotel;website:https://www.lescloses.com/;wikidata:Q111412171
+node/1407160092,42.45736 1.4868083,addr:city:Sant Julià de Lòria;addr:postcode:AD600;amenity:fuel;brand:Total;brand:wikidata:Q154037;fuel:adblue:yes;fuel:diesel:yes;fuel:diesel_B:yes;fuel:octane_95:yes;fuel:octane_98:yes;name:Sant Eloi;name:ca:Sant Eloi;operator:Sant Eloi
+node/1498852269,42.4582683 1.4875781,addr:postcode:600;addr:street:Carretera d'Espanya;email:hotel@santeloi.com;internet_access:wlan;name:Hotel Sant Eloi;phone:+34 74 31 00;stars:3;tourism:hotel;website:https://www.hotelsanteloi.com/;wikidata:Q111877864
+node/1568150075,42.5793721 1.6529451,name:Chalet Casale;tourism:hotel
+node/1607001077,42.5818347 1.6619984,amenity:fuel;brand:Esso;brand:wikidata:Q867662;brand:wikipedia:en:Esso;name:Esso
+node/1665069339,42.5352596 1.5881654,amenity:fountain
+node/1855341013,42.5392959 1.7323765,man_made:tower
+node/1870046288,42.4766272 1.4902601,bus:yes;highway:bus_stop;public_transport:stop_position
+node/1889183693,42.4960473 1.4966361,tourism:picnic_site
+node/1889183702,42.6124803 1.6383555,tourism:picnic_site
+node/1889220955,42.5727917 1.6140581,tourism:viewpoint
+node/1922592322,42.4536015 1.4873853,addr:city:Sant Julià de Lòria;addr:postcode:AD600;addr:street:Carretera d'Espanya;amenity:fuel;brand:Total;brand:wikidata:Q154037;fuel:adblue:yes;fuel:diesel:yes;fuel:diesel_B:yes;fuel:octane_95:yes;fuel:octane_98:yes;name:Riberola;name:ca:Riberola;nohousenumber:yes;operator:Sant Eloi
+node/1922592407,42.4551036 1.4863617,amenity:fuel
+node/1922592536,42.4529563 1.4867788,amenity:fuel;brand:Cepsa
+node/1922608172,42.5401526 1.5916872,tourism:viewpoint
+node/1934470860,42.532352 1.5747102,name:Onix;tourism:hotel
+node/1949792885,42.5128361 1.5505895,brand:Ibis;brand:wikidata:Q920166;brand:wikipedia:en:Ibis (hotel);internet_access:yes;internet_access:fee:no;name:Hotel Tropical;stars:4;tourism:hotel
+node/2050272761,42.468551 1.4924823,amenity:fuel
+node/2050370613,42.4694689 1.492671,addr:city:Sant Julià de Lòria;name:Hotel Imperial;operator:Atiram;tourism:hotel
+node/2050370614,42.4682066 1.4934703,tourism:hotel
+node/2050445453,42.4636372 1.4908332,amenity:bank
+node/2050466660,42.4644304 1.4898845,addr:city:Sant Julià de Lòria;amenity:bank;name:Banc Sabadell;name:ca:Banc Sabadell
+node/2050563580,42.5110262 1.5343232,amenity:bank
+node/2287024653,42.5669913 1.6008296,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:Total (entreprise);name:Total;name:ca:Total
+node/2294035697,42.5083285 1.5450527,amenity:fuel;brand:Repsol;brand:wikidata:Q174747;brand:wikipedia:es:Repsol;name:Repsol;name:ca:Repsol;name:es:Repsol
+node/2345240113,42.5083071 1.52245,addr:city:Andorra la Vella;addr:country:AD;addr:housenumber:7;addr:postcode:AD500;addr:street:Carrer La Llacuna;email:hotelfestabrava@andorra.ad;fax:+376 860 266;internet_access:wlan;name:Festa Brava;phone:+376 820 741;source:Bing;tourism:hotel;website:https://www-hotel-festabrava.com
+node/2391685812,42.5094099 1.5700532,tourism:picnic_site
+node/2391685813,42.511512 1.5686758,tourism:picnic_site
+node/2402829884,42.5081265 1.5342843,addr:housenumber:5;addr:street:Carrer de la Unió;name:Hotel Exe Princep;stars:4;tourism:hotel;website:https://www.hotelexeprincep.com/;wikidata:Q111412172
+node/2411240030,42.5656692 1.5955067,leisure:park;name:Bona Estada;name:ca:Bona Estada
+node/2425449897,42.4745277 1.4522443,historic:monument;name:Santuari de la Mare de Déu de Canòlich
+node/2425453193,42.5552313 1.5403763,name:Hotel Babot;name:ca:Hotel Babot;tourism:hotel
+node/2425472714,42.5038062 1.5139727,amenity:place_of_worship;name:Hotel Bellpí
+node/2430777412,42.5088198 1.5326843,name:Pitiusa;tourism:hotel
+node/2482295087,42.5399678 1.7195088,amenity:fuel;name:Elf;name:ca:Elf
+node/2482295089,42.5403278 1.7205645,addr:postcode:AD200;addr:street:Port d'Envalira;bar:yes;ele:2408;email:reception@hotelpicmaia.com;image:https://www.hotelpicmaia.com/uploads/galeriahoteles/1-fachada-2.jpg;internet_access:wlan;internet_access:fee:no;name:PicMaia Mountain Hotel;phone:+376856789;reservation:yes;rooms:85;stars:2;tourism:hotel;website:https://www.hotelpicmaia.com/;wikidata:Q111877865
+node/2482295114,42.5394951 1.7207305,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:Total (entreprise);name:Total;name:ca:Total
+node/2671660696,42.5659363 1.6012371,leisure:sports_centre;name:Grandvalira (Sector de Canillo);name:ca:Grandvalira (Sector de Canillo);sport:skiing
+node/2671662458,42.5783067 1.6461507,leisure:sports_centre;name:Grandvalira (Sector del Tarter);name:ca:Grandvalira (Sector del Tarter);sport:skiing
+node/2671666127,42.5758026 1.6680948,leisure:sports_centre;name:Grandvalira (Sector de Soldeu);name:ca:Grandvalira (Sector de Soldeu);sport:skiing
+node/2694361901,42.581357 1.6387352,name:La Dorada El Tarter;tourism:hotel
+node/2752720010,42.5080749 1.524806,addr:city:Andorra la Vella;addr:housenumber:23;addr:postcode:AD500;addr:street:Avinguda Meritxell;name:Eurostars Andorra;old_name:Hotel Carlton Plaza;phone:+376886800;rooms:66;stars:5;tourism:hotel;website:https://www.eurostarshotels.com/eurostars-andorra.html
+node/2797792644,42.5334885 1.5847079,addr:city:Encamp;addr:street:nou vial;amenity:fuel;brand:Repsol;brand:wikidata:Q174747;name:Repsol;name:ca:Repsol;name:en:Repsol;name:fr:Repsol
+node/2879956293,42.5568685 1.5323996,tourism:viewpoint
+node/2935863297,42.5084353 1.5279015,addr:city:Andorra la Vella;addr:housenumber:68;addr:postcode:AD500;addr:street:Avinguda Meritxell;name:Sàlvia d’or;phone:+376 827200;tourism:hotel;website:http://www.salviahotel.com
+node/2966663488,42.5459855 1.5210326,addr:city:La Massana;addr:postcode:AD400;designation:historical iron manufacture;name:Iron Museum;tourism:museum
+node/2966704245,42.5457229 1.5197802,amenity:school;name:Centre d'autoaprenentatge de llengua Catalá
+node/2967342489,42.544964 1.5145444,amenity:kindergarten
+node/2975990676,42.5437051 1.5162739,addr:city:La Massana;addr:postcode:AD400;addr:street:Avinguda Sant Antoni;amenity:bank;atm:yes;name:Crédit Andorra
+node/3076247109,42.5092997 1.5373401,"bus:yes;highway:bus_stop;name:707 Arnaldeta de Caboet;network:L2, L4;public_transport:platform"
+node/3141318195,42.5160833 1.5732928,access:yes;climbing:crag;climbing:grade:french:max:6b+;climbing:grade:french:min:4;name:Agulles d'Engolasters;rock:Granite;sport:climbing;tourism:attraction;url:https://visitandorra.com/es/naturaleza/zona-de-escalada-agulles-d-engolasters/
+node/3143668913,42.4789813 1.4886345,name:Via ferrada Tossal Gran d'Aixovall;sport:climbing;tourism:attraction
+node/3265137527,42.5051866 1.5257713,addr:city:Andorra la Vella;addr:postcode:AD500;addr:street:Avinguda de Tarragona;amenity:courthouse;building:house
+node/3268159305,42.5332143 1.5195324,bus:yes;highway:bus_stop;public_transport:stop_position
+node/3268159479,42.5377317 1.5198148,bus:yes;highway:bus_stop;public_transport:stop_position
+node/3459406772,42.4651924 1.4902101,amenity:library;wheelchair:yes
+node/3613186581,42.4465191 1.4945765,name:Hotel Coma Bella;tourism:hotel
+node/3631092630,42.5331626 1.7333862,amenity:fountain;name:Font de la Gabatxa
+node/3653139646,42.5740441 1.5185324,name:Hotel Sucara;tourism:hotel
+node/3699575429,42.5814547 1.6381512,amenity:fountain
+node/3722619530,42.5386342 1.5915399,tourism:viewpoint
+node/3870463570,42.5637772 1.5885176,name:Via ferrada Canal del Grau;sport:climbing;tourism:attraction
+node/3870497790,42.509777 1.5409086,name:Cosmos;tourism:hotel
+node/3870497793,42.5102806 1.5407736,addr:housenumber:25;addr:street:Avinguda de les Escoles;name:Metropolis;stars:4;tourism:hotel;website:https://www.hotel-metropolis.com/;wikidata:Q112017255
+node/3874336518,42.6104255 1.5385308,bus:yes;highway:bus_stop;name:358 Les Salines;network:L6;public_transport:platform
+node/3885839702,42.5838875 1.6634033,bin:no;bus:yes;highway:bus_stop;mapillary:1860493650781497;name:164 Val d'Incles;network:L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform;shelter:no;survey:date:2018-08-06
+node/3902532110,42.5791294 1.6594462,leisure:sports_centre;name:Estació esquí Parador Canaro;sport:skiing;website:http://www.skiparadorcanaro.com
+node/3902532111,42.5795232 1.659224,email:info@paradorcanaro.com;name:Hotel Parador Canaro;phone:(+376) 751 150;tourism:hotel;website:http://www.paradorcanaro.com
+node/3904453170,42.5592674 1.5839049,name:Cascada del Riu d'Urina;tourism:attraction;waterway:waterfall
+node/3914969217,42.5507742 1.5260508,tourism:hotel
+node/3928793752,42.5676031 1.60151,name:Roc del Castell;tourism:hotel
+node/3940604187,42.5593863 1.6862618,name:Confort;tourism:hotel
+node/3956271262,42.4807561 1.5319044,ele:2146;name:Collada de la Caülla;name:ca:Collada de la Caulla;natural:saddle;tourism:attraction
+node/3956309393,42.5020889 1.528456,tourism:viewpoint
+node/3965381764,42.5421978 1.5914215,amenity:fuel;brand:Esso;brand:wikidata:Q867662;brand:wikipedia:en:Esso;name:Esso
+node/4073381656,42.5301865 1.5991447,highway:bus_stop;name:les Pardines;name:ca:les Pardines
+node/4073385731,42.5343294 1.6032783,amenity:place_of_worship;building:church;denomination:catholic;name:Capella de Sant Jaume dels Cortals;name:ca:Capella de Sant Jaume dels Cortals;religion:christian
+node/4078443919,42.5343014 1.6022825,name:Mirador del Bosc de les Allaus;tourism:viewpoint
+node/4155758896,42.5068772 1.5210629,name:Barric Antic Hostel & Pub;tourism:hostel
+node/4173227322,42.4889769 1.5157441,name:Mirador del Roc de Palomera;tourism:viewpoint
+node/4235152216,42.4953956 1.4955052,name:Via ferrada de Sant Vicenç d'Enclar;sport:climbing;tourism:attraction
+node/4266571030,42.4467898 1.4650383,historic:monument;name:Ermita Mare de Deu
+node/4314606234,42.4854358 1.4865473,tourism:viewpoint
+node/4351647294,42.5600725 1.6851718,bus:yes;highway:bus_stop;mapillary:166184102097085;name:182 Bordes d'Envalira;network:L4;operator:Cooperativa Interurbana Andorrana;pole:yes;public_transport:platform;shelter:no;survey:date:2018-08-06
+node/4351647296,42.5645916 1.6795285,bench:no;bus:yes;highway:bus_stop;name:175 Peretol;network:L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform;shelter:no
+node/4351652877,42.5801965 1.6641271,bus:yes;highway:bus_stop;name:166 Roc de Sant Miquel;network:L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform
+node/4351657189,42.5826864 1.6626478,bench:yes;bin:yes;bus:yes;highway:bus_stop;name:163 Val d'Incles;network:L4;public_transport:platform;shelter:yes
+node/4351657190,42.5800192 1.645763,bus:yes;highway:bus_stop;name:146 Cruïlla de Ransol;network:L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform
+node/4351657191,42.5794959 1.6428394,bus:yes;highway:bus_stop;name:143 La Costa;network:L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform
+node/4351657192,42.5777114 1.6287283,bench:yes;bus:yes;highway:bus_stop;mapillary:529453198057419;name:131 La Creu de l'Aldosa;network:L4;public_transport:platform;survey:date:2018-08-06
+node/4351660831,42.5708328 1.6069783,bus:yes;highway:bus_stop;name:119 St. Joan de Caselles;network:L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform
+node/4351660832,42.5697069 1.6048433,bin:no;bus:yes;highway:bus_stop;image:https://storage2.openstreetcam.org/files/photo/2016/11/10/lth/27054_e71d3_582461c5cd0d6.jpg;name:117 Aina;network:L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform;survey:date:2016-11-10
+node/4351669595,42.5509405 1.5911747,bench:yes;bin:no;bus:yes;highway:bus_stop;name:101 Meritxell;network:L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform;shelter:yes
+node/4351669596,42.5356934 1.5886347,bus:yes;highway:bus_stop;name:259 Cruïlla dels Cortals;operator:Cooperativa Interurbana Andorrana;public_transport:platform
+node/4351669604,42.5321614 1.5739093,"bus:yes;highway:bus_stop;name:208 Riu Blanc;network:L2, L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform"
+node/4351669605,42.5318353 1.5736438,"bus:yes;highway:bus_stop;name:207 Riu Blanc;network:L2, L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform"
+node/4351674613,42.5121016 1.5503756,"bus:yes;description:L2-L3-L4-ee;highway:bus_stop;name:743 Cruïlla d'Engolasters;network:L2, L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform"
+node/4351674615,42.5108372 1.5484187,bus:yes;description:ee;highway:bus_stop;name:746;operator:Cooperativa Interurbana Andorrana;public_transport:platform
+node/4351674620,42.5094362 1.5449925,"bus:yes;highway:bus_stop;name:740 La Tosca;network:LC, L2, L4;operator:Cooperativa Interurbana Andorrana;public_transport:platform"
+node/4351684442,42.5082584 1.5517637,bus:yes;highway:bus_stop;operator:bus-engolasters;public_transport:platform
+node/4351684444,42.512323 1.5594777,highway:bus_stop;operator:bus-engolasters
+node/4351684445,42.5118287 1.5604165,highway:bus_stop;operator:bus-engolasters
+node/4351684449,42.5056053 1.5475084,bus:yes;highway:bus_stop;operator:bus-engolasters;public_transport:platform
+node/4351684450,42.506066 1.5458749,bus:yes;highway:bus_stop;operator:bus-engolasters;public_transport:platform
+node/4351684451,42.5048263 1.5398307,tourism:viewpoint
+node/4427697891,42.4849395 1.4923252,addr:street:Carretera de la Margineda;amenity:fuel;brand:Repsol;brand:wikidata:Q174747;brand:wikipedia:es:Repsol;name:Repsol;name:ca:Repsol;opening_hours:24/7
+node/4438033625,42.565011 1.5253547,"addr:street:Carretera del Serrat Km 3 AD 300 Ordino;description:Small Campsite with a Restaurant, Pool and a play ground for kids. Wifi and shower use are for free. Suitable for tend and trailer.;internet_access:yes;internet_access:fee:no;name:Camping Borda D'Ansalonga;phone:+ 376850 374;tourism:camp_site;website:https://www.campingbordaansalonga.com"
+node/4440275389,42.5107094 1.5471363,addr:street:Carretera d'Engolasters;internet_access:wlan;name:Hotel Roc de Caldes;phone:+376874555;tourism:hotel;website:http://www.rocdecaldes.com
+node/4456947590,42.5335165 1.58582,amenity:fuel;brand:BP;brand:wikidata:Q152057;brand:wikipedia:en:BP;name:BP
+node/4456958789,42.5354637 1.5787548,amenity:school
+node/4456958889,42.5319048 1.5710048,amenity:school
+node/4516461789,42.4896458 1.6029453,name:Vall del Madriu-Perafita-Claror;name:ca:Vall del Madriu-Perafita-Claror;name:en:Madriu-Perafita-Claror Valley;natural:valley;tourism:attraction;wikidata:Q332800;wikipedia:en:Madriu-Perafita-Claror Valley
+node/4526118072,42.5600751 1.5897847,bus:yes;public_transport:stop_position
+node/4526118074,42.5598206 1.5892629,bin:no;bus:yes;highway:bus_stop;mapillary:484501992979589;name:104 Mereig;network:L4;public_transport:platform;survey:date:2017-12-21
+node/4665692090,42.5080476 1.5288909,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/4677742610,42.4975526 1.5034689,addr:city:Santa Coloma;addr:street:Avinguda de Santa Coloma;amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:Total (entreprise);compressed_air:yes;name:Total;name:ca:Total;opening_hours:Mo-Su 07:00-23:00+
+node/4686884306,42.4761573 1.489405,amenity:school;name:Centre de Formació d'adults;name:ca:Centre de Formació d'adults
+node/4689658601,42.4979723 1.5038249,addr:city:Santa Coloma;addr:housenumber:18;addr:street:Avinguda de Santa Coloma;amenity:fuel;name:Estació Juli;name:ca:Estació Juli;opening_hours:24/7
+node/4706548691,42.5074287 1.5212053,bus:yes;highway:bus_stop;name:5001 Princep Benlloch;name:ca:5001 Príncep Benlloch;public_transport:platform
+node/4715569992,42.5270457 1.5676574,"bus:yes;highway:bus_stop;name:214 Valira Nova;network:L2, L4;public_transport:platform"
+node/4736149721,42.5952021 1.5263151,addr:street:Carretera General 3;name:Fijat;name:ca:Fijat;name:en:Fijat;name:es:Fijat;tourism:hotel
+node/4744532621,42.4972566 1.5020632,addr:street:Avinguda de Santa Coloma;amenity:fuel;name:Elan
+node/4788617821,42.5300473 1.5198168,"bin:no;bus:yes;highway:bus_stop;mapillary:494874815044539;name:401 L'Obac de Sispony;network:L5, L6;pole:yes;public_transport:platform;shelter:no;survey:date:2017-10-17"
+node/4839530350,42.5089653 1.5645527,name:Merendero de La Font de la Closa;tourism:picnic_site
+node/4882848021,42.4978786 1.5617196,description:UNESCO Weltkulturerbe;name:Vall del Madriu Perafita Claror;name:en:Madriu Perafita Claror Valley;tourism:attraction
+node/4890701727,42.5060253 1.5310576,addr:city:Andorra la Vella;amenity:bank;name:Andbank;name:ca:Andbank
+node/4899662921,42.6102752 1.6714618,name:Cascade;name:en:Waterfall;name:fr:Cascade;tourism:attraction
+node/4927139325,42.4588333 1.4880615,amenity:fuel;brand:BP;brand:wikidata:Q152057;name:BP
+node/4927139521,42.4601162 1.489089,amenity:fuel;brand:Cepsa;name:Cepsa;opening_hours:24/7
+node/4955512821,42.5602964 1.684298,amenity:fuel;name:Cepsa;name:ca:Cepsa
+node/4984739289,42.5361506 1.5822396,addr:street:Avinguda de François Mitterrand;amenity:bank;name:MoraBanc
+node/4984743228,42.5366611 1.5816458,amenity:school
+node/5027210670,42.514878 1.5317383,bus:yes;highway:bus_stop;public_transport:stop_position
+node/5288596522,42.5419951 1.5177813,"bench:no;bus:yes;highway:bus_stop;name:409 Les Costes;network:L5, L6;public_transport:platform;shelter:no"
+node/5288596722,42.5399336 1.5192026,"bench:yes;bus:yes;highway:bus_stop;name:408 La Cabanota;network:L5, L6;public_transport:platform;shelter:yes"
+node/5292726241,42.4363298 1.4744247,bus:yes;highway:bus_stop;public_transport:stop_position
+node/5292765259,42.4716755 1.4933601,bus:yes;highway:bus_stop;public_transport:stop_position
+node/5333957821,42.5051334 1.5263434,bus:yes;highway:bus_stop;mapillary:174699911212603;name:5419 Els Marginets;network:Exprés;public_transport:platform;shelter:yes;survey:date:2017-10-16
+node/5333957822,42.5020826 1.5138007,bench:no;bin:yes;bus:yes;highway:bus_stop;lit:yes;mapillary:958646284883919;name:5413 Estadi communal;network:Exprés;public_transport:platform;shelter:yes;survey:date:2017-10-16
+node/5333957921,42.5041614 1.5208681,bus:yes;highway:bus_stop;name:5556 Estació Nacional d'Autobusos;name:es:5556 Estación Nacional de Autobuses;network:Exprés;public_transport:platform
+node/5520638323,42.4962755 1.5003453,amenity:place_of_worship;name:Comunitat Cristiana d’Andorra
+node/5578089186,42.5064192 1.5184161,name:Hotel Sant Jordi;tourism:hotel
+node/5604155027,42.5594976 1.5318718,bus:yes;highway:bus_stop;name:325 Les Moles;network:L6;public_transport:platform
+node/5604534493,42.5759078 1.5186199,bus:yes;highway:bus_stop;name:345 Plaça de la Cortinada;network:L6;public_transport:platform
+node/5604534494,42.604385 1.536117,bus:yes;highway:bus_stop;name:376 Els Teiers;network:L6;public_transport:platform
+node/5604534516,42.5995749 1.5318663,bus:yes;highway:bus_stop;name:371 Les Mines de Llorts;network:L6;public_transport:platform
+node/5604534517,42.5892772 1.5236628,bus:yes;highway:bus_stop;name:377 Xalet el Cresp;network:L6;public_transport:platform
+node/5604534518,42.5778217 1.5176706,bus:yes;highway:bus_stop;name:339 Mas d'en Soler;network:L6;public_transport:platform
+node/5604534519,42.5615012 1.4963845,bench:yes;bin:yes;highway:bus_stop;lit:yes;name:456 Erts;network:L5;shelter:yes
+node/5604536423,42.6176595 1.5379271,bus:yes;highway:bus_stop;name:380 Aparthotel Rialb;network:L6;public_transport:platform
+node/5604537509,42.5632132 1.5270954,bus:yes;highway:bus_stop;name:322 Cruïlla de Sornàs;network:L6;public_transport:platform
+node/5604537510,42.5718727 1.5198123,bus:yes;highway:bus_stop;name:378 Edifici Eagle;network:L6;public_transport:platform
+node/5604537512,42.5747116 1.5181875,bus:yes;highway:bus_stop;name:343 La Cortinada;network:L6;public_transport:platform
+node/5604537513,42.619968 1.5402552,bus:yes;highway:bus_stop;name:369 Les Sobiranes;network:L6;public_transport:platform
+node/5604537514,42.6159127 1.5382992,bus:yes;highway:bus_stop;name:364 Hostal del Serrat;network:L6;public_transport:platform
+node/5604537515,42.5981412 1.5291595,bus:yes;highway:bus_stop;name:355 Xalets la Closa;network:L6;public_transport:platform
+node/5604537517,42.5801654 1.5189672,bus:yes;highway:bus_stop;name:374 Hotel Cal Daina;network:L6;public_transport:platform
+node/5604537520,42.5455363 1.4747879,bus:yes;highway:bus_stop;name:Pal Pobla;public_transport:platform
+node/5604540162,42.5661227 1.523741,bus:yes;highway:bus_stop;name:324 Càmping Ansalonga;network:L6;public_transport:platform
+node/5604540164,42.5823352 1.5190373,bus:yes;highway:bus_stop;name:348 Cruïlla d'Arans;network:L6;public_transport:platform
+node/5604540166,42.5961086 1.5266718,bus:yes;highway:bus_stop;name:353 Llorts;network:L6;public_transport:platform
+node/5604540167,42.5773209 1.5172262,bus:yes;highway:bus_stop;name:340 Fontblanca;network:L6;public_transport:platform
+node/5604540169,42.55802 1.5048539,bench:no;bin:no;bus:yes;highway:bus_stop;name:543 Prat de la Solana;network:L5;public_transport:platform;shelter:no
+node/5604540170,42.5445004 1.4751792,bus:yes;highway:bus_stop;name:Super Pal;name:ca:Super Pal;public_transport:platform
+node/5604540231,42.5686656 1.5215616,bus:yes;highway:bus_stop;name:331 Pont d'Ansalonga;network:L6;public_transport:platform
+node/5604925706,42.5538355 1.5068749,bench:yes;bin:yes;bus:yes;highway:bus_stop;name:450 Zona Industrial Teixidó;network:L5;public_transport:platform;shelter:yes
+node/5604932892,42.5479162 1.4851407,bench:no;bin:no;highway:bus_stop;name:El Mamo;shelter:no
+node/5688825925,42.5591216 1.5186048,name:Rock;name:en:Rock;name:ru:Скала;tourism:viewpoint
+node/5699737544,42.4348494 1.4938548,name:Mirador Riu Runer (1.500m);name:en:Riu Runer Viewpoint (1.500m);tourism:viewpoint
+node/5706417299,42.4962353 1.5066243,amenity:fuel;brand:CEPSA;name:L'Obac de Santa Coloma;operator:CEPSA
+node/5734220433,42.6228503 1.5532999,artist_name:Pere Moles;artwork_type:sculpture;name:Estripagecs;tourism:artwork
+node/5818585272,42.5913306 1.6690389,name:Càmping públic Font de Ferrosins;opening_hours:15 Jun-15 Sep;phone:+376 324 212;tourism:camp_site;website:www.campingandorra.com
+node/5825699086,42.5087964 1.5409474,amenity:library;name:Llibreria comunal d'Escaldes;name:ca:Llibreria comunal d'Escaldes
+node/5860316486,42.5403886 1.7298659,name:Pierre & Vacances Princesa Pas De La Casa;tourism:hotel
+node/6313157285,42.526526 1.5672983,"bench:yes;bin:yes;highway:bus_stop;name:213 Valira Nova;network:L2, L4;shelter:yes"
+node/6313770871,42.4364276 1.4737277,bench:yes;bin:yes;bus:yes;highway:bus_stop;lit:yes;name:626 Frontera del Riu Runer;public_transport:platform;shelter:yes
+node/6573395912,42.572332 1.4733911,name:Mirador de la Roca de la Sabina;tourism:viewpoint
+node/6586256078,42.5467632 1.5515412,covered:no;drinking_water:yes;fireplace:yes;openfire:no;tourism:picnic_site
+node/6641688791,42.5945425 1.5282218,artist_name:Rachid Kimoune;artwork_type:sculpture;material:stone;name:Família Jordino;tourism:artwork
+node/6641689088,42.5923715 1.5272302,artist_name:Alberto Carneiro;artwork_type:installation;material:stone;name:A casa da terra e do fogo;tourism:artwork
+node/6641689292,42.5919244 1.5269576,artist_name:Guy de Rougemont;artwork_type:sculpture;material:metal;name:L'homme-de-fer-taupe-qui-chemine;tourism:artwork
+node/6641689293,42.5913623 1.5262499,"artist_name:Satoru Sato;artwork_type:installation;material:concrete;name:Terra, ferro, aigua i foc;tourism:artwork"
+node/6642714846,42.5518039 1.4545056,tourism:viewpoint
+node/6657240115,42.5995597 1.5324251,name:Mina de Llorts;tourism:museum
+node/6698440905,42.4374774 1.4914455,addr:city:Juberri;addr:housenumber:42;addr:postcode:AD600;addr:street:Carrer del Bec;addr:unit:Sant Julià de Lòria;leisure:park;name:Jardins de Juberri
+node/6737173173,42.5043187 1.5149609,addr:city:Andorra la Vella;addr:housenumber:49;addr:postcode:AD500;addr:street:Baixada del Molí;internet_access:wlan;internet_access:fee:no;name:Hotel Font del Marge;tourism:hotel
+node/6774364128,42.6035913 1.7118019,historic:memorial;memorial:stone
+node/7022030446,42.6243809 1.5549428,name:Grau de la Llosa;tourism:viewpoint
+node/7256249952,42.5137324 1.5526647,"bus:yes;highway:bus_stop;name:728 Central de FEDA;network:L2, L4;public_transport:platform"
+node/7264167477,42.5727439 1.6153264,bus:yes;highway:bus_stop;name:126 Cascada de les Moles;network:L4;public_transport:platform
+node/7264167478,42.5728842 1.616367,bus:yes;highway:bus_stop;name:125 Cascada de les Moles;network:L4;public_transport:platform
+node/7264181384,42.513905 1.5531259,"bus:yes;highway:bus_stop;name:727 Central de FEDA;network:L2, L4;public_transport:platform"
+node/7264182485,42.5183177 1.5560361,"bus:yes;highway:bus_stop;name:231 Prada Ramonet;network:L2, L4;public_transport:platform"
+node/7264182487,42.5296406 1.5719228,"bus:yes;highway:bus_stop;name:217 Prada de Moles;network:L2, L4;public_transport:platform"
+node/7264464369,42.5746871 1.621423,bus:yes;highway:bus_stop;name:123 La Traba;network:L4;public_transport:platform
+node/7264464371,42.5782992 1.6342627,bus:yes;highway:bus_stop;name:134 L'Aldosa;network:L4;public_transport:platform
+node/7264464372,42.5795613 1.6416898,bus:yes;highway:bus_stop;name:144 La Costa;network:L4;public_transport:platform
+node/7264464376,42.5764843 1.6685561,bus:yes;highway:bus_stop;name:173 Plaça Sant Bartomeu;network:L4;public_transport:platform;shelter:no
+node/7264482178,42.4982242 1.5109589,bus:yes;highway:bus_stop;name:5411 Les Costes;network:Exprés;public_transport:platform
+node/7264482180,42.4935666 1.5005023,bench:yes;bin:yes;bus:yes;highway:bus_stop;name:5407 Pont de Santa Coloma;network:Exprés;public_transport:platform;shelter:yes
+node/7264482183,42.491042 1.4965165,bus:yes;highway:bus_stop;name:5405 Pont Pobladó;network:Exprés;public_transport:platform
+node/7264739193,42.4485938 1.482547,bench:yes;bin:no;bus:yes;highway:bus_stop;lit:yes;name:624 La Portalada;network:L1;public_transport:platform;shelter:no
+node/7264739194,42.4467928 1.4823243,bench:yes;bin:yes;bus:yes;highway:bus_stop;lit:yes;name:603 La Portalada;network:L1;public_transport:platform;shelter:yes
+node/7264739196,42.4919334 1.4962852,bench:no;bus:yes;highway:bus_stop;name:5126 Riu d'Enclar;network:L1;public_transport:platform;shelter:no
+node/7264739203,42.4999485 1.5078026,bus:yes;highway:bus_stop;name:5108 Les Prades;network:L1;public_transport:platform
+node/7264739206,42.5011627 1.5105412,bench:no;bin:yes;bus:yes;highway:bus_stop;lit:yes;name:5107 Gil Torres;network:L1;public_transport:platform;shelter:no
+node/7264739211,42.5114076 1.5359551,"bus:yes;highway:bus_stop;name:722 Esteve Albert;network:L1, L5, L6;public_transport:platform"
+node/7264739217,42.5061586 1.5319993,bus:yes;highway:bus_stop;name:5024 Rotonda Escaler;network:Exprés;public_transport:platform
+node/7267432101,42.5118901 1.5405979,bus:yes;highway:bus_stop;name:733 La Grau;network:LC;public_transport:platform
+node/7267432102,42.5128892 1.5372867,bus:yes;highway:bus_stop;name:731 Hortalets de Guern;network:LC;public_transport:platform
+node/7270120605,42.5251097 1.5205248,"bus:yes;highway:bus_stop;name:425 L'Oratori de Sant Antoni;network:L5, L6;public_transport:platform"
+node/7307264384,42.5493112 1.5235364,bus:yes;highway:bus_stop;name:309 Pont d'Ordino;network:L6;public_transport:platform
+node/7307276723,42.561583 1.4970264,bench:no;bus:yes;highway:bus_stop;name:455 Erts;network:L5;public_transport:platform;shelter:no
+node/7307276724,42.5650125 1.4917424,bus:yes;highway:bus_stop;name:457 El Puiol del Pui;network:L5;public_transport:platform;shelter:yes
+node/7307276725,42.5652495 1.4913401,bench:yes;bus:yes;highway:bus_stop;name:458 El Puiol del Pui;network:L5;public_transport:platform;shelter:yes
+node/7307276728,42.5691332 1.4882395,bench:yes;bin:yes;bus:yes;highway:bus_stop;lit:yes;name:460 Prat de la Mola;network:L5;public_transport:platform;shelter:yes
+node/7307276738,42.5783384 1.4788666,bus:yes;highway:bus_stop;name:458 Aparcament d'Arinsal;network:L5;public_transport:platform
+node/7307457188,42.5540249 1.5287667,bus:yes;highway:bus_stop;name:306 Clota Verda;network:L6;public_transport:platform
+node/7308771133,42.5846318 1.5204062,bus:yes;highway:bus_stop;name:349 Bordes d'Arans;network:L6;public_transport:platform
+node/7308771144,42.6185954 1.5389402,bus:yes;highway:bus_stop;name:368 Sant Pere;network:L6;public_transport:platform
+node/7308771146,42.63205 1.499847,bus:yes;highway:bus_stop;name:396 Arcalís;network:L6;public_transport:platform
+node/7775608986,42.5140861 1.5670917,name:Mirador del circuit de les fonts;tourism:viewpoint
+node/7795201191,42.6407325 1.4772852,name:Mirador Solar de Tristaina;tourism:viewpoint;wikidata:Q115654232
+node/7796359015,42.5618796 1.4929993,access:yes;climbing:crag;climbing:sport:yes;climbing:toprope:yes;name:Via ferrada Coma d'Erts;sport:climbing;tourism:attraction
+node/8119609733,42.5333357 1.5853583,bus:yes;highway:bus_stop;name:Parada Provisional OBAG;public_transport:platform
+node/8427040227,42.5124994 1.5316806,amenity:school;name:Col·legi Sant Ermengol;name:ca:Col·legi Sant Ermengol;website:http://see.xena.ad/sterme/?;wikidata:Q11914777;wikipedia:ca:Col·legi Sant Ermengol
+node/8432073363,42.5708925 1.6077907,man_made:tower;tower:type:bell_tower
+node/8432207108,42.5671204 1.5910785,artist_name:Miguel Ángel González;artwork_type:sculpture;tourism:artwork
+node/8477421291,42.5139788 1.4956588,communication:radio:yes;communication:television:yes;man_made:communications_tower;tower:type:communication
+node/8743048617,42.4578568 1.5119152,tourism:picnic_site
+node/8863109613,42.5414283 1.4569387,name:Berenador de la Font del Bisbe;name:ca:Berenador de la Font del Bisbe;tourism:picnic_site
+node/8863109616,42.5157583 1.4654454,name:Cabana dels caçadors de Sispony;tourism:wilderness_hut
+node/8958670617,42.4842859 1.4919108,name:Pont de la Margineda;name:es:Puente románico de La Margineda;tourism:attraction
+node/9019115338,42.5023281 1.5234779,name:Mirador del Roc dels Senders;tourism:viewpoint
+node/9019115340,42.4922945 1.52546,name:Mirador del Bosc Negre;tourism:viewpoint
+node/9025875314,42.5425905 1.7034668,tourism:viewpoint
+node/9028650867,42.6247027 1.5267006,artwork_type:installation;name:Dino de la parroquia de Ordino;tourism:artwork
+node/9127698255,42.471896 1.5437582,name:Furgoneta VW T1;tourism:attraction
+node/9202662820,42.5555146 1.5291833,artwork_type:sculpture;tourism:artwork
+node/9202663227,42.4842901 1.51006,name:Pica Romana 1727 m;tourism:viewpoint
+node/9202663229,42.4933497 1.5105153,name:Mirador del Roc de Solobre;tourism:viewpoint
+node/9208010520,42.625525 1.5255441,tourism:picnic_site
+node/9208010524,42.5636927 1.5747253,name:Nilo (Tamarro);tourism:artwork
+node/9208013421,42.5683406 1.5894351,name:Mirador 1;tourism:viewpoint
+node/9214972725,42.4914911 1.5259629,artwork_type:sculpture;name:Andy (Tamarro);tourism:artwork
+node/9311112017,42.5636741 1.6010619,name:Hotel Roc Meler;tourism:hotel
+node/9711043501,42.5493483 1.5243161,bus:yes;highway:bus_stop;public_transport:stop_position
+node/9753752570,42.5185146 1.5700548,leisure:sports_centre;name:Circuit BTT d'Engolasters;sport:bmx;btt_trial
+node/9807310762,42.5391826 1.557017,tourism:viewpoint
+node/9812543336,42.5659552 1.5961466,amenity:fuel;brand:Total;compressed_air:yes
+node/9848769927,42.576704 1.6103017,fee:yes;name:Pont Tibetà de Canillo;tourism:attraction
+node/9856957777,42.5141835 1.5676409,name:Tamarro (Caldes);operator:Oficina de Turismo de Andorra;tourism:attraction
+node/9933639346,42.5438315 1.6099168,description:Cim i mirador del Cap de Rep amb taula d'orientació i dos troncs amb forma de banc;ele:2317;name:Cap de Rep;tourism:viewpoint
+node/9944996828,42.5370467 1.5822366,name:Hotel Univers;tourism:hotel
+node/9955132510,42.5198321 1.5666596,amenity:public_bookcase
+node/9955141241,42.5106334 1.5645253,tourism:artwork
+node/9955141427,42.5244122 1.5758868,artwork_type:sculpture;material:metal;tourism:artwork
+node/9967562611,42.4933261 1.4445827,tourism:picnic_site
+node/9988841617,42.5217509 1.5709155,name:Els Jocs d'aigua;name:ca:Els Jocs d'aigua;tourism:attraction
+node/10089764717,42.4585206 1.5160945,name:Mirador Solanes de la Peguera;tourism:viewpoint
+node/10089764817,42.4567213 1.4798892,name:El Coll de Jou;name:ca:El Coll de Jou;tourism:viewpoint
+node/10089764818,42.5465233 1.4199531,name:Port de Cabús;tourism:viewpoint
+node/10089764917,42.5378986 1.4798609,name:Macarulla;tourism:attraction
+node/10094939613,42.5555855 1.571894,description:Table d'orientation;tourism:viewpoint
+node/10096400486,42.4700123 1.5523128,name:Mirador  Camp Ramonet;tourism:viewpoint
+node/10097318765,42.5390576 1.5858323,amenity:fountain
+node/10154233917,42.5704509 1.5282556,name:Les planes de Sornas;tourism:alpine_hut
+node/10266808709,42.5101819 1.5252688,tourism:viewpoint
+node/10266808809,42.549475 1.5409469,ele:1620;name:Mirador d'Ordino;tourism:viewpoint
+node/10313619294,42.56494 1.5277932,addr:city:Sornàs;addr:postcode:AD300;amenity:place_of_worship;denomination:catholic;name:Sant Roc de Sornàs;religion:christian;wikidata:Q26234545;wikipedia:ca:Sant Roc de Sornàs
+node/10586987366,42.4461396 1.4819487,bus:yes;highway:bus_stop;name:Juberrussa;public_transport:platform;ref:624
+node/10701175159,42.4910347 1.4466367,tourism:picnic_site
+node/10900417705,42.4746833 1.4902633,artwork_type:sculpture;name:Àngel precibernètic;tourism:artwork
+node/10900417814,42.461474 1.490029,historic:memorial;name:En memòria de les víctimes del Covid;tourism:artwork
+node/10905994888,42.4644716 1.4859787,tourism:viewpoint
+node/10906028806,42.6151536 1.5375548,name:escultura;tourism:artwork
+node/10908149107,42.5490676 1.5229627,artwork_type:sculpture;name:El pes de la llum;tourism:artwork
+node/10908775893,42.5393075 1.587195,direction:0-360;tourism:viewpoint
+node/10909417409,42.5387277 1.5871901,tourism:viewpoint
+node/10912577312,42.4584921 1.500845,tourism:viewpoint
+node/10914321083,42.5532552 1.5282516,bus:yes;highway:bus_stop;public_transport:stop_position
+node/10914336424,42.5387241 1.5195049,bus:yes;highway:bus_stop;public_transport:stop_position
+node/10914337856,42.5159425 1.5303779,bus:yes;highway:bus_stop;public_transport:stop_position
+node/10921255894,42.4845953 1.4915027,bus:yes;highway:bus_stop;public_transport:stop_position
+node/10922448442,42.4923635 1.4969408,bus:yes;highway:bus_stop;public_transport:stop_position
+node/10922667519,42.5007738 1.5097471,bus:yes;highway:bus_stop;public_transport:stop_position
+node/11071058911,42.5287141 1.5950513,tourism:viewpoint
+node/11071058913,42.5387768 1.4582864,tourism:viewpoint
+node/11071058917,42.5432312 1.7357045,name:es:letras Pas;tourism:attraction
+node/11071059114,42.5250516 1.5817724,name:es:Carboneras;tourism:attraction
+node/11071059115,42.5214618 1.595584,tourism:picnic_site
+node/11071059117,42.5852132 1.4772665,tourism:viewpoint
+node/11071059309,42.547093 1.453029,tourism:viewpoint
+node/11071059805,42.525874 1.5817532,tourism:viewpoint
+node/11121893405,42.5572151 1.5916927,historic:monument;name:Cruz de Meritxell;name:fr:Croix de Meritxell
+node/11121902005,42.5558808 1.5916464,historic:monument;name:Oratori;name:fr:Oratoire
+node/11168170148,42.53461 1.6181183,name:Enko (Tamarro);tourism:artwork
+node/11168189572,42.4447889 1.4940241,tourism:picnic_site
+node/11168194613,42.551202 1.5104502,tourism:caravan_site
+node/11168196277,42.5354538 1.6178884,tourism:picnic_site
+node/11168196888,42.5345684 1.617247,tourism:picnic_site
+node/11578628510,42.5086248 1.4861556,access:yes;capacity:2;fee:no;fireplace:yes;name:Cabana del Cortà;tourism:wilderness_hut
+way/122383842,42.5560048 1.5623195,tourism:picnic_site
+way/122383878,42.5589307 1.5566412,name:Lloc de Repós de Redort;tourism:picnic_site
+way/127125424,42.6074087 1.7154436,"building:yes;capacity:43;charge:19€ per night;description:fr:2019-12 : Période de gardiennage : - Début Juin à Fin septembre Services : - Restauration - Boisson - 1 espace cuisine libre accès - 3 toilettes sèches à l’extérieur du refuge (dont l'une reste ouverte quand le refuge est fermé) - Douche;ele:2310;email:refugidejuclar@gmail.com;fee:yes;mattress:yes;name:Refugi de Juclar;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;payment:cash:only;phone:+376 678145;ref:8;ref:refuges.info:5429;shelter:yes;tourism:alpine_hut;website:https://refugidejuclar.com;wikidata:Q3931662;wikipedia:ca:Refugi de Juclar;winter_room:6"
+way/190239291,42.4951059 1.6562314,"building:yes;capacity:50;drinking_water:yes;ele:2480;electricity:solar;email:refugidelilla@refugidelilla.ad;fee:yes;name:Refugi de l'Illa;name:ca:Refugi de l'Illa;name:fr:Refuge de l'Illa;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;phone:+376 775 776;ref:5;ref:refuges.info:5435;tourism:alpine_hut;website:https://www.refugidelilla.ad/;wikidata:Q3931666;wikipedia:ca:Refugi de l'Illa"
+way/202594793,42.469547 1.5009894,amenity:place_of_worship;building:chapel;name:Sant Cerni de Nagol;name:ca:Sant Cerni de Nagol;religion:christian;wikidata:Q3819483;wikipedia:ca:Sant Serni de Nagol
+way/202595652,42.4721181 1.5113234,amenity:place_of_worship;building:church;name:Mare de Déu de les Neus;name:ca:Mare de Déu de les Neus;religion:christian
+way/202595653,42.4629217 1.5020494,addr:city:Aixirivall;addr:postcode:AD600;amenity:place_of_worship;building:chapel;name:Sant Pere d'Aixirivall;name:ca:Sant Pere d'Aixirivall;religion:christian;wikidata:Q63787;wikipedia:ca:Sant Pere d'Aixirivall
+way/202595952,42.4533578 1.4963789,amenity:place_of_worship;building:chapel;denomination:roman_catholic;name:Sant Romà d'Auvinyà;religion:christian;wikidata:Q15081889
+way/202596424,42.4401868 1.4899785,addr:city:Juberri;addr:postcode:AD600;amenity:place_of_worship;building:chapel;name:Sant Esteve de Juberri;religion:christian;wikidata:Q17485576;wikipedia:ca:Sant Esteve de Juverri
+way/202597314,42.482649 1.4587126,amenity:place_of_worship;building:chapel;name:Sant Esteve de Bissisarri;religion:christian
+way/202597316,42.4408086 1.4500266,amenity:place_of_worship;building:yes;name:Sant Esteve de Mas d'Alins;name:ca:Sant Esteve de Mas d'Alins;religion:christian
+way/202614660,42.532272 1.5142375,addr:city:Sispony;addr:postcode:AD400;building:yes;charge:5€;fee:yes;name:Museu Casa Rull;name:ca:Museu Casa Rull;phone:+376 836 919;tourism:museum;website:https://museus.ad/es/museos/museo-casa-rull;wikidata:Q2124368;wikipedia:ca:Museu Casa Rull
+way/202616750,42.5349145 1.5245864,addr:city:Anyós;addr:postcode:AD400;amenity:place_of_worship;building:yes;name:Sant Cristofol d'Anyos;religion:christian;wikidata:Q2874750;wikipedia:ca:Sant Cristòfol d'Anyós
+way/202618668,42.5312354 1.5676765,amenity:place_of_worship;building:church;denomination:catholic;name:Sant Romà de Vila;name:ca:Sant Romà de Vila;religion:christian;wikidata:Q18007335;wikipedia:ca:Sant Romà de Vila
+way/206379041,42.6227258 1.564045,"building:yes;capacity:50;ele:1980;email:refugidesorteny@gmail.com;fireplace:yes;name:Refugi Borda de Sorteny;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;phone:+376 846446;ref:11;ref:refuges.info:5409;tourism:alpine_hut;website:https://refugisorteny.com/;wikidata:Q3931665;wikipedia:ca:Refugi de Sorteny"
+way/208401245,42.4702331 1.5638822,"building:yes;capacity:20;description:fr:2019-12 : Solide bâtisse en pierre. Ouvert toute l'année. Équipement intérieur : - 8 sommiers métalliques - 1 mezzanine pour une douzaine de places - 2 grandes tables + 2 petites tables dans le coin cuisine - 6 bancs - 1 Evier - Pharmacie - 1 balai/pelle;ele:2280;fireplace:yes;name:Refugi de Claror;name:ca:Refugi de Claror;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:2;ref:refuges.info:5459;stove:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refugi-de-claror/;wikidata:Q3931655;wikipedia:ca:Refugi de Claror"
+way/291327979,42.5272257 1.7121253,building:yes;name:Hotel Iglú Grandvalira;tourism:hotel
+way/330829061,42.5327085 1.7014671,building:hotel;name:Grau Roig Andorra Boutique Hotel & Spa;name:ca:Grau Roig Andorra Boutique Hotel & Spa;stars:4;tourism:hotel;website:https://www.hotelgrauroig.com/;wikidata:Q111412183
+way/351920542,42.4921328 1.5944679,"building:yes;capacity:14;description:fr:2019-12 : Solide bâtisse en pierre. Ouvert toute l'année. Équipement intérieur : - 14 sommiers métalliques superposés - 2 tables - 4 bancs - Pharmacie - 1 balai/pelle Équipement extérieur : - Tables de pique-nique - Barbecue/gril;drinking_water:yes;ele:1830;fireplace:yes;name:Refugi de Fontverd;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:16;stove:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refuge-de-fontverd/;wikidata:Q3931660;wikipedia:ca:Refugi de Fontverd"
+way/358047858,42.4850371 1.639746,"building:yes;capacity:6;description:fr:2019-12 : Solide bâtisse en pierre. Ouvert toute l'année. Équipement intérieur : - 6 sommiers métalliques superposés - 1 table - 1 banc - Pharmacie - 1 balai/pelle;fireplace:yes;name:Refugi Riu dels Orris;name:ca:Refugi Riu dels Orris;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:4;ref:refuges.info:5444;stove:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refugio-riu-dels-orris/;wikidata:Q18006186;wikipedia:ca:Refugi del Riu dels Orris"
+way/358129350,42.5169483 1.6421169,"amenity:shelter;building:yes;capacity:8;drinking_water:yes;ele:2420;fee:no;internet_access:no;name:Refugi d'Ensagents;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:22;reservation:no;shower:no;start_date:1981;toilets:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/ensagents-hut/;wikidata:Q3931670;wikipedia:ca:Refugi dels Estanys d'Ensagents"
+way/358317385,42.5949078 1.7059575,"building:yes;capacity:10;description:fr:2019-12 : Solide bâtisse en pierre. Ouvert toute l'année. Se divise en 2 parties : - La partie de gauche avec 10 sommiers métalliques superposés et un poêle - La partie de droite, réservée au berger plus : - 1 table - 1 banc - 1 cheminée - Pharmacie;ele:2180;fireplace:yes;name:Refugi del Siscaró;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:7;ref:refuges.info:5419;stove:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refugio-cabana-de-siscaro/;wikidata:Q11945090"
+way/360883100,42.5540224 1.5897382,building:yes;name:L'Ermita;name:ca:L'Ermita;tourism:hotel
+way/371164435,42.442596 1.5006459,name:Naturlandia (cota 1600);tourism:theme_park;website:https://www.naturlandia.ad/categoria_del_projecte/sector-cota-1600/;wikidata:Q11938462;wikipedia:ca:Naturland
+way/371478743,42.5791874 1.4493074,"building:yes;capacity:48;description:fr:2019-12 : Période de gardiennage : - Début Juin à fin Septembre;ele:2250;email:refugicomapedrosa@gmail.com;name:Refugi de Comapedrosa;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;phone:+376 32 79 55;ref:15;ref:refuges.info:5424;tourism:alpine_hut;website:https://refugicomapedrosa.ad/;wikidata:Q2009270;wikipedia:ca:Refugi de Coma Pedrosa;winter_room:6"
+way/381186674,42.5720892 1.7204432,"building:yes;capacity:6;description:fr:2019-12 : Solide batisse en pierre. Ouvert toute l'année. Equipement : - 6 sommiers métalliques superposés - 1 table - Banc - Pharmacie;ele:2240;fireplace:yes;name:Refugi de la Portella;name:ca:Refugi de la Portella;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:17;ref:refuges.info:5423;stove:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refuge-de-cabana-de-la-portella/;wikidata:Q3931667;wikipedia:ca:Refugi de la Portella"
+way/382248559,42.4797519 1.5783181,"building:yes;capacity:6;description:fr:2019-12 : Solide bâtisse en pierre. Ouvert toute l'année. Équipement intérieur : - 6 sommiers métalliques superposés - 1 table - 1 banc - Pharmacie - 1 balai/pelle;ele:2200;fee:no;fireplace:yes;name:Refugi de Perafita;name:ca:Refugi de Perafita;name:fr:Refuge de Perafita;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:3;ref:refuges.info:5451;reservation:no;shower:no;stove:no;toilets:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refuge-de-perafita/;wikidata:Q517092;wikipedia:ca:Refugi de Perafita"
+way/385225383,42.5658602 1.640829,"alt_name:Refugi de Riba Escorjada;amenity:shelter;building:yes;capacity:6;ele:2075;fireplace:yes;name:Refugi de Ribaescorjada;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:19;tourism:wilderness_hut;website:https://visitandorra.com/dormir/ribaescorjada-hut/;wikidata:Q11945091;wikipedia:ca:Refugi de Riba Escorjada"
+way/385383500,42.5603516 1.594073,amenity:place_of_worship;building:yes;denomination:catholic;name:Sant Miquel de Prats;name:ca:Sant Miquel de Prats;religion:christian;wikidata:Q5397738;wikipedia:ca:Sant Miquel de Prats
+way/391568717,42.6290536 1.5375506,building:yes;ele:2080;name:Cabana de Besalí;tourism:wilderness_hut;website:https://visitandorra.com/ca/dormir/refugi-de-besali/;wikidata:Q3931657;wikipedia:ca:Refugi de Besali
+way/392063295,42.4898966 1.426386,"amenity:shelter;building:yes;capacity:6;ele:1866;fireplace:yes;name:Refugi de Francolí;name:ca:Refugi de Francolí;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:26;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refugi-de-francoli/;wikidata:Q3931661;wikipedia:ca:Refugi de Francolí"
+way/392137329,42.482551 1.6423093,"building:yes;capacity:5;description:fr:2016-02 : Solide cabane ouverte. Pas de fenêtre. Sert aussi de lieu de stockage (sel pour les animaux !). Equipement : - Plancher - 5 Matelas empilés au fond de la cabane;ele:2310;fireplace:yes;name:Cabana de Setut;name:fr:Cabane de Setut;note:593;ref:refuges.info:5445;source:Association ""Refuges et cabanes des Pyrénées"";stove:no;tourism:wilderness_hut"
+way/392137331,42.4784721 1.5502571,"access:yes;building:yes;capacity:6;check_date:2021-08-30;cookware:no;description:fr:2019-12 : Solide bâtisse en pierre. Ouvert toute l'année. Équipement intérieur : - 6 sommiers métalliques superposés - 1 table - 1 banc - Pharmacie - 1 balai/pelle;drinking_water:yes;ele:2235;fee:no;fireplace:yes;mattress:no;name:Refugi de Prat Primer;name:ca:Refugi de Prat Primer;opening_hours:24/7;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:25;ref:refuges.info:5460;reservation:no;shower:no;stove:no;toilets:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refugi-de-prat-primer/;wikidata:Q11945088;wikipedia:ca:Refugi de Prat Primer"
+way/392401248,42.4749223 1.4935783,amenity:place_of_worship;building:yes;denomination:catholic;name:Sant Martí;name:ca:Sant Martí;religion:christian
+way/392405182,42.4998616 1.530582,name:Berenador de La Comella;name:ca:Berenador de La Comella;tourism:picnic_site
+way/407683520,42.6404263 1.5612516,"capacity:6;ele:2020;fireplace:yes;name:Refugi de Rialb;name:ca:Refugi de Rialb;name:fr:Refuge de Rialb;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:23;ref:refuges.info:5408;stove:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refugi-de-rialb/;wikidata:Q11945083;wikipedia:ca:Refugi de Rialb"
+way/426146382,42.4536227 1.4922208,amenity:place_of_worship;building:church;denomination:roman_catholic;religion:christian
+way/432400655,42.5940066 1.4604608,"capacity:6;description:fr:2019-12 : Solide batisse en pierre. Ouvert toute l'année. Equipement : - 6 sommiers métalliques superposés - Si la partie de gauche du refuge est ouverte, on peut récupérer un matelas ... - 1 table - 1 banc- Pharmacie - 1 balai;ele:2050;fee:no;fireplace:yes;name:Refugi del Pla de l'Estany;name:ca:Refugi del Pla de l'Estany;name:fr:Refuge du Pla de l'Estany (Joan Canut);operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:14;ref:refuges.info:5421;stove:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refuge-pla-de-l-estany/;wikidata:Q11945106;wikipedia:ca:Refugi del Pla de l'Estany"
+way/432400670,42.6185279 1.6386677,"capacity:8;description:fr:2016-02 : Bat flanc superposé métallique sans matelas, table et bancs métalliques aussi. Outils présents : grosse masse, hache;ele:2218;fireplace:yes;name:Refugi de Coms de Jan;name:ca:Refugi de Coms de Jan;name:fr:Refuge de Coms de Jan;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:10;ref:refuges.info:5411;stove:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/cabana-coms-de-jan-hut/;wikidata:Q3649138;wikipedia:ca:Refugi de Coms de Jan"
+way/439890579,42.533684 1.5158098,amenity:place_of_worship;building:yes;name:Sant Joan de Sispony;name:ca:Sant Joan de Sispony;religion:christian;wikidata:Q2668145;wikipedia:ca:Sant Joan de Sispony
+way/523729934,42.4992007 1.6807498,"building:yes;capacity:12;drinking_water:yes;ele:2438;fireplace:yes;name:Refugi de Montmalús;name:ca:Refugi de Montmalús;name:fr:Refuge de Montmalus;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:20;ref:refuges.info:5439;stove:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refuge-de-montmalus/;wikidata:Q3935695;wikipedia:ca:Refugi de Montmalús"
+way/610566777,42.5465478 1.5092192,leisure:park
+way/667958227,42.5537014 1.6787984,"building:yes;capacity:6;description:en:2 metal beds, extra space to sleep on the floor;description:fr:2016-03 : Couchettes en métal et murs en pierre très protecteurs, une table et un poêle. Le refuge n'est pas accessible durant la période de ski car il sert à remiser du matériel, et aussi de lieu de vie pour les pistards de la station.;ele:2150;fireplace:yes;name:Refugi Pla de les Pedres;name:ca:Refugi Pla de les Pedres;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:6;ref:refuges.info:5473;stove:no;tourism:wilderness_hut;website:https://visitandorra.com/dormir/pla-de-les-pedres-hut/;wikidata:Q3935693;wikipedia:ca:Refugi del Pla de les Pedres"
+way/706936571,42.5800251 1.4760786,tourism:picnic_site
+way/852611722,42.6211394 1.5797189,"building:yes;capacity:2;description:fr:2018-07 : Se situe dans la réserve de Sorteny (bivouac interdit), au bord d'un ruisseau, et est en super état. Une table, un banc, deux bas-flancs métaliques, et une cheminée.;ele:2190;fireplace:yes;image:https://commons.wikimedia.org/wiki/File:Cabana_de_la_Serrera_5.jpg;name:Cabana Pleta Serrera;name:ca:Cabana Pleta Serrera;note:967;ref:refuges.info:6317;source:Association ""Refuges et cabanes des Pyrénées"";stove:no;tourism:wilderness_hut;wikidata:Q17588564;wikimedia_commons:File:Cabana_de_la_Serrera_5.jpg;wikipedia:fr:Cabane de la Serrera"
+way/863293042,42.5843625 1.6372466,addr:city:El Tarter;addr:housenumber:5;addr:postcode:AD100;addr:street:Ctra. de Ransol;brand:Apartaments Les Terrasses Del Tarter;building:yes;internet_access:wlan;internet_access:fee:yes;name:Font del Ferro;name:ca:Font del Ferro;rooms:5;tourism:hotel;website:http://www.apartamentslesterrassesdeltarter.com/
+way/907473745,42.5525908 1.4869553,email:info@xixerellapark.com;fee:yes;internet_access:wlan;internet_access:fee:no;name:Camping Xixerella;operator:Xixerella Apartments;phone:+376 738613;tourism:camp_site;website:https://www.xixerellapark.com/ca/resort-vacances-andorra/camping-vallnord-andorra/inici
+way/957862610,42.5303361 1.5460387,name:Berenador de Beixalis;tourism:picnic_site
+way/978057700,42.5901714 1.478921,"building:yes;ele:2220;fireplace:no;name:Refugi de les Fonts;name:ca:Refugi de les Fonts;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:13;tourism:wilderness_hut;website:https://visitandorra.com/dormir/les-fonts-hut/;wikidata:Q2569829;wikipedia:ca:Refugi de les Fonts"
+way/978057872,42.6080085 1.496035,"amenity:shelter;building:yes;capacity:6;ele:2220;fireplace:yes;name:Refugi de l'Angonella;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:12;tourism:wilderness_hut;website:https://visitandorra.com/dormir/refugio-de-la-angonella/;wikidata:Q3931664;wikipedia:ca:Refugi de l'Angonella"
+way/978058669,42.4337299 1.5357199,"amenity:shelter;building:yes;capacity:6;ele:2160;fireplace:yes;name:Refugi de Roca de Pimés;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:1;tourism:wilderness_hut;website:https://visitandorra.com/en/sleeping/roca-de-pimes-hut/;wikidata:Q11945092;wikipedia:ca:Refugi de Roca de Pimes"
+way/978058670,42.5111417 1.6089148,"amenity:shelter;building:yes;capacity:6;ele:2250;fireplace:yes;name:Refugi dels Agols;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:21;tourism:wilderness_hut;website:https://visitandorra.com/dormir/agols-hut/;wikidata:Q3931668;wikipedia:ca:Refugi de les Agols"
+way/978058671,42.5955756 1.6132483,"amenity:shelter;building:yes;capacity:10;ele:2160;fireplace:yes;name:Refugi de la Vall del Riu;name:ca:Refugi de la Vall del Riu;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:18;tourism:wilderness_hut;website:https://visitandorra.com/dormir/cabana-de-la-vall-del-riu-hut/;wikidata:Q18006178;wikipedia:ca:Refugi de la Vall del Riu"
+way/978058672,42.606808 1.5505298,"access:yes;building:yes;capacity:8;drinking_water:no;ele:2015;fireplace:yes;name:Refugi de Coma Obaga;operator:Ministeri de Medi Ambient, Agricultura i Sostenibilitat d'Andorra;operator:wikidata:Q65211284;ref:24;tourism:wilderness_hut;website:https://visitandorra.com/dormir/comaubaga-hut/;wikidata:Q3931656;wikipedia:ca:Refugi de Coma Obaga"
+way/992908751,42.4986393 1.5296937,tourism:picnic_site
+way/996943060,42.538983 1.6311085,leisure:sports_centre;sport:climbing
+way/1055885286,42.4988095 1.5194577,leisure:sports_centre;name:Centre Esportiu dels Serradells;name:ca:Centre Esportiu dels Serradells
+way/1218994484,42.5295108 1.6972429,tourism:picnic_site

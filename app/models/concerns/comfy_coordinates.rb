@@ -22,7 +22,7 @@ module ComfyCoordinates
 
     def debug
       [
-        "Cmd + double click to open link from terminal:",
+        'Cmd + double click to open link from terminal:',
         "https://www.google.com/maps/place/#{coordinates.latitude},#{coordinates.longitude}",
         "https://www.openstreetmap.org/#{ext_id}",
       ]

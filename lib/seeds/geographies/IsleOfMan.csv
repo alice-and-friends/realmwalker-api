@@ -1,0 +1,1452 @@
+ext_id,coordinates,tags
+node/283479071,54.1710039 -4.4422305,light_rail:yes;name:Majestic Halt;public_transport:stop_position;railway:stop;ref:50156;ref:poll:50-51;wikidata:Q6737695;wikipedia:en:Majestic Halt
+node/283479609,54.0721498 -4.6492515,man_made:lighthouse;seamark:light:character:Oc;seamark:light:colour:red;seamark:light:height:8;seamark:light:period:15;seamark:light:range:5;seamark:light:reference:A 4760;seamark:light:sequence:13+(2);seamark:type:light_minor;source:US NGA Pub. 114. 2011-05-26.
+node/283480522,54.1482153 -4.5061524,amenity:school;name:Pulrose School
+node/283481023,54.2605383 -4.5815164,name:Barregarrow Crosroads;tourism:attraction
+node/283481204,54.2498249 -4.3770246,light_rail:yes;name:Dhoon Glen Halt;public_transport:stop_position;railway:stop;ref:50132;wikidata:Q5269757;wikipedia:en:Dhoon Glen Halt
+node/283481300,54.2514145 -4.4637109,light_rail:yes;name:Bungalow;public_transport:stop_position;railway:halt;wikidata:Q4997614;wikipedia:en:Bungalow railway station
+node/283481474,54.2811615 -4.5879813,name:Douglas Corner;tourism:attraction
+node/283483099,54.2776121 -4.3734159,light_rail:yes;name:Watson's Crossing;public_transport:stop_position;railway:stop;ref:50119
+node/283483230,54.172797 -4.511609,"bus:yes;name:Strang, Postbox;public_transport:stop_position"
+node/283484193,54.1264425 -4.5383256,public_transport:stop_position;rail:yes;railway:stop;train:yes
+node/283484388,54.1879537 -4.4743241,name:Hillberry Corner;tourism:attraction;wikidata:Q5762625;wikipedia:en:Hillberry Corner
+node/283486904,54.3035861 -4.5632419,name:Dub Cottage;tourism:attraction
+node/283488031,54.0910596 -4.6761763,name:Iron Gates;tourism:attraction
+node/283488566,54.1036781 -4.729075,tourism:picnic_site
+node/283490888,54.2295722 -4.3952208,light_rail:yes;name:Minorca Halt;name:en:Minorca Halt;name:gv:Staad Minorca;operator:Isle of Man Govermaent;public_transport:stop_position;railway:stop;ref:50136;wikidata:Q6869214;wikipedia:en:Minorca Halt
+node/283492465,54.316805 -4.4827231,leisure:park;name:Sulby Claddagh;name:en:Sulby Claddagh;name:gv:Yn Claddagh;place:locality
+node/283492817,54.1683329 -4.4484602,light_rail:yes;name:Onchan Head;name:gv:Straad Kione Droghad;public_transport:stop_position;railway:stop;ref:50158;ref:poll:033-034;wikidata:Q7091954;wikipedia:en:Onchan Head railway station
+node/283494046,54.3096741 -4.3610486,light_rail:yes;name:Bellevue Halt;public_transport:stop_position;railway:stop;ref:50106;wheelchair:yes;wikidata:Q4883715;wikipedia:en:Belle Vue Halt
+node/283494345,54.3221962 -4.3866786,"name:Parliament Square;tourism:attraction;wikidata:Q7138921;wikipedia:en:Parliament Square, Ramsey"
+node/283494412,54.3204294 -4.4921262,amenity:community_centre;name:Sulby Community Hall
+node/283495997,54.0807792 -4.6560448,name:Stadium Bends;tourism:attraction
+node/283496797,54.1755382 -4.4527127,amenity:place_of_worship;building:church;denomination:methodist;name:Onchan Methodist Church;religion:christian
+node/283497539,54.2887554 -4.3360341,light_rail:yes;name:Ballajora Halt;public_transport:stop_position;railway:halt;ref:50110
+node/283497562,54.0946564 -4.7035785,name:Colby;name:en:Colby;name:gv:Colbee;public_transport:stop_position;rail:yes;railway:stop;train:yes
+node/283498342,54.1671614 -4.452759,light_rail:yes;name:Port Jack Halt;name:gv:Staad Purt Cooyn;public_transport:stop_position;railway:stop;ref:50159;ref:poll:19;wikidata:Q7230713;wikipedia:en:Port Jack Halt
+node/283499675,54.080752 -4.7430424,public_transport:stop_position;rail:yes;railway:stop;train:yes
+node/283500641,54.2831908 -4.3572903,light_rail:yes;name:Cornaa Halt;name:en:Cornaa Halt;name:gv:Staad Cornaa;public_transport:stop_position;railway:halt;ref:50116;wikidata:Q5171070;wikipedia:en:Cornaa railway station
+node/283500649,54.2037911 -4.6428099,direction:270;tourism:viewpoint
+node/283500807,54.1668992 -4.5163114,name:Snugborough;tourism:attraction
+node/283501121,54.2717367 -4.6063886,tourism:picnic_site
+node/283501671,54.091634 -4.7211274,name:The Level;name:en:The Level;name:gv:Yn Laare;public_transport:stop_position;rail:yes;railway:halt;train:yes;wikidata:Q6535089
+node/283502151,54.1541881 -4.4797785,addr:country:IM;addr:street:Finch Road;amenity:school;name:Saint Thomas' Church of England School;postal_code:IM1 2PL;website:https://www.sch.im/stthomas
+node/283502903,54.0984906 -4.6344001,historic:ruins;name:Rushen Abbey;wikidata:Q1476797
+node/283504272,54.1652883 -4.4842802,amenity:fuel;brand:Ellan Vannin Fuels
+node/283504477,54.3169534 -4.3837274,"name:Whitegates;tourism:attraction;wikidata:Q7995941;wikipedia:en:Whitegates, Isle of Man"
+node/283504706,54.1702835 -4.4373353,light_rail:yes;name:Braeside;public_transport:stop_position;railway:stop;ref:50155;ref:poll:57-58;wikidata:Q4955342;wikipedia:en:Braeside Halt
+node/283504885,54.1705368 -4.6391356,amenity:fuel;brand:EVF;mapillary:159041136419666;survey:date:2021-09-20
+node/283505240,54.1736529 -4.4572329,amenity:fuel;brand:Corkills;mapillary:422312739462222;survey:date:2021-09-24
+node/283505538,54.0787858 -4.6487465,public_transport:stop_position;rail:yes;railway:stop;train:yes
+node/283505650,54.1700339 -4.4341675,light_rail:yes;name:Far End Halt;pole_number:66;public_transport:stop_position;railway:stop;ref:50154;wikidata:Q5434567;wikipedia:en:Far End Halt
+node/283505662,54.2821138 -4.5928806,name:Glen Wyllin;postal_code:IM6 1AL;tourism:camp_site;website:https://www.isleofman.com/Business/g/glenwyllin
+node/283509592,54.097076 -4.6760415,name:Ballabeg Hairpin;tourism:attraction
+node/283510235,54.2232027 -4.6890789,amenity:fuel;brand:Ellan Vannin Fuels;name:EVF;old_operator:Total
+node/283510436,54.0913152 -4.6737552,name:Ballabeg;public_transport:stop_position;rail:yes;railway:halt;train:yes;wikidata:Q4851301
+node/283510758,54.2516812 -4.3753242,light_rail:yes;name:Burn's Crossing;public_transport:stop_position;railway:stop;ref:50131;wikidata:Q4999470;wikipedia:en:Burn's Crossing
+node/283510779,54.1479516 -4.5077728,amenity:school;name:Cronk Souree Primary Centre
+node/283511024,54.2804414 -4.3649504,light_rail:yes;name:Ballaglass Glen;name:gv:Staad Glion Balley Glass;public_transport:stop_position;railway:stop;ref:50117;wikidata:Q15196299;wikipedia:en:Ballaglass Glen Halt
+node/283511734,54.1976029 -4.4174346,light_rail:yes;name:Ballamenagh Halt;pole_number:198-199;public_transport:stop_position;railway:halt;ref:50147;wikidata:Q4851417;wikipedia:en:Ballamenagh Halt
+node/283511824,54.1780504 -4.430355,light_rail:yes;name:Groudle Glen;name:gv:Stashoon Glion Groudle;pole_number:117;public_transport:stop_position;railway:stop;ref:50151;wikidata:Q5610836;wikipedia:en:Groudle Glen railway station
+node/283514446,54.16834 -4.4772445,description:The starting line of the famous Isle of Man TT (Tourist Trophy) Races;name:Tourist Trophy course start line;tourism:attraction
+node/283514629,54.2022906 -4.4123654,light_rail:yes;name:Baldrine Station;public_transport:stop_position;railway:stop;ref:50146;ref:poll:215;shelter:yes;wikidata:Q4850480;wikipedia:en:Baldrine railway station
+node/283514747,54.0727857 -4.6502231,man_made:lighthouse;seamark:light:1:character:Oc;seamark:light:1:colour:red;seamark:light:1:height:5;seamark:light:1:period:4;seamark:light:1:range:5;seamark:light:1:sector_end:322;seamark:light:1:sector_start:142;seamark:light:1:sequence:3+(1);seamark:light:reference:A 4761;seamark:type:light_minor;wikidata:Q28496471
+node/283515674,54.2225917 -4.3967774,light_rail:yes;name:Preston's Crossing;name:en:Preston's Crossing;name:gv:Crossag Preston;public_transport:stop_position;railway:level_crossing;ref:50141;ref:poll:312 - 313
+node/283516349,54.1967375 -4.4197555,light_rail:yes;name:Scarffe's Crossing;public_transport:stop_position;railway:stop;ref:50148;ref:poll:192-193;wikidata:Q7430391;wikipedia:en:Scarffe's Crossing
+node/283516992,54.0783885 -4.6558729,name:Castletown Corner;tourism:attraction
+node/283517384,54.3184429 -4.4964205,name:Caley's;tourism:attraction
+node/283517840,54.1762101 -4.4513394,amenity:place_of_worship;building:church;denomination:baptist;name:Onchan Baptist Church;religion:christian
+node/283518157,54.0849175 -4.756862,public_transport:stop_position;rail:yes;railway:stop;train:yes;wikidata:Q7230613
+node/283518410,54.3216619 -4.3866897,addr:city:Ramsey;addr:country:IM;addr:street:Parliament Square;amenity:fuel;brand:Ellan Vannin Fuels;name:Spar Ramsey;wheelchair:yes
+node/283519410,54.3121457 -4.5264374,name:Ballacrye Corner;tourism:attraction;wikidata:Q4851318;wikipedia:en:Ballacrye Corner
+node/283519417,54.1182616 -4.5841659,public_transport:stop_position;rail:yes;railway:stop;train:yes
+node/283519596,54.086524 -4.653902,name:Great Meadow;place:hamlet;tourism:attraction
+node/283519855,54.1838775 -4.5660982,name:Crosby Crossroads;tourism:attraction;wikidata:Q5188028
+node/283520092,54.3022476 -4.3523361,light_rail:yes;name:Lewaigue;public_transport:stop_position;railway:stop;ref:50107;wikidata:Q6536089;wikipedia:en:Lewaigue railway station
+node/283520110,54.0832046 -4.6743714,name:Ballakaighen;tourism:attraction
+node/283520728,54.170677 -4.4452337,light_rail:yes;name:Boncompte's;public_transport:stop_position;railway:stop;ref:50157;ref:poll:046-047;wikidata:Q5017263;wikipedia:en:Café Royale Halt
+node/283521556,54.1374944 -4.5565244,bus:yes;name:Newton Chapel;public_transport:stop_position
+node/283521784,54.3166844 -4.3762989,light_rail:yes;name:Walpole Drive Halt;name:en:Walpole Drive Halt;name:gv:Staad Bayr Walpole;public_transport:stop_position;railway:halt;ref:50103;wikidata:Q7963724;wikipedia:en:Walpole Drive Halt
+node/283522771,54.1638542 -4.7400508,"name:Niarbyl;place:hamlet;tourism:viewpoint;wikidata:Q11171886;wikipedia:en:Niarbyl, Isle of Man"
+node/283524120,54.3077272 -4.3811381,name:Tower Bends;tourism:attraction;wikidata:Q7829630;wikipedia:en:Tower Bends
+node/286973603,54.263872 -4.4610048,communication:aviation:yes;man_made:tower;name:NATS Snaefell Radio Station;note:VHF & UHF aviation comms tower operated by National Air Traffic Services (NATS). Also carries antennae for Coastguard Maritime Radio;operator:National Air Traffic Services;operator:wikidata:Q3307163;ref:115A;source:survey;tower:construction:lattice;tower:type:communication
+node/286973604,54.2626301 -4.463018,communication:microwave:yes;communication:mobile_phone:yes;communication:radio:yes;height:43;man_made:tower;note:phone and comms mast;operator:Isle of Man Government;source:bing;tower:construction:lattice;tower:type:communication
+node/296355032,54.1763683 -4.4214085,name:Lime Kiln Halt;public_transport:stop_position;railway:halt;train:yes;wikidata:Q6549118;wikipedia:en:Lime Kiln Halt railway station
+node/300040027,54.1043949 -4.7635256,ele:234;name:Bradda Hill;natural:peak;tourism:viewpoint;wikidata:Q2923459;wikipedia:en:Bradda Hill
+node/300515200,54.4157087 -4.3681062,man_made:lighthouse;seamark:light:character:Fl;seamark:light:colour:white;seamark:light:group:4;seamark:light:height:32;seamark:light:period:20;seamark:light:range:19;seamark:light:reference:A 4720;seamark:light:sequence:0.2+(2.3)+0.2+(2.3)+0.2+(2.3)+0.2+(12.3);seamark:name:Point of Ayre;seamark:radar_transponder:category:racon;seamark:type:light_major;wikidata:Q15267248;wikipedia:en:Point of Ayre Lighthouse
+node/347335439,54.3126935 -4.3816171,tourism:viewpoint
+node/414899649,54.0866212 -4.7559351,amenity:library;name:George Herdman Library;phone:+44 1624 832365;website:https://www.porterin.gov.im/s.nl/sc.27/.f;wikidata:Q55377254
+node/430222786,54.1491283 -4.4759024,"amenity:clock;display:analogue;faces:4;historic:monument;listed_status:Registered;man_made:clock;name:Jubilee Clock;ref:registered_building:196;url:registered_building:https://www.gov.im/media/632381/0500196regbldjubileeclock.pdf;wikidata:Q118188681;wikimedia_commons:Category:Victoria Clock, Douglas;wikipedia:en:Jubilee clock#Isle of Man"
+node/430894243,54.0742896 -4.6533908,amenity:clock
+node/440611322,54.0872363 -4.7593962,man_made:lighthouse;seamark:light:category:lower;seamark:light:character:F;seamark:light:colour:red;seamark:light:height:19;seamark:light:range:5;seamark:light:reference:A 4740;seamark:type:light_minor
+node/441984183,54.0378794 -4.8375209,listed_status:Registered;man_made:lighthouse;name:Chicken Rock;name:en:Chicken Rock;name:gv:Charrick y Challoo;ref:registered_building:310;seamark:light:character:Fl;seamark:light:colour:white;seamark:light:height:38;seamark:light:period:5;seamark:light:range:13;seamark:light:reference:A 4748;seamark:light:sequence:1+(4);seamark:name:Chicken Rock;seamark:type:light_minor;url:registered_building:https://www.gov.im/media/1373626/310-notice-and-entry-summary.pdf;wikidata:Q18431326;wikimedia_commons:File:Chicken-rock.jpg
+node/448463229,54.20319 -4.6295092,name:Ballacraine;place:hamlet;tourism:attraction;wikidata:Q4851317;wikipedia:en:Ballacraine
+node/452016378,54.0734749 -4.653465,alt_name:Castletown Cross;historic:memorial;listed_status:Registered;material:granite_stone;memorial:war_memorial;name:Castletown War Memorial;ref:registered_building:313;url:https://www.iwm.org.uk/memorials/item/memorial/28189;url:registered_building:https://www.gov.im/media/1373630/313-notice-and-entry-summary.pdf;wikidata:Q118188715
+node/455297045,54.154579 -4.5741658,bus:yes;highway:bus_stop;name:Braaid Concrete Shelter;public_transport:platform;ref:1302
+node/455297135,54.1692639 -4.6333678,amenity:clock
+node/456430220,54.1660663 -4.4653089,bus:yes;highway:bus_stop;name:Queens Promenade / Regency Hotel;public_transport:platform;railway:tram_stop;ref:123 / 20113;request_stop:yes;tram:yes
+node/456430288,54.1663745 -4.4710006,bus:yes;highway:bus_stop;name:Victoria Road / Centre House;public_transport:platform;ref:20149
+node/456469140,54.1648369 -4.473477,addr:country:IM;addr:street:Victoria Road;amenity:kindergarten;name:Victoria House Nursery;postal_code:IM2 4AJ;website:https://victoriahousenursery.com/
+node/456469150,54.1632841 -4.4751746,bus:yes;highway:bus_stop;name:Victoria Road / Mona Drive Junction;public_transport:platform;ref:20147
+node/458533095,54.1869625 -4.4777597,name:Glen Dhoo;postal_code:IM4 5BJ;source:Isle of Man Government 1:25000 map (2007);tourism:camp_site;website:https://www.caravancampingsites.co.uk/isleofman/glendhoo.htm
+node/458533098,54.1797668 -4.4700145,"name:Signpost Corner;source:Isle of Man Government 1:25000 map (2007);tourism:attraction;wikidata:Q7513018;wikipedia:en:Signpost Corner, Isle of Man"
+node/458533108,54.1642466 -4.4853341,name:Bray Hill;source:Isle of Man Government 1:25000 map (2007);tourism:attraction;wikidata:Q3389200;wikipedia:en:Bray Hill
+node/458533119,54.1738041 -4.5490383,"name:Ballagarey Corner;tourism:attraction;wikidata:Q4851392;wikipedia:en:Ballagarey Corner, Isle of Man"
+node/458533125,54.1968483 -4.6057748,name:Greeba Bridge;place:locality;source:Isle of Man Government 1:25000 map (2007);tourism:attraction;wikidata:Q5601577;wikipedia:en:Greeba Bridge
+node/458533222,54.0653166 -4.6201861,historic:ruins;name:Langness Farm;source:Isle of Man Government 1:25000 map (2007)
+node/458783495,54.1693541 -4.6640311,historic:archaeological_site;name:Cross Vein Lead Mine;source:Isle of Man Government 1:25000 map (2007)
+node/459976551,54.3321026 -4.3949207,addr:city:Ramsey;addr:postcode:IM8 3UA;addr:street:Andreas Road;fee:yes;name:The Grove Museum;name:gv:Thie Tashtee 'Yn Chell';operator:Manx National Heritage;tourism:museum;website:https://manxnationalheritage.im/our-sites/grove-museum-of-victorian-life/
+node/463207451,54.163011 -4.4760513,bus:yes;highway:bus_stop;name:Victoria Crescent Shelter;public_transport:platform;ref:156;shelter:yes
+node/463207464,54.1670218 -4.4608532,bench:yes;bus:yes;highway:bus_stop;name:Derby Castle MER Station;network:Bus Vannin;operator:Isle Of Man Transport;public_transport:platform;railway:tram_stop;ref:124 / 20112;request_stop:yes;shelter:yes;tram:yes
+node/469407607,54.2363933 -4.4070935,name:Mines Yard;public_transport:stop_position;railway:halt;train:yes
+node/469407654,54.2338677 -4.405392,bus:yes;highway:bus_stop;name:Captain's Hill Junction;public_transport:platform;ref:3416
+node/469407662,54.2312072 -4.4065349,bus:yes;highway:bus_stop;name:Laxey Glen;public_transport:platform;ref:3411
+node/469407669,54.2291491 -4.4033425,bus:yes;highway:bus_stop;name:The Queens Hotel;public_transport:platform;ref:3410
+node/469407671,54.2073711 -4.4067175,bus:yes;highway:bus_stop;name:Ballagawne Road;public_transport:platform;ref:3315
+node/469407673,54.2002833 -4.4139719,bus:yes;highway:bus_stop;name:Baldrine Layby;public_transport:platform;ref:3312
+node/475392854,54.2783594 -4.4433327,name:Mountain Box;place:locality;source:Isle of Man Government 1:25000 map (2007);tourism:attraction
+node/475393039,54.1476986 -4.6851587,archaeological_site:tumulus;historic:archaeological_site;name:Round Table;name:en:Round Table;name:gv:Boaryd Runt;place:locality;ref:GB:imher:0093.00;source:Isle of Man Government 1:25000 map (2007);url:imher:https://isleofmanher.im/report/327208fe-71ac-4fb2-a22f-7b0172a2385a
+node/475393389,54.3074437 -4.53512,name:Ballamoar Farm;name:en:Ballamoar Farm;name:gv:Ballamoar;phone:+44 1624 897442;place:farm;postal_code:IM7 5EE;source:Isle of Man Government 1:25000 map (2007);tourism:camp_site;website:http://www.ballamoar.com
+node/475393766,54.1954589 -4.4768379,alt_name:Brandish Corner;name:Brandish;old_name:Upper-Hillberry Corner;Telegraph Hill;place:locality;source:Isle of Man Government 1:25000 map (2007);tourism:attraction;wikidata:Q4956708;wikipedia:en:Brandish Corner
+node/475393909,54.2308992 -4.4714148,name:Windy Corner;place:locality;source:Isle of Man Government 1:25000 map (2007);tourism:attraction
+node/475393925,54.20715 -4.4673739,"name:Creg-ny-baa;place:locality;source:Isle of Man Government 1:25000 map (2007);tourism:attraction;wikidata:Q5183966;wikipedia:en:Creg-ny-Baa, Isle of Man"
+node/475393967,54.2343647 -4.5895379,"addr:country:IM;addr:housename:Mullen Rhenass House;addr:place:Cronk-y-Voddy;addr:postcode:IM6 1BB;currency:GBP:yes;currency:XBT:yes;description:Christian retreat, arts centre, and spa;email:hello@rhenassretreat.org.uk;name:Rhenass Christian Retreat;name:en:Rhenass Christian Retreat;name:gv:Mullen Rhenass;payment:lightning:yes;payment:lightning_contactless:no;payment:onchain:yes;phone:+441624878474;source:Isle of Man Government 1:25000 map (2007);survey:date:2022-10-03;tourism:hotel;website:https://www.rhenassretreat.org.uk/"
+node/475394051,54.2009575 -4.6569504,name:Ballaspit;place:farm;source:Isle of Man Government 1:25000 map (2007);tourism:camp_site
+node/475394229,54.2457666 -4.648704,historic:fort;name:Buggane Mooar;name:gv:Buggane Mooar;source:Isle of Man Government 1:25000 map (2007);wikidata:Q31118319
+node/475395150,54.2257389 -4.6168109,"name:Glen Helen;place:locality;source:Isle of Man Government 1:25000 map (2007);tourism:attraction;wikidata:Q5567809;wikipedia:en:Glen Helen, Isle of Man"
+node/475395188,54.1834197 -4.4760312,name:Cronk-ny-mona;name:gv:Cronk-ny-mona;place:locality;source:Isle of Man Government 1:25000 map (2007);tourism:attraction
+node/476150218,54.1618053 -4.4745193,addr:city:Douglas;addr:country:IM;addr:housenumber:7;addr:street:Empire Terrace;name:Ascot Hotel;postal_code:IM2 4LE;tourism:hotel;website:https://www.hotel-ascot.co.uk/
+node/478713176,54.2669368 -4.3774267,light_rail:yes;name:Ballasholague Halt;name:gv:Staad Balley Shellag;public_transport:stop_position;railway:stop;ref:50124;wikidata:Q4851532;wikipedia:en:Ballasholague Halt
+node/478713196,54.2544377 -4.3721081,light_rail:yes;name:Dhoon Farm Halt;name:gv:Staad Balley Doon;public_transport:stop_position;railway:stop;ref:50130;wikidata:Q5269756;wikipedia:en:Dhoon Farm Halt
+node/478772836,54.1845829 -4.4278852,light_rail:yes;name:Eskadale Halt;public_transport:stop_position;railway:stop;ref:50150;ref:poll:147-148;wikidata:Q5397994;wikipedia:en:Eskadale Halt
+node/478772838,54.1939603 -4.4240001,alt_name:Halfway House;light_rail:yes;name:Balladromma Beg Halt;note:request;public_transport:stop_position;railway:stop;ref:50149;wikidata:Q4851357;wikipedia:en:Balladromma Beg Halt
+node/491220563,54.2984392 -4.5837912,historic:ruins;listed_status:Registered;name:Orrisdale Lime Kiln;ref:registered_building:143;ruins:lime_kiln;url:registered_building:https://www.gov.im/media/632657/0500143regbldorrisdalelimekiln.pdf;wikidata:Q118188773;wikimedia_commons:File:Old Lime Kiln - geograph.org.uk - 712609.jpg
+node/494597591,54.2260642 -4.6944869,man_made:lighthouse;source:Isle of Man Government 1:25000 map (2007)
+node/495102937,54.3173908 -4.4738794,access:yes;archaeological_site:earthwork;ele:76;historic:archaeological_site;name:Cronk Sumark;natural:peak;ref:GB:imher:0450.00;source:Isle of Man Government 1:25000 map (2007);url:http://hillforts.arch.ox.ac.uk/records/IOM3220.html;url:imher:https://isleofmanher.im/report/e3488c54-4738-49ce-b885-e83c349c1961;wikidata:Q3003715
+node/498484848,54.1519623 -4.4835288,bus:yes;highway:bus_stop;name:Bucks Road / Tynwald Street;public_transport:platform;ref:130
+node/502490905,54.1602703 -4.4791972,addr:city:Douglas;addr:country:IM;addr:housenumber:39;addr:postcode:IM2 4HW;addr:street:Hutchinson Square;internet_access:wlan;internet_access:fee:no;name:Arrandale House;tourism:hotel;website:http://www.arrandale.com
+node/505873456,54.1616566 -4.4833194,addr:city:Douglas;addr:country:IM;addr:housename:Thie Ellyn;addr:postcode:IM2 3BF;addr:street:Withington Road;amenity:arts_centre;name:Isle of Man Arts Centre;source:Isle of Man Photographic Society http://iomphoto.20m.com/map.htm;website:https://www.isleofmanartsociety.com/
+node/549539735,54.1685208 -4.7292881,bus:yes;highway:bus_stop;public_transport:platform
+node/549539741,54.1632922 -4.7404281,tourism:viewpoint
+node/551862841,54.143453 -4.4694,name:Douglas Head;tourism:viewpoint
+node/683433055,54.233283 -4.4061449,bench:yes;bus:yes;covered:yes;highway:bus_stop;name:Mines Tavern / Mines Road Junctions;operator:Bus Vannin;public_transport:platform;ref:3413;shelter:yes
+node/683433058,54.2307218 -4.3965016,bus:yes;highway:bus_stop;name:Minorca Shelter;public_transport:platform;ref:3502
+node/683437702,54.1952933 -4.6366475,bus:yes;highway:bus_stop;public_transport:platform
+node/683440480,54.1812777 -4.6414017,bus:yes;highway:bus_stop;name:Lower Foxdale / Hamilton Close Shelter;public_transport:platform;ref:11504
+node/685338692,54.1549783 -4.4846839,bus:yes;highway:bus_stop;name:Prospect Terrace;public_transport:platform;ref:20128
+node/685338703,54.1543069 -4.4848129,bus:yes;highway:bus_stop;name:Rosemount Church;public_transport:platform;ref:131;shelter:yes
+node/685539625,54.1503866 -4.4812587,bus:yes;highway:bus_stop;name:Prospect Hill;public_transport:platform;ref:129;shelter:yes
+node/727802289,54.0682189 -4.7370149,tourism:picnic_site
+node/729980022,54.0879692 -4.7400118,"description:One of the stones erected in celebration of the millennium in the year 2000.;historic:monument;inscription:2000, Rushen;material:stone;name:Millennium Stone, Rushen;start_date:2000"
+node/735126874,54.1558125 -4.4774855,historic:memorial;listed_status:Registered;material:stone;memorial:war_memorial;name:Douglas War Memorial;ref:registered_building:315;source:Isle of Man Government aerial imagery (2001);url:https://www.iwm.org.uk/memorials/item/memorial/28188;url:registered_building:https://www.gov.im/media/1373633/315-notice-and-entry-summary.pdf;wikidata:Q13528868;wikipedia:en:Douglas War Memorial
+node/735916611,54.1432461 -4.4685006,"artist_name:Amanda Barton;artwork_type:statue;material:bronze;name:Sir William Hillary;start_date:1999-09-21;subject:wikidata:Q8012342;subject:wikipedia:en:William Hillary;tourism:artwork;wikimedia_commons:Category:Statue of William Hillary, Douglas Head"
+node/736596140,54.1724124 -4.5012408,"description:A representation of the solar system, incorporating a gigantic replica of the Manx Sword of State, erected in 2000 to celebrate the millennium year.;historic:monument;image:http://www.island-images.co.uk/2012/1210/1210291339.html;name:Millennium Monument;source:Isle of Man Government aerial imagery (2001);start_date:2000"
+node/740377152,54.124656 -4.5340296,bus:yes;highway:bus_stop;name:Port Soderick Car Park;public_transport:platform;ref:12902
+node/745934530,54.0552928 -4.6246696,historic:ruins;source:Isle of Man Government aerial imagery (2001)
+node/745987473,54.098306 -4.6283611,bus:yes;highway:bus_stop;name:Ballasalla Main Road Stop;public_transport:platform;ref:406;shelter:yes
+node/745987474,54.0978704 -4.6292021,bus:yes;highway:bus_stop;name:Ballasalla Main Stop Southbound;public_transport:platform;ref:405
+node/745987476,54.081107 -4.6418617,bus:yes;highway:bus_stop;name:King William's College Shelter;public_transport:platform;ref:604
+node/751574140,54.0786511 -4.6344649,historic:memorial;listed_status:Registered;memorial:war_memorial;name:King William's College War Memorial;ref:registered_building:314;url:registered_building:https://www.gov.im/media/1373631/314-notice-and-entry-summary.pdf;wikidata:Q118188716
+node/754041388,54.1698895 -4.524387,amenity:fuel;brand:Kaneens;mapillary:3331704693723754;name:Kaneens;survey:date:2021-09-16
+node/756012451,54.1570365 -4.6427567,source:Isle of Man Government 1:25000 map (2007);tourism:picnic_site
+node/759625607,54.3606648 -4.5173289,communication:microwave:yes;communication:mobile_phone:yes;man_made:tower;tower:construction:lattice_steel;tower:type:communication
+node/779288954,54.1703363 -4.7327195,historic:ruins;historic:civilization:modern;name:Stand-by Set House;ruins:bunker;source:Isle of Man Government aerial imagery (2001)
+node/779288959,54.1685777 -4.738041,historic:ruins;historic:civilization:modern;name:Receiver Block;ruins:bunker;source:Isle of Man Government aerial imagery (2001)
+node/779288965,54.167466 -4.7326229,historic:ruins;historic:civilization:modern;name:Substation;ruins:bunker;source:Isle of Man Government aerial imagery (2001)
+node/779288973,54.1716866 -4.7333954,historic:ruins;historic:civilization:modern;name:Transmitter Block;ruins:bunker;source:Isle of Man Government aerial imagery (2001)
+node/779288978,54.1734324 -4.7344254,historic:ruins;historic:civilization:modern;name:Transmitter Block;ruins:bunker;source:Isle of Man Government aerial imagery (2001)
+node/780295091,54.0950643 -4.6468126,name:Cross Four Ways;place:hamlet;tourism:attraction
+node/801113963,54.1902373 -4.5816964,name:The Highlander;tourism:attraction
+node/801114012,54.1927085 -4.5888657,name:Greeba Castle;tourism:attraction
+node/827908802,54.0806463 -4.6421925,bus:yes;highway:bus_stop;name:King William's College;public_transport:platform;ref:603
+node/827908910,54.0791922 -4.643761,bus:yes;highway:bus_stop;name:Janet's Corner Entrance;public_transport:platform;ref:605;shelter:yes
+node/827908948,54.0777081 -4.6493122,bus:yes;highway:bus_stop;name:Castletown Station / Elizabeth Rise;public_transport:platform;ref:610
+node/841383800,54.0945213 -4.6298723,bus:yes;highway:bus_stop;name:Meadow Court;public_transport:platform;ref:410;source:survey;Bing
+node/918436616,54.203861 -4.6412182,historic:memorial;listed_status:Registered;material:stone;memorial:war_memorial;name:National War Memorial;ref:GB:imher:IOM_NIWM_GER_00001;ref:registered_building:318;url:https://www.iwm.org.uk/memorials/item/memorial/28254;url:imher:https://isleofmanher.im/report/403fb789-03a7-4f63-8706-d3a08d96ef57;url:registered_building:https://www.gov.im/media/1373636/318-notice-and-entry-summary.pdf;wikidata:Q118188720
+node/918436621,54.2043101 -4.6401313,"alt_name:Millennium Stone;description:Erected to mark the 1000th anniversary of Isle of Man Parliament, Tynwald.;historic:monument;image:http://manxscenes.com/01&2/April%2003/Millenium_Stone.htm;material:stone;name:Millennium of Tynwald Monument;start_date:1979"
+node/937630389,54.1540829 -4.5395529,bus:yes;highway:bus_stop;name:Cooil Crossroads;public_transport:platform;ref:1201;shelter:no
+node/937676472,54.1575919 -4.4784882,amenity:fountain
+node/938884284,54.1741558 -4.497498,archaeological_site:earthwork;historic:archaeological_site;historic:civilization:iron-age;name:Castleward Fort;ref:GB:imher:0688.00;source:Isle of Man Government 1:25k map (2007);url:imher:https://isleofmanher.im/report/a2276050-1271-48eb-a99e-cda9f662dd28
+node/939199116,54.1641089 -4.4686549,name:Silvercraigs;phone:01624 677776;tourism:hotel;website:http://www.silvercraigshotel.com
+node/939423342,54.1566381 -4.4773702,bus:yes;highway:bus_stop;name:Harris Promenade / Villa Marina;public_transport:platform;ref:60007 / 20118;shelter:yes
+node/948933228,54.1523317 -4.4782966,"bus:yes;highway:bus_stop;name:Loch Promenade, Granville Street;public_transport:platform;ref:00117"
+node/948933235,54.1528126 -4.4781765,bus:yes;highway:bus_stop;name:Loch Promenade;public_transport:platform;ref:20120
+node/950922367,54.2248471 -4.682807,bus:yes;highway:bus_stop;name:Peveril Road / Ballaquane Junction;public_transport:platform;ref:2422;shelter:no
+node/951575169,54.3139686 -4.3733943,bus:yes;highway:bus_stop;name:Ballure / Merriweathers;public_transport:platform;ref:3809
+node/962491065,54.0823335 -4.6405216,bus:yes;highway:bus_stop;name:Brookfields Avenue Entrance;public_transport:platform;ref:602
+node/962512433,54.0767305 -4.6511649,bus:yes;highway:bus_stop;name:Victoria Road Riverside;public_transport:platform;ref:612
+node/962512474,54.0766558 -4.6628576,bus:yes;highway:bus_stop;name:Red Gapp / Royal Life;public_transport:platform;ref:621
+node/962512483,54.0777761 -4.6632697,bus:yes;highway:bus_stop;name:Ballalough Shelter;public_transport:platform;ref:622;shelter:yes
+node/962512484,54.074984 -4.6594539,bus:yes;highway:bus_stop;name:Arbory Road / Buchan School;public_transport:platform;ref:620
+node/962512487,54.0754396 -4.6609146,bus:yes;highway:bus_stop;name:Castle Rushen High School;public_transport:platform;ref:619
+node/962512488,54.073846 -4.6580617,bus:yes;highway:bus_stop;name:Farrants Way / Kissack Road;public_transport:platform;ref:617
+node/962512507,54.0780901 -4.664195,bus:yes;highway:bus_stop;name:Ballalough Estate;public_transport:platform;ref:623
+node/1022794634,54.0638493 -4.7934564,"historic:memorial;memorial:sculpture;name:Thousla Cross;photo:https://www.geograph.org.uk/photo/4613344;source:Bing;wikimedia_commons:File:The Thousla Cross, Kitterland, Thousla Rock and the Calf - geograph.org.uk - 639890.jpg"
+node/1022840996,54.0636919 -4.7923944,bus:yes;public_transport:stop_position
+node/1069288727,54.1604013 -4.4823405,bench:yes;bus:yes;highway:bus_stop;name:York Road / Waverley Court Shelter;operator:Bus Vannin;public_transport:platform;ref:20145;shelter:yes
+node/1069461316,54.1692825 -4.6351272,bus:yes;highway:bus_stop;name:Higher Foxdale Industrial Estate;public_transport:platform;ref:1501
+node/1069461330,54.1672926 -4.6097484,bus:yes;highway:bus_stop;name:Eairy Dam Shelter;public_transport:platform;ref:1401
+node/1151602541,54.4171933 -4.3637995,man_made:lighthouse;name:Point of Ayre Winkie Lighthouse;seamark:light:character:Fl;seamark:light:colour:white;seamark:light:height:10;seamark:light:period:3;seamark:light:range:8;seamark:light:reference:A 4722;seamark:light:sequence:0.3+(2.7);seamark:type:light_minor;start_date:1889
+node/1151886562,54.3155908 -4.5137418,name:Quarry Bends;tourism:attraction;wikidata:Q7269208;wikipedia:en:Quarry Bends
+node/1186566632,54.3201295 -4.3809531,"light_rail:yes;name:Ramsey, Plaza;public_transport:stop_position;railway:stop;ref:50101"
+node/1195573103,54.0994264 -4.6247347,bus:yes;highway:bus_stop;name:Opposite Whitestone Garage;public_transport:platform;ref:403
+node/1195573114,54.1074313 -4.6062729,bus:yes;highway:bus_stop;name:Orrisdale Road;public_transport:platform;ref:10403
+node/1195573117,54.1481936 -4.481873,"bench:yes;bin:yes;bus:yes;highway:bus_stop;lit:yes;name:Lord Street, Hanover House;public_transport:platform;ref:109;shelter:yes;tactile_paving:no"
+node/1195573125,54.1457353 -4.5219494,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/1196357082,54.1308126 -4.5661482,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes;source:Isle of Man Government aerial imagery (2001)
+node/1196357105,54.1238231 -4.573897,bus:yes;highway:bus_stop;name:Brown Cow Hill Layby;public_transport:platform;ref:310;source:Isle of Man Government aerial imagery (2001)
+node/1202344781,54.0920091 -4.7414965,bus:yes;highway:bus_stop;name:Ballafesson Road;public_transport:platform;ref:11905;shelter:yes
+node/1207505201,54.0525234 -4.8289741,man_made:lighthouse;name:Lower Light;start_date:1818;wikidata:Q2933886
+node/1207505212,54.0533327 -4.8291398,man_made:lighthouse;start_date:1968;wikidata:Q3378194
+node/1207505246,54.0539844 -4.8281053,man_made:lighthouse;name:Upper Light;start_date:1818;wikidata:Q2933884
+node/1219059184,54.3079989 -4.4086733,historic:ruins;name:Chapel;source:Isle of Man Government 1:25000 map (2007)
+node/1247615201,54.2883033 -4.5818033,amenity:kindergarten
+node/1286674565,54.2256942 -4.6154332,amenity:fountain
+node/1286674600,54.2059207 -4.6366545,amenity:shelter;tourism:viewpoint
+node/1304030839,54.2927328 -4.5779057,name:Birkin's Bend;tourism:attraction;wikidata:Q4916488;wikipedia:en:Birkin's Bend
+node/1319194401,54.2247055 -4.3948133,light_rail:yes;name:Southcape Halt;name:en:Southcape Halt;name:gv:Staad Jiass Cloagey;public_transport:stop_position;railway:halt;ref:50140;wikidata:Q7566508;wikipedia:en:South Cape Halt
+node/1367207718,54.1479466 -4.4861484,public_transport:stop_position;rail:yes;railway:stop;train:yes
+node/1498453873,54.1520977 -4.5047247,bus:yes;highway:bus_stop;name:National Sports Centre Layby;public_transport:platform;ref:206
+node/1556404804,54.1463948 -4.466173,man_made:lighthouse;seamark:information:Visible 038° - 218°;seamark:light:character:Q;seamark:light:colour:red;seamark:light:height:12;seamark:light:range:1;seamark:light:reference:A 4772;seamark:type:light_minor;source:US NGA Pub. 114. 2011-05-26.
+node/1556406072,54.0621 -4.8006833,"man_made:lighthouse;seamark:light:character:Fl;seamark:light:colour:red;seamark:light:height:9;seamark:light:period:3;seamark:light:range:4;seamark:light:reference:A 4745;seamark:light:sequence:0.7+(2.3);seamark:name:Thousla Rock;seamark:type:light_minor;source:US NGA Pub. 114. 2011-05-26.;wikidata:Q28791855;wikimedia_commons:File:Thousla Rock Beacon, Calf Sound (geograph 2385290).jpg"
+node/1603964215,54.2219611 -4.691768,historic:memorial;material:sandstone;memorial:war_memorial;name:Parish of German War Memorial;url:https://www.iwm.org.uk/memorials/item/memorial/28194;url_1:https://www.warmemorialsonline.org.uk/memorial/190427/
+node/1638215285,54.2224176 -4.6909313,bus:yes;highway:bus_stop;name:Peel Town Hall;public_transport:platform;ref:2414;shelter:yes
+node/1697702230,54.2370381 -4.4736702,alt_name:Dukes;highway:milestone;name:32nd Milestone;tourism:attraction
+node/1697727831,54.3132122 -4.3769761,"name:Waterworks;tourism:attraction;wikidata:Q7973426;wikipedia:en:Waterworks, Isle of Man"
+node/1697727855,54.3011464 -4.3935816,"alt_name:Joey's;highway:milestone;name:26th Milestone;tourism:attraction;wikidata:Q4632463;wikipedia:en:26th Milestone, Isle of Man"
+node/1697728716,54.3147612 -4.3829628,name:Stella Maris;tourism:attraction
+node/1705161151,54.6098934 -5.9124388,addr:city:Belfast;addr:postcode:BT3 9HY;addr:street:Albert Quay;ferry:yes;name:Belfast (Isle of Man Steam Packet Company Terminal);operator:Isle of Man Steam Packet Company;public_transport:stop_position
+node/1711905186,54.0927911 -4.763392,bus:yes;highway:bus_stop;name:Bradda West;public_transport:platform;ref:814
+node/1726883287,54.0880919 -4.6425573,name:Ronaldsway Halt;name:en:Ronaldsway Halt;name:gv:Stad Roonysvaie;public_transport:stop_position;rail:yes;railway:halt;train:yes;wikidata:Q7365445;wikimedia_commons:File:Ronaldsway Halt.jpg
+node/1732876575,54.3206181 -4.3935936,name:School House Corner;tourism:attraction;wikidata:Q7432270;wikipedia:en:School House Corner
+node/1732884687,54.3180719 -4.4327492,name:Glentramman;tourism:attraction
+node/1745777545,54.241574 -4.6063079,name:Molyneux's;tourism:attraction
+node/1745777551,54.250412 -4.5891628,"name:Handley's Corner;old_name:Ballamenagh Corner;tourism:attraction;wikidata:Q5647476;wikipedia:en:Handley's Corner, Isle of Man"
+node/1745777565,54.2543803 -4.585168,name:McGuinness's;tourism:attraction
+node/1747483581,54.319273 -4.3825182,name:Cruickshank's Corner;tourism:attraction
+node/1748089610,54.1497583 -4.5158873,bus:yes;highway:bus_stop;name:Anagh Coar Entrance / Castletown Road;public_transport:platform;ref:10301;shelter:yes
+node/1748089611,54.1502114 -4.5146539,bus:yes;highway:bus_stop;public_transport:platform
+node/1751528049,54.1715385 -4.5362237,name:Ballahutchin Hill;tourism:attraction
+node/1783400412,54.2480093 -4.4650358,name:Hailwood's Rise;tourism:attraction
+node/1786357117,54.0708425 -4.7659408,bus:yes;highway:bus_stop;name:Cregneash Car Park;public_transport:platform;ref:1004
+node/1789278387,54.2793027 -4.3694885,light_rail:yes;name:Dolland Halt;public_transport:stop_position;railway:stop;ref:50118
+node/1807987361,54.1645485 -4.4834511,bus:yes;highway:bus_stop;name:Ballaquayle Road / St. Ninian's Shelter;public_transport:platform;ref:20123;shelter:yes
+node/1828170929,53.3450251 -6.1952327,ferry:yes;public_transport:stop_position
+node/1830297834,54.1181394 -4.5876352,bus:yes;highway:bus_stop;name:Santon Railway Station Towards Douglas;public_transport:platform;ref:314
+node/1830297837,54.1187287 -4.5861318,bus:yes;highway:bus_stop;name:Santon Railway Station Towards Castletown;public_transport:platform;ref:315
+node/1830297853,54.1392426 -4.5504475,bus:yes;highway:bus_stop;public_transport:platform
+node/1830297857,54.1403964 -4.5461122,bus:yes;highway:bus_stop;name:Rosehill Farm;public_transport:platform;ref:303
+node/1830297863,54.141293 -4.5414991,bus:yes;highway:bus_stop;name:Horses Home Northbound;public_transport:platform;ref:302
+node/1830297866,54.1412035 -4.5394913,bus:yes;highway:bus_stop;name:Horses Home Southbound;public_transport:platform;ref:301
+node/1830297872,54.1453068 -4.5235967,bus:yes;highway:bus_stop;name:Anagh Coar Four Roads Shelter;public_transport:platform;ref:10305;shelter:no
+node/1830297876,54.1479226 -4.5185768,bus:yes;highway:bus_stop;name:Castletown Road Towards Douglas;public_transport:platform;ref:10304
+node/1830297877,54.1481392 -4.5180201,bus:yes;highway:bus_stop;name:Hampton Farm Estate;public_transport:platform;ref:10303
+node/1830297878,54.1519381 -4.5113743,bus:yes;highway:bus_stop;name:New Casteletown Road;public_transport:platform;shelter:yes
+node/1830297879,54.1579993 -4.5152127,bin:yes;bus:yes;highway:bus_stop;name:Meadow Crescent No.6;public_transport:platform;ref:1606;shelter:yes
+node/1830297880,54.1604074 -4.5041231,bus:yes;highway:bus_stop;name:Braddan Bridge / Douglas Road Layby;operator:Bus Vannin;public_transport:platform;ref:1702;shelter:no
+node/1830297908,54.1704436 -4.5274629,bus:yes;highway:bus_stop;network:1904;public_transport:platform;ref:Trollaby Junction
+node/1830297913,54.1705694 -4.5281222,bus:yes;highway:bus_stop;name:Trollaby Lane;public_transport:platform;ref:1903
+node/1830297915,54.1728086 -4.5435789,bus:yes;highway:bus_stop;name:Glen Lough;public_transport:platform;ref:2002
+node/1830297916,54.1761137 -4.5528209,bus:yes;highway:bus_stop;public_transport:platform
+node/1830297918,54.1847732 -4.5680363,bus:yes;highway:bus_stop;name:Crosby Hotel;public_transport:platform;ref:2106
+node/1830297925,54.1862613 -4.5719736,bus:yes;highway:bus_stop;name:Ballavitchell Farm Entrance;public_transport:platform;ref:2107
+node/1830297943,54.197701 -4.6155171,bus:yes;highway:bus_stop;name:Kerrowgarrow Road Junction;public_transport:platform;ref:2209
+node/1830297945,54.2021653 -4.6278926,bus:yes;highway:bus_stop;name:Ballacraine / Curragh Road;public_transport:platform;ref:2301
+node/1832143308,54.3868875 -4.3948185,historic:archaeological_site;name:Glentruan (Stone Axe)
+node/1833598303,54.2842165 -4.3404945,"alt_name:Ruillic ny Quakeryn Burial Ground;alt_name:gv:Ruillic ny Quakeryn;archaeological_site:burial;historic:archaeological_site;name:Quaker Burial Ground;name:en:Quaker Burial Ground;name:gv:Ruillick ny Quakeryn;ref:GB:imher:0594.00;start_date:1672;url:imher:https://isleofmanher.im/report/cd448b28-5ac2-4fa2-8662-7a3db4de2128;website:https://manxnationalheritage.im/our-sites/ballafayle-cairn/;wikimedia_commons:File:Quakers burial ground, Maughold. Isle of Man. - geograph.org.uk - 44543.jpg"
+node/1879332958,54.1687626 -4.6638609,historic:ruins;name:Snuff the Wind
+node/1966096127,54.0813749 -4.6241893,date:1275-10-08;description:Part of the Norse-Manx Rebellion against the Scots.;historic:battlefield;name:Battle of Ronaldsway;wikidata:Q2497690;wikipedia:en:Battle of Ronaldsway
+node/1967582955,54.1689554 -4.4973778,bus:yes;highway:bus_stop;name:Cronkbourne Viiage No.12;public_transport:platform;ref:13107;shelter:yes
+node/1968331086,54.1430006 -4.4699555,communication:mobile_phone:yes;communication:radio:yes;man_made:tower;operator:Manx Radio;tower:construction:lattice;tower:type:communication
+node/2155263346,54.1706685 -4.4742499,historic:archaeological_site;name:The White Lady;note:Bronze Age burial marker and site of a keeill. Cremation urns and graves have been found in the area.;ref:GB:imher:0240.00;url:imher:https://isleofmanher.im/report/809e38e8-d701-4bc7-a106-e05d427a0626
+node/2382824420,54.1301523 -4.5387613,bus:yes;highway:bus_stop;name:Old Castletown Road Shelter;public_transport:platform;ref:12904;source:Bing
+node/2394523265,54.1272259 -4.5204793,tourism:picnic_site
+node/2394903220,54.1272615 -4.5039093,description:Dark Sky Discovery Site;tourism:viewpoint
+node/2394903241,54.1275758 -4.5034158,tourism:picnic_site
+node/2477902035,54.1570671 -4.6443365,addr:city:Foxdale;addr:country:IM;addr:place:South Barrule Plantation;addr:street:Shoulder Road;leisure:sports_centre;name:Ape Mann Adventure Park;sport:climbing_adventure;website:http://www.apemann.info/
+node/2651176721,54.1009411 -4.6208214,bus:yes;highway:bus_stop;name:Glashen Close Entrance;public_transport:platform;ref:402;source:Bing;survey;
+node/2651176723,54.1049012 -4.6123413,bus:yes;highway:bus_stop;name:Glashen Garey;public_transport:platform;ref:10408;source:Bing;survey;
+node/2651176724,54.1148239 -4.594902,bus:yes;highway:bus_stop;name:Ballalonna Farm Entrance;public_transport:platform;ref:10402;source:GPS;survey;
+node/2651176725,54.1153728 -4.5936919,bus:yes;highway:bus_stop;public_transport:platform;source:GPS;survey;
+node/2683188674,54.2160831 -4.6161375,height:45;man_made:tower;name:Beary Park;operator:Arqiva;ref:Arqiva:13711;tower:type:communication
+node/2955656043,54.2206467 -4.6906251,bench:no;bin:no;bus:yes;highway:bus_stop;name:Albany Road–Tynwald Road Junction;public_transport:platform;ref:2427;shelter:no;wheelchair:yes
+node/2955656047,54.2209997 -4.6774939,bench:no;bin:no;bus:yes;highway:bus_stop;lit:yes;name:Ballawattleworth / The Highwayman;public_transport:platform;ref:2430;shelter:yes;source:survey;tactile_paving:no
+node/2955656058,54.2226051 -4.6762189,bus:yes;highway:bus_stop;name:Ballawattleworth / Oak Road;public_transport:platform;ref:2429;source:survey
+node/2955656060,54.225942 -4.6789604,bus:yes;highway:bus_stop;name:Belle Vue Junction;public_transport:platform;ref:2424;source:survey
+node/2955656064,54.2271874 -4.6756082,bus:yes;highway:bus_stop;name:Reayrt Aalin Towards Ramsey;public_transport:platform;ref:2425;source:survey
+node/3191020418,54.23117 -4.3969693,"archaeological_site:tomb;historic:archaeological_site;historic:civilization:neolithic;name:Neolithic tomb;note:Updated location. Source gives camera location as somewhere in the Axnfell woods, but image is of the menhir near King Orry's Grave;source:https://commons.wikimedia.org/wiki/File:Neolithic_tomb,_Isle_of_Man_-_geograph.org.uk_-_298356.jpg"
+node/3683451916,54.0780257 -4.7398375,bus:yes;highway:bus_stop;name:Port St Mary Promenade;public_transport:platform;ref:903
+node/3683822929,54.0841445 -4.7268519,bus:yes;highway:bus_stop;name:Gansey Opposite Avondale;public_transport:platform;ref:11803
+node/3683858707,54.085167 -4.7536819,bus:yes;highway:bus_stop;name:Station Road Shelter;public_transport:platform;ref:804
+node/3684680318,54.0715989 -4.7376652,bus:yes;highway:bus_stop;name:Port St. Mary Harbour;public_transport:platform;ref:909
+node/3685799330,54.0727286 -4.7394048,bus:yes;highway:bus_stop;name:Park Road;public_transport:platform;ref:907
+node/3685802083,54.1124255 -4.5985958,bus:yes;highway:bus_stop;public_transport:platform
+node/3686497918,54.0990711 -4.6778751,bus:yes;highway:bus_stop;name:Friary Park;public_transport:platform;ref:708
+node/3686501612,54.1512073 -4.5289128,bus:yes;highway:bus_stop;name:Spring Valley Industrial Estate / B & Q;public_transport:platform;ref:1109
+node/3686503799,54.0961144 -4.7052545,bus:yes;highway:bus_stop;name:Colby Methodist Church;public_transport:platform;ref:10703;shelter:yes
+node/3686503800,54.0963077 -4.6980531,bus:yes;highway:bus_stop;name:Cronk-Y-Thatcher;public_transport:platform;ref:10702
+node/3686503801,54.091561 -4.7258239,bus:yes;highway:bus_stop;name:Opposite Carrick Bay View;public_transport:platform;ref:10711
+node/3686505094,54.0838832 -4.743999,bus:yes;highway:bus_stop;name:Four Roads / Holmcroft;public_transport:platform;ref:809
+node/3686505242,54.0904501 -4.7445517,bus:yes;highway:bus_stop;name:Barrack Road Junction;public_transport:platform;ref:11907
+node/3686505243,54.0914334 -4.7433527,bus:yes;highway:bus_stop;public_transport:platform
+node/3686505244,54.0885464 -4.7478101,bus:yes;highway:bus_stop;name:Ponyfields Entrance;public_transport:platform;ref:801
+node/3686505245,54.0867278 -4.7500632,bus:yes;highway:bus_stop;name:Marashen Crescent;public_transport:platform;ref:802
+node/3686505246,54.0846229 -4.7461286,bus:yes;highway:bus_stop;name:Southlands;public_transport:platform;ref:808
+node/3686505859,54.0996993 -4.6823002,bus:yes;highway:bus_stop;name:Vicarage Close;public_transport:platform;ref:712
+node/3686505860,54.1005612 -4.6797899,bus:yes;highway:bus_stop;name:Ballabeg Hall;public_transport:platform;ref:710
+node/3690073508,54.073787 -4.7386634,bus:yes;highway:bus_stop;name:High Street;public_transport:platform;ref:910
+node/3690075644,54.095618 -4.7105486,bus:yes;highway:bus_stop;name:Belle Abbey Chapel;public_transport:platform;ref:10706
+node/3690083404,54.1502271 -4.4947543,bus:yes;highway:bus_stop;name:Hills Meadow;public_transport:platform;shelter:yes
+node/3690083406,54.1530561 -4.5079023,bus:yes;highway:bus_stop;name:Groves Road / Springfield Avenue;public_transport:platform;ref:207
+node/3690083407,54.1505793 -4.4997497,bus:yes;highway:bus_stop;name:Pulrose Bridge Shelter;network:Bus Vannin;public_transport:platform;ref:20168;shelter:yes
+node/3690084686,54.0849407 -4.7206345,bus:yes;highway:bus_stop;name:Opposite Shore Hotel;public_transport:platform;ref:11801
+node/3702595482,54.3598157 -4.5213714,bus:yes;highway:bus_stop;name:Jurby Parade Ground;public_transport:platform;ref:4204
+node/3702595483,54.3570907 -4.5292785,bus:yes;highway:bus_stop;name:Jurby Prison Shelter;public_transport:platform;ref:4213;shelter:yes
+node/3732646875,54.0784265 -4.7411319,bus:yes;highway:bus_stop;name:Plantation Road;public_transport:platform;ref:911
+node/3732747935,54.1528158 -4.5356665,bus:yes;highway:bus_stop;name:Cooil Road Roundabout;public_transport:platform;ref:1104
+node/3732747937,54.1507211 -4.5305923,bus:yes;highway:bus_stop;name:Cooil Road / B & Q;public_transport:platform;ref:1106;shelter:yes
+node/3732769885,54.1493676 -4.4873114,bus:yes;highway:bus_stop;public_transport:platform
+node/3732769886,54.1485571 -4.4805656,bus:yes;highway:bus_stop;name:Douglas Ridgeway Street;public_transport:platform;ref:128
+node/3732769891,54.1496959 -4.4909029,bench:yes;bin:yes;bus:yes;departures_board:timetable;highway:bus_stop;name:Peel Road Brown Bobby;operator:Bus Vannin;public_transport:platform;ref:111;shelter:yes;tactile_paving:no
+node/3732769893,54.1495351 -4.4862467,bench:no;bin:yes;bus:yes;highway:bus_stop;name:Circular Road / Hillside Avenue;public_transport:platform;ref:20162;shelter:no
+node/4000936757,54.0882702 -4.7484996,bench:no;bus:yes;covered:no;highway:bus_stop;name:Opposite Ponyfields;public_transport:platform;ref:813;shelter:no
+node/4115148160,54.120315 -4.5814893,addr:city:Santon;addr:country:IM;addr:postcode:IM4 1EJ;addr:street:Santon Main Road;name:Santon Country Retreat;old_name:Santon Motel;tourism:hotel;website:https://www.visitisleofman.com/stay/santon-country-retreat-p1287691
+node/4142773579,54.3161559 -4.5123854,"bus:yes;highway:bus_stop;name:Wildlife Park (NE & SW bound);note:Served in both directions, SW-bound buses do a clockwise loop via the car park service road;public_transport:platform;ref:2801"
+node/4187695286,54.3671156 -4.4439755,amenity:clock;display:analog;faces:4;name:Millennium Clock;source:mapillary;support:pole
+node/4200367954,54.148297 -4.4756732,amenity:clock;display:analogue;support:wall_mounted
+node/4306422932,54.1716953 -4.4255335,light_rail:yes;name:Howstrake Camp Halt;pole_number:87;public_transport:stop_position;railway:halt;ref:50008;wikidata:Q5922603;wikipedia:en:Howstrake Camp Halt
+node/4306422934,54.1773715 -4.4265081,light_rail:yes;name:Groudle Old Road Halt;public_transport:stop_position;railway:halt;ref:50009;ref:poll:107;wikidata:Q5610839;wikipedia:en:Groudle Lane Halt
+node/4306458594,54.2070546 -4.4103231,light_rail:yes;name:Garwick Glen;name:gv:Staad Glion Garwick;public_transport:stop_position;railway:stop;ref:50145;wikidata:Q5524543;wikipedia:en:Garwick Glen Halt
+node/4321786381,54.213481 -4.4057918,light_rail:yes;name:Ballabeg Station;name:en:Ballabeg Station;name:gv:Stashoon Tram Balley Beg;public_transport:stop_position;railway:stop;ref:50018;ref:pole:282;wikidata:Q4851303;wikipedia:en:Ballabeg tram stop
+node/4321786385,54.22111 -4.3991314,light_rail:yes;name:Fairy Cottage;name:gv:Staad Ferrish Bwaane;public_transport:stop_position;railway:stop;ref:50142;ref:poll:307
+node/4321950931,54.2303215 -4.4038191,light_rail:yes;name:Laxey Car Sheds;name:gv:Carr Bwaag Laksaa;public_transport:stop_position;railway:halt;ref:50022;ref:poll:347;wikidata:Q6505141;wikipedia:en:Laxey Car Sheds
+node/4342246137,54.2315599 -4.3781924,light_rail:yes;name:Skinscoe Halt;name:gv:Staad Skinscoe;public_transport:stop_position;railway:stop;ref:50134
+node/4342246139,54.2328033 -4.3774218,light_rail:yes;name:Ballamoar Bottom Halt;name:gv:Staad Balley Moar (Jerrey);public_transport:stop_position;railway:stop
+node/4342246140,54.2338227 -4.3768079,light_rail:yes;name:Ballamoar Top Halt;name:gv:Staad Balley Moar (Baare);public_transport:stop_position;railway:stop
+node/4342246141,54.2416665 -4.3732485,light_rail:yes;name:Ballaragh Halt;name:gv:Staad Balley Ragh;public_transport:stop_position;railway:stop;ref:50133
+node/4342246161,54.2559541 -4.3716511,light_rail:yes;name:Dhoon Quarry Halt;name:gv:Staad Quarral Dhoon;public_transport:stop_position;railway:halt;ref:50032;wikidata:Q5269758;wikipedia:en:Dhoon Quarry Halt
+node/4342246179,54.2595065 -4.3719106,light_rail:yes;name:Brown's Crossing;public_transport:stop_position;railway:halt;ref:50034
+node/4342259530,54.2644726 -4.3783809,light_rail:yes;name:Ballig Halt;name:gv:Staad Balley Ligg;public_transport:stop_position;railway:stop;ref:50125
+node/4342287021,54.2688357 -4.3765871,light_rail:yes;name:Corkhill's Crossing Halt;public_transport:stop_position;railway:stop;ref:50123
+node/4342287026,54.2701589 -4.375949,light_rail:yes;name:Glen Mona Halt;public_transport:stop_position;railway:stop;ref:50122
+node/4342287033,54.2716382 -4.375228,light_rail:yes;name:The Garey Halt;public_transport:stop_position;railway:stop;ref:50121
+node/4342287034,54.2741509 -4.3751129,light_rail:yes;name:Ballagorry;name:gv:Staad Balley Gorry;public_transport:stop_position;railway:stop;ref:50120
+node/4342287042,54.2808536 -4.352852,light_rail:yes;name:Murray's Road Halt;name:gv:Straad Crowcreen;old_name:Crowcreen Halt;public_transport:stop_position;railway:stop;ref:50115;wikidata:Q5189152;wikipedia:en:Crowcreen Halt
+node/4342287043,54.2783234 -4.3457525,light_rail:yes;name:Ballaskeig Halt;public_transport:stop_position;railway:halt;ref:50114;wikidata:Q4851533;wikipedia:en:Ballaskeig Halt
+node/4342492999,54.0337146 -2.9135253,ferry:yes;public_transport:stop_position;source:PGS
+node/4342493001,54.0349707 -2.913663,amenity:ferry_terminal;ferry:yes;public_transport:stop_position;source:PGS
+node/4344174868,54.3178989 -4.3775994,light_rail:yes;name:Queen's Drive Halt;name:en:Queen's Drive Halt;name:gv:Staad Bayr Benrein;public_transport:stop_position;railway:halt;ref:50102;wikidata:Q7270761;wikipedia:en:Queens Drive Halt
+node/4344226094,54.2851821 -4.3353763,light_rail:yes;name:Rome's Crossing;public_transport:stop_position;railway:halt;ref:50111;wikidata:Q7362941;wikipedia:en:Rome's Crossing
+node/4344276019,54.2625831 -4.3758515,light_rail:yes;name:Ballellin Halt;name:gv:Staad Balley McAleyn;public_transport:stop_position;railway:halt;ref:50035;wikidata:Q4851580;wikipedia:en:Ballellin Halt
+node/4344276027,54.2580098 -4.371624,light_rail:yes;name:Thalloo Mitchell Halt;public_transport:stop_position;railway:stop;ref:50128
+node/4344300644,54.2754589 -4.3631546,archaeological_site:tomb;historic:archaeological_site;historic:civilization:neolithic;name:Cashtal Yn Ard;name:en:Castle of the Heights;name:gv:Cashtal Yn Ard;ref:GB:imher:0557.00;url:imher:https://isleofmanher.im/report/382d5db8-c05e-4358-9b71-88db6a93ce9b;wikidata:Q1047413;wikimedia_commons:File:Cashtel yn Ard - geograph.org.uk - 774758.jpg
+node/4344363139,54.2069241 -4.4130523,"alt_name:Caishtal;archaeological_site:fortification;fortification_type:hill_fort;historic:archaeological_site;name:The Cashtal, Ballagawne;wikidata:Q31118092"
+node/4347823248,54.3135128 -4.3731902,light_rail:yes;name:Ballure Halt;public_transport:stop_position;railway:halt;ref:50056;wikidata:Q4851964;wikipedia:en:Ballure Halt
+node/4347823260,54.2932386 -4.3407914,light_rail:yes;public_transport:stop_position;railway:stop;ref:50109
+node/4347848817,54.2798707 -4.3395035,light_rail:yes;name:Ballacannell Halt;public_transport:stop_position;railway:halt;ref:50048;wikidata:Q4851308;wikipedia:en:Ballacannell Halt
+node/4350374441,54.1642977 -4.7389687,bus:yes;highway:bus_stop;name:Niarbyl;public_transport:platform;ref:7401
+node/4429405084,54.1724938 -4.506117,bus:yes;highway:bus_stop;name:Nobles Hospital Eastbound;public_transport:platform;ref:1801
+node/4658377140,53.3449967 -6.1961033,amenity:ferry_terminal;ferry:yes;name:Dublin Port Terminal 1;public_transport:stop_position
+node/4677323121,54.0891586 -4.6283101,man_made:tower;tower:construction:lattice;tower:type:communication
+node/4861858856,54.2279517 -4.6945382,man_made:lighthouse
+node/4861859223,54.226354 -4.6971574,man_made:lighthouse
+node/4861893526,54.2250659 -4.6985615,name:Lady Fenella;tourism:artwork
+node/4899420258,54.1735471 -4.5607285,man_made:watermill;name:Glen Darragh Water Wheel;tourism:attraction
+node/5063392621,54.1352694 -4.6680078,name:Kerroobeg;name:en:Kerroobeg;tourism:viewpoint
+node/5117277517,54.2022239 -4.4707259,name:Gob-ny-Geay;tourism:attraction;wikidata:Q5575386;wikipedia:en:Gob-ny-Geay
+node/5121577962,54.2727956 -4.4111646,historic:archaeological_site;name:Site of pumping wheel
+node/5121577963,54.2723273 -4.415774,historic:archaeological_site;name:Old Lead Mine
+node/5121577995,54.2726065 -4.4123005,historic:archaeological_site;name:Line of old pumping rod
+node/5121589172,54.2736453 -4.4078534,historic:archaeological_site;name:Old Lead Mine
+node/5121638358,54.2791132 -4.3848589,historic:archaeological_site;name:Old Lead Mine
+node/5122121747,54.1685299 -4.6571359,historic:archaeological_site;name:Dixons Vein Lead Mine
+node/5122148057,54.1667595 -4.6792038,historic:archaeological_site;name:Beckwith's Vein Lead Mine
+node/5122211131,54.1679732 -4.6836107,historic:archaeological_site;name:Old Lead Mine
+node/5122297134,54.2184132 -4.5363091,historic:archaeological_site;name:Ardwhallin Slate Quarry;website:https://www.gov.im/lib/docs/mnh/education/manxmines/4%20MANX%20QUARRIES.pdf
+node/5123643761,54.2049947 -4.6996024,historic:archaeological_site;name:Knockaloe WW1 Internment Camp;ref:GB:imher:9522.00;website:https://www.knockaloe.im/;wikidata:Q65090917;wikipedia:en:Knockaloe Internment Camp
+node/5499896833,53.4001337 -3.0099403,ferry:yes;name:Liverpool (Birkenhead);operator:Stena Line Ltd;public_transport:stop_position
+node/6174710385,54.3556753 -4.5499674,historic:wreck;name:Pasages Shipwreck;seamark:type:wreck;tourism:attraction;wikidata:Q30598409;wikipedia:en:Pasages (steam trawler);wreck:date_sunk:1931;wreck:visible_at_high_tide:no;wreck:visible_at_low_tide:yes
+node/6503531569,54.1796602 -4.5092358,contact:facebook:https://www.facebook.com/UnionMillsFCTTCampsite/;name:FC Camping Union Mills;seasonal:yes;tourism:camp_site;website:https://tt.umfc.tv/
+node/6597029434,54.2127891 -4.4067298,bus:yes;highway:bus_stop;name:Ballabeg Farm;public_transport:platform;ref:3317
+node/6597037636,54.0923367 -4.7212546,bus:yes;highway:bus_stop;name:The Level / Croit-E-Caley Junction;public_transport:platform;ref:10709
+node/6597046184,54.1664085 -4.4509427,bus:yes;highway:bus_stop;name:King Edward Road / Seacliffe Road;public_transport:platform;ref:13302
+node/6597047651,54.0688738 -4.7755962,bus:yes;highway:bus_stop;name:Arraghey;public_transport:platform
+node/6609143864,54.2083257 -4.7145303,tourism:picnic_site
+node/6737245042,54.1663058 -4.4645276,name:The Stables;public_transport:platform;railway:tram_stop;tram:yes
+node/6737245055,54.1707594 -4.4533776,bus:yes;highway:bus_stop;name:Royal Avenue / Alberta Drive;public_transport:platform;ref:3217
+node/6737245063,54.1788418 -4.4783774,bus:yes;name:The Cat With No Tail;public_transport:stop_position
+node/6737245066,54.1739183 -4.5085381,bus:yes;public_transport:stop_position
+node/6739810059,54.1787855 -4.4268542,name:Lhen Coan;public_transport:stop_position;railway:stop;train:yes;wikidata:Q15242310;wikipedia:en:Lhen Coan railway station
+node/6739810060,54.1772635 -4.4175879,name:Sea Lion Rocks;public_transport:stop_position;railway:halt;train:yes;wikidata:Q7439945;wikipedia:en:Sea Lion Rocks railway station
+node/6739810081,54.2620938 -4.4626203,direction:67-247;tourism:viewpoint
+node/6739842704,54.2035399 -4.4122153,light_rail:yes;name:Sunnycott Halt;public_transport:stop_position;railway:stop;wikidata:Q7640798;wikipedia:en:Sunnycott Halt
+node/6918863985,54.2869095 -4.5874254,addr:city:Kirk Michael;addr:housename:Michael United AFC;addr:postcode:IM6 1EE;addr:street:Balleira Road;name:Michael United AFC Campsite;seasonal:yes;tourism:camp_site;website:https://www.visitisleofman.com/trade/information/product-catch-all/michael-utd-afc-campsite-p1287451
+node/7105344014,54.0867365 -4.6347959,bus:yes;highway:bus_stop;name:Ronaldsway Airport;network:Bus Vannin;operator:Bus Vannin;public_transport:platform;ref:503/504;shelter:yes
+node/7612683720,54.4156739 -4.3641703,historic:ruins;historic:civilization:modern;name:Salt works
+node/7751915032,54.0669348 -4.7801998,historic:ruins
+node/7767215085,54.1667188 -4.7407891,alt_name:Borrane Creglea;historic:fort;name:Boirane;source:Isle of Man Government 1:25000 map (2007);wikidata:Q31118315
+node/7767215090,54.1748499 -4.7349755,alt_name:Borrane Ballelby;historic:fort;name:Boirane;source:Isle of Man Government 1:25000 map (2007);wikidata:Q31118318
+node/7771624956,54.0722449 -4.767725,archaeological_site:tumulus;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+node/7795215522,54.3778862 -4.5021464,archaeological_site:tumulus;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+node/7887954946,54.1868167 -4.5732522,name:Crosby Jump;tourism:attraction
+node/8084907117,54.6289833 -5.8889384,ferry:yes;name:Victoria Terminal 2;public_transport:stop_position
+node/8224012072,54.130524 -4.6839645,historic:ruins;name:Ballakisaig;source:name:Isle of Man XII.14 OS map 1870
+node/8224975135,54.1867139 -4.6608217,historic:ruins
+node/8280984446,54.2081576 -4.6342112,contact:website:https://www.islecontemporary.com/;name:Isle Contemporary;tourism:gallery
+node/8298355297,54.1406423 -4.5523891,archaeological_site:church;historic:archaeological_site;name:Speke Keeill
+node/8332283551,54.1034599 -4.5460906,archaeological_site:fortification;historic:archaeological_site;historic:civilization:iron-age;name:Santan Head Promontory Fort;ref:GB:imher:0766.00;url:imher:https://isleofmanher.im/report/6b9a0a89-3554-4884-8c77-ad70198ff412
+node/8335740124,54.1668648 -4.6896969,historic:ruins
+node/8336041826,54.3106796 -4.4255026,archaeological_site:tumulus;historic:archaeological_site
+node/8336041862,54.3110661 -4.424982,archaeological_site:tumulus;historic:archaeological_site
+node/8340026258,54.1696279 -4.580401,archaeological_site:chair;historic:archaeological_site;name:St Patrick's Chair;ref:GB:imher:0302.00;url:imher:https://isleofmanher.im/report/b252ea50-bc55-480b-bee2-85bef7276b7c
+node/8349920228,54.2121907 -4.5140979,historic:archaeological_site;name:Old Tynwald Hill;name:gv:Cronk y Keeill Abban;ref:GB:imher:0723.00;url:imher:https://isleofmanher.im/report/8ba8fe3a-1f0b-415e-bea4-8276ab183ecd
+node/8350553897,54.1647714 -4.5633734,alt_name:Keeill Ingan;archaeological_site:church;historic:archaeological_site;historic:civilization:medieval;name:Keeill Lingan;ref:GB:imher:0303.00;url:imher:https://isleofmanher.im/report/422d4a6b-e4b0-4e6e-a622-adebae65e6ff
+node/8353405755,54.1764209 -4.5342504,archaeological_site:church;historic:archaeological_site;name:St Patrick's Chapel;source:Isle of Man Government 1:25000 map (2007)
+node/8355529687,54.1106128 -4.5857077,"description:To mark the year 2000 AD, the parish escutcheon was used to create a composition, hand carved on Pooil Vaaish slate, imitating the shape of the stone constituting the original Santon Cross;historic:monument;image:https://www.santon.org.uk/wordpress/wp-content/uploads/santon-millennium-stone.jpg;material:stone;name:Commissioners’ Millennium Stone;note:custom design, not the same as the island-wide set of Millennium Stones;start_date:2000;wikimedia_commons:File:Millennium stone at Santon - geograph.org.uk - 4302265.jpg"
+node/8355615478,54.0909012 -4.6042356,archaeological_site:fortification;historic:archaeological_site;name:Cass ny Hawin Promontary Fort;name:gv:Cass ny Hawin;ref:GB:imher:0074.00;url:imher:https://isleofmanher.im/report/8e2518a6-28b9-4adc-a1ab-73e343b20812;wikidata:Q31119712
+node/8355615539,54.091639 -4.6145778,historic:ruins
+node/8355615540,54.090708 -4.6141507,historic:ruins
+node/8355908562,54.1766965 -4.555027,"description:One of the stones erected in celebration of the millennium in the year 2000.;historic:monument;inscription:2000, Marown;material:stone;name:Millennium Stone, Marown;start_date:2000"
+node/8357248788,54.0699254 -4.6823915,archaeological_site:fortification;historic:archaeological_site;name:Close ny Chollag Promontory Fort;name:gv:Close ny Chollag;wikidata:Q31103047
+node/8357851224,54.0916917 -4.6518957,historic:stone
+node/8377085547,54.2321932 -4.6426568,archaeological_site:cairn;historic:archaeological_site;name:Lhergydhoo Burial Cairn;ref:GB:imher:0903.00;source:Isle of Man Government 1:25000 map (2007)
+node/8377085555,54.2379947 -4.6486879,historic:archaeological_site;name:Chapel and Burial Ground (site of)
+node/8377085558,54.2666336 -4.6001109,access:yes;archaeological_site:church;historic:archaeological_site;name:Cabbal Pherick;name:gv:Cabbal Pherick;ref:GB:imher:0856.00;url:imher:https://isleofmanher.im/report/c164421c-4c85-4266-a8f0-7da72905b8e7
+node/8377085560,54.2459718 -4.5775863,archaeological_site:burial;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+node/8377085561,54.2376688 -4.586111,archaeological_site:church;historic:archaeological_site;historic:civilization:medieval;name:Ballahimmin Keeill;ref:GB:imher:0984.00;url:imher:https://isleofmanher.im/report/d7ba23de-1afa-41db-8791-fe235cb5f363
+node/8377085562,54.2547891 -4.5098121,archaeological_site:stones;historic:archaeological_site
+node/8377085632,54.2573499 -4.5324242,archaeological_site:mound;historic:archaeological_site
+node/8377929023,54.2306156 -4.5903285,historic:ruins;name:Earyglass;ruins:house
+node/8378219631,54.2280724 -4.6201989,"name:Sarah's Cottage;place:locality;tourism:attraction;wikidata:Q7421997;wikipedia:en:Sarah's Cottage, Isle of Man"
+node/8378219783,54.2470524 -4.6133939,historic:ruins
+node/8378507536,54.2296125 -4.5970688,name:Rhenass Waterfall;tourism:attraction
+node/8378507614,54.2235095 -4.6130374,alt_name:Old Farmhouse;historic:ruins;name:Eairy Beg;ruins:farm
+node/8379282750,54.2101273 -4.5380612,archaeological_site:tumulus;historic:archaeological_site
+node/8379282751,54.2110318 -4.551676,historic:ruins
+node/8381026216,54.2234503 -4.4264756,archaeological_site:tumulus;historic:archaeological_site
+node/8381031917,54.2223983 -4.4226286,archaeological_site:tumulus;historic:archaeological_site
+node/8381031924,54.243149 -4.3775003,archaeological_site:stone;historic:archaeological_site;name:The Spiral Stone
+node/8381031985,54.231984 -4.3872774,archaeological_site:church;historic:archaeological_site
+node/8381032024,54.1898213 -4.4029429,archaeological_site:tumulus;historic:archaeological_site
+node/8381032025,54.1979067 -4.3909851,archaeological_site:mounds;historic:archaeological_site
+node/8382074791,54.1358804 -4.6678253,historic:ruins
+node/8382074792,54.1353721 -4.6651164,historic:ruins
+node/8387549820,54.1368731 -4.7207394,alt_name:Celtic Cross;description:Carving of Celtic cross and inscription of the Manx Fisherman's Evening Hymn to commemorate the turn of the millennium in 2000.;historic:monument;image:http://www.island-images.co.uk/Year2003/0311121514.html;material:stone;name:Millennium Cross 2000 AD;start_date:2000
+node/8397757776,54.287801 -4.5753096,archaeological_site:tumulus;historic:archaeological_site
+node/8400798671,54.2733191 -4.4964322,historic:archaeological_site
+node/8400798688,54.2714689 -4.5055278,historic:ruins;name:Forrester's Cottage
+node/8403202637,54.2907022 -4.5593418,archaeological_site:tumulus;historic:archaeological_site
+node/8403202638,54.3070234 -4.5245745,archaeological_site:earthwork;historic:archaeological_site;name:Cashtal Lajer
+node/8490480446,54.0724564 -4.6606279,archaeological_site:burial;historic:archaeological_site;name:Knock Rushen burial mound
+node/8494899655,54.1422757 -4.6566526,historic:ruins
+node/8494916849,54.1371414 -4.6806133,"historic:ruins;note:location of old buildings on 1870s map, may be long gone"
+node/8494916871,54.1222734 -4.7133502,alt_name:gv:Keeill Woirrey;archaeological_site:church;historic:archaeological_site;name:St Mary's Chapel and Burial Ground;name:gv:Keeill Moirrey;ref:GB:imher:0010.00;url:imher:https://isleofmanher.im/report/397c8a05-fe52-48c7-8e8f-0ea629a47479
+node/8536408180,54.2273747 -4.4480006,archaeological_site:tomb;historic:archaeological_site;tomb:cist_grave
+node/8536408187,54.2322051 -4.4401337,archaeological_site:church;historic:archaeological_site;historic:civilization:medieval;name:Ballaquine Keeill;ref:GB:imher:0653.00
+node/8555436567,54.241574 -4.4866733,historic:archaeological_site;name:Black Rock (site of);source:Isle of Man Government 1:25000 map (2007)
+node/8555436634,54.2610596 -4.4175444,archaeological_site:stones;historic:archaeological_site
+node/8555436637,54.2502688 -4.4073117,archaeological_site:tumulus;historic:archaeological_site
+node/8555436709,54.2675365 -4.4454881,archaeological_site:cairn;historic:archaeological_site;name:Clagh Height Burial Cairn;ref:GB:imher:0556.00;url:imher:https://isleofmanher.im/report/c23e13b5-6836-4b27-837b-45a5c9ca6139
+node/8555436710,54.2629394 -4.4493761,"name:The Verandah;place:locality;tourism:attraction;wikidata:Q7920880;wikipedia:en:Verandah, Isle of Man"
+node/8555436778,54.2550414 -4.4807117,historic:ruins;name:Old mine;ruins:mine
+node/8555436809,54.266627 -4.4847841,archaeological_site:earthwork;historic:archaeological_site;name:Cleigh yn Arragh;name:en:Bank and Ditch;name:gv:Cleigh yn Arragh
+node/8555436810,54.2764283 -4.4598688,historic:archaeological_site
+node/8555436811,54.2763213 -4.4582595,historic:archaeological_site
+node/8555436824,54.3054335 -4.3818232,name:Gooseneck;place:locality;tourism:attraction
+node/8555436839,54.3128922 -4.3849935,name:Ramsey Hairpin;place:locality;tourism:attraction;wikidata:Q7290218;wikipedia:en:Ramsey Hairpin
+node/8560328993,54.2730812 -4.3850158,historic:ruins
+node/8563979142,54.2820189 -4.3235676,archaeological_site:fortification;historic:archaeological_site;name:Gob ny Garvain Promontory Fort;name:gv:Gob ny Garvain;ref:GB:imher:0559.00;url:imher:https://isleofmanher.im/report/189d4f6d-f690-4eed-9cc2-e748d6008920;wikidata:Q31118076
+node/8564215130,54.2814685 -4.3319641,alt_name:Keeill Chiggyrt;Keeill Chiggart;archaeological_site:church;historic:archaeological_site;name:Keeill Casherick;name:gv:Keeill Casherick;ref:GB:imher:0558.00;url:imher:https://isleofmanher.im/report/36e35dbc-ae30-4100-b1f2-1507e254a675
+node/8565502986,54.2410762 -4.392957,historic:ruins
+node/8565502987,54.2404 -4.3914055,archaeological_site:tumulus;historic:archaeological_site
+node/8566945321,54.252978 -4.4623124,historic:building;name:Rotor Radar R11 Operations Block
+node/8590261800,54.2477944 -4.4092244,historic:ruins;ruins:house
+node/8603450963,54.0913259 -4.6496358,"name:""Vampire's Grave"";tourism:attraction"
+node/8614850259,54.2837435 -4.373628,historic:ruins;name:Cardle Veg Keeill;ruins:church
+node/8614850260,54.2851158 -4.3268729,alt_name:Keeill Croit ny Howe;archaeological_site:church;historic:archaeological_site;name:Croit ny Howe Keeill;note:approx location as per http://www.isle-of-man.com/manxnotebook/history/arch/4rpt/md2.htm;ref:GB:imher:0612.00;url:imher:https://isleofmanher.im/report/813a868e-d875-4ce5-9f82-ccff93ab6d27
+node/8615386954,54.3697002 -4.4951582,archaeological_site:tumulus;historic:archaeological_site
+node/8637600509,54.1142667 -4.5896586,archaeological_site:stone;historic:archaeological_site;name:Standing stone;source:Isle of Man Government 1:25000 map (2007)
+node/8674222067,54.2711371 -4.4368487,archaeological_site:cairn;historic:archaeological_site
+node/8703293529,54.308284 -4.3494347,amenity:public_bookcase;booth:K6;colour:red;disused:amenity:telephone;man_made:telephone_box;name:Maughold Exchange;operator:Maughold Parish Social Club;public_bookcase:type:phone_box
+node/8724545209,54.2904989 -4.3486102,man_made:tower;tower:construction:lattice;tower:type:communication
+node/8724568821,54.3930281 -4.4006698,communication:microwave:yes;communication:mobile_phone:yes;man_made:tower;tower:construction:lattice_steel;tower:type:communication
+node/8757738955,54.3022388 -4.37367,historic:ruins
+node/8804039306,54.1527102 -4.5015012,leisure:sports_centre;name:Ellan Vannin Gymnastics Club;source:Isle of Man Government aerial imagery (2001);sport:gymnastics;website:http://www.ellanvannin.org
+node/9032559471,54.3055986 -4.3951251,historic:ruins
+node/9179844236,54.1549211 -4.5011666,bus:yes;departures_board:no;highway:bus_stop;name:Peel Road Quarterbridge Shelter;operator:Bus Vannin;public_transport:platform;ref:114 / 120101
+node/9179851518,54.1520051 -4.499399,bus:yes;departures_board:no;highway:bus_stop;name:Pulrose Road / Peel Road;operator:Bus Vannin;public_transport:platform;ref:113
+node/9179866785,54.1602971 -4.4744693,bus:yes;highway:bus_stop;name:Central Promenade / Mona Drive;public_transport:platform;railway:tram_stop;ref:120 / 60006;request_stop:yes;shelter:yes;tram:yes
+node/9179870110,54.1567473 -4.4858963,bus:yes;highway:bus_stop;name:Woodbourne Square;public_transport:platform;ref:132
+node/9179870111,54.1580302 -4.486829,bus:yes;highway:bus_stop;name:Woodbourne Road / Albany Lane;public_transport:platform;ref:133
+node/9179912264,54.1516706 -4.4895425,bus:yes;highway:bus_stop;name:Westmoreland Road Health Centre;public_transport:platform;ref:137
+node/9179912266,54.1559874 -4.4899746,bus:yes;highway:bus_stop;name:Selbourn Road / All Saint's Church;public_transport:platform;ref:139
+node/9179912267,54.1557369 -4.4924026,bus:yes;highway:bus_stop;name:Westminster Terrace;public_transport:platform;ref:140
+node/9179948720,54.1553357 -4.4937782,bus:yes;highway:bus_stop;name:Westminster Drive;public_transport:platform;ref:141
+node/9179948727,54.1669245 -4.4706079,bus:yes;highway:bus_stop;name:Victoria Road Shoprite;public_transport:platform;ref:159
+node/9180155177,54.1667882 -4.4807431,bus:yes;highway:bus_stop;name:Glencrutchery Road / Mountain View;network:Bus Vannin;public_transport:platform;ref:160;shelter:yes
+node/9180155179,54.169597 -4.4740711,bus:yes;highway:bus_stop;name:Ian Cannell Court;public_transport:platform;ref:162 / 20155
+node/9180155180,54.1705258 -4.4716032,bus:yes;highway:bus_stop;name:Second Avenue;public_transport:platform;ref:163
+node/9180155183,54.17078 -4.4690769,bus:yes;highway:bus_stop;name:Victoria Road / Glenside;public_transport:platform;ref:166
+node/9180155185,54.1529915 -4.4889094,bus:yes;highway:bus_stop;name:Westmoreland Road No.48;public_transport:platform;ref:168
+node/9180155186,54.150012 -4.5015221,bus:yes;departures_board:no;highway:bus_stop;name:Middle River Industrial Estate;operator:Bus Vannin;public_transport:platform;ref:169
+node/9180212070,54.1526099 -4.5100596,bus:yes;highway:bus_stop;name:New Castletown Road;public_transport:platform;ref:209
+node/9180304127,54.1351686 -4.5618339,bus:yes;highway:bus_stop;name:Mount Murry / Knock Froy Lane;public_transport:platform;ref:306;shelter:yes;source:Isle of Man Government aerial imagery (2001)
+node/9180304129,54.13155 -4.565558,bus:yes;highway:bus_stop;name:Newtown Chapel;public_transport:platform;ref:309;source:Isle of Man Government aerial imagery (2001)
+node/9180304131,54.121225 -4.579543,bus:yes;highway:bus_stop;name:Santon School Layby;public_transport:platform;ref:311;source:Isle of Man Government aerial imagery (2001)
+node/9180304133,54.1381467 -4.5620558,bus:yes;highway:bus_stop;name:Mount Murray Entrance;public_transport:platform;ref:316;shelter:yes;source:Isle of Man Government aerial imagery (2001)
+node/9180348516,54.0962582 -4.646514,bus:yes;highway:bus_stop;name:Crossfourways / Quarry Entrance;public_transport:platform;ref:413
+node/9180349417,54.0957209 -4.6464463,bus:yes;highway:bus_stop;name:Cross Fourways;public_transport:platform;ref:414
+node/9180349418,54.1048188 -4.6423704,bus:yes;highway:bus_stop;name:Silverdale Glen;public_transport:platform;ref:415
+node/9180349420,54.0889254 -4.6324364,bus:yes;highway:bus_stop;name:Freeport North/South;public_transport:platform;ref:501/502
+node/9180396356,54.0836084 -4.6743862,bus:yes;highway:bus_stop;name:Ballakeighan Farm;network:Bus Vannin;public_transport:platform;ref:702
+node/9180396357,54.0921077 -4.6752925,bus:yes;highway:bus_stop;name:Ballabeg Railway Station;public_transport:platform;ref:703
+node/9180402003,54.0834971 -4.7442176,bus:yes;highway:bus_stop;name:Four Roads;public_transport:platform;ref:810
+node/9182452740,54.075605 -4.7375932,bus:yes;highway:bus_stop;name:Carrick Apartments;public_transport:platform;ref:905
+node/9182452743,54.0796927 -4.738592,bus:yes;highway:bus_stop;name:Beach Road / Creggan Lea;public_transport:platform;ref:912
+node/9182519116,54.1479735 -4.5249311,bus:yes;highway:bus_stop;name:Cooil Road / Cooil Drive;public_transport:platform;ref:1101
+node/9182522819,54.1540338 -4.5351499,bus:yes;highway:bus_stop;name:Business Park / Canada Life;public_transport:platform;ref:1105
+node/9182522820,54.1509103 -4.5270853,bus:yes;highway:bus_stop;name:Spring Valley Industrial Estate / Unit 7;public_transport:platform;ref:1108
+node/9182522821,54.1542256 -4.5338958,bus:yes;highway:bus_stop;name:Business Park / Manx Telecom;public_transport:platform;ref:1110
+node/9182522824,54.1567401 -4.5287319,bus:yes;highway:bus_stop;name:Vicarage Road / Rosehill Mews;public_transport:platform;ref:1113
+node/9182522827,54.1672148 -4.6105091,bus:yes;highway:bus_stop;name:Eairy Dam;public_transport:platform;ref:1402
+node/9182522828,54.1673297 -4.6062307,bus:yes;highway:bus_stop;name:Dreemlang;public_transport:platform;ref:1403
+node/9182522830,54.1599286 -4.5876261,bus:yes;highway:bus_stop;name:Garth Crossroads Towards Foxdale;public_transport:platform;ref:1405
+node/9182522833,54.1708321 -4.6395837,bus:yes;highway:bus_stop;name:Higher Foxdale / Baltic Hotel;public_transport:platform;ref:1503
+node/9182522835,54.1696993 -4.617221,bus:yes;highway:bus_stop;name:Ard Jekyll;public_transport:platform;ref:1505
+node/9182522837,54.1690982 -4.6311526,bus:yes;highway:bus_stop;name:Opposite Springfield Rise;public_transport:platform;ref:1507
+node/9182578864,54.1563927 -4.5076281,bus:yes;highway:bus_stop;name:Saddle Road;public_transport:platform;ref:1601
+node/9182578865,54.1562363 -4.5090233,bus:yes;highway:bus_stop;name:Ballaughton Manor Hill / Ballaughton Lane;public_transport:platform;ref:1602
+node/9182578866,54.1565084 -4.508346,bus:yes;highway:bus_stop;name:Ballaughton Manor Hill / Copse Hill;public_transport:platform;ref:1603
+node/9182578867,54.1570089 -4.5128677,bus:yes;highway:bus_stop;name:Ballaughton Manor Hill / Cooil Farrane;public_transport:platform;ref:1604
+node/9182578868,54.1573219 -4.5134446,bus:yes;highway:bus_stop;name:Ballaughton Manor Hill;public_transport:platform;ref:1605
+node/9182578872,54.138206 -4.5132483,bus:yes;highway:bus_stop;name:Vicarage Park;network:1609;public_transport:platform;ref:210
+node/9182578873,54.1584091 -4.5192712,bus:yes;highway:bus_stop;name:Vicarage Park;public_transport:platform;ref:1610
+node/9182578874,54.1582828 -4.5219055,bus:yes;highway:bus_stop;name:Willowbrook Gardens;public_transport:platform;ref:1611
+node/9182578875,54.1614358 -4.5064623,bus:yes;highway:bus_stop;name:Braddan Bridge / Old Church Layby;public_transport:platform;ref:1701
+node/9182578876,54.1653613 -4.5065411,bus:yes;highway:bus_stop;name:Braddan School;public_transport:platform;ref:1703
+node/9182578878,54.1630084 -4.5083343,bus:yes;highway:bus_stop;name:Parkinsons;public_transport:platform;ref:1705
+node/9182578882,54.1716466 -4.5153401,bus:yes;highway:bus_stop;name:Ballanawin;public_transport:platform;ref:1802;shelter:yes
+node/9182578883,54.1711254 -4.5071059,bus:yes;highway:bus_stop;name:Nobles Helicopter Pad Westbound;public_transport:platform;ref:1808
+node/9182578885,54.1710484 -4.5101531,bus:yes;highway:bus_stop;name:Cronk Grianagh;public_transport:platform;ref:1805
+node/9182578886,54.17345 -4.5037407,bus:yes;highway:bus_stop;name:Hospice Isle of Man;public_transport:platform;ref:1806
+node/9182578887,54.1758752 -4.5093927,bus:yes;highway:bus_stop;name:Reayrt Noa;public_transport:platform;ref:1811
+node/9182578889,54.1792003 -4.5195125,bus:yes;highway:bus_stop;name:Mount Rule / Ballamilligan Estate;public_transport:platform;ref:1813
+node/9186740476,54.1698655 -4.5234786,bus:yes;highway:bus_stop;name:Union Mills Post Office;public_transport:platform;ref:1902;shelter:yes
+node/9186740477,54.1673051 -4.51774,bus:yes;highway:bus_stop;name:Ashlar Drive;public_transport:platform;ref:1905
+node/9186740478,54.1712142 -4.5180467,bus:yes;highway:bus_stop;name:Strang Road / Camlork Place;public_transport:platform;ref:1906
+node/9186740479,54.1687603 -4.5220821,bus:yes;highway:bus_stop;name:Union Mills Railway Hotel;public_transport:platform;ref:1907
+node/9186740482,54.1714897 -4.5351735,bus:yes;highway:bus_stop;name:Ballahutchin /Ballafreer Lane;public_transport:platform;ref:1910
+node/9186750944,54.1725228 -4.5426393,bus:yes;highway:bus_stop;name:Glen Lough Entrance;public_transport:platform;ref:2001
+node/9186750946,54.1745538 -4.5503946,bus:yes;highway:bus_stop;name:Ballagarey Entrance;public_transport:platform;ref:2004;shelter:yes
+node/9186750947,54.1766258 -4.5538783,bus:yes;highway:bus_stop;name:Glen Darragh Road Junction;public_transport:platform;ref:2005
+node/9186750952,54.176878 -4.547931,bus:yes;highway:bus_stop;name:Ballagarey Road Opposite Ballagarey Crescent;public_transport:platform;ref:2010
+node/9186767428,54.1822917 -4.5626734,bus:yes;highway:bus_stop;name:Cedar Lodge;public_transport:platform;ref:2101
+node/9186767433,54.1933616 -4.5942645,bus:yes;highway:bus_stop;name:Appledene;public_transport:platform;ref:2203
+node/9186767435,54.1962502 -4.6045273,bus:yes;highway:bus_stop;name:Greeba Castle / Douglas Road;public_transport:platform;ref:2205
+node/9186767436,54.1953153 -4.6029769,bus:yes;highway:bus_stop;name:Glen Dhoo;public_transport:platform;ref:2206
+node/9186767437,54.1969381 -4.6079838,bus:yes;highway:bus_stop;name:Greeba Bridge Shelter;public_transport:platform;ref:2207;shelter:yes
+node/9186767438,54.1971977 -4.6099688,bus:yes;highway:bus_stop;name:The Hawthorn Inn;public_transport:platform;ref:2208
+node/9186788264,54.2021434 -4.6293787,bus:yes;highway:bus_stop;name:Curragh Road / Ballacraine;public_transport:platform;ref:2304
+node/9186788265,54.196951 -4.6378137,bus:yes;highway:bus_stop;name:St. John's / D.E.F.A. Offices;public_transport:platform;ref:2305
+node/9186788266,54.1955174 -4.6358688,bus:yes;highway:bus_stop;name:Hope Shelter / Curragh Road;public_transport:platform;ref:2306;shelter:no
+node/9186788267,54.1993301 -4.6411951,bus:yes;highway:bus_stop;name:Opposite St. John's Football Club;public_transport:platform;ref:2307
+node/9186788279,54.1912242 -4.6380958,bus:yes;highway:bus_stop;name:Foxdale Road / Ballahig Farm;public_transport:platform;ref:2319
+node/9186812753,54.2385683 -4.6473361,bus:yes;highway:bus_stop;name:Knocksharry Farm;public_transport:platform;ref:2501
+node/9186812754,54.2388969 -4.6467426,bus:yes;highway:bus_stop;name:Knocksharry / Switchback;public_transport:platform;ref:2502
+node/9186812755,54.2475468 -4.6396805,bus:yes;highway:bus_stop;name:Lynague;public_transport:platform;ref:2503
+node/9186812756,54.2480814 -4.6393216,bus:yes;highway:bus_stop;name:Lynague / Ballabooie Road;public_transport:platform;ref:2504
+node/9186812757,54.2626635 -4.6182765,bus:yes;highway:bus_stop;name:Ballaquine;public_transport:platform;ref:2505
+node/9186812759,54.2325872 -4.660124,bus:yes;highway:bus_stop;name:Whitestrand / Lhergydhoo;public_transport:platform;ref:2507
+node/9186851540,54.2791827 -4.5905396,bus:yes;highway:bus_stop;name:Glen Wyllin Campsite;public_transport:platform;ref:2601
+node/9186851542,54.2834904 -4.5874213,bus:yes;highway:bus_stop;name:B.C.C. Carrs;public_transport:platform;ref:2603
+node/9186851543,54.2817046 -4.5878437,bus:yes;highway:bus_stop;name:Kirk Michael School;public_transport:platform;ref:2604
+node/9186851544,54.2867186 -4.5834405,bus:yes;highway:bus_stop;name:Opposite Saddlery;public_transport:platform;ref:2605
+node/9186851547,54.2897479 -4.5800503,bus:yes;highway:bus_stop;name:Pennybridge Stables;public_transport:platform;ref:2609
+node/9186851549,54.3079046 -4.5499473,bus:yes;highway:bus_stop;name:Ballacobb;public_transport:platform;ref:2701
+node/9186851550,54.3079757 -4.5492424,bus:yes;highway:bus_stop;name:Ballacobb Shelter;public_transport:platform;ref:2702
+node/9186851551,54.3099624 -4.5410206,bus:yes;highway:bus_stop;name:Ballaugh Village;public_transport:platform;ref:2703
+node/9186851554,54.3193832 -4.4923997,bus:yes;highway:bus_stop;name:Sulby Glen Hotel;public_transport:platform;ref:2901
+node/9186851556,54.3222112 -4.4804468,bus:yes;highway:bus_stop;name:Sulby Village Shelter;public_transport:platform;ref:2903;shelter:yes
+node/9186851557,54.3222595 -4.4797968,bus:yes;highway:bus_stop;name:Sulby Village;public_transport:platform;ref:2904
+node/9186851558,54.3216787 -4.4715636,bus:yes;highway:bus_stop;name:The Ginger Hall;public_transport:platform;ref:2906
+node/9186851560,54.3230433 -4.4739409,bus:yes;highway:bus_stop;name:St. Jude's Road;public_transport:platform;ref:2908
+node/9186866788,54.3213265 -4.4659182,bus:yes;highway:bus_stop;name:Kerrowmoar;public_transport:platform;ref:3001
+node/9186866790,54.320142 -4.4467855,bus:yes;highway:bus_stop;name:Glen Duff;public_transport:platform;ref:3003
+node/9186866791,54.3196413 -4.44493,bus:yes;highway:bus_stop;name:Glen Duff / D.o.I. Depot;public_transport:platform;ref:3004
+node/9186866792,54.318708 -4.4351207,bus:yes;highway:bus_stop;name:Garey Road;public_transport:platform;ref:3006
+node/9186866793,54.3184427 -4.4344062,bus:yes;highway:bus_stop;name:Garey Road / Abbey;public_transport:platform;ref:3006
+node/9186866794,54.3191912 -4.4253605,bus:yes;highway:bus_stop;name:Silly Moos Campsite;public_transport:platform;ref:3007
+node/9186866795,54.3191059 -4.4239599,bus:yes;highway:bus_stop;name:Lezayre War Memorial;public_transport:platform;ref:3008
+node/9186866796,54.167305 -4.4860694,bus:yes;highway:bus_stop;name:Ballanard Road / Port-E-Chee;public_transport:platform;ref:3101
+node/9186884904,54.1937924 -4.4254847,bus:yes;highway:bus_stop;name:Liverpool Arms Hotel;public_transport:platform;ref:3307 / 3322
+node/9186884909,54.2043268 -4.4101337,bus:yes;highway:bus_stop;name:Baldrine / Garwick Stores;public_transport:platform;ref:3314
+node/9189720114,54.2104752 -4.6727139,bus:yes;highway:bus_stop;name:Ballawyllin Entrance;public_transport:platform;ref:2401
+node/9189720115,54.2109671 -4.6733777,bus:yes;highway:bus_stop;name:Ballawyllin;public_transport:platform;ref:2402
+node/9189720116,54.217275 -4.6859542,bus:yes;highway:bus_stop;name:Peel Football Club Entrance;public_transport:platform;ref:2403;shelter:no
+node/9189749117,54.216878 -4.6850092,bench:no;bus:yes;departures_board:no;highway:bus_stop;lit:no;name:Q.E.II High School;public_transport:platform;ref:2404;shelter:no
+node/9189749118,54.2191653 -4.6889427,bus:yes;highway:bus_stop;name:Tynwald Close Shelter;public_transport:platform;ref:2406;shelter:yes
+node/9189749124,54.222098 -4.6973927,bus:yes;highway:bus_stop;name:House Of Mannanan;public_transport:platform;ref:2411
+node/9189749129,54.2246125 -4.6896136,bus:yes;highway:bus_stop;name:The Promenade / Walpole Road;public_transport:platform;ref:2417
+node/9189749132,54.2214864 -4.6805322,bus:yes;highway:bus_stop;name:Ballaquane Road Opposite Close Quane;public_transport:platform;ref:2420
+node/9189749133,54.2265163 -4.6772292,bus:yes;highway:bus_stop;name:Mourne View Shelter;public_transport:platform;ref:2426
+node/9189749137,54.2208524 -4.6828567,bench:no;bin:no;bus:yes;highway:bus_stop;lit:yes;name:Derby Road Opposite Campsite;public_transport:platform;ref:2433;shelter:no;tactile_paving:no
+node/9189749139,54.2176255 -4.6971114,bus:yes;highway:bus_stop;name:Glenfaba Road / Close Cronk;public_transport:platform;ref:2435
+node/9189749143,54.219873 -4.6782246,bus:yes;highway:bus_stop;name:Poortown Road Opposite Oak Tree Junction;public_transport:platform;ref:2441
+node/9189749146,54.2210677 -4.6837596,bus:yes;highway:bus_stop;name:Derby Road Campsite;public_transport:platform;ref:2444
+node/9189749148,54.2229638 -4.67652,bus:yes;highway:bus_stop;name:Ballawattleworth / Cushag Drive;public_transport:platform;ref:2446
+node/9189767069,54.1683601 -4.4864174,bus:yes;highway:bus_stop;name:Willaston First Stop;public_transport:platform;ref:3102
+node/9189767070,54.1708185 -4.4852647,bus:yes;highway:bus_stop;name:Willaston Shops Shelter;public_transport:platform;ref:3103
+node/9189767071,54.1717207 -4.484739,bus:yes;highway:bus_stop;name:Keppell Road / Mannin Road;public_transport:platform;ref:3104
+node/9189767072,54.173116 -4.4843009,bus:yes;highway:bus_stop;name:Keppell Road No.47;public_transport:platform;ref:3105
+node/9189767073,54.1751123 -4.4816175,bus:yes;highway:bus_stop;name:Keppell Road No.95;public_transport:platform;ref:3106
+node/9189767074,54.1750534 -4.4807518,bus:yes;highway:bus_stop;name:Snaefell Road / Greeba Road;public_transport:platform;ref:3107
+node/9189767078,54.1693073 -4.4815677,bus:yes;highway:bus_stop;name:Tynwald Road Dip;public_transport:platform;ref:3111
+node/9189767086,54.17058 -4.4889582,bus:yes;highway:bus_stop;name:Ballanard Court Shelter;public_transport:platform;ref:3119
+node/9189973785,54.1722361 -4.4649015,bus:yes;highway:bus_stop;name:Governors Road / Blackberry Lane;public_transport:platform;ref:3201
+node/9189973787,54.1727978 -4.46135,bus:yes;highway:bus_stop;name:Wybourne Drive Junction;public_transport:platform;ref:3203
+node/9189973789,54.1731921 -4.4589902,bus:yes;highway:bus_stop;name:Queens Road;public_transport:platform;ref:3205
+node/9189973793,54.176734 -4.4510874,bus:yes;highway:bus_stop;name:Whitebridge Road;public_transport:platform;ref:3209
+node/9189973798,54.1692952 -4.4529288,bus:yes;highway:bus_stop;name:Royal Avenue / Glen Entrance;public_transport:platform;ref:3215
+node/9189973801,54.1726696 -4.4539265,bus:yes;highway:bus_stop;name:Royal Avenue No.143;public_transport:platform;ref:3219
+node/9189973804,54.1699167 -4.4603006,bus:yes;highway:bus_stop;name:Summerhill Road / Ridgeway Road;public_transport:platform;ref:3222
+node/9189985411,54.1836108 -4.4426398,bus:yes;highway:bus_stop;name:Ballakilmartin Farm;public_transport:platform;ref:3301
+node/9189985412,54.1851076 -4.4405757,bus:yes;highway:bus_stop;name:Whitebridge Hill Picnic Area;public_transport:platform;ref:3302
+node/9189985413,54.1868501 -4.4390854,bus:yes;highway:bus_stop;name:Whitebridge / Begoade Road;public_transport:platform;ref:3303
+node/9189985415,54.1914523 -4.4308724,bus:yes;highway:bus_stop;name:Whitebridge Straight;public_transport:platform;ref:3305
+node/9189985416,54.190428 -4.4324056,bus:yes;highway:bus_stop;name:Whitebridge / The Fun Farm;public_transport:platform;ref:3306
+node/9190026857,54.2119015 -4.4067091,bus:yes;highway:bus_stop;name:Ballabeg M.E.R. Station;public_transport:platform;ref:3318;shelter:yes
+node/9190026858,54.216011 -4.4043953,bus:yes;highway:bus_stop;name:Ballacannell / Church Road;public_transport:platform;ref:3319;shelter:yes
+node/9190026860,54.2186667 -4.4007564,bus:yes;highway:bus_stop;name:Fairy Cottage / Pinfold Hill Thornton;public_transport:platform;ref:3401
+node/9190026864,54.2247401 -4.39574,bus:yes;highway:bus_stop;name:South Cape / Trevellian;public_transport:platform;ref:3405
+node/9190026866,54.2259697 -4.3971262,bus:yes;highway:bus_stop;name:South Cape / Ravenscliffe;public_transport:platform;ref:3407;shelter:no
+node/9190026872,54.2317682 -4.4021123,bus:yes;highway:bus_stop;name:Art Reyart;public_transport:platform;ref:3418
+node/9190026875,54.2399189 -4.3803277,bus:yes;highway:bus_stop;name:Ballaragh Northbound;public_transport:platform;ref:3605
+node/9190026876,54.2404649 -4.3794429,bus:yes;highway:bus_stop;name:Ballaragh Southbound;public_transport:platform;ref:3606
+node/9190026877,54.2421578 -4.3734299,bus:yes;highway:bus_stop;name:Bulgham Shelter;public_transport:platform;ref:3607;shelter:yes
+node/9190053164,54.2715271 -4.3770423,bus:yes;highway:bus_stop;name:Ballagorry Drive;public_transport:platform;ref:3703
+node/9190053165,54.2742277 -4.3763153,bus:yes;highway:bus_stop;name:Dhoon School layby;public_transport:platform;ref:3705
+node/9190053167,54.2798433 -4.3759475,bus:yes;highway:bus_stop;name:Corony Bridge Shelter;public_transport:platform;ref:3707;shelter:yes
+node/9190053169,54.2933378 -4.3679812,bus:yes;highway:bus_stop;name:Hibernia Crossroads Towards Ramsey;public_transport:platform;ref:3709;shelter:yes
+node/9190053170,54.292262 -4.3687541,bus:yes;highway:bus_stop;name:Hibernia Crossroads Towards Douglas;public_transport:platform;ref:3710
+node/9190053173,54.2816102 -4.3734963,bus:yes;highway:bus_stop;name:Cardle Voar Entrance;public_transport:platform;ref:3713
+node/9190053175,54.2896428 -4.3699971,bus:yes;highway:bus_stop;name:Hibernia Opposite Margher-E-Kew;public_transport:platform;ref:3715
+node/9190053177,54.2854215 -4.3711593,bus:yes;highway:bus_stop;name:Corony / Ballaglass Farm;public_transport:platform;ref:3717
+node/9190053179,54.3211894 -4.4052032,bus:yes;highway:bus_stop;name:Lezayre Road / Glen Auldyn;public_transport:platform;ref:3801
+node/9190053181,54.3209564 -4.3978815,bus:yes;highway:bus_stop;name:Bunscoill Rhumsaa Infants;public_transport:platform;ref:3803
+node/9190171600,54.1551515 -4.4964615,bus:yes;highway:bus_stop;name:Ballabrooie Way;public_transport:platform;ref:142
+node/9190171604,54.1609875 -4.486492,bus:yes;highway:bus_stop;name:Somerset Square;public_transport:platform;ref:146
+node/9190171606,54.0785468 -4.6574337,bus:yes;highway:bus_stop;name:School Hill;public_transport:platform;ref:625
+node/9190171608,54.0988673 -4.6852867,bus:yes;highway:bus_stop;name:Arbory School;public_transport:platform;ref:714
+node/9190171609,54.1108089 -4.6819963,bus:yes;highway:bus_stop;name:Ronague / Ballastroke Farm;public_transport:platform;ref:715
+node/9190171612,54.0747913 -4.7546368,bus:yes;highway:bus_stop;name:The Howe;public_transport:platform;ref:1001
+node/9190171613,54.0745481 -4.7563774,bus:yes;highway:bus_stop;name:The Howe Chapel;public_transport:platform;ref:1002
+node/9190171614,54.0697596 -4.7682778,bus:yes;highway:bus_stop;name:Cregneash Phone Box;public_transport:platform;ref:1003
+node/9190239205,54.1772677 -4.4666747,bus:yes;highway:bus_stop;name:Bemahague School;public_transport:platform;ref:20102
+node/9190239208,54.3209073 -4.3920992,bus:yes;highway:bus_stop;name:Ramsey Grammar School;public_transport:platform;ref:40105
+node/9190239213,54.1806465 -4.461892,bus:yes;highway:bus_stop;name:Ashley Hill Primary School;public_transport:platform;ref:40126
+node/9190239214,54.1548049 -4.529373,bus:yes;highway:bus_stop;name:Ballacottier School;public_transport:platform;ref:40127
+node/9190239215,54.3124553 -4.544925,bus:yes;highway:bus_stop;name:Ballaugh School;public_transport:platform;ref:40128
+node/9190241517,54.3587709 -4.518664,bus:yes;highway:bus_stop;name:Jurby School;public_transport:platform;ref:40130
+node/9190241518,54.1431587 -4.5137851,bus:yes;highway:bus_stop;name:Kewaigue School;public_transport:platform;ref:40131
+node/9190241522,54.155724 -4.5184962,bus:yes;highway:bus_stop;name:Scoill Vallajeelt;public_transport:platform;ref:40135
+node/9190241523,54.3191637 -4.4911501,bus:yes;highway:bus_stop;name:Sulby School;public_transport:platform;ref:40137
+node/9190296598,54.3207532 -4.3927078,bus:yes;highway:bus_stop;name:Grammar School Layby;public_transport:platform;ref:3806
+node/9190296604,54.3179145 -4.3759037,bus:yes;highway:bus_stop;name:Stanley Mount West;public_transport:platform;ref:3813
+node/9190296607,54.3207154 -4.3809,bus:yes;highway:bus_stop;name:Waterloo Road/ The Britannia;public_transport:platform;ref:3816
+node/9190296609,54.3231748 -4.388271,bus:yes;highway:bus_stop;name:Station Road / Shoprite Shelter;public_transport:platform;ref:3818
+node/9190296612,54.3247258 -4.38841,bus:yes;highway:bus_stop;name:Bowring Road / Stone Bridge Shelter;public_transport:platform;ref:3821
+node/9190296614,54.3261021 -4.3894201,bus:yes;highway:bus_stop;name:Bowring Road No.26;public_transport:platform;ref:3823
+node/9190296616,54.3288008 -4.3915534,bus:yes;highway:bus_stop;name:Bowring Road / Hospital Shelter;public_transport:platform;ref:3825;shelter:yes
+node/9190304819,54.3283365 -4.3933536,bus:yes;highway:bus_stop;name:Jurby Road / Ash Grove;public_transport:platform;ref:3828
+node/9190304820,54.3293865 -4.3996963,bus:yes;highway:bus_stop;name:Kings Reach Shelter;public_transport:platform;ref:3829
+node/9190304821,54.3350172 -4.3914765,bus:yes;highway:bus_stop;name:Bride Road / Ormly Entrance;public_transport:platform;ref:3831
+node/9190304823,54.33261 -4.3937705,bus:yes;highway:bus_stop;name:Grove Museum Southbound;public_transport:platform;ref:3833
+node/9190304824,54.3322057 -4.3938838,bus:yes;highway:bus_stop;name:Grove Museum Northbound;public_transport:platform;ref:3834
+node/9190304825,54.3367396 -4.3953752,bus:yes;highway:bus_stop;name:Andreas Road / Grest Home;public_transport:platform;ref:3835
+node/9190304827,54.3370491 -4.3870131,bus:yes;highway:bus_stop;name:Bride Road / Grand Island;public_transport:platform;ref:3837
+node/9190416795,54.3260404 -4.3840447,bus:yes;highway:bus_stop;name:North Shore Road / Mooragh Park Shelter;public_transport:platform;ref:3860
+node/9190416796,54.3244165 -4.3819621,bus:yes;highway:bus_stop;name:Ramsey Swimming Pool;public_transport:platform;ref:3861
+node/9190416797,54.3356521 -4.3840936,bus:yes;highway:bus_stop;name:Mooragh Park / Vollan Crescent;public_transport:platform;ref:3863
+node/9190416799,54.3281228 -4.3825796,bus:yes;highway:bus_stop;name:Mooragh Promenade / Premier Road;public_transport:platform;ref:3880
+node/9190416800,54.3212126 -4.4016797,bus:yes;highway:bus_stop;name:Lezayre Road/ Faiie Wyllin;public_transport:platform;ref:3881
+node/9190416801,54.3210596 -4.4004673,bus:yes;highway:bus_stop;name:Lezayre Road / Milntown Entrance;public_transport:platform;ref:3892
+node/9190438402,54.2688041 -4.6099852,bus:yes;highway:bus_stop;name:Glen Mooar / Ballacarnane Mooar;public_transport:platform;ref:4801
+node/9190438404,54.2730699 -4.6007296,bus:yes;highway:bus_stop;name:Glen Mooar / Ballaleigh Road;public_transport:platform;ref:4803
+node/9190438405,54.2728564 -4.6013974,bus:yes;highway:bus_stop;name:Glen Mooar / Ballaleigh Road Junction;public_transport:platform;ref:4804
+node/9190438406,54.2114298 -4.6951993,alt_name:The Raggart;bus:yes;highway:bus_stop;name:The Raggatt;public_transport:platform;ref:7101
+node/9190438408,54.205339 -4.6939739,bus:yes;highway:bus_stop;name:Patrick Road Junction;public_transport:platform;ref:7103;shelter:yes
+node/9190438410,54.1932951 -4.7012884,bus:yes;highway:bus_stop;name:Glen Maye / Gordon;public_transport:platform;ref:7201
+node/9190438412,54.1846419 -4.7040661,bus:yes;highway:bus_stop;name:Glen Maye Village;public_transport:platform;ref:7203
+node/9190438414,54.1815256 -4.7088628,bus:yes;highway:bus_stop;name:Glen Maye / Shilley Marrey;public_transport:platform;ref:7205
+node/9190438415,54.1819451 -4.7075543,bus:yes;highway:bus_stop;name:Glen Maye / Ballachrink Farm;public_transport:platform;ref:7206
+node/9190438416,54.1730103 -4.726228,bus:yes;highway:bus_stop;name:Dalby;public_transport:platform;ref:7301
+node/9190466918,54.1494515 -4.5060845,bus:yes;highway:bus_stop;name:Alder Road Shelter;public_transport:platform;ref:10202
+node/9190466920,54.1477351 -4.5103756,bus:yes;highway:bus_stop;name:No.49 Heather Crescent;public_transport:platform;ref:10204
+node/9190536425,54.1511615 -4.519082,bus:yes;highway:bus_stop;name:Darragh / The Passage;public_transport:platform;ref:10312;shelter:yes
+node/9190536426,54.1506743 -4.5200199,bus:yes;highway:bus_stop;name:The Darragh;public_transport:platform;ref:10313;shelter:yes
+node/9190536433,54.1132162 -4.5973255,bus:yes;highway:bus_stop;name:Ballastrang Farm;public_transport:platform;ref:10406;shelter:yes
+node/9190536434,54.1039749 -4.6139516,bus:yes;highway:bus_stop;name:Orrisdale Road / Ballacreggan;public_transport:platform;ref:10407;shelter:yes
+node/9190536435,54.0965489 -4.69634,bus:yes;highway:bus_stop;name:Keyhole Farm Entrance;public_transport:platform;ref:10701;shelter:yes
+node/9190536437,54.0935282 -4.7172065,bus:yes;highway:bus_stop;name:The Level Northbound;public_transport:platform;ref:10708;shelter:yes
+node/9190536440,54.1776657 -4.6425298,bus:yes;highway:bus_stop;name:Lower Foxdale / Ballamoar Farm Lane;public_transport:platform;ref:11501
+node/9190562418,54.0830217 -4.729666,bus:yes;highway:bus_stop;name:Gansey Opposite Waters' Edge;public_transport:platform;ref:11805
+node/9190562420,54.0903361 -4.7315026,bus:yes;highway:bus_stop;name:Ballagawne Nurseries;public_transport:platform;ref:11901
+node/9190562421,54.0904552 -4.7341595,bus:yes;highway:bus_stop;name:Ballafesson Shelter;public_transport:platform;ref:11902;shelter:yes
+node/9190613582,54.1617233 -4.4875266,bench:no;bus:yes;highway:bus_stop;name:Stoney Road School;operator:Bus Vannin;public_transport:platform;ref:20165;shelter:no
+node/9192577855,54.1515875 -4.5215958,bus:yes;highway:bus_stop;name:Stevenson Way / Springfield Grange;public_transport:platform;ref:12101;shelter:yes
+node/9192577856,54.1529066 -4.5231616,bus:yes;highway:bus_stop;name:Stevenson Way / Hill Top Rise;public_transport:platform;ref:12102;shelter:yes
+node/9192577857,54.1551927 -4.5269644,bus:yes;highway:bus_stop;name:Stevenson Way / Farmhill Stores;public_transport:platform;ref:12103;shelter:yes
+node/9192577859,54.1571739 -4.5262878,bus:yes;highway:bus_stop;name:Stevenson Way / Manor Road Junction;public_transport:platform;ref:12105;shelter:yes
+node/9192577863,54.2177761 -4.6329863,bus:yes;highway:bus_stop;name:Laurel Bank Layby;public_transport:platform;ref:12501;shelter:yes
+node/9192577864,54.2187244 -4.6319149,bus:yes;highway:bus_stop;name:Laurel Bank / Forestry Yard;public_transport:platform;ref:12502;shelter:yes
+node/9192577867,54.2406101 -4.6073525,bus:yes;highway:bus_stop;name:Cronk-Y-Voddy Crossroads;public_transport:platform;ref:12505;shelter:yes
+node/9192577870,54.260133 -4.5818107,bus:yes;highway:bus_stop;name:Barregarrow Crossroads;public_transport:platform;ref:12602;shelter:yes
+node/9192577871,54.2753701 -4.5797896,bus:yes;highway:bus_stop;name:Westwood;public_transport:platform;ref:12603;shelter:yes
+node/9192577872,54.2761759 -4.5805663,bus:yes;highway:bus_stop;name:Westwood / Bridge;public_transport:platform;ref:12604;shelter:yes
+node/9192577873,54.2988524 -4.5711247,bus:yes;highway:bus_stop;name:Bishopscourt Straight Northbound;public_transport:platform;ref:12701;shelter:yes
+node/9192577875,54.3022762 -4.5662748,bus:yes;highway:bus_stop;name:Bishopscourt / Orrisdale Road Junction;public_transport:platform;ref:12703;shelter:yes
+node/9192577876,54.3025943 -4.5652826,bus:yes;highway:bus_stop;name:Bishopscourt / Orrisdale Road Shelter;public_transport:platform;ref:12703;shelter:yes
+node/9192577877,54.2933109 -4.5773102,bus:yes;highway:bus_stop;name:Rhen Cullen Layby;public_transport:platform;ref:12705;shelter:yes
+node/9192636981,54.1429346 -4.5047189,bus:yes;highway:bus_stop;name:White Hoe Junction;public_transport:platform;ref:13001
+node/9192636982,54.1432959 -4.5042131,bus:yes;highway:bus_stop;name:White Hoe Industrial Estate;public_transport:platform;ref:13002
+node/9192636983,54.1696065 -4.4936523,bus:yes;highway:bus_stop;name:Cronkbourne / Beechwood Rise;public_transport:platform;ref:13113
+node/9192636985,54.179421 -4.4764665,bus:yes;highway:bus_stop;name:Campion Way Shelter;public_transport:platform;ref:13403
+node/9192636986,54.1775924 -4.4746392,bus:yes;highway:bus_stop;name:Duck Pond Shelter;public_transport:platform;ref:13404
+node/9192636987,54.1775235 -4.4728591,bus:yes;highway:bus_stop;name:Hailwood Avenue No.10;public_transport:platform;ref:13405
+node/9192636990,54.1759591 -4.472994,bus:yes;highway:bus_stop;name:Lakeside Road / Oakdale;public_transport:platform;ref:13410
+node/9192657825,54.1720693 -4.44876,bus:yes;highway:bus_stop;name:Harbour Road / Kirkwood;public_transport:platform;ref:13805
+node/9192657828,54.1745467 -4.4482649,bus:yes;highway:bus_stop;name:Groudle Road No.26;public_transport:platform;ref:13809
+node/9192657830,54.1748144 -4.4449421,bus:yes;highway:bus_stop;name:Groudle Road No.46;public_transport:platform;ref:13811
+node/9192658723,54.1785137 -4.4501861,bus:yes;highway:bus_stop;name:Ballachrink Stores;public_transport:platform;ref:13703 / 13707
+node/9192658724,54.1799359 -4.4506809,bus:yes;highway:bus_stop;name:Ballachrink / Snaefell Crescent;public_transport:platform;ref:13703 / 13707
+node/9192691723,54.1755615 -4.4442167,bus:yes;highway:bus_stop;name:Windermere Drive No.48;public_transport:platform;ref:13813
+node/9192945260,54.1585821 -4.492488,bus:yes;highway:bus_stop;name:Selbourne Drive;public_transport:platform;ref:20133
+node/9192968806,54.2287313 -4.3876916,bus:yes;highway:bus_stop;name:Minorca Abbey Cottage Entrance;public_transport:platform;ref:3503
+node/9193089896,54.305928 -4.3576363,bus:yes;highway:bus_stop;name:Dreemskerry Road Junction;public_transport:platform;ref:3912
+node/9193089897,54.3769992 -4.3930345,bus:yes;highway:bus_stop;name:Bride / Ramsey Road;public_transport:platform;ref:4001
+node/9193089899,54.3807267 -4.3914284,bus:yes;highway:bus_stop;name:Bride / Ayre View;public_transport:platform;ref:4003
+node/9193089901,54.3828351 -4.3900442,bus:yes;highway:bus_stop;name:Bride Rectory;public_transport:platform;ref:4005
+node/9193089903,54.412283 -4.3678611,bus:yes;highway:bus_stop;name:Point Of Ayre;public_transport:platform;ref:4007
+node/9193089905,54.3879318 -4.4257169,bus:yes;highway:bus_stop;name:Kerrowmoar Farm Entrance;public_transport:platform;ref:4101
+node/9193089907,54.3677048 -4.4440125,bus:yes;highway:bus_stop;name:Opposite Andreas School;public_transport:platform;ref:4103;shelter:no
+node/9193089908,54.3682015 -4.4429771,bus:yes;highway:bus_stop;name:Andreas School Shelter;public_transport:platform;ref:4104;shelter:yes
+node/9193089909,54.3706574 -4.4406334,bus:yes;highway:bus_stop;name:Crellin Grove;public_transport:platform;ref:4105
+node/9193089911,54.387122 -4.4462103,bus:yes;highway:bus_stop;name:Smeale Old Chapel;public_transport:platform;ref:4107
+node/9193089912,54.3865075 -4.4495544,bus:yes;highway:bus_stop;name:Smeale Junction;public_transport:platform;ref:4108
+node/9193089913,54.3739866 -4.4377037,bus:yes;highway:bus_stop;name:West Braust Farm Entrance;public_transport:platform;ref:4109
+node/9193089914,54.3731338 -4.4385442,bus:yes;highway:bus_stop;name:Kimmeraugh Road;public_transport:platform;ref:4110
+node/9193089915,54.3652277 -4.4380321,bus:yes;highway:bus_stop;name:Andreas Church;public_transport:platform;ref:4111
+node/9193106477,54.3227858 -4.3973188,bus:yes;highway:bus_stop;name:Lezayre Estate / Close Auldyn;public_transport:platform;ref:3858
+node/9193106479,54.3341861 -4.3898941,bus:yes;highway:bus_stop;name:Lezayre Estate / Ormly Avenue;public_transport:platform;ref:3864
+node/9193106483,54.3346371 -4.3906806,bus:yes;highway:bus_stop;name:Ormly Grove No.2;public_transport:platform;ref:3868
+node/9193106485,54.3333525 -4.3981665,bus:yes;highway:bus_stop;name:Clifton Drive / Croft Bank;public_transport:platform;ref:3870
+node/9193106486,54.3317959 -4.399978,bus:yes;highway:bus_stop;name:Clifton Drive Shelter;public_transport:platform;ref:3871
+node/9193106487,54.3297521 -4.4005661,bus:yes;highway:bus_stop;name:Clifton Drive / Kings Reach;public_transport:platform;ref:3872
+node/9193106488,54.3285549 -4.4016177,bus:yes;highway:bus_stop;name:Westlands Drive;public_transport:platform;ref:3873
+node/9193106491,54.3216966 -4.3775431,bus:yes;highway:bus_stop;name:Queens Promenade Opposite Dale Street;public_transport:platform;ref:3885
+node/9193127110,54.3003093 -4.3644046,bus:yes;highway:bus_stop;name:Rest & Be Thankful;public_transport:platform;ref:3901
+node/9193127111,54.3005269 -4.3635597,bus:yes;highway:bus_stop;name:Rest & Be Thankful / Primrose Lodge;public_transport:platform;ref:3902
+node/9193127112,54.3112442 -4.3663153,alt_name:Ballacarmel Cottages;bus:yes;highway:bus_stop;name:Ballacartmel Cottages;public_transport:platform;ref:3903
+node/9193127113,54.3018182 -4.3553441,bus:yes;highway:bus_stop;name:Dreemskerry Road / Venture Centre;public_transport:platform;ref:3904
+node/9193127114,54.3103473 -4.3646331,bus:yes;highway:bus_stop;name:Folieu / Lewaigue Junction;public_transport:platform;ref:3906
+node/9193127115,54.2925711 -4.3417988,bus:yes;highway:bus_stop;name:Dreemskerry Quarry;public_transport:platform;ref:3907
+node/9193127116,54.2877292 -4.3378858,bus:yes;highway:bus_stop;name:Ballajora Junction;public_transport:platform;ref:3908
+node/9193136317,54.2986634 -4.318413,bus:yes;highway:bus_stop;name:Maughold Village;public_transport:platform;ref:3909
+node/9193156796,54.2278129 -4.3937176,bus:yes;highway:bus_stop;name:Minorca Crescent;public_transport:platform;ref:13502
+node/9193156797,54.225314 -4.3906791,bus:yes;highway:bus_stop;name:Laxey Promenade;public_transport:platform;ref:13507
+node/9193160979,54.2510938 -4.4630078,bus:yes;highway:bus_stop;name:Bungalow Footbridge;public_transport:platform;ref:14802
+node/9193160980,54.2954379 -4.40538,bus:yes;highway:bus_stop;name:Guthries Memorial;public_transport:platform;ref:14803
+node/9193160982,54.1482921 -4.6865654,bus:yes;highway:bus_stop;name:Round Table Crossroads;public_transport:platform;ref:17401
+node/9193160983,54.1375059 -4.708007,bus:yes;highway:bus_stop;name:Cronk Ny Arrey Laa Footpath;public_transport:platform;ref:17402
+node/9193168780,54.1349649 -4.6089881,bus:yes;highway:bus_stop;name:St. Mark's;public_transport:platform;ref:11301
+node/9193168781,54.1350401 -4.5194065,bus:yes;highway:bus_stop;name:Ballacreggan;public_transport:platform;ref:12901
+node/9193168783,54.1323131 -4.5309123,bus:yes;highway:bus_stop;name:Quines Hill;public_transport:platform;ref:12903
+node/9193168784,54.1280973 -4.5232533,bus:yes;highway:bus_stop;name:Port Soderick / Marine Drive Junction;public_transport:platform;ref:12906
+node/9193178256,54.1707881 -4.4395953,bus:yes;highway:bus_stop;name:Majestic Drive;public_transport:platform;ref:13308
+node/9193185803,54.3395045 -4.460996,bus:yes;highway:bus_stop;name:St. Judes Old School;public_transport:platform;ref:14601
+node/9193185804,54.3406209 -4.4692629,bus:yes;highway:bus_stop;name:St. Judes Old Parsonage;public_transport:platform;ref:14602
+node/9193185805,54.3405637 -4.470904,bus:yes;highway:bus_stop;name:St. Judes Telephone Box;note:no phone box remains;public_transport:platform;ref:14603
+node/9193185806,54.3399566 -4.4638298,bus:yes;highway:bus_stop;name:St. Judes Church;public_transport:platform;ref:14604
+node/9193185808,54.3406796 -4.4701667,bus:yes;highway:bus_stop;name:St. Judes Crossroads;public_transport:platform;ref:14606
+node/9195250678,54.1765908 -4.4606569,bus:yes;highway:bus_stop;name:Hillberry Road / Ballachurry;public_transport:platform;ref:13903
+node/9195250680,54.1783128 -4.465214,bus:yes;highway:bus_stop;name:Hillberry Road / Lhon Dhoo Close;public_transport:platform;ref:13905
+node/9195250685,54.1808599 -4.469775,bus:yes;highway:bus_stop;name:Highfield Crescent / Seafield Crescent;public_transport:platform;ref:13910
+node/9195250687,54.1832278 -4.4699169,bus:yes;highway:bus_stop;name:Birch Hill Crescent;public_transport:platform;ref:13912
+node/9195250688,54.1813053 -4.464596,bus:yes;highway:bus_stop;name:Birch Hill Stores;public_transport:platform;ref:13913
+node/9195333335,54.1606911 -4.4736891,bus:yes;departures_board:no;highway:bus_stop;name:Queens Promenade / Empress Drive;operator:Bus Vannin;public_transport:platform;railway:tram_stop;ref:20116;request_stop:yes;tram:yes
+node/9195333340,54.157539 -4.4862146,bus:yes;departures_board:no;highway:bus_stop;name:Woodbourne Road / Hilary Road Shelter;operator:Bus Vannin;public_transport:platform;ref:20126
+node/9197042396,54.3580307 -4.5166621,bus:yes;highway:bus_stop;name:Jurby Airfield Entrance;public_transport:platform;ref:4201
+node/9197042397,54.3577919 -4.515428,bus:yes;highway:bus_stop;name:Jurby Threshold;public_transport:platform;ref:4202
+node/9197042398,54.3587843 -4.5220138,bus:yes;highway:bus_stop;name:Jurby Industrial Estate / Motor Museum;public_transport:platform;ref:4203
+node/9197042399,54.3609329 -4.5244631,bus:yes;highway:bus_stop;name:Jurby Junk Entrance;public_transport:platform;ref:4205
+node/9197042401,54.3627811 -4.523165,bus:yes;highway:bus_stop;name:Jurby East Road;public_transport:platform;ref:4207
+node/9197042403,54.3636006 -4.5163694,bus:yes;highway:bus_stop;name:Jurby East Road / The Bretney;public_transport:platform;ref:4209
+node/9197042404,54.3635209 -4.5157203,bus:yes;highway:bus_stop;name:Jurby Bretney Shelter;public_transport:platform;ref:4210;shelter:yes
+node/9197042405,54.3638671 -4.5007439,bus:yes;highway:bus_stop;name:Jurby East Road / Summerhill Junction;public_transport:platform;ref:4211
+node/9197055913,54.3813555 -4.4972072,bus:yes;highway:bus_stop;name:Jurby Coast Road / Lhen Bridge;public_transport:platform;ref:4214
+node/9197055914,54.3751359 -4.508434,bus:yes;highway:bus_stop;name:Jurby Coast Road / The Dunes;public_transport:platform;ref:4215
+node/9197055915,54.3461789 -4.50257,bus:yes;highway:bus_stop;name:Sandygate Crossroads;public_transport:platform;ref:4301
+node/9197055916,54.3466579 -4.503591,bus:yes;highway:bus_stop;name:Sandygate Shelter;public_transport:platform;ref:4302;shelter:yes
+node/9197071717,54.3493424 -4.414622,bus:yes;highway:bus_stop;name:Regaby Crossroads;public_transport:platform;ref:4401
+node/9197071718,54.3489218 -4.4149492,bus:yes;highway:bus_stop;name:Regaby / M.E.A. Substation;public_transport:platform;ref:4402
+node/9197071719,54.3452749 -4.4115651,bus:yes;highway:bus_stop;name:Aust / Cronk Anst;public_transport:platform;ref:4403
+node/9197071721,54.3544708 -4.3841132,bus:yes;highway:bus_stop;name:Dogmills Shelter;public_transport:platform;ref:4501;shelter:yes
+node/9197071723,54.3300848 -4.4202189,bus:yes;highway:bus_stop;name:Jurby Road / Garey Road Junction;public_transport:platform;ref:4601
+node/9197071725,54.332362 -4.5528048,bus:yes;highway:bus_stop;name:Ballaugh Cronk Junction;public_transport:platform;ref:4701
+node/9197071726,54.3537486 -4.5350699,bus:yes;highway:bus_stop;name:Jurby West Crossroads;public_transport:platform;ref:4702
+node/9197071727,54.327483 -4.5517252,bus:yes;highway:bus_stop;name:Ballaugh / Dollagh;public_transport:platform;ref:4703
+node/9197071728,54.1045255 -4.703042,bus:yes;highway:bus_stop;name:Colby Glen Road / Ballachrink;public_transport:platform;ref:10713
+node/9197076887,54.1581482 -4.6383271,bus:yes;highway:bus_stop;name:Ballamodha Shoulder Road;public_transport:platform;ref:11401
+node/9197076888,54.1575902 -4.6382683,bus:yes;highway:bus_stop;name:Ballamodha Shoulder Road Junction;public_transport:platform;ref:11402
+node/9197076889,54.1468559 -4.6385454,bus:yes;highway:bus_stop;name:Ballamodha / Ronague Road;public_transport:platform;ref:11403
+node/9197076890,54.147244 -4.6383818,bus:yes;highway:bus_stop;name:Ballamodha / Ronague Road Junction;public_transport:platform;ref:11404
+node/9197076891,54.1310866 -4.6387314,bus:yes;highway:bus_stop;name:Ballamodha / St. Mark's Junction;public_transport:platform;ref:11405
+node/9197076892,54.1275161 -4.639772,bus:yes;highway:bus_stop;name:Ballamodha Pottery;public_transport:platform;ref:11406
+node/9197076893,54.1226651 -4.6407529,bus:yes;highway:bus_stop;name:Ballamodha–Phildraw Road Junction;public_transport:platform;ref:11407
+node/9197091773,54.14914 -4.4750714,bus:yes;highway:bus_stop;name:Loch Promenade / Bottleneck Car Park;network:Bus Vannin;public_transport:platform;ref:20164
+node/9197112046,54.2282475 -4.3888106,light_rail:yes;name:Laxey Old Road;public_transport:stop_position;railway:halt;ref:50026
+node/9197112048,54.2825221 -4.3350873,light_rail:yes;name:Ballafayle Kerruish;public_transport:stop_position;railway:halt;ref:50112
+node/9197112050,54.2976494 -4.3465155,light_rail:yes;name:Dreemskerry Farm;public_transport:stop_position;railway:halt;ref:50053
+node/9205690720,54.4002904 -4.3665379,historic:ruins;name:Substation
+node/9208513119,54.3899804 -4.4593892,alt_name:Knock y Doonee Keeill;archaeological_site:church;historic:archaeological_site;name:Knock-e-Dhooney Keeill;ref:GB:imher:0343.00;url:imher:https://isleofmanher.im/report/190607ac-724d-4b69-88f4-c923e0c3be90;wikimedia_commons:File:Doonagh Easconn - geograph.org.uk - 570376.jpg
+node/9208513120,54.3892445 -4.4553668,archaeological_site:burial;historic:archaeological_site;name:Knock-e-Dooney Ship Burial;ref:GB:imher:0344.00;url:imher:https://isleofmanher.im/report/5d318b8d-4497-4bd2-84a6-845539efac5b
+node/9211049447,54.3859473 -4.4781043,historic:ruins
+node/9217019709,54.3274932 -4.4091224,tourism:picnic_site
+node/9233412149,54.3154143 -4.3817405,alt_name:Killeaba Mound;archaeological_site:burial;historic:archaeological_site;historic:civilization:prehistoric;image:https://www.geograph.org.uk/photo/68211;name:Killeaba Mount;ref:GB:imher:0231.00;url:imher:https://isleofmanher.im/report/7c5e526c-abfd-4121-92f4-f3032bde8d98
+node/9233627752,54.3669896 -4.4224267,historic:ruins
+node/9234050431,54.3725911 -4.4117623,historic:ruins
+node/9246656825,54.3644592 -4.4405499,historic:memorial;material:sandstone;memorial:war_memorial;name:Andreas War Memorial;url:https://www.iwm.org.uk/memorials/item/memorial/28212
+node/9257779946,54.3067653 -4.3424851,direction:280-60;tourism:viewpoint
+node/9257779947,54.3023236 -4.3229288,direction:10;tourism:viewpoint
+node/9257779968,54.2981619 -4.312526,description:Maughold Head;direction:50;tourism:viewpoint
+node/9257779970,54.2962032 -4.3106391,direction:45;tourism:viewpoint
+node/9257780005,54.3113018 -4.3511155,description:Civil War Battery;tourism:viewpoint
+node/9270841185,54.3967485 -4.3936397,historic:ruins
+node/9272055309,54.3937502 -4.3642135,historic:ruins;name:Site of Chain Home Radar accommodation blocks
+node/9276026716,54.2734568 -4.600603,archaeological_site:burial;historic:archaeological_site
+node/9276069109,54.2599141 -4.5971146,historic:ruins;name:Chester Farm;place:locality;source:Isle of Man Government 1:25000 map
+node/9289025178,54.3931572 -4.4112134,archaeological_site:tumulus;historic:archaeological_site;name:Cronk Bouyr;source:Isle of Man Government 1:25000 map (2007)
+node/9289097226,54.3668907 -4.4566043,archaeological_site:tumulus;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+node/9289097227,54.3779815 -4.4611608,archaeological_site:tumulus;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+node/9289097230,54.3760861 -4.390591,archaeological_site:mound;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+node/9289097231,54.3676433 -4.4781617,archaeological_site:tumulus;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+node/9289101494,54.4061189 -4.4124823,tourism:viewpoint
+node/9289141429,54.3837219 -4.4603428,archaeological_site:tumulus;historic:archaeological_site;name:Cronk Ruy;source:Isle of Man Government 1:25000 map (2007)
+node/9290026300,54.3551998 -4.5414663,archaeological_site:tumulus;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+node/9290027852,54.2879463 -4.4850801,archaeological_site:tumulus;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+node/9294614884,54.3877292 -4.4362446,archaeological_site:tumulus;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+node/9301468583,54.1860911 -4.4449464,archaeological_site:church;historic:archaeological_site;historic:civilization:medieval;name:St Martin's Chapel and Burial Ground;ref:GB:imher:0215.00;source:Isle of Man Government 1:25000 map (2007);url:imher:https://isleofmanher.im/report/99414489-41af-4191-b676-db8eb25ded3d
+node/9318345646,54.1869385 -4.5891585,archaeological_site:tumulus;historic:archaeological_site;name:Creg y Whaullian Burial Cairn;ref:GB:imher:1994.00;source:Isle of Man Government 1:25000 map (2007);url:imher:https://isleofmanher.im/report/e3234421-33b1-4311-8bdb-8193c6f15588
+node/9358245964,54.2982346 -4.3116023,tourism:viewpoint
+node/9358245974,54.3053465 -4.3290957,historic:ruins;inscription:Inaccessible from land due to undergrowth and dangerous cliffs.;name:Possible Level of Glebe Haematite Iron Ore Mine
+node/9364283779,54.2413539 -4.4085169,direction:175;tourism:viewpoint
+node/9364283796,54.2449407 -4.3995974,direction:160;tourism:viewpoint
+node/9851665917,54.0538595 -4.8220924,name:Or Vooar;tourism:attraction
+node/9851666517,54.056006 -4.8244165,name:Or Vooar;tourism:attraction
+node/9952764953,54.2208108 -4.7045856,archaeological_site:tomb;historic:archaeological_site;name:Round mounds;website:https://culturevannin.im/exploremore/places/peel-hill-round-mounds-717242/
+node/9957934453,54.1841582 -4.5668701,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes;source:Mapillary;Maxar
+node/10141570928,54.0548676 -4.6313178,archaeological_site:fortification;historic:archaeological_site;name:Langness Point Promontory Fort;ref:GB:imher:1064.00;source:Isle of Man Government 1:25000 map;url:imher:https://isleofmanher.im/report/e7694114-5ba0-415a-9766-a1ee9aea9773
+node/10145032848,54.2173054 -4.7066384,archaeological_site:tumulus;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+node/10169482882,54.1374791 -4.5223099,name:Real Fairy Bridge;tourism:attraction
+node/10289813054,54.0815561 -4.7307136,amenity:clock;display:sundial;support:wall_mounted
+node/10661831374,54.3106373 -4.5420928,historic:monument
+node/10688364334,54.2008569 -4.413305,amenity:clock
+node/10692818524,54.307968 -4.3480223,historic:monument;monument:anchor
+node/10693193695,54.1999632 -4.6384569,addr:city:St John's;addr:housename:Mullen-e-Cloie;addr:postcode:IM4 3AR;addr:street:Foxdale Road;name:St John's United Football Club Campsite;seasonal:yes;tourism:camp_site;website:http://www.stjohnsfootballclub.com
+node/10717665419,54.2138591 -4.4798804,"name:Keppel Gate;place:locality;tourism:attraction;wikidata:Q2364611;wikipedia:en:Keppel Gate, Isle of Man"
+node/10720135675,54.1078651 -4.5864037,historic:memorial;listed_status:Registered;material:sandstone;memorial:war_memorial;name:Santon Parish War Memorial;ref:registered_building:323;url:https://www.iwm.org.uk/memorials/item/memorial/28282;url:registered_building:https://www.gov.im/media/1373641/323-notice-and-entry-summary.pdf;wikidata:Q118188725
+node/10726627897,54.2127161 -4.7099387,historic:monument
+node/10726627899,54.213012 -4.7103412,historic:monument
+node/10728445065,54.2864823 -4.5773456,amenity:fountain
+node/10731206425,54.1672543 -4.4953423,amenity:fountain
+node/10739747787,54.1577826 -4.4963914,amenity:fountain
+node/10813037049,54.29083 -4.394601,artwork_type:land_art;description:Triskelion laid out in loose stones;tourism:artwork
+node/10853173502,54.1558313 -4.5014492,"name:Quarterbridge;tourism:attraction;wikidata:Q7269285;wikipedia:en:Quarterbridge, Isle of Man"
+node/10858616256,54.2204605 -4.6268354,alt_name:The Black Dub;Black Dub;amenity:events_venue;name:The Blackdub;tourism:attraction;website:https://www.theblackdub.com
+node/10858845295,54.2125047 -4.6307399,name:Doran's Bend;tourism:attraction;wikidata:Q5297510;wikipedia:en:Doran's Bend
+node/10858941214,54.2182279 -4.6326237,name:Laurel Bank;name:en:Laurel Bank;name:gv:Cronk-y-Killey;tourism:attraction;wikidata:Q6499754;wikipedia:en:Laurel Bank
+node/10858941283,54.231021 -4.6175033,name:Creg Willey's Hill;place:locality;tourism:attraction;wikidata:Q5183967;wikipedia:en:Creg Willey's Hill
+node/10858941284,54.2358493 -4.6133236,name:Lambfell;place:locality;tourism:attraction
+node/10862294644,54.0943473 -4.6575518,name:Billown Dip;tourism:attraction
+node/10862294645,54.0946788 -4.6647095,name:Williams Corner;tourism:attraction
+node/10862294646,54.0967085 -4.6698198,name:Ballawhetstone;place:farm;tourism:attraction
+node/10863749870,54.2555832 -4.4476189,"archaeological_site:mound;historic:archaeological_site;note:marked on Isle of Man Government 1:25000 map as mounds;source:NLS OS 1:10,560 1949-1968;NLS OS 25 inch Isle of Man VIII.5 & 9 1870"
+node/10863749874,54.2560736 -4.4474247,"archaeological_site:mound;historic:archaeological_site;note:marked on Isle of Man Government 1:25000 map as mounds;source:NLS OS 1:10,560 1949-1968;NLS OS 25 inch Isle of Man VIII.5 & 9 1870"
+node/10867731359,54.3210854 -4.4647446,name:Kerrowmoar;place:locality;tourism:attraction
+node/10870067069,54.2641433 -4.6159794,"archaeological_site:earthwork;historic:archaeological_site;source:NLS OS 1:10,560 1949-1968"
+node/10870067071,54.2559896 -4.6157421,"archaeological_site:mound;historic:archaeological_site;source:NLS OS 1:10,560 1949-1968"
+node/10870067072,54.2517645 -4.6284599,"archaeological_site:stone;historic:archaeological_site;source:NLS OS 1:10,560 1949-1968"
+node/10870067074,54.272633 -4.5943063,"archaeological_site:tumulus;historic:archaeological_site;source:NLS OS 1:10,560 1949-1968"
+node/10870067075,54.2727146 -4.5935656,"archaeological_site:tumulus;historic:archaeological_site;source:NLS OS 1:10,560 1949-1968"
+node/10979302877,54.0732312 -4.621757,artist_name:Dave Tomlinson;artwork_type:sculpture;material:bronze;name:Derbyhaven Bay;tourism:artwork
+node/11009988554,54.2183617 -4.4323896,"description:One of the stones erected in celebration of the millennium in the year 2000.;historic:monument;inscription:2000, Lonan;material:stone;name:Millennium Stone, Lonan;start_date:2000"
+node/11010056096,54.2857185 -4.5846001,"description:One of the stones erected in celebration of the millennium in the year 2000.;historic:monument;inscription:2000, Michael;material:stone;name:Millennium Stone, Michael;start_date:2000"
+node/11012012969,54.0962373 -4.7060712,amenity:clock
+node/11014384636,54.3836799 -4.3882488,"description:One of the stones erected in celebration of the millennium in the year 2000.;historic:monument;inscription:2000, Bride;material:stone;name:Millennium Stone, Bride;start_date:2000"
+node/11014683946,54.3155838 -4.4887068,historic:monument;name:Sulby Starch Mill Stones;source:mapillary;parish minutes;source:url:http://www.lezayreparish.org/documents/04.19publicminutesApril04.04.pdf;start_date:2020
+node/11015451547,54.1703658 -4.5136601,"description:One of the stones erected in celebration of the millennium in the year 2000.;historic:monument;inscription:2000, Braddan;material:stone;name:Millennium Stone, Braddan;start_date:2000"
+node/11063506640,54.0850913 -4.748948,bus:yes;highway:bus_stop;public_transport:platform
+node/11073586535,54.0974175 -4.6342731,artist:wikipedia:en:Philip Moore Callow Kermode;artist_name:Philip Moore Callow Kermode;historic:memorial;material:granite_stone;memorial:war_memorial;name:Malew War Memorial;url:https://www.iwm.org.uk/memorials/item/memorial/28271
+node/11075699671,54.313685 -4.5459423,historic:memorial;material:marble;memorial:war_memorial;name:Ballaugh War Memorial;url:https://www.iwm.org.uk/memorials/item/memorial/28205
+node/11078541644,54.1794637 -4.5581873,historic:memorial;material:limestone;memorial:war_memorial;name:Marown Parish War Memorial;url:https://www.iwm.org.uk/memorials/item/memorial/28275
+node/11109516684,54.2262627 -4.6847255,historic:monument;information:route_marker;name:Raad Ny Foillan Obelisk;tourism:information
+node/11109545170,54.3240859 -4.381113,historic:monument;information:route_marker;name:Raad Ny Foillan Obelisk;tourism:information
+node/11109547846,54.0882396 -4.7591375,historic:monument;information:route_marker;name:Raad Ny Foillan Obelisk;tourism:information
+node/11125998681,54.2140759 -4.6987367,artwork_type:sculpture;name:The Moddey Dhoo of Peel Castle;tourism:artwork
+node/11125998689,54.2041166 -4.6507017,artwork_type:sculpture;name:The Lost Wife of Ballaleece;tourism:artwork
+node/11126166849,54.2315744 -4.4089186,amenity:kindergarten;name:Treehouse Nursery
+node/11164580385,54.1050389 -4.7296978,tourism:viewpoint
+node/11199703693,54.1821371 -4.7240214,historic:fort;name:Cronk Mooar ny Traagh;name:gv:Cronk Mooar ny Traagh;source:wikidata;wikidata:Q31118325
+node/11204975117,54.3726994 -4.3788807,historic:archaeological_site;name:Shellag (Cinerary Urn 1893) approx;source:Isle of Man Government 1:25000 map
+node/11204975118,54.366695 -4.3802183,archaeological_site:tumulus;historic:archaeological_site;name:Kionlough Tumulus;source:nls;OS six inch map (1870);OS 10k map (1940-1972)
+node/11204975122,54.3591711 -4.386113,archaeological_site:tumulus;historic:archaeological_site;source:nls;OS 10k 1940-1972
+node/11204989593,54.2282131 -4.3857518,archaeological_site:church;historic:archaeological_site;source:nls;OS 10k map (1949-1972)
+node/11204989595,54.2352388 -4.4001013,archaeological_site:church;historic:archaeological_site;name:St Mary's Chapel;name:en:St Mary's Chapel;name:gv:Keeill Woirrey;source:nls;OS 10k map (1949-1972)
+node/11215356548,54.0679639 -4.7364987,archaeological_site:lime_kiln;historic:archaeological_site;layer:-1;material:stone;ref:GB:imher:3468.00
+node/11218283261,54.0552685 -4.6297921,archaeological_site:mineral_extraction;historic:archaeological_site;name:Langness Mine;ref:GB:imher:2139.00;url:imher:https://isleofmanher.im/report/e3a61f5d-dac1-4b53-bf41-19080c58db3a
+way/59464000,54.0895645 -4.762909,historic:ruins;note:old swimming pool;source:Isle of Man Government aerial imagery (2001);aerial imagery
+way/59540853,54.0737187 -4.6072266,building:yes;historic:ruins;name:Saint Michael's Chapel;photo:http://www.flickr.com/photos/londondan/3138914328/;source:Isle of Man Government aerial imagery (2001)
+way/59541016,54.0859588 -4.6385991,addr:city:Ballasalla;addr:country:IM;addr:place:Ronaldsway Industrial Estate;addr:postcode:IM9 2SE;building:yes;name:Sefton Express;source:Isle of Man Government aerial imagery (2001);tourism:hotel;website:https://www.seftonexpress.co.uk/
+way/60001146,54.060543 -4.6205432,building:yes;historic:ruins;listed_status:Registered;name:The Powder House;ref:registered_building:142;ruins:building;source:Isle of Man Government aerial imagery (2001);url:registered_building:https://www.gov.im/media/632573/0500142regbldthepowderhouse.pdf;wikidata:Q118188760
+way/60003819,54.0614274 -4.6228622,building:yes;historic:ruins;source:Isle of Man Government aerial imagery (2001)
+way/60137268,54.0876859 -4.6169292,building:yes;historic:ruins;source:Isle of Man Government aerial imagery (2001)
+way/60137269,54.0877079 -4.6166824,building:yes;historic:ruins;source:Isle of Man Government aerial imagery (2001)
+way/60137286,54.0887525 -4.6169936,building:yes;historic:ruins;source:Isle of Man Government aerial imagery (2001)
+way/60137287,54.0876261 -4.6159582,building:yes;historic:ruins;source:Isle of Man Government aerial imagery (2001)
+way/60137288,54.0876827 -4.6151965,building:yes;historic:ruins;source:Isle of Man Government aerial imagery (2001)
+way/60137292,54.0894006 -4.6173476,building:yes;historic:ruins;source:Isle of Man Government aerial imagery (2001)
+way/60137300,54.0881484 -4.6143704,building:yes;historic:ruins;source:Isle of Man Government aerial imagery (2001)
+way/60137302,54.0883152 -4.6163016,building:yes;historic:ruins;source:Isle of Man Government aerial imagery (2001)
+way/60137303,54.088637 -4.6175366,building:yes;historic:ruins;source:Isle of Man Government aerial imagery (2001)
+way/60681535,54.3564707 -4.5219985,alt_name:Jurby Terminal Building;building:military;disused:military:control_tower;historic:building;listed_status:Registered;name:Control Tower;ref:registered_building:239;source:Isle of Man Government aerial imagery (2001);url:registered_building:https://www.gov.im/media/632519/0500239regbldjurbyterminalbuildin.pdf;wikidata:Q118188743;wikimedia_commons:File:Jurby_Airfield_-_Isle_of_Man_-_geograph.org.uk_-_31789.jpg
+way/62242660,54.1504744 -4.4687221,"architect:John Welch;Hansom & Welch;architect:note:also designed St Luke's Church, the Smelt Monument, King William's College;building:historic;castle_type:defensive;emergency:marine_refuge;historic:castle;listed_status:Registered;name:Tower of Refuge;name:en:Tower of Refuge;name:gv:Toor y Chemmyrk;ref:GB:imher:9316.00;ref:registered_building:205;source:Isle of Man Government aerial imagery (2001);start_date:1832;url:imher:https://isleofmanher.im/report/a1501ad6-ef39-45e4-bd9d-ef0cab403a89;url:registered_building:https://www.gov.im/media/632417/0500205regbldtowerofrefuge.pdf;wikidata:Q60784989;wikipedia:en:Tower of Refuge"
+way/77415355,54.1406235 -4.4708023,"alt_name:The Ornamental Gateway;architect:Maxwell and Tuke;building:yes;historic:gate;layer:1;listed_status:Registered;name:Marine Drive Old Toll Gate;ref:registered_building:233;source:Isle of Man Government aerial imagery (2001);tourism:attraction;url:registered_building:https://www.gov.im/media/631607/0500233regbldtheornamentalgateway.pdf;wikidata:Q118188570;wikimedia_commons:File:Entrance To Marine Drive, Douglas Head, Isle Of Man..jpg"
+way/77964053,54.1733446 -4.4781108,addr:city:Douglas;addr:postcode:IM2 6RB;addr:street:Homefield Road;amenity:university;name:University College Isle of Man;name:gv:Colleish-Ollooscoill Ellan Vannin;old_name:Isle of Man College;postal_code:IM2 6RB;short_name:UCM;website:https://www.ucm.ac.im/;wikidata:Q3445987;wikipedia:en:University College Isle of Man
+way/78029263,54.1785731 -4.4549992,addr:city:Onchan;addr:postcode:IM3 4LT;addr:street:Second Avenue;amenity:community_centre;building:yes;name:Elim Family Centre;source:Isle of Man Government aerial imagery (2001);website:https://onchanelim.org/find-us/
+way/82626204,54.1504163 -4.6699626,archaeological_site:fortification;historic:archaeological_site;name:South Barrule Hill Fort;ref:GB:imher:0116.00;source:Isle of Man Government aerial imagery (2001);tourism:attraction;url:imher:https://isleofmanher.im/report/ce1751fd-6802-409e-9217-0bf1b1aea929;wikidata:Q31103018
+way/101833417,54.0839132 -4.7627649,amenity:pub;building:yes;food:yes;internet_access:wlan;internet_access:fee:no;music:live;name:The Bay Hotel;tourism:hotel
+way/102872502,54.3305787 -4.3847325,amenity:community_centre;building:yes;name:Ramsey Rugby Club community sports pavilion;operator:Ramsey Rugby Club;sport:rugby_union
+way/104908010,54.0913348 -4.7768004,building:yes;historic:ruins;name:South Bradda Mine
+way/104908013,54.0909378 -4.7759613,historic:ruins
+way/105051114,54.0873185 -4.7156448,building:yes;name:Kentraugh Mill;tourism:museum
+way/109881530,54.3327602 -4.5592163,description:Picnic area;leisure:park;source:Isle of Man Government aerial imagery (2001);tourism:picnic_site
+way/110262887,54.3456003 -4.5518038,barrier:wall;historic:ruins;name:Ballaholly
+way/111718303,54.3300143 -4.5533737,amenity:place_of_worship;building:church;denomination:anglican;listed_status:Registered;name:Ballaugh Old Church;ref:registered_building:11;religion:christian;source:Isle of Man Government aerial imagery (2001);url:registered_building:https://www.gov.im/media/1348571/regbld11-ballaugh-old-church-reduced.pdf;wikidata:Q105171085
+way/112574139,54.2166424 -4.5207223,addr:country:IM;addr:postcode:IM4 5EU;addr:street:West Baldwin Road;building:yes;name:Ard Whallan Outdoor Centre;source:Isle of Man Government 1:25000 map (2007);source:addr:postcode:Isle of Man Government Land Registry Land Transactions;tourism:hostel
+way/112980566,54.3048534 -4.5760988,amenity:place_of_worship;building:yes;denomination:methodist;name:Orrisdale Methodist;religion:christian
+way/146811052,54.106717 -4.7166116,amenity:place_of_worship;building:church;denomination:methodist;name:Ballakilpheric Methodist Chapel;religion:christian
+way/160506184,54.1860382 -4.4115655,"addr:city:Baldrine;addr:country:IM;addr:street:Road of the Middle Farm;alt_name:Old Kirk Lonan;amenity:place_of_worship;building:church;contact:facebook:https://www.facebook.com/stadamnanslonan;denomination:anglican;listed_status:Registered;loc_name:Lonan Old Church;name:Saint Adamnan's Church;old_name:gv:Keeill ny-Traie;ref:registered_building:13;religion:christian;url:registered_building:https://www.gov.im/media/1352399/0500013regbld-old-kirk-lonan.pdf;wikidata:Q7586691;wikipedia:en:St Adamnan's Church, Lonan"
+way/164657831,54.2136191 -4.6808421,amenity:place_of_worship;building:church;denomination:anglican;description:Unamed cemetry chapel;religion:christian;source:Isle of Man Government aerial imagery (2001)
+way/169193245,54.209797 -4.5158261,"alt_name:Abban's Church of Killey Bane;amenity:place_of_worship;architect:John Welch;architect:note:also designed Tower of Refuge (spelled Welch in Tower of Reguge registration document, rather than Walsh in this doc);building:church;denomination:anglican;heritage:ref:130;listed_status:Registered;name:Saint Luke's Church;ref:registered_building:130;religion:christian;source:Isle of Man Government aerial imagery (2001);url:registered_building:https://www.gov.im/media/1348594/0500130regbld-st-lukes-church-reduced.pdf;wikidata:Q105170941"
+way/186121345,54.1423468 -4.4852025,historic:ruins
+way/186121361,54.1397982 -4.4781168,historic:ruins
+way/186121373,54.1437392 -4.4769873,historic:ruins
+way/186708942,54.058692 -4.6216765,building:yes;historic:tower;listed_status:Registered;man_made:tower;name:Herring Tower;ref:registered_building:141;tower:construction:freestanding;tower:type:observation;url:registered_building:https://www.gov.im/media/632567/0500141regbldherringtower.pdf;wikidata:Q30623535
+way/197596916,54.1230351 -4.5486713,man_made:tower
+way/217382559,54.1763443 -4.5730717,"addr:country:IM;addr:place:Ellerslie;addr:street:Garth Road;amenity:place_of_worship;building:church;denomination:anglican;listed_status:Registered;name:Old St Runius;ref:registered_building:14;religion:christian;source:Bing;url:registered_building:https://www.gov.im/media/632615/0500014regbldmarownchurch.pdf;wikidata:Q30693226;wikipedia:en:Old St Runius, Marown"
+way/217489613,54.1320282 -4.6098365,amenity:place_of_worship;building:church;denomination:methodist;name:Ballagarey Methodist Chapel;religion:christian;source:Isle of Man Government aerial imagery (2001)
+way/225093594,54.3438999 -4.4541514,alt_name:Kerroo Garroo Fort;historic:archaeological_site;landuse:grass;name:Kerroogarroo Fort;name:gv:Ballachurry;ref:GB:imher:0370.00;url:http://www.manxnationalheritage.im/news/pwc-conservation-battle-at-kerroogarroo-fort/;url:imher:https://isleofmanher.im/report/3c57d9af-a7f2-464e-8f5c-0e20efff8dbc;wikimedia_commons:File:Kerroogarroo Civil War Fort (also known as Ballachurry Fort) - geograph.org.uk - 56865.jpg
+way/231763037,54.1310017 -4.5596906,leisure:sports_centre;name:Ballavartyn Equestrian Centre;source:Bing;sport:equestrian
+way/232178671,54.108553 -4.5545251,landuse:grass;man_made:artwork;tourism:artwork
+way/235445954,54.0925913 -4.7779062,"access:yes;building:yes;historic:monument;listed_status:Registered;name:Milner's Tower;name:etymology:William Milner;ref:registered_building:303;start_date:1871;url:registered_building:https://www.gov.im/media/1373722/303-milners-tower-notice-and-entry-summary.pdf;wikidata:Q118188707;wikimedia_commons:File:Milner's Tower, Bradda Head - geograph.org.uk - 103350.jpg"
+way/238261225,54.1026723 -4.5751026,archaeological_site:fortification;historic:archaeological_site;name:Cronk ny Merriu;name:gv:Cronk ny Merriu;note:Archaeological feature: Iron Age Promontory fort with bank and ditch on landward side. Rectangular outline is a Norse building added 8c or 9c.;ref:GB:imher:1068.00;source:https://tools.wmflabs.org/geohack/geohack.php?pagename=File%3ADefensive_Rampart_at_Cronk_ny_Merriu_-_geograph.org.uk_-_1397992.jpg&params=54.102609_N_-4.575240_E_globe:Earth_type:camera_heading:112&language=en;url:imher:https://isleofmanher.im/report/615c40a9-6362-427d-a27e-65522910b82a;wikidata:Q767223;wikipedia:en:Cronk ny Merriu
+way/313193622,54.1574017 -4.5663772,archaeological_site:hut_circle;description:Viking roundhouse;historic:archaeological_site;ref:GB:imher:0300.10;url:imher:https://isleofmanher.im/report/903f2e14-d2d8-4fa2-835c-1376fa00c941
+way/313193623,54.157574 -4.566717,archaeological_site:building;description:Viking longhouse;historic:archaeological_site;ref:GB:imher:0300.30;url:imher:https://isleofmanher.im/report/1b1aeea8-1626-4745-95b9-ce2a99492ec9
+way/313193624,54.1575892 -4.5662649,archaeological_site:building;description:Viking longhouse;historic:archaeological_site;ref:GB:imher:0300.20;url:imher:https://isleofmanher.im/report/bd2b40d6-a345-4e1a-b7ea-9b1d07832072
+way/313193647,54.1358199 -4.5770654,access:yes;archaeological_site:fortification;historic:archaeological_site;man_made:embankment;name:The Broogh Fort;ref:GB:imher:0754.00;url:imher:https://isleofmanher.im/report/a291c660-10f1-45a6-b280-e20a7d0543b3;website:https://archaeologydataservice.ac.uk/archsearch/record?titleId=2872463
+way/335683073,54.2387495 -4.4072572,"alt_name:Great Laxey Wheel;Lady Isabella;building:industrial;fee:yes;man_made:waterwheel;name:Laxey Wheel;name:en:Laxey Wheel;name:gv:Queeyl Vooar Laksey;operator:Manx National Heritage;ref:GB:imher:0223.00;start_date:1854;tourism:attraction;url:imher:https://isleofmanher.im/report/a455548e-1e51-48e9-88ed-8c4b1f5d1ba2;website:https://manxnationalheritage.im/our-sites/laxey-wheel/;wikidata:Q2046863;wikimedia_commons:File:Laxey Wheel, September 2015.jpg;wikipedia:en:Laxey Wheel"
+way/475439592,54.3574129 -4.422697,addr:city:Andreas;addr:country:IM;addr:street:Andreas Road;name:Brightlife;phone:+44 1624 880318;tourism:hotel;website:https://www.brightlife.com/
+way/525893326,54.2773931 -4.4913212,building:yes;tourism:gallery
+way/525895483,54.2744881 -4.4886894,barrier:wall;historic:ruins
+way/525895484,54.2743961 -4.4892853,historic:ruins
+way/525895485,54.2743852 -4.4890878,historic:ruins
+way/525895492,54.277712 -4.5050154,historic:ruins
+way/525903278,54.2628911 -4.5256907,barrier:wall;historic:ruins
+way/525903280,54.2707712 -4.5094103,barrier:wall;historic:ruins
+way/525955990,54.0847425 -4.7705389,historic:ruins;name:Port Erin Breakwater (remains)
+way/526072525,54.2836376 -4.48372,historic:ruins
+way/526072526,54.2841636 -4.484744,historic:ruins
+way/526072527,54.2842331 -4.48499,historic:ruins
+way/526072528,54.2838412 -4.4843029,historic:ruins
+way/526072529,54.2837168 -4.4841985,historic:ruins
+way/526072530,54.2836028 -4.4837411,historic:ruins
+way/526072531,54.283723 -4.4839191,historic:ruins
+way/526072532,54.2836277 -4.4833871,historic:ruins
+way/526072533,54.2822968 -4.4762783,barrier:wall;historic:ruins
+way/526072534,54.2815634 -4.4796736,historic:ruins
+way/526074269,54.2784895 -4.4648975,barrier:wall;historic:ruins
+way/526074270,54.2785691 -4.4651141,historic:ruins
+way/526075532,54.2939105 -4.4813222,barrier:wall;historic:ruins
+way/526075533,54.2939959 -4.4816935,barrier:wall;historic:ruins
+way/526075534,54.2940574 -4.4811295,historic:ruins
+way/526075535,54.2943326 -4.4813955,historic:ruins
+way/526077893,54.2805599 -4.4611878,historic:ruins
+way/526080508,54.2580806 -4.445641,historic:ruins
+way/526081954,54.265343 -4.4911591,historic:ruins
+way/526084639,54.2654278 -4.5020887,barrier:wall;historic:ruins
+way/526084640,54.2653976 -4.5019497,historic:ruins
+way/526084641,54.2654789 -4.5017149,historic:ruins
+way/526085887,54.2633219 -4.5076137,historic:ruins
+way/526085888,54.2633619 -4.5077632,barrier:wall;historic:ruins
+way/526085889,54.2633848 -4.5078286,historic:ruins
+way/526085890,54.2632392 -4.5076385,historic:ruins
+way/526085901,54.2803666 -4.4837897,historic:ruins
+way/526085902,54.2802175 -4.4837421,barrier:wall;historic:ruins
+way/526085903,54.2802122 -4.4841333,historic:ruins
+way/526085904,54.2800407 -4.4842807,historic:ruins
+way/526085905,54.2801246 -4.4839993,historic:ruins
+way/526085907,54.2802557 -4.4844418,barrier:wall;historic:ruins
+way/526088797,54.2083254 -4.5489651,barrier:wall;historic:ruins
+way/526088800,54.2063792 -4.5476523,historic:ruins
+way/526420666,54.2902324 -4.4901155,historic:ruins
+way/526423278,54.3004891 -4.466183,barrier:wall;historic:ruins
+way/526423279,54.3005235 -4.4656626,barrier:wall;historic:ruins
+way/526423280,54.3055238 -4.4596613,historic:ruins
+way/526423284,54.3058091 -4.4386957,barrier:wall;historic:ruins
+way/526423285,54.2988959 -4.4287766,historic:ruins
+way/526423286,54.2990301 -4.4292983,historic:ruins
+way/526423287,54.2990261 -4.4288401,historic:ruins
+way/526426941,54.2935149 -4.4251425,historic:ruins
+way/526426943,54.2935446 -4.4250566,historic:ruins
+way/526426948,54.2954732 -4.4234259,historic:ruins
+way/526426957,54.2932308 -4.4250647,historic:ruins
+way/526429653,54.2900434 -4.4297666,historic:ruins
+way/526479283,54.2985992 -4.4771636,historic:ruins
+way/526479284,54.2986719 -4.4774187,historic:ruins
+way/526479287,54.2972374 -4.4781864,historic:ruins
+way/526479289,54.2961688 -4.4762316,barrier:wall;historic:ruins
+way/526576650,54.3292031 -4.387197,leisure:water_park
+way/526695518,54.2778675 -4.4018753,historic:ruins
+way/526695519,54.2779199 -4.4023519,barrier:wall;historic:ruins
+way/526728769,54.276749 -4.4085375,alt_name:Keeill Mouray;barrier:wall;historic:archaeological_site;name:Keeill Moirrey;name:en:St Mary's Chapel;name:gv:Keeill Moirrey;source:Isle of Man Government 1:25000 map (2007)
+way/526728781,54.2819491 -4.3997934,barrier:wall;historic:ruins
+way/526730815,54.2850612 -4.3838503,artwork_type:hill_figure;barrier:ditch;description:Outline of a triskelion.;tourism:artwork
+way/526757187,54.3040908 -4.3875867,barrier:wall;historic:ruins
+way/526757188,54.3035553 -4.3879566,barrier:wall;historic:ruins
+way/526757189,54.3035902 -4.3881179,barrier:wall;historic:ruins
+way/526769553,54.3093411 -4.4203311,archaeological_site:church;historic:archaeological_site;name:Skyhill Keeill;source:Isle of Man Government 1:25000 map (2007)
+way/526770176,54.3136629 -4.4416815,historic:ruins
+way/526770189,54.3101767 -4.4539392,historic:ruins
+way/526770843,54.3087949 -4.4498586,historic:ruins
+way/526770844,54.3091064 -4.4499373,historic:ruins
+way/526770845,54.3088426 -4.4493728,historic:ruins
+way/526798750,54.1686679 -4.6527413,historic:ruins
+way/526804035,54.158083 -4.6904959,historic:ruins
+way/526804859,54.153466 -4.7018363,historic:ruins
+way/526805823,54.1547458 -4.6967408,historic:ruins
+way/526806896,54.1600374 -4.6964837,historic:ruins
+way/526806898,54.1607795 -4.6954392,historic:ruins
+way/526806900,54.1613655 -4.6882281,historic:ruins
+way/526806901,54.1605823 -4.6864696,historic:ruins;name:Old Wesleyan Chapel;ruins:church
+way/526807939,54.1643399 -4.6817732,historic:ruins
+way/526811241,54.1735769 -4.691888,historic:ruins
+way/526811245,54.1760323 -4.6965014,archaeological_site:church;historic:archaeological_site;name:Keeill Moirrey
+way/526821487,54.0645716 -4.6635879,historic:ruins
+way/527215313,54.1356759 -4.7309159,"access:yes;archaeological_site:church;historic:archaeological_site;historic:civilization:medieval;name:Lag Ny Keeilley;name:gv:Lag Ny Keeilley;ref:GB:imher:1033.00;url:imher:https://isleofmanher.im/report/a1543ec5-d523-4f6e-824f-ac49553b4ca5;wikidata:Q15825023;wikimedia_commons:File:Lag ny Keeilley, Keeill on Cronk ny Arrey Laa - geograph.org.uk - 179599.jpg;wikipedia:de:Lag ny Keeilley"
+way/527458603,54.2485183 -4.4224837,historic:ruins
+way/527458604,54.2482754 -4.4235217,historic:ruins
+way/527458605,54.2481563 -4.4232186,historic:ruins
+way/527458606,54.2480669 -4.4229557,historic:ruins
+way/527460435,54.2363373 -4.4588725,historic:ruins
+way/527460436,54.2363436 -4.4584916,historic:ruins
+way/527462262,54.2377938 -4.4450813,historic:ruins
+way/527462264,54.2376903 -4.4452637,historic:ruins
+way/527464008,54.2295947 -4.4530635,historic:ruins
+way/527464009,54.2297389 -4.4538628,historic:ruins
+way/527466485,54.2296982 -4.4532459,historic:ruins
+way/527466496,54.2323439 -4.4493159,barrier:wall;historic:ruins
+way/527466497,54.232495 -4.4493729,barrier:wall;historic:ruins
+way/527466498,54.2326201 -4.4494446,barrier:wall;historic:ruins
+way/527466499,54.2327325 -4.4484037,barrier:wall;historic:ruins
+way/527468396,54.2244875 -4.4560716,historic:ruins
+way/527468402,54.2251964 -4.4517952,barrier:wall;historic:ruins
+way/527468404,54.2251704 -4.4519479,barrier:wall;historic:ruins
+way/527468406,54.2252195 -4.451817,historic:ruins
+way/527472037,54.2229625 -4.4403365,historic:ruins
+way/527472038,54.2230029 -4.440771,historic:ruins
+way/527472918,54.2168997 -4.4476453,historic:ruins
+way/527472920,54.2166848 -4.4474559,historic:ruins
+way/527472941,54.2181218 -4.4412778,historic:ruins
+way/527472943,54.2182577 -4.4412364,historic:ruins
+way/527478234,54.2144496 -4.4986852,historic:ruins
+way/527479484,54.2255625 -4.4851552,historic:ruins
+way/527479485,54.2256463 -4.4848855,historic:ruins
+way/527526001,54.2341846 -4.4878455,barrier:wall;historic:ruins
+way/527526018,54.2336574 -4.5238745,historic:ruins
+way/527529152,54.2577652 -4.5505448,historic:ruins
+way/527530275,54.2699643 -4.5539314,historic:ruins
+way/527530276,54.270291 -4.5535269,historic:ruins
+way/527530281,54.2755627 -4.564679,historic:ruins
+way/527741842,54.0954629 -4.7762628,historic:ruins
+way/604743423,54.323348 -4.4268552,addr:city:Ramsey;addr:housename:Ballakillingan Farm;addr:postcode:IM7 2AL;addr:street:Lezayre Road;name:Silly Moos Campsite;tourism:camp_site;website:https://sillymooscampsite.co.uk
+way/680032793,54.0582163 -4.8062139,historic:ruins;ruins:wall
+way/680032794,54.0581694 -4.8062691,building:ruins;historic:ruins
+way/753347194,54.079811 -4.6811274,"archaeological_site:settlement;description:Contour hillfort, enclosing important ritual sites spanning millennia. Mesolithic, neolithic and possibly Bronze age occupation. Iron age habitation and ramparts. Early Christian keeil and burials. Viking ship burial.;historic:archaeological_site;name:Balladoole;ref:GB:imher:0001.00;url:http://hillforts.arch.ox.ac.uk/records/IOM3222.html;url:imher:https://isleofmanher.im/report/e1859035-3252-4b62-bb99-4cd3eb50c1f1;wikidata:Q2235162"
+way/828481351,54.0867414 -4.6273259,area:yes;tourism:attraction
+way/829392799,54.0789154 -4.7499046,name:Glendown Farm Camping;tourism:camp_site
+way/832286812,54.1490628 -4.7216519,historic:ruins
+way/832286815,54.1504174 -4.7219807,historic:ruins
+way/832403413,54.0644958 -4.7724842,historic:ruins;source:aerial imagery
+way/832419218,54.0617461 -4.7644884,alt_name:Cronk Karran;archaeological_site:hut_circle;historic:archaeological_site;historic:civilization:prehistoric;historic:period:bronze-age;name:Cronk Carran Hut Circle;ref:GB:imher:0041.00;source:Isle of Man Government 1:25000 map (2007);Bing;url:imher:https://isleofmanher.im/report/0bc2f0a2-d249-4503-9935-e4e43f94a432;website:https://archaeologydataservice.ac.uk/archsearch/record?titleId=2789036;wikidata:Q11964203
+way/832419219,54.06758 -4.7623277,historic:ruins;name:Transmitter
+way/832419220,54.0664255 -4.7622605,historic:ruins;name:Transmitter
+way/832419221,54.0664081 -4.7642559,historic:ruins;name:Transmitter
+way/832419222,54.0675562 -4.7642994,historic:ruins;name:Transmitter
+way/833162869,54.0814092 -4.6154598,building:yes;historic:building;name:1940s Civil ATC Control Room;website:http://www.island-images.co.uk/ATC/zRon1940s/150419112835.html
+way/833165048,54.0882111 -4.6135241,historic:ruins;source:Bing;1940s aerial photo
+way/833165049,54.0884508 -4.6127985,historic:ruins;source:Bing;1940s aerial photo
+way/833165050,54.0881887 -4.6120424,historic:ruins;source:Bing;1940s aerial photo
+way/833165051,54.087949 -4.6127718,historic:ruins;source:Bing;1940s aerial photo
+way/833165053,54.0884607 -4.6142691,historic:ruins;source:Bing;1940s aerial photo
+way/833165054,54.0877073 -4.6135031,historic:ruins;source:Bing;1940s aerial photo
+way/833216631,54.1029148 -4.5953823,archaeological_site:cairn;historic:archaeological_site
+way/833369231,54.355148 -4.5103461,historic:ruins
+way/833369233,54.3522488 -4.5124937,building:yes;historic:building;image:https://www.britainfromabove.org.uk/en/image/XAW023470DUP;name:The Water Tower
+way/833369240,54.3554539 -4.5111169,historic:ruins
+way/833369241,54.3554933 -4.5111795,historic:ruins
+way/833369242,54.3553947 -4.5111386,historic:ruins
+way/833369243,54.355389 -4.5112114,historic:ruins
+way/833369244,54.3554232 -4.5112895,historic:ruins
+way/833369245,54.3554678 -4.5112693,historic:ruins
+way/833369246,54.3554354 -4.5112003,historic:ruins
+way/833369247,54.3556211 -4.5116711,historic:ruins
+way/833369248,54.3556657 -4.5116509,historic:ruins
+way/833369249,54.3556912 -4.5115611,historic:ruins
+way/833369250,54.3556518 -4.5114985,historic:ruins
+way/833369251,54.3555926 -4.5115202,historic:ruins
+way/833369252,54.3555869 -4.511593,historic:ruins
+way/833369253,54.3556333 -4.5115819,historic:ruins
+way/833369254,54.3552947 -4.5118116,historic:ruins
+way/833369255,54.3553393 -4.5117914,historic:ruins
+way/833369256,54.3553648 -4.5117016,historic:ruins
+way/833369257,54.3553255 -4.511639,historic:ruins
+way/833369258,54.3552662 -4.5116607,historic:ruins
+way/833369259,54.3552605 -4.5117335,historic:ruins
+way/833369260,54.355307 -4.5117224,historic:ruins
+way/833369261,54.355491 -4.5122098,historic:ruins
+way/833369262,54.3555356 -4.5121895,historic:ruins
+way/833369263,54.355561 -4.5120998,historic:ruins
+way/833369264,54.3555217 -4.5120372,historic:ruins
+way/833369265,54.3554624 -4.5120588,historic:ruins
+way/833369266,54.3554568 -4.5121317,historic:ruins
+way/833369267,54.3555032 -4.5121206,historic:ruins
+way/833369268,54.3556915 -4.5125978,historic:ruins
+way/833369269,54.3557361 -4.5125776,historic:ruins
+way/833369270,54.3557616 -4.5124878,historic:ruins
+way/833369271,54.3557223 -4.5124252,historic:ruins
+way/833369272,54.355663 -4.5124469,historic:ruins
+way/833369273,54.3556573 -4.5125197,historic:ruins
+way/833369274,54.3557038 -4.5125086,historic:ruins
+way/833369275,54.3558213 -4.5120647,historic:ruins
+way/833369276,54.3558659 -4.5120445,historic:ruins
+way/833369277,54.3558914 -4.5119547,historic:ruins
+way/833369278,54.355852 -4.5118921,historic:ruins
+way/833369279,54.3557928 -4.5119138,historic:ruins
+way/833369280,54.3557871 -4.5119866,historic:ruins
+way/833369281,54.3558335 -4.5119755,historic:ruins
+way/833369282,54.3560219 -4.5124426,historic:ruins
+way/833369283,54.3560665 -4.5124224,historic:ruins
+way/833369284,54.3560919 -4.5123326,historic:ruins
+way/833369285,54.3560526 -4.51227,historic:ruins
+way/833369286,54.3559933 -4.5122917,historic:ruins
+way/833369287,54.3559877 -4.5123645,historic:ruins
+way/833369288,54.3560341 -4.5123534,historic:ruins
+way/833369303,54.3607675 -4.5419612,archaeological_site:tumulus;historic:archaeological_site;name:Cronk ny Arrey Lhaa;source:Isle of Man Government 1:25000 map (2007)
+way/833369310,54.3515409 -4.5450559,alt_name:Keeill Pherick;alt_name_1:Keeill Kickle;archaeological_site:church;historic:archaeological_site;name:St Patrick's Chapel
+way/833369324,54.3429963 -4.553237,barrier:wall;historic:ruins
+way/837411989,54.1034048 -4.6977792,barrier:wall;historic:ruins
+way/884313009,54.1309724 -4.6785745,alt_name:Ballayelse Keeil;historic:ruins;historic:civilization:medieval;name:Cabbal Dreem Ruy;ruins:church
+way/884313032,54.129362 -4.6871785,barrier:wall;historic:ruins
+way/884313033,54.1314395 -4.6893809,barrier:wall;historic:ruins
+way/884313034,54.1313438 -4.6893365,barrier:wall;historic:ruins
+way/884329012,54.2939627 -4.4815187,barrier:wall;historic:ruins
+way/884329013,54.2936895 -4.4814939,barrier:wall;historic:ruins
+way/884329014,54.2973291 -4.4782785,historic:ruins
+way/884419981,54.1849384 -4.6807158,barrier:wall;historic:ruins
+way/884419982,54.1850736 -4.6809399,barrier:wall;historic:ruins
+way/884419983,54.1868198 -4.6856601,barrier:wall;historic:ruins
+way/884420000,54.1843233 -4.6767075,barrier:wall;historic:ruins
+way/884420001,54.1844801 -4.6767781,barrier:wall;historic:ruins
+way/884422063,54.1817155 -4.6686028,barrier:wall;historic:ruins
+way/884422064,54.1814777 -4.6685898,barrier:wall;historic:ruins
+way/884422065,54.1810984 -4.6695453,barrier:wall;historic:ruins
+way/884422066,54.180946 -4.6697054,barrier:wall;historic:ruins
+way/884422067,54.1799382 -4.6710019,historic:ruins
+way/884422069,54.1833322 -4.6659315,barrier:wall;historic:ruins
+way/884422070,54.1833727 -4.6656285,barrier:wall;historic:ruins
+way/886310498,54.1382953 -4.6590738,historic:ruins
+way/886803552,54.1753776 -4.6382822,barrier:wall;historic:ruins
+way/886803553,54.1755698 -4.6383148,barrier:wall;historic:ruins
+way/886803561,54.1780703 -4.637536,barrier:wall;historic:ruins
+way/887848899,54.1551977 -4.6930137,historic:ruins
+way/887848900,54.1552852 -4.6928485,historic:ruins
+way/887848921,54.1583617 -4.6867467,historic:ruins
+way/887848922,54.1582068 -4.6867206,historic:ruins
+way/887848923,54.1580693 -4.6867878,historic:ruins
+way/887960945,54.1723391 -4.682267,barrier:wall;historic:ruins;name:Arrasey Beg
+way/887960953,54.1687042 -4.676041,historic:ruins
+way/888256641,54.179224 -4.6377425,barrier:wall;historic:ruins
+way/888908322,54.1810903 -4.6692908,barrier:wall;historic:ruins
+way/889951314,54.1798945 -4.7127878,historic:ruins
+way/889959200,54.1777153 -4.7005144,historic:ruins
+way/889959201,54.1776837 -4.7004222,historic:ruins
+way/889959202,54.177526 -4.7004579,historic:ruins
+way/889959208,54.1788281 -4.6988163,historic:ruins
+way/889964401,54.1571053 -4.616356,historic:ruins
+way/889964402,54.1569081 -4.616175,historic:ruins
+way/890094490,54.1779613 -4.694872,landuse:grass;tourism:picnic_site
+way/890131478,54.1828323 -4.6886218,barrier:wall;historic:ruins
+way/890131479,54.1827368 -4.6883906,barrier:wall;historic:ruins
+way/890131480,54.1827937 -4.6886489,barrier:wall;historic:ruins
+way/890131507,54.1841754 -4.6833483,barrier:wall;historic:ruins
+way/890131551,54.1860142 -4.6930038,barrier:wall;historic:ruins
+way/890131552,54.1864274 -4.6899994,barrier:wall;historic:ruins
+way/890131553,54.1856782 -4.6926552,historic:ruins
+way/890738531,54.1983698 -4.6610227,historic:ruins
+way/890841300,54.1776802 -4.6265123,building:yes;man_made:observatory;name:Isle of Man Observatory;website:https://www.iomastronomy.org/observatory.html;wikidata:Q115251629
+way/892462786,54.1395968 -4.5899305,historic:ruins;ruins:church
+way/895332294,54.1081147 -4.5825408,barrier:wall;historic:ruins
+way/895332295,54.1081367 -4.58231,barrier:wall;historic:ruins
+way/896349885,54.1162667 -4.5696603,"archaeological_site:cairn;historic:archaeological_site;name:Ballakelly Burial Cairn;natural:grass;ref:GB:imher:1067.00;url:imher:https://isleofmanher.im/report/20607e9e-7216-4bbc-b5da-7a00ce9f8d98;wikimedia_commons:File:Ballakelly Cairn, Santon - geograph.org.uk - 59042.jpg"
+way/896349886,54.1172711 -4.55098,archaeological_site:church;historic:archaeological_site
+way/896790012,54.3131671 -4.4220587,historic:archaeological_site
+way/896790013,54.3128063 -4.4222437,historic:archaeological_site;historic:civilization:iron-age;name:Skyhill Fort;ref:GB:imher:0475.00
+way/896790017,54.3135239 -4.4220568,historic:archaeological_site
+way/899266638,54.094616 -4.6048803,archaeological_site:church;historic:archaeological_site;name:Ballawoods Keeill;source:Isle of Man Government 1:25000 map (2007)
+way/899314674,54.0795375 -4.6822867,archaeological_site:church;historic:archaeological_site;name:Keill Vael
+way/899314675,54.0796164 -4.681158,archaeological_site:tomb;historic:archaeological_site;name:Viking Ship Burial
+way/899457377,54.0635738 -4.6729408,historic:ruins
+way/899457380,54.0648878 -4.6758836,archaeological_site:burial;historic:archaeological_site;name:Scarlett Keeill;ref:GB:imher:0073.00;url:imher:https://isleofmanher.im/report/00622a73-b5e4-4a78-96ad-c6a865a4f667
+way/899491018,54.0948038 -4.6921306,archaeological_site:hut_circle;historic:archaeological_site
+way/899491026,54.095224 -4.6919561,archaeological_site:earthwork;historic:archaeological_site
+way/899515935,54.0924703 -4.6613325,amenity:fountain
+way/899642085,54.0907785 -4.6692899,"archaeological_site:earthwork;historic:archaeological_site;name:Ballanorris, Round Table;ref:GB:imher:0007.00;url:imher:https://isleofmanher.im/report/a647d1c8-b2e2-4e4c-bb31-0cccc28c883b"
+way/899653827,54.1109501 -4.7241788,"archaeological_site:earthwork;historic:archaeological_site;name:Kirkill, Ballakilpheric;ref:GB:imher:0189.00"
+way/900018866,54.0825882 -4.6627533,archaeological_site:settlement;historic:archaeological_site;name:Ballakeighan
+way/900018867,54.0824609 -4.6617975,archaeological_site:earthworks;historic:archaeological_site
+way/900919771,54.0963773 -4.7748196,historic:ruins
+way/900945462,54.1547495 -4.6965744,historic:ruins
+way/901819038,54.2311602 -4.6468435,archaeological_site:megalith;historic:archaeological_site;megalith_type:stone_circle;name:Giant's Fingers;name:gv:Meir ny Foawr
+way/901819042,54.2540273 -4.521482,archaeological_site:hut_circle;historic:archaeological_site
+way/901828371,54.2486833 -4.619358,historic:ruins
+way/901828372,54.2487605 -4.6192174,historic:ruins
+way/901828373,54.248714 -4.619131,historic:ruins
+way/901828374,54.254217 -4.6276105,"archaeological_site:cairn;historic:archaeological_site;name:Corvalley Cairn;wikidata:Q5267128;wikipedia:en:Devil's Elbow, Isle of Man"
+way/901828381,54.234917 -4.6397983,barrier:wall;historic:ruins
+way/901828389,54.2292651 -4.6406719,historic:ruins
+way/901828390,54.2290486 -4.6407487,historic:ruins
+way/901828395,54.2382423 -4.6207416,historic:archaeological_site;name:Manannan's Chair;natural:scrub
+way/901828396,54.2382722 -4.6254473,historic:ruins
+way/901828398,54.2343538 -4.6355164,historic:ruins
+way/901828399,54.2342703 -4.6353364,historic:ruins
+way/901828400,54.2341579 -4.6351031,historic:ruins
+way/901966243,54.227506 -4.6014628,archaeological_site:church;historic:archaeological_site
+way/901966260,54.2380077 -4.6172596,historic:ruins
+way/901966261,54.2380199 -4.6173857,historic:ruins
+way/901966265,54.2357688 -4.6189506,historic:ruins
+way/902021255,54.2871577 -4.4971076,historic:ruins;ruins:horse_walk
+way/902021272,54.2799911 -4.4843072,historic:ruins;ruins:horse_walk
+way/902021294,54.2844507 -4.4836806,historic:ruins
+way/902092806,54.198138 -4.5575624,historic:ruins
+way/902092807,54.1978901 -4.5575174,historic:ruins
+way/902092808,54.1979709 -4.5576895,historic:ruins
+way/902092809,54.1979966 -4.5577617,historic:ruins
+way/902092811,54.1998363 -4.5599031,historic:ruins
+way/902092814,54.2083525 -4.5545199,barrier:wall;historic:ruins
+way/902340215,54.2540954 -4.4354248,historic:ruins
+way/902432185,54.1638375 -4.6764715,historic:ruins;note:possibly 'Promised Land' as noted in Manx Tholtans vol 2 p17
+way/902432196,54.1583641 -4.6870124,historic:ruins;name:Horse Walk;ruins:horse_walk
+way/902432203,54.1642464 -4.6816241,historic:ruins
+way/902432204,54.1641786 -4.6815503,historic:ruins
+way/902432211,54.1716116 -4.6870182,historic:ruins
+way/902432216,54.1673103 -4.6725447,historic:ruins;ruins:mine
+way/902432217,54.1675956 -4.6723407,historic:ruins;ruins:mine
+way/902432218,54.1685235 -4.6726028,historic:ruins;ruins:mine
+way/902432222,54.1753184 -4.6787097,historic:ruins
+way/902432223,54.1678681 -4.6745747,historic:ruins;ruins:mine
+way/902432224,54.1677339 -4.6744759,historic:ruins;ruins:mine
+way/902458648,54.1369794 -4.6741062,barrier:wall;historic:ruins
+way/902678804,54.2406492 -4.581464,historic:ruins
+way/902678805,54.2408687 -4.5815588,historic:ruins
+way/902775821,54.2178761 -4.6448144,historic:ruins
+way/902775860,54.227899 -4.6632596,historic:ruins
+way/902862406,54.1539683 -4.6904541,historic:ruins
+way/902862421,54.151755 -4.7062006,historic:ruins
+way/902862422,54.1516213 -4.7060399,historic:ruins
+way/902862423,54.1515702 -4.705723,historic:ruins
+way/903595400,54.1226849 -4.6501433,archaeological_site:church;historic:archaeological_site;historic:civilization:medieval;name:Moaney Mooar Keeill;ref:GB:imher:0161.00
+way/903598001,54.144775 -4.7076812,area:yes;historic:bomb_crater
+way/903598002,54.1443038 -4.7082061,area:yes;historic:bomb_crater
+way/903598003,54.1436744 -4.7087749,area:yes;historic:bomb_crater
+way/904220756,54.2860555 -4.5356146,barrier:wall;historic:ruins
+way/904220757,54.2843417 -4.5362557,barrier:wall;historic:ruins
+way/904220758,54.2842625 -4.5355489,historic:ruins
+way/904220760,54.284245 -4.5362425,historic:ruins
+way/904477292,54.117409 -4.5638523,archaeological_site:hut_circle;historic:archaeological_site;name:Round house;note:extent visible on 2001 imagery
+way/904572884,54.2708253 -4.5096889,barrier:wall;historic:ruins
+way/904572888,54.2701613 -4.5174137,barrier:wall;historic:ruins;name:Limekiln
+way/904579724,54.26561 -4.5019588,barrier:wall;historic:ruins
+way/904579750,54.2620442 -4.5271502,historic:ruins
+way/904579751,54.2678373 -4.5205351,historic:ruins
+way/904851020,54.263384 -4.5851475,archaeological_site:tumulus;historic:archaeological_site
+way/904851022,54.2707984 -4.5843276,landuse:grass;tourism:picnic_site
+way/904858900,54.3454274 -4.4579361,barrier:wall;historic:ruins
+way/906599437,54.1971019 -4.5167221,historic:ruins
+way/906815112,54.2339152 -4.654959,historic:ruins
+way/906930826,54.3028975 -4.5041294,historic:ruins
+way/906930827,54.3028808 -4.5040404,barrier:wall;historic:ruins
+way/906930837,54.30268 -4.5041903,historic:ruins
+way/906930848,54.3055252 -4.5053029,barrier:wall;historic:ruins
+way/906930849,54.3055798 -4.5049989,barrier:wall;historic:ruins
+way/906930850,54.3060282 -4.5066084,historic:ruins
+way/906930851,54.3061787 -4.5066634,historic:ruins
+way/906930852,54.3061487 -4.5064924,historic:ruins
+way/906930853,54.3064864 -4.5065738,historic:ruins
+way/906930854,54.3064906 -4.5066912,historic:ruins
+way/906930865,54.3010662 -4.5024883,barrier:wall;historic:ruins
+way/906930883,54.3007098 -4.498427,archaeological_site:tumulus;historic:archaeological_site;name:Ooie ny Fawr Burial Mound;name:gv:Ooie ny Fawr;ref:GB:imher:0452.00;url:imher:https://isleofmanher.im/report/9a98c831-3718-4026-b9d0-3b1fdaaede4f
+way/906932775,54.3033415 -4.5078681,historic:ruins
+way/906932777,54.3032913 -4.5077352,barrier:wall;historic:ruins
+way/907017277,54.3132903 -4.4917568,historic:ruins
+way/907024185,54.2936543 -4.4815226,historic:ruins
+way/907073182,54.2436955 -4.5552252,historic:ruins
+way/907073186,54.2437653 -4.5554562,barrier:wall;historic:ruins
+way/907073187,54.243765 -4.5554182,barrier:wall;historic:ruins;name:Horse mill;ruins:horse_mill
+way/907084669,54.2443404 -4.5605173,historic:ruins
+way/907084690,54.2443601 -4.583895,historic:ruins
+way/907837809,54.2078695 -4.4769125,barrier:wall;historic:ruins
+way/908157517,54.2293395 -4.4884969,barrier:wall;historic:ruins
+way/908157537,54.2180679 -4.493905,historic:ruins
+way/908164314,54.2222833 -4.5007816,barrier:wall;historic:ruins
+way/908164315,54.222421 -4.5007929,barrier:wall;historic:ruins
+way/908925265,54.207727 -4.4517013,barrier:wall;historic:ruins
+way/908925266,54.2077449 -4.4518537,barrier:wall;historic:ruins
+way/908925267,54.207931 -4.4516031,barrier:wall;historic:ruins
+way/911833876,54.2215895 -4.4396077,barrier:wall;historic:ruins
+way/912161115,54.2242534 -4.4116431,barrier:wall;historic:ruins
+way/912949536,54.2443945 -4.4287735,barrier:wall;historic:ruins
+way/912949537,54.244558 -4.4288457,barrier:wall;historic:ruins
+way/913840836,54.2350062 -4.6068475,historic:ruins
+way/914474135,54.1396534 -4.681969,historic:ruins
+way/914474136,54.1396108 -4.681972,historic:ruins
+way/914496708,54.2652103 -4.523433,historic:archaeological_site
+way/914496714,54.2629651 -4.5278501,historic:ruins
+way/916448486,54.1612482 -4.6342087,barrier:wall;historic:ruins
+way/916448487,54.1611983 -4.6344798,barrier:wall;historic:ruins
+way/918398505,54.2237798 -4.455241,historic:ruins
+way/918398506,54.2245976 -4.4564384,historic:ruins
+way/920129876,54.2286947 -4.4712447,leisure:sports_centre;name:Slieau Lhost Small Arms Facility;sport:shooting
+way/921467122,54.2588681 -4.5698435,barrier:wall;historic:ruins
+way/921467124,54.2596716 -4.5676734,barrier:wall;historic:ruins
+way/921467125,54.2598057 -4.5668513,historic:ruins
+way/921520025,54.2218275 -4.5233362,historic:ruins
+way/921520030,54.2282799 -4.525713,historic:ruins
+way/921520061,54.2483188 -4.4013444,historic:ruins
+way/921520076,54.3017421 -4.3983188,historic:ruins
+way/921520077,54.3018031 -4.3980733,historic:ruins
+way/921520078,54.3017259 -4.3982294,historic:ruins
+way/922064772,54.2449735 -4.4095843,barrier:wall;historic:ruins
+way/922064773,54.253661 -4.4055468,historic:ruins
+way/922074419,54.2548954 -4.4156399,historic:ruins
+way/922910216,54.1831348 -4.6314334,historic:ruins
+way/922910217,54.1833544 -4.6269117,historic:ruins
+way/923097005,54.2607897 -4.3640566,historic:ruins;name:Keeill Vael;ruins:church
+way/928820864,54.2763552 -4.3683786,historic:ruins
+way/928820865,54.2762143 -4.3684357,historic:ruins
+way/928908171,54.099623 -4.7253624,barrier:wall;historic:ruins
+way/928921718,54.3685511 -4.5110108,historic:ruins
+way/928921719,54.3687106 -4.5108672,historic:ruins
+way/928921720,54.3687975 -4.5113212,historic:ruins
+way/928921721,54.3687702 -4.5114237,historic:ruins
+way/928921722,54.3684129 -4.5115953,historic:ruins
+way/928921723,54.3685056 -4.5114923,historic:ruins
+way/928921725,54.372992 -4.5096184,historic:ruins
+way/928921726,54.3728514 -4.5098538,historic:ruins
+way/928921734,54.376415 -4.4969845,historic:ruins
+way/928921737,54.3792429 -4.4957522,historic:ruins
+way/928943547,54.2327586 -4.4493737,barrier:wall;historic:ruins
+way/928943548,54.2323789 -4.4490239,barrier:wall;historic:ruins
+way/928943549,54.2325744 -4.4493333,historic:ruins
+way/928943550,54.2325535 -4.4495004,historic:ruins
+way/931702335,54.2172266 -4.6483134,archaeological_site:cairn;historic:archaeological_site;name:Giant's Grave;name:gv:Liaght ny Foawr;ref:GB:imher:0930.30;wikidata:Q15857797
+way/931718836,54.3201213 -4.5640826,archaeological_site:tumulus;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+way/931718837,54.3047255 -4.5785983,barrier:wall;historic:ruins
+way/931718839,54.3058853 -4.5799737,archaeological_site:tumulus;historic:archaeological_site;source:Isle of Man Government 1:25000 map (2007)
+way/934717724,54.2243518 -4.4908512,historic:ruins
+way/946010672,54.3047888 -4.3860298,historic:ruins
+way/946019254,54.3067686 -4.3663702,historic:ruins
+way/976043912,54.3092327 -4.3935257,historic:ruins;ruins:building
+way/991780906,54.2642953 -4.572294,historic:ruins;ruins:building
+way/992060354,54.2692057 -4.5762262,historic:ruins
+way/993315061,54.270016 -4.5517994,historic:ruins
+way/996986483,54.4034059 -4.3760521,historic:ruins;name:TX Mast
+way/996986521,54.4132472 -4.3626724,historic:ruins
+way/996986522,54.4131232 -4.3633733,historic:ruins
+way/996986523,54.4137819 -4.3619659,historic:ruins
+way/996986524,54.4133224 -4.363301,historic:ruins
+way/997267802,54.394075 -4.4620179,barrier:wall;historic:ruins
+way/997267834,54.3899218 -4.4689508,barrier:wall;historic:ruins
+way/997532840,54.3894095 -4.4163272,barrier:wall;historic:ruins
+way/1000224581,54.3410028 -4.4362364,barrier:wall;historic:ruins
+way/1000330468,54.3691297 -4.4158941,barrier:wall;historic:ruins
+way/1000330469,54.3688814 -4.416146,barrier:wall;historic:ruins
+way/1000330470,54.3687135 -4.4159231,barrier:wall;historic:ruins
+way/1000330471,54.3683352 -4.4165616,barrier:wall;historic:ruins
+way/1000330474,54.3762482 -4.4176054,barrier:wall;historic:ruins
+way/1000330475,54.3749526 -4.4181611,barrier:wall;historic:ruins
+way/1000330476,54.3748751 -4.4170462,barrier:wall;historic:ruins
+way/1000330477,54.37499 -4.4172086,barrier:wall;historic:ruins
+way/1000330478,54.3748685 -4.4175308,barrier:wall;historic:ruins
+way/1000330479,54.3762122 -4.4215893,barrier:wall;historic:ruins
+way/1000330480,54.3765205 -4.4218968,barrier:wall;historic:ruins
+way/1000330481,54.3764597 -4.4223937,barrier:wall;historic:ruins
+way/1000330483,54.3766061 -4.4280688,barrier:wall;historic:ruins
+way/1000374124,54.3664164 -4.4295927,barrier:wall;historic:ruins
+way/1000650389,54.3630279 -4.3993715,historic:ruins
+way/1001182371,54.3892235 -4.4106601,barrier:wall;historic:ruins
+way/1001182372,54.3890484 -4.4107356,barrier:wall;historic:ruins
+way/1002416887,54.3533998 -4.4507243,historic:ruins
+way/1003178575,54.2928895 -4.3164814,historic:ruins;name:Mine building ruin;ruins:industrial
+way/1003286903,54.3644953 -4.4621352,historic:ruins
+way/1004597979,54.068094 -4.6199062,historic:ruins
+way/1004597987,54.0699426 -4.6172516,historic:ruins
+way/1004597993,54.0689125 -4.6152587,historic:ruins
+way/1004790718,54.1158308 -4.6997773,barrier:wall;historic:ruins
+way/1004794619,54.3024709 -4.4839798,barrier:wall;historic:ruins;name:Ballamannaugh
+way/1004803561,54.1314488 -4.6891256,barrier:wall;historic:ruins
+way/1004806861,54.2786346 -4.4650814,historic:ruins;landuse:grass;name:Horse walk
+way/1004809684,54.3891954 -4.4162882,barrier:wall;historic:ruins
+way/1004984422,54.3004746 -4.4656258,barrier:wall;historic:ruins;landuse:grass;name:Horse mill;ruins:horse_mill
+way/1004986977,54.3163088 -4.4578778,historic:ruins
+way/1005647216,54.1754154 -4.6699646,historic:ruins
+way/1006838363,54.3909002 -4.4792326,archaeological_site:earthwork;historic:archaeological_site;landuse:grass
+way/1008693473,54.0933461 -4.6381413,barrier:wall;historic:ruins
+way/1008932372,54.4131503 -4.3629137,historic:ruins
+way/1011497891,54.1639968 -4.5347731,barrier:wall;historic:ruins
+way/1011497892,54.1640821 -4.5346277,barrier:wall;historic:ruins
+way/1079359599,54.3152394 -4.4265941,leisure:sports_centre;sport:shooting
+way/1107797612,54.1179601 -4.5471044,historic:ruins
+way/1124877379,54.2368501 -4.3854313,archaeological_site:cairn;historic:archaeological_site
+way/1124878005,54.2629711 -4.4063494,archaeological_site:cairn;historic:archaeological_site
+way/1124878006,54.2627203 -4.4118422,archaeological_site:cairn;historic:archaeological_site
+way/1124878010,54.1012774 -4.5945365,archaeological_site:cairn;historic:archaeological_site
+way/1124972280,54.2355321 -4.6417471,archaeological_site:cairn;cairn:burial;historic:archaeological_site;historic:civilization:prehistoric;historic:period:neolithic;name:Crosh Mooar;ref:GB:imher:0902.00
+way/1124976942,54.2296909 -4.6422724,alt_name:Upper Lhergydhoo Burial Mound;archaeological_site:cairn;historic:archaeological_site;name:The Cronk;ref:GB:imher:0921.00
+way/1124979088,54.2202805 -4.5557861,archaeological_site:cairn;historic:archaeological_site;man_made:cairn;source:Isle of Man Government 1:25000 map (2007)
+way/1124979089,54.2214958 -4.5546267,archaeological_site:cairn;historic:archaeological_site;man_made:cairn;source:Isle of Man Government 1:25000 map (2007)
+way/1124979676,54.2608536 -4.5205262,archaeological_site:cairn;historic:archaeological_site
+way/1124979677,54.2609614 -4.5205699,archaeological_site:cairn;historic:archaeological_site
+way/1124979806,54.2462769 -4.4622091,archaeological_site:cairn;historic:archaeological_site;name:Sharragh Bane;source:Isle of Man Government 1:25000 map (2007)
+way/1124980425,54.2884783 -4.494265,archaeological_site:cairn;historic:archaeological_site
+way/1145362174,54.1572077 -4.5666474,archaeological_site:settlement;historic:archaeological_site;name:The Braaid;ref:GB:imher:0300.00;url:imher:https://isleofmanher.im/report/b09ccd8f-82ca-4b79-978e-20a1cbebde18;wikidata:Q952936;wikimedia_commons:File:The Braaid - Isle of Man - kingsley - 21-APR-09.jpg;wikipedia:en:The Braaid
+way/1145845654,54.3093026 -4.5639442,historic:ruins
+way/1150579170,54.3496066 -4.5181734,historic:ruins
+way/1157924354,54.3157253 -4.3965536,addr:city:Ramsey;addr:country:IM;addr:postcode:IM8 2TB;addr:street:Crossags Lane;contact:phone:+44 1624 817553;fee:yes;name:Crossags Campsite;surface:grass;tourism:camp_site
+way/1163637818,54.147638 -4.4953933,amenity:fountain
+way/1168282874,54.2557016 -4.6248241,landuse:grass;name:Devil's Elbow;tourism:picnic_site
+way/1169018153,54.1860642 -4.4120378,building:hut;building:material:stone;name:Old Lonan crosses;opening_hours:24/7;tourism:attraction;website:https://www.imuseum.im/search/places/search?tab=places&view=&term=Manx+Cross&size=80
+way/1199597213,54.2115551 -4.6827139,tourism:picnic_site
+way/1203472184,54.3417679 -4.5001543,historic:ruins
+way/1210105973,54.116933 -4.708866,historic:ruins
+way/1218632447,54.092243 -4.6600056,historic:monument
+way/1247674397,54.1081761 -4.6851372,barrier:wall;historic:ruins
