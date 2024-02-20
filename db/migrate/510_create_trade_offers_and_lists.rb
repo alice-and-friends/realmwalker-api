@@ -3,7 +3,7 @@
 class CreateTradeOffersAndLists < ActiveRecord::Migration[7.0]
   def change
     create_table :trade_offers do |t|
-      t.references :item, null: true, foreign_key: true, on_delete: :nullify
+      t.references :item, null: true, foreign_key: true, on_delete: :cascade
       t.integer :buy_offer
       t.integer :sell_offer
       t.timestamps

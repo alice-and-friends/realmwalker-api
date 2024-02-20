@@ -2,6 +2,7 @@
 
 class RealmLocation < ApplicationRecord
   include ComfyCoordinates
+
   PLAYER_VISION_RADIUS = 10_000 # meters
 
   belongs_to :real_world_location

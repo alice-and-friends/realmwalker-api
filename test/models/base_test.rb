@@ -18,12 +18,12 @@ class BaseTest < ActiveSupport::TestCase
     user.construct_base_at(generate_test_user_location)
 
     user_count = User.count
-    structure_count = Base.count
+    base_count = Base.count
     inventory_count = Inventory.count
 
     user.destroy!
     assert_equal user_count - 1, User.count
-    assert_equal structure_count - 1, Base.count
+    assert_equal base_count - 1, Base.count
     assert_equal inventory_count - 2, Inventory.count
   end
 end

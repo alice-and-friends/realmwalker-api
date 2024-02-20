@@ -7,7 +7,7 @@ class User < ApplicationRecord
   ACHIEVEMENTS = %w[].freeze
 
   has_one :inventory, dependent: :destroy
-  has_one :base, class_name: 'RealmLocation', dependent: :destroy
+  has_one :base, inverse_of: :owner, foreign_key: 'owner_id', dependent: :destroy
   has_many :dungeons, inverse_of: :defeated_by, foreign_key: 'defeated_by_id', dependent: :nullify
 
   serialize :auth0_user_data, Auth0UserData
@@ -20,6 +20,7 @@ class User < ApplicationRecord
   # Create inventory and grant starting equipment to new players
   after_create { self.inventory = Inventory.create!(user: self) }
   after_create :give_starting_equipment
+  before_destroy { RealmLocation.where(owner_id: id).destroy_all }
 
   delegate :gold, to: :inventory
   delegate :inventory_items, to: :inventory
@@ -272,6 +273,7 @@ class User < ApplicationRecord
   def construct_base_at(point)
     raise('User already owns a structure') if base.present?
 
+    # Create a real life location that we can attach a base to
     nearest_real_world_location = RealWorldLocation.nearest(point.latitude, point.longitude)
     base_real_world_location = RealWorldLocation.new(
       type: RealWorldLocation.types[:user_owned],
@@ -280,11 +282,20 @@ class User < ApplicationRecord
     )
     raise('Failed to validate real world location') unless base_real_world_location.valid?
 
-    base_real_world_location.save!
-    self.base = Base.create!(
-      user: self,
+    # Create a base on the real world location
+    base = Base.new(
+      owner: self,
       real_world_location: base_real_world_location,
     )
+    raise('Failed to validate base') unless base.valid?
+
+    # Save both or neither
+    transaction do
+      base_real_world_location.save!
+      base.save!
+    end
+
+    base
   end
 
   protected

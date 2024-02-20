@@ -9,25 +9,26 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       t.belongs_to :real_world_location, null: false, index: { unique: true }
       t.st_point :coordinates, geographic: true, limit: { srid: 4326 }
       t.string :region, null: false
+      t.column :name, :string
       t.timestamps
 
-      # BASE
-      t.belongs_to :user, index: { unique: true }
+      # BASE (user-owned location)
+      # t.belongs_to :owner, index: { unique: true }
+      t.references :owner, index: { unique: true }, foreign_key: { to_table: :users }, on_delete: :cascade
 
       # NPC
-      t.column :name, :string
       t.column :species, :string
       t.column :gender, :string, limit: 1
       t.column :role, :string
       t.string :shop_type
-      t.references :portrait, null: true, foreign_key: true
+      t.references :portrait, foreign_key: true
 
       # Dungeon
       t.column :status, :string
       t.column :level, :integer
       t.references :monster
       t.column :defeated_at, :datetime
-      t.references :defeated_by, index: true, foreign_key: { to_table: :users }
+      t.references :defeated_by, foreign_key: { to_table: :users }
     end
 
     # Coordinates GIST index

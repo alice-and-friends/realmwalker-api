@@ -9,7 +9,7 @@ class CreateItems < ActiveRecord::Migration[7.0]
 
       # Obtainability
       t.string :rarity,                         null: false
-      t.string :dropped_by_classification,      array: true, default: []
+      t.string :dropped_by_classification,      array: true, default: [] # TODO: Field name should be plural
       t.integer :dropped_by_level
       t.integer :drop_max_amount
 

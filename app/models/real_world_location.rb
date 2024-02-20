@@ -2,6 +2,7 @@
 
 class RealWorldLocation < ApplicationRecord
   include ComfyCoordinates
+
   self.inheritance_column = nil
 
   enum type: { shop: 'shop', ley_line: 'ley_line', user_owned: 'user_owned', unassigned: 'unassigned' }

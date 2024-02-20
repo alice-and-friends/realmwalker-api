@@ -106,10 +106,10 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.bigint "real_world_location_id", null: false
     t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.string "region", null: false
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.string "name"
+    t.bigint "owner_id"
     t.string "species"
     t.string "gender", limit: 1
     t.string "role"
@@ -123,9 +123,9 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.index ["coordinates"], name: "index_realm_locations_on_coordinates", using: :gist
     t.index ["defeated_by_id"], name: "index_realm_locations_on_defeated_by_id"
     t.index ["monster_id"], name: "index_realm_locations_on_monster_id"
+    t.index ["owner_id"], name: "index_realm_locations_on_owner_id", unique: true
     t.index ["portrait_id"], name: "index_realm_locations_on_portrait_id"
     t.index ["real_world_location_id"], name: "index_realm_locations_on_real_world_location_id", unique: true
-    t.index ["user_id"], name: "index_realm_locations_on_user_id", unique: true
   end
 
   create_table "spooks", force: :cascade do |t|
@@ -177,6 +177,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
   add_foreign_key "inventory_items", "items"
   add_foreign_key "realm_locations", "portraits"
   add_foreign_key "realm_locations", "users", column: "defeated_by_id"
+  add_foreign_key "realm_locations", "users", column: "owner_id"
   add_foreign_key "spooks", "realm_locations", column: "dungeon_id"
   add_foreign_key "spooks", "realm_locations", column: "npc_id"
   add_foreign_key "trade_offers", "items"

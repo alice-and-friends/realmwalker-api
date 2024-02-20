@@ -55,6 +55,10 @@ Style/IpAddresses:
 Layout/EndOfLine:
   EnforcedStyle: lf
 
+Layout/ExtraSpacing:
+  Exclude:
+    - db/migrate/*
+
 Layout/ClassStructure:
   Enabled: true
   Categories:
