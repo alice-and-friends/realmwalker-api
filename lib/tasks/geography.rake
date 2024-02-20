@@ -23,7 +23,7 @@ namespace :geography do
   desc 'List geography CSV files and their last commit dates'
   task list: :environment do
     template = "%-30s\t%-10s\t%-16s\t%-30s\n"
-    printf(template, 'Filename', 'Size (KB)', 'Health score', 'Last Commit Date')
+    printf(template, 'Filename', 'Size (MB)', 'Health score', 'Last Commit Date')
     puts '-' * 95 # Adjust the separator length based on the column width
 
     csv_files.each do |file|
