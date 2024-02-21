@@ -30,7 +30,7 @@ class LootGenerator
   def set_loot_table(monster_level, monster_classification)
     @monster_classification = monster_classification
     @loot_table = Item.where(
-      ':classification = ANY(dropped_by_classification) AND :level >= dropped_by_level',
+      ':classification = ANY(dropped_by_classifications) AND :level >= dropped_by_level',
       classification: monster_classification,
       level: monster_level,
     )

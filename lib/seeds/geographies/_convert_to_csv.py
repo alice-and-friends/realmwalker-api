@@ -224,8 +224,8 @@ class CSVWriter(o.SimpleHandler):
         return f'|{bar}| {"%.2f" % round(percent, 2)}%'
 
     def print_progress(self, id):
-        x_node = 11149219605
-        x_way = 1202659334
+        x_node = 11635566076
+        x_way = 1251764406
         print(
             f"{self.progress_bar(self.id_node + self.id_way, x_node + x_way)} : {self.c_node} nodes, {self.c_way} ways, {self.c_area} areas, {self.coordinates_manager.size()} nodes in buffer",
             end='\r')
@@ -247,6 +247,27 @@ def construct_osmium_command(input_file, output_file, tag_categories):
     base_command.extend(["-o", output_file, "--overwrite"])
 
     return base_command
+
+def commit_to_git(file):
+    # Ask the user if they want to commit the file
+    user_input = input("Commit file to Git? [y/n]: ").strip().lower()
+
+    # Check if the user's input is 'y'
+    if user_input == 'y':
+        # Commands to add and commit the file
+        commit_message = f"Generated file {file}"
+        commit_command = ["git", "commit", "-o", file, "-m", commit_message]
+
+        try:
+            # Execute the Git commit command
+            subprocess.run(commit_command, check=True)
+            print("File committed to Git successfully.")
+        except subprocess.CalledProcessError as e:
+            print(f"An error occurred while trying to commit the file: {e}")
+    elif user_input == 'n':
+        print("File commit skipped.")
+    else:
+        print("Invalid input. Please enter 'y' for yes or 'n' for no.")
 
 def main(osmfile):
     filename_without_extension = osmfile.replace('.osm.pbf', '')
@@ -289,6 +310,9 @@ def main(osmfile):
         print(
             f"\nDone! {handler.c_node + handler.c_way + handler.c_area} ({handler.c_node}+{handler.c_way}+{handler.c_area}) locations in {time_duration:.3f} seconds"
         )
+
+        # Ask the user whether they want a commit to be created
+        commit_to_git(output_file)
 
     return 0
 

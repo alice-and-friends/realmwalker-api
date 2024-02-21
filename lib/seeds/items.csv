@@ -1,4 +1,4 @@
-name,type,icon,two_handed,attack_bonus,defense_bonus,classification_bonus,classification_attack_bonus,classification_defense_bonus,xp_bonus,loot_bonus,tier,rarity,dropped_by_classification,dropped_by_level,drop_max_amount,armorer_buy,armorer_sell,jeweller_buy,jeweller_sell,magic_shop_buy,magic_shop_sell
+name,type,icon,two_handed,attack_bonus,defense_bonus,classification_bonus,classification_attack_bonus,classification_defense_bonus,xp_bonus,loot_bonus,tier,rarity,dropped_by_classifications,dropped_by_level,drop_max_amount,armorer_buy,armorer_sell,jeweller_buy,jeweller_sell,magic_shop_buy,magic_shop_sell
 Broken Amulet,Amulet,broken-amulet,FALSE,0,0,,0,0,0,0,1,Rare,humanoid,7,1,,,900,,,
 Aetherial Talisman,Amulet,feather-necklace,FALSE,0,0,elemental,0,2,0,0,2,Rare,elemental,3,1,,,"1,000",,,
 Gearwheel Chain,Amulet,gearwheel-chain,FALSE,0,1,,0,0,0,0,2,Uncommon,construct,3,1,150,,150,,,

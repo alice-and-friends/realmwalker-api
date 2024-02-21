@@ -41,7 +41,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.string "type", null: false
     t.string "icon", null: false
     t.string "rarity", null: false
-    t.string "dropped_by_classification", default: [], array: true
+    t.string "dropped_by_classifications", default: [], array: true
     t.integer "dropped_by_level"
     t.integer "drop_max_amount"
     t.boolean "two_handed", default: false, null: false

@@ -133,7 +133,7 @@ class SeedHelper
 
       # Lootable
       item.rarity = row['rarity'].downcase
-      item.dropped_by_classification = row['dropped_by_classification']&.split(', ')
+      item.dropped_by_classifications = row['dropped_by_classifications']&.split(', ')
       item.dropped_by_level = row['dropped_by_level']
       item.drop_max_amount = row['drop_max_amount']
 

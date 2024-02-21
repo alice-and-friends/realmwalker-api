@@ -57,8 +57,8 @@ class Item < ApplicationRecord
   end
 
   def lootable_from_any_monster
-    if dropped_by_level.present? || dropped_by_classification.present?
-      test = Monster.where('classification IN (?)', dropped_by_classification).find_by('level >= ?', dropped_by_level)
+    if dropped_by_level.present? || dropped_by_classifications.present?
+      test = Monster.where(classification: dropped_by_classifications).find_by('level >= ?', dropped_by_level)
       if test.nil?
         errors.add(:base, "Item '#{name}' not lootable from any monster")
       end
@@ -69,15 +69,15 @@ class Item < ApplicationRecord
     if classification_bonus.present?
       errors.add(:classification_bonus, "#{classification_bonus} is not a valid classification") unless classification_bonus.in? Monster.classifications
     end
-    if dropped_by_classification.present?
-      dropped_by_classification.each do |c|
-        errors.add(:dropped_by_classification, "#{c} is not a valid classification") unless c.in? Monster.classifications
+    if dropped_by_classifications.present?
+      dropped_by_classifications.each do |c|
+        errors.add(:dropped_by_classifications, "#{c} is not a valid classification") unless c.in? Monster.classifications
       end
     end
   end
 
   def classification_bonuses_valid
-    if classification_bonus.present? && (classification_attack_bonus+classification_defense_bonus).zero?
+    if classification_bonus.present? && (classification_attack_bonus + classification_defense_bonus).zero?
       errors.add(:base, 'Has a classification bonus without any added attack or defense')
     end
   end

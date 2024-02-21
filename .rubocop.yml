@@ -180,6 +180,9 @@ Metrics/CyclomaticComplexity:
 Metrics/ParameterLists:
   Enabled: false
 
+Metrics/PerceivedComplexity:
+  Max: 15
+
 Naming/InclusiveLanguage:
   Enabled: true
   CheckStrings: true
