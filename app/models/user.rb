@@ -76,7 +76,7 @@ class User < ApplicationRecord
     # NB: You probably don't change the order of these checks
     equipped_items_of_this_type = equipped_items.where('items.type': inventory_item.item.type)
     if inventory_item.item.two_handed == true
-      items_to_unequip += equipped_items.where("type IN (?)", ['weapon', 'shield'])
+      items_to_unequip += equipped_items.where('type IN (?)', ['weapon', 'shield'])
     elsif equipped_items_of_this_type.count >= max_items_of_type
       if max_items_of_type > 1
         items_to_unequip << equipped_items_of_this_type.first
@@ -126,7 +126,7 @@ class User < ApplicationRecord
   def attack_bonus(classification = nil)
     modifier = equipped_items.sum('items.attack_bonus')
     if classification
-      modifier += equipped_items.where(items: { classification_bonus: classification }).sum("items.classification_attack_bonus")
+      modifier += equipped_items.where(items: { classification_bonus: classification }).sum('items.classification_attack_bonus')
     end
     modifier
   end
@@ -160,7 +160,7 @@ class User < ApplicationRecord
       level: level,
       next_level_at: next_level_at,
       to_next_level: next_level_at - xp,
-      next_level_progress: (level_xp_surplus.to_f / levels_xp_diff * 100.0).floor
+      next_level_progress: (level_xp_surplus.to_f / levels_xp_diff * 100.0).floor,
     }
   end
 
@@ -258,7 +258,7 @@ class User < ApplicationRecord
 
   def give_starting_equipment
     starting_equipment = ['Shortsword', 'Leather Armor', 'Brass Helmet'] # Changing this may result in failing tests
-    #starting_equipment += ['Angelic Axe', 'Amulet of Loss', 'Amulet of Life', 'Amulet of Abundance', 'Ring of Treasure Hunter', 'Relic Sword', 'Shield of Destiny'] if Rails.env.development?
+    # starting_equipment += ['Angelic Axe', 'Amulet of Loss', 'Amulet of Life', 'Amulet of Abundance', 'Ring of Treasure Hunter', 'Relic Sword', 'Shield of Destiny'] if Rails.env.development?
 
     starting_equipment.each do |item_name|
       item = Item.find_by(name: item_name)

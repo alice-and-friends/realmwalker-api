@@ -153,7 +153,7 @@ class Npc < RealmLocation
   def minimum_distance
     throw('Coordinates blank') if coordinates.blank?
 
-    point = "ST_GeographyFromText('POINT(#{coordinates.lon} #{coordinates.lat})')"
+    point = "ST_GeographyFromText('POINT(#{coordinates.longitude} #{coordinates.latitude})')"
     distance_query = Arel.sql("ST_Distance(coordinates::geography, #{point}) <= 200.0")
 
     exists_query = Npc.shopkeepers.where(region: region, shop_type: shop_type)

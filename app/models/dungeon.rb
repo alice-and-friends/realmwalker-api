@@ -16,7 +16,9 @@ class Dungeon < RealmLocation
   before_validation :randomize_level_and_monster!, on: :create
 
   after_create do |d|
-    Rails.logger.debug "📌 Spawned a new dungeon ##{d.id}, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
+    Rails.logger.debug {
+      "📌 Spawned a new dungeon ##{d.id}, level #{d.level}, #{d.status}. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
+    }
 
     expire_nearby_dungeons! if boss?
     spook_nearby_shopkeepers!
@@ -120,7 +122,7 @@ class Dungeon < RealmLocation
       chance_of_escape: chance_of_escape,
       risk_of_death: {
         on_defeat: risk_of_death_on_defeat,
-        overall: risk_of_death_on_defeat * chance_of_defeat / 100
+        overall: risk_of_death_on_defeat * chance_of_defeat / 100,
       }
       # chance_of_inventory_loss: chance_of_inventory_loss,
       # chance_of_equipment_loss: chance_of_equipment_loss,
@@ -137,7 +139,8 @@ class Dungeon < RealmLocation
 
     # Let's go
     prediction = battle_prediction_for(user)
-    Rails.logger.debug { "⚔️ #{user.name} has #{prediction[:chance_of_success]}% chance of success, #{prediction[:chance_of_escape]}% chance of escape" }
+    Rails.logger.debug {
+ "⚔️ #{user.name} has #{prediction[:chance_of_success]}% chance of success, #{prediction[:chance_of_escape]}% chance of escape" }
     roll = rand(1..100)
     user_won = (roll <= prediction[:chance_of_success])
     Rails.logger.debug { "⚔️ #{user.name} rolled a #{roll} and #{user_won ? 'won' : 'lost'}" }
@@ -152,7 +155,7 @@ class Dungeon < RealmLocation
         loot_container = loot_container_for(user)
         user.gains_loot(loot_container)
         inventory_changes = {
-          loot: loot_container
+          loot: loot_container,
         }
       end
     else # user lost the battle
@@ -188,14 +191,14 @@ class Dungeon < RealmLocation
 
     nearby_shopkeepers = Npc.shopkeepers.joins(:real_world_location).where(
       "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{spook_distance})",
-      coordinates: coordinates
+      coordinates: coordinates,
     )
 
     nearby_shopkeepers.each do |npc|
       npc.dungeons << self
     end
 
-    Rails.logger.debug "😱 Spooked #{nearby_shopkeepers.size} shopkeepers"
+    Rails.logger.debug { "😱 Spooked #{nearby_shopkeepers.size} shopkeepers" }
   end
 
   def remove_spooks!
@@ -203,7 +206,7 @@ class Dungeon < RealmLocation
 
     c = spooks.size
     spooks.destroy_all
-    Rails.logger.debug "❌ Removed #{c} spooks"
+    Rails.logger.debug { "❌ Removed #{c} spooks" }
   end
 
   private
@@ -224,7 +227,7 @@ class Dungeon < RealmLocation
     Dungeon.joins(:real_world_location)
            .where(
              "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{radius})",
-             coordinates: coordinates
+             coordinates: coordinates,
            )
            .where.not(id: id)
            .find_each(&:expired!)

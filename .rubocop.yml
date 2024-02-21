@@ -255,6 +255,10 @@ Performance/StartWith:
 Gemspec/DependencyVersion:
   Enabled: true
 
+Style/BlockDelimiters:
+  AllowedMethods:
+    - 'debug'
+
 Style/RequireOrder:
   Enabled: true
 
