@@ -255,11 +255,13 @@ def commit_to_git(file):
     # Check if the user's input is 'y'
     if user_input == 'y':
         # Commands to add and commit the file
+        add_command = ["git", "add", file]
         commit_message = f"Generated file {file}"
         commit_command = ["git", "commit", "-o", file, "-m", commit_message]
 
         try:
             # Execute the Git commit command
+            subprocess.run(add_command, check=True)
             subprocess.run(commit_command, check=True)
             print("File committed to Git successfully.")
         except subprocess.CalledProcessError as e:
