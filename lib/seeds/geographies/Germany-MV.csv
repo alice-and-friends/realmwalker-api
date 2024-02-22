@@ -17714,3 +17714,31 @@ way/1219078924,53.9003099 11.4761132,amenity:kindergarten
 way/1219257526,53.9928053 11.4370498,amenity:theatre
 way/1225761248,53.6066048 13.2892118,addr:city:Trollenhagen;addr:country:DE;addr:housenumber:6;addr:postcode:17039;addr:street:Rotdornweg;amenity:kindergarten;capacity:52;contact:email:kita.kinnerstuw@asbmse.de;contact:phone:+49 395 4691810;contact:website:https://www.asb-nb-mst.de/kita-kinnerstuw-trollenhagen.html;name:Kita Kinnerstuw;name:de:Kita Kinderstube;name:nds:Kita Kinnerstuw;official_name:Kita Kinnerstuw;old_operator:ASB NB-MST;operator:ASB MSE
 way/1225761249,53.6066438 13.2888228,access:yes;fee:no;heritage:yes;leisure:park;name:Gutspark Trollenhagen;opening_hours:24/7;operator:none
+way/1228041325,53.306939 12.9981112,fee:yes;leisure:sports_centre;name:Waldseilgarten Havelbere;operator:Haveltourist GmbH & Co. KG;sport:climbing
+way/1228273869,53.8740232 11.5655163,capacity:10;email:info@caravan-krassow.de;fee:yes;name:Caravan-Krassow;phone:+49 3841 269596;power_supply:yes;sanitary_dump_station:yes;tourism:caravan_site;water_point:yes;website:http://www.urlaub-am-schloss.de/caravan/caravan.html;wheelchair:yes
+way/1229036108,53.3314601 12.9566706,name:Zeltwiese;tourism:camp_pitch
+way/1229807384,53.9329707 14.1821917,charge:37 EUR;dog:yes;fee:yes;laundry:yes;laundry:charge:4 EUR;name:Am Alten Forsthaus;power_supply:yes;power_supply:fee:inclusive;reservation:yes;sauna:yes;tourism:caravan_site;website:https://www.reisemobilhafen-usedom.de/
+way/1234644229,53.7761694 12.1827804,amenity:kindergarten
+way/1235151886,53.7766045 12.1769427,amenity:kindergarten;brand:Arbeiterwohlfahrt;brand:short:AWO;brand:wikidata:Q627256;name:Kinderland;operator:Arbeiterwohlfahrt;operator:type:private_non_profit
+way/1235151924,53.7743947 12.1763734,amenity:school;name:Anne-Frank-Schule
+way/1235170624,53.7733096 12.1801944,leisure:sports_centre
+way/1235849109,53.5806414 11.6512363,"amenity:school;grades:1-4;name:Grundschule ""Fritz Reuter"""
+way/1235850129,53.5736613 11.6626502,amenity:school;grades:5-10;name:Regionale Schule Crivitz
+way/1237238093,54.1018939 13.3479115,amenity:theatre;surface:concrete;theatre:type:open_air
+way/1237746665,53.7873471 12.1753954,leisure:sports_centre
+way/1239062679,53.6631108 11.493789,amenity:school;contact:website:https://www.ori-grundschule-leezen.de;name:ORI Grundschule
+way/1239063010,53.6639389 11.497069,amenity:kindergarten;contact:website:https://www.johanniter.de/juh/lv-nord/rv-mecklenburg-vorpommern-west/unsere-standorte-einrichtungen-in-mecklenburg-vorpommern-west/einrichtung-detailseite/johanniter-kita-zwergenparadies-leezen-1649/;name:Kita Zwergenparadies;operator:Johanniter
+way/1239125024,54.4380475 12.7418914,"addr:city:Zingst;addr:postcode:18374;area:yes;description:Eine Baumreihe von sieben Urweltmammutbäumen, welche hier in den 1950er-Jahren zu versuchszwecken gepflanzt wurden.;name:Mammutbäume im Osterwald;tourism:attraction;website:https://www.zingst.de/osterwald-zingst-darss#mammutbaeume"
+way/1240496480,53.7891026 12.1856064,amenity:kindergarten;name:Butzemann;operator:Stadt Güstrow;operator:type:public
+way/1240549899,54.3126492 13.0420073,leisure:park;opening_hours:24/7
+way/1242391971,53.4757481 13.2230977,access:yes;fee:no;leisure:park;opening_hours:24/7
+way/1243732657,53.803846 12.1641437,leisure:sports_centre;name:Friedrich-Ludwig-Jahn-Stadion;operator:Güstrower SC 09 e.V.
+way/1243732662,53.8016274 12.1664982,amenity:conference_centre
+way/1244152299,54.3121235 13.0359211,leisure:park
+way/1246834660,53.9183775 12.1509211,addr:city:Rukieten;addr:postcode:18258;addr:street:Dorfstraße;leisure:park;name:Spielplatz;opening_hours:24/7;operator:Gemeinde Göldenitz
+way/1247817870,53.3347566 13.4415765,access:yes;leisure:park
+way/1248238973,53.8062932 12.1930612,amenity:kindergarten;brand:Arbeiter-Samariter-Bund;brand:short:ASB;brand:wikidata:Q627071;email:kita-waldleben@asb-kjh.de;name:Waldleben;operator:Arbeiter-Samariter-Bund;operator:type:private_non_profit;phone:+49 3843 212468
+way/1248948426,54.0351038 11.6745534,leisure:park
+way/1249112208,53.8024962 12.2223551,amenity:school;name:Beruflliches Bildungszentrum
+way/1250467826,53.807439 12.1915173,amenity:community_centre;name:Leuchtturm
+way/1251165174,53.2814538 12.8103335,fee:no;leisure:sports_centre;sport:swimming
