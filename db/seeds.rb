@@ -93,9 +93,11 @@ class SeedHelper
         region: @geography,
       )
 
-      percentile = location.ext_id[-2..].to_i
-      location.type = RealWorldLocation.types[:shop] if percentile.in? 0..10
-      location.type = RealWorldLocation.types[:ley_line] if percentile.in? 11..17
+      random_seed = location.ext_id.partition('/').last.to_i
+      prng = Random.new(random_seed)
+      percentile = prng.rand(0..99)
+      location.type = RealWorldLocation.types[:ley_line] if percentile.in? 0..6
+      location.type = RealWorldLocation.types[:shop] if percentile.in? 10..20
 
       locations << location
     end
@@ -232,17 +234,19 @@ class SeedHelper
 
     npcs = []
     RealWorldLocation.where(type: RealWorldLocation.types[:shop]).find_each do |rwl|
-      random_digit = (Math.sqrt(rwl.ext_id.partition('/').last.to_i) * 100).to_i.digits[0]
+      random_seed = rwl.ext_id.partition('/').last.to_i
+      prng = Random.new(random_seed)
+      random_digit = prng.rand(1..10)
       npc = Npc.new({
                       role: 'shopkeeper',
                       real_world_location_id: rwl.id,
                       coordinates: rwl.coordinates,
                     })
 
-      if random_digit.in? 0..2
+      if random_digit.in? 1..3
         npc.shop_type = 'magic'
         npc.trade_offer_lists << magic_shop_offer_list
-      elsif random_digit.in? 3..5
+      elsif random_digit.in? 4..6
         npc.shop_type = 'jeweller'
         npc.trade_offer_lists << jeweller_offer_list
       else
