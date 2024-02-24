@@ -6282,3 +6282,10 @@ way/1106305316,49.236587 6.69209,leisure:sports_centre
 way/1107503724,49.2920952 6.8293516,leisure:park
 way/1116698261,49.3082886 7.0239665,amenity:school;name:Grundschule Fischbach
 way/1124248570,49.2586746 6.8711758,building:yes;leisure:sports_centre;name:m;sport:multi
+way/1166058027,49.5285773 6.4912663,leisure:park
+way/1166058028,49.5277623 6.4841629,amenity:place_of_worship;denomination:catholic;historic:wayside_chapel;religion:christian;source:https://www.saarbruecker-zeitung.de/saarland/merzig-wadern/mettlach/lourdes-grotte-seit-100-jahren-in-faha_aid-59315089;start_date:1921;tourism:yes
+way/1176704559,49.3229589 6.7397213,leisure:sports_centre
+way/1188356401,49.3118681 6.5968074,amenity:townhall;building:public;contact:email:heining.mairie@wanadoo.fr;contact:phone:+33 3 87 78 31 93;name:Mairie d'Heining-lès-Bouzonville;opening_hours:Mo 08:30-11:00; Tu 15:00-18:00; Th 08:30-11:00; Fr 14:00-18:00;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;Service-Public.fr - 06/2023
+way/1189578064,49.135982 7.323741,amenity:school;school:FR:élémentaire
+way/1189578065,49.134593 7.322223,amenity:townhall;building:public;contact:email:mairie.ormersviller@wanadoo.fr;contact:phone:+33 3 87 96 70 22;name:Mairie d'Ormersviller;opening_hours:Tu 17:00-19:00; Th 08:30-11:30;source:Service-Public.fr - 06/2023;cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2013
+way/1200695070,49.5696759 7.0648395,amenity:public_bath;bath:type:lake;dog:no;fee:yes;name:Strandbad Bosen;outdoor:yes;shower:yes
