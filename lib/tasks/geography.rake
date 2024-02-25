@@ -61,4 +61,19 @@ namespace :geography do
     printf("\nTotal records: %s\n", RealWorldLocation.count.to_fs(:delimited))
     printf("No records found for: %s\n", expected_geographies.join(', '))
   end
+
+  desc 'Print a bar chart that displays the relative size of geography files'
+  task chart: :environment do
+
+
+    sorted_files = csv_files.sort_by { |file| -File.size(file) }
+    sorted_files.each do |file|
+      megabytes = (File.size(file) / (1024 * 1024).to_f / 1.2).ceil
+      str = " #{File.basename(file)} (#{megabytes}MB)"
+      megabytes.times do
+        str = "⬜#{str}"
+      end
+      puts str
+    end
+  end
 end

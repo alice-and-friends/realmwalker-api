@@ -20,6 +20,7 @@ Environment variables...
 ## Utilities
 * `rake geography:list` Shows a list of geography files and their last edited date
 * `rake geography:stats` Shows the number of database records (RealWorldLocation) for each geography
+* `rake geography:chart` Shows a visual bar chart representing the relative sizes of the geography files
 
 ## Code- and naming conventions
 **Latitude and Longitude:**
