@@ -11,11 +11,11 @@ class Item < ApplicationRecord
 
   validates :type, presence: true, inclusion: { in: ITEM_TYPES }
   validates :rarity, presence: true, inclusion: { in: RARITIES }
-  validate :weapons_can_be_two_handed
+  validate :must_be_weapon_if_two_handed
   validates :name, presence: true, uniqueness: true
-  validate :classifications_valid
-  validate :classification_bonuses_valid
-  validate :lootable_from_any_monster
+  validate :must_use_valid_classifications
+  validate :must_be_meaningful_bonus
+  validate :must_be_obtainable
 
   scope :common, -> { where(rarity: 'common') }
   scope :uncommon, -> { where(rarity: 'uncommon') }
@@ -52,11 +52,11 @@ class Item < ApplicationRecord
 
   private
 
-  def weapons_can_be_two_handed
+  def must_be_weapon_if_two_handed
     errors.add(:two_handed, 'Only weapons can be two handed') if two_handed && !weapon?
   end
 
-  def lootable_from_any_monster
+  def must_be_obtainable
     if dropped_by_level.present? || dropped_by_classifications.present?
       test = Monster.where(classification: dropped_by_classifications).find_by('level >= ?', dropped_by_level)
       if test.nil?
@@ -65,7 +65,7 @@ class Item < ApplicationRecord
     end
   end
 
-  def classifications_valid
+  def must_use_valid_classifications
     if classification_bonus.present?
       errors.add(:classification_bonus, "#{classification_bonus} is not a valid classification") unless classification_bonus.in? Monster.classifications
     end
@@ -76,7 +76,7 @@ class Item < ApplicationRecord
     end
   end
 
-  def classification_bonuses_valid
+  def must_be_meaningful_bonus
     if classification_bonus.present? && (classification_attack_bonus + classification_defense_bonus).zero?
       errors.add(:base, 'Has a classification bonus without any added attack or defense')
     end

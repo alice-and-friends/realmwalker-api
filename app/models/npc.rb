@@ -17,9 +17,9 @@ class Npc < RealmLocation
   validates :gender, inclusion: { in: Gender::GENDERS }
   validates :role, presence: true, inclusion: { in: ROLES }
   validates :shop_type, inclusion: { in: SHOP_TYPES }
-  validate :shopkeeper_has_shop_type, if: :shop?
-  validate :shopkeeper_has_trade_offer_list, if: :shop?
-  validate :minimum_distance, if: :shop?
+  validate :must_have_shop_type, if: :shop?
+  validate :must_have_trade_offer_list, if: :shop?
+  validate :must_obey_minimum_distance, if: :shop?
 
   before_validation :set_real_world_location!, on: :create
   before_validation :set_region_and_coordinates!, on: :create
@@ -141,16 +141,16 @@ class Npc < RealmLocation
                                 species: species, gender: gender, group: shop_type).sample
   end
 
-  def shopkeeper_has_shop_type
+  def must_have_shop_type
     errors.add(:role, 'shopkeeper requires a valid shop_type to be set') unless shop_type.in? SHOP_TYPES
   end
 
-  def shopkeeper_has_trade_offer_list
+  def must_have_trade_offer_list
     errors.add(:role, 'shopkeeper role requires at least one trade offer list') if trade_offer_lists.empty?
   end
 
   # Avoid placing identical shops right next to each other
-  def minimum_distance
+  def must_obey_minimum_distance
     throw('Coordinates blank') if coordinates.blank?
 
     point = "ST_GeographyFromText('POINT(#{coordinates.longitude} #{coordinates.latitude})')"

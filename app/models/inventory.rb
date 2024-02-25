@@ -5,7 +5,7 @@ class Inventory < ApplicationRecord
   belongs_to :user, optional: true
   belongs_to :realm_location, optional: true
   validates :user_id, :realm_location_id, uniqueness: true, allow_nil: true
-  validate :belongs_to_something
+  validate :must_belong_to_something
   validates :gold, numericality: { greater_than_or_equal_to: 0 }
 
   def owner
@@ -14,7 +14,7 @@ class Inventory < ApplicationRecord
 
   private
 
-  def belongs_to_something
+  def must_belong_to_something
     errors.add('Inventory must belong to either a user or a realm location') if user_id.nil? && realm_location_id.nil?
   end
 end
