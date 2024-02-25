@@ -24220,3 +24220,53 @@ way/1211080478,54.5667387 10.0209262,tourism:camp_pitch
 way/1211080479,54.5668155 10.0214342,tourism:camp_pitch
 way/1211080480,54.5667662 10.021553,tourism:camp_pitch
 way/1211080481,54.5666309 10.0215761,tourism:camp_pitch
+way/1211080482,54.5666498 10.0212297,tourism:camp_pitch
+way/1211080483,54.5666005 10.0213485,tourism:camp_pitch
+way/1211080484,54.5666995 10.0211098,tourism:camp_pitch
+way/1211080485,54.566839 10.0210743,tourism:camp_pitch
+way/1211080486,54.5669222 10.021177,tourism:camp_pitch
+way/1211080487,54.5670558 10.0208584,tourism:camp_pitch
+way/1211080488,54.5670065 10.0209773,tourism:camp_pitch
+way/1211080489,54.5668712 10.0210003,tourism:camp_pitch
+way/1211080490,54.5668408 10.0207728,tourism:camp_pitch
+way/1211080491,54.5668901 10.0206539,tourism:camp_pitch
+way/1211080492,54.5669398 10.020534,tourism:camp_pitch
+way/1211080493,54.5670793 10.0204986,tourism:camp_pitch
+way/1211080494,54.5671625 10.0206013,tourism:camp_pitch
+way/1211080495,54.5668024 10.0207012,tourism:camp_pitch
+way/1211080496,54.5668486 10.0205855,tourism:camp_pitch
+way/1211080497,54.5669026 10.0204519,tourism:camp_pitch
+way/1211080498,54.5668711 10.0202276,tourism:camp_pitch
+way/1211080499,54.5667371 10.0202592,tourism:camp_pitch
+way/1211080500,54.5666848 10.0203926,tourism:camp_pitch
+way/1211080501,54.5666394 10.0205138,tourism:camp_pitch
+way/1211080502,54.5667228 10.0206113,tourism:camp_pitch
+way/1211663921,54.1608499 10.6019772,addr:city:Eutin;addr:housenumber:20;addr:postcode:23701;addr:street:Prinzenholzweg;capacity:2;email:info@nc-prinzenholz.de;fax:+49 4521 790693;fee:yes;motorhome:yes;operator:Naturpark-Camping Prinzenholz Betriebsges. mbH;payment:cash:yes;payment:credit_cards:yes;payment:girocard:yes;payment:paypal:yes;phone:+49 4521 5281;tourism:caravan_site;website:https://naturpark-camping-prinzenholz.de
+way/1212710146,54.3315817 10.1936543,building:yes;leisure:sports_centre;sport:climbing
+way/1212710147,54.3314207 10.1938911,building:yes;leisure:sports_centre;sport:climbing
+way/1213739942,53.8989812 9.1306714,amenity:kindergarten
+way/1213739943,53.9011668 9.1302289,amenity:kindergarten
+way/1213739949,53.9023014 9.1257524,amenity:school
+way/1218747353,53.7261344 9.6850203,leisure:park;name:Hochzeitswald
+way/1220647427,54.7778976 9.23848,"capacity:8;charge:EUR 7;description:payment:pay at Bussmanns Gasthof, Hauptstraße 23;fee:yes;name:Wallsbüll Ellunder Straße;phone:+49 4639 246;power_supply:yes;seasonal:no;tourism:caravan_site;water_point:yes;website:https://www.wallsbuell.de/tourismus/"
+way/1222355135,54.4999652 9.9106899,heritage:4;heritage:operator:lfd;historic:ruins;lfd:criteria:Ensembleteil;ref:lfd:8406;wikidata:Q58396301;wikimedia_commons:File:Gut_Hohenstein_künstl_Turmruine.jpg
+way/1226437590,53.6028222 10.188082,bus:yes;highway:bus_stop;name:Gewerbepark Merkur (Süd);public_transport:platform;route_ref:263;264;362;364;shelter:no
+way/1226437591,53.6026194 10.1878946,bus:yes;highway:bus_stop;name:Gewerbepark Merkur (Süd);public_transport:platform;route_ref:263;264;362;364;shelter:no
+way/1226929136,54.4300411 9.5236012,amenity:exhibition_centre;building:yes;name:Geestlandeventgelände;operator:Gemeinde Kropp
+way/1228385212,53.5948077 9.8530495,building:yes;building:part:yes;man_made:tower;tower:construction:stone;tower:type:bell_tower
+way/1229145622,54.6829883 8.5483866,leisure:dog_park
+way/1235165119,53.9252028 9.3694309,leisure:sports_centre
+way/1236448152,53.6942606 10.2155254,leisure:park;name:Günther-Schmidt-Platz
+way/1237359615,54.2880102 9.6969238,leisure:sports_centre
+way/1237359617,54.2862633 9.6948093,amenity:school;name:Aukamp Schule
+way/1237359618,54.2854257 9.7001697,leisure:sports_centre;name:Sportplatz OTSV
+way/1237359620,54.2854281 9.6953565,leisure:sports_centre
+way/1239183418,54.4083439 9.3064604,leisure:water_park;name:Freibad Wohlde
+way/1239573828,54.2833888 9.7129661,leisure:park
+way/1239682793,53.9440891 10.8740859,covered:no;fireplace:no;tourism:picnic_site
+way/1240004890,54.0465531 10.6718872,leisure:sports_centre;name:Sportpark Pönitz
+way/1240093717,54.3137692 10.1127298,artwork_type:mural;barrier:wall;tourism:artwork
+way/1243298853,53.6611226 9.79691,addr:city:Pinneberg;addr:postcode:25421;leisure:park;name:Drosteiplatz;opening_hours:24/7
+way/1243850370,53.8441502 10.5943492,leisure:park
+way/1250302096,53.7165048 9.7754587,fee:yes;leisure:park
+way/1251192215,53.7080133 9.5666778,landuse:park;leisure:park
