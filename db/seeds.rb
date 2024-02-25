@@ -60,6 +60,7 @@ class SeedHelper
           seed(:ley_lines)
           seed(:shops)
           seed(:dungeons)
+          seed(:runestones)
         end
         puts "🙀 #{Spook.count} spooks in effect."
       end
@@ -93,11 +94,10 @@ class SeedHelper
         region: @geography,
       )
 
-      random_seed = location.ext_id.partition('/').last.to_i
-      prng = Random.new(random_seed)
-      percentile = prng.rand(0..99)
-      location.type = RealWorldLocation.types[:ley_line] if percentile.in? 0..6
+      percentile = location.deterministic_rand(1..100)
+      location.type = RealWorldLocation.types[:ley_line] if percentile.in? 1..7
       location.type = RealWorldLocation.types[:shop] if percentile.in? 10..20
+      location.type = RealWorldLocation.types[:runestone] if percentile == 100
 
       locations << location
     end
@@ -233,20 +233,18 @@ class SeedHelper
     puts '⚠️ Error: armorer_offer_list should not be blank' and return 0 if armorer_offer_list.nil?
 
     npcs = []
-    RealWorldLocation.where(type: RealWorldLocation.types[:shop]).find_each do |rwl|
-      random_seed = rwl.ext_id.partition('/').last.to_i
-      prng = Random.new(random_seed)
-      random_digit = prng.rand(1..10)
+    RealWorldLocation.where(type: RealWorldLocation.types[:shop], region: @geography).find_each do |rwl|
+      random_digit = rwl.deterministic_rand(100)
       npc = Npc.new({
                       role: 'shopkeeper',
                       real_world_location_id: rwl.id,
                       coordinates: rwl.coordinates,
                     })
 
-      if random_digit.in? 1..3
+      if random_digit.in? 1..30
         npc.shop_type = 'magic'
         npc.trade_offer_lists << magic_shop_offer_list
-      elsif random_digit.in? 4..6
+      elsif random_digit.in? 31..60
         npc.shop_type = 'jeweller'
         npc.trade_offer_lists << jeweller_offer_list
       else
@@ -261,7 +259,7 @@ class SeedHelper
 
   def ley_lines
     ley_lines = []
-    RealWorldLocation.where(type: RealWorldLocation.types[:ley_line]).find_each do |rwl|
+    RealWorldLocation.where(type: RealWorldLocation.types[:ley_line], region: @geography).find_each do |rwl|
       ley_line = LeyLine.new({
                                real_world_location_id: rwl.id,
                                coordinates: rwl.coordinates,
@@ -283,6 +281,24 @@ class SeedHelper
       dungeons << dungeon
     end
     import(Dungeon, dungeons, pre_validate: false, validate: true)
+  end
+
+  def runestones
+    runestones = []
+    templates = RunestonesHelper.all
+
+    RealWorldLocation.where(type: RealWorldLocation.types[:runestone], region: @geography).find_each do |rwl|
+      random_index = rwl.deterministic_rand(templates.length)
+      template = templates[random_index]
+
+      runestone = Runestone.new({
+                                  name: template.name,
+                                  runestone_id: template.id,
+                                  real_world_location_id: rwl.id,
+                                })
+      runestones << runestone
+    end
+    import(Runestone, runestones, pre_validate: false, validate: true)
   end
 
   private

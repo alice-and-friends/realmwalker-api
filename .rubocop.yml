@@ -2,6 +2,7 @@ require:
   - rubocop-rails
   - rubocop-performance
   - rubocop-rake
+  - ./lib/custom_cops/custom_validator_name.rb
 
 AllCops:
   NewCops: enable
@@ -266,7 +267,7 @@ Style/OptionalBooleanParameter:
   Enabled: false
 
 Style/ClassAndModuleChildren:
-  Enabled: true
+  Enabled: false
 
 Rails/Output:
   Enabled: false

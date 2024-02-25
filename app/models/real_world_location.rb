@@ -5,7 +5,13 @@ class RealWorldLocation < ApplicationRecord
 
   self.inheritance_column = nil
 
-  enum type: { shop: 'shop', ley_line: 'ley_line', user_owned: 'user_owned', unassigned: 'unassigned' }
+  enum type: {
+    ley_line: 'ley_line',
+    runestone: 'runestone',
+    shop: 'shop',
+    unassigned: 'unassigned',
+    user_owned: 'user_owned',
+  }
 
   validates :type, presence: true
   validates :ext_id, uniqueness: true, allow_nil: true
@@ -15,6 +21,12 @@ class RealWorldLocation < ApplicationRecord
 
   scope :free, -> { where.not(id: RealmLocation.select(:real_world_location_id)) }
   scope :for_dungeon, -> { where(type: RealWorldLocation.types[:unassigned]) }
+
+  def deterministic_rand(param)
+    seed = Digest::SHA256.hexdigest("#{type}@#{ext_id}").to_i(16)
+    prng = Random.new(seed)
+    prng.rand(param)
+  end
 
   private
 

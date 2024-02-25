@@ -16,6 +16,7 @@ class User < ApplicationRecord
   validate :valid_auth0_user_data
   validate :achievements_are_valid
   validate :access_token_expires
+  validate :must_have_valid_runestone_ids
 
   # Create inventory and grant starting equipment to new players
   after_create { self.inventory = Inventory.create!(user: self) }
@@ -298,6 +299,18 @@ class User < ApplicationRecord
     base
   end
 
+  # @return [Boolean] whether this runestone counts as a new discovery
+  def discover_runestone(id)
+    return false unless RunestonesHelper.exists? id # The runestone id is invalid TODO: Log this as an error
+    return false if id.in? discovered_runestones # The runestone has already been previously discovered
+
+    discovered_runestones << id
+    return true if save
+
+    reload
+    false
+  end
+
   protected
 
   def valid_auth0_user_data
@@ -308,9 +321,7 @@ class User < ApplicationRecord
   end
 
   def access_token_expires
-    if access_token.present? && access_token_expires_at.nil?
-      errors.add(:base, 'access token without expiration date is not allowed')
-    end
+    errors.add(:base, 'access token without expiration date is not allowed') if access_token.present? && access_token_expires_at.nil?
   end
 
   private
@@ -319,6 +330,14 @@ class User < ApplicationRecord
     # Should have only valid types
     achievements.each do |a|
       errors.add(:tags, "contains an invalid achievement '#{a}'") unless a.in? ACHIEVEMENTS
+    end
+  end
+
+  def must_have_valid_runestone_ids
+    return if discovered_runestones.blank?
+
+    discovered_runestones.each do |id|
+      errors.add(:discovered_runestones, "'#{id}' is not a valid runestone ID") and break unless RunestonesHelper.exists?(id)
     end
   end
 end

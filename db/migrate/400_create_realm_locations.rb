@@ -13,7 +13,6 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       t.timestamps
 
       # BASE (user-owned location)
-      # t.belongs_to :owner, index: { unique: true }
       t.references :owner, index: { unique: true }, foreign_key: { to_table: :users }, on_delete: :cascade
 
       # NPC
@@ -29,6 +28,9 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       t.references :monster
       t.column :defeated_at, :datetime
       t.references :defeated_by, foreign_key: { to_table: :users }
+
+      # RunestonesHelper
+      t.string :runestone_id
     end
 
     # Coordinates GIST index

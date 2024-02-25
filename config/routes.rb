@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       post 'inventory/set_equipped', to: 'inventory#set_equipped', as: :set_equipped
       get 'base', to: 'base#show', as: :show_base
       post 'base', to: 'base#create', as: :create_base
+      get 'journal/runestones', to: 'journal#runestones', as: :runestones
 
       resources :inventory_items, only: [:update]
 
@@ -32,7 +33,7 @@ Rails.application.routes.draw do
         get 'analyze', to: 'dungeons#analyze', as: :analyze
         post 'battle', to: 'dungeons#battle', as: :battle
       end
-      
+
       # Debug
       get 'monsters', to: 'monsters#index', as: :monsters
     end
