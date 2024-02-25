@@ -18802,3 +18802,52 @@ way/1212446335,51.3254244 11.8082428,barrier:fence;fee:yes;name:Zum Weinberg;pho
 way/1212462216,51.7274845 11.0168086,tourism:picnic_site
 way/1214130177,51.4198267 11.0793019,tourism:picnic_site
 way/1217205420,52.5027353 12.0143172,"addr:city:Jerichow;addr:country:DE;addr:housenumber:1;addr:postcode:39319;addr:street:Am Kloster;addr:suburb:Jerichow;contact:email:kloster.jerichow@kulturstiftung-st.de;contact:facebook:https://www.facebook.com/people/Kloster-Jerichow/100064603755615/;contact:fax:+49 39343 929926;contact:instagram:klosterjerichow;contact:phone:+49 39343 285;contact:twitter:KlosterJerichow;contact:website:https://kloster-jerichow.de;denomination:protestant;heritage:4;heritage:operator:lda;historic:monastery;image:https://commons.wikimedia.org/wiki/File:20030428820NR_Jerichow_Pr%C3%A4monstratenserkloster_Stiftskirche.jpg;name:Kloster Jerichow;opening_hours:Apr-Oct: Mo-Su, PH 10:00-18:00; Nov-Mar: Tu-Su, PH 10:00-16:00; Nov-Mar: Mo off, Dec 24-Dec 25, Jan 1 off;operator:Kulturstiftung Sachsen-Anhalt;ref:lda:094 75980;religion:christian;tourism:museum;wheelchair:limited;wikidata:Q1660128;wikipedia:de:Kloster Jerichow"
+way/1217205445,52.5028802 12.0164865,amenity:events_venue;building:yes;contact:phone:+49 39343 929925;contact:website:https://kloster-jerichow.de/angebote/vermietungen-feiern-tagen/veranstaltungsraeume/storchenscheune;name:Storchenscheune;operator:Kloster Jerichow
+way/1217499977,52.4486894 12.3570667,building:colour:black;building:levels:2;building:material:slate;building:min_level:2;building:part:yes;man_made:tower;roof:colour:red;roof:levels:1;roof:material:roof_tiles;roof:shape:pyramidal;tower:type:bell_tower
+way/1217793545,51.9403416 10.9123716,leisure:park
+way/1218669001,51.1090835 11.6648225,amenity:place_of_worship;building:yes;name:Totenhalle;religion:christian
+way/1219390735,51.8804396 10.7102157,addr:city:Ilsenburg;addr:housenumber:2;addr:postcode:38871;addr:street:Otto-Schulze-Straße;amenity:fuel;brand:Hoyer;brand:wikidata:Q1606119;fuel:HGV_diesel:yes;fuel:adblue:yes;fuel:diesel:yes;name:Hoyer;operator:Dennis und Jeannine Stretzel;payment:debit_cards:yes;self_service:yes
+way/1219777013,51.6634503 11.3067353,tourism:picnic_site
+way/1219847598,52.3816723 11.8599357,leisure:sports_centre;name:Motocrossstrecke Cobbel;sport:motocross
+way/1220107518,52.3921349 11.8663588,"addr:city:Tangerhütte;addr:country:DE;addr:housenumber:24;addr:postcode:39517;addr:street:Lindenstraße;addr:suburb:Cobbel;amenity:kindergarten;contact:email:kita-sonnenkaefer.cobbel@t-online.de;contact:phone:+49 3935 29834;contact:website:https://landkreis-stendal.meinkitaplatz.de/app/de/einrichtung/show/993;isced:level:0;name:Kindertageseinrichtung ""Sonnenkäfer"";opening_hours:Mo-Fr 06:00-17:00;operator:Stadt Tangerhütte"
+way/1221106835,51.879363 12.2383203,capacity:caravans:10;name:Elbzollhaus;power_supply:yes;toilets:yes;tourism:caravan_site
+way/1222624920,51.8441702 12.2497823,addr:city:Dessau-Roßlau;addr:housenumber:48;addr:postcode:06844;addr:street:Ringstraße;amenity:school;contact:email:sekretariat.seks-am-schillerpark@dessauer-schulen.de;contact:phone:+49 340 213730;contact:website:https://www.sek-am-schillerpark-dessau.de/;grades:5-10;name:Sekundarschule am Schillerpark
+way/1222843662,51.8161428 10.9630209,tourism:picnic_site
+way/1224734020,51.3810517 11.6056628,man_made:tower
+way/1227304860,51.9317279 11.1410681,addr:city:Halberstadt;addr:housenumber:36;addr:postcode:38822;addr:street:Bauernreihe;building:yes;castle_type:defensive;heritage:7;heritage:operator:lda;historic:castle;ref:094 00319;wikidata:Q1011614;wikipedia:de:Burg Emersleben
+way/1227309847,51.9314603 11.1414862,leisure:park
+way/1228224759,52.8141973 11.2298219,addr:city:Stappenbeck;addr:housenumber:25;addr:postcode:29410;addr:street:Zur Klauskirche;amenity:place_of_worship;building:yes;denomination:lutheran;name:St. Marien;religion:christian
+way/1229462412,52.420256 12.1357868,historic:memorial;inscription:Gedenkstätte für Kriegsgefangene;material:dry_stone;memorial:war_memorial;monument:ID 09486863;name:Gedenkstätte Genthin-Altenplathow;wikidata:Q109416662;wikimedia_commons:Category:Gedenkstätte Genthin-Altenplathow
+way/1229521184,52.4385986 11.9633562,addr:city:Tangerhütte;addr:country:DE;addr:housenumber:32;addr:postcode:39517;addr:street:Griebener Breite Straße;addr:suburb:Grieben;amenity:community_centre;name:Bürgerzentrum Grieben;operator:Stadt Tangerhütte
+way/1229716669,51.1319112 11.7661271,amenity:place_of_worship;building:church;denomination:lutheran;religion:christian
+way/1230412103,52.4382396 11.9582817,"addr:city:Tangerhütte;addr:country:DE;addr:housenumber:6;addr:postcode:39517;addr:street:Waldweg;addr:suburb:Grieben;amenity:kindergarten;contact:email:kita-waldesrand@tangerhuette.de;contact:phone:+49 39362 81301;contact:website:https://www.tangerhuette.de/de/kitas-horte-schulen-jugendeinrichtungen.html?tsaid_p020b01=40612050&tsaid_c=00&tsaid_s=02;isced:level:0;name:Kindertageseinrichtung ""Waldesrand"";opening_hours:Mo-Fr 06:00-17:00;operator:Stadt Tangerhütte"
+way/1230818129,52.0107874 10.6367672,building:yes;height:8;man_made:tower;name:Grenzturm Rhoden;start_date:1975;tower:construction:freestanding;tower:type:observation
+way/1231078861,51.8993984 11.0429156,amenity:kindergarten
+way/1234640289,51.7802877 11.136326,amenity:fountain;name:Brühlspringbrunnen
+way/1234661779,51.8489832 12.2279104,amenity:kindergarten
+way/1236108789,51.439128 12.0485601,historic:ruins
+way/1236125705,51.7880005 10.9374059,tourism:picnic_site
+way/1236966697,51.6791267 11.5548072,leisure:sports_centre;sport:shooting
+way/1237038383,52.5048783 11.8558801,"addr:city:Tangerhütte;addr:country:DE;addr:housenumber:2;addr:postcode:39517;addr:street:Weißewarter Weg;addr:suburb:Demker;amenity:kindergarten;contact:email:tangerwichtel@tangerhuette.de;contact:phone:+49 39365 330;contact:website:https://www.tangerhuette.de/de/kitas-horte-schulen-jugendeinrichtungen.html?tsaid_p020b01=40611995&tsaid_c=00&tsaid_s=02;isced:level:0;name:Kindertagesstätte ""Tangerwichtel"";operator:Stadt Tangerhütte"
+way/1237281831,51.4652544 11.3617404,historic:ruins;ruins:building
+way/1237281832,51.465254 11.3624871,historic:ruins;ruins:building
+way/1237281834,51.4653272 11.3641442,historic:ruins;ruins:building
+way/1237281835,51.4651915 11.363716,historic:ruins;ruins:building
+way/1237541448,51.4692096 12.0295615,historic:ruins
+way/1237620534,51.3583881 12.120317,amenity:kindergarten
+way/1237795512,51.3618255 12.1480754,amenity:fountain
+way/1237930843,51.1561954 12.1039192,amenity:kindergarten
+way/1238109163,51.3598165 12.1483401,amenity:kindergarten
+way/1239079891,51.4936363 12.0242947,leisure:park
+way/1239079892,51.4930824 12.0250065,leisure:park
+way/1239514376,52.5134 11.8370712,addr:city:Tangerhütte;addr:country:DE;addr:housenumber:3A;addr:postcode:39517;addr:street:Dorfstraße;addr:suburb:Bellingen;contact:email:info@bogenclub-bellingen.de;contact:website:http://www.bogenclub-bellingen.de/;leisure:sports_centre;name:Bogenclub Bellingen;sport:archery
+way/1239677342,51.4580814 11.0221024,addr:city:Berga;addr:housenumber:12;addr:postcode:06536;addr:street:Buchenweg;amenity:fuel;brand:Independent;building:roof;fuel:HGV_diesel:yes;fuel:adblue:yes;fuel:diesel:yes;fuel:e10:yes;fuel:octane_95:yes;name:Raiffeisen;payment:cards:yes;payment:contactless:yes;payment:credit_cards:yes;payment:debit_cards:yes;payment:dkv:yes;payment:girocard:yes;payment:maestro:yes;payment:mastercard:yes;payment:uta:yes;payment:visa:yes;self_service:yes
+way/1241491795,51.8052359 12.3965689,leisure:sports_centre
+way/1241718134,51.4707326 11.5178304,building:yes;man_made:tower
+way/1241718135,51.4707322 11.5176878,building:yes;man_made:tower
+way/1241881334,51.0848331 11.820831,amenity:place_of_worship;building:church;name:Kirche Meyhen;religion:christian
+way/1241943240,51.7948027 11.3751482,leisure:park
+way/1245260316,51.5296484 11.5253201,historic:ruins;ruins:building
+way/1249031370,52.1302464 11.6787084,addr:city:Magdeburg;addr:housenumber:96;addr:postcode:39114;addr:street:Berliner Chaussee;amenity:fuel;brand:team;building:yes;fuel:adblue:yes;fuel:diesel:yes;fuel:e10:yes;fuel:lpg:yes;fuel:octane_95:yes;fuel:octane_98:yes;name:team
+way/1249115999,52.4354157 11.8244991,addr:city:Tangerhütte;addr:country:DE;addr:housenumber:3;addr:postcode:39517;addr:street:Tangermünder Chaussee;addr:suburb:Tangerhütte;amenity:fuel;brand:Raiffeisen;contact:email:ts-tangerhuette@raiffeisen-tangerhuette.de;contact:fax:+49 3935 95953738;contact:phone:+49 3935 95953718;contact:website:https://www.raiffeisen-tangerhuette.de/tankstelle_tangerhuette.php;fuel:HGV_diesel:yes;fuel:adblue:yes;fuel:biodiesel:yes;fuel:diesel:yes;fuel:lpg:yes;fuel:octane_91:yes;fuel:octane_95:yes;fuel:octane_98:yes;landuse:commercial;name:Reiffeisen-Tankstelle Tangerhütte;opening_hours:Mo-Fr 05:00-21:00; Sa 06:00-21:00; Su 07:30-21:00;operator:Raiffeisen-Warengenossenschaft Tangerhütte eG;shop:yes
+way/1251201779,52.0534576 11.5849328,leisure:park
