@@ -24,7 +24,7 @@ namespace :geography do
   task list: :environment do
     template = "%-30s\t%-10s\t%-16s\t%-30s\n"
     printf(template, 'Filename', 'Size (MB)', 'Health score', 'Last Commit Date')
-    puts '-' * 95 # Adjust the separator length based on the column width
+    puts '-' * 95
 
     csv_files.each do |file|
       file_size = (File.size(file) / (1024 * 1024).to_f).ceil
@@ -44,7 +44,7 @@ namespace :geography do
   desc 'List geographies and show how many corresponding locations are in the database'
   task stats: :environment do
     printf("%-30s\t%s\n", 'Region', 'Number of records in database')
-    puts '-' * 65 # Adjust the separator length based on the column width
+    puts '-' * 65
 
     expected_geographies = csv_files.map{ |file| File.basename(file, '.csv') }
 
@@ -64,8 +64,6 @@ namespace :geography do
 
   desc 'Print a bar chart that displays the relative size of geography files'
   task chart: :environment do
-
-
     sorted_files = csv_files.sort_by { |file| -File.size(file) }
     sorted_files.each do |file|
       megabytes = (File.size(file) / (1024 * 1024).to_f / 1.2).ceil

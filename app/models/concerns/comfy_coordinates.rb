@@ -15,9 +15,9 @@ module ComfyCoordinates
     }
 
     scope :nearest, lambda { |latitude, longitude|
-      order(Arel.sql(
-        "ST_Distance(coordinates, ST_GeographyFromText('POINT(#{longitude.to_s} #{latitude.to_s})'))"
-      )).first
+      select("#{table_name}.*, ST_Distance(coordinates, ST_GeographyFromText('POINT(#{longitude} #{latitude})')) AS distance")
+        .order('distance ASC')
+        .first
     }
 
     def debug

@@ -120,6 +120,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.bigint "monster_id"
     t.datetime "defeated_at"
     t.bigint "defeated_by_id"
+    t.string "runestone_id"
     t.index ["coordinates"], name: "index_realm_locations_on_coordinates", using: :gist
     t.index ["defeated_by_id"], name: "index_realm_locations_on_defeated_by_id"
     t.index ["monster_id"], name: "index_realm_locations_on_monster_id"
@@ -166,6 +167,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.integer "xp", default: 0
     t.integer "level", default: 1
     t.text "achievements", default: [], array: true
+    t.text "discovered_runestones", default: [], array: true
     t.text "access_token"
     t.datetime "access_token_expires_at", precision: nil
     t.datetime "created_at", null: false

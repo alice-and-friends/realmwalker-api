@@ -166,4 +166,23 @@ class UserTest < ActiveSupport::TestCase
     u.handle_death
     assert_equal 0, u.inventory_items.where(is_equipped: false).count
   end
+  test 'user discovers runestones' do
+    runestone = RunestonesHelper.first
+    u = generate_test_user
+
+    # Invalid runestone id
+    return_value = u.discover_runestone('I do not exist')
+    assert_not return_value
+    assert_empty u.discovered_runestones
+
+    # First discovery of valid runestone
+    return_value = u.discover_runestone(runestone.id)
+    assert return_value
+    assert_equal 1, u.discovered_runestones.length
+
+    # Re-discovery of the same stone
+    return_value = u.discover_runestone(runestone.id)
+    assert_not return_value
+    assert_equal 1, u.discovered_runestones.length
+  end
 end
