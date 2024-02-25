@@ -13,10 +13,10 @@ class User < ApplicationRecord
   serialize :auth0_user_data, Auth0UserData
 
   validates :auth0_user_id, presence: true, uniqueness: true
-  validate :valid_auth0_user_data
-  validate :achievements_are_valid
-  validate :access_token_expires
-  validate :must_have_valid_runestone_ids
+  validate :must_have_valid_auth0_user_data
+  validate :must_be_valid_achievements
+  validate :must_have_valid_access_token
+  validate :must_be_valid_runestone_ids
 
   # Create inventory and grant starting equipment to new players
   after_create { self.inventory = Inventory.create!(user: self) }
@@ -313,27 +313,27 @@ class User < ApplicationRecord
 
   protected
 
-  def valid_auth0_user_data
+  def must_have_valid_auth0_user_data
     errors.add(:auth0_user_data, 'is missing property sub') if auth0_user_data.sub.nil?
     errors.add(:auth0_user_data, 'is missing property given_name') if auth0_user_data.given_name.nil?
     errors.add(:auth0_user_data, 'is missing property family_name') if auth0_user_data.family_name.nil?
     # errors.add(:auth0_user_data, 'is missing property email') if auth0_user_data.email.nil?
   end
 
-  def access_token_expires
+  def must_have_valid_access_token
     errors.add(:base, 'access token without expiration date is not allowed') if access_token.present? && access_token_expires_at.nil?
   end
 
   private
 
-  def achievements_are_valid
+  def must_be_valid_achievements
     # Should have only valid types
     achievements.each do |a|
       errors.add(:tags, "contains an invalid achievement '#{a}'") unless a.in? ACHIEVEMENTS
     end
   end
 
-  def must_have_valid_runestone_ids
+  def must_be_valid_runestone_ids
     return if discovered_runestones.blank?
 
     discovered_runestones.each do |id|

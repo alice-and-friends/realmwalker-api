@@ -15,7 +15,7 @@ class RealWorldLocation < ApplicationRecord
 
   validates :type, presence: true
   validates :ext_id, uniqueness: true, allow_nil: true
-  validate :minimum_distance
+  validate :must_obey_minimum_distance
 
   before_validation :set_latitude_and_longitude!, on: :create
 
@@ -39,7 +39,7 @@ class RealWorldLocation < ApplicationRecord
     self.longitude = coordinates.longitude
   end
 
-  def minimum_distance
+  def must_obey_minimum_distance
     throw('Coordinates blank') if coordinates.blank?
 
     point = "ST_GeographyFromText('POINT(#{coordinates.longitude} #{coordinates.latitude})')"
