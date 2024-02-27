@@ -164,6 +164,7 @@ Metrics/BlockLength:
     - '**/*.rake'
     - 'spec/**/*.rb'
     - '**/*.gemspec'
+    - 'config/routes.rb'
 
 Metrics/ClassLength:
   Enabled: false
@@ -260,13 +261,20 @@ Style/BlockDelimiters:
   AllowedMethods:
     - 'debug'
 
-Style/RequireOrder:
-  Enabled: true
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/FetchEnvVar:
+  Exclude:
+    - 'config/routes.rb'
 
 Style/OptionalBooleanParameter:
   Enabled: false
 
-Style/ClassAndModuleChildren:
+Style/ParallelAssignment:
+  Enabled: false
+
+Style/RequireOrder:
   Enabled: false
 
 Rails/Output:

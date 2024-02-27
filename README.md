@@ -1,6 +1,6 @@
 # realmwalker-api
 
-Hello
+Hello.
 
 ## System dependencies
 * Ruby version as described in Gemfile
@@ -16,6 +16,16 @@ Environment variables...
 * `rake db:seed globals=yes` Creates non-geographical data such as monsters, items
 * `rake db:seed geographies=Sweden,Norway` Creates geographical data for specified regions
 * `rake db:seed geographies=all` Creates geographical data for all region (takes a long time)
+
+## Running the application
+* `rails s` Start the Rails server
+
+## Services
+Our application leverages Redis as a data store for Sidekiq, which is used for background job processing. Sidekiq-Cron is utilized to schedule recurring jobs, and Sidekiq-Web provides a web interface for monitoring and managing the job queue and scheduled jobs.
+* `redis-server` Start the Redis server
+* `bundle exec sidekiq` Start Sidekiq
+
+Access the Sidekiq Web UI at http://localhost:3000/sidekiq to monitor and manage jobs.
 
 ## Utilities
 * `rake geography:list` Shows a list of geography files and their last edited date
@@ -37,8 +47,6 @@ scope :near, lambda { |latitude, longitude, distance|
 
 ## Testing
 `rails test`
-
-## Services (job queues, cache servers, search engines, etc.)
 
 ## Deployment instructions
 ...

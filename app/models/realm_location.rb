@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class RealmLocation < ApplicationRecord
-  include ComfyCoordinates
+  include Coordinates
 
   PLAYER_VISION_RADIUS = 10_000 # meters
 
@@ -15,6 +15,8 @@ class RealmLocation < ApplicationRecord
   validates_associated :real_world_location
 
   delegate :inventory_items, to: :inventory
+
+  scope :scheduled_for_expiration, -> { where.not(expiry_job_id: nil) }
 
   scope :player_vision_radius, lambda { |geolocation|
     near(geolocation[:latitude], geolocation[:longitude], PLAYER_VISION_RADIUS)

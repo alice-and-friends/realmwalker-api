@@ -31,6 +31,9 @@ module RealmwalkerApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
+    # Configure Sidekiq as the queue adapter for Active Job
+    config.active_job.queue_adapter = :sidekiq
+
     # Olive branch lets your API users pass in and receive camelCased or dash-cased keys,
     # while your Rails app receives and produces snake_cased ones.
     # https://github.com/vigetlabs/olive_branch

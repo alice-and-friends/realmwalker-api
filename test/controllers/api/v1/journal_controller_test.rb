@@ -4,7 +4,7 @@ require 'test_helper'
 
 class Api::V1::JournalControllerTest < ActionDispatch::IntegrationTest
 
-  test 'journal reports runestone progress' do
+  test 'runestone progress in journal' do
     runestone = RunestonesHelper.first
     user = users(:jane_doe)
     user.discover_runestone(runestone.id)

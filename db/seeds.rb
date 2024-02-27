@@ -272,7 +272,7 @@ class SeedHelper
   def dungeons
     dungeons = []
     locations = RealWorldLocation.for_dungeon.where(region: @geography).pluck(:id).shuffle
-    Dungeon.min_dungeons(@geography).times do |counter|
+    Dungeon.min_active_dungeons(@geography).times do |counter|
       dungeon = Dungeon.new({
                               status: Dungeon.statuses[:active],
                               real_world_location_id: locations.pop,

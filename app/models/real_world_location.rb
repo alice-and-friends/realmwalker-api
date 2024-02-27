@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class RealWorldLocation < ApplicationRecord
-  include ComfyCoordinates
+  include Coordinates
 
   self.inheritance_column = nil
 
