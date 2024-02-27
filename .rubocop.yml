@@ -3,6 +3,7 @@ require:
   - rubocop-performance
   - rubocop-rake
   - ./lib/custom_cops/custom_validator_name.rb
+  - ./lib/custom_cops/sexy_migration.rb
 
 AllCops:
   NewCops: enable
@@ -17,12 +18,16 @@ AllCops:
   TargetRubyVersion: 2.7
   SuggestExtensions: false
 
-Style/SymbolProc:
-  Exclude:
-    - 'db/migrate/**/*'
+Custom/UsePrefixForCustomValidator:
+  Include:
+    - 'app/models/**/*'
 
-Style/Documentation:
-  Enabled: false
+Custom/UseSexyMigrationSyntax:
+  Include:
+    - 'db/migrate/*'
+
+Gemspec/DependencyVersion:
+  Enabled: true
 
 Naming/PredicateName:
   # Method define macros for dynamically generated method.
@@ -35,14 +40,8 @@ Naming/PredicateName:
 Style/AccessorGrouping:
   Enabled: true
 
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: consistent_comma
-
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: consistent_comma
-
-Style/TrailingCommaInArguments:
-  EnforcedStyleForMultiline: consistent_comma
+Style/Documentation:
+  Enabled: false
 
 Style/FormatStringToken:
   # Because we parse a lot of source codes from strings. Percent arrays
@@ -52,6 +51,19 @@ Style/FormatStringToken:
 
 Style/IpAddresses:
   Exclude:
+
+Style/SymbolProc:
+  Exclude:
+    - 'db/migrate/**/*'
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
 
 Layout/EndOfLine:
   EnforcedStyle: lf
@@ -254,7 +266,13 @@ Performance/EndWith:
 Performance/StartWith:
   SafeMultiline: false
 
-Gemspec/DependencyVersion:
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/Output:
+  Enabled: false
+
+Rails/ReversibleMigration:
   Enabled: true
 
 Style/BlockDelimiters:
@@ -275,10 +293,4 @@ Style/ParallelAssignment:
   Enabled: false
 
 Style/RequireOrder:
-  Enabled: false
-
-Rails/Output:
-  Enabled: false
-
-Rails/HasAndBelongsToMany:
   Enabled: false
