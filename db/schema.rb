@@ -120,6 +120,8 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.bigint "monster_id"
     t.datetime "defeated_at"
     t.bigint "defeated_by_id"
+    t.string "expiry_job_id"
+    t.datetime "expires_at"
     t.string "runestone_id"
     t.index ["coordinates"], name: "index_realm_locations_on_coordinates", using: :gist
     t.index ["defeated_by_id"], name: "index_realm_locations_on_defeated_by_id"

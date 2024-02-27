@@ -37,3 +37,9 @@
 
 # Open Street Maps data
 **/*.pbf
+
+# Redis
+dump.rdb
+
+# Environment variables
+.env

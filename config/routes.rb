@@ -6,6 +6,17 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
+  sidekiq_user = ENV['SIDEKIQ_WEB_USER']
+  sidekiq_password = ENV['SIDEKIQ_WEB_PASSWORD']
+  if sidekiq_user && sidekiq_password
+    Sidekiq::Web.use ActionDispatch::Cookies
+    Sidekiq::Web.use ActionDispatch::Session::CookieStore, key: '_interslice_session'
+    Sidekiq::Web.use(Rack::Auth::Basic) do |user, password|
+      [user, password] == [sidekiq_user, sidekiq_password]
+    end
+    mount Sidekiq::Web => '/sidekiq'
+  end
+
   namespace :api do
     namespace :v1 do
 

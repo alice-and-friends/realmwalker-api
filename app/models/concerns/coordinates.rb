@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module ComfyCoordinates
+module Coordinates
   extend ActiveSupport::Concern
   class_methods do
     def point_factory
@@ -15,7 +15,7 @@ module ComfyCoordinates
     }
 
     scope :nearest, lambda { |latitude, longitude|
-      select("#{table_name}.*, ST_Distance(coordinates, ST_GeographyFromText('POINT(#{longitude} #{latitude})')) AS distance")
+      select("#{table_name}.*, ST_Distance(coordinates, 'POINT(#{longitude} #{latitude})') AS distance")
         .order('distance ASC')
         .first
     }

@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 class Dungeon < RealmLocation
+  ACTIVE_DURATION = 2.days
+  DEFEATED_DURATION = 2.days
+  EXPIRED_DURATION = 2.days
+  EXPIRATION_TIMER_LENGTH = 20.minutes
+
   belongs_to :monster
   belongs_to :defeated_by, class_name: 'User', optional: true
   has_many :spooks, dependent: :destroy
@@ -9,6 +14,7 @@ class Dungeon < RealmLocation
   enum status: { active: 'active', defeated: 'defeated', expired: 'expired' }
 
   validates :level, :status, presence: true
+  validate :must_have_defeated_at
 
   before_validation :set_active_status, on: :create
   before_validation :set_real_world_location!, on: :create
@@ -28,7 +34,7 @@ class Dungeon < RealmLocation
     Rails.logger.debug "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
-  def self.min_dungeons(region = '')
+  def self.min_active_dungeons(region = '')
     return 10 if Rails.env.test?
 
     query = RealWorldLocation.for_dungeon
@@ -180,18 +186,21 @@ class Dungeon < RealmLocation
   end
 
   def defeated_by!(user)
-    defeated!
-    self.defeated_at = Time.current
-    self.defeated_by = user
-    save!
+    cancel_expiration!
+    update!(
+      status: Dungeon.statuses[:defeated],
+      defeated_by: user,
+      defeated_at: Time.current,
+    )
   end
 
   def spook_nearby_shopkeepers!
     return unless active? # No one should be spooked by an inactive dungeon
 
     nearby_shopkeepers = Npc.shopkeepers.joins(:real_world_location).where(
-      "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{spook_distance})",
+      'ST_DWithin(real_world_locations.coordinates::geography, :coordinates, :distance)',
       coordinates: coordinates,
+      distance: spook_distance,
     )
 
     nearby_shopkeepers.each do |npc|
@@ -201,18 +210,35 @@ class Dungeon < RealmLocation
     Rails.logger.debug { "😱 Spooked #{nearby_shopkeepers.size} shopkeepers" }
   end
 
-  def remove_spooks!
-    return if active?
+  def schedule_expiration!
+    throw 'Already scheduled' if expiry_job_id
 
-    c = spooks.size
-    spooks.destroy_all
-    Rails.logger.debug { "❌ Removed #{c} spooks" }
+    job_id = DungeonExpirationWorker.perform_in(Dungeon::EXPIRATION_TIMER_LENGTH, id)
+    update!(expiry_job_id: job_id, expires_at: Dungeon::EXPIRATION_TIMER_LENGTH.from_now)
+  end
+
+  def cancel_expiration!
+    return unless expiry_job_id
+
+    Sidekiq::ScheduledSet.new.find_job(expiry_job_id)&.delete
+    update!(expiry_job_id: nil, expires_at: nil)
   end
 
   private
 
+  def must_have_defeated_at
+    errors.add(:defeated_at, 'can\'t be blank') if defeated? && defeated_at.nil?
+  end
+
+  def remove_spooks!
+    return if active?
+
+    destroyed = spooks.destroy_all
+    Rails.logger.debug { "❌ Removed #{destroyed.count} spooks" }
+  end
+
   def set_active_status
-    self.status = 'active' if status.nil?
+    self.status = Dungeon.statuses[:active] if status.nil?
   end
 
   def set_real_world_location!
@@ -223,11 +249,11 @@ class Dungeon < RealmLocation
   end
 
   def expire_nearby_dungeons!
-    radius = 500
     Dungeon.joins(:real_world_location)
            .where(
-             "ST_DWithin(real_world_locations.coordinates::geography, :coordinates, #{radius})",
+             'ST_DWithin(real_world_locations.coordinates::geography, :coordinates, :radius)',
              coordinates: coordinates,
+             radius: 500,
            )
            .where.not(id: id)
            .find_each(&:expired!)

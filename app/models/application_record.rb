@@ -2,4 +2,7 @@
 
 class ApplicationRecord < ActiveRecord::Base
   primary_abstract_class
+
+  scope :oldest, -> { order('created_at ASC').first }
+  scope :newest, -> { order('created_at DESC').first }
 end

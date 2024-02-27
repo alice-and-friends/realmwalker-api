@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-namespace :ux do
+namespace :realm do
   desc 'Shows runestone info'
   task runestones: :environment do
     template = "%-30s\t%-30s\n"
@@ -27,6 +27,8 @@ namespace :ux do
       longest_distance = 0
       RunestonesHelper.all.each do |runestone|
         nearest = Runestone.where(runestone_id: runestone.id).nearest(origin[:coordinates].latitude, origin[:coordinates].longitude)
+        break if nearest.blank?
+
         longest_distance = nearest.distance if nearest.distance > longest_distance
       end
       puts "Starting from #{origin[:name]} in #{origin[:region]}, all runestones can be found within a radius of #{(longest_distance / 1000).ceil} kilometers."

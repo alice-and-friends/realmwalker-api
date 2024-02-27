@@ -28,6 +28,8 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       t.references :monster
       t.column :defeated_at, :datetime
       t.references :defeated_by, foreign_key: { to_table: :users }
+      t.string :expiry_job_id
+      t.datetime :expires_at
 
       # RunestonesHelper
       t.string :runestone_id
