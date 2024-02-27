@@ -29,7 +29,6 @@ class Dungeon < RealmLocation
     expire_nearby_dungeons! if boss?
     spook_nearby_shopkeepers!
   end
-  after_update :remove_spooks!
   after_destroy do |d|
     Rails.logger.debug "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
@@ -186,12 +185,15 @@ class Dungeon < RealmLocation
   end
 
   def defeated_by!(user)
-    cancel_expiration!
-    update!(
-      status: Dungeon.statuses[:defeated],
-      defeated_by: user,
-      defeated_at: Time.current,
-    )
+    Dungeon.transaction do
+      cancel_expiration!
+      update!(
+        status: Dungeon.statuses[:defeated],
+        defeated_by: user,
+        defeated_at: Time.current,
+      )
+      remove_spooks!
+    end
   end
 
   def spook_nearby_shopkeepers!
