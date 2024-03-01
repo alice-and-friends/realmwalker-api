@@ -35,7 +35,7 @@ class Api::V1::BaseController < Api::V1::ApiController
   def find_base
     # render status: :internal_server_error, json: { error: 'Missing base_id parameter' } and return if params[:base_id].blank?
 
-    @base = Base.find_by(user_id: @current_user.id)
+    @base = Base.find_by(owner: @current_user)
     render status: :not_found if @base.nil?
   end
 end

@@ -9,7 +9,7 @@ class Inventory < ApplicationRecord
   validates :gold, numericality: { greater_than_or_equal_to: 0 }
 
   def owner
-    realm_location.present? ? realm_location.user : user
+    realm_location.present? ? realm_location.owner : user
   end
 
   private

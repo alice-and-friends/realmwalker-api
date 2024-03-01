@@ -12,4 +12,13 @@ class Api::V1::BaseControllerTest < ActionDispatch::IntegrationTest
   #   post '/api/v1/base', headers: generate_headers
   #   assert_response :forbidden
   # end
+  test 'should get base' do
+    users(:jane_doe).construct_base_at(generate_test_user_location)
+    get '/api/v1/base', headers: generate_headers
+    assert_response :ok
+  end
+  test 'should not find base' do
+    get '/api/v1/base', headers: generate_headers
+    assert_response :not_found
+  end
 end
