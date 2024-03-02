@@ -34,7 +34,7 @@ class ActivePlayerArea
       missing = layer[:target] - dungeons_in_range
       next if missing <= 0
 
-      potential_locations = RealWorldLocation.free.near(geolocation[:latitude], geolocation[:longitude], layer[:distance]).pluck(:id)
+      potential_locations = RealWorldLocation.available.near(geolocation[:latitude], geolocation[:longitude], layer[:distance]).pluck(:id)
       next if potential_locations.empty?
 
       missing.times do

@@ -12,7 +12,7 @@ class NpcTest < ActiveSupport::TestCase
       role: 'shopkeeper',
       shop_type: Npc::SHOP_TYPES.first,
       trade_offer_lists: [TradeOfferList.create],
-      real_world_location: RealWorldLocation.free.first,
+      real_world_location: RealWorldLocation.available.first,
     )
     assert_operator Npc.count, :>, initial_count
   end
@@ -21,7 +21,7 @@ class NpcTest < ActiveSupport::TestCase
       role: 'shopkeeper',
       shop_type: 'invalid shop type',
       trade_offer_lists: [TradeOfferList.create],
-      real_world_location: RealWorldLocation.free.first,
+      real_world_location: RealWorldLocation.available.first,
     )
     assert_not invalid_npc.valid?
   end
@@ -30,7 +30,7 @@ class NpcTest < ActiveSupport::TestCase
       role: 'shopkeeper',
       shop_type: Npc::SHOP_TYPES.first,
       trade_offer_lists: [TradeOfferList.create],
-      real_world_location: RealWorldLocation.free.first,
+      real_world_location: RealWorldLocation.available.first,
     )
     assert_not_empty new_npc.gender
     assert_not_empty new_npc.name

@@ -4,6 +4,7 @@ require:
   - rubocop-rake
   - ./lib/custom_cops/custom_validator_name.rb
   - ./lib/custom_cops/sexy_migration.rb
+  - ./lib/custom_cops/variable_name.rb
 
 AllCops:
   NewCops: enable
@@ -25,6 +26,9 @@ Custom/UsePrefixForCustomValidator:
 Custom/UseSexyMigrationSyntax:
   Include:
     - 'db/migrate/*'
+
+Custom/VariableName:
+  Enabled: true
 
 Gemspec/DependencyVersion:
   Enabled: true
