@@ -6,8 +6,8 @@ class Api::V1::RealmLocationsController < Api::V1::ApiController
     ActivePlayerArea.activate(@current_user_geolocation)
 
     # Get common locations (visible to all players)
-    @locations = RealmLocation.where.not(type: 'Npc').player_vision_radius(@current_user_geolocation) +
-                 Npc.player_vision_radius(@current_user_geolocation).with_spook_status
+    @locations = Npc.player_vision_radius(@current_user_geolocation).with_spook_status +
+                 RealmLocation.where.not(type: 'Npc').where.not(status: Dungeon.statuses[:expired]).player_vision_radius(@current_user_geolocation)
 
     # Get personal locations (visible to this player)
     @locations << @current_user.base if @current_user.base.present?

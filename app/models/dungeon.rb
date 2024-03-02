@@ -150,8 +150,7 @@ class Dungeon < RealmLocation
     user_won = (roll <= prediction[:chance_of_success])
     Rails.logger.debug { "⚔️ #{user.name} rolled a #{roll} and #{user_won ? 'won' : 'lost'}" }
     if user_won
-      defeated_by! user # Mark dungeon as defeated
-      remove_spooks! # Unspook nearby npcs
+      defeated_by! user # Update dungeon as defeated
 
       xp_level_change = user.gains_or_loses_xp(monster.xp)
 
@@ -224,6 +223,15 @@ class Dungeon < RealmLocation
 
     Sidekiq::ScheduledSet.new.find_job(expiry_job_id)&.delete
     update!(expiry_job_id: nil, expires_at: nil)
+  end
+
+  def defeated!
+    throw('Use defeated_by! instead')
+  end
+
+  def expired!
+    update!(status: Dungeon.statuses[:expired])
+    remove_spooks!
   end
 
   private

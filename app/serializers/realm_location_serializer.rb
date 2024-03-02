@@ -1,14 +1,16 @@
 # frozen_string_literal: true
 
 class RealmLocationSerializer < ActiveModel::Serializer
-  attributes :id, :type, :status, :name, :coordinates
+  attributes :id, :type, :status, :name, :coordinates, :expires_at
   attribute :monster, if: :dungeon?
   attribute :npc_details, if: :npc?
 
   def coordinates
     {
-      lat: object.coordinates.lat,
-      lon: object.coordinates.lon,
+      latitude: object.coordinates.latitude,
+      longitude: object.coordinates.longitude,
+      lat: object.coordinates.latitude, # DEPRECATED
+      lon: object.coordinates.longitude, # DEPRECATED
     }
   end
 
