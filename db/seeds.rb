@@ -276,7 +276,7 @@ class SeedHelper
       dungeon = Dungeon.new({
                               status: Dungeon.statuses[:active],
                               real_world_location_id: locations.pop,
-                              created_at: counter.hours.ago,
+                              created_at: (counter.hours + rand(0..59).minutes).ago,
                             })
       dungeons << dungeon
     end

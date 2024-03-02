@@ -27,10 +27,10 @@ Rails.application.routes.draw do
       get 'base', to: 'base#show', as: :show_base
       post 'base', to: 'base#create', as: :create_base
       get 'journal/runestones', to: 'journal#runestones', as: :runestones
-
       resources :inventory_items, only: [:update]
 
       # World info
+      get 'home', to: 'home#home', as: :home
       resources :realm_locations, only: [:index]
 
       # Interactive locations
