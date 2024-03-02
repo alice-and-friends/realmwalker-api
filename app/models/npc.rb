@@ -89,7 +89,7 @@ class Npc < RealmLocation
   private
 
   def set_real_world_location!
-    self.real_world_location = RealWorldLocation.free.first if real_world_location_id.nil?
+    self.real_world_location = RealWorldLocation.available.first if real_world_location_id.nil?
   end
 
   def assign_species!

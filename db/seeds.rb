@@ -82,13 +82,13 @@ class SeedHelper
     csv_text = Rails.root.join('lib', 'seeds', 'geographies', filename).read
     csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
     csv.each do |row|
-      lat, lon = row['coordinates'].split
+      latitude, longitude = row['coordinates'].split
       location = RealWorldLocation.find_or_initialize_by(ext_id: row['ext_id'])
       location.assign_attributes(
         type: RealWorldLocation.types[:unassigned],
-        coordinates: "POINT(#{lon} #{lat})",
-        latitude: lat,
-        longitude: lon,
+        coordinates: "POINT(#{longitude} #{latitude})",
+        latitude: latitude,
+        longitude: longitude,
         tags: parse_tags(row['tags']),
         source_file: filename,
         region: @geography,
@@ -233,7 +233,7 @@ class SeedHelper
     puts '⚠️ Error: armorer_offer_list should not be blank' and return 0 if armorer_offer_list.nil?
 
     npcs = []
-    RealWorldLocation.where(type: RealWorldLocation.types[:shop], region: @geography).find_each do |rwl|
+    RealWorldLocation.for_shop.where(region: @geography).find_each do |rwl|
       random_digit = rwl.deterministic_rand(100)
       npc = Npc.new({
                       role: 'shopkeeper',
@@ -259,7 +259,7 @@ class SeedHelper
 
   def ley_lines
     ley_lines = []
-    RealWorldLocation.where(type: RealWorldLocation.types[:ley_line], region: @geography).find_each do |rwl|
+    RealWorldLocation.for_ley_line.where(region: @geography).find_each do |rwl|
       ley_line = LeyLine.new({
                                real_world_location_id: rwl.id,
                                coordinates: rwl.coordinates,
@@ -272,12 +272,13 @@ class SeedHelper
   def dungeons
     dungeons = []
     locations = RealWorldLocation.for_dungeon.where(region: @geography).pluck(:id).shuffle
-    Dungeon.min_active_dungeons(@geography).times do |counter|
-      dungeon = Dungeon.new({
-                              status: Dungeon.statuses[:active],
-                              real_world_location_id: locations.pop,
-                              created_at: (counter.hours + rand(0..59).minutes).ago,
-                            })
+    dungeon_target_count = Dungeon.min_active_dungeons(@geography)
+    dungeon_target_count.times do |counter|
+      dungeon = Dungeon.new(
+        status: Dungeon.statuses[:active],
+        real_world_location_id: locations.pop,
+        created_at: (counter.hours + rand(0..59).minutes).ago,
+      )
       dungeons << dungeon
     end
     import(Dungeon, dungeons, pre_validate: false, validate: true)
@@ -287,7 +288,7 @@ class SeedHelper
     runestones = []
     templates = RunestonesHelper.all
 
-    RealWorldLocation.where(type: RealWorldLocation.types[:runestone], region: @geography).find_each do |rwl|
+    RealWorldLocation.for_runestone.where(region: @geography).find_each do |rwl|
       random_index = rwl.deterministic_rand(templates.length)
       template = templates[random_index]
 
