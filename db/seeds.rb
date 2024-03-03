@@ -59,7 +59,7 @@ class SeedHelper
           seed(:real_world_locations)
           seed(:ley_lines)
           seed(:shops)
-          seed(:dungeons)
+          # seed(:dungeons)
           seed(:runestones)
         end
         puts "🙀 #{Spook.count} spooks in effect."
@@ -233,7 +233,7 @@ class SeedHelper
     puts '⚠️ Error: armorer_offer_list should not be blank' and return 0 if armorer_offer_list.nil?
 
     npcs = []
-    RealWorldLocation.for_shop.where(region: @geography).find_each do |rwl|
+    RealWorldLocation.available.for_shop.where(region: @geography).find_each do |rwl|
       random_digit = rwl.deterministic_rand(100)
       npc = Npc.new({
                       role: 'shopkeeper',
@@ -259,7 +259,7 @@ class SeedHelper
 
   def ley_lines
     ley_lines = []
-    RealWorldLocation.for_ley_line.where(region: @geography).find_each do |rwl|
+    RealWorldLocation.available.for_ley_line.where(region: @geography).find_each do |rwl|
       ley_line = LeyLine.new({
                                real_world_location_id: rwl.id,
                                coordinates: rwl.coordinates,
@@ -271,7 +271,7 @@ class SeedHelper
 
   def dungeons
     dungeons = []
-    locations = RealWorldLocation.for_dungeon.where(region: @geography).pluck(:id).shuffle
+    locations = RealWorldLocation.available.for_dungeon.where(region: @geography).pluck(:id).shuffle
     dungeon_target_count = Dungeon.min_active_dungeons(@geography)
     dungeon_target_count.times do |counter|
       dungeon = Dungeon.new(
@@ -288,7 +288,7 @@ class SeedHelper
     runestones = []
     templates = RunestonesHelper.all
 
-    RealWorldLocation.for_runestone.where(region: @geography).find_each do |rwl|
+    RealWorldLocation.available.for_runestone.where(region: @geography).find_each do |rwl|
       random_index = rwl.deterministic_rand(templates.length)
       template = templates[random_index]
 

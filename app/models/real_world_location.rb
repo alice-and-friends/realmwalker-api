@@ -20,10 +20,10 @@ class RealWorldLocation < ApplicationRecord
   before_validation :set_latitude_and_longitude!, on: :create
 
   scope :available, -> { where.not(id: RealmLocation.select(:real_world_location_id)) }
-  scope :for_dungeon, -> { available.where(type: RealWorldLocation.types[:unassigned]) }
-  scope :for_ley_line, -> { available.where(type: RealWorldLocation.types[:ley_line]) }
-  scope :for_shop, -> { available.where(type: RealWorldLocation.types[:shop]) }
-  scope :for_runestone, -> { available.where(type: RealWorldLocation.types[:runestone]) }
+  scope :for_dungeon, -> { where(type: RealWorldLocation.types[:unassigned]) }
+  scope :for_ley_line, -> { where(type: RealWorldLocation.types[:ley_line]) }
+  scope :for_shop, -> { where(type: RealWorldLocation.types[:shop]) }
+  scope :for_runestone, -> { where(type: RealWorldLocation.types[:runestone]) }
 
   def deterministic_rand(param)
     seed = Digest::SHA256.hexdigest("#{type}@#{ext_id}").to_i(16)

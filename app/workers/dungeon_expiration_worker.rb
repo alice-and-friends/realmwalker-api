@@ -5,5 +5,7 @@ class DungeonExpirationWorker
 
   def perform(dungeon_id)
     Dungeon.find(dungeon_id).expired!
+
+    puts '🟠 Expired 1 dungeons.'
   end
 end
