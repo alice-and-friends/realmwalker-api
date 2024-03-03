@@ -7,9 +7,11 @@ class Dungeon < RealmLocation
   EXPIRATION_TIMER_LENGTH = 10.minutes # How much notice players get before dungeons are expired
 
   belongs_to :monster
-  belongs_to :defeated_by, class_name: 'User', optional: true
+  has_many :conquests, dependent: :destroy
+  has_many :users, through: :conquests
   has_many :spooks, dependent: :destroy
   has_many :spooked_npcs, class_name: 'Npc', through: :spooks
+  alias_attribute :defeated_by, :users
 
   enum status: { active: 'active', defeated: 'defeated', expired: 'expired' }
 
@@ -186,11 +188,10 @@ class Dungeon < RealmLocation
   def defeated_by!(user)
     Dungeon.transaction do
       cancel_expiration!
-      update!(
-        status: Dungeon.statuses[:defeated],
-        defeated_by: user,
-        defeated_at: Time.current,
-      )
+      defeated_by << user
+      self.status = Dungeon.statuses[:defeated]
+      self.defeated_at = Time.current if defeated_at.nil? # defeated_at should always be the FIRST time a dungeon was defeated
+      save!
       remove_spooks!
     end
   end

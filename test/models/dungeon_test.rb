@@ -65,4 +65,15 @@ class DungeonTest < ActiveSupport::TestCase
       end
     end
   end
+  test 'two players can defeat the same dungeon' do
+    dungeon = Dungeon.create!(level: 1)
+    users = [
+      generate_test_user,
+      generate_test_user,
+    ]
+    users.each do |user|
+      dungeon.battle_as(user)
+    end
+    assert_equal users.pluck(:id), dungeon.defeated_by.pluck(:id)
+  end
 end

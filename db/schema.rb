@@ -16,6 +16,15 @@ ActiveRecord::Schema[7.0].define(version: 601) do
   enable_extension "plpgsql"
   enable_extension "postgis"
 
+  create_table "conquests", force: :cascade do |t|
+    t.bigint "dungeon_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["dungeon_id"], name: "index_conquests_on_dungeon_id"
+    t.index ["user_id"], name: "index_conquests_on_user_id"
+  end
+
   create_table "inventories", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "realm_location_id"
@@ -119,12 +128,10 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.integer "level"
     t.bigint "monster_id"
     t.datetime "defeated_at"
-    t.bigint "defeated_by_id"
     t.string "expiry_job_id"
     t.datetime "expires_at"
     t.string "runestone_id"
     t.index ["coordinates"], name: "index_realm_locations_on_coordinates", using: :gist
-    t.index ["defeated_by_id"], name: "index_realm_locations_on_defeated_by_id"
     t.index ["monster_id"], name: "index_realm_locations_on_monster_id"
     t.index ["owner_id"], name: "index_realm_locations_on_owner_id", unique: true
     t.index ["portrait_id"], name: "index_realm_locations_on_portrait_id"
@@ -177,10 +184,11 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.index ["auth0_user_id"], name: "index_users_on_auth0_user_id", unique: true
   end
 
+  add_foreign_key "conquests", "realm_locations", column: "dungeon_id"
+  add_foreign_key "conquests", "users"
   add_foreign_key "inventory_items", "inventories"
   add_foreign_key "inventory_items", "items"
   add_foreign_key "realm_locations", "portraits"
-  add_foreign_key "realm_locations", "users", column: "defeated_by_id"
   add_foreign_key "realm_locations", "users", column: "owner_id"
   add_foreign_key "spooks", "realm_locations", column: "dungeon_id"
   add_foreign_key "spooks", "realm_locations", column: "npc_id"
