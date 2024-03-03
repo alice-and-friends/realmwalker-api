@@ -3,6 +3,7 @@
 class Api::V1::TradeOffersController < Api::V1::ApiController
   before_action :find_npc
   before_action :find_trade_offer, only: %i[buy sell]
+  before_action :location_interacted, only: %i[buy sell]
 
   def buy
     render status: :internal_server_error and return if @current_user.nil?
@@ -40,6 +41,10 @@ class Api::V1::TradeOffersController < Api::V1::ApiController
   end
 
   private
+
+  def location_interacted
+    @npc.real_world_location.interacted!
+  end
 
   def find_npc
     render status: :internal_server_error, json: { error: 'Missing npc_id parameter' } and return if params[:npc_id].blank?

@@ -13,6 +13,8 @@ class RealWorldLocation < ApplicationRecord
     user_owned: 'user_owned',
   }
 
+  enum relevance_grade: { unseen: 0, seen: 1, inspected: 2, interacted: 3 }
+
   validates :type, presence: true
   validates :ext_id, uniqueness: true, allow_nil: true
   validate :must_obey_minimum_distance
@@ -29,6 +31,16 @@ class RealWorldLocation < ApplicationRecord
     seed = Digest::SHA256.hexdigest("#{type}@#{ext_id}").to_i(16)
     prng = Random.new(seed)
     prng.rand(param)
+  end
+
+  def relevance_grade=(grade)
+    throw('Not a valid grade') unless grade.in? RealWorldLocation.relevance_grades.values
+
+    LocationRelevanceWorker.perform_async([id], grade)
+  end
+
+  def inspected!
+    self.relevance_grade = RealWorldLocation.relevance_grades[:inspected]
   end
 
   private

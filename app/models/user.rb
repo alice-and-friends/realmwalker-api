@@ -280,6 +280,7 @@ class User < ApplicationRecord
       type: RealWorldLocation.types[:user_owned],
       coordinates: point,
       region: nearest_real_world_location.region,
+      relevance_grade: RealWorldLocation.relevance_grades[:interacted],
     )
     raise('Failed to validate real world location') unless base_real_world_location.valid?
 

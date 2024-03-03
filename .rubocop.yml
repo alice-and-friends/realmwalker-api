@@ -220,6 +220,9 @@ Naming/InclusiveLanguage:
     offence:
       Suggestions:
         - offense
+    relevancy:
+      Suggestions:
+        - relevance
   Exclude:
     - lib/rubocop/cop/naming/inclusive_language.rb
     - lib/rubocop/cop/mixin/auto_corrector.rb
