@@ -302,14 +302,18 @@ class User < ApplicationRecord
 
   # @return [Boolean] whether this runestone counts as a new discovery
   def discover_runestone(id)
-    return false unless RunestonesHelper.exists? id # The runestone id is invalid TODO: Log this as an error
+    unless RunestonesHelper.exists? id
+      Rails.logger.error("User attempted to discover runestone id #{id}, which is not valid.")
+      return false
+    end
+
     return false if id.in? discovered_runestones # The runestone has already been previously discovered
 
-    discovered_runestones << id
+    discovered_runestones << id # Add to the user's list of discovered runestones
     return true if save
 
-    reload
-    false
+    reload # Save failed, so make sure we reset any changes to avoid confusing the controller
+    false # Since we failed the save, it doesn't count as a new discovery
   end
 
   protected
