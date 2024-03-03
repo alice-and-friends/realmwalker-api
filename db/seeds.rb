@@ -59,7 +59,7 @@ class SeedHelper
           seed(:real_world_locations)
           seed(:ley_lines)
           seed(:shops)
-          # seed(:dungeons)
+          seed(:dungeons)
           seed(:runestones)
         end
         puts "🙀 #{Spook.count} spooks in effect."
@@ -272,7 +272,7 @@ class SeedHelper
   def dungeons
     dungeons = []
     locations = RealWorldLocation.available.for_dungeon.where(region: @geography).pluck(:id).shuffle
-    dungeon_target_count = Dungeon.min_active_dungeons(@geography)
+    dungeon_target_count = 10 # Dungeon.min_active_dungeons(@geography)
     dungeon_target_count.times do |counter|
       dungeon = Dungeon.new(
         status: Dungeon.statuses[:active],

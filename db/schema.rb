@@ -93,7 +93,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.float "longitude", null: false
     t.jsonb "tags"
     t.string "source_file"
-    t.integer "relevance", default: 0, null: false
+    t.integer "relevance_grade", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["coordinates"], name: "index_real_world_locations_on_coordinates", using: :gist

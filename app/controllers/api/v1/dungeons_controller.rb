@@ -2,7 +2,9 @@
 
 class Api::V1::DungeonsController < Api::V1::ApiController
   before_action :find_dungeon
+  before_action :location_inspected, only: %i[show]
   before_action :must_not_be_expired
+  before_action :location_interacted, only: %i[analyze battle]
   before_action :must_not_be_defeated, only: %i[analyze battle]
 
   def show
@@ -24,9 +26,15 @@ class Api::V1::DungeonsController < Api::V1::ApiController
   def find_dungeon
     dungeon_id = params[:action] == 'show' ? params[:id] : params[:dungeon_id]
     @dungeon = Dungeon.find(dungeon_id)
-    return if @dungeon.present?
+    render status: :not_found if @dungeon.nil?
+  end
 
-    render status: :not_found
+  def location_inspected
+    @dungeon.real_world_location.inspected!
+  end
+
+  def location_interacted
+    @dungeon.real_world_location.interacted!
   end
 
   def must_not_be_expired

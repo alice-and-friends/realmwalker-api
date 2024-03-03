@@ -12,6 +12,12 @@ class Api::V1::RealmLocationsController < Api::V1::ApiController
     # Get personal locations (visible to this player)
     @locations << @current_user.base if @current_user.base.present?
 
+    # Mark locations as seen
+    LocationRelevanceWorker.perform_async(
+      @locations.pluck(:real_world_location_id),
+      RealWorldLocation.relevance_grades[:seen],
+    )
+
     render json: @locations, each_serializer: RealmLocationSerializer
   end
 end
