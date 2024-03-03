@@ -223,6 +223,9 @@ Naming/InclusiveLanguage:
     relevancy:
       Suggestions:
         - relevance
+    'rune stone':
+      Suggestions:
+        - runestone
   Exclude:
     - lib/rubocop/cop/naming/inclusive_language.rb
     - lib/rubocop/cop/mixin/auto_corrector.rb

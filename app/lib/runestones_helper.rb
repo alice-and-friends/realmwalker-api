@@ -119,7 +119,7 @@ RunestonesHelper.add(
   'forest',
   'Runestone of the Forest',
 'Unknown',
-  'This runestone stands as a testament to the boundless grace of the forest, the heart of nature\'s untamed splendor. In its shadow, trees tower like ancient sentinels, their leaves whispering the secrets of the wild. Beneath their canopy, a symphony of life plays out in endless cycles of growth and renewal. Here, in the verdant embrace of the woods, one finds the essence of life itself, intertwined roots and branches forming a sanctuary of tranquility and strength. Let this stone remind all who pass by of the forest\'s enduring beauty, a monument to the interwoven tapestry of life that flourishes beneath the watchful gaze of the green.',
+  'This stone stands as a testament to the boundless grace of the forest, the heart of nature\'s untamed splendor. In its shadow, trees tower like ancient sentinels, their leaves whispering the secrets of the wild. Beneath their canopy, a symphony of life plays out in endless cycles of growth and renewal. Here, in the verdant embrace of the woods, one finds the essence of life itself, intertwined roots and branches forming a sanctuary of tranquility and strength. Let this stone remind all who pass by of the forest\'s enduring beauty, a monument to the interwoven tapestry of life that flourishes beneath the watchful gaze of the green.',
 )
 RunestonesHelper.add(
   'forgotten_lore',
@@ -161,7 +161,7 @@ RunestonesHelper.add(
   'seven_days_of_fire',
   'Runestone of the Seven Days of Fire',
   'Unknown',
-  'This runestone stands in solemn tribute to the souls lost during the Seven Days of Fire, when the world was engulfed by an inferno beyond imagination. Skies alight with sorrow, lands rendered barren in mourning, and seas that wept in steam – all bear witness to the loss endured. It was not merely the earth that was scorched, but the very fabric of life itself. We inscribe their memory upon this stone, not just as a record of devastation, but as a homage to the resilience of spirit and the hope that blossoms even in the heart of despair. May their legacy guide us in forging a world where such a calamity is never revisited.',
+  'This stone stands in solemn tribute to the souls lost during the Seven Days of Fire, when the world was engulfed by an inferno beyond imagination. Skies alight with sorrow, lands rendered barren in mourning, and seas that wept in steam – all bear witness to the loss endured. It was not merely the earth that was scorched, but the very fabric of life itself. We inscribe their memory upon this stone, not just as a record of devastation, but as a homage to the resilience of spirit and the hope that blossoms even in the heart of despair. May their legacy guide us in forging a world where such a calamity is never revisited.',
 )
 RunestonesHelper.add(
   'starborne',

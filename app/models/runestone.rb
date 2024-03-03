@@ -7,7 +7,7 @@ class Runestone < RealmLocation
   before_validation :set_region_and_coordinates!, on: :create
 
   def author
-    RunestonesHelper.find(runestone_id).text
+    RunestonesHelper.find(runestone_id).author
   end
 
   def text

@@ -34,6 +34,7 @@ Rails.application.routes.draw do
       resources :realm_locations, only: [:index]
 
       # Interactive locations
+      resources :runestones, only: [:show]
       resources :npcs, only: [:show] do
         resources :trade_offers, only: [] do
           post 'buy', to: 'trade_offers#buy', as: :buy
