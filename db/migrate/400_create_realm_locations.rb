@@ -26,7 +26,6 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       t.integer :level
       t.references :monster
       t.datetime :defeated_at
-      t.references :defeated_by, foreign_key: { to_table: :users }
       t.string :expiry_job_id
       t.datetime :expires_at
 
@@ -36,5 +35,13 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
 
     # Coordinates GIST index
     add_index :realm_locations, :coordinates, using: :gist
+
+    # Use this table to track which users defeated which dungeons
+    create_table :conquests do |t|
+      t.references :dungeon, null: false, foreign_key: { to_table: :realm_locations }
+      t.references :user, null: false, foreign_key: { to_table: :users }
+
+      t.timestamps
+    end
   end
 end

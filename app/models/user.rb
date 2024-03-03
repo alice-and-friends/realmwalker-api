@@ -8,7 +8,8 @@ class User < ApplicationRecord
 
   has_one :inventory, dependent: :destroy
   has_one :base, inverse_of: :owner, foreign_key: 'owner_id', dependent: :destroy
-  has_many :dungeons, inverse_of: :defeated_by, foreign_key: 'defeated_by_id', dependent: :nullify
+  has_many :conquests, dependent: :destroy
+  has_many :dungeons, through: :conquests
 
   serialize :auth0_user_data, Auth0UserData
 
