@@ -4,6 +4,8 @@ class DungeonDestroyWorker
   include Sidekiq::Job
 
   def perform
-    Dungeon.expired.where('updated_at < ?', Dungeon::EXPIRED_DURATION.ago).destroy_all
+    destroyed_dungeons = Dungeon.expired.where('expires_at < ?', Dungeon::EXPIRED_DURATION.ago).destroy_all
+
+    puts "❌ Destroyed #{destroyed_dungeons.count} dungeons."
   end
 end

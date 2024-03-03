@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 class Dungeon < RealmLocation
-  ACTIVE_DURATION = 2.days
-  DEFEATED_DURATION = 2.days
-  EXPIRED_DURATION = 2.days
-  EXPIRATION_TIMER_LENGTH = 20.minutes
+  ACTIVE_DURATION = 2.days # How long dungeons stay active
+  DEFEATED_DURATION = 2.days # How long defeated dungeons appear on map
+  EXPIRED_DURATION = 1.day # How long expired dungeons are kept in the database
+  EXPIRATION_TIMER_LENGTH = 10.minutes # How much notice players get before dungeons are expired
 
   belongs_to :monster
   belongs_to :defeated_by, class_name: 'User', optional: true
@@ -255,7 +255,7 @@ class Dungeon < RealmLocation
     return if real_world_location_id.present?
 
     occupied = Dungeon.select(:real_world_location_id)
-    self.real_world_location = RealWorldLocation.for_dungeon.where.not(id: occupied).first
+    self.real_world_location = RealWorldLocation.available.for_dungeon.where.not(id: occupied).first
   end
 
   def expire_nearby_dungeons!
