@@ -3,8 +3,8 @@
 require 'test_helper'
 
 class Api::V1::DungeonsControllerTest < ActionDispatch::IntegrationTest
-  test 'should get dungeon' do
-    d = Dungeon.first
+  test 'should get active dungeon' do
+    d = Dungeon.active.first
     get "/api/v1/dungeons/#{d.id}", headers: generate_headers
     assert_equal 200, status
     assert_equal d.id, response.parsed_body['id']
@@ -29,5 +29,21 @@ class Api::V1::DungeonsControllerTest < ActionDispatch::IntegrationTest
     assert_not_nil response.parsed_body['inventoryChanges']['loot']
     assert_instance_of Integer, response.parsed_body['inventoryChanges']['loot']['gold']
     assert_instance_of Array, response.parsed_body['inventoryChanges']['loot']['items']
+  end
+  test 'should get defeated dungeon' do
+    dungeon = Dungeon.active.first
+    user = generate_test_user
+    dungeon.defeated_by!(user)
+    get "/api/v1/dungeons/#{dungeon.id}", headers: generate_headers
+
+    # Test that we can see the dungeon has been defeated by someone(s)
+    assert_equal 200, status
+    assert_equal dungeon.id, response.parsed_body['id']
+    assert_not_empty response.parsed_body['defeatedBy']
+
+    # Test the information we get about the user
+    disclosed_user_info = response.parsed_body['defeatedBy'].first
+    assert_equal user.name, disclosed_user_info['name']
+    assert_safe_user_object disclosed_user_info
   end
 end

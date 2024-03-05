@@ -48,4 +48,17 @@ class ActiveSupport::TestCase
       )
     )
   end
+
+  # Custom assertion to check a user object for sensitive data
+  def assert_safe_user_object(user)
+    assert_nil user['id']
+    assert_nil user['email']
+    assert_nil user['auth0UserId']
+    assert_nil user['auth0UserData']
+    assert_nil user['inventory']
+    assert_nil user['base']
+    assert_nil user['accessToken']
+    assert_nil user['accessTokenExpiresAt']
+    assert_nil user['preferences']
+  end
 end

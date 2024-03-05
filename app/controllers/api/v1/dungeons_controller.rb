@@ -8,7 +8,7 @@ class Api::V1::DungeonsController < Api::V1::ApiController
   before_action :must_not_be_defeated, only: %i[analyze battle]
 
   def show
-    render json: @dungeon
+    render json: @dungeon, serializer: DungeonSerializer
   end
 
   def analyze
