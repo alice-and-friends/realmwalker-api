@@ -35,6 +35,7 @@ class Dungeon < RealmLocation
     Rails.logger.debug "❌ Destroyed a dungeon. There are now #{Dungeon.count} dungeons, #{Dungeon.active.count} active."
   end
 
+  # This function sets targets for how many active dungeons there should be (in each region)
   def self.min_active_dungeons(region = '')
     return 10 if Rails.env.test?
 
@@ -49,27 +50,13 @@ class Dungeon < RealmLocation
     level == 10
   end
 
+  # NPCs that are near an active dungeon may become "spooked"
   def spook_distance
     boss? ? 1100 : 225 # meters
   end
 
   def desc
     "level #{level} #{monster.classification}"
-  end
-
-  def difficulty_multiplier
-    {
-      1 => 180.0,
-      2 => 22.2,
-      3 => 6.0,
-      4 => 3.0,
-      5 => 2.0,
-      6 => 1.8,
-      7 => 1.6,
-      8 => 1.4,
-      9 => 1.2,
-      10 => 1.0,
-    }[level]
   end
 
   def loot_container_for(user)
@@ -79,110 +66,13 @@ class Dungeon < RealmLocation
   end
 
   def battle_prediction_for(user)
-    # Calculate baseline based on player level and dungeon level
-    base_difficulty_score = (difficulty_multiplier * (user.level.to_f / 2)).floor.clamp(0, 100)
-
-    # Descriptions of modifiers which will be displayed to end user
-    modifier_descriptors_positive = []
-    modifier_descriptors_negative = []
-
-    # Player attack bonuses
-    modifier_descriptors_positive << "+#{User::BASE_ATTACK} base attack"
-    player_attack_bonus = user.attack_bonus(monster.classification)
-    modifier_descriptors_positive << "+#{player_attack_bonus} from equipment" unless player_attack_bonus.zero?
-
-    # Monster defense
-    monster_defense = monster.defense
-    modifier_descriptors_negative << "-#{monster_defense} from monster defense" unless monster_defense.zero?
-
-    # Player attack penalties
-    player_attack_penalty = 0
-    if user.weapon.nil?
-      player_attack_penalty = 10
-      modifier_descriptors_negative << "-#{player_attack_penalty} attack penalty for equipping a weapon"
-    end
-
-    # Player defense
-    player_defense_bonus = user.defense_bonus(monster.classification)
-
-    # Calculate effective difficulty and possible overkill
-    overkill = 0
-    chance_of_success = (
-      base_difficulty_score + User::BASE_ATTACK + player_attack_bonus - player_attack_penalty - monster_defense
-    ).clamp(0, 100)
-
-    # Calculate chance of bad stuff
-    # modifier_descriptors_death = []
-    chance_of_defeat = 100 - chance_of_success
-    chance_of_escape = User::BASE_DEFENSE + player_defense_bonus
-    risk_of_death_on_defeat = 100 - chance_of_escape
-    # chance_of_inventory_loss = chance_of_death
-    # chance_of_equipment_loss = chance_of_death / 10
-
-    {
-      base_chance: base_difficulty_score,
-      chance_of_success: chance_of_success,
-      overkill: overkill,
-      modifiers_positive: modifier_descriptors_positive,
-      modifiers_negative: modifier_descriptors_negative,
-      # chance_of_defeat: chance_of_defeat,
-      chance_of_escape: chance_of_escape,
-      risk_of_death: {
-        on_defeat: risk_of_death_on_defeat,
-        overall: risk_of_death_on_defeat * chance_of_defeat / 100,
-      }
-      # chance_of_inventory_loss: chance_of_inventory_loss,
-      # chance_of_equipment_loss: chance_of_equipment_loss,
-      # modifiers_death: modifier_descriptors_death,
-    }
+    helper = BattleHelper.new(self, user)
+    helper.battle_prediction
   end
 
   def battle_as(user)
-    Rails.logger.debug { "⚔️ #{user.name} started battle against #{monster.name}" }
-
-    # Defaults
-    monster_died = user_died = false
-    inventory_changes = nil
-
-    # Let's go
-    prediction = battle_prediction_for(user)
-    Rails.logger.debug {
- "⚔️ #{user.name} has #{prediction[:chance_of_success]}% chance of success, #{prediction[:chance_of_escape]}% chance of escape" }
-    roll = rand(1..100)
-    user_won = (roll <= prediction[:chance_of_success])
-    Rails.logger.debug { "⚔️ #{user.name} rolled a #{roll} and #{user_won ? 'won' : 'lost'}" }
-    if user_won
-      defeated_by! user # Update dungeon as defeated
-
-      xp_level_change = user.gains_or_loses_xp(monster.xp)
-
-      monster_died = (rand(1..100) > monster.defense)
-      if monster_died
-        loot_container = loot_container_for(user)
-        user.gains_loot(loot_container)
-        inventory_changes = {
-          loot: loot_container,
-        }
-      end
-    else # user lost the battle
-      user_died = (rand(1..100) <= prediction[:risk_of_death][:on_defeat])
-      if user_died
-        xp_level_change, inventory_changes = user.handle_death
-      else
-        xp_level_change = user.gains_or_loses_xp(0)
-      end
-    end
-
-    {
-      battle_result: {
-        user_won: user_won,
-        user_died: user_died,
-        monster_died: monster_died,
-      },
-      inventory_changes: inventory_changes,
-      xp_level_change: xp_level_change,
-      xp_level_report: user.xp_level_report,
-    }
+    helper = BattleHelper.new(self, user)
+    helper.battle
   end
 
   def defeated_by!(user)
