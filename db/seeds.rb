@@ -111,7 +111,7 @@ class SeedHelper
     csv_text = Rails.root.join('lib/seeds/monsters.csv').read
     csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
     csv.each do |row|
-      monster = Monster.new
+      monster = Monster.find_or_initialize_by(id: row['id'])
       monster.name = row['name']
       monster.description = row['description']
       monster.level = row['level']
@@ -119,7 +119,7 @@ class SeedHelper
       # monster.tags = row['tags'].split(' ')
       monsters << monster
     end
-    import(Monster, monsters)
+    import(Monster, monsters, bulk: false)
   end
 
   def items
@@ -128,7 +128,7 @@ class SeedHelper
     csv_text = Rails.root.join('lib/seeds/items.csv').read
     csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
     csv.each do |row|
-      item = Item.new
+      item = Item.find_or_initialize_by(id: row['id'])
       item.name = row['name']
       item.type = row['type'].downcase.tr(' ', '_')
       item.icon = row['icon']
@@ -151,11 +151,11 @@ class SeedHelper
 
       items << item
     end
-    import(Item, items)
+    import(Item, items, bulk: false)
   end
 
   def trade_offers
-    make_trade_offer_list = -> (list_name) {
+    make_trade_offer_list = lambda do |list_name|
       list = TradeOfferList.find_or_create_by(name: list_name)
 
       csv_text = Rails.root.join('lib/seeds/items.csv').read
@@ -179,7 +179,7 @@ class SeedHelper
         end
       end
       puts "🧾 #{list.trade_offers.length} trade offers in list '#{list_name}'."
-    }
+    end
 
     %w[armorer jeweller magic_shop].each { |list_name| make_trade_offer_list.call(list_name) }
     TradeOffer.count
