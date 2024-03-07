@@ -260,8 +260,9 @@ def commit_to_git(file):
         commit_command = ["git", "commit", "-o", file, "-m", commit_message]
 
         try:
-            # Execute the Git commit commands
-            subprocess.run(f"{add_command} && {commit_command}", check=True)
+            # Execute the Git commit command
+            subprocess.run(add_command, check=True)
+            subprocess.run(commit_command, check=True)
             print("File committed to Git successfully.")
         except subprocess.CalledProcessError as e:
             print(f"An error occurred while trying to commit the file: {e}")
@@ -312,8 +313,9 @@ def main(osmfile):
             f"\nDone! {handler.c_node + handler.c_way + handler.c_area} ({handler.c_node}+{handler.c_way}+{handler.c_area}) locations in {time_duration:.3f} seconds"
         )
 
-        # Ask the user whether they want a commit to be created
-        commit_to_git(output_file)
+    # Ask the user whether they want a commit to be created
+    time.sleep(1)
+    commit_to_git(output_file)
 
     return 0
 
