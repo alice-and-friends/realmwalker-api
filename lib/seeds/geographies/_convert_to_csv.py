@@ -260,9 +260,8 @@ def commit_to_git(file):
         commit_command = ["git", "commit", "-o", file, "-m", commit_message]
 
         try:
-            # Execute the Git commit command
-            subprocess.run(add_command, check=True)
-            subprocess.run(commit_command, check=True)
+            # Execute the Git commit commands
+            subprocess.run(f"{add_command} && {commit_command}", check=True)
             print("File committed to Git successfully.")
         except subprocess.CalledProcessError as e:
             print(f"An error occurred while trying to commit the file: {e}")
