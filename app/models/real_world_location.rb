@@ -13,7 +13,7 @@ class RealWorldLocation < ApplicationRecord
     user_owned: 'user_owned',
   }
 
-  enum relevance_grade: { unseen: 0, seen: 1, inspected: 2, interacted: 3 }
+  enum relevance_grade: { unseen: 0, seen: 1, inspected: 2, interacted: 3, user_generated: 10 }
 
   validates :type, presence: true
   validates :ext_id, uniqueness: true, allow_nil: true
