@@ -188,6 +188,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
   add_foreign_key "conquests", "users"
   add_foreign_key "inventory_items", "inventories"
   add_foreign_key "inventory_items", "items"
+  add_foreign_key "npcs_trade_offer_lists", "realm_locations", column: "npc_id"
   add_foreign_key "realm_locations", "portraits"
   add_foreign_key "realm_locations", "users", column: "owner_id"
   add_foreign_key "spooks", "realm_locations", column: "dungeon_id"

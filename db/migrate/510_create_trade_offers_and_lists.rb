@@ -17,8 +17,7 @@ class CreateTradeOffersAndLists < ActiveRecord::Migration[7.0]
       t.belongs_to :trade_offer
     end
     create_table :npcs_trade_offer_lists, id: false do |t|
-      t.belongs_to :npc
-      # t.references :npc, index: true, foreign_key: { to_table: :realm_locations }
+      t.references :npc, index: true, foreign_key: { to_table: :realm_locations }
       t.belongs_to :trade_offer_list
     end
   end
