@@ -18,6 +18,7 @@ class RealWorldLocation < ApplicationRecord
   validates :type, presence: true
   validates :ext_id, uniqueness: true, allow_nil: true
   validate :must_obey_minimum_distance
+  validates :region, presence: true, region: true
 
   before_validation :set_latitude_and_longitude!, on: :create
 

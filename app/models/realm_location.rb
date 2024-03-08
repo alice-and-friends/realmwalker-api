@@ -9,7 +9,7 @@ class RealmLocation < ApplicationRecord
   has_one :inventory, dependent: :destroy
 
   validates :real_world_location_id, uniqueness: true
-  validates :region, presence: true
+  validates :region, presence: true, region: true
 
   before_validation :set_region_and_coordinates!
   validates_associated :real_world_location
