@@ -17,8 +17,8 @@ class RealWorldLocation < ApplicationRecord
 
   validates :type, presence: true
   validates :ext_id, uniqueness: true, allow_nil: true
-  validate :must_obey_minimum_distance
   validates :region, presence: true, region: true
+  validate :must_obey_minimum_distance
 
   before_validation :set_latitude_and_longitude!, on: :create
 
@@ -34,10 +34,13 @@ class RealWorldLocation < ApplicationRecord
     prng.rand(param)
   end
 
-  def relevance_grade=(grade)
-    throw('Not a valid grade') unless grade.in? RealWorldLocation.relevance_grades.values
+  def relevance_grade=(new_value)
+    throw('Not a valid relevance grade') unless new_value.in? RealWorldLocation.relevance_grades.values
 
-    LocationRelevanceWorker.perform_async([id], grade)
+    current_value = RealWorldLocation.relevance_grades[relevance_grade]
+    throw('Relevance grade can only increase or stay the same') if new_value < current_value
+
+    LocationRelevanceWorker.perform_async([id], new_value)
   end
 
   def inspected!
