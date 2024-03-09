@@ -1,0 +1,944 @@
+ext_id,coordinates,tags
+node/324426083,5.0739861 -52.6993685,ele:160;name:Point de vue;tourism:viewpoint
+node/332100191,4.7205483 -52.3038303,bus:yes;highway:bus_stop;name:Roura - Eskol;public_transport:platform
+node/332100773,4.7413509 -52.3270946,bus:yes;highway:bus_stop;name:Marina du Mahury;public_transport:platform
+node/332113712,5.0711668 -52.5444572,bench:no;bin:no;bus:yes;highway:bus_stop;name:Zone Guatemala;public_transport:platform;shelter:no;tactile_paving:no
+node/332225587,5.1621968 -52.6347241,bus:yes;name:Cocoteraie 2;public_transport:stop_position
+node/332228071,5.1574798 -52.6449038,bus:yes;name:Canal de l'Ouest;public_transport:stop_position
+node/332235815,5.063556 -52.5347408,bench:no;bin:no;bus:yes;check_date:tactile_paving:2023-09-22;highway:bus_stop;name:Matiti point B;public_transport:platform;shelter:no;tactile_paving:no
+node/337535534,5.17844 -52.649644,bus:yes;name:Canal de l'Anse;public_transport:stop_position
+node/337924507,4.9486193 -52.4432412,bench:no;bin:no;bus:yes;highway:bus_stop;name:La Carapa;public_transport:platform;shelter:no;tactile_paving:no
+node/337943910,5.1556104 -52.6487016,bus:yes;name:Pôle Culturel;public_transport:stop_position
+node/408292465,4.784596 -52.3381385,bench:yes;bin:no;bus:yes;highway:bus_stop;name:Chemin Mogès;public_transport:platform;shelter:yes;tactile_paving:no
+node/410540729,4.9389669 -52.3336821,addr:street:Place des palmistes;historic:monument;name:Statue de Félix Éboué;subject:wikidata:Q989568;wikidata:Q29612433
+node/424529807,5.1659843 -52.6529563,bus:yes;name:Léopold Sédar Senghor;public_transport:stop_position
+node/431261648,5.7448923 -53.9337364,addr:city:Awala-Yalimapo;addr:place:Zone de Simili;addr:postcode:97319;email:ajs.simili@wanadoo.fr;name:Auberge de Jeunesse de Simili;phone:+594 594 34 16 25;tourism:hostel;website:https://www.fuaj.org/awala-yalimapo-guyane
+node/431261653,5.7382626 -53.9081885,tourism:picnic_site
+node/431261661,5.7339385 -53.9056586,"amenity:townhall;contact:email:mairie@awala-yalimapo.fr;contact:phone:+594 594 34 76 76;name:Mairie d'Awala-Yalimapo;opening_hours:Mo 08:00-14:30; Fr 08:00-14:00; Tu 08:00-13:00,14:00-17:30; We 08:00-14:30; Th 08:00-13:00,14:00-17:30;ref:FR:SIRET:21973361500013;source:Service-Public.fr - 11/2023;wheelchair:yes"
+node/431261680,5.7366272 -53.9096585,amenity:library;name:Bibliothèque municipale « Mailana »
+node/431741301,5.0603592 -53.0536762,name:Carbet EDF;tourism:alpine_hut
+node/440881923,4.8900591 -52.3465146,addr:city:Matoury;addr:country:GF;addr:housenumber:20;addr:postcode:97354;addr:street:Rue du Belvédère;alt_name:Lycée Balata;amenity:school;name:Lycée polyvalent Balata;operator:Education Nationale;operator:type:public;ref:UAI:9730514w;school:FR:lycée;website:https://lp-des-metiers-du-batiment.eta.ac-guyane.fr/
+node/441386043,5.167061 -52.7008348,man_made:telescope;operator:ESA;telescope:type:radio
+node/441386070,5.1674286 -52.7003284,man_made:telescope;operator:ESA;telescope:type:radio
+node/442713345,5.1504194 -53.9781314,historic:ruins;name:Camp Maïpouri
+node/443176368,4.9024017 -52.2800311,amenity:school;name:École élémentaire Moulin à vent;operator:type:public;ref:UAI:9730198C;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/443412094,4.9265375 -52.2954267,amenity:school;name:École maternelle Mont-Lucas;operator:type:public;ref:UAI:9730209P;school:FR:maternelle;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/443412097,4.9260048 -52.2948153,amenity:school;name:École maternelle Mont-Lucas;school:FR:maternelle
+node/488533214,5.2676917 -52.801377,name:Colibri;tourism:viewpoint
+node/507609692,5.493762 -54.0602637,amenity:fuel
+node/507664935,5.4977419 -54.0542477,amenity:fuel;brand:Texaco;brand:wikidata:Q775060;brand:wikipedia:en:Texaco;name:Texaco;operator:Shell
+node/530188988,5.4297579 -53.0377578,access:yes;name:Crique Canceler;tourism:picnic_site
+node/530212966,5.6582319 -53.7799542,"amenity:fuel;description:carburant , entretien auto, pneu, carwash;name:Tout pour l'auto;opening_hours:Mo-Sa 07:00-18:00; Su 08:00-13:00;phone:+594 5 94 27 62 14"
+node/582711208,4.8339738 -52.3241076,bench:no;bin:no;bus:yes;highway:bus_stop;name:La Matourienne - La Levée;public_transport:platform;shelter:yes;tactile_paving:no
+node/582711219,4.8305722 -52.3131764,bus:yes;highway:bus_stop;name:La levée - Yarde;public_transport:platform
+node/587666547,4.8862344 -52.2776675,amenity:school;name:École élémentaire Jules Minidoque;operator:type:public;ref:UAI:9730032X;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/610888687,5.4981237 -54.0256315,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;name:Vito;operator:Vito
+node/626863523,4.9385395 -52.3324489,addr:housenumber:26-28;addr:street:Avenue du Général de Gaulle;email:hotelamazonia@orange.fr;internet_access:yes;internet_access:fee:customers;name:Amazonia;phone:+594594288300;rooms:124;stars:3;tourism:hotel;website:https://www.hotel-amazonia.com/
+node/640507983,4.5674543 -52.4271717,abandoned:yes;historic:castle;name:Château des Choses Dernières;ruins:yes
+node/642321082,4.50291 -52.043799,"alt_name:Roche Favard;archaeological_site:bigstone;heritage:3;heritage:operator:mhs;historic:archaeological_site;mhs:inscription_date:1991-09-16;name:Roches gravées de la Montagne Favard;ref:mhs:PA00105922;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q3437654;wikipedia:fr:Roches gravées de la Montagne Favard"
+node/643220124,4.9150466 -52.2745963,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;compressed_air:yes;name:Total;name:fr:Total;operator:Total
+node/667472457,5.7461145 -53.9339455,tourism:picnic_site
+node/667472482,5.6496159 -53.7423753,amenity:school;name:Lycée Polyvalent Léopold Elfort;school:FR:lycée
+node/720105731,5.163171 -52.6401249,amenity:cinema;cinema:3D:yes;contact:facebook:https://www.facebook.com/cinemaurania/;name:Urania;phone:09 72 61 62 18;ref:FR:CNC:no;screen:2;seats:368;website:https://urania.gf/
+node/797775428,5.1733541 -52.6535878,amenity:university;name:AgroParisTech
+node/797775429,5.1731745 -52.6524399,"alt_name:I.N.R.A.E.;amenity:university;name:Institut national de recherche pour l'agriculture, l'alimentation et l'environnement;office:research;old_name:Inra;short_name:Inrae;website:https://www.inrae.fr"
+node/847715432,5.1606553 -52.6305127,bus:yes;name:Four du Bagne;public_transport:stop_position
+node/848300306,5.1592484 -52.6646097,"archaeological_site:bigstone;heritage:2;heritage:operator:mhs;historic:archaeological_site;mhs:inscription_date:1993-11-18;name:Roches gravées de la Carapa;ref:mhs:PA00125427;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q3437652;wikipedia:fr:Roches gravées de la Carapa"
+node/849159009,5.1666797 -52.6507504,bus:yes;name:Lac Marie-Claire;public_transport:stop_position
+node/851560849,5.160556 -52.6525649,amenity:university;name:IUT
+node/851832594,5.169883 -52.6473377,bus:yes;name:Quartier Forget;public_transport:stop_position
+node/1017772173,4.9380583 -52.2941794,alt_name:La Pépinière;bus:yes;highway:bus_stop;name:Sèd Kannel;public_transport:platform
+node/1017790078,4.9363442 -52.2963048,alt_name:Cité Zéphir 3ème entrée;bench:yes;bin:no;bus:yes;highway:bus_stop;name:Migé Péyi;public_transport:platform;shelter:yes;tactile_paving:no
+node/1018701921,4.9324535 -52.2969057,alt_name:Chapelle Saint-Antoine;bench:no;bin:no;bus:yes;highway:bus_stop;name:Zépin du Kris;public_transport:platform;shelter:no;tactile_paving:no
+node/1020493370,4.9343527 -52.2958001,alt_name:Stade de Cresson;bench:no;bin:no;bus:yes;highway:bus_stop;name:Sorosi;name:etymology:wikidata:Q428750;name:fr:Sorossi;name:gcr:Sorosi;public_transport:platform;shelter:no;tactile_paving:no
+node/1020499175,4.9284422 -52.303976,alt_name:Troubiran;bench:no;bin:no;bus:yes;highway:bus_stop;name:Bros Sirenn;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1022094011,4.9405538 -52.3265947,addr:city:Cayenne;addr:street:Boulevard Nelson Madiba Mandela;amenity:bank;atm:yes;brand:La Banque Postale;brand:wikidata:Q3206431;brand:wikipedia:en:La Banque postale;check_date:2023-09-05;name:La Banque Postale;source:local inspection
+node/1024269286,4.9361205 -52.2966347,addr:housenumber:2844;addr:street:Route de Montabo;amenity:bank;brand:Casden;brand:wikidata:Q2930976;brand:wikipedia:fr:CASDEN Banque populaire;name:Casden;website:https://delegations.casden.fr/delegations-cayenne-C97302
+node/1024324591,4.9387132 -52.3329477,addr:housenumber:21;addr:street:Rue Léon Gontrand Damas;amenity:cinema;contact:email:contacteldo@orange.fr;contact:facebook:https://www.facebook.com/Complexe-Eldorado-Officiel-1016904135038724/;name:Eldorado;phone:+594 594 29 33 98;ref:FR:CNC:no;screen:2;website:https://eldoradoguyane.jimdofree.com/
+node/1025865567,4.9293645 -52.299304,alt_name:Saint-Antoine;bench:no;bin:no;bus:yes;highway:bus_stop;name:Roukou;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1028162067,4.9425733 -52.3058127,alt_name:Cité Coulé d'Or;bench:stand_up_bench;bin:no;bus:yes;highway:bus_stop;name:Boko;public_transport:platform;shelter:yes;tactile_paving:no
+node/1030305064,4.9335354 -52.2907258,alt_name:Bourda;bench:yes;bin:no;bus:yes;highway:bus_stop;name:Akasya Fran;name:etymology:wikidata:Q10280344;name:fr:Acacia franc;name:gcr:Akasya Fran;public_transport:platform;shelter:yes;tactile_paving:no
+node/1032461768,4.9445397 -52.3169199,alt_name:Ecole Jean-Macé;bench:no;bin:no;bus:yes;highway:bus_stop;name:Ansan;name:etymology:wikidata:Q273131;name:fr:Encens;name:gcr:Ansan;public_transport:platform;shelter:no;tactile_paving:no
+node/1032477485,4.9438636 -52.3102017,alt_name:Cité Chatenay;bench:no;bin:no;bus:yes;highway:bus_stop;name:Bagas;public_transport:platform;shelter:no;tactile_paving:no
+node/1032626556,4.9400721 -52.3006985,alt_name:Lycée Melkior et Garré;bench:no;bin:no;bus:yes;highway:bus_stop;name:Kroupié;public_transport:platform;shelter:no;tactile_paving:no
+node/1032627681,4.9419921 -52.2991186,alt_name:Grand Hotel Montabo Terminus;bench:no;bin:no;bus:yes;highway:bus_stop;name:Akanni;public_transport:platform;shelter:no;tactile_paving:no
+node/1032631108,4.9376643 -52.2986157,alt_name:Route de Montabo;bench:no;bin:no;bus:yes;highway:bus_stop;name:Wadé Wadé;public_transport:platform;shelter:no;tactile_paving:no
+node/1070528675,5.1686217 -52.6842753,name:Maquette Ariane V;name:en:Ariane V mockup;tourism:artwork
+node/1087123365,3.6238883 -53.2089273,internet_access:service;name:Gîte A Ke Nou;tourism:hotel;website:http://www.giteakenou-saul.com
+node/1087123369,3.6212136 -53.2114403,internet_access:yes;name:Chez Lulu;tourism:hostel;website:https://www.guyane-amazonie.fr/hebergements-insolites/HCOLLCTG973V5002A6/detail/saul/chez-lulu
+node/1089227537,3.6423766 -53.2003757,name:Point de vue Monts La Fumée;tourism:viewpoint
+node/1089227538,3.5948153 -53.1840891,name:Roche bâteau;natural:stone;tourism:attraction
+node/1089227541,3.6211681 -53.2102047,internet_access:yes;name:Les Carbets du Bord;tourism:hostel;website:http://www.lescarbetsdubord-saul.com
+node/1091568667,3.6227925 -53.2159297,man_made:tower;name:Belvédère;tourism:viewpoint;tower:type:observation
+node/1095101698,4.1978963 -52.1521939,alt_name:Inselberg de la Roche Virginie;ele:118;name:Inselberg Savane-Roche Virginie;natural:peak;source:position:GPS;tourism:viewpoint
+node/1107501606,5.4110803 -53.6550559,email:buira.angouleme97@laposte.net;fax:01 73 76 87 11;name:Gîte d'Angoulême;phone:09 70 46 67 15;tourism:hostel
+node/1107518327,4.8261671 -52.5167763,alt_name:Bagne des Annamites;historic:ruins;name:Camp Crique Anguille;wikidata:Q2935208;wikipedia:fr:Camp Crique Anguille
+node/1129844774,3.8900752 -51.8033667,amenity:school;name:École élémentaire Gabin;operator:type:public;ref:UAI:9730432G;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/1129844778,3.8890606 -51.8032396,amenity:school;name:Section d'enseignement général et professionnel adapté du Collège Chlore Constant;operator:type:public;ref:UAI:9730332Y;school:FR:collège;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/1131399887,4.8724159 -52.2491967,"access:yes;alt_name:Habitation Diamant;archaeological_site:settlement;designation:Habitation de Jacques François de Hauterue, médecin du roi en Guyane de 1736 à 1771. Accès libre, visite commentée tous les samedis à 16 h 00 (téléphoner au 06 94 26 37 52 pour confirmer présence).;historic:archaeological_site;name:Habitation Artur"
+node/1131519234,4.9104863 -52.2578713,name:Point de Vue sur l'Estuaire;tourism:viewpoint
+node/1131530012,4.9115349 -52.2582131,name:Point de vue du sentier des pêcheurs;tourism:viewpoint
+node/1136519762,5.0987583 -52.6394261,communications_tower:type:dish;man_made:tower;operator:CNES;tower:construction:dish;tower:type:communication
+node/1136520896,5.0988926 -52.6398794,communications_tower:type:dish;man_made:tower;operator:CNES;tower:construction:dish;tower:type:communication
+node/1136521301,5.0983215 -52.6391911,man_made:tower;operator:CNES;tower:construction:dish;tower:type:communication
+node/1138180965,5.2662444 -52.7975991,name:Kikiwi;tourism:viewpoint
+node/1139736637,5.7462754 -53.9452307,name:Pique-nique Pointe des Hattes;tourism:picnic_site
+node/1148070772,5.3771425 -52.9585163,amenity:townhall;contact:email:secretariat.general@ville-sinnamary.fr;contact:phone:+594 594 34 51 22;contact:website:http://www.ville-sinnamary.fr;name:Mairie de Sinnamary;opening_hours:Mo-Fr 07:30-14:30;ref:FR:SIRET:21973312800017;source:Service-Public.fr - 11/2023;wheelchair:yes
+node/1148070846,5.3767784 -52.9550581,amenity:school;name:Groupe scolaire A. Latidine;operator:type:public;ref:UAI:9730124X;school:FR:maternelle;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/1149582421,5.4998721 -54.0336996,amenity:marketplace;name:Marché aux poissons
+node/1151017668,5.6601136 -53.777118,name:Hôtel Le Samana;tourism:hotel
+node/1152167420,4.8501975 -52.331343,bench:no;bin:no;bus:yes;highway:bus_stop;name:Mairie de Matoury;public_transport:platform;shelter:no;tactile_paving:no
+node/1152167435,4.8515947 -52.3311708,bench:yes;bin:no;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes;tactile_paving:no
+node/1158368443,4.9399731 -52.3014064,bench:no;bin:no;bus:yes;highway:bus_stop;name:Kolin'n Mont'Abo;public_transport:platform;shelter:no;tactile_paving:no
+node/1158372888,4.9425077 -52.3052668,alt_name:Cité Coulé d'Or;bench:yes;bin:yes;bus:yes;highway:bus_stop;name:Boko;public_transport:platform;shelter:yes;tactile_paving:no
+node/1158379546,4.9437386 -52.3072891,alt_name:Cité Maselle;bench:no;bin:no;bus:yes;highway:bus_stop;name:Angouchi;public_transport:platform;shelter:no;tactile_paving:no
+node/1158383834,4.9441445 -52.3088596,bench:no;bin:no;bus:yes;highway:bus_stop;name:Montangn Inini-Kamopi;public_transport:platform;shelter:no;tactile_paving:no
+node/1158396918,4.9448636 -52.3111796,alt_name:Cité Castor;bench:no;bin:no;bus:yes;highway:bus_stop;name:Fromajé;public_transport:platform;shelter:no;tactile_paving:no
+node/1158468458,4.9431046 -52.325248,alt_name:Institut Pasteur;bench:no;bin:no;bus:yes;highway:bus_stop;name:Maya Kongo;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1158520375,4.9425416 -52.3276103,alt_name:Avenue Léopold Héder;bench:no;bin:no;bus:yes;highway:bus_stop;name:Chawary;public_transport:platform;shelter:no;tactile_paving:no
+node/1158617441,4.941812 -52.3306132,alt_name:Ecole Stanislas;bench:no;bin:no;bus:yes;highway:bus_stop;name:Kimboto;public_transport:platform;shelter:no;tactile_paving:no
+node/1158668667,4.9414199 -52.3321875,alt_name:Collège Eugène Nonnon;bench:no;bin:no;bus:yes;highway:bus_stop;name:Jakaranda;public_transport:platform;shelter:no;tactile_paving:no
+node/1162465237,4.3138876 -52.128825,amenity:townhall;contact:email:secretariat.mairie@mairie-regina.fr;contact:phone:+594 594 28 05 89;name:Mairie de Régina;opening_hours:Mo-Fr 08:00-13:00;ref:FR:SIRET:21973301100015;source:Service-Public.fr - 11/2023;wheelchair:yes
+node/1162465276,4.3133989 -52.1291368,bench:yes;bin:yes;highway:bus_stop;name:Régina;shelter:no;tactile_paving:no
+node/1162521522,4.314813 -52.1285175,historic:ruins;name:Ancienne fabrique;name:de:alte Fabrik
+node/1162558466,4.3120542 -52.1323346,FIXME:Vérifier et ajouter horaires d'ouverture;amenity:fuel
+node/1162613435,4.4084677 -51.9321908,historic:ruins;name:Guisanbourg;place:locality;wikidata:Q3120655;wikipedia:fr:Guisanbourg
+node/1162681303,3.8894054 -51.80372,leisure:sports_centre;name:Halle aux sports des scolaires;name:de:Sporthalle der Schule
+node/1162885105,3.8886621 -51.801067,amenity:restaurant;name:Chez Modestine;tourism:hotel
+node/1162885119,3.8896052 -51.8005641,amenity:restaurant;name:Caz-Calé;tourism:hotel
+node/1162885150,3.8618732 -51.8265394,addr:housenumber:3;addr:street:Poste de Contrôle Frontalier de Pointe Morne;amenity:public_building;name:Douane;name:de:Zoll;name:pt:Alfândega
+node/1162896445,3.8889031 -51.800486,amenity:marketplace;name:Marché;name:de:Markt
+node/1162936231,3.8915999 -51.8042835,leisure:sports_centre;name:Halle aux sports;name:de:Sportgeräte-Haus
+node/1162976763,3.8469341 -51.8360014,amenity:marketplace;name:Feira;name:de:Markthalle;name:pt:Feira
+node/1162984136,3.849009 -51.8327866,amenity:fuel;brand:BR;brand:wikidata:Q4836468;brand:wikipedia:pt:Vibra Energia;name:BR
+node/1162984141,3.8496911 -51.8306269,amenity:fuel
+node/1162985527,3.8482372 -51.8331565,amenity:marketplace;name:Frutas e Verduras
+node/1164078688,4.7256385 -52.3261768,amenity:arts_centre;name:Maison Créole
+node/1164078732,4.7295722 -52.3261944,name:Atelier d'Entomologie;tourism:artwork
+node/1169279091,4.9402563 -52.3362104,leisure:park
+node/1203447839,5.5054484 -54.0316906,historic:memorial;memorial:statue;name:Le Bagnard Statue
+node/1203517020,5.5029323 -54.0276362,name:La Tentiaire;tourism:hotel
+node/1229609475,4.9375198 -52.2830453,archaeological_site:bigstone;historic:archaeological_site;name:Polissoirs
+node/1241264284,4.899006 -52.2703749,"alt_name:Habitation Loyola;heritage:3;heritage:operator:mhs;historic:archaeological_site;mhs:inscription_date:1993-10-11;name:Habitation des Jésuites;ref:mhs:PA00125428;ruins:village;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q3125387;wikipedia:fr:Habitation des Jésuites (Rémire-Montjoly)"
+node/1241278202,4.8662844 -52.2955668,historic:ruins;name:Pressoir
+node/1357214720,4.8951781 -52.5120143,man_made:tower;name:Antenne Toucan;operator:TDF;start_date:1994;tower:type:communication;wikidata:Q4652386;wikipedia:en:ALLISS
+node/1357214721,4.9010324 -52.500963,man_made:tower;name:Antenne Toucan;operator:TDF;start_date:1994;tower:type:communication;wikidata:Q4652386;wikipedia:en:ALLISS
+node/1419160679,3.6245991 -53.2117688,alt_name:Chez Bikaeff;name:Le Phragmipédium;tourism:hostel;website:http://www.gitelephragmipedium-saul.com
+node/1419192161,3.6194619 -53.2775495,name:Carbet Galbao;operator:ONF;tourism:camp_site
+node/1419257106,3.6232399 -53.2093341,amenity:school;name:École élémentaire de Saül;operator:type:public;ref:UAI:9730256R;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/1419344433,3.6064449 -53.176246,historic:archaeological_site;name:Point Chaud - Polissoirs
+node/1562823189,5.1597654 -52.6261382,name:Oceanside;tourism:viewpoint
+node/1562868409,5.1618302 -52.6414427,amenity:bank;atm:yes;brand:LCL;brand:wikidata:Q779722;brand:wikipedia:fr:Crédit lyonnais;name:LCL
+node/1562868670,5.1655696 -52.641017,amenity:bank;atm:yes;brand:La Banque Postale;brand:wikidata:Q3206431;name:La Banque Postale;operator:La Banque Postale
+node/1562869147,5.1708435 -52.6511542,amenity:bank;atm:yes;brand:BRED;brand:wikidata:Q2877455;brand:wikipedia:fr:BRED Banque populaire;name:BRED;official_name:Banque régionale d'escompte et de dépôts;official_name:en:Regional Discount and Deposit Bank;official_name:fr:Banque régionale d'escompte et de dépôts;source:Cartographie de reconnaissance 2016 par KG.
+node/1565073129,5.156708 -52.6486786,amenity:library
+node/1581710218,4.5698056 -52.4689722,"addr:place:Cacao;addr:postcode:97352;addr:street:Avenue Jean Sainteny;fee:yes;name:Le Planeur Bleu;opening_hours:Su 09:00-13:00,14:00-16:00;phone:+594 594 27 00 34;tourism:museum;wheelchair:no"
+node/1583636614,4.5790015 -52.4348002,tourism:viewpoint
+node/1583636625,4.5848889 -52.4349444,tourism:viewpoint
+node/1589730558,4.0881015 -52.6801449,amenity:research_institute;name:Camp Inselberg;operator:CNRS;place:locality;source:Bing
+node/1589730566,4.0379585 -52.6727616,amenity:research_institute;capacity:18;name:Camp Saut-Pararé;operator:CNRS;place:locality;source:Bing;start_date:1995
+node/1631864927,5.0528321 -53.0850869,name:Bache installée;tourism:camp_site
+node/1635264117,5.224099 -52.8337741,name:Agami;tourism:viewpoint
+node/1669458119,4.5338787 -52.1282951,height:80;man_made:tower;owner:Orange Services Fixes;ref:FR:ANFR:910912;source:ANFR 08/2019;tower:type:communication
+node/1671166724,4.5483555 -52.1717439,height:80;man_made:tower;ref:FR:ANFR:1034535;source:data.gouv.fr:ANFR - 2019-09;tower:type:communication
+node/1671205991,4.6549986 -52.3017076,name:Point de vue;tourism:viewpoint
+node/1671227428,4.788213 -52.3525359,addr:place:Macrabo;amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;compressed_air:yes;fuel:diesel:yes;name:Total;operator:Total;shop:convenience;gas
+node/1678598277,5.5041894 -54.0297775,amenity:school;name:École élémentaire Edouard Caman;operator:type:public;ref:UAI:9730045L;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/1714950117,3.5971996 -53.1781863,historic:archaeological_site;name:Courant doublé - Polissoirs
+node/1762358640,4.9470379 -52.3068365,alt_name:Pôle emploi/I.G.R.C.;bench:no;bin:no;bus:yes;highway:bus_stop;name:Bwa Wapa;name:gcr:Bwa Wapa;public_transport:platform;shelter:no;tactile_paving:no
+node/1762368187,4.9479856 -52.3042787,alt_name:Cité Grant 2;bench:no;bus:yes;highway:bus_stop;name:Bwa Serpan;name:gcr:Bwa Serpan;public_transport:platform;shelter:no;tactile_paving:no
+node/1762378207,4.9464803 -52.3053513,alt_name:Cité Grant 1;bench:no;bus:yes;highway:bus_stop;name:Bwa dé Roz;name:gcr:Bwa dé Roz;public_transport:platform;shelter:no;tactile_paving:no
+node/1762477862,4.9411588 -52.3045351,alt_name:Trésor Public / SGDE;bench:no;bin:no;bus:yes;highway:bus_stop;name:Bwa Kanon;public_transport:platform;shelter:no;tactile_paving:no
+node/1762524011,4.9392708 -52.3055657,alt_name:Centre Commercial Katoury;bench:stand_up_bench;bin:no;bus:yes;highway:bus_stop;name:Alimyao;public_transport:platform;shelter:yes;tactile_paving:no
+node/1762524017,4.9369296 -52.3070318,alt_name:Collège Zéphir;bench:no;bin:no;bus:yes;highway:bus_stop;name:Arouman;public_transport:platform;shelter:no;tactile_paving:no
+node/1762524023,4.9345486 -52.3085945,alt_name:D.D.T.E.F.P.;bench:no;bin:no;bus:yes;highway:bus_stop;name:Bwa Zanmourèt;name:gcr:Bwa Zanmourèt;public_transport:platform;shelter:no;tactile_paving:no
+node/1762614623,4.9326375 -52.308671,alt_name:Clinique Véronique;bench:no;bin:no;bus:yes;highway:bus_stop;lit:no;name:Balata Blan;public_transport:platform;shelter:no;tactile_paving:no
+node/1762614625,4.929081 -52.3018565,alt_name:Rectorat;bench:no;bin:no;bus:yes;highway:bus_stop;lit:no;name:Ebèn Rouj;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1762614627,4.9308664 -52.3091246,alt_name:Source de Baduel;bench:no;bin:no;bus:yes;highway:bus_stop;lit:no;name:Ibiskis Piman;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1762614632,4.9256618 -52.3070402,alt_name:Lotissement Source de Baduel;bus:yes;highway:bus_stop;name:Kokliko;public_transport:platform
+node/1762614646,4.9270018 -52.3028979,alt_name:Entrée Mont Lucas;bus:yes;highway:bus_stop;name:So Gran Kanory;public_transport:platform
+node/1762614648,4.9265464 -52.3044026,alt_name:Cité Stanislas;bus:yes;highway:bus_stop;name:Yann Orkidé;public_transport:platform;shelter:no
+node/1762614650,4.9313908 -52.3066827,alt_name:Hôtel des impôts;bench:stand_up_bench;bin:no;bus:yes;highway:bus_stop;lit:yes;name:Kopaya;public_transport:platform;shelter:yes;tactile_paving:no
+node/1762641911,4.9287027 -52.2901045,alt_name:Cité administrative Régionale;bench:yes;bin:no;bus:yes;highway:bus_stop;name:Akajou;public_transport:platform;shelter:yes;tactile_paving:no
+node/1762641912,4.9281881 -52.2932276,alt_name:E.D.F. Baduel;bench:no;bin:no;bus:yes;highway:bus_stop;name:Bwa Flèch;name:gcr:Bwa Flèch;public_transport:platform;shelter:no;tactile_paving:no
+node/1762641914,4.9288661 -52.2971952,alt_name:I.M.E.D.;bench:yes;bin:no;bus:yes;highway:bus_stop;name:Bwa Rouj;public_transport:platform;shelter:yes;source:local inspection;tactile_paving:no
+node/1762641915,4.9289898 -52.2976949,alt_name:I.M.E.D.;bench:yes;bin:no;bus:yes;highway:bus_stop;name:Bwa Rouj;public_transport:platform;shelter:yes;source:local inspection;tactile_paving:no
+node/1762641927,4.9274157 -52.2909176,alt_name:Rond-point de Suzini;bench:no;bin:no;bus:yes;highway:bus_stop;name:Mao Sigar;public_transport:platform;shelter:no;tactile_paving:no
+node/1762641929,4.9297515 -52.2904915,alt_name:Résidence Colibris;bench:no;bin:no;bus:yes;highway:bus_stop;name:Patawa;name:etymology:wikidata:Q2709536;public_transport:platform;shelter:no;tactile_paving:no
+node/1762742100,4.9191078 -52.3048874,alt_name:Mont Baduel;bus:yes;highway:bus_stop;name:So Tourépé;public_transport:platform;shelter:no
+node/1762743327,4.9173661 -52.3079849,alt_name:Collège Justin Catayée;bench:stand_up_bench;bin:no;bus:yes;highway:bus_stop;name:So Vata;public_transport:platform;shelter:yes;tactile_paving:no
+node/1762743328,4.9171572 -52.3085265,alt_name:Collège Justin Catayée;bench:stand_up_bench;bin:no;bus:yes;highway:bus_stop;name:So Vata;public_transport:platform;shelter:yes
+node/1762744676,4.9156754 -52.3102674,alt_name:Camp du Tigre;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Tig;public_transport:platform;shelter:no
+node/1762745311,4.9172187 -52.3123444,alt_name:Cité Ploermel;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Patawa;public_transport:platform;shelter:no
+node/1762750862,4.918712 -52.3163208,alt_name:Route de Cabassou;bus:yes;highway:bus_stop;name:Janmengouté;public_transport:platform
+node/1762750864,4.9176785 -52.3138841,alt_name:Cimetière de Cabassou;bus:yes;highway:bus_stop;name:Koumarou;public_transport:platform
+node/1762750868,4.9200717 -52.3127303,alt_name:Z.I. Calimbé;bus:yes;highway:bus_stop;name:So Takari Tanté;public_transport:platform;shelter:yes
+node/1762768053,4.9131674 -52.3189526,alt_name:Cité Roseraie;bench:no;bin:no;bus:yes;highway:bus_stop;name:Maritanbou;public_transport:platform;shelter:no;source:local inspection
+node/1762768060,4.9259078 -52.3131623,alt_name:Résidence de Raban;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Nivré;public_transport:platform;shelter:yes;tactile_paving:no
+node/1762768064,4.9220498 -52.312526,alt_name:Cité Vendome;bench:stand_up_bench;bin:no;bus:yes;highway:bus_stop;name:So Komou-Komou;public_transport:platform;shelter:yes;tactile_paving:no
+node/1762768086,4.9244214 -52.3125238,alt_name:Cité Novaparc;bench:no;bin:no;bus:yes;highway:bus_stop;name:Ti So;public_transport:platform;shelter:no;tactile_paving:no
+node/1762792826,4.9148651 -52.3256161,amenity:school;name:Groupe Scolaire Mortin;operator:type:public;ref:UAI:9730200E;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/1762792827,4.9128324 -52.3257094,alt_name:Cité Mortin - Patawa;bus:yes;highway:bus_stop;name:Jon Dèf;public_transport:platform
+node/1762792831,4.9152008 -52.3210745,bench:no;bin:no;bus:yes;highway:bus_stop;name:Kénét;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1762792845,4.9140869 -52.3206207,alt_name:Cité Roseraie;bench:no;bin:no;bus:yes;highway:bus_stop;name:Mériz;public_transport:platform;shelter:no;tactile_paving:no
+node/1762792855,4.9128765 -52.3227152,alt_name:Cité Mortin - Orchidées;bench:no;bin:no;bus:yes;highway:bus_stop;name:Parépou;public_transport:platform;shelter:no;tactile_paving:no
+node/1762792860,4.9144848 -52.3259891,alt_name:Ecole de Mortin;bench:yes;bin:no;bus:yes;highway:bus_stop;name:Sapoti;public_transport:platform;shelter:yes;tactile_paving:no
+node/1762797590,4.9217087 -52.3193645,alt_name:Cité Bonhomme - Bougainvilliers;bench:no;bus:yes;highway:bus_stop;name:Atipa;public_transport:platform;shelter:no
+node/1762797606,4.918318 -52.3214718,alt_name:Cité Uranus;bench:no;bin:no;bus:yes;highway:bus_stop;name:Kakao;public_transport:platform;shelter:no;tactile_paving:no
+node/1762797609,4.9203186 -52.3194462,alt_name:Cité Bonhomme - Dahlias;bus:yes;highway:bus_stop;name:Prapra;public_transport:platform;shelter:no;source:local inspection
+node/1762800400,4.9247037 -52.3175069,alt_name:Plateau Sportif de Bonhomme;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Atanaz;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1762800402,4.9255367 -52.316028,alt_name:Cité Pascaline;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Gran Machikou;public_transport:platform;shelter:no;tactile_paving:no
+node/1762800404,4.9235747 -52.3197807,alt_name:Centre Hospitalier Andrée Rosemon;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Pakousin;public_transport:platform;shelter:no;tactile_paving:no
+node/1762804466,4.9297601 -52.3154397,alt_name:Carrefour Mango;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Fronmi Oyapok;public_transport:platform;shelter:no;tactile_paving:no
+node/1762828294,4.93213 -52.3199419,alt_name:Cité Thémire 1;bus:yes;highway:bus_stop;name:Arè;public_transport:platform
+node/1762828318,4.9311938 -52.3206053,alt_name:Ecole Léopold Heder;bus:yes;highway:bus_stop;name:Kroupia;public_transport:platform
+node/1762828328,4.9313038 -52.3169896,alt_name:Cité Mango 1;bus:yes;highway:bus_stop;name:So Alikoto;public_transport:platform
+node/1762828333,4.9330598 -52.3193068,alt_name:Cité Mango 2;bus:yes;highway:bus_stop;name:So Koumalawa;public_transport:platform
+node/1762842629,4.9299882 -52.3253382,alt_name:Maison de Quartier de Césaire;bench:no;bin:no;bus:yes;highway:bus_stop;name:Karp;public_transport:platform;shelter:no;tactile_paving:no
+node/1762842631,4.9312789 -52.3227763,alt_name:Cité Césaire 2;bench:no;bus:yes;highway:bus_stop;name:Palika;public_transport:platform;shelter:no
+node/1762842633,4.9312478 -52.3237876,alt_name:Cité Césaire 3;bus:yes;highway:bus_stop;name:Vyéy;public_transport:platform;source:local inspection
+node/1762848512,4.9339621 -52.3195933,alt_name:Cité Thémire 2;bus:yes;highway:bus_stop;name:Gran Ako;public_transport:platform
+node/1762848515,4.9292645 -52.3256647,alt_name:Cité Césaire;bench:no;bin:no;bus:yes;highway:bus_stop;name:Karambol;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1762848518,4.9347484 -52.3189583,alt_name:Pont Brutus;bus:yes;highway:bus_stop;name:Karan;public_transport:platform
+node/1762849804,4.9341028 -52.3238726,alt_name:Cité Manguier;bus:yes;highway:bus_stop;name:So Maripa;public_transport:platform
+node/1762852296,4.9335287 -52.3247262,alt_name:Cité Mirza;bus:yes;highway:bus_stop;name:So Singa Tété;public_transport:platform
+node/1762857187,4.9320806 -52.3282177,alt_name:Z.A. Galmot;bench:no;bin:no;bus:yes;highway:bus_stop;name:Bacov;public_transport:platform;shelter:no;tactile_paving:no
+node/1762857190,4.9337728 -52.3299329,alt_name:P.M.I. Digue Ronjon;bus:yes;highway:bus_stop;name:So Anpouman;public_transport:platform
+node/1762857192,4.9337482 -52.3270977,alt_name:Rond-point de Mirza;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Gran Koumarou;public_transport:platform;shelter:no;tactile_paving:no
+node/1762857196,4.9334373 -52.3302976,alt_name:Ecole Gaetan Hermine;bench:no;bin:no;bus:yes;highway:bus_stop;name:Wang;public_transport:platform;shelter:no;tactile_paving:no
+node/1762861120,4.9354818 -52.3308232,alt_name:Pont Arago;bench:no;bin:no;bus:yes;highway:bus_stop;name:Jasmen Kayenn;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1762861122,4.9364001 -52.3278553,alt_name:Pont Berlan;bench:no;bin:no;bus:yes;highway:bus_stop;name:Jasmen Poèt;public_transport:platform;shelter:no;tactile_paving:no
+node/1762861125,4.9343967 -52.3331961,alt_name:Rue Ernest Prévot;bench:no;bin:no;bus:yes;highway:bus_stop;name:Ortansia;public_transport:platform;shelter:no;tactile_paving:no
+node/1762865697,4.93684 -52.326308,alt_name:Cité Floralie;bench:no;bin:no;bus:yes;highway:bus_stop;name:Oréli;public_transport:platform;shelter:no;tactile_paving:no
+node/1762871094,4.9279802 -52.3178624,alt_name:Lycée Félix Eboué;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Saba;public_transport:platform;shelter:no;tactile_paving:no
+node/1762871096,4.9280812 -52.3182757,alt_name:Lycée Félix Eboué;bench:stand_up_bench;bin:no;bus:yes;highway:bus_stop;name:So Saba;public_transport:platform;shelter:yes;tactile_paving:no
+node/1762872240,4.9272564 -52.3197669,alt_name:Rocade du Lycée;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Fraka;public_transport:platform;shelter:no;tactile_paving:no
+node/1762873591,4.9256276 -52.3219952,alt_name:Cité Eau Lisette;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Aymara;public_transport:platform;shelter:no;tactile_paving:no
+node/1762873599,4.922332 -52.3213887,alt_name:9ème R.I.M.A.;bench:no;bin:no;bus:yes;highway:bus_stop;name:So Danmjann;public_transport:platform;shelter:no;tactile_paving:no
+node/1762874044,4.925145 -52.3241438,alt_name:Cité Eau Lisette;bench:yes;bin:no;bus:yes;highway:bus_stop;name:Korosol;public_transport:platform;shelter:yes;source:local inspection;tactile_paving:no
+node/1762874045,4.9254084 -52.3237312,alt_name:Cité Eau Lisette;bench:yes;bin:no;bus:yes;highway:bus_stop;name:Korosol;public_transport:platform;shelter:yes;source:local inspection;tactile_paving:no
+node/1762874047,4.9212494 -52.3221657,alt_name:Gendarmerie Madeleine;bench:no;bin:no;bus:yes;highway:bus_stop;name:Mang;public_transport:platform;shelter:yes;tactile_paving:no
+node/1762910117,4.9378318 -52.3231653,alt_name:Service Technique Municipalité Cayenne;bus:yes;highway:bus_stop;name:Roz dè Zend;name:etymology:wikidata:Q759876;name:fr:Rose des Indes;name:gcr:Roz dè Zend;public_transport:platform;shelter:no
+node/1762911803,4.9370148 -52.3179252,alt_name:Cité Anatole 1;bus:yes;highway:bus_stop;name:Koko;public_transport:platform
+node/1762911810,4.9382159 -52.3184281,alt_name:Cité Anatole 2;bus:yes;highway:bus_stop;name:Pousisi;public_transport:platform
+node/1762923299,4.939816 -52.3192223,alt_name:Piscine Départementale;bench:no;bin:no;bus:yes;highway:bus_stop;name:Akoupa;public_transport:platform;shelter:no;tactile_paving:no
+node/1762925915,4.9406643 -52.3239278,alt_name:Campus St Dénis;bench:yes;bin:no;bus:yes;highway:bus_stop;name:Aymara;public_transport:platform;shelter:no;source:local inspection;tactile_paving:yes
+node/1762925916,4.9409001 -52.3233571,alt_name:Campus St Dénis;bench:no;bin:no;bus:yes;highway:bus_stop;name:Aymara;public_transport:platform;shelter:no;tactile_paving:yes
+node/1762925918,4.9390854 -52.3263463,alt_name:Cimetière de Cayenne;bench:no;bin:no;bus:yes;highway:bus_stop;name:Maripa;name:etymology:wikidata:Q2708422;public_transport:platform;shelter:no;tactile_paving:no
+node/1762945280,4.9399487 -52.3132611,amenity:school;name:École élémentaire Etienne Ribal;operator:type:public;ref:UAI:9730199D;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/1762945283,4.9361261 -52.3138842,alt_name:Sécurité Sociale;bench:no;bin:no;bus:yes;highway:bus_stop;name:Flèr Soléy;public_transport:platform;shelter:no;tactile_paving:no
+node/1762945290,4.9372746 -52.3153312,alt_name:La Poste de Baduel;bench:no;bin:no;bus:yes;highway:bus_stop;name:Lorié Jonn;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1762945294,4.934555 -52.3116095,alt_name:Stade de Baduel;bench:no;bin:no;bus:yes;highway:bus_stop;lit:no;name:Makata;public_transport:platform;shelter:no;tactile_paving:no
+node/1762992109,4.9256456 -52.3020124,alt_name:Dojo Mont Lucas;bus:yes;highway:bus_stop;name:So Gran Japinni;public_transport:platform
+node/1762992110,4.9252715 -52.3001537,alt_name:Mont Lucas;bus:yes;highway:bus_stop;name:So Papay;public_transport:platform
+node/1762992111,4.9247956 -52.3009775,alt_name:Cité Mont Lucas;bus:yes;highway:bus_stop;name:So Ti Kannary;public_transport:platform
+node/1762992112,4.9214713 -52.3040632,alt_name:C.A.T. Ebène;bench:no;bus:yes;highway:bus_stop;name:So Yapii;public_transport:platform;shelter:no
+node/1763691765,4.9441729 -52.321039,alt_name:Chaton;bench:no;bin:no;bus:yes;highway:bus_stop;name:Tchô Déro;old_name:Teng Tong;public_transport:platform;shelter:no;tactile_paving:no
+node/1763709185,4.942713 -52.3207331,alt_name:Lycée Max Joséphine;bench:no;bin:no;bus:yes;highway:bus_stop;name:Wakapou;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1763761764,4.9404552 -52.330051,alt_name:Rue Lalouette;bench:no;bin:no;bus:yes;highway:bus_stop;name:Anjélik;public_transport:platform;shelter:no;tactile_paving:no
+node/1763761768,4.9358566 -52.334387,"access:conditional:no @ (We 04:00-16:00; Fr-Sa 04:00-16:00);alt_name:Place du Marché;bench:no;bin:no;bus:yes;description:arrêt de bus fermé les jours de marché, source policier municipal;highway:bus_stop;name:Krèt Kok / So Ermina;public_transport:platform;shelter:no;tactile_paving:no"
+node/1763765196,4.9369849 -52.3302202,alt_name:Etabissement Dalphrase;bench:no;bin:no;bus:yes;highway:bus_stop;name:Ti Bonm;public_transport:platform;shelter:no;tactile_paving:no
+node/1764588820,4.9163712 -52.295799,bus:yes;highway:bus_stop;name:Montangn Belvu;public_transport:platform
+node/1764588822,4.9217758 -52.2923321,bench:no;bin:no;bus:yes;highway:bus_stop;name:Montangn Kotika;public_transport:platform;shelter:no;tactile_paving:no
+node/1764588824,4.9198962 -52.2942295,bench:no;bin:no;bus:yes;highway:bus_stop;name:Montangn Latrinité;public_transport:platform;shelter:no;tactile_paving:no
+node/1764588826,4.9257609 -52.2901301,bench:stand_up_bench;bin:no;bus:yes;highway:bus_stop;name:Montangn des Per;name:etymology:wikidata:Q24692670;name:fr:Montagne des Pères;name:gcr:Montangn des Per;public_transport:platform;shelter:yes;tactile_paving:no
+node/1764603261,4.9172014 -52.2994755,bus:yes;highway:bus_stop;name:Montangn Kwa;public_transport:platform;shelter:no
+node/1764603282,4.9176917 -52.3006383,bus:yes;highway:bus_stop;name:Montangn Machoulou;public_transport:platform;shelter:no
+node/1764607229,4.9193115 -52.3022379,bus:yes;highway:bus_stop;name:Montangn Darjan;public_transport:platform;shelter:yes
+node/1764649492,4.8893422 -52.3468314,addr:city:Matoury;addr:country:GF;addr:postcode:97354;alt_name:Cité Balata;bus:yes;highway:bus_stop;name:Kajou;public_transport:platform;shelter:yes
+node/1764649493,4.8906063 -52.3498773,alt_name:La Chaumière;bench:no;bin:no;bus:yes;highway:bus_stop;name:Kouzou;public_transport:platform;shelter:no;tactile_paving:no
+node/1764670807,4.8941963 -52.354234,alt_name:Route Départementale;bench:no;bin:no;bus:yes;highway:bus_stop;name:Chadek;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1764670812,4.9009486 -52.3484754,alt_name:Route du Larivot - Persévérance;bench:no;bin:no;bus:yes;highway:bus_stop;name:Ponmsité;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1764671263,4.8993728 -52.3393514,"alt_name:Cité Zénith;bench:no;bus:yes;highway:bus_stop;name:Zoranj;note:At the local the name is Zoranj, but in the bus map the name is Mandarin;public_transport:platform;shelter:no"
+node/1764671265,4.8987215 -52.337511,"alt_name:Cité Zénith;bus:yes;highway:bus_stop;name:Mandarin;note:At the local the name is Mandarin, but in the bus map the name is Mouben;public_transport:platform;shelter:yes"
+node/1764671267,4.8990208 -52.3427425,"alt_name:Route du Larivot;bench:no;bin:no;bus:yes;highway:bus_stop;name:Nannan;note:At the local the name is Nannan, but in the bus map the name is Zoranj;public_transport:platform;shelter:no;source:local inspection"
+node/1764672718,4.8968404 -52.3336581,alt_name:Z.I. Larivot;bench:no;bin:no;bus:yes;highway:bus_stop;name:Ranboutan;public_transport:stop_position;shelter:no;tactile_paving:no
+node/1764673035,4.9246716 -52.3290215,bench:no;bin:no;bus:yes;highway:bus_stop;name:CAF;public_transport:platform;shelter:no;tactile_paving:no
+node/1764717338,4.9104557 -52.3213923,alt_name:S.M.T.C.;bench:yes;bin:yes;bus:yes;highway:bus_stop;name:Belenmbi;public_transport:platform;shelter:yes;source:local inspection;tactile_paving:no
+node/1764722211,4.9027165 -52.3171533,bench:no;bin:no;bus:yes;highway:bus_stop;name:Monts Apikri;public_transport:platform;shelter:no;tactile_paving:no
+node/1764722213,4.9042497 -52.3199802,bench:no;bin:no;bus:yes;highway:bus_stop;name:Monts Attachi Baka;public_transport:platform;shelter:no;tactile_paving:no
+node/1764722214,4.9013978 -52.3240136,bench:no;bin:no;bus:yes;highway:bus_stop;name:Monts Gran Matouri;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1764722215,4.9021685 -52.3194812,bench:no;bin:no;bus:yes;highway:bus_stop;name:Monts Tumuk-Humak;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1764726672,4.901706 -52.3262723,alt_name:Z.I. Collery 3;bench:no;bin:no;bus:yes;highway:bus_stop;name:Lousé;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1764726676,4.9021934 -52.3256781,alt_name:Z.I. Collery 3;bench:no;bin:no;bus:yes;highway:bus_stop;name:Lousé;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1764726677,4.9061788 -52.3252117,alt_name:Z.I. Collery 1;bench:no;bin:no;bus:yes;highway:bus_stop;name:Pwa Sikré;public_transport:stop_position;shelter:no;tactile_paving:no
+node/1764735310,4.8953031 -52.3313242,alt_name:A.F.P.A. Larivot;bench:no;bin:no;bus:yes;highway:bus_stop;name:Maracoudja;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1764735313,4.9002819 -52.3281444,alt_name:Pôle Emploi;bench:no;bin:no;bus:yes;highway:bus_stop;name:Moukaya;public_transport:stop_position;shelter:no;source:local inspection;tactile_paving:no
+node/1768134797,4.9305194 -52.328356,addr:housenumber:33;addr:street:Rue Adome;amenity:place_of_worship;name:Assemblée de Dieu Madureira;phone:+594 694 13 49 01;religion:christian;short_name:A.D Madureira;source:survey 02 2024
+node/1777486831,4.9425106 -52.3198999,bench:no;bin:no;bus:yes;highway:bus_stop;name:Masif Décou-Décou;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1781669816,5.1550833 -52.6483968,bus:yes;highway:bus_stop;name:Collège Victor Schoelcher;public_transport:stop_position
+node/1782168389,4.8936448 -52.3281026,alt_name:Terca;bench:no;bin:no;bus:yes;highway:bus_stop;lit:no;name:Montangn Serpen;name:fr:Montagne Serpent;name:gcr:Montangn Serpen;note:(2024) Le nom Terca apparait encore sur la fiche horaire de la ligne 7 mais cet arrêt ne porte plus ce nom;public_transport:stop_position;shelter:no;tactile_paving:no
+node/1782674502,4.8947484 -52.3330142,alt_name:Carrefour Balata;bench:no;bin:no;bus:yes;highway:bus_stop;name:Kan'n;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/1782857079,4.8944947 -52.3388534,amenity:kindergarten;name:L'Île aux Enfants;source:local inspection
+node/1783136829,4.8989132 -52.3292531,alt_name:Moulando 1;Lot. Marengo;bench:no;bin:no;bus:yes;highway:bus_stop;name:Moulando;public_transport:stop_position;shelter:no;tactile_paving:no
+node/1784175655,4.9016197 -52.3179388,addr:street:Rue des Morphos;amenity:place_of_worship;name:Assemblée de la Grâce
+node/1792563498,4.931338 -52.3338772,man_made:tower;tower:type:communication
+node/1794425607,4.9259213 -52.2891519,addr:street:Avenue des Champs Élysées;amenity:bank;atm:yes;brand:BNP Paribas;brand:wikidata:Q499707;brand:wikipedia:en:BNP Paribas;level:0;name:BNP Paribas;opening_hours:Tu-Fr 09:05-17:45; Sa 09:05-12:45;operator:wikidata:Q499707;operator:wikipedia:fr:BNP Paribas;website:https://antilles-guyane.bnpparibas/nos-agences/montjoly-2;wheelchair:yes
+node/1794425627,4.9258441 -52.2885572,amenity:bank;name:Banque des Antilles Françaises;source:local inspection
+node/1795170663,4.9046987 -52.3216882,addr:postcode:97328;amenity:bank;brand:BRED;brand:wikidata:Q2877455;brand:wikipedia:fr:BRED Banque populaire;name:BRED;official_name:Banque régionale d'escompte et de dépôts;official_name:en:Regional Discount and Deposit Bank;official_name:fr:Banque régionale d'escompte et de dépôts
+node/1799898801,3.8470041 -51.8351019,name:Hotel Real;tourism:hotel
+node/1800093965,3.8475442 -51.8358889,name:Hotel Floresta;note:1. + 2. andar;tourism:hotel
+node/1807460178,4.9375037 -52.3368136,man_made:tower;source:local inspection;tower:type:communication
+node/1807492929,4.9364531 -52.3354983,leisure:sports_centre;name:Sculpt Your Body;source:local inspection
+node/1827717811,4.5330668 -54.4354831,amenity:school;name:École élémentaire Apaguy;operator:type:public;ref:UAI:9730272H;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/1834433696,5.2793832 -52.5830605,historic:ruins;name:Piscine des Bagnards
+node/1834437939,5.2832077 -52.5839671,name:Vue sur l'île Royale et l'île du Diable;tourism:viewpoint
+node/1919426279,5.7451803 -53.9388545,internet_access:no;name:Chez Judith et Denis;tourism:hostel
+node/2102892448,5.1548755 -52.6431286,amenity:marketplace;name:Marché Fortuna Ringuet
+node/2111567148,5.174423 -52.6524689,bus:yes;name:Collège Omeba Tobo;public_transport:stop_position
+node/2114454413,5.1662689 -52.6478774,amenity:kindergarten;name:La Dorlotine
+node/2114454459,5.166747 -52.6420913,amenity:kindergarten;name:La Marmotine
+node/2124152515,5.1717932 -52.6506243,bus:yes;name:Rond-Point Monnerville;public_transport:stop_position
+node/2125655479,4.6712418 -52.4699676,tourism:picnic_site
+node/2129523869,4.9049031 -52.2754182,name:Tortue Luth;tourism:artwork
+node/2132455353,3.6430808 -54.029744,amenity:restaurant;beds:6;contact:email:aubergedelamontagne@hotmail.fr;cuisine:asian;creole;internet_access:yes;name:Auberge de la Montagne;phone:+594 594 37 26 11;tourism:hotel
+node/2132460148,3.6372532 -54.0308554,name:Chez Célia;tourism:hotel
+node/2133569518,3.6391773 -54.0269063,tourism:viewpoint
+node/2133570127,3.6386583 -54.0297744,leisure:sports_centre;name:Gymnase
+node/2133570845,3.6412891 -54.0284936,amenity:library;name:Bibliothèque
+node/2148278381,5.1659241 -52.6542101,amenity:community_centre;community_centre:for:senior;name:Maison de quartier Savane
+node/2148278564,5.1614416 -52.6416408,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/2155877220,5.156555 -52.6393363,amenity:arts_centre;name:Association Libi Na Wan
+node/2155877239,5.1652725 -52.6692359,name:Site d'Observation Public Carapa - Décollage fusée;name:en:Carapa launch observation deck;tourism:viewpoint
+node/2155877264,5.1541081 -52.64512,"addr:city:Kourou;addr:housenumber:56;addr:postcode:97310;addr:street:Rue du Docteur Hervé Floch;description:Cet hôtel propose des studios tout confort répartis autour d'un patio. Chaque studio dispose en rez de chaussée d'un séjour, d'une kitchenette aménagée, d'une salle de bain, et en mezzanine d'une chambre avec deux lits séparés.;email:hotel.legrosbec@orange.fr;internet_access:wlan;name:Le Gros Bec;rooms:20;stars:2;tourism:hotel;website:http://www.hotel-legrosbec.com/;wheelchair:yes"
+node/2155877272,5.1725769 -52.646195,addr:city:Kourou;addr:housenumber:1;addr:postcode:97310;addr:street:Rue Martial Amet;description:L’hôtel Ballahou se situe dans un quartier calme de Kourou à 100 mètres de la plage entre le 3ème Régiment Etranger d’Infanterie et le village Amérindien tout près du McDonald’s;internet_access:wlan;name:Les Ballahous;rooms:18;stars:2;tourism:hotel;website:https://www.hotel-ballahou.com/
+node/2155877273,5.157866 -52.6405949,amenity:community_centre;community_centre:for:senior;name:Maison de quartier Cité du Stade
+node/2155877278,5.1578248 -52.638098,amenity:community_centre;name:Papakay
+node/2155877370,5.1554521 -52.65195,bus:yes;name:Rond-Point Giotto;public_transport:stop_position
+node/2155877602,5.1675738 -52.6829685,tourism:artwork
+node/2155938698,5.0129922 -52.4730616,addr:city:Macouria;addr:postcode:97355;addr:street:Rue Renotte Robo;amenity:marketplace;name:Marché de Tonate;opening_hours:Th 15:00-19:00
+node/2164612346,5.0478756 -52.5181136,man_made:tower;tower:type:communication
+node/2164664225,4.8902155 -52.3317344,man_made:tower;tower:type:communication
+node/2172227177,5.1501171 -52.6973935,addr:city:Kourou;addr:postcode:97310;addr:street:Route du Degrad Saramaca;description:Ce centre vous propose trois types d’architecture amérindienne dont le grand carbet rond Tukusipan pouvant accueillir 40 hamacs.;internet_access:no;name:Association Kalawashi;rooms:40;tourism:hotel;website:http://www.kalawachi.com/
+node/2172660348,5.3760034 -52.9589595,amenity:marketplace;name:Marché Couvert
+node/2180522177,5.1591106 -52.6268316,bus:yes;name:Tour Dreyfus;public_transport:stop_position
+node/2229891350,5.0532731 -53.0822259,name:Sous bois défriché;tourism:camp_site
+node/2239376691,5.1791455 -54.3270948,addr:city:Apatou;addr:postcode:97317;addr:street:Maiman;name:Mawina Chouti;note:Restaurant et carbet de passage;operator:Harold;phone:+594 694442772;tourism:hostel
+node/2285138707,5.223039 -52.7623378,name:Belvédère Orchidée;tourism:viewpoint
+node/2286047733,4.9093807 -52.2813483,amenity:school;name:Accueil
+node/2286047741,4.9094077 -52.2808207,amenity:school;name:Administration
+node/2286701540,5.0193792 -52.9784129,tourism:camp_site
+node/2287143986,4.909359 -52.280306,amenity:community_centre;name:Foyer des Élèves
+node/2293038335,5.7314825 -53.8940311,name:Station Awara;tourism:attraction
+node/2293038340,5.7309623 -53.8925764,name:Station Bois Encens;tourism:attraction
+node/2293038346,5.7291276 -53.8902309,name:Station Maripa;tourism:attraction
+node/2293038352,5.728339 -53.8890103,name:Station abattis;tourism:attraction
+node/2341215793,3.7901365 -51.9066129,tourism:viewpoint
+node/2382856470,4.2799763 -52.4514197,name:Carbet Grillon;operator:ONF;tourism:alpine_hut
+node/2382856471,4.2544255 -52.5753465,name:Carbet Rosette;operator:ONF;tourism:alpine_hut
+node/2458062854,5.1555549 -52.6525637,name:La Clé;tourism:artwork
+node/2484077763,5.482722 -54.0444879,"addr:housenumber:15;addr:street:Rue des Amazones;email:contact@kayakmaroni.fr;leisure:sports_centre;name:Club Canoé-Kayak du Maroni (CCKM);opening_hours:Mo, We, Fr 17:00-19:00;phone:+594694389837;sport:canoe;kayak;canoe_polo;hiking;website:https://kayakmaroni.fr"
+node/2485876235,5.5062877 -54.0298898,addr:housenumber:24;addr:postcode:97320;addr:street:Boulevard Malouet;internet_access:wlan;leisure:sports_centre;name:École de Voile Vent d'Ouest;phone:+594 594 27 89 57;sport:sailing;website:http://ventdouestslm.canalblog.com/
+node/2524716277,3.6239559 -53.2080695,man_made:tower;tower:type:communication
+node/2524716282,3.6167674 -53.2026695,man_made:tower;tower:type:communication
+node/2567240344,4.8373623 -52.3389071,artwork_type:statue;description:Statue du Chamane - 6 Nations autochtones guyanaises;material:wood;name:Chamane;tourism:artwork;wikidata:Q112671349
+node/2597362410,5.1721785 -52.6571761,name:Tour Arc-en-ciel;tourism:artwork
+node/2603132142,5.1771378 -52.6480387,bus:yes;name:Avenue de l'Anse;public_transport:stop_position
+node/2603132145,5.1657033 -52.6479703,bus:yes;name:Berlioz;public_transport:stop_position
+node/2603132150,5.1565261 -52.6367304,bus:yes;name:Boulevard Emmanuel Bellony;public_transport:stop_position
+node/2603132153,5.1618647 -52.667396,bus:yes;name:CAAK;public_transport:stop_position
+node/2603132159,5.1628776 -52.6709626,bus:yes;name:Carapa;public_transport:stop_position
+node/2603132164,5.1594385 -52.639449,bus:yes;name:Cité du Stade;public_transport:stop_position
+node/2603132167,5.1648847 -52.6382507,bus:yes;name:Cocoteraie 1;public_transport:stop_position
+node/2603132170,5.1612203 -52.6369505,bus:yes;name:France Équinoxiale;public_transport:stop_position
+node/2603132174,5.170039 -52.641877,bus:yes;name:Front de Mer;public_transport:stop_position
+node/2603132177,5.1713919 -52.6455352,bus:yes;name:Gonfolo;public_transport:stop_position
+node/2603132180,5.1646621 -52.6469482,bus:yes;highway:bus_stop;name:Hopital CMCK;public_transport:platform
+node/2603132184,5.1580917 -52.6418631,bus:yes;highway:bus_stop;name:Hôtel de Ville;public_transport:platform
+node/2603132186,5.1600765 -52.6518176,bus:yes;name:IUT;public_transport:stop_position
+node/2603132191,5.1721995 -52.6585692,bus:yes;name:Lac Bois-Diable;public_transport:stop_position
+node/2603132194,5.1541011 -52.6410422,bus:yes;name:Lycée Elie Castor;public_transport:stop_position
+node/2603132203,5.1622534 -52.6311375,bus:yes;name:Pim Poum;public_transport:stop_position
+node/2603132206,5.1638769 -52.6515232,bus:yes;name:Place Nobel;public_transport:stop_position
+node/2603132209,5.166394 -52.6434433,bus:yes;name:Place de l'Europe;public_transport:stop_position
+node/2603132216,5.1499604 -52.6439185,bus:yes;name:Place des Balourous;public_transport:stop_position
+node/2603132219,5.1516193 -52.6437194,bus:yes;name:Place des Fêtes;public_transport:stop_position
+node/2603132225,5.1622938 -52.6472914,bus:yes;name:Plaine Bois Chaudat;public_transport:stop_position
+node/2603132235,5.1552851 -52.6547891,bus:yes;name:Route du Maire;public_transport:stop_position
+node/2603132236,5.1547681 -52.6513196,bus:yes;name:Rue Aupra;public_transport:stop_position
+node/2603132238,5.1683416 -52.6549128,bus:yes;name:Rue Bois Diable;public_transport:stop_position
+node/2603132240,5.1562899 -52.6671588,bus:yes;name:Rue Gustave Eiffel;public_transport:stop_position
+node/2603132241,5.1529444 -52.6460658,bus:yes;name:Rue des Frères Amet;public_transport:stop_position
+node/2603132246,5.1694024 -52.6509676,bus:yes;name:Square Monnerville;public_transport:stop_position
+node/2603132248,5.1605534 -52.6434257,bus:yes;name:Victor Hugo;public_transport:stop_position
+node/2603132249,5.1712913 -52.6436692,bus:yes;name:Village Amériendien;public_transport:stop_position
+node/2603132250,5.1574753 -52.6708265,bus:yes;name:ZI Pariacabo;public_transport:stop_position
+node/2603132264,5.1771349 -52.6547343,bus:yes;name:École Internatinale;public_transport:stop_position
+node/2603132272,5.169673 -52.6423183,bus:yes;name:École Michel Lohier;public_transport:stop_position
+node/2603132277,5.1768206 -52.6512077,bus:yes;name:École Olivier Compas;public_transport:stop_position
+node/2603132281,5.1702733 -52.6545699,bus:yes;name:École Savane;public_transport:stop_position
+node/2609696010,5.1622838 -52.6782465,man_made:tower
+node/2609696050,5.1636297 -52.6805698,man_made:tower
+node/2623462967,5.3042107 -52.8342252,man_made:tower
+node/2623462968,5.3042002 -52.8347666,man_made:tower
+node/2623462971,5.3047411 -52.8347909,man_made:tower
+node/2639871087,4.6612948 -52.2854354,alt_name:Habitation Saint-Martin;historic:ruins;historic:civilization:colonial;name:Habitation Grande Marée
+node/2680719940,4.7315492 -52.3270626,name:Aux portes des forêts;tourism:artwork
+node/2680719960,4.6276806 -52.306799,name:Cascades de Fourgassier;tourism:attraction;waterway:waterfall
+node/2732339363,5.1589873 -52.6654953,"alt_name:Kalapa;name:Centre d'Archéologie Amérindienne de Kourou;opening_hours:Mo, Th 15:00-18:00; We 09:00-13:00, 15:00-18:00;phone:+594 594 32 58 81;short_name:CAAK;tourism:museum;website:https://www.ville-kourou.fr/culture/centre-archeologie-amerindienne-de-kourou-caak/"
+node/2834693739,4.8889758 -52.2840523,amenity:bank;atm:yes;brand:LCL;brand:wikidata:Q779722;brand:wikipedia:fr:Crédit lyonnais;drive_through:no;name:LCL;operator:LCL
+node/2907245737,4.7281746 -52.3238962,bus:yes;highway:bus_stop;name:Mairie de Roura;public_transport:platform
+node/2945870475,5.3617281 -52.9475318,amenity:fountain
+node/3003899800,5.1627261 -52.6718449,leisure:sports_centre;name:Le Bowling;sport:10pin
+node/3040056332,5.4793333 -53.2065872,denomination:catholic;description:600 m2 de fresques naïves peintent par le forçat Pierre Huguet.;name:Fresques naïves;tourism:artwork
+node/3089886979,4.8248999 -52.5133193,description:en:Motor disused;historic:ruins
+node/3089886982,4.8258116 -52.5172494,description:en:Toilets disused;historic:ruins
+node/3089887003,4.8265621 -52.5161568,historic:ruins;historic:civilization:modern;name:Bagne des Annamites
+node/3101210671,4.4498935 -52.1229082,"name:écolodge Kaïman (carbet flottant);operator:""J.A.L."";phone:+594 594 31 68 20;tourism:motel;website:https://jal-voyages.com/"
+node/3101345980,4.7865967 -52.3540321,highway:bus_stop
+node/3102541996,4.6928165 -52.3224775,historic:ruins
+node/3102557069,4.6752146 -52.318319,historic:ruins
+node/3122335859,5.3471839 -52.8466986,historic:ruins
+node/3338591311,5.6670593 -53.7768716,"amenity:townhall;contact:email:venise.bacoul@mairie-mana.fr;contact:phone:+594 594 34 82 68;contact:website:http://www.mairie-mana.fr;name:Mairie de Mana;opening_hours:Mo 07:30-13:30; Tu 07:30-13:30,15:00-17:30; We 07:30-13:30; Th 07:30-13:30,15:00-17:30; Fr 07:30-13:30;ref:FR:SIRET:21973306000012;source:Service-Public.fr - 11/2023;wheelchair:yes"
+node/3338591312,5.6664178 -53.7766926,"amenity:monastery;building:house;heritage:2;heritage:operator:mhs;historic:building;mhs:inscription_date:1987-09-22;name:Maison des Sœurs de Saint-Joseph-de-Cluny;ref:mhs:PA00105908;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C19;wikidata:Q3279954;wikipedia:fr:Maison des sœurs de Saint-Joseph-de-Cluny"
+node/3358654890,4.8657066 -52.3517416,tourism:viewpoint
+node/3410740810,5.3517124 -52.9459732,addr:city:Sinnamary;addr:housenumber:RN1-PK111;addr:postcode:97315;addr:street:Degrad Fontine;email:contact@ecolodgeoiseauparadis.com;internet_access:wlan;name:L'Oiseau de Paradis - Hôtel Eco-Lodge;operator:Valérie MEYNIER et Jr VERDEROSA;phone:+594 694 412 300;tourism:hotel;website:https://www.ecolodgeoiseauparadis.com/
+node/3410740888,5.3614756 -52.9480394,amenity:fountain
+node/3430390418,4.2733348 -54.382601,amenity:marketplace;name:Espace Dintu
+node/3447169405,4.8676012 -52.2966986,historic:archaeological_site;source:GPS
+node/3447282545,4.8672701 -52.2960021,description:Mur;historic:ruins
+node/3517766236,5.0653342 -53.0446794,tourism:viewpoint
+node/3517766291,5.0673096 -53.0413468,tourism:viewpoint
+node/3579309176,4.5698163 -52.4698098,man_made:tower;tower:type:communication
+node/3657084419,5.049828 -52.6042402,leisure:water_park;name:Matiti Paradise
+node/3667878080,4.8878559 -52.3334064,addr:city:Matoury;addr:place:ZI Terca;addr:postcode:97351;amenity:cinema;cinema:3D:yes;contact:email:contact@agora.gf;contact:facebook:https://www.facebook.com/AgoraCinema/;drive_in:no;fax:+594 594 25 30 30;name:Agora;opening_hours:Mo-Su 08:00-18:00; Apr 10-15 off; Jun 14:00-00:00;phone:+594 594 25 22 00;ref:FR:CNC:no;screen:6;website:https://agora.gf/
+node/3671974563,4.8192829 -53.2836376,height:81;man_made:tower;owner:Orange Services Fixes;ref:FR:ANFR:48839;source:ANFR 08/2019;tower:type:communication
+node/3675543277,4.8060631 -52.3619075,bus:yes;highway:bus_stop;name:RN2 - 2300;public_transport:platform;shelter:no
+node/3703706365,5.6699766 -53.7825363,height:80;man_made:tower;owner:Guyane Numérique;ref:FR:ANFR:1033379;source:ANFR 08/2019;tower:type:communication
+node/3812345287,3.6444988 -54.0332808,man_made:tower;tower:type:communication
+node/4048968750,3.1715958 -52.3224947,name:Chez Da;source:PAG;tourism:camp_site
+node/4048968751,3.1703356 -52.3303002,name:Chez Lucia;source:PAG;tourism:hotel
+node/4048968753,3.1711212 -52.3509671,name:Chez Yves;source:PAG;tourism:camp_site
+node/4048975595,3.1674044 -52.334163,amenity:townhall;contact:phone:+594 594 37 44 00;name:Mairie de Camopi;opening_hours:Mo-Fr 07:00-12:30;ref:FR:SIRET:21973356500010;source:Service-Public.fr - 11/2023
+node/4149124923,5.3731423 -52.9508297,leisure:sports_centre;name:Piscine Municipale;sport:swimming
+node/4254510046,4.9329083 -52.3002468,addr:housenumber:12;addr:postcode:97300;addr:street:Avenue de l'Université Harvard;amenity:university;name:Résidence Universitaire de Troubiran
+node/4271687739,5.7352147 -53.9090928,amenity:school;name:École élémentaire Yamanalé;operator:type:public;ref:UAI:9730073S;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/4306267880,5.1631672 -52.6795401,name:Site d'observation Ibis - Décollage fusée;name:en:Ibis launch observation deck;tourism:viewpoint
+node/4343316430,5.1748871 -52.6586866,addr:city:Kourou;addr:postcode:97310;addr:street:Avenue Antoine de Saint-Exupéry;brand:Mercure;brand:wikidata:Q1709809;internet_access:yes;name:Mercure Ariatel;rooms:80;stars:4;tourism:hotel;website:http://www.mercure.com/fr/hotel-1592-hotel-mercure-kourou-ariatel/index.shtml
+node/4343334482,5.1506727 -52.644517,"addr:city:Kourou;addr:housenumber:10;addr:postcode:97310;addr:street:Rue Edjide Duchesne;description:Le Gîte Baobab est située dans le bourg de Kourou, dans une résidence très calme, sécurisée, très beau jardin aménagé et verdoyant. 3 studios sont a votre disposition. Dispose d’un parking intérieur et d’une piscine.;internet_access:yes;name:Gîte Baobab;rooms:6;tourism:hotel;website:https://www.gite-baobab.com/"
+node/4344306573,5.1601767 -52.6480218,"addr:city:Kourou;addr:housenumber:30;addr:postcode:97310;addr:street:Rue Alphonse Discolle;description:Situé au bord du Lac Bois Chaudat, la villa vous accueil dans un cadre calme et reposant pour vos séjours, d'une nuit, un week-end, quelques semaines. Les trois studios avec entrées indépendantes et accès à un parking sécurisé par un portail électrique. ;internet_access:yes;name:Villa du Bois Chaudat;rooms:6;tourism:hotel;website:https://www.guyane-amazonie.fr/hebergements/HLOCTG973V5002E2/detail/kourou/villa-du-bois-chaudat"
+node/4344319184,5.1586092 -52.6545435,addr:city:Kourou;addr:housenumber:23;addr:postcode:97310;addr:street:Rue Thomas Edison;internet_access:yes;name:Studio Edison;rooms:4;tourism:hotel;website:https://www.guyane-amazonie.fr/hebergements/HLOCTG973V50069F/detail/kourou/studio-edison
+node/4344345822,5.1597726 -52.654573,"addr:city:Kourou;addr:housenumber:48;addr:postcode:97310;addr:street:Rue Madame Payé;description:AMARANTE STUDIOS & PISCINE vous propose 3 studios neufs, meublés, très bien équipés et décorés avec goût : - 2 studios coté Piscine sur 2 niveaux avec cuisine partagée, - 1 studio coté jardin de plein pied + terrasse privative et hamac.;internet_access:yes;name:Amarante studios et piscine;rooms:6;smoking:no;tourism:hotel;website:https://www.guyane-amazonie.fr/hebergements/HLOCTG973V500028/detail/kourou/amarante-studios-piscine"
+node/4351744927,4.8321535 -52.3187157,bus:yes;highway:bus_stop;name:La Levée 1;public_transport:platform
+node/4351779495,4.8387027 -52.3392611,bench:no;bin:no;bus:yes;highway:bus_stop;name:Rond-Point Califourchon;public_transport:platform;shelter:no;tactile_paving:no
+node/4351926734,4.88788 -52.3324834,alt_name:Family Plaza;bench:yes;bin:yes;bus:yes;highway:bus_stop;name:Monts Mitaraka;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/4352596314,3.8109038 -54.1508943,man_made:tower;tower:type:communication
+node/4353061326,4.9515523 -52.4575601,bus:yes;highway:bus_stop;name:Savane Marivat;public_transport:platform
+node/4354005201,5.2185999 -54.2418382,capacity:4;name:Camp Sparouine;tourism:camp_site
+node/4360539192,5.4732561 -54.0358078,name:Relais des 3 Lacs;opening_hours:Mo-Su 06:00-21:00;tourism:hotel
+node/4379723891,4.8760133 -52.3371027,bench:yes;bin:no;bus:yes;highway:bus_stop;name:Cogneau Lamirande;public_transport:platform;shelter:yes;tactile_paving:no
+node/4379780390,5.2874461 -52.589535,email:accueil@aubergedesiles.fr;name:Auberge des iles;name:fr:Auberge des iles;phone:+594 594 32 11 00;tourism:hotel;website:https://www.aubergedesiles.fr/
+node/4443020233,5.4991436 -54.0561669,amenity:bank;description:Can provide car insurance;name:GODO
+node/4476589000,5.2400121 -52.7684736,man_made:tower;name:Paratonnerre;name:de:Blitzableiter;name:pl:Wieże piorunochronów
+node/4476589009,5.2404016 -52.7688412,man_made:tower;name:Paratonnerre;name:de:Blitzableiter;name:pl:Wieże piorunochronów
+node/4476589010,5.2403743 -52.7681421,man_made:tower;name:Paratonnerre;name:de:Blitzableiter;name:pl:Wieże piorunochronów
+node/4494705391,4.4984249 -52.052519,name:Débarcadère du Marais de Kaw;name:fr:Débarcadère du Marais de Kaw;tourism:attraction
+node/4494730190,4.8872946 -52.2623755,name:Sentier du Rorotat;name:fr:Sentier du Rorotat;tourism:attraction
+node/4500159308,4.8467657 -52.3353833,name:La Marmotte;tourism:hotel
+node/4504245792,4.8167027 -52.4828715,historic:monument;name:Pont Jaune;name:fr:Pont Jaune
+node/4527118434,4.9255759 -52.4634689,name:Atelier de poterie;tourism:artwork
+node/4566761391,3.640659 -54.0427118,name:cantonnement gendarmerie;tourism:hotel
+node/4591481697,4.8331066 -52.3394412,bench:yes;bus:yes;highway:bus_stop;name:Sainte Rosa de Lima;public_transport:platform;shelter:yes
+node/4719565443,4.8893595 -52.4949677,addr:city:Montsinéry;addr:postcode:97356;bench:no;bus:yes;description:Arrêt pour bus public et scolaire;highway:bus_stop;name:Château d'eau;public_transport:platform;shelter:no
+node/4721034224,5.0127473 -52.475819,amenity:clock;date:no;display:digital;name:horloge numérique;support:pole;visibility:street
+node/4721109618,4.9318227 -52.4141078,bench:yes;bus:yes;highway:bus_stop;name:Soula 2;public_transport:platform;shelter:no
+node/4742749143,4.8753776 -52.3343847,bus:yes;highway:bus_stop;name:Rue de la Canneraie;public_transport:stop_position
+node/4778756921,5.4181643 -53.0453731,tourism:viewpoint
+node/4795035691,4.8935834 -52.3298642,bench:no;bin:no;bus:yes;highway:bus_stop;lit:no;name:Monts Bakra;public_transport:stop_position;shelter:no;source:GPS;tactile_paving:no
+node/4795511971,4.75161 -52.331368,bus:yes;highway:bus_stop;name:Dégrad Stoupan;public_transport:platform;shelter:yes;source:GPS
+node/4795511992,4.787913 -52.351772,bus:yes;highway:bus_stop;name:Village Sabrina;public_transport:platform;shelter:yes;source:GPS
+node/4795511994,4.8050639 -52.3636175,bench:no;bus:yes;highway:bus_stop;name:Carrefour de Stoupan;public_transport:platform;shelter:yes
+node/4797225096,4.8217009 -52.3425445,bus:yes;highway:bus_stop;name:RN2 - Paramana;public_transport:platform;shelter:yes
+node/4851756136,4.9428857 -52.3283804,addr:city:Cayenne;addr:postcode:97300;addr:street:Rue Victor Schœlcher;amenity:college;internet_access:no;name:Centre A E C D E Formation
+node/4851869640,4.8936765 -52.3417677,amenity:music_school;name:École de Musique et de Danse;opening_hours:Mo-Fr 09:00-19:00; Sa 09:00-14:00
+node/4866550573,4.5740039 -52.4733149,amenity:library
+node/4889771924,5.3087817 -52.9240702,name:Cirad;name:fr:Cirad;name:ru:Научная станция;tourism:attraction
+node/4889771925,5.4236493 -53.009663,description:Carrière de sable;name:Carrière de sable;tourism:attraction
+node/4889779922,5.2617877 -52.9280064,name:Cirad;name:fr:Cirad;tourism:camp_site
+node/4893745380,5.5043956 -54.0262837,addr:city:Saint-Laurent-du-Maroni;addr:housenumber:18;addr:postcode:97320;addr:street:Avenue Léon Gontran Damas;amenity:community_centre;description:Maison associative pour accueillir des évenements;name:maison de quartier des Cultures;operator:Mairie de Saint-Laurent du Maroni;wheelchair:no
+node/4898037063,5.480436 -54.0335265,amenity:school;name:Collège Arsène Bouyer d'Angoma;operator:type:public;ref:UAI:9730394R;school:FR:collège;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/4898063300,5.4989119 -54.0296586,name:Kaz Papillon;old_name:Hôtel Star;source:name:https://www.guyane.ars.sante.fr/media/120606/download?inline;tourism:hotel
+node/4900587932,5.4773274 -53.9918591,historic:ruins;name:Camp Lorrain
+node/4924916191,5.497501 -54.008752,amenity:place_of_worship;religion:christian
+node/4924916193,5.490089 -54.0382528,amenity:place_of_worship;religion:christian
+node/4924916219,5.4918564 -54.0370535,historic:memorial;memorial:stele;name:Le Marronnage;operator:APFOM;subject:wikidata:Q445485
+node/4929397524,5.4901911 -54.0363876,amenity:community_centre
+node/4976058782,5.4961418 -54.0570635,amenity:bank;atm:yes
+node/5009901058,4.8833532 -52.3363826,"alt_name:Vito Balata;amenity:fuel;branch:Vito;brand:Vito;brand:wikidata:Q62536473;compressed_air:yes;fuel:diesel:yes;fuel:octane_95:yes;name:Vito;opening_hours:06:00-20:00;operator:Vito;payment:mastercard:yes;payment:visa:yes;post_office:post_partner;post_office:opening_hours:Mo-Sa 06:00-18:00; Su 07:00-18:00; PH off; 2022 Feb 28,Mar 01-02 off;ref:FR:LaPoste:12974D;wheelchair:no"
+node/5018204710,4.8782221 -52.3622887,name:L'Ébène Verte;tourism:hotel;website:http://www.ebeneverte-guyane.fr
+node/5018204712,4.8793579 -52.366363,addr:postcode:97351;addr:street:Chemin de la Chaumière;name:La Chaumière;phone:+594 594 30 62 83;tourism:hotel;website:https://www.lachaumierecayenne.com/
+node/5028958022,5.2525091 -52.8062502,communications_tower:type:dish;man_made:tower;operator:CNES;tower:construction:dish;tower:type:communication
+node/5028958104,5.2514273 -52.8046274,communications_tower:type:dish;man_made:tower;operator:CNES;tower:construction:dish;tower:type:communication
+node/5043418283,5.1661216 -52.6706353,artwork_type:sculpture;name:Le Poing Levé;tourism:artwork
+node/5043696721,5.159596 -52.6265831,historic:monument;name:Tour Dreyfus;name:en:Dreyfus tower;name:fr:Tour Dreyfus
+node/5061767722,5.1508385 -52.6734306,addr:postcode:97310;addr:street:Zone Pariacabo;internet_access:wlan;name:La Marina;name:de:La Marina;tourism:hotel;website:https://www.hotel-restaurant-lamarina.com/
+node/5075490468,4.8470804 -52.2885026,"heritage:3;heritage:operator:mhs;historic:fort;mhs:inscription_date:1995-08-24;name:Fort Trio;ref:mhs:PA00135689;ruins:yes;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;source:position:survey;start_date:C19;wikidata:Q3078092;wikipedia:fr:Fort Trio"
+node/5080954145,4.8606948 -52.2707579,"archaeological_site:petroglyph;heritage:3;heritage:operator:mhs;historic:archaeological_site;mhs:inscription_date:2002-03-08;name:Le Serpent de Pascaud;ref:mhs:PA97300001;source:GPS;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q3479873;wikipedia:fr:Serpent de Pascaud"
+node/5084616815,5.5071249 -54.0256126,historic:ruins;name:Hangar de l'ancienne gare
+node/5126191930,4.6497075 -52.3504369,man_made:tower;tower:type:communication
+node/5126191931,4.7837527 -52.4219003,man_made:tower;tower:type:communication
+node/5143729421,4.9064824 -52.2856282,"addr:postcode:97354;addr:street:Rue Bois Boco;amenity:kindergarten;name:Kaz timoun;name:en:Kaz timoun;name:fr:Kaz timoun;opening_hours:Mo-Tu, Th-Fr 07:15-15:00; We 07:15-13:00"
+node/5153634797,4.9315256 -52.4015383,man_made:tower;tower:type:communication
+node/5181581360,4.895963 -52.273825,addr:housenumber:1074;addr:street:Route de Rémire;alt_name:Cric-Crac;contact:phone:+594 594 35 41 00;name:Complexe Belova;tourism:hotel
+node/5187390522,4.7851686 -52.3811388,name:Carbet;tourism:wilderness_hut
+node/5208938524,3.8437769 -51.8296372,addr:housenumber:389;addr:postcode:68980000;addr:street:Avenida Carupunas;amenity:cinema;internet_access:wlan;name:CINE IMPÉRIO;name:en:IMPIRE CINE;opening_hours:Mo-Su 16:00-01:00;phone:+55 96 98809-0149
+node/5224508740,5.5004362 -54.0281787,artwork_type:sculpture;tourism:artwork
+node/5229048183,5.3700144 -52.9494922,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;name:Vito
+node/5235219826,5.4866854 -53.9968596,artwork_type:sculpture;name:Mère Nourricière;tourism:artwork
+node/5235219827,5.4865752 -53.9964133,artwork_type:sculpture;name:Libi Makandra;tourism:artwork
+node/5235219829,5.4823727 -53.9875099,artwork_type:sculpture;name:Respect;tourism:artwork
+node/5235219830,5.4841637 -53.9875374,artwork_type:sculpture;name:Un Bateau dans l'Arbre;tourism:artwork
+node/5235219831,5.4847329 -53.9904691,artwork_type:sculpture;name:Serus;tourism:artwork
+node/5235219832,5.4847358 -53.9940995,artwork_type:sculpture;name:Bwa Mitan;tourism:artwork
+node/5264185122,5.0212776 -52.5261757,addr:housenumber:2805;addr:place:Savane Césarée;addr:postcode:97355;addr:street:Avenue de la Césarée;email:orchideesguyaneecxport@orange.fr;name:Jardin botanique de Guyane / Maison de la Vanille;opening_hours:We-Su 09:00-17:00;phone:+594 594 28 17 56;tourism:attraction;website:https://www.jardinbotaniquedeguyane.com/
+node/5264528273,4.8867184 -52.4939964,"contact:phone:+594 694 26 07 57;leisure:sports_centre;name:Centre Nautique Terre Rouge;opening_hours:Tu,Th 12:00-20:00; We 14:00-20:00; Fr 09:00-12:00,14:00-20:00; Sa 08:30-12:00,15:00-18:00; Su 08:30-12:00"
+node/5300902169,5.3745439 -52.958133,amenity:library
+node/5309561533,4.9959941 -54.092804,tourism:viewpoint
+node/5309588900,5.4984819 -54.0329337,addr:housenumber:2;addr:street:Rue Léon-Barrat;description:Carbet à hamac gardé. Peut fournir un hamac.;name:Amazonie accueil;opening_hours:Mo-Su 09:00-18:30;phone:+5945 94 34 36 12;tourism:hotel
+node/5315627415,5.1604348 -52.6467016,alt_name:CRCKP;leisure:sports_centre;name:La Pagaie - Club de Canoé-Kayak de Kourou;sport:canoe
+node/5325999073,4.1987735 -52.1517169,description:bâche nécessaire;name:Zone de bivouac Savane Roche Virginie;tourism:camp_site
+node/5353062521,3.8414855 -51.8413863,name:Chácara Du Rona;tourism:camp_site
+node/5407459423,5.0133868 -53.0294634,description:Ancien bagne annamite;historic:prison;name:Camp Saut Tigre;tourism:attraction
+node/5421573823,4.939317 -52.3158449,"amenity:bank;atm:yes;brand:La Banque Postale;brand:wikidata:Q3206431;brand:wikipedia:en:La Banque postale;name:La Banque Postale;opening_hours:Mo-We,Fr 07:30-17:30; 2021 Feb 15 off; 2021 Feb 16 off; 2021 Feb 17 off; Th 07:30-12:30,14:00-17:30; 2020 Dec 31 07:30-12:30; 2020 Nov 27 09:30-17:30; Sa 07:30-12:00; PH off"
+node/5434015121,5.3481134 -52.8490942,name:La plage;name:ru:Пляж;tourism:viewpoint
+node/5439834457,4.8854764 -52.2776562,amenity:school;name:École élémentaire Elvina Lixef;operator:type:public;ref:UAI:9730428C;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/5441009569,4.9253616 -52.2867117,addr:street:Route de Montjoly;amenity:kindergarten;description:Micro Crèche Bio;level:0;name:La petite Aura;phone:+594 594 25 75 76
+node/5495005305,4.0491661 -51.6690258,addr:city:Saint-Georges;amenity:school;name:École de Trois Palétuviers;operator:type:public;ref:UAI:9730072R;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/5495017290,4.8509642 -52.3288032,bench:stand_up_bench;bin:yes;bus:yes;highway:bus_stop;name:Église de Matoury;public_transport:platform;shelter:yes;tactile_paving:no
+node/5515218162,4.7879488 -52.3415892,amenity:kindergarten;contact:phone:+594 594 29 26 74;kindergarten:FR:crèche_collective;name:Les Azurites;website:https://www.maiavillage.com/
+node/5659449629,5.4961472 -54.0306619,name:Communauté des Frères;short_name:FEC;tourism:artwork
+node/5659450032,5.4889384 -54.0157468,amenity:school;name:Collège-lycée privé Cécile Cheviet;operator:type:private;ref:UAI:9730497C;religion:christian;school:FR:collège;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/5661432670,3.170198 -52.3297135,amenity:school;source:survey
+node/5662247930,4.9279855 -52.3084631,alt_name:Résidence Universitaire;bench:no;bin:no;bus:yes;highway:bus_stop;lit:no;name:Ibiskis Rwayal;public_transport:platform;shelter:no;source:local inspection;tactile_paving:no
+node/5669888121,5.4965071 -54.0344879,"bus:yes;description:en:Minibus to Cayenne, Kourou;highway:bus_stop;public_transport:platform"
+node/5673549223,5.1544184 -52.6728069,historic:monument;name:Bienvenue a Kourou
+node/5679487010,4.8951387 -52.2586655,addr:city:Remire-Montjoly;addr:housenumber:2543;addr:postcode:97354;addr:street:Route des Plages;leisure:sports_centre;name:Association des Pratiquants du Catamaran;phone:+594 694 24 87 84;short_name:Apcat;sport:sailing;website:https://www.facebook.com/profile.php?id=100008237658325
+node/5750058774,4.921105 -52.280277,alt_name:Route de Montjoly;bench:no;bin:no;bus:yes;highway:bus_stop;name:Twatwa;public_transport:platform;shelter:no;tactile_paving:no
+node/5750433114,4.8732738 -52.3228593,bus:yes;highway:bus_stop;name:Ronds-Points Cogneau;public_transport:platform;shelter:yes
+node/5750433117,4.8484018 -52.3294094,bench:yes;bin:no;bus:yes;highway:bus_stop;name:École Saint-Michel;public_transport:platform;shelter:yes;tactile_paving:no
+node/5751940550,4.9401488 -52.301794,bench:no;bin:no;bus:yes;highway:bus_stop;name:Kolin'n Mont'Abo;public_transport:platform;shelter:no;tactile_paving:no
+node/5752045060,4.9449393 -52.3127493,alt_name:Cité Castor;bench:no;bin:no;bus:yes;highway:bus_stop;name:Fromajé;public_transport:platform;shelter:no;tactile_paving:no
+node/5752177558,4.8810945 -52.3365025,bench:no;bin:no;bus:yes;highway:bus_stop;name:Rue des Cotonniers;public_transport:stop_position;shelter:no;tactile_paving:no
+node/5752177559,4.8839623 -52.3357978,bench:no;bin:no;bus:yes;highway:bus_stop;name:Kalina;public_transport:stop_position;shelter:yes;tactile_paving:no
+node/5752177560,4.8744075 -52.3302103,bench:yes;bin:no;bus:yes;highway:bus_stop;name:Collège Saint-Pierre;public_transport:stop_position;shelter:yes;tactile_paving:no
+node/5752177561,4.8697373 -52.3192089,bench:no;bin:no;bus:yes;highway:bus_stop;name:La Rhumerie;public_transport:stop_position;shelter:no;tactile_paving:no
+node/5752177562,4.8665789 -52.3128967,bench:no;bin:no;bus:yes;highway:bus_stop;name:Ranch;public_transport:stop_position;shelter:no;tactile_paving:no
+node/5752177563,4.8485799 -52.3187397,bench:no;bin:no;bus:yes;highway:bus_stop;name:École Barbadine;public_transport:stop_position;shelter:no
+node/5752177564,4.8520706 -52.3223128,bench:no;bin:no;bus:yes;highway:bus_stop;name:Barbadine 2;public_transport:stop_position;shelter:yes;tactile_paving:no
+node/5752177565,4.8505692 -52.3256802,bus:yes;highway:bus_stop;name:Moucayas;public_transport:stop_position;shelter:no
+node/5752177566,4.8485849 -52.3262527,bench:no;bin:no;bus:yes;highway:bus_stop;name:Centre Commercial Makoupy;public_transport:platform;shelter:no;tactile_paving:no
+node/5752177567,4.8456499 -52.3274853,bench:no;bin:no;bus:yes;highway:bus_stop;name:Collège La Canopée;public_transport:stop_position;shelter:no;tactile_paving:no
+node/5752177568,4.8470573 -52.3307356,bench:no;bin:no;bus:yes;highway:bus_stop;name:Stade de Matoury;public_transport:stop_position;shelter:no;tactile_paving:no
+node/5757099931,5.0418448 -52.5111312,man_made:tower;source:position:DigitalGlobe;tower:type:communication
+node/5779342280,5.2864054 -52.590397,tourism:viewpoint
+node/5779677716,4.9496121 -52.4242874,bench:no;bin:no;bus:yes;highway:bus_stop;name:Carrefour Eiffage;public_transport:platform;shelter:no;tactile_paving:no
+node/5779677722,4.9501496 -52.437697,bench:no;bus:yes;highway:bus_stop;name:Carrière;public_transport:platform;shelter:no
+node/5779677741,4.9489214 -52.4832041,bench:yes;bus:yes;highway:bus_stop;name:Crique Patates;public_transport:platform;shelter:yes
+node/5779677748,4.9466714 -52.4919998,bench:no;bin:no;bus:yes;highway:bus_stop;name:Zoo;public_transport:platform;shelter:no;tactile_paving:no
+node/5779677966,4.944669 -52.4994002,bench:no;bin:no;bus:yes;highway:bus_stop;name:Scierie;public_transport:platform;shelter:no;tactile_paving:no
+node/5779678015,4.9421185 -52.5033457,bench:yes;bus:yes;highway:bus_stop;name:Quesnel;public_transport:platform;shelter:yes
+node/5779678017,4.9166002 -52.5142737,bench:yes;bus:yes;highway:bus_stop;name:Risquetout (FRG);public_transport:platform;shelter:yes
+node/5779678018,4.9323438 -52.5064544,bus:yes;highway:bus_stop;name:Ferme Porrineau;public_transport:platform;shelter:yes
+node/5779678021,4.9016845 -52.5164281,bus:yes;highway:bus_stop;name:Carrefour de Montsinéry;public_transport:platform;shelter:no
+node/5779678227,4.8933276 -52.4937357,bench:no;bin:no;bus:yes;highway:bus_stop;name:Bourg de Montsinéry;public_transport:platform;shelter:no;tactile_paving:no
+node/5779705576,4.8903632 -52.5213431,bus:yes;highway:bus_stop;name:Dilo Guyane;public_transport:platform
+node/5779705603,4.877236 -52.5287759,bus:yes;highway:bus_stop;name:Pont Vert;public_transport:platform
+node/5779878256,4.8683159 -52.5248833,bus:yes;highway:bus_stop;name:Ferme Solaire;public_transport:platform
+node/5779878297,4.8628253 -52.5211198,bus:yes;highway:bus_stop;name:Crique Coco;public_transport:platform
+node/5779878599,4.832879 -52.5107512,bus:yes;highway:bus_stop;name:Bagne des Annamites;public_transport:platform
+node/5779878618,4.826222 -52.4983175,bus:yes;highway:bus_stop;name:Ferme Épailly;public_transport:platform
+node/5779878619,4.8258716 -52.4980304,bus:yes;highway:bus_stop;name:Ferme Épailly;public_transport:platform
+node/5779878620,4.8221888 -52.491424,bus:yes;highway:bus_stop;name:Carrefour Tonnégrande;public_transport:platform
+node/5779965941,4.8315288 -52.4445177,bus:yes;highway:bus_stop;name:Annexe mairie de Tonnégrande;public_transport:platform
+node/5779966255,4.793532 -52.4570619,bus:yes;highway:bus_stop;name:Pont Cascades;public_transport:platform
+node/5779966257,4.8010806 -52.4714932,bus:yes;highway:bus_stop;name:Maison de repos (cascade);public_transport:platform
+node/5779966259,4.7966051 -52.4598195,bus:yes;highway:bus_stop;name:Abri (artisanal saramaca) crique;public_transport:platform
+node/5779966261,4.7996855 -52.4433745,bus:yes;highway:bus_stop;name:Crique Rondeau;public_transport:platform
+node/5779966263,4.7990537 -52.4393115,bus:yes;highway:bus_stop;name:Morne aux Canards;public_transport:platform
+node/5779966265,4.7875824 -52.4294039,bus:yes;highway:bus_stop;name:Beauséjour Kalagni;public_transport:platform
+node/5779966271,4.7834211 -52.4234942,bus:yes;highway:bus_stop;name:Gallion;public_transport:platform
+node/5795982062,4.889865 -52.183336,historic:archaeological_site;name:Polissoirs;source:position:GPS
+node/5795982063,4.889422 -52.181691,tourism:viewpoint
+node/5795982069,4.890159 -52.181412,historic:ruins
+node/5795982071,4.890564 -52.185184,historic:yes;man_made:tower
+node/5795982073,4.893039 -52.182406,tourism:viewpoint
+node/5795982074,4.893245 -52.18334,tourism:viewpoint
+node/5795982075,4.894096 -52.187178,tourism:viewpoint
+node/5795982076,4.894265 -52.189392,tourism:viewpoint
+node/5809020074,4.8923432 -52.3358646,"addr:street:Rue Bois de Fer;name:L'Île aux Trésors;opening_hours:Th,Fr 16:00-20:00; We,Sa,Su 10:00-19:00;tourism:theme_park"
+node/5812951432,4.931964 -52.3119109,bench:no;bin:no;bus:yes;highway:bus_stop;name:Mowéyo;public_transport:platform;shelter:no;tactile_paving:no
+node/5812951436,4.9234714 -52.2830537,bench:no;bin:no;bus:yes;highway:bus_stop;name:Pouldo;public_transport:platform;shelter:no;tactile_paving:no
+node/5812951438,4.9156694 -52.2823875,bench:no;bin:no;bus:yes;highway:bus_stop;name:Békon;public_transport:platform;shelter:no
+node/5812953360,4.9140823 -52.2836874,bench:no;bin:no;bus:yes;highway:bus_stop;name:Pikolèt;public_transport:platform;shelter:no;tactile_paving:no
+node/5812953364,4.9136749 -52.2851837,alt_name:Rue Roger Desnoyers;bench:no;bus:yes;highway:bus_stop;name:Lorti;public_transport:platform;shelter:no
+node/5812953366,4.9120512 -52.2855934,bus:yes;highway:bus_stop;name:Djek;public_transport:platform
+node/5812953368,4.9099666 -52.2837473,bus:yes;highway:bus_stop;name:Zortolan;public_transport:platform
+node/5812953373,4.9075528 -52.2785152,alt_name:Collège Auguste Dédé;bench:stand_up_bench;bin:yes;bus:yes;highway:bus_stop;name:Bek-Darjan;public_transport:platform;shelter:yes;tactile_paving:no
+node/5812953375,4.9040206 -52.2764159,alt_name:Mairie Montjoly;bench:no;bin:no;bus:yes;highway:bus_stop;name:Kardinal;public_transport:platform;shelter:no;tactile_paving:no
+node/5812953376,4.9036213 -52.2767042,bench:no;bin:no;bus:yes;highway:bus_stop;name:Kardinal;public_transport:platform;shelter:no;tactile_paving:no
+node/5828229366,4.8857824 -52.3354642,bench:yes;bin:no;bus:yes;highway:bus_stop;name:Balata;public_transport:platform;shelter:yes;tactile_paving:no
+node/5835260320,4.858041 -52.271599,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes;source:position:GPS
+node/5835293821,4.8541117 -52.3256688,addr:housenumber:91;addr:place:Lotissement Gibelin II;amenity:kindergarten;kindergarten:FR:crèche_collective;name:Les Petits Papillons;opening_hours:Mo-Fr 06:30-18:30; We 06:30-14:00;phone:+594 594 38 21 00
+node/5836577886,5.5078237 -54.0316991,name:Epave Edith Cavell;tourism:attraction
+node/5857208985,4.8470818 -52.3265638,amenity:community_centre;name:Centre d'Action Socio-Culturel et Sportif de Matoury;short_name:CASCSM
+node/5879264267,5.5072293 -54.02813,historic:ruins;historic:civilization:C19;name:Débarcadère du bagne de Saint-Laurent-du-Maroni
+node/5879264685,5.5039943 -54.0318564,name:Camp de la transportation;name:en:Transportation camp;tourism:museum
+node/5880235838,5.1602568 -52.8931615,name:Aire de Malmanoury;tourism:picnic_site
+node/5881446021,5.5008731 -53.9700648,bus:yes;highway:bus_stop;public_transport:platform
+node/5881504605,5.5521189 -53.9348652,bus:yes;highway:bus_stop;public_transport:platform
+node/5881504606,5.5570044 -53.9272599,bus:yes;highway:bus_stop;public_transport:platform
+node/5881505211,5.562087 -53.9172451,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735094,5.5692493 -53.8897399,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735095,5.5689142 -53.8892993,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735097,5.5670582 -53.8810804,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735101,5.5660384 -53.8723177,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735102,5.5658637 -53.8719296,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735104,5.5619568 -53.8619795,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735107,5.5676763 -53.8590434,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735108,5.5678627 -53.8586693,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735110,5.5731721 -53.8529913,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735489,5.5847935 -53.839191,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735490,5.5849067 -53.8388279,bus:yes;highway:bus_stop;public_transport:platform
+node/5881735799,5.6046567 -53.8177982,historic:memorial;memorial:war_memorial
+node/5881736067,5.6055745 -53.8205708,amenity:fuel
+node/5881736068,5.6080195 -53.8167482,name:Javouhey Randonnées / Balades en forêt et canoë;operator:Association Javouhey Randonnées;phone:+594 594 34 25 12;tourism:attraction;website:https://www.facebook.com/javouhey.randonnee/
+node/5897176943,4.4854513 -52.035672,man_made:tower;tower:construction:lattice;tower:type:communication
+node/5897176948,4.486505 -52.036995,historic:memorial;memorial:war_memorial;name:Monument aux Morts
+node/5920538497,4.9440449 -52.3158486,addr:city:Cayenne;addr:housenumber:292;addr:postcode:97300;addr:street:Route de Montabo;amenity:arts_centre;email:espaceedmonderey@gmail.com;name:Espace Edmonde Rey;phone:+594 694 96 65 48;website:https://www.facebook.com/espace.E.REY
+node/5952310785,3.8377537 -51.8346955,addr:street:Rua Azarias Neto;name:Chalets Paradis;tourism:hotel
+node/5963981470,2.2934722 -52.8334632,addr:city:Camopi;addr:postcode:97330;amenity:school;isced:level:primary;name:École de Yawapa;operator:Éducation nationale;ref:UAI:9730427B;school:FR:primaire;source:survey
+node/5964008017,2.257253 -52.8737728,amenity:school;isced:level:primary;name:École de Zidock;operator:Éducation nationale;operator:type:government;ref:UAI:9730084D;school:FR:primaire
+node/5964040107,2.2476643 -52.8749044,addr:city:Camopi;addr:postcode:97330;amenity:school;isced:level:primary;name:École de Roger;operator:Education nationale;operator:type:government;ref:UAI:9730426A;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/5966409935,4.7260999 -52.3264722,amenity:marketplace;name:Marché de Roura
+node/5980268469,3.3898536 -53.9269277,amenity:school;isced:level:primary;name:École de Kayodé;operator:Éducation nationale;operator:type:public;school:FR:primaire
+node/5980304080,3.4663612 -54.0051956,amenity:school;isced:level:primary;name:École élémentaire d'Elahé;operator:Education nationale;operator:type:public;ref:UAI:9730165S;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/5980671037,3.2978771 -54.0702835,amenity:school;isced:level:primary;name:École d'Antecume Pata;operator:Education nationale;operator:type:public;ref:UAI:9730185N;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/5980679741,3.2864347 -54.1095838,amenity:school;isced:primary;name:École de Pidima;operator:Éducation nationale;operator:type:public;ref:UAI:9730437M;school:FR:primaire
+node/5981054185,4.7738131 -52.3802564,name:Carbet local;tourism:wilderness_hut
+node/5981054186,4.7651943 -52.4068957,name:Carbet armée de l'air;tourism:wilderness_hut
+node/5981848618,3.3818597 -54.0513602,amenity:school;isced:level:primary;name:École de Talhuen;operator:Éducation nationale;operator:type:public;ref:UAI:9730116N;school:FR:primaire
+node/5982149497,5.4994256 -54.0301624,addr:street:Rue Thiers;name:Hôtel Amazonia du Fleuve;tourism:hotel
+node/6058428790,4.8890011 -52.3032194,amenity:place_of_worship;name:Oratoire
+node/6070765585,4.7772866 -53.1204444,name:saut lucifer;tourism:wilderness_hut
+node/6164240685,3.7204311 -54.0415344,historic:monument;name:Fromager
+node/6169238985,4.8946346 -52.2679422,tourism:viewpoint
+node/6172730394,5.4950871 -54.0217768,addr:street:Route Nationale 1;description:Hotel;name:Chez julienne;tourism:hotel
+node/6175198070,4.9130146 -52.3721661,bench:no;bin:no;bus:yes;highway:bus_stop;name:Belle Humeur;public_transport:platform;shelter:no;tactile_paving:no
+node/6185598678,4.3113313 -52.1325456,amenity:social_centre;name:Maison familiale fluvial
+node/6185598920,4.3000935 -52.1416494,amenity:school;name:Annexe Pierre Ardinet du collège Chlore Constant;school:FR:collège
+node/6215037103,4.933871 -52.3048112,addr:housenumber:45;addr:street:Rue de l'Ara Bleu;brand:Mercure;brand:wikidata:Q1709809;brand:wikipedia:en:Mercure (hotel);email:HB095@ACCOR.COM;fax:+594 594 30 13 13;name:Mercure Cayenne Royal Amazonia;phone:+594 594 39 15 15;tourism:hotel;website:https://www.mercurecayenneroyalamazonia.fr/
+node/6262418833,5.5032577 -54.0323803,amenity:theatre;name:Théâtre école Kokolampoe
+node/6284548820,4.8927912 -52.4926755,name:Écomusée;tourism:museum
+node/6313622086,5.0468018 -52.6899079,"addr:housenumber:17,3;addr:street:Route du Dégrad Saramaca;name:ACK Carbet Kourou;tourism:wilderness_hut"
+node/6351994552,4.9343693 -52.4129618,addr:city:Macouria;addr:postcode:97355;addr:street:Avenue du Domaine de Soula;amenity:fuel;fuel:diesel:yes;fuel:octane_95:yes;fuel:octane_98:yes;name:Station-Service Soula;opening_hours:07:30-17:30
+node/6419676687,4.6701778 -52.3397304,name:Carbet à Lulu;tourism:wilderness_hut
+node/6505204236,5.0129418 -52.4743362,addr:city:Macouria;addr:postcode:97355;addr:street:Avenue Justin Catayée;amenity:theatre;contact:mobile:+594 694 22 95 04;email:contact@theatre-de-macouria.com;name:Théatre de Macouria;phone:+594 594 38 35 79;website:http://theatre-de-macouria.com/
+node/6540281785,4.433329 -52.3334618,name:Carbet de l'Asma;tourism:hostel
+node/6549196926,4.2088303 -51.6731467,addr:city:Ouanary;addr:postcode:97380;amenity:townhall;contact:email:mairie.annexeouanary@orange.fr;contact:phone:+594 594 37 01 02;name:Mairie de Ouanary;opening_hours:Mo-Fr 08:00-13:00;ref:FR:SIRET:21973314400014;source:Service-Public.fr - 11/2023;wheelchair:yes
+node/6549196928,4.2089101 -51.6717911,addr:city:Ouanary;addr:postcode:97380;amenity:school;name:École de Ouanary;operator:type:public;ref:UAI:9730029U;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/6550192780,4.2156551 -51.6728199,tourism:viewpoint
+node/6550232107,4.2155556 -51.6738889,height:80;man_made:tower;ref:FR:ANFR:1034540;source:ANFR 08/2019;tower:type:communication
+node/6550233162,4.223507 -51.6918012,tourism:viewpoint
+node/6550253046,4.38719 -51.6926804,access:yes;historic:ruins;historic:civilization:modern;name:Bagne de la Montagne d'Argent
+node/6552840098,3.8451498 -51.8342449,man_made:tower
+node/6731739350,4.9498598 -52.4270048,height:53;man_made:tower;owner:Orange;ref:FR:ANFR:654893;source:ANFR 08/2019;tower:type:communication
+node/6743233667,5.5255835 -53.3873483,height:80;man_made:tower;owner:TDF;ref:FR:ANFR:438130;source:ANFR 08/2019;tower:type:communication
+node/6743233668,4.8632131 -52.3560843,height:80;man_made:tower;ref:FR:ANFR:438559;source:ANFR 08/2019;tower:type:communication
+node/6743233669,5.4075274 -53.0264439,height:86;man_made:tower;owner:TDF;ref:FR:ANFR:441612;source:ANFR 08/2019;tower:type:communication
+node/6743386519,4.8548431 -52.332733,"addr:street:Route de l'Est;amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;compressed_air:yes;fuel:diesel:yes;name:Total;operator:Total;post_office:post_partner;post_office:opening_hours:Mo-Sa 06:30-12:00,13:00-18:30; Su 07:00-12:00,13:00-17:30; PH off; 2022 Feb 28,Mar 01-02 off;ref:FR:LaPoste:13973B"
+node/6783253308,3.8419474 -51.8349155,communication:mobile_phone:yes;man_made:tower;tower:type:communication
+node/6812990188,5.2890658 -52.5926607,historic:monument;name:Jetée des Morts
+node/6813011588,4.9328803 -52.4951248,addr:place:Quesnel Est;contact:phone:+594 594 37 95 42;garden:type:botanical;leisure:garden;name:Jardin Bois de Rose;opening_hours:08:00-18:00;tourism:attraction
+node/6813011589,5.2858397 -52.5853137,historic:ruins;name:atelier et forge
+node/6813011686,5.2877302 -52.5861362,historic:ruins;name:ancienne porcherie
+node/6833298812,4.9360325 -52.3230841,amenity:exhibition_centre;internet_access:yes;name:Totem;operator:La Canopée des Sciences;operator:type:association;phone:+594 594010404;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;website:https://www.ccsti973.fr/
+node/6854405177,4.9923634 -54.0881325,tourism:viewpoint
+node/6876477685,5.4374847 -53.6269093,name:carbet bâche du saut laussat;tourism:camp_site
+node/6942474386,5.3473077 -52.8490936,addr:street:Piste de l'Anse;name:Début de la piste à l'océan;name:ru:Начало тропы к океану;tourism:viewpoint
+node/6964494355,4.9417624 -52.3330045,amenity:courthouse;name:Tribunal des Affaires Sociales;name:de:Sozialgericht;source:Cartographie de reconnaissance 2016 par KG
+node/6973837885,4.3818113 -52.2994024,"description:Entrée Piste Belizon;name:pk 81,7;name:fr:pk 81,7;tourism:wilderness_hut"
+node/6979251688,3.8070969 -54.1521424,name:Carbet Municipal;tourism:camp_site
+node/7007153131,3.6114635 -53.1745756,historic:archaeological_site;name:Polissoirs amérindiens
+node/7018105604,5.0150802 -52.477764,amenity:school;name:École élémentaire Michelle Ponet;operator:type:public;ref:UAI:9730023M;school:FR:élémentaire
+node/7027405122,5.7249565 -53.889648,man_made:tower;tower:type:communication
+node/7027420354,5.4038437 -53.0149461,man_made:tower;tower:type:communication
+node/7078459352,5.1538076 -54.3420213,artwork_type:statue;material:metal;name:Statue de Jules Crevaux;tourism:artwork
+node/7132233475,4.8879821 -52.2530687,tourism:viewpoint
+node/7185720904,4.8189911 -52.5181982,tourism:picnic_site
+node/7298095990,4.8875923 -52.281892,alt_name:Résidence des Alizés;bench:yes;bin:yes;bus:yes;highway:bus_stop;name:Ranmyé;public_transport:platform;shelter:yes;tactile_paving:no
+node/7346384053,5.2830041 -52.583528,access:yes;building:yes;historic:ruins;name:Four à chaux du bagne
+node/7465283946,5.286516 -52.5915675,historic:ruins;name:Anceinne maison des soeurs
+node/7500988086,5.4873312 -54.0122005,name:Colombie;tourism:wilderness_hut
+node/7500988286,5.4906774 -54.0321885,name:Communauté des Sœurs;tourism:artwork
+node/7617900504,5.4813104 -54.0266206,name:Quartier Bagdad;tourism:wilderness_hut
+node/7617942385,5.471986 -54.0272949,name:Djakata;tourism:wilderness_hut
+node/7681325379,3.6409485 -54.0280611,"amenity:townhall;contact:email:administration.generale@ville-maripa-soula.fr;contact:phone:+594 594 37 21 50;name:Maire de Maripasoula;opening_hours:Mo 07:30-13:00,15:00-18:00; Tu-We 07:30-13:30; Th 07:30-13:30,15:00-18:00; Fr 07:30-13:30;ref:FR:SIRET:21973353200010;source:Service-Public.fr - 11/2023;wheelchair:yes"
+node/7929474743,4.9955029 -54.0934449,tourism:viewpoint
+node/7929474761,4.9956113 -54.0924427,tourism:wilderness_hut
+node/7947523187,4.7599153 -52.3271174,tourism:attraction
+node/7947562686,4.7588765 -52.3274195,tourism:attraction
+node/8045183786,3.9993813 -52.2611493,name:Inselberg Anabelle;tourism:viewpoint
+node/8203711687,5.2370784 -52.7751021,man_made:tower;name:de:Blitzableiter
+node/8203711689,5.2367501 -52.7747932,man_made:tower;name:de:Blitzableiter
+node/8394702827,4.8918321 -52.3373625,amenity:courthouse;name:Palais de Justice
+node/8402799117,5.3473933 -54.10667,tourism:camp_site
+node/8524817253,4.8920726 -52.3043525,man_made:tower;tower:type:communication
+node/8524817254,4.925389 -52.459297,man_made:tower;tower:type:communication
+node/8529604392,5.4179406 -53.0437059,man_made:tower;tower:type:observation
+node/8612316457,4.8941071 -52.3548684,bus:yes;highway:bus_stop;name:Village Palicour;public_transport:platform;shelter:yes
+node/8864172717,4.6643797 -52.2840792,historic:monument;name:Vestiges
+node/8968509272,4.9152496 -52.2753042,addr:street:Route de Montjoly;amenity:kindergarten;name:À petits pas;phone:+594 594 01 02 90
+node/8996719253,4.9022621 -52.2745094,historic:ruins
+node/9006907679,4.8871027 -52.2762879,alt_name:Caserne des pompiers;bench:no;bin:yes;bus:yes;highway:bus_stop;name:Goélan;public_transport:platform;shelter:yes;tactile_paving:no
+node/9006907680,4.8800814 -52.2886328,alt_name:Lycée Gontran Damas;bench:yes;bin:yes;bus:yes;highway:bus_stop;name:Périch;public_transport:platform;shelter:yes;tactile_paving:no
+node/9006907681,4.8951602 -52.2778804,alt_name:Hameau des Pruniers;bus:yes;highway:bus_stop;name:Pignanwan;public_transport:stop_position
+node/9010753289,4.8948111 -52.3384701,bench:no;bin:no;bus:yes;highway:bus_stop;name:Monts Itoupé;public_transport:platform;shelter:no
+node/9010753291,4.8925175 -52.3367602,bench:no;bin:no;bus:yes;highway:bus_stop;name:Monts Wara;public_transport:platform;shelter:no
+node/9010753293,4.8958707 -52.3345144,bench:no;bin:no;bus:yes;highway:bus_stop;name:Montangn Favard;public_transport:platform;shelter:no;tactile_paving:no
+node/9010753295,4.9004005 -52.3414111,bus:yes;highway:bus_stop;name:Monts Alikéné;public_transport:platform
+node/9017817589,4.9179086 -52.2794633,alt_name:Lotissement la Palmeraie;bench:no;bin:no;bus:yes;highway:bus_stop;name:Charpantyé;public_transport:platform;shelter:no;tactile_paving:no
+node/9017817605,4.8937497 -52.2744263,alt_name:Hameau des Pruniers;bus:yes;highway:bus_stop;name:Grobèk;public_transport:stop_position;shelter:no
+node/9017817608,4.8992962 -52.2790247,alt_name:Morne Coco;bus:yes;highway:bus_stop;name:Bléé-Gri;public_transport:stop_position
+node/9017817609,4.8908714 -52.275039,alt_name:Les Hauts de Rémire;bench:no;bin:no;bus:yes;highway:bus_stop;name:Zalwèt;public_transport:platform;shelter:yes;tactile_paving:no
+node/9017817610,4.8912816 -52.2746595,bench:no;bin:no;bus:yes;highway:bus_stop;name:Zalwèt;public_transport:platform;shelter:no;tactile_paving:no
+node/9017834217,4.8829248 -52.2877983,alt_name:Stade Edmard Lama;bench:no;bin:no;bus:yes;highway:bus_stop;name:Jako;public_transport:platform;shelter:no;tactile_paving:no
+node/9025220170,5.0038275 -52.4651185,bus:yes;highway:bus_stop;name:Sainte-Agathe;public_transport:platform;shelter:yes
+node/9025220197,4.9923929 -52.4502506,bus:yes;highway:bus_stop;name:Village Indien;public_transport:platform
+node/9025220198,4.9745997 -52.4418141,bench:no;bin:no;bus:yes;highway:bus_stop;name:Lac Maillard;public_transport:platform;shelter:yes
+node/9025220203,4.9275812 -52.4112033,bench:no;bin:no;bus:yes;highway:bus_stop;name:Soula 1 Collège;public_transport:platform;shelter:no;tactile_paving:no
+node/9025220204,4.9347776 -52.4047485,bus:yes;highway:bus_stop;name:PK 16;public_transport:platform
+node/9025220205,4.9311687 -52.3979344,bench:no;bin:no;bus:yes;highway:bus_stop;name:RN1 point A;public_transport:platform;shelter:yes;tactile_paving:no
+node/9025252437,4.9256237 -52.3906737,bench:no;bin:no;bus:yes;highway:bus_stop;name:RN1 point B;public_transport:platform;shelter:yes;tactile_paving:no
+node/9025252438,4.9207073 -52.3847806,bench:no;bin:no;bus:yes;highway:bus_stop;name:Belle Terre;public_transport:platform;shelter:no;tactile_paving:no
+node/9026518740,4.9256952 -52.3910557,bench:no;bin:no;bus:yes;highway:bus_stop;name:RN1 point B;public_transport:platform;shelter:no;tactile_paving:no
+node/9026556096,4.9736573 -52.4417394,bench:no;bin:no;bus:yes;check_date:bin:2023-09-22;highway:bus_stop;name:Lac Maillard;public_transport:platform;shelter:yes
+node/9026862784,5.0205305 -52.4817556,bus:yes;highway:bus_stop;name:Matiti point A;public_transport:platform;shelter:no
+node/9026862788,5.0415698 -52.5114514,bench:no;bin:no;bus:yes;highway:bus_stop;name:Maison de la Vanille;public_transport:platform;shelter:no;tactile_paving:no
+node/9029262048,5.0618795 -52.5613691,bus:yes;highway:bus_stop;name:Entrée Matiti;public_transport:platform;shelter:no
+node/9029262050,5.0496529 -52.5630634,bus:yes;highway:bus_stop;name:Abri bus de Matiti;public_transport:platform
+node/9029262051,5.0410069 -52.5664004,bus:yes;highway:bus_stop;name:Matiti Paradise;public_transport:platform
+node/9029262104,5.0376437 -52.5641177,bus:yes;highway:bus_stop;name:Lycée Agricole de Matiti;public_transport:platform
+node/9032877858,4.8457207 -52.3358005,bench:no;bin:no;bus:yes;highway:bus_stop;name:RN2 La Désirée;public_transport:platform;shelter:no;tactile_paving:no
+node/9032877859,4.8456712 -52.3354036,bench:no;bin:no;bus:yes;highway:bus_stop;name:RN2 La Désirée;public_transport:platform;shelter:no;tactile_paving:no
+node/9032888720,4.8239907 -52.3399199,bus:yes;highway:bus_stop;name:RN2 - 1800 / Café Chaulet;public_transport:platform;shelter:no
+node/9035447447,4.8191225 -52.3458134,bus:yes;highway:bus_stop;name:RN2 - 2100;public_transport:platform
+node/9035547280,4.8139174 -52.3521442,bus:yes;highway:bus_stop;name:RN2 - 2200;public_transport:platform;shelter:no
+node/9035572222,4.793576 -52.3571247,bus:yes;highway:bus_stop;name:Macrabo;public_transport:platform;shelter:yes
+node/9035572224,4.80088 -52.3627822,alt_name:Stoupan 1;bus:yes;highway:bus_stop;name:Ferme photovoltaïque;public_transport:platform
+node/9035672882,4.7842107 -52.348342,bus:yes;highway:bus_stop;name:Stoupan 2;public_transport:platform;shelter:yes
+node/9035672891,4.7792231 -52.3437889,bench:yes;bus:yes;highway:bus_stop;name:RD6 - Mogès;public_transport:platform;shelter:yes
+node/9038415133,4.7676849 -52.3386332,bus:yes;highway:bus_stop;name:Matoupan;public_transport:platform
+node/9038415152,4.7591585 -52.3356094,bus:yes;highway:bus_stop;name:Stoupan 3;public_transport:platform;shelter:yes
+node/9038415170,4.7333344 -52.3271066,bus:yes;highway:bus_stop;name:Route de Dacca;public_transport:platform;shelter:yes
+node/9038415183,4.7294705 -52.3196676,bus:yes;highway:bus_stop;name:Axionnaz;public_transport:platform
+node/9038469326,4.7324623 -52.3221103,bus:yes;highway:bus_stop;name:Roura - Annexe école;public_transport:platform
+node/9038469327,4.7409768 -52.3205833,bus:yes;highway:bus_stop;name:Roura - Dacca;public_transport:platform
+node/9043883649,2.9367705 -54.173939,tourism:camp_site
+node/9043892758,3.5973576 -53.9459031,tourism:camp_site
+node/9043894634,3.9939346 -52.2567184,tourism:camp_site
+node/9043894882,2.6642858 -54.2856493,name:Isoliëtakïma;tourism:camp_site
+node/9043901244,2.4452101 -54.4117165,historic:ruins;name:Usine de bois de rose
+node/9172392167,3.0224843 -54.1723278,tourism:camp_site
+node/9210429618,5.4204578 -54.0992766,name:Épave bato bagnard;tourism:wilderness_hut
+node/9289822990,4.5700353 -52.4684518,bench:no;bin:no;bus:yes;highway:bus_stop;public_transport:platform;shelter:no;tactile_paving:no
+node/9318320366,4.9314308 -52.3160841,leisure:dog_park;name:Cyno Garde;phone:+594 594 35 20 47;ref:FR:SIRET:34293090600041;website:https://www.cynopro973.com
+node/9428989547,3.6475528 -54.0287635,addr:city:Maripasoula;addr:street:Route de Sophie;name:Ricky Village;rooms:4;tourism:hotel
+node/9575006757,4.9362782 -52.3024482,"leisure:sports_hall;name:GoBabyGym Cayenne;opening_hours:Mo-Su 09:00-12:00, 14:00-18:00;phone:+594594244554;website:https://gobabygym-cayenne.com/"
+node/9621482617,5.2820314 -52.5789952,name:Gravures des peuples originaires;tourism:attraction
+node/9658896483,4.8387092 -52.3474301,addr:street:Rue Harpie Huppée;amenity:kindergarten;email:inscriptions@assoc-boiscanon.fr;kindergarten:FR:multiaccueil;name:Pom'Rosa;opening_hours:Mo-Fr 05:30-19:00;phone:+594 594 25 87 92;website:https://boiscanon973.fr
+node/9701604600,4.7273235 -52.3203734,man_made:communications_tower
+node/9716769917,4.9769896 -53.0186494,tourism:wilderness_hut
+node/9716769918,4.9499667 -53.1025918,name:spot carbet vue lac;tourism:camp_site
+node/9805211751,5.6421782 -53.7309207,amenity:school;name:Maison Familiale Rurale Mana
+node/9834788760,4.9236721 -52.3165599,addr:place:Cité Bonhomme;addr:street:Boulevard des Cités;amenity:community_centre;name:Maison de Quartier Serge Nemouthe
+node/9844657559,4.9109705 -52.2738947,"addr:street:Rue Robert Pierre-Charles;amenity:arts_centre;name:Espace Culturel Joseph Ho Ten You;opening_hours:Mo-Fr 08:30-13:30; Tu,Th 08:30-13:30,14:30-16:30"
+node/9897525898,4.7998605 -52.3628394,addr:street:Route de Stoupan;amenity:events_venue;name:La Péniche;ref:FR:SIRET:44380303600021;rental:yes
+node/9897578621,4.1800465 -54.3786589,amenity:ferry_terminal;ferry:yes;public_transport:stop_position
+node/9897578627,4.1827357 -54.3857627,amenity:ferry_terminal;ferry:yes;public_transport:stop_position
+node/9897578636,4.1950088 -54.392205,amenity:ferry_terminal;ferry:yes;public_transport:stop_position
+node/9904367263,4.8957527 -52.5097009,bus:yes;highway:bus_stop;name:TDF;public_transport:platform;shelter:no
+node/9904367264,4.873106 -52.5286015,bus:yes;highway:bus_stop;name:Abri banane;public_transport:platform;shelter:yes
+node/9904367265,4.8306176 -52.4411829,bus:yes;highway:bus_stop;name:Bourg de Tonnégrande;public_transport:platform
+node/9904367266,4.8049604 -52.4773991,bus:yes;highway:bus_stop;name:Abri Timoubu;public_transport:platform
+node/9905033676,4.8485928 -52.3327547,bench:no;bin:no;bus:yes;highway:bus_stop;name:RN2 - Mortium;public_transport:platform;shelter:no;tactile_paving:no
+node/9905033677,4.8407299 -52.3394103,bench:no;bin:no;bus:yes;highway:bus_stop;name:RN2 - Saint Christophe;public_transport:platform;shelter:no;tactile_paving:no
+node/9905033686,4.8385216 -52.3479512,bench:no;bin:no;bus:yes;highway:bus_stop;name:Concorde ZAC;public_transport:platform;shelter:no;tactile_paving:no
+node/9905033688,4.8359971 -52.3483536,bench:yes;bin:no;bus:yes;highway:bus_stop;name:Concorde 8 à 8;public_transport:platform;shelter:yes;tactile_paving:no
+node/9906226608,4.8371821 -52.3268043,bench:no;bin:no;bus:yes;highway:bus_stop;name:Chemin Morthium 4;public_transport:platform;shelter:no;tactile_paving:no
+node/9906226609,4.8403038 -52.3276761,bench:no;bin:no;bus:yes;highway:bus_stop;name:Chemin Morthium 3;public_transport:platform;shelter:no;tactile_paving:no
+node/9906226610,4.8437114 -52.3291768,bench:no;bin:no;bus:yes;highway:bus_stop;name:Chemin Morthium 2;public_transport:platform;shelter:no;tactile_paving:no
+node/9910326317,4.5787578 -52.4300355,"name:Cacao, ferme CHA By;tourism:viewpoint"
+node/9929712510,4.8057794 -52.363975,bus:yes;highway:bus_stop;name:Carrefour de Stoupan;public_transport:platform
+node/10038000357,5.2223894 -52.7618046,artwork_type:mural;historic:rocket;man_made:rocket_stage;name:EPC Ariane 5;tourism:artwork
+node/10075195055,5.0260364 -52.7347747,beds:7;operator:Wapa Lodge;operator:email:contact.wapalodge@gmail.com;operator:phone:+594 694 28 18 28;rooms:6;tourism:hostel
+node/10080090270,5.7457863 -53.9430414,bench:yes;bin:no;highway:bus_stop;shelter:yes;tactile_paving:no
+node/10080146923,5.7286622 -53.8940951,bench:yes;bin:no;highway:bus_stop;shelter:yes;tactile_paving:no
+node/10100162743,5.1672119 -52.6393108,amenity:traffic_park;bicycle:designated
+node/10101749285,5.1637404 -52.6387046,amenity:school;name:École élémentaire Émile Nézes
+node/10840480516,4.8664026 -52.2516172,name:Lodges Balourou;tourism:motel
+node/10857029095,5.6702338 -53.7767049,amenity:arts_centre;name:Makandra : centre d'action sociale
+node/10868424304,4.8980789 -52.2736459,addr:street:Route de Rémire;amenity:fuel;brand:Sol;brand:wikidata:Q99939344;name:Sol;post_office:post_partner;ref:FR:LaPoste:11906D;wheelchair:no
+node/10879383828,4.9306698 -52.3026507,artwork_type:statue;tourism:artwork
+node/11028313562,4.8770039 -52.3202158,addr:street:Rue Citron Vert;amenity:kindergarten;kindergarten:FR:multiaccueil;name:Pom' d'Amour;opening_hours:Mo-Fr 07:00-17:30; We 07:00-14:00;phone:+594 594 31 26 73;website:https://boiscanon973.fr/pom-damour
+node/11042546969,4.9393804 -52.2916509,amenity:community_centre;community_centre:for:multigeneration;name:L'Abattis
+node/11133105892,4.9051009 -52.3205256,amenity:fuel;brand:U;compressed_air:no;opening_hours:24/7
+node/11169677677,4.9474218 -52.4915707,"addr:street:Route du Galion;air_conditioning:no;amenity:marketplace;name:Marché agricole;opening_hours:Sa,Su 08:00-12:00"
+node/11212641150,3.6411526 -54.024547,name:R. Aventura;note:Approximate location;tourism:hotel
+node/11272662369,4.5953727 -52.2626741,addr:housenumber:pk30;addr:street:Route de Kaw;email:rebranchetoi@gmail.com;name:ReKaw’Nexion;phone:0769770015;tourism:attraction;website:https://rebranchetoi.fr
+node/11274618070,4.9224991 -52.290678,amenity:bank;contact:city:Remire-Montjoly;contact:housenumber:517;contact:phone:+594 594 38 34 49;contact:postcode:97354;contact:street:Rte De Suzini;name:Cafpi ;opening_hours:Mo-Fr 09:00-16:00;website:https://www.cafpi.fr/agences/courtier-guyane
+node/11307828001,4.8938377 -52.493741,addr:street:Rue Jérémy;amenity:kindergarten;name:Les Petits Morphos;phone:+594 594 35 62 94
+node/11347111221,3.8877506 -51.809485,amenity:school;capacity:680;isced:level:2;school:FR:collège
+node/11347173407,5.4658751 -54.0270153,addr:city:Saint-Laurent du Maroni;addr:housenumber:30;addr:postcode:97320;addr:street:Route de Paul Isnard;amenity:school;name:Michel Norka;operator:Mairie de Saint-Laurent du Maroni;operator:type:public;website:https://www.education.gouv.fr/annuaire/97320/saint-laurent-du-maroni/ecole/9730506m/ecole-elementaire-michel-norka.html
+node/11396622044,4.9251532 -52.2863851,addr:street:Route de Montjoly;amenity:kindergarten;level:0;name:Les Petits Themis
+node/11400039370,5.7462041 -53.9434553,tourism:picnic_site
+node/11400039469,5.1247773 -52.7323901,tourism:picnic_site
+node/11400039569,5.4901681 -53.3041145,tourism:picnic_site
+node/11400039570,5.6712476 -53.7761449,tourism:picnic_site
+node/11401442853,4.8976192 -52.2757233,amenity:public_bookcase
+node/11433163912,4.937064 -52.3042774,leisure:stadium;name:City Stade
+node/11483272460,4.9228776 -52.3024288,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/11503012763,4.9156912 -52.2653371,addr:street:Avenue Louis Caristan;amenity:public_bookcase;opening_hours:24/7;public_bookcase:type:reading_box
+node/11520605518,5.5739951 -53.8953436,bus:yes;highway:bus_stop;public_transport:platform
+node/11660797513,4.9302787 -52.3291511,addr:housenumber:19;addr:street:Rue Simon;amenity:place_of_worship;denomination:evangelical;name:Centre d'accueil Universel;phone:+594 594 20 25 89;religion:christian;website:https://centredaccueil.fr/guyane-cayenne/
+node/11685920382,4.9261869 -52.3257067,amenity:place_of_worship;denomination:adventist;name:Eglise Adventiste du Septième Jour - Mission de la Guyane;phone:+594 594 25 64 26;religion:christian;source:survey 02 2024
+node/11704082531,4.9328572 -52.3019607,bus:yes;highway:bus_stop;public_transport:platform
+way/37452608,4.9126979 -52.2703044,leisure:park;name:Place Lakou Mango
+way/37612537,4.8719155 -52.3385482,addr:city:Matoury;addr:postcode:97351;addr:street:Palais Régional Omnisport Georges Théolade;building:yes;leisure:stadium;name:Palais Régional Omnisport Georges Théolade;phone:+594 594 29 80 60;short_name:PROGT;sport:multi
+way/71484627,4.9439239 -52.3012591,amenity:community_centre;building:yes;name:Le Zéphyr;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;website:https://www.troisfleuves.fr/
+way/96391733,4.895622 -52.506886,building:yes;man_made:tower;operator:TDF;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;start_date:1984;tower:type:communication
+way/96391796,4.897982 -52.508866,building:yes;man_made:tower;operator:TDF;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;start_date:1984;tower:type:communication
+way/96391838,4.895926 -52.507305,building:yes;man_made:tower;operator:TDF;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;start_date:1984;tower:type:communication
+way/96392001,4.895204 -52.506294,building:yes;man_made:tower;operator:TDF;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;start_date:1984;tower:type:communication
+way/96392017,4.898418 -52.508678,building:yes;man_made:tower;operator:TDF;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;start_date:1984;tower:type:communication
+way/96392232,4.897244 -52.504981,building:yes;height:80;man_made:tower;operator:TDF;owner:TDF;ref:FR:ANFR:656531;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;ANFR 08/2019;tower:type:communication
+way/96392294,4.8991 -52.508418,building:yes;man_made:tower;operator:TDF;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;start_date:1984;tower:type:communication
+way/96405336,4.8425298 -52.3410321,building:yes;man_made:tower;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;tower:type:communication
+way/96407644,4.7718572 -52.3393994,amenity:place_of_worship;building:yes;denomination:catholic;name:Chapelle du Saint-Esprit;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;wikidata:Q46387593
+way/96408815,4.888849 -52.337946,amenity:place_of_worship;building:church;denomination:catholic;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+way/96419008,5.009907 -52.472353,addr:city:Macouria;addr:housenumber:5;addr:postcode:97355;addr:street:Rue Victor Ibris;amenity:bank;atm:yes;brand:La Banque Postale;brand:wikidata:Q3206431;brand:wikipedia:en:La Banque postale;building:yes;building:levels:1;drive_through:no;name:La Banque Postale;smoking:no;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+way/96420186,5.01111 -52.470996,amenity:place_of_worship;building:church;denomination:evangelical;name:Assemblée de Dieu;phone:+594 594 35 23 04;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+way/96461966,4.911825 -52.270214,amenity:place_of_worship;building:yes;name:Église Sainte-Thérèse;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;wikidata:Q38566392
+way/96462051,4.9229396 -52.2762157,addr:street:Rue Poupon;building:hotel;name:Motel du Lac;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;tourism:motel
+way/96463679,4.888889 -52.278319,amenity:community_centre;building:yes;name:Centre de Loisirs;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+way/96465397,4.912936 -52.272714,amenity:arts_centre;building:yes;check_date:2023-06-15;name:Le Pagaret;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+way/96466542,4.908543 -52.273463,addr:city:REMIRE MONTJOLY;addr:housenumber:120;addr:postcode:97354;addr:street:Avenue Saint-Ange Méthon;amenity:place_of_worship;building:yes;denomination:jehovahs_witness;name:Salle du Royaume;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+way/99250130,5.3796635 -52.9526778,amenity:school;name:École Primaire Ulrich Sophie;school:FR:primaire
+way/144782544,4.5664696 -52.4676999,building:roof;leisure:sports_hall;name:Halle Aux Sports;sport:multi;surface:asphalt
+way/147569301,4.5749772 -52.4702952,amenity:place_of_worship;building:yes;check_date:2023-07-21;name:Notre-Dame de la Paix;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/160210055,4.8892055 -52.3391003,amenity:arts_centre;building:roof;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/163980058,5.1943433 -52.7701664,building:yes;name:Site d'Observation Toucan - Décollage fusée;name:en:Toucan launch observation point;source:bing;tourism:viewpoint
+way/198978404,4.9433031 -52.3012082,amenity:school;barrier:fence;isced:level:3;name:Lycée Polyvalent Melkior-Garré;school:FR:lycée;website:http://webtice.ac-guyane.fr/melkior/
+way/200655924,4.911933 -52.2768866,building:yes;leisure:sports_centre;name:Complexe sportif Freddie et Yvane Harjopawiro;source:Bing;survey;sport:basketball;handball;volleyball;futsal
+way/202332576,5.1632596 -52.6437347,amenity:school;name:École maternelle Roland Lucile;operator:type:public;ref:UAI:9730101X;school:FR:maternelle;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/203003657,4.911939 -52.2711739,amenity:school;name:Annexe École Primaire Eugène Honorien;school:FR:primaire
+way/207097105,5.1773325 -52.6598374,addr:street:Avenue Antoine de Saint-Exupéry;brand:Mercure;brand:wikidata:Q1709809;email:H1592-GM@accor.com;fax:(+594)5/94326160;internet_access:yes;name:Mercure Kourou Ariatel;operator:Accor;phone:+594 594 32 89 00;tourism:hotel;website:http://mercure.com/gb/hotel-1592-mercure-kourou-ariatel/index.shtml;wheelchair:no
+way/208418040,4.2714706 -54.3776283,amenity:school;name:Collège Achmat Kartadinama;ref:UAI:9730380A;school:FR:collège
+way/208418043,4.2740567 -54.3804083,amenity:school;name:École élémentaire Fanko Atjali a Mi;operator:type:public;ref:UAI:9730325R;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/208418052,4.2758543 -54.384174,"amenity:townhall;contact:email:accueil@grandsanti.fr;contact:phone:+594 594 37 41 10;contact:website:http://www.grandsanti.fr;name:Hôtel-de-Ville;opening_hours:Mo 07:30-13:30; Tu 07:30-13:30,15:00-17:30; We 07:30-13:30; Th 07:30-13:30,15:00-17:30; Fr 07:30-13:30;ref:FR:SIRET:21973357300014;source:Service-Public.fr - 11/2023;wheelchair:no"
+way/215399222,5.1572458 -54.3446757,amenity:school;name:École maternelle;ref:UAI:9730512U;school:FR:maternelle
+way/222131083,4.8924137 -52.2897513,addr:street:Route de Dégrad des Cannes;amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:roof;check_date:2023-01-07;compressed_air:yes;mapillary:308989947424816;name:Vito;operator:Vito;payment:mastercard:yes;payment:visa:yes;ref:FR:SIREN:42371603400024;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+way/225239073,4.2758532 -54.3824059,amenity:school;name:École Élie Castor;operator:type:public;ref:UAI:9730486R;school:FR:maternelle
+way/234479408,4.606311 -52.2778032,building:roof;name:Abris point-de-vue;tourism:viewpoint
+way/238861492,5.4811986 -54.039783,amenity:school;name:École élémentaire Rudolph Biswane;operator:type:public;ref:UAI:9730420U;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/238898413,5.4809075 -54.0394519,amenity:school;name:École élémentaire Edgard Milien;operator:type:public;ref:UAI:9730339F;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/240694120,5.4812157 -54.040678,amenity:school;name:École maternelle Marcelle Blezes;operator:type:public;ref:UAI:9730387H;school:FR:maternelle;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/240860483,5.48499 -54.0154676,amenity:school;name:Collège Paul Jean-Louis;operator:type:public;ref:UAI:9730329V;school:FR:collège;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/240866857,5.4733627 -54.0316231,amenity:school;name:Collège Albert Londres;operator:type:public;ref:UAI:9730248G;school:FR:collège
+way/240873724,5.4867098 -54.0161665,amenity:school;name:École élémentaire Nicole Othily;operator:type:public;ref:UAI:9730419T;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/241193159,5.4848403 -54.0170889,addr:city:Saint-Laurent-du-Maroni;addr:housenumber:BP 112;addr:postcode:97320;addr:street:Avenue Paul Castaing;amenity:school;name:Lycée polyvalent Lumina Sophie;operator:type:public;ref:UAI:9730371R;school:FR:lycée;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/241245918,5.4765064 -54.0296774,amenity:school;name:École élémentaire Joseph;operator:type:public;school:FR:élémentaire
+way/241874586,5.3823933 -52.954785,amenity:school;name:Collège Élie Castor;operator:type:public;ref:UAI:9730145V;school:FR:collège;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/241874596,5.3832456 -52.9549253,leisure:sports_centre
+way/241928126,5.0357666 -52.5617646,"CLC:id:FR-973937;CLC:year:2012;alt_name:LEGTA de Matiti;amenity:school;name:Lycée Professionnel Agricole de Matiti;note:fr:Import CLC: ajusté après contrôle;school:FR:lycée;source:Bing;source_1:Union européenne - SOeS, CORINE Land Cover, 2012."
+way/245447975,5.176079 -52.6817719,leisure:sports_centre;sport:archery
+way/280427291,3.1657221 -52.3356388,addr:housename:Hall Sportif;building:yes;leisure:sports_centre;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014
+way/287019601,5.4839908 -54.0376168,amenity:place_of_worship;building:yes;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014
+way/287861597,5.5919672 -53.8128617,amenity:place_of_worship;building:yes;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014
+way/288987623,5.1554589 -54.3437593,"amenity:townhall;building:civic;contact:email:urbanisme@ville-apatou.fr;contact:phone:+594 5 94 34 91 96;name:Hôtel de Ville;opening_hours:Mo 07:30-12:30,14:00-17:00; Tu-We 07:30-13:30; Th 07:30-12:30,14:00-17:00; Fr 07:30-13:30;ref:FR:SIRET:21973360700010;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014;Service-Public.fr - 12/2023;wheelchair:yes"
+way/289076850,4.8253265 -53.2876219,amenity:townhall;building:civic;name:Mairie de Saint-Élie;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014;wall:no
+way/299921150,5.430206 -53.089786,amenity:place_of_worship;building:yes;denomination:catholic;name:Chapelle de Trou-poisson;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014;wikidata:Q46385911
+way/300161499,3.9010246 -51.8101706,amenity:fuel;brand:Total;building:yes;fuel:diesel:yes;fuel:octane_98:yes;opening_hours:Mo-Fr 08:00-13:00; Sa 08:00-12:00;operator:Total;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014
+way/305490249,4.7224326 -52.2641262,historic:ruins
+way/305496959,4.7960644 -52.3598578,man_made:tower;tower:type:communication
+way/310710166,5.0527655 -54.0884889,building:dormitory;internet_access:no;tourism:hostel
+way/322683712,5.4817109 -54.0385887,amenity:school;name:Collège Léodate Volmar;operator:type:public;ref:UAI:9730348R;school:FR:collège;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/352163960,4.5726159 -52.4642844,amenity:school;name:École élémentaire privée Saint-Paul;operator:type:private;ref:UAI:9730158J;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/352163961,4.5734462 -52.4621902,amenity:school;name:École élémentaire de Cacao;operator:type:public;ref:UAI:9730227J;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/366342262,5.4892811 -53.9947536,amenity:school;name:Lycée Polyvalent Raymond Tarcy;operator:type:public;ref:UAI:9730513V;school:FR:lycée;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/368311816,5.1504002 -54.3402589,amenity:school;name:École élémentaire Moutende;operator:type:public;ref:UAI:9730324P;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/368311818,5.1518267 -54.3408168,addr:city:Apatou;addr:postcode:97360;leisure:stadium;name:Stade d'Apatou
+way/377830880,3.6437989 -54.0365541,amenity:school;name:Collège Gran Man Difou;operator:type:public;school:FR:collège
+way/385331439,5.6526366 -53.7424972,"CLC:id:FR-973101;CLC:year:2012;amenity:school;name:Lycée polyvalent Léopold Elfort;note:CLC import: error fixed; school area instead of industrial;note:fr:Import CLC: après contrôle, lycée au lieu d'une zone industrielle ou commerciale;operator:type:public;ref:UAI:9730421V;school:FR:lycée;source:Union européenne - SOeS, CORINE Land Cover, 2012."
+way/389017882,5.2910221 -52.5848383,"building:house;heritage:2;heritage:operator:mhs;historic:building;mhs:inscription_date:1987-12-30;name:Maison de Dreyfus, sur l'île du Diable;ref:mhs:PA00105897;ruins:yes;source:heritage:Ministère de la Culture - 06/2019;start_date:C19;wikidata:Q3279147;wikipedia:fr:Maison d'Alfred Dreyfus"
+way/437277258,4.968842 -52.4651617,leisure:sports_centre;name:Guyane Karting;sport:karting
+way/437277567,5.0032164 -52.4604095,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:roof;compressed_air:yes;fuel:diesel:yes;fuel:octane_95:yes;fuel:octane_98:yes;layer:1;name:Station Vito;operator:Vito;source:Cartographie de reconnaissance 2016 par KG.
+way/437443754,3.8070425 -54.1498898,amenity:townhall;building:civic;contact:email:mairie@papaichton.fr;contact:phone:+594 594 37 30 00;name:Mairie de Papaïchton;opening_hours:Mo-Fr 07:00-14:00;ref:FR:SIRET:21973362300017;source:Service-Public.fr - 11/2023;wheelchair:yes
+way/437522069,4.8391699 -52.3503172,amenity:kindergarten;name:Crèche Raoul et Germaine
+way/437522561,4.821468 -52.3653153,aeroway:tower;building:yes;man_made:tower;name:SOCA TWR;tower:type:airport_control
+way/444000472,4.9312948 -52.4101593,addr:city:Macouria;addr:housenumber:22;addr:postcode:97355;addr:street:Rue Génipa;amenity:school;name:École de la ZAC de Soula;operator:type:public;ref:UAI:9730522E;school:FR:primaire;source:Cartographie de reconnaissance 2016 par KG.
+way/478701368,5.4506208 -54.0501773,addr:city:Saint-Laurent-du-Maroni;addr:housenumber:1;addr:postcode:97320;addr:street:Allée Angéliques;amenity:school;name:École élémentaire Velme Tapoka;operator:Education Nationale;operator:type:public;ref:UAI:9730253M;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/493911809,5.48328 -54.0288112,amenity:school;name:École élémentaire Octavien Hodebar;operator:type:public;ref:UAI:9730398V;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/516888990,5.5024182 -54.0541589,man_made:tower;tower:construction:lattice;tower:type:communication
+way/531736071,4.8480314 -52.3237205,amenity:school;name:École primaire de Guimanmin;operator:type:public;ref:UAI:9730213U;school:FR:primaire
+way/541582285,5.4689702 -54.0298954,amenity:place_of_worship;building:yes
+way/550520243,5.6092738 -53.8204906,addr:housenumber:1;addr:street:Rue du Temple;amenity:place_of_worship;building:church;denomination:protestant;name:Église Évangélique de Javouhey;phone:+594 594 34 02 96;religion:christian
+way/570069389,4.8906361 -52.3435077,amenity:school;name:Collège Lise Ophion;operator:type:public;ref:UAI:9730218Z;school:FR:collège
+way/570546084,5.0047473 -52.4688802,amenity:school;name:Groupe scolaire de Sainte-Agathe;operator:type:public;ref:UAI:9730448Z;school:FR:primaire
+way/600381644,4.8346422 -52.3519487,amenity:school;name:Collège Maurice Dumesnil;operator:type:public;ref:UAI:9730307W;school:FR:collège
+way/614621753,4.9486774 -52.3109905,man_made:tower;tower:construction:tower;tower:type:radar
+way/614621754,4.9490092 -52.3084391,man_made:tower;tower:construction:tower;tower:type:radar
+way/617517971,4.8889132 -52.278409,amenity:school;name:École maternelle publique Saint-Ange Methon;operator:type:public;ref:UAI:9730123W;school:FR:maternelle
+way/621515662,5.5937418 -53.8146407,historic:ruins;name:Ancienne léproserie de l'Acarouany
+way/622379208,4.8940804 -52.2876541,amenity:place_of_worship;building:yes;denomination:jehovahs_witness;name:Témoins de Jéhovah;religion:christian
+way/622561199,5.6731204 -53.7793548,building:yes;leisure:sports_centre
+way/622733046,5.5754727 -53.8975683,name:L'Ouest Paradis;tourism:camp_site
+way/622733086,5.6058375 -53.8153207,amenity:school;name:Collège Paule Berthelot;operator:type:public;ref:UAI:9730373T;school:FR:collège
+way/623124118,4.9488019 -52.3096159,man_made:tower;tower:construction:tower;tower:type:radar
+way/623124121,4.9488968 -52.3094615,man_made:tower;tower:construction:tower;tower:type:radar
+way/659343804,5.4385656 -53.1608328,amenity:place_of_worship;building:church;denomination:protestant;religion:christian
+way/659818934,5.4721949 -54.0320991,amenity:school;name:École Paul Isnard;operator:type:public;ref:UAI:9730506M;school:FR:élémentaire
+way/717173667,4.7054321 -52.3924453,building:yes;man_made:tower;tower:construction:lattice;tower:type:communication
+way/719975270,5.4854493 -54.0199666,addr:city:Saint-Laurent-du-Maroni;addr:housenumber:25;addr:postcode:97320;addr:street:Allée des Alamandas;amenity:school;name:Groupe Scolaire Élie Stephenson;operator:type:public;ref:UAI:9730487S;school:FR:élémentaire
+way/720220766,5.4836103 -54.0123943,amenity:place_of_worship;building:church;denomination:evangelical;name:Nouvelle Vie;religion:christian
+way/720225888,5.4842254 -54.0110291,amenity:place_of_worship;building:yes;denomination:evangelical;name:Eau de Vie;religion:christian
+way/721703738,5.4801913 -54.0163678,amenity:place_of_worship;building:house;religion:christian
+way/721724377,5.4781628 -54.0132997,amenity:place_of_worship;building:yes;denomination:evangelical;religion:christian
+way/721727744,5.4785022 -54.0149418,historic:ruins
+way/725225639,5.4848785 -54.0158655,addr:city:Saint-Laurent-du-Maroni;addr:housenumber:BP 169;addr:postcode:97395;addr:street:Chemin des Sables Blancs;amenity:school;name:École élementaire Jacques Voyer;operator:type:public;ref:UAI:9730320K;school:FR:élémentaire;source:geometry:BDOrtho IGN
+way/725890786,5.4882045 -54.0191348,amenity:fountain
+way/730421721,5.4756985 -53.2128143,amenity:school;name:Collège Ferdinand Madeleine;operator:type:public;ref:UAI:9730219A;school:FR:collège;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/737113224,5.4961686 -54.0123539,amenity:place_of_worship;building:yes;name:Chapelle Fatima;religion:christian
+way/751970800,5.0421633 -52.3543297,man_made:lighthouse;name:Phare de l'Enfant Perdu;seamark:light:character:Fl;seamark:light:colour:white;seamark:light:height:17;seamark:light:period:4;seamark:light:range:11;seamark:type:landmark;wikidata:Q29479072;wikipedia:fr:Phare de l'Enfant Perdu
+way/751970801,5.0421214 -52.3541757,building:yes;man_made:lighthouse;name:Phare de l'Enfant perdu
+way/753370995,5.2948539 -52.5830553,building:yes;historic:ruins
+way/753370996,5.2947138 -52.5831027,building:yes;historic:ruins
+way/754708486,4.8876597 -52.3374319,addr:street:Rue des Balisiers;amenity:school;name:École Primaire de Balata Ouest;ref:UAI:9730207M;school:FR:primaire
+way/771047501,4.9814517 -52.4683768,amenity:place_of_worship;building:church;denomination:evangelical;religion:christian
+way/771049422,4.9807115 -52.4685718,tourism:camp_site
+way/771049423,4.9806792 -52.4686353,tourism:camp_site
+way/778847348,4.8936468 -52.2866906,amenity:place_of_worship;building:yes;denomination:pentecostal;name:Igreja Pentecostal dos Milagres de Deus;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2019
+way/790847547,3.8046878 -51.8867683,leisure:sports_centre;name:Niak Rafting;office:guide;sport:canoe
+way/791177115,4.9282604 -52.28424,leisure:sports_centre;name:Les Tritons;sport:swimming
+way/801720234,3.6735112 -54.0765119,amenity:place_of_worship;building:yes;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2020;wall:no
+way/815097933,3.6409311 -54.0315557,addr:street:Impasse Paripou;amenity:place_of_worship;building:yes
+way/835515971,4.8834692 -52.2631825,building:yes;historic:ruins
+way/887598507,4.9190091 -52.2689647,addr:housenumber:30;addr:street:Avenue Saint-Dominique;amenity:school;denomination:roman_catholic;name:École élémentaire privée Sainte-Thérèse;operator:type:private;ref:UAI:9730197B;religion:christian;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/895505622,4.8421559 -52.3211408,amenity:school;name:Groupe scolaire de Copaya;operator:type:public;ref:UAI:9730518A;school:FR:primaire
+way/903889230,4.8478911 -52.3236174,amenity:kindergarten;contact:email:adi-et-nana@orange.fr;name:Adi et Nana;phone:+594 594 38 22 15
+way/913576496,4.9248519 -52.4211466,leisure:park
+way/968251841,5.5008518 -54.0582269,addr:city:Albina;amenity:school;name:O.S. Albina
+way/970719014,4.890258 -52.3437964,building:yes;leisure:sports_hall;name:Gymnase du collège Lise Ophion
+way/975726704,5.0357333 -52.5625735,building:yes;leisure:sports_hall
+way/1004683577,5.4851721 -54.0376569,amenity:community_centre;building:yes
+way/1022594899,4.933042 -52.2848153,amenity:place_of_worship;building:chapel;name:signed:no;religion:christian
+way/1022643666,3.6755989 -54.0767957,amenity:school;name:École élémentaire de Nouveau Wacapou
+way/1049236239,4.929471 -52.3316239,amenity:place_of_worship;building:yes;denomination:evangelical;name:Assembleia de Deus;religion:christian;source:local inspection
+way/1091724565,4.9072688 -52.2704126,amenity:school;name:École maternelle Emile Gentilhomme;operator:type:public;ref:UAI:9730183L;school:FR:maternelle;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/1101396691,3.812985 -54.1472234,amenity:school;email:ce.9730381b@ac-guyane.fr;fax:+594 5 94 37 26 78;isced:level:2;name:Collège Capitaine Charles Tafanier;phone:+594 5 94 37 10 01;ref:UAI:9730381B;school:FR:collège;start_date:2005-09-01
+way/1123979608,5.1606258 -54.3387705,amenity:school;name:Collège Ma Aiye;operator:type:public;ref:UAI:9730337D;school:FR:collège
+way/1125735135,4.5654969 -52.4668421,"addr:city:Roura;addr:place:Cacao;addr:postcode:97311;addr:street:Route de Saut Bief;amenity:fuel;compressed_air:no;opening_hours:Mo-Fr 07:00-09:00,16:00-18:00; Su 10:00-15:00;operator:Vito;phone:+594 594 37 06 25;ref:FR:SIRET:53277197900012"
+way/1127698080,3.1649435 -52.3369937,amenity:school;capacity:130;email:ce.9730451C@ac-guyane.fr;isced:level:2;name:Collège Paul Suitman;ref:FR:SIRET:20004756100010;ref:UAI:9730451C;school:FR:collège
+way/1185333982,5.4844773 -54.028346,amenity:school;name:Ecole Alain Mouty
+way/1185333983,5.4833812 -54.0280231,amenity:school;name:Ecole élémentaire Elise Giffard
+way/1212348603,4.2803698 -52.170521,amenity:restaurant;beds:30;building:yes;charge:70 €/nuit;contact:email:aubergedelapprouague@gmail.com;contact:phone:+594 6 94 44 69 79;contact:website:https://aubergedelapprouague.com/;name:Auberge de l’Approuague;source:BDOrtho IGN;tourism:hostel
+way/1245514162,4.9151737 -52.26864,addr:street:Rue Homer Clamaran;amenity:school;name:Collège Sainte-Thérèse;operator:type:private;ref:UAI:9730334A;school:FR:collège
