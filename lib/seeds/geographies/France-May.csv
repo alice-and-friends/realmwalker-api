@@ -1,0 +1,439 @@
+ext_id,coordinates,tags
+node/1295700479,-12.6893712 45.1288159,man_made:lighthouse;seamark:light:1:category:front;seamark:light:1:character:VQ;seamark:light:1:colour:white;seamark:light:1:range:10;seamark:light:1:sector_end:175.5;seamark:light:1:sector_start:172.5;seamark:light:1:visibility:intensified;seamark:light:reference:D 6892;seamark:type:light_minor;source:US NGA Pub. 112. 2010-11-10.
+node/1552576123,-12.781802 45.2573953,internet_access:wlan;name:Le Rocher;operator:ORANGE;tourism:hotel
+node/1629895275,-12.9616687 45.0850591,fax:02.69.60.15.19;name:Hôtel Le Jardin Maoré;phone:02.69.60.14.19;tourism:hotel;website:http://www.hotel-jardin-maore.com/
+node/1629895306,-12.890767 45.2110206,email:sakouli.hotel@wanadoo.fr;fax:02.69.60.63.64;name:Hôtel Sakouli;phone:02.69.60.63.63;stars:3;tourism:hotel;website:https://hotelsakouli.com/;wheelchair:yes
+node/1772851009,-12.7818653 45.2366781,description:Point de vue vers la Petite Terre;tourism:viewpoint
+node/1865686289,-12.7771001 45.231517,name:Caribou Hotel;tourism:hotel
+node/1871359411,-12.798332 45.2747644,"amenity:townhall;contact:email:mairie@mairie-pamandzi.fr;contact:facebook:https://www.facebook.com/villepamandzi;contact:phone:+262 269 60 12 82;name:Mairie de Pamandzi;opening_hours:Mo-Th 07:30-12:00,13:30-16:30; Fr 07:30-11:30; Sa 08:00-12:00;ref:FR:SIRET:20000886000013;source:Service-Public.fr - 11/2023;wheelchair:no"
+node/1871359412,-12.7882819 45.2725539,amenity:townhall;name:Mairie de Labattoir
+node/1871619359,-12.7310959 45.194665,name:Hôtel Trévani;tourism:hotel
+node/1955635666,-12.7323918 45.1858728,email:villa.maora@yahoo.fr;name:La Villa Maora;phone:02 69 62 74 40;tourism:hotel
+node/1955649372,-12.8063679 45.1547461,name:Gîte du Mont Combani;tourism:hotel;website:https://www.gitedumontcombani.com/
+node/2165972753,-12.7894484 45.2683789,amenity:marketplace;name:Marché Couvert de Labattoir
+node/2401742800,-12.7639647 45.2830862,man_made:tower;source:Bing Sat;tower:type:communication
+node/2446809789,-12.7846007 45.2243379,amenity:bank;atm:yes;brand:Crédit Agricole;brand:wikidata:Q590952;brand:wikipedia:fr:Crédit agricole;name:Crédit Agricole;operator:Crédit Agricole
+node/2446809807,-12.7828583 45.2199106,amenity:community_centre;name:Maison des Adolescents
+node/2468468517,-12.8062657 45.2087423,amenity:fuel;brand:Total Access;brand:fr:Total;brand:wikidata:Q154037;brand:wikipedia:fr:Total (entreprise);name:Station-services TotalEnergies Tsoundzou;name:fr:Station-services TotalEnergies Tsoundzou;source:BDOrtho IGN (2016) and survey
+node/2539304155,-12.8351781 45.1296557,name:Cascade de Barakani;tourism:attraction;waterway:waterfall
+node/2552376195,-12.8626807 45.1977233,name:Vestiges de l’ancienne usine sucrière d’Hajangoua;tourism:attraction
+node/2552388016,-12.844933 45.1956927,tourism:viewpoint
+node/2568542943,-12.8511865 45.1697848,name:Alambic de distillation d'Ylang Ylang;tourism:attraction
+node/2725584437,-12.7694896 45.1320176,tourism:viewpoint
+node/3097148193,-12.8505198 45.1609487,name:Alambic de distillation d'Ylang;tourism:attraction
+node/3854441761,-12.9571556 45.1042227,"amenity:townhall;contact:email:mairiedekanikeli@mairiedekanikeli.fr;contact:phone:+262 269 62 17 31;name:Hôtel de ville de Kani-Kéli;opening_hours:Mo-Th 07:30-12:00,13:00-16:15; Fr 07:30-12:00;ref:FR:SIRET:20000880300013;source:BDOrtho IGN (2020) and Mapillary (2022);Service-Public.fr - 11/2023;wheelchair:yes"
+node/3928663632,-12.9147266 45.102088,leisure:sports_centre;name:Base nautique de Hagnoundrou;sport:sailing
+node/3928731533,-12.9052932 45.1018716,amenity:arts_centre;name:Foyer culturel de Hagnoundrou
+node/4023666673,-12.9755498 45.2001563,name:Pointe Saziley;note:à vérifier;tourism:viewpoint
+node/4203340162,-12.9344461 45.1542178,addr:city:Chirongui;addr:postcode:97620;amenity:fuel;fuel:diesel:yes;fuel:octane_98:yes;name:TotalEnergies Chirongui;opening_hours:lu sa 0600 2100 du 0800 1800;operator:TOTAL
+node/4227096227,-12.8342641 45.1369908,addr:postcode:97670;addr:street:Route Nationale 2;amenity:marketplace;email:legta.mayotte@educagri.fr;name:Marché de Coconi;name:fr:Marché de Coconi;opening_hours:Sa[1] 08:00-13:00;operator:LEGTA Coconi;phone:0269621779
+node/4234321202,-12.9259452 45.1042922,addr:city:Mzouazia;addr:street:Boulevard de la République;name:Musée de l'artisanat;tourism:museum
+node/4382643974,-12.9362242 45.1500849,addr:city:Chirongui;addr:postcode:97620;addr:street:Place de l'Hôtel-de-Ville;amenity:townhall;contact:email:secretariat@chirongui.yt;contact:phone:+262 269 62 18 03;contact:website:https://mairie-chirongui.yt/;name:Mairie de Chirongui;opening_hours:Mo-Th 07:30-16:30; Fr 07:00-11:00;ref:FR:SIRET:20000877900015;source:Service-Public.fr - 11/2023;wheelchair:yes
+node/4382679024,-12.9356162 45.1493221,"amenity:arts_centre;contact:facebook:https://www.facebook.com/Polecultureldechirongui;email:poleculturel@chirongui.yt;mobile:+262 639 72 25 67;name:Pôle Culturel de Chirongui;opening_hours:Tu-Sa 10:00-12:00,14:00-18:00;source:survey;website:https://www.polecultureldechirongui.com/"
+node/4430464696,-12.9840693 45.1094428,covered:yes;leisure:picnic_table;tourism:picnic_site
+node/4430466695,-12.958974 45.0844833,tourism:picnic_site
+node/4430466993,-12.9760777 45.1957882,tourism:picnic_site
+node/4430505489,-12.9654573 45.0910123,tourism:picnic_site
+node/4624514791,-12.8203095 45.1954782,bus:yes;highway:bus_stop;name:La Guinguette;name:fr:La Guinguette;public_transport:platform
+node/4627620891,-12.8341724 45.1319813,bench:no;bin:no;bus:yes;highway:bus_stop;lit:no;name:Épicerie 1;name:fr:Transport Scolaire;operator:halO';public_transport:platform;shelter:no;tactile_paving:no
+node/4627620990,-12.8367597 45.1592895,highway:bus_stop;name:Ongojou;name:fr:Ongojou
+node/4627621292,-12.8485825 45.137884,bus:yes;highway:bus_stop;public_transport:platform
+node/4637919889,-12.8228673 45.1319847,highway:bus_stop;name:Lycée de kahani;name:fr:Lycée de kahani
+node/4641597089,-12.8325433 45.1235412,highway:bus_stop;name:Arrêt Collège de chiconi;name:fr:Arrêt Collège de chiconi
+node/4647101191,-12.7623644 45.2269662,amenity:courthouse;name:Tribunal judiciaire de Mamoudzou;name:fr:Tribunal judiciaire de Mamoudzou
+node/4663114294,-12.846099 45.1158363,amenity:townhall;name:Mairie Annexe de Sada;name:fr:Mairie Annexe de Sada
+node/4712754714,-12.7656966 45.228165,amenity:courthouse;name:Chambre d'Appel de Mamoudzou;name:fr:Chambre d'Appel de Mamoudzou
+node/4733194230,-12.8451631 45.1073584,amenity:library;name:Bibliothèque municipale de Sada;name:en:Sada municipal library;name:fr:Bibliothèque municipale de sada;opening_hours:Tu-Fr 13:00-16:00; Sa 09:00-12:00;phone:0269615054
+node/4737488821,-12.8324256 45.1151547,"amenity:townhall;contact:email:mairie@villedechiconi.fr;contact:phone:+262 269 62 16 90;name:Mairie de Chiconi;opening_hours:Mo-Th 07:00-12:00,13:30-16:15; Fr 07:00-11:00;operator:Web-Mayotte;ref:FR:SIRET:20000875300010;source:Service-Public.fr - 11/2023;website:https://www.villedechiconi.fr;wheelchair:yes"
+node/4993163186,-12.7989821 45.2748193,historic:monument;name:Canon;traffic_calming:island
+node/4993466282,-12.7756064 45.2245599,amenity:bank;brand:Caisse d'Épargne;brand:wikidata:Q1547738;brand:wikipedia:fr:Caisse d'épargne (banque);name:Caisse d'Épargne;operator:Caisse d'Épargne;source:Kaart Ground Survey 2017
+node/4995715820,-12.776827 45.2303303,amenity:bank;brand:Casden;brand:wikidata:Q2930976;brand:wikipedia:fr:CASDEN Banque populaire;name:Casden;source:Kaart Ground Survey 2017
+node/5070395923,-12.7891899 45.1344596,email:citysnack101@gmail.com;internet_access:yes;name:Auberge Le Tour du Monde;phone:+262 269 62 77 78;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022-10-26);tourism:hotel;wheelchair:limited
+node/5115664647,-12.7743376 45.2194219,amenity:community_centre;name:Jeux du soir (Dominos)
+node/5115665057,-12.7738385 45.2191173,amenity:community_centre;name:Sénat
+node/5118071599,-12.7743006 45.2188206,man_made:tower;name:Poteau téléphonique Galva
+node/5275544800,-12.7802208 45.2327732,direction:180;tourism:viewpoint
+node/5306661461,-12.7966793 45.2746531,amenity:bank;atm:yes;brand:Western Union;brand:wikidata:Q861042;brand:wikipedia:en:Western Union;name:Western Union
+node/5312406000,-12.7821642 45.2566981,name:Musée de Mayotte;tourism:museum;wikidata:Q88646020;wikipedia:fr:MuMa
+node/5339182985,-12.8083342 45.203645,amenity:marketplace
+node/5627063022,-12.91239 45.1961075,"name:Éco-musée du sel;opening_hours:Mo-Fr 08:00-12:00, 13:30-16:30;phone:0639048682;tourism:museum"
+node/5836452284,-12.7566481 45.2291779,"amenity:bank;atm:yes;name:BFC;opening_hours:Tu-Fr 08:00-12:00,13:00-17:10; Sa 08:00-12:40;operator:BFC;survey:date:2022-01-08;wheelchair:yes;wikidata:Q2882903;wikipedia:fr:Banque française commerciale Océan Indien"
+node/5836479399,-12.7249602 45.0605265,"amenity:marketplace;note:2 fois par mois, le dimanche."
+node/5839557239,-12.7844529 45.2379193,tourism:viewpoint
+node/5839557241,-12.7827513 45.2379643,name:Faré;tourism:picnic_site
+node/5839557244,-12.7857588 45.235681,name:Faré;tourism:picnic_site
+node/6000941210,-12.9838273 45.1824197,name:Case;tourism:attraction;wheelchair:no
+node/6000977547,-12.9758938 45.1835057,direction:0-360;tourism:viewpoint
+node/6041739747,-12.850744 45.1007561,addr:postcode:97640;addr:street:Place de la Mairie;contact:facebook:https://www.facebook.com/Tata-Gnagna-724035470984845;email:contact@tata-gnagna.fr;internet_access:wlan;internet_access:fee:no;name:Tata Gnagna;phone:+262 639 39 15 40;rooms:3;tourism:hotel;website:http://tatagnagna.fr
+node/6046589368,-12.9568015 45.134439,natural:rock;source:BDOrtho IGN + survey;tourism:viewpoint
+node/6051103476,-12.7730226 45.273193,man_made:lighthouse;seamark:type:light_major
+node/6052682689,-12.7811338 45.2246657,addr:description:des 100 villas;addr:housenumber:2;addr:postcode:97600;addr:street:Route de Cavani;amenity:school;email:musiqueamayotte@wanadoo.fr;name:Musique à Mayotte;name:fr:Musique à Mayotte;phone:0269617191;website:http://musiqueamayotte.com
+node/6052831391,-12.8484638 45.1069058,leisure:sports_centre;name:A.S.Sada
+node/6055245986,-12.8503122 45.09921,"addr:street:Rue du Commerce;amenity:community_centre;email:ccas-sada@outlook.fr;name:CCAS de Sada;opening_hours:Mo-Th 07:00-12:00, 13:00-16:00; Fr 07:00-11:30;survey:date:2021-02-23"
+node/6061101689,-12.7828218 45.2338358,amenity:community_centre;name:Maison de la Jeunesse et de la Culture de Mamoudzou;short_name:MJC de Mamoudzou
+node/6061102086,-12.779226 45.2251854,amenity:courthouse;name:Tribunal administratif
+node/6068625391,-12.8512696 45.0988939,amenity:marketplace;name:Marché couvert de Sada - Ndovou;source:BDOrtho IGN (2020) and survey;survey:date:2023-05-30
+node/6085616788,-12.8442856 45.116198,amenity:marketplace;source:BDOrtho IGN (2020) and survey;survey:date:2023-05-30
+node/6085617085,-12.9107646 45.1929424,highway:bus_stop;name:Somaco 1;operator:halO'
+node/6093138987,-12.8555407 45.100053,bus:yes;departures_board:no;highway:bus_stop;name:Carrefour Bamana 1;network:Scolaire;operator:halO';public_transport:platform;ref:Carrefour Bamana 1;shelter:no
+node/6093138990,-12.8533434 45.0974514,bus:yes;departures_board:no;highway:bus_stop;network:Scolaire;operator:halO';public_transport:platform;shelter:no
+node/6093138992,-12.852765 45.0968073,name:Banga traditionnel;reservation:no;tourism:attraction;wheelchair:no
+node/6109803685,-12.7536693 45.226698,amenity:community_centre;name:Salle polyvalente
+node/6112489994,-12.8411276 45.1206801,amenity:school;contact:facebook:https://www.facebook.com/jeveuxsavoir976/;email:ecole.jeveuxsavoir976@gmail.com;mobile:+262 639 69 27 96;name:Je veux savoir Je veux m'amuser
+node/6126006497,-12.8847223 45.1305041,"email:moniteurtrangavoile@gmail.com;leisure:sports_centre;name:Base nautique Trangavoile;opening_hours:We-Su 08:00-12:00, 13:30-17:00;phone:06 39 27 47 05;sport:kayak;sailing;website:https://www.facebook.com/trangavoile976/"
+node/6130574919,-12.9162034 45.1939524,addr:city:Bandrélé;addr:housenumber:5;addr:street:Rue Mougnendre;name:Les Baobabs;tourism:hotel;website:http://lesbaobabs.cleasite.fr
+node/6137330188,-12.8661449 45.1138631,bus:yes;departures_board:no;highway:bus_stop;name:Place Tahiti 1;network:Scolaire;operator:halO';public_transport:platform;ref:Place Tahiti 1;shelter:no
+node/6137353785,-12.9070626 45.1515605,"addr:city:Bouéni;description:Cette mangrove est la plus grande de Mayotte, s’étalant ainsi sur près de 200 ha. La mangrove de la baie de Chirongui/Bouéni est une mangrove d’estuaire ou de fond de baie installée dans une anse où débouchent plusieurs cours d’eau.;leisure:nature_reserve;name:Baie de Chirongui, Site de Miréréni;phone:02 69 64 99 00;start_date:2007;tourism:attraction;website:https://www.conservatoire-du-littoral.fr/siteLittoral/612/28-baie-de-boueni-976_mayotte.htm"
+node/6137353786,-12.9073185 45.1467007,name:Mangrove Site naturel protégé;tourism:attraction
+node/6137353885,-12.9058736 45.1511002,name:Sentier Site de Miréréni;tourism:attraction;website:https://www.conservatoire-du-littoral.fr/siteLittoral/612/28-baie-de-boueni-976_mayotte.htm
+node/6137354285,-12.8656689 45.1137463,bus:yes;departures_board:no;highway:bus_stop;name:Place Tahiti 2;network:Scolaire;operator:halO';public_transport:platform;ref:Place Tahiti 2;shelter:no
+node/6176863144,-12.9848211 45.1516166,tourism:viewpoint
+node/6183805888,-12.833866 45.1354176,bus:yes;highway:bus_stop;name:DAAF 2;operator:halO';public_transport:platform
+node/6190365987,-12.8346962 45.1316247,bench:no;bin:no;bus:yes;highway:bus_stop;lit:no;name:Épicerie 1;operator:halO';public_transport:platform;shelter:no;tactile_paving:no
+node/6243736038,-12.8362208 45.1325973,name:Banga traditionnel;tourism:attraction
+node/6334215967,-12.7897855 45.1064435,amenity:place_of_worship;heritage:3;heritage:operator:mhs;mhs:inscription_date:2012-12-19;name:Mosquée de Tsingoni;ref:mhs:PA97600002;religion:muslim;source:heritage:Ministère de la Culture - 07/2018;start_date:C16;wikidata:Q3324915;wikipedia:fr:Mosquée de Tsingoni
+node/6345382288,-12.7837462 45.2808885,name:Auberge de l'île;tourism:hotel
+node/6466496901,-12.7934635 45.131863,amenity:fuel;brand:Total;brand:ar:طوطال;brand:fr:Total Access;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;contact:facebook:https://www.facebook.com/TotalEnergiesMayotte;email:contact@totalenergies.yt;fuel:1_50:yes;fuel:HGV_diesel:yes;fuel:diesel:yes;fuel:octane_95:yes;name:Station-services TotalEnergies Combani;name:fr:Station-services TotalEnergies Combani;opening_hours:Mo-Su 06:00-21:00;phone:+262 269 60 18 04;shop:yes;source:survey;survey:date:2021-12-21;website:https://totalenergies.yt/;wheelchair:yes
+node/6473641012,-12.7898998 45.134584,bus:yes;highway:bus_stop;public_transport:platform
+node/6520708741,-12.7440666 45.2200833,leisure:amusement_arcade;name:Banga domino
+node/6564386687,-12.957881 45.0868827,source:survey;tourism:viewpoint
+node/6564386786,-12.943136 45.1013679,leisure:water_park;source:survey;wheelchair:no
+node/6564538400,-12.9385515 45.137884,amenity:community_centre;name:Foyer des jeunes;source:survey;wheelchair:yes
+node/6564540315,-12.9381666 45.1404243,amenity:school;source:survey
+node/6564540496,-12.9383557 45.138986,amenity:kindergarten;source:survey
+node/6564540694,-12.8828454 45.2150233,amenity:marketplace;name:Marché de Hamouro;source:survey;wheelchair:yes
+node/6565538985,-12.7241604 45.0588238,"amenity:townhall;contact:email:mairie.acoua@orange.fr;contact:phone:+262 269 62 18 81;name:Mairie d'Acoua;opening_hours:Mo-Th 07:00-12:00,13:00-16:00; Fr 07:00-11:30;ref:FR:SIRET:20000871200016;source:Service-Public.fr - 11/2023;wheelchair:yes"
+node/6565538989,-12.7239354 45.0591564,amenity:marketplace;name:Marché d'Acoua;source:survey
+node/6588727286,-12.7843572 45.2233374,amenity:community_centre;name:Centre de réinsertion;source:survey
+node/6588753194,-12.7837138 45.2229699,leisure:sports_centre;name:Ligue Mahoraise de Football Comité Régional Olympique et sport;source:survey
+node/6604435591,-12.7844056 45.2195308,amenity:courthouse;name:Tribunal de Cadi M'tsapéré;source:survey
+node/6604435688,-12.7829826 45.2182828,amenity:fountain;name:Fontaine Massimoni;source:survey
+node/6658156230,-12.7903834 45.2765071,man_made:tower;tower:type:communication
+node/6658156282,-12.782888 45.2760781,man_made:tower;tower:construction:dish;tower:type:communication
+node/6669871794,-12.7807968 45.2327774,"amenity:bank;atm:yes;brand:Caisse d'Épargne;fax:+262 269 61 20 28;name:Caisse d'Épargne;opening_hours:Tu-Fr 08:00-12:00,13:30-17:00; Sa 08:00-12:10;operator:Caisse d'Épargne;phone:+262269612030;source:Mapillary Abn_976 - 2023-01-12;website:https://www.agences.caisse-epargne.fr/banque-assurance/hotel-de-ville-id11315000111;wheelchair:yes"
+node/6703615654,-12.8394636 45.1322906,amenity:fountain
+node/6707989808,-12.8404363 45.1323666,amenity:community_centre;name:MJC de Barakani
+node/6862928640,-12.7126923 45.0595625,name:Marches d'Acoua;tourism:viewpoint
+node/6862928684,-12.7119401 45.0597804,man_made:communications_tower;material:steel
+node/6900569138,-12.7778275 45.2332763,historic:monument
+node/6931260623,-12.8224312 45.1063952,amenity:marketplace;name:Acien marché de Sohoa
+node/6950890661,-12.7560495 45.2291204,addr:city:Koungou;addr:postcode:97610;addr:street:Villa Thom - Haut Vallons;amenity:kindergarten;description:Crèche associative;name:Les Enfants des Margouillats
+node/6950901666,-12.7551322 45.2302546,addr:city:Koungou;addr:postcode:97610;addr:street:Résidence Lukida Bât.2 - Haut Vallons;amenity:kindergarten;description:Crèche associative;name:Les P'tits Moana
+node/6951059107,-12.7871352 45.1125727,amenity:school;contact:facebook:https://www.facebook.com/tsingoni97680;email:zaza.mzoury@orange.fr;mobile:+262 639 68 42 22;name:Crèche Zaza Mzoury;opening_hours:Mo-Fr 06:30-17:00;phone:+262 269 62 40 65;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022);survey:date:2022-10-26;website:https://www.crechezazamzoury.fr/
+node/7044876530,-12.7612132 45.071826,name:Point de vue;tourism:viewpoint
+node/7044876531,-12.7568171 45.0692528,tourism:viewpoint
+node/7044876532,-12.7633139 45.0736059,tourism:viewpoint
+node/7056110624,-12.9242267 45.091458,amenity:community_centre;name:MJC de Bambo Ouest
+node/7083421585,-12.7573577 45.2325029,amenity:fuel;brand:Total Access;brand:wikidata:Q154037;name:Station-services TotalEnergies Jumbo-Score;operator:Total;survey:date:2019-12-25
+node/7083471585,-12.7698122 45.2241509,amenity:fuel;name:Station-services TotalEnergies Kawéni;survey:date:2019-12-25
+node/7088130050,-12.7334609 45.2036749,addr:housenumber:1;addr:street:Place de la Liberté;amenity:townhall;contact:email:contact@koungou.fr;contact:phone:+262 269 61 42 42;name:Mairie de Koungou;opening_hours:Mo-Th 07:30-15:00; Fr 07:30-12:00;ref:FR:SIRET:20000881100016;source:BDOrtho IGN (2016);Service-Public.fr - 11/2023;wheelchair:no
+node/7090043085,-12.8462496 45.1888307,amenity:place_of_worship;denomination:sunni;name:Mosquée Décazé Iloni;religion:muslim;survey:date:2019-12-28
+node/7103714185,-12.7183536 45.1736053,man_made:lighthouse;survey:date:2020-01-03
+node/7121535486,-12.7614437 45.0840099,"amenity:townhall;contact:email:secretariat@mairiedemtsangamouji.fr;contact:phone:+262 269 62 15 20;contact:website:https://www.mairiedemtsangamouji.fr/;name:Hôtel de ville de M'Tsangamouji;opening_hours:Mo-Th 07:30-12:00,13:00-16:00; Fr 07:00-12:00;ref:FR:SIRET:20000882900018;source:Service-Public.fr - 11/2023;survey:date:2020-01-10;wheelchair:yes"
+node/7130442985,-12.7610471 45.085117,amenity:arts_centre;name:Foyer des jeunes de M'Tsangamouji;survey:date:2020-01-14;wheelchair:yes
+node/7132448888,-12.7611958 45.0847214,amenity:townhall;name:Service téchnique mairie de M'Tsangamouji;survey:date:2020-01-14
+node/7136347609,-12.7616679 45.0789383,amenity:library;name:Bibliothèque de Chembenyoumba;operator:Mairie de M'Tsangamouji;survey:date:2020-01-16
+node/7138574287,-12.7563814 45.0827925,name:Point de vue;survey:date:2020-01-17;tourism:viewpoint
+node/7184720385,-12.792371 45.2705397,amenity:fuel;name:Station-services TotalEnergies Petite-Terre;survey:date:2020-02-04
+node/7239597826,-12.7745993 45.2232644,amenity:courthouse;name:Tribunal judiciaire
+node/7452469050,-12.8857929 45.2167455,man_made:windmill;source:survey
+node/7463908786,-12.9091661 45.0914355,man_made:tower;survey:date:2020-04-29;tower:type:communication
+node/7617983105,-12.9153393 45.093884,source:survey;tourism:viewpoint
+node/7640143459,-12.9717883 45.1623151,"amenity:place_of_worship;denomination:Le_culte_des_ancêtres,_des_""Razana"";description:Le culte des Razana se pratique depuis les 1ers habitants. On fête les ancêtres qui vivent dans les lieux et dans les corps des descendants. Les cérémonies comme Rombo et Patróssy y sont pratiqué.;name:Tzandza Rafa;note:Le lieu a des Fady L'accès se fait dans le respect les ancêtres, sans manger, être pieds nus et sans port de bijoux en or.;religion:Cutle_ancestral_Malagassy"
+node/7678035958,-12.8467496 45.0888822,direction:0-360;name:Point de vue;tourism:viewpoint
+node/7721251885,-12.9831772 45.1289901,survey:date:2020-07-16;tourism:viewpoint
+node/7721252385,-12.9839188 45.1293583,tourism:viewpoint
+node/7727072506,-12.9859913 45.1341467,direction:0-360;name:Point de vue Padza de M'Bouini;tourism:viewpoint
+node/7730087065,-12.9928222 45.1089442,direction:360;tourism:viewpoint
+node/7801488176,-12.9037548 45.1576307,name:Pièces machines;ruins:yes;source:survey;tourism:attraction
+node/7801488177,-12.9033849 45.1579774,man_made:chimney;name:Cheminée;ruins:yes;source:survey;tourism:attraction
+node/7819410348,-12.847607 45.1008792,"amenity:bank;name:BFC Sada;opening_hours:Tu-Fr 08:00-12:00, 13:00-16:30; Sa 08:00-12:00;phone:+262 269 62 26 29;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022-11-16);survey:date:2022-11-16"
+node/7831933285,-12.767417 45.2282845,amenity:school;name:Lycée d'Enseignement Adapté Espérance;operator:type:private;school:FR:lycée;survey:date:2020-08-21
+node/7833020673,-12.8309351 45.1972054,direction:0-360;tourism:viewpoint
+node/7869559007,-12.7898857 45.1337107,amenity:bank;atm:yes;brand:Société Générale;brand:wikidata:Q270363;brand:wikipedia:en:Société Générale;drive_through:no;name:BFC OI - Combani;operator:Société générale;phone:+262 269 62 49 89
+node/7963655020,-12.9041902 45.1582074,description:Maison de maître;historic:building;name:Maison de maître;ruins:yes;source:survey;tourism:attraction
+node/7977340475,-12.8471197 45.1059676,"amenity:townhall;contact:email:contact@mairiedesada.fr;contact:phone:+262 269 62 08 08;name:Mairie de Sada;opening_hours:Mo-Th 07:00-12:00,13:00-16:00; Fr 07:00-11:30;ref:FR:SIRET:20000887800015;source:Service-Public.fr - 11/2023;wheelchair:yes"
+node/7984753127,-12.8958361 45.1405404,historic:ruins;name:Ancienne mosquée de Poroani;wheelchair:limited
+node/8037891507,-12.7824236 45.2297923,name:Hôtel Maharajah;tourism:hotel;website:https://www.hotelmaharajah.com/
+node/8043979613,-12.8495944 45.1937836,name:Australes - Le Paradis des Makis;tourism:hotel
+node/8043979614,-12.8317189 45.1926844,historic:ruins;name:Four à Chaud
+node/8043979615,-12.8329126 45.1896256,historic:ruins;name:Savonnerie
+node/8043979638,-12.8425955 45.1833241,historic:ruins;historic:civilization:modern;name:Vestiges Usines sucrière;ruins:yes
+node/8067589849,-12.8019965 45.2088785,"addr:street:Face stade de football de Passamainty 97605 Passamainty;amenity:library;name:Médiathèque municipale de Passamainty;opening_hours:Tu, We, Fr 09:00-17:00; Sa 09:00-14:00;phone:0269643511"
+node/8076946687,-12.9331189 45.1515193,amenity:marketplace;building:yes;name:Marché Plein Air de Chirongui
+node/8337869352,-12.7513187 45.0500782,fee:no;historic:ruins;information:terminal;internet_access:no;name:Ancienne Mosquée de Moutsoumbatsou;tourism:information;wheelchair:no
+node/8373672304,-12.8363669 45.1852562,bus:yes;network:Halo;public_transport:stop_position
+node/8373672305,-12.8370468 45.1787518,bus:yes;network:Halo;public_transport:stop_position
+node/8390645119,-12.7897553 45.1125618,amenity:bank;brand:BRED;brand:wikidata:Q2877455;brand:wikipedia:fr:BRED Banque populaire;name:BRED;official_name:Banque régionale d'escompte et de dépôts;official_name:en:Regional Discount and Deposit Bank;official_name:fr:Banque régionale d'escompte et de dépôts;survey:date:2021-02-03
+node/8493784126,-12.7888149 45.271967,amenity:bank;name:BFC;source:BDOrtho IGN (2016)
+node/8510397399,-12.7927123 45.2803736,amenity:library;name:bibliothèque
+node/8586413205,-12.7910216 45.2793511,amenity:school;name:École Mongome
+node/8602489673,-12.7631415 45.2253381,"addr:city:Mamoudzou;addr:postcode:97600;addr:street:BP 695 rue Mosquée Indienne, Kawéni;amenity:school;name:École Primaire privée Couleurs d'Épices;website:https://sites.google.com/a/elemayotte.org/ecoles-epices/home"
+node/8603172088,-12.7781409 45.2815575,name:Relais Le Dziani;tourism:hotel
+node/8642938117,-12.79021 45.1051466,"amenity:townhall;contact:email:secretariat@mairie-tsingoni.fr;contact:facebook:https://www.facebook.com/communedetsingoni/;contact:phone:+262 269 62 17 91;contact:website:https://mairie-tsingoni.fr/;description:Mairie de la commune de Tsingoni;name:Hôtel de Ville de Tsingoni;opening_hours:Mo-Th 07:15-11:45,12:45-16:00; Fr 07:15-11:15;ref:FR:SIRET:20000888600018;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022);Service-Public.fr - 11/2023;wheelchair:yes"
+node/8724714884,-12.7909639 45.1033641,amenity:library;name:Bibliothèque Municipale de Tsingoni
+node/8765691403,-12.7008199 45.0530769,direction:N;name:Point de vue;tourism:viewpoint
+node/8769907765,-12.7710571 45.218774,man_made:chimney;name:Cheminée;ruins:yes;source:BDOrtho IGN (2016);tourism:attraction
+node/8797610131,-12.8366866 45.1769802,amenity:marketplace
+node/8809137056,-12.72924 45.1706533,"amenity:fuel;brand:Total;fuel:1_25:yes;fuel:HGV_diesel:yes;fuel:diesel:yes;name:Station-services TotalEnergies Longoni;opening_hours:Mo-Fr 07:30-17:30; Sa,Su 07:30-15:00;phone:+262 269 62 17 01;shop:no;source:BDOrtho IGN (2020) and survey;survey:date:2023-01-28;website:https://totalenergies.yt/;wheelchair:yes"
+node/8882920089,-12.8371679 45.1771188,amenity:marketplace;name:Marché couvert de Tsararano;operator:Commune de Dembeni;source:BDOrtho IGN (2016)
+node/8892399417,-12.7883552 45.281196,name:2.0 hôtel;tourism:hotel
+node/8979785290,-12.7042172 45.1218481,"amenity:townhall;contact:email:secretariat.direction@mairie-bandraboua.fr;contact:phone:+262 269 62 54 18;contact:website:http://www.mairie-bandraboua.fr;name:Mairie de Bandraboua;opening_hours:Mo-Th 07:00-12:00,13:00-16:00; Fr 07:00-11:30;ref:FR:SIRET:20000872000019;source:Service-Public.fr - 11/2023;wheelchair:yes"
+node/8998430201,-12.7028385 45.1223128,amenity:community_centre;name:Foyer des jeunes de Bandraboua
+node/9006954037,-12.7237231 45.1221424,amenity:fuel;fuel:diesel:yes;fuel:e85:yes;name:Station-services TotalEnergies Dzoumogné;payment:cash:yes
+node/9020146318,-12.7891661 45.1288281,amenity:library;name:Bibliothèque de Mroalé;survey:date:2021-08-19
+node/9044701440,-12.719251 45.117299,amenity:library;name:Bibliothèque de Dzoumogné
+node/9047132748,-12.9116618 45.1927532,"amenity:bank;brand:Crédit Agricole;brand:wikidata:Q590952;email:bandrele@ca-reunion.fr;name:Crédit Agricole;opening_hours:Mo-Fr 08:15-12:00,13:30-17:30; Th 08:15-12:00; Sa 08:15-12:15;operator:Crédit Agricole;phone:02 69 64 04 27;source:survey;survey:date:2022_06_30;website:https://www.credit-agricole.fr/ca-reunion/particulier/agence/reunion/bandrele-329.html;wheelchair:limited"
+node/9047145947,-12.8456928 45.1903975,amenity:marketplace
+node/9055245053,-12.7366939 45.1401347,amenity:place_of_worship;name:Mosquée;religion:muslim;source:BDOrtho IGN (2016)
+node/9055923043,-12.7393919 45.1428444,man_made:communications_tower;material:metal;tower:type:communication
+node/9068738690,-12.7827063 45.2558472,name:La Résidence du Gouverneur;tourism:attraction
+node/9084565581,-12.7650337 45.1048053,man_made:chimney;name:Cheminée;ruins:yes;source:survey;survey:date:2022-02-27;tourism:attraction
+node/9093848004,-12.7657355 45.1055985,name:Vestiges de l'ancien village de Soulou;ruins:yes;source:survey;survey:date:2022-02-27;tourism:attraction
+node/9093848009,-12.7642947 45.1052968,name:Vestiges de l'ancienne maison du maître;ruins:yes;source:survey;tourism:attraction
+node/9107019510,-12.9296639 45.1750819,bus:yes;direction:backward;public_transport:stop_position;share_taxi:yes;source:BDOrtho IGN (2020)
+node/9110804194,-12.9163498 45.1953513,man_made:communications_tower;material:metal;source:BDOrtho IGN (2016);tower:type:communication
+node/9110804195,-12.9166334 45.1956812,man_made:communications_tower;material:metal;source:BDOrtho IGN (2016);tower:type:communication
+node/9119229275,-12.7685135 45.1903979,direction:E;name:Point de vue;tourism:viewpoint
+node/9120616961,-12.9178321 45.0831056,amenity:townhall;name:Service téchnique mairie de Bouéni;wheelchair:limited
+node/9120702321,-12.914921 45.0809779,addr:city:Bouéni;addr:country:YT;addr:housenumber:70;addr:postcode:97620;addr:street:Boulevard des tortues;internet_access:wlan;name:La Case Robinson;payment:coins:yes;payment:contactless:yes;payment:mastercard:yes;payment:notes:yes;payment:visa:yes;payment:visa_debit:yes;payment:visa_electron:yes;phone:+262 269 62 49 42;smoking:yes;tourism:hotel;website:https://case-robinson.com/;wheelchair:limited
+node/9120753943,-12.9183249 45.0824122,email:labaiedestortues.js@gmail.com;name:La baie des tortues;source:survey;tourism:hotel
+node/9126391762,-12.7641957 45.2362463,email:tedd976@gmail.com;internet_access:yes;internet_access:fee:no;mobile:0639 77 15 75;name:Hôtel Hamaha Beach;payment:coins:yes;payment:contactless:yes;payment:mastercard:yes;payment:notes:yes;payment:visa:yes;payment:visa_debit:yes;payment:visa_electron:yes;survey:date:2021-09-27;tourism:hotel;website:https://www.hotelhamaha.com/;wheelchair:limited
+node/9160331217,-12.8656349 45.1983019,amenity:marketplace;name:Marché couvert de Hajangoua;survey:date:2021-10-09;wheelchair:limited
+node/9175004729,-12.8800924 45.1634592,addr:postcode:97660;direction:S;name:Point de vue Mont Bénara;tourism:viewpoint
+node/9177951072,-12.9020773 45.0888245,tourism:viewpoint
+node/9179857988,-12.9580346 45.1018012,amenity:community_centre;name:MJC de Kani-Kéli;source:BDOrtho IGN (2016)
+node/9190287711,-12.9660609 45.1199159,man_made:tower;material:steel;source:BDOrtho IGN (2016);tower:type:radar
+node/9197467876,-12.9623377 45.1251747,amenity:townhall;name:Mairie annexe
+node/9218565912,-12.764589 45.2842659,man_made:communications_tower;material:metal;source:BDOrtho IGN 2016;tower:type:communication
+node/9230464436,-12.8219561 45.1065305,amenity:community_centre;name:MJC de Sohoa;source:survey
+node/9231698280,-12.8490528 45.1395392,amenity:community_centre;building:construction;name:MJC de Ouangani
+node/9233495556,-12.7340705 45.1989609,amenity:school
+node/9246782431,-12.7717349 45.2217476,amenity:school
+node/9263722984,-12.797434 45.1307588,email:hotelrestaurantlediwan@gmail.com;name:Le Diwan hôtel;source:survey;tourism:hotel;website:https://www.facebook.com/LeDiwanHotel
+node/9271087774,-12.7831372 45.2276458,amenity:school;name:Cité des Métiers
+node/9274282382,-12.8216868 45.1941121,man_made:communications_tower;source:BDOrtho IGN (2016) and survey;tower:type:communication
+node/9288901417,-12.8369499 45.1128642,"amenity:library;name:Bibliothèque municipale de Chiconi;opening_hours:Mo 14:00-17:00; Tu-Fr 09:00-12:00,14:00-20:00; We 09:00-12:00,14:00-17:00; Sa 09:00-12:00,16:00-20:00;phone:+262269609494;survey:date:2021-11-27;wheelchair:yes"
+node/9311036085,-12.7609842 45.0873322,amenity:marketplace
+node/9327879326,-12.7559531 45.083648,bus:yes;public_transport:stop_position
+node/9331359657,-12.8426393 45.1840579,amenity:community_centre;name:Maison de la Jeunesse et de la Culture de Dembéni;operator:Mairie;short_name:MJC de Denbéni
+node/9331359740,-12.8435258 45.1840069,"amenity:townhall;contact:email:mairie-de-dembeni@wanadoo.fr;contact:phone:+262 269 62 15 81;contact:website:https://ville-dembeni.fr/;name:Mairie de Dembéni;opening_hours:Mo-Fr 07:00-12:00,12:52-15:30;ref:FR:SIRET:20000878700018;source:Service-Public.fr - 11/2023;wheelchair:yes"
+node/9331649176,-12.8452707 45.1915915,amenity:community_centre;name:CCAS Iloni;source:BDOrtho IGN (2016) and survey
+node/9343732617,-12.8033952 45.1580331,name:Forêt de Bambou géant;source:BDOrtho IGN (2016) and survey;tourism:attraction;wheelchair:no
+node/9352435346,-12.7997713 45.1061524,direction:N;name:Point de vue;source:survey;survey:date:2020-10-25;tourism:viewpoint
+node/9352435347,-12.7999878 45.1065655,direction:N;name:Point de vue;source:survey;survey:date:2020-10-25;tourism:viewpoint
+node/9365519341,-12.7220905 45.1307221,historic:ruins;name:Ruine entrepot sucrier;source:survey;survey:date:2021-12-15
+node/9369367164,-12.8996202 45.0982653,addr:city:Moinatrindri;addr:housenumber:3;addr:postcode:97620;addr:street:Rue Bacar Sidi;amenity:library;name:Mediathèque de Moinatrindri
+node/9369367165,-12.9087674 45.0798278,addr:city:Bouéni;addr:postcode:97620;amenity:library;name:Salle informatique Mediathèque de boueni
+node/9396174562,-12.7439047 45.0958668,tourism:viewpoint
+node/9417406818,-12.7239363 45.1686828,communication:mobile_phone:yes;communication:radio:yes;man_made:communications_tower;tower:type:communication
+node/9482771276,-12.8321166 45.1161508,amenity:social_centre;name:MJC de Chiconi
+node/9548948263,-12.7610797 45.1031564,name:Vestiges de l'ancien séchoir à coprah;ruins:yes;source:survey;tourism:attraction
+node/9548948264,-12.7617004 45.0986798,name:Vestiges de l'ancienne distillerie d'Ylang-Ylang;ruins:yes;source:survey;tourism:attraction
+node/9554325885,-12.7695298 45.1020916,name:Vestiges de l'ancien entrepôt sucrier de Soulou;ruins:yes;source:survey;survey:date:2021-09-09;tourism:attraction
+node/9634905655,-12.7645386 45.075588,historic:monument;source:BDOrtho IGN (2016) and survey
+node/9650530605,-12.9221356 45.157222,amenity:school
+node/9713273661,-12.7611216 45.22665,amenity:fountain
+node/9732062190,-12.860407 45.1206605,direction:SW;source:survey;tourism:viewpoint
+node/9795045747,-12.8753878 45.2151494,man_made:lighthouse;name:Phare de Hamouro
+node/9903534950,-12.7877558 45.1055573,name:Cascade de Tsingoni;survey:date:2022-07-21;tourism:attraction;waterway:waterfall
+node/10011169372,-12.8344265 45.1711844,amenity:place_of_worship;building:mosque;religion:muslim
+node/10116053117,-12.7908749 45.1319612,amenity:fountain;source:survey;survey:date:2022-10-19
+node/10116493155,-12.7885896 45.1269402,amenity:school;contact:facebook:https://www.facebook.com/Ecolepriveehippocampe/;contact:instagram:https://instagram.com/hippo976?utm_medium=copy_link;email:hippocampe@ecolepriveehippocampe.fr;mobile:0639 27 63 02;name:École Privée Hippocampe;phone:0269 66 29 42;source:survey;survey:date:2022-10-20;website:http://ecolepriveehippocampe.fr/
+node/10128762141,-12.7784872 45.2232649,name:Gîte Rose Doudou;tourism:hotel;website:https://rosedoudou.com/
+node/10129999742,-12.7878239 45.1324441,name:Pièces machines usine sucrière;ruins:yes;source:BDOrtho IGN (2016) and Mapillary (2022-10-20);tourism:attraction
+node/10130299964,-12.7869852 45.1327868,name:Pièces machines usine sucrière;ruins:yes;source:BDOrtho IGN (2016) and Mapillary (2022-10-20);tourism:attraction
+node/10133857369,-12.6806501 45.0848442,amenity:townhall;name:Mairie annexe de M'Tsahara;townhall:type:city
+node/10175036600,-12.7805157 45.2292372,name:Cacao Lodge - Annexe;tourism:hotel
+node/10216236370,-12.7656843 45.0771417,bus:yes;direction:forward;public_transport:stop_position;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022)
+node/10216236371,-12.7654717 45.0767788,bus:yes;direction:backward;public_transport:stop_position;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022)
+node/10216482518,-12.7910967 45.1017228,mobile:+262 639 28 08 08;name:HR Tsingoni village;survey:date:2022-11-25;tourism:hotel;website:https://residence-hoteliere-tsingoni-village.business.site/?utm_source=gmb&utm_medium=referral;wheelchair:yes
+node/10289438213,-12.8447829 45.1073357,bus:yes;departures_board:no;direction:forward;highway:bus_stop;name:Gendarmerie Sada;network:Scolaire;operator:halO';public_transport:stop_position;ref:Gendarmerie 1;share_taxi:yes;shelter:no;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022-11-23)
+node/10289438215,-12.8445501 45.1112055,bus:yes;public_transport:stop_position;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022-11-23)
+node/10290864397,-12.8467483 45.1149655,contact:facebook:https://fr-fr.facebook.com/mangappart/;contact:instagram:https://www.instagram.com/mangappart/?hl=fr;email:contact@mangappart.com;internet_access:yes;mobile:+262 639 40 71 19;name:Hôtel Mang'Appart;source:survey;tourism:hotel;website:https://mang-appart-sada.hotelmix.fr/;wheelchair:limited
+node/10565774873,-12.7979221 45.2143038,contact:facebook:https://www.facebook.com/hotel.mayotte;email:passamainty.hotel@gmail.com;name:Le Passamaïnty Lodge;opening_hours:Mo 18:30-22:00; Tu-Su 11:00-22:00;phone:+262 269 60 41 19;rooms:7;source:BDOrtho IGN (2020) and survey;tourism:hotel;website:https://hotel-passamainty-lodges.com/?fbclid=IwAR1T3wU5pJ23ARUaRWd_aDuvefdIwHV6N55hEvNkpKVuqdcdzqzkysOypWI;wheelchair:limited
+node/10576545071,-12.8523569 45.093709,name:Résidence Anidias;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022);tourism:hotel;wheelchair:limited
+node/10584005779,-12.7839075 45.1328196,contact:facebook:https://www.facebook.com/pages/Golf-Club-les-Yangs/523301398201902;contact:phone:+262 269 62 01 20;contact:website:https://www.golflesylangs.fr/;leisure:sports_centre;name:Golf Club Les Ylangs;opening_hours:Mo-Su 08:00-18:30;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022-10-26);sport:golf;survey:date:2022-10-26
+node/10584042717,-12.7949848 45.1300053,amenity:school;contact:facebook:https://www.facebook.com/Ecolepriveehippocampe/;contact:instagram:https://instagram.com/hippo976?utm_medium=copy_link;email:hippocampe@ecolepriveehippocampe.fr;mobile:0639 27 63 02;name:Annexe école privée Hippocampe;phone:0269 66 29 42;source:survey;survey:date:2022-10-20;website:http://ecolepriveehippocampe.fr/
+node/10600786885,-12.84621 45.1035457,bus:yes;departures_board:no;direction:forward;highway:bus_stop;name:Bandrani;network:Scolaire;operator:halO';public_transport:stop_position;ref:Bandrani;share_taxi:yes;shelter:no
+node/10600819581,-12.8444949 45.1080286,bus:yes;departures_board:no;direction:backward;highway:bus_stop;name:Gendarmerie Sada;network:Scolaire;operator:halO';public_transport:stop_position;ref:Gendarmerie 1;share_taxi:yes;shelter:no;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022-11-23)
+node/10600819582,-12.8556118 45.1010339,bus:yes;departures_board:no;highway:bus_stop;name:Carrefour Bamana;network:Scolaire;operator:halO';public_transport:stop_position;ref:Carrefour Bamana;share_taxi:yes;shelter:no
+node/10649641193,-12.8400268 45.1285194,amenity:school;name:Collège de Ouangani;name:fr:Collège de Ouangani;phone:+262 269 66 09 06;school:FR:collège;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022-08-10);wheelchair:yes
+node/10679906241,-12.8487074 45.1055945,bus:yes;departures_board:no;highway:bus_stop;name:Collège de Sada;network:Scolaire;operator:halO';public_transport:stop_position;ref:Collège de Sada;shelter:no
+node/10679906242,-12.8508579 45.1044562,bus:yes;departures_board:no;direction:forward;highway:bus_stop;name:Manga Mistari;network:Scolaire;operator:halO';public_transport:stop_position;ref:Mangamistari 1;share_taxi:yes;shelter:no
+node/10680281866,-12.7899937 45.1275336,bus:yes;direction:backward;network:Halo;public_transport:stop_position;share_taxi:yes;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022-10-26)
+node/10710018342,-12.7819411 45.2774122,amenity:bank;brand:Crédit Agricole;brand:wikidata:Q590952;brand:wikipedia:fr:Crédit agricole;name:Crédit Agricole
+node/10721824621,-12.9300757 45.1747626,bus:yes;direction:forward;public_transport:stop_position;share_taxi:yes;source:BDOrtho IGN (2020)
+node/10770342024,-12.787973 45.1029869,amenity:fountain;drinking_water:yes;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022);survey:date:2022-10-13
+node/10820348584,-12.7983861 45.2830627,addr:housenumber:1;addr:street:Rue Foundi Salime;name:Gîte Maesha;tourism:hotel
+node/10880972505,-12.927627 45.103872,"amenity:marketplace;contact:city:Bouéni;contact:housenumber:2;contact:phone:+262 639 25 13 14;contact:postcode:97620;contact:street:Rue Ibrahim Oili, Mzouazia;delivery:no;name:Biotroc;opening_hours:Tu 10:00-20:00; We-Th 10:00-14:00, 16:00-20:00; Fr 09:00-12:30, 16:00-20:00; Sa 10:00-14:00, 16:00-20:00; Su 08:30-14:00;payment:american_express:yes;payment:cheque:yes;payment:contactless:yes;payment:debit_cards:yes;payment:diners_club:no;payment:discover_card:yes;payment:jcb:yes;payment:mastercard:yes;payment:unionpay:yes;payment:visa:yes;ref:FR:SIRET:90514805200012;website:https://www.facebook.com/Bio-Troc-102084331564641;wifi:yes"
+node/10988965068,-12.8661033 45.1984541,bus:yes;public_transport:stop_position;share_taxi:yes
+node/10988965070,-12.8662226 45.198053,amenity:community_centre;community_centre:for:student;name:Campus Connecté d'Hajangoua
+node/11005204833,-12.7997373 45.274622,amenity:place_of_worship;building:mosque;religion:muslim
+node/11020539704,-12.8212187 45.1080273,amenity:townhall;name:Mairie annexe de Sohoa;source:BDOrtho IGN (2020) and Mapillary (2022);survey:date:2022-09-14
+node/11025298195,-12.6968826 45.0693374,amenity:school;name:École maternelle Mtsamboro Mairie;school:FR:maternelle
+node/11025298196,-12.6967175 45.0716299,amenity:school;name:École élémentaire Mtsamboro 3 Haut;school:FR:élémentaire
+node/11070835905,-12.8248098 45.1326523,contact:city:Ouangani;contact:housenumber:25;contact:phone:+262 692 62 34 86;contact:postcode:97670;contact:street:Lieu Dit Maboubouni;name:Maora Land;opening_hours:Fr-Su 09:00-16:00;ref:FR:SIRET:89185816900016;tourism:theme_park;wheelchair:yes
+node/11107109047,-12.7505268 45.0554231,amenity:library;name:Bibliothèque de Mliha;operator:Mairie de M'Tsangamouji;source:survey;survey:date:2023-08-10;wheelchair:limited
+node/11192685105,-12.7812427 45.1177973,name:Vestiges de l'ancien séchoir à coprah;ruins:yes;source:survey;survey:date:2022-02-27;tourism:attraction
+node/11280554495,-12.6870259 45.0739044,name:Coco Beach;tourism:hotel
+node/11280581483,-12.7013043 45.067071,name:Coco Lodge;tourism:hotel
+way/172526830,-12.9309351 45.1529624,amenity:school;name:École Primaire de Mramadoudou;school:FR:primaire;source:Bing Aerial Imagery
+way/247225853,-12.8371041 45.1695922,amenity:school;name:Lycée de Tsararano;school:FR:lycée
+way/247427263,-12.8683596 45.194799,amenity:place_of_worship;building:yes;religion:muslim
+way/247865451,-12.8360169 45.109144,amenity:school;name:École primaire;school:FR:primaire
+way/248422616,-12.8449408 45.1867921,amenity:university;name:Centre Universitaire de Formation et de Recherche de Mayotte;short_name:CUFR de Mayotte
+way/248635382,-12.8797095 45.2149453,amenity:school
+way/253003751,-12.6889065 45.1071619,amenity:school
+way/358482021,-12.8935243 45.2028483,amenity:place_of_worship;building:yes;name:Mosquée de Vendredi;religion:muslim;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2015
+way/360245288,-12.7911461 45.2197213,amenity:place_of_worship;building:mosque;building:levels:2;building:material:concrete masonry unit;height:4;name:Mosquée du Vendredi;religion:muslim;source:BDOrtho IGN (2016) and survey
+way/399592265,-12.9371876 45.1470579,amenity:school;name:Lycée Tani Malandi;phone:0269 64 78 54;school:FR:lycée
+way/426280743,-12.7471584 45.2209244,amenity:school;name:École Maternelle de Bandrajou;school:FR:maternelle
+way/426365960,-12.7344136 45.2065868,amenity:school
+way/452262146,-12.7941848 45.2829791,"addr:street:Boulevard du Général De Gaulle;amenity:school;description:Collège de la commune de Pamandzi, avec un effectif très important : environ 1 500 élèves.;name:Collège Zéna M'Déré;school:FR:collège;source:Kaart Ground Survey 2017"
+way/526552097,-12.72158 45.1164475,amenity:place_of_worship;building:mosque;building:levels:1;height:2;material:masonry;name:Mosquée;religion:muslim;source:BDOrtho IGN (2016)
+way/530095658,-12.7926543 45.2117242,amenity:school;name:Collège de Doujani;school:FR:collège
+way/530099151,-12.7997465 45.2059454,amenity:school;name:Collège de Passamainty;school:FR:collège
+way/616064632,-12.7879355 45.2202559,addr:city:Mamoudzou;addr:postcode:97600;addr:street:Rue Mahévantana;amenity:place_of_worship;building:mosque;denomination:sunni;name:Mosquée de Maévantana;religion:muslim
+way/616088182,-12.787482 45.2174308,amenity:place_of_worship;building:yes;religion:muslim;roof:colour:grey;roof:material:concrete
+way/616102555,-12.7890063 45.2183536,amenity:place_of_worship;building:yes;religion:muslim
+way/636339234,-12.9753322 45.1792261,building:roof;note:Sur pilotis;tourism:viewpoint
+way/643122385,-12.8304572 45.1375397,"leisure:park;name:Parc forestier de Coconi;opening_hours:Mo-Th 07:30-12:00, 12:45-16:15; Fr 07:30-11:30, 13:30-15:30;phone:0269649850;tourism:attraction;website:https://cd976.fr/"
+way/655532245,-12.7947479 45.2144961,amenity:kindergarten
+way/655532246,-12.7948061 45.2150996,amenity:school
+way/655532248,-12.7946104 45.2127813,amenity:school
+way/670200991,-12.798709 45.2775237,amenity:school
+way/670200992,-12.799386 45.2793391,amenity:school
+way/670200994,-12.7964067 45.2805512,amenity:school;name:École Pamandzi 4
+way/670201266,-12.7966617 45.2788872,amenity:school
+way/670220346,-12.786913 45.2218535,amenity:place_of_worship;building:yes;religion:muslim
+way/670900030,-12.7871419 45.2232391,amenity:place_of_worship;building:yes;religion:muslim
+way/671080655,-12.788693 45.2227287,amenity:place_of_worship;building:yes;religion:muslim
+way/671080656,-12.7891719 45.2219431,amenity:place_of_worship;building:yes;building:levels:1;height:2;religion:muslim;source:BDOrtho IGN (2016)
+way/729663602,-12.8464082 45.1368762,amenity:school
+way/754907888,-12.801938 45.2802541,building:yes;name:Pension Faida;source:BDOrtho IGN (2016);tourism:hotel;website:https://www.pensionfaida.com/
+way/754910064,-12.7870106 45.2775395,addr:city:Labattoir;addr:postcode:97610;amenity:place_of_worship;building:yes;name:Mosquée de Mouzdalifa;religion:muslim;source:BDOrtho IGN (2016)
+way/754912606,-12.7895752 45.285244,addr:city:La vigie;addr:housenumber:97520;addr:postcode:97510;addr:street:Rue Mohamed;leisure:park;name:Mohamed Ali said;opening_hours:Mo-Fr 08:00-17:00;opening_hours:covid19:off;operator:Mohamed Ali Said;source:BDOrtho IGN (2016)
+way/755368701,-12.9264606 45.1075251,amenity:place_of_worship;building:mosque;building:levels:1;building:material:concrete masonry unit;height:2;name:Mosquée de Majiméouni;religion:muslim;source:BDOrtho IGN (2016) and survey;wheelchair:no
+way/755369777,-12.8996354 45.0958143,amenity:place_of_worship;building:mosque;name:Mosquée du vendredi;religion:muslim;source:BDOrtho IGN (2016)
+way/755370879,-12.905496 45.0777805,amenity:place_of_worship;building:mosque;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;name:Mosquée de vendredi;religion:muslim;source:BDOrtho IGN (2016);wheelchair:limited
+way/756503531,-12.7891459 45.2193729,amenity:place_of_worship;building:yes;religion:muslim;roof:colour:grey;roof:material:concrete;source:BDOrtho IGN (2016)
+way/756522337,-12.7905536 45.1787976,amenity:place_of_worship;building:mosque;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;name:Mosquée;religion:muslim;source:BDOrtho IGN (2016);wheelchair:limited
+way/756526550,-12.7927295 45.1769792,amenity:kindergarten
+way/756526551,-12.789095 45.177545,amenity:kindergarten
+way/756556679,-12.80197 45.2127366,amenity:place_of_worship;building:yes;building:levels:1;building:material:concrete;denomination:sunni;height:2;name:Mosquée de vendredi;religion:muslim;source:BDOrtho IGN (2016) and survey
+way/756903791,-12.804771 45.2012415,amenity:school;name:Collège de Kwalé
+way/757959535,-12.7978607 45.2860978,amenity:school;name:Lycée de Petite-Terre;source:BDOrtho IGN (2016)
+way/758466232,-12.7674632 45.2230713,amenity:school
+way/758466234,-12.7665398 45.2239162,amenity:school;name:Collège de Kawéni 2;name:fr:Collège K2;operator:type:public;school:FR:collège;short_name:Collège K1
+way/758524301,-12.7526425 45.2309016,amenity:place_of_worship;building:mosque;religion:muslim;source:BDOrtho IGN (2016)
+way/760414408,-12.7373874 45.2070287,amenity:events_venue;name:Salle Polyvalent de Koungou;operator:La mairie de Koungou
+way/760496817,-12.7347552 45.1630389,amenity:place_of_worship;building:mosque;religion:muslim
+way/760497105,-12.7326941 45.1616113,amenity:place_of_worship;building:yes;religion:muslim;source:BDOrtho IGN (2016)
+way/762796268,-12.7584834 45.0798113,amenity:school;min_age:12;name:Collège de M'Tsanagamouji;source:BDOrtho IGN (2016);wheelchair:limited
+way/766516801,-12.7603586 45.0810153,amenity:school;min_age:6;name:École primaire Siadi VITA;opening_hours:Mo-Fr 07:00-16:30;operator:Mairie de M'Tsangamouji;school:FR:École primaire;source:survey;survey:date:2023-08-10;wheelchair:limited
+way/772698209,-12.8324526 45.1191352,amenity:place_of_worship;building:mosque;religion:muslim;source:BDOrtho IGN (2016) and survey;survey:date:2021-01-19
+way/772698450,-12.8289538 45.1144854,amenity:place_of_worship;building:mosque;religion:muslim;source:BDOrtho IGN (2016);survey:date:2021-01-19
+way/772721259,-12.835291 45.1105275,amenity:place_of_worship;building:mosque;religion:muslim;source:BDOrtho IGN (2016);survey:date:2021-01-19
+way/802600012,-12.7964777 45.27948,leisure:sports_centre;name:Stade de Pamandzi
+way/828054581,-12.9902678 45.1368801,amenity:place_of_worship;building:mosque;denomination:nondenominational;opening_hours:24/7;religion:muslim;source:BDOrtho IGN (2016);wheelchair:limited
+way/828059553,-12.987469 45.1268303,addr:city:Passi-Kéli;addr:postcode:97625;addr:street:Rue Zoki NABOUDOU;amenity:school;name:École maternelle de Passi-Kéli
+way/828059820,-12.9872263 45.1265198,amenity:school;name:École primaire de Passi-Kéli
+way/828060367,-12.9878071 45.1374485,amenity:school;name:École primaire de M'Bouini
+way/828097327,-12.9858854 45.1268563,amenity:place_of_worship;building:yes;building:levels:2;building:material:concrete masonry unit;height:4;name:Mosquée de Passi-Kéli;religion:muslim;source:BDOrtho IGN (2016);wheelchair:limited
+way/828852146,-12.9788357 45.1236055,amenity:place_of_worship;building:yes;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;opening_hours:24/7;religion:muslim;source:BDOrtho IGN (2016);wheelchair:limited
+way/836379494,-12.8973068 45.1439501,amenity:school
+way/839042058,-12.8528655 45.1959477,building:yes;historic:ruins;source:BDOrtho IGN (2016)
+way/839606792,-12.6847104 45.074721,leisure:sports_centre;sport:athletics
+way/839606793,-12.6844821 45.0746774,leisure:sports_centre;sport:basketball
+way/839606794,-12.6845102 45.0741208,amenity:school;name:Collège de Hamjago;source:Survey
+way/840827028,-12.6914412 45.0731438,amenity:school
+way/843651442,-12.7895368 45.1402495,amenity:place_of_worship;building:mosque;building:colour:pink;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;material:masonry;religion:muslim;roof:colour:grey;roof:material:concrete;roof:shape:flat;source:BDOrtho IGN (2020) and Mapillary (2022-10-22);survey:date:2022-10-22
+way/843652001,-12.7883159 45.1407067,amenity:place_of_worship;building:mosque;building:colour:blue;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;material:masonry;religion:muslim;roof:colour:grey;roof:material:concrete;roof:shape:flat;source:BDOrtho IGN (2020) and Mapillary (2022-10-22);survey:date:2022-10-22
+way/843652141,-12.7891729 45.1374052,amenity:place_of_worship;building:mosque;building:colour:green;building:levels:1;height:2;religion:muslim;roof:colour:grey;roof:material:concrete;roof:shape:flat;source:BDOrtho IGN (2016);survey:date:2021-01-19
+way/843652892,-12.791795 45.1245167,amenity:place_of_worship;building:mosque;building:levels:1;building:material:metal_plates;description:Type de construction a confirmer sur le terrain;height:2;religion:muslim;roof:colour:grey;roof:material:metal_sheet;roof:shape:skillion;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022);survey:date:2022-10-26
+way/843654166,-12.7864873 45.1365997,amenity:place_of_worship;building:mosque;building:colour:white;building:levels:1;building:material:concrete masonry unit;height:2;religion:muslim;roof:colour:grey;roof:material:concrete;roof:shape:flat;source:BDOrtho IGN (2020) and survey;survey:date:2022-10-26
+way/856353165,-12.8932289 45.1425284,amenity:school
+way/856353173,-12.892915 45.1436658,amenity:place_of_worship;building:mosque;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;name:Mosquée;opening_hours:24/7;religion:muslim;source:BDOrtho IGN 2016
+way/856353174,-12.8930568 45.1417309,amenity:place_of_worship;building:mosque;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;name:Mosquée;opening_hours:24/7;religion:muslim;source:BDOrtho IGN 2016
+way/863715497,-12.8900514 45.1439304,amenity:school
+way/866220410,-12.9144416 45.1923985,amenity:school
+way/866890407,-12.9291238 45.1530301,amenity:place_of_worship;building:mosque;building:levels:1;denomination:sunni;height:2;opening_hours:24/7;religion:muslim;source:BDOrtho IGN 2016;wheelchair:limited
+way/906070447,-12.9199333 45.1592562,amenity:place_of_worship;building:mosque;building:levels:1;height:2;name:Mosquée de Malamani;religion:muslim;source:BDOrtho IGN 2016
+way/906593860,-12.7147488 45.051835,amenity:school;name:Lycée du Nord
+way/910745315,-12.7266697 45.0581196,amenity:place_of_worship;building:house;building:levels:1;building:material:concrete masonry unit;height:2;name:Ancienne Mosquée de vendredi;religion:muslim;source:survey;wall:no
+way/912158770,-12.7396289 45.2020324,amenity:school
+way/912158771,-12.7392133 45.2016786,amenity:school
+way/912193468,-12.7690048 45.2198399,amenity:school;name:Lycée Professionnel de Kawéni
+way/912502862,-12.7264238 45.0623714,amenity:school
+way/921031187,-12.7135397 45.0507692,amenity:school;name:Ecole maternelle
+way/925195770,-12.787552 45.2642118,amenity:school;name:APEEM
+way/925205620,-12.794454 45.2745302,amenity:school;name:École maternelle de pamandzi 7
+way/929552884,-12.9218333 45.0891593,amenity:school;name:Collège de Bouéni;phone:+33269645060;survey:date:2020-01-29
+way/931313716,-12.8921169 45.2055135,amenity:school;source:survey
+way/938157637,-12.7887214 45.2238629,leisure:park
+way/938483755,-12.7098819 45.050441,amenity:place_of_worship;building:mosque;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;name:Mosquée;opening_hours:24/7;religion:muslim;source:BDOrtho IGN (2016) and survey;wheelchair:limited
+way/945871051,-12.9526512 45.109005,amenity:school;name:Collège de Kani-Kéli
+way/945872171,-12.9537092 45.1089476,amenity:school
+way/958337996,-12.7344675 45.138398,amenity:school
+way/958337998,-12.7347805 45.1386729,amenity:school
+way/958466733,-12.8926575 45.142773,amenity:school
+way/960785619,-12.7872386 45.2759872,amenity:school;name:École Primaire Labattoir 2;school:FR:primaire;source:BDOrtho IGN (2016)
+way/962994029,-12.9052801 45.1554193,amenity:school
+way/963895543,-12.9190909 45.1580002,amenity:school;name:PPF;source:BDOrtho IGN (2016) and survey
+way/965221021,-12.9280676 45.152782,amenity:place_of_worship;building:yes;building:levels:2;height:4;name:Mosquée de vendredi;religion:muslim;source:BDOrtho IGN (2016)
+way/965826321,-12.6807639 45.1004374,amenity:school;name:École maternelle
+way/965830458,-12.6820367 45.1013261,amenity:school;name:École primaire;source:BDOrtho IGN (2016)
+way/967255652,-12.6890744 45.1107987,amenity:school;name:École Maternelle;school:FR:maternelle;source:BDOrtho IGN (2016)
+way/968389702,-12.6900312 45.1106663,amenity:place_of_worship;building:mosque;building:levels:1;height:2;name:Mosqué de M'Tsangamboua;religion:muslim;source:BDOrtho IGN (2016)
+way/970094475,-12.7005791 45.1236894,amenity:school
+way/970094476,-12.7006517 45.1238054,amenity:school
+way/973108033,-12.7096539 45.1232576,amenity:place_of_worship;building:yes;building:levels:1;building:material:concrete;denomination:shia;height:2;name:Mosqué de Niambo;religion:muslim;source:BDOrtho IGN (2016);wheelchair:limited
+way/973134186,-12.721439 45.1179786,amenity:school;name:Collège de Dzoumogné
+way/973304367,-12.722045 45.1177671,amenity:school;name:Lycée professionel de Dzoumogné;source:BDOrtho 2016
+way/974047384,-12.7207203 45.113266,amenity:school;source:BDOrtho 2016
+way/974047389,-12.7210084 45.1127401,amenity:school;source:BDOrtho 2016
+way/978144227,-12.7339308 45.1388325,amenity:place_of_worship;building:yes;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;name:Mosquée;religion:muslim;source:BDOrtho IGN (2016)
+way/978746778,-12.962899 45.1730555,amenity:school;name:Ecole Maternelle
+way/980006389,-12.9628797 45.1750916,amenity:place_of_worship;building:yes;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;name:Mosquée;religion:muslim;source:BDOrtho IGN (2016)
+way/983623651,-12.963178 45.176148,amenity:place_of_worship;building:yes;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;name:Mosqée de vendredi;religion:muslim;source:BDOrtho IGN (2016);wheelchair:limited
+way/993467242,-12.955091 45.1095357,amenity:school;name:École de la Rose;source:BDOrtho IGN (2016)
+way/993653088,-12.9546652 45.1079495,amenity:place_of_worship;building:yes;building:levels:1;building:material:concrete;height:2;name:Mosquée Cavani;religion:muslim;source:BDOrtho IGN (2016) and survey
+way/994015039,-12.9530675 45.1082754,amenity:kindergarten;name:Crèche associative Niyatsara Mitarimirizaza
+way/994891948,-12.9643131 45.1112067,amenity:place_of_worship;building:yes;building:levels:1;building:material:concrete;denomination:sunni;height:2;religion:muslim;source:BDOrtho IGN (2016) and survey
+way/994898927,-12.9651417 45.1114076,amenity:school;isced:level:1;name:École Élémentaire;school:FR:élémentaire
+way/994904674,-12.9665496 45.1107686,amenity:school;isced:level:0;name:École Maternelle;school:FR:maternelle
+way/996114417,-12.9602649 45.1263904,amenity:school;name:École Élémentaire
+way/996214132,-12.9630539 45.1274908,amenity:place_of_worship;building:yes;building:levels:1;denomination:sunni;height:2;material:masonry;name:Mosque de Choungui;religion:muslim;source:BDOrtho IGN (2016)
+way/998395654,-12.6834978 45.0778704,amenity:school
+way/998395657,-12.6840618 45.0778035,amenity:school
+way/1001829380,-12.8147685 45.1981901,amenity:school;name:Groupe Scolaire Bachirou
+way/1001971542,-12.805618 45.2052571,amenity:school
+way/1001972848,-12.8060914 45.2053774,amenity:school
+way/1002066295,-12.7872137 45.1412475,amenity:school;name:École élémentaire de Miréréni;survey:date:2022-10-22
+way/1002069401,-12.7889133 45.1394916,amenity:place_of_worship;building:mosque;building:colour:blue;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;material:masonry;religion:muslim;roof:colour:grey;roof:material:concrete;roof:shape:flat;source:BDOrtho IGN (2020) and Mapillary (2022-10-22);survey:date:2022-10-22
+way/1002076835,-12.7886959 45.1410148,amenity:school;name:École maternelle de Mriréréni;source:BDOrtho IGN (2016);survey:date:2022-10-22
+way/1006808294,-12.8523464 45.1411865,amenity:school;isced:level:1;name:École Primaire de Ouangani;school:FR:élémentaire;source:BDOrtho IGN (2016) and survey
+way/1013638298,-12.8387653 45.1582644,amenity:school;source:BDOrtho IGN (2016) and survey
+way/1018564176,-12.9022398 45.1006298,amenity:school
+way/1018775307,-12.816375 45.1992218,amenity:place_of_worship;building:yes;building:levels:2;height:4;material:metal;religion:muslim;source:BDOrtho IGN (2016) and survey
+way/1021048077,-12.7213314 45.1686362,amenity:place_of_worship;building:mosque;building:levels:1;denomination:sunni;height:2;material:masonry;religion:muslim;source:BDOrtho IGN (2016) and survey
+way/1021194154,-12.901059 45.0934917,amenity:school
+way/1021947727,-12.82906 45.1131383,amenity:school;name:École Primaire Chiconi 2;school:FR:primaire
+way/1035805448,-12.764708 45.0858361,amenity:place_of_worship;building:mosque;building:colour:white;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:3;religion:muslim;roof:colour:grey;roof:material:concrete;roof:shape:flat;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2023);source:url:https://www.mapillary.com/app/?lat=-12.764695400000008&lng=45.08607189999998&z=19.9&pKey=6515640791877892&focus=photo&x=0.7501085464000222&y=0.555289257184603&zoom=0.014446523053608721;survey:date:2023-08-08
+way/1035805453,-12.764625 45.085826,amenity:school;source:BDOrtho IGN (2016) and survey
+way/1066359416,-12.8005894 45.211405,amenity:school;source:BDOrtho IGN (2016) and survey
+way/1069310563,-12.7089324 45.1227432,amenity:school
+way/1071672016,-12.9806128 45.1234936,amenity:school;source:BDOrtho IGN (2016)
+way/1071675143,-12.9797503 45.1237585,amenity:place_of_worship;building:yes;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;opening_hours:24/7;religion:muslim;source:BDOrtho IGN (2016);wheelchair:limited
+way/1086445242,-12.8306556 45.1134316,amenity:school;name:École Maternelle de Kavani;source:BDOrtho IGN (2016) and survey
+way/1093507400,-12.7079643 45.0519919,amenity:school;name:École Elémentaire
+way/1094265507,-12.790481 45.1788024,amenity:place_of_worship;building:mosque;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;religion:muslim;source:BDOrtho IGN (2016);wheelchair:limited
+way/1121007558,-12.9878058 45.1374659,amenity:school;name:École Matérnelle de M'Bouini
+way/1135063003,-12.7925212 45.1186113,amenity:place_of_worship;building:mosque;building:colour:white;building:levels:1;building:material:concrete masonry unit;denomination:sunni;height:2;name:Mosquée;religion:muslim;roof:colour:grey;roof:material:concrete;roof:shape:flat;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022);survey:date:2022-10-13;wheelchair:limited
+way/1136432307,-12.7860275 45.1377804,amenity:school
+way/1136432308,-12.7861351 45.1377485,amenity:school;name:École Privée Associative Nyamba;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2022-10-22);survey:date:2022-10-22
+way/1138315367,-12.7891189 45.1375479,amenity:place_of_worship;building:mosque;building:colour:green;building:levels:3;height:7;name:Minaret;religion:muslim;roof:colour:white;roof:material:concrete;roof:shape:onion;source:BDOrtho IGN (2016);survey:date:2021-01-19
+way/1150161050,-12.7889125 45.1396004,amenity:place_of_worship;building:mosque;building:colour:blue;building:levels:2;building:material:concrete masonry unit;denomination:sunni;height:4;material:masonry;name:Minaret;religion:muslim;roof:colour:grey;roof:material:concrete;roof:shape:flat;source:BDOrtho IGN (2020) and Mapillary (2022-10-22);survey:date:2022-10-22
+way/1199999263,-12.720889 45.0547794,"amenity:place_of_worship;building:mosque;denomination:sunni;name:Mosquée;opening_hours:24/7;religion:muslim;service_times:sunset,sunrise;source:BDOrtho IGN (2020);wheelchair:limited"
+way/1238785407,-12.7634861 45.0828866,amenity:place_of_worship;building:mosque;building:colour:white;building:levels:1;building:material:metal_plates;denomination:sunni;height:3;religion:muslim;roof:colour:grey;roof:material:metal sheet;roof:shape:skillion;source:BDOrtho IGN (2020) and Mapillary SIG_3CO (2023);source:url:https://www.mapillary.com/app/?lat=-12.762772899999959&lng=45.08182220000003&z=19.9&pKey=712544487135011&focus=photo&x=0.7181616469508698&y=0.4833796735324917&zoom=0;survey:date:2023-08-09
