@@ -1,0 +1,904 @@
+ext_id,coordinates,tags
+node/473111042,14.6952791 -61.1674678,bus:yes;public_transport:stop_position
+node/529538352,14.8667668 -61.106242,direction:45;tourism:viewpoint
+node/529864833,14.6861955 -61.1134118,direction:90;tourism:viewpoint
+node/534328957,14.4905983 -61.0804354,amenity:fountain;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008
+node/534436053,14.48045 -60.8106136,direction:90;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2008;tourism:viewpoint
+node/539535657,14.6721216 -61.0163205,bus:yes;highway:bus_stop;name:Les Palmiers;network:Mozaik;public_transport:platform;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2008
+node/600139468,14.5758234 -60.9746907,amenity:school;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+node/972400688,14.6423087 -61.0335489,bus:yes;highway:bus_stop;public_transport:platform
+node/973055823,14.6491404 -61.0611216,amenity:school;name:École élémentaire de Ravine-Vilaine;school:FR:élémentaire;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+node/973151375,14.6077576 -61.0829827,amenity:school;name:École primaire Eugène Revert;school:FR:primaire;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+node/973151927,14.6063071 -61.079181,amenity:school;name:CES Tartenson;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+node/973875523,14.6669396 -61.0623618,amenity:school;name:École;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+node/973958523,14.6755015 -61.0602503,amenity:school;name:École;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+node/975320796,14.7281951 -61.0222814,amenity:school;name:École primaire Bois-Joly;school:FR:primaire;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+node/1098198681,14.3995623 -60.8745496,direction:90;leisure:bird_hide;name:Observatoire Ornithologique;tourism:viewpoint
+node/1098198801,14.3993434 -60.8752519,direction:65;leisure:bird_hide;name:Observatoire Ornithologique;tourism:viewpoint
+node/1100204801,14.5181593 -61.0670883,man_made:tower;tower:type:communication;type:antenna
+node/1106796491,14.6020262 -60.9076566,name:Habitation Clément;opening_hours:Mo-Su 09:00-18:30;tourism:museum;website:http://habitation.fondation-clement.org
+node/1106810526,14.7726832 -60.8821405,direction:0-360;tourism:viewpoint
+node/1149341465,14.4551231 -61.0570296,direction:125;name:Point de vue sur le Rocher du Diamant;note:A splendid view of the Rocher du Diamand;tourism:viewpoint
+node/1149383792,14.4781207 -60.9033312,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;name:Total;operator:Total;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1149383840,14.4517997 -60.8563011,direction:310;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;tourism:viewpoint
+node/1149383876,14.4703823 -60.8698703,amenity:marketplace;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1149383903,14.4603083 -60.909454,name:Ecomusée de Martinique;ref:FR:museofile:M1081;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;tourism:museum;wikidata:Q3578597
+node/1149384038,14.4521403 -60.8516055,historic:ruins;name:Habitation Sucrière de Crève-Cœur;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1149384057,14.4353499 -60.8301466,alt_name:Bébêche;name:Les Ilets du Cap;phone:06 96 91 32 34;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;tourism:attraction;website:http://www.bebeche.net
+node/1149384064,14.4382204 -60.8799381,direction:290;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;tourism:viewpoint
+node/1149384229,14.4493887 -60.8559938,direction:180;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;tourism:viewpoint
+node/1149384977,14.4943045 -60.9049401,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;name:Total;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1149385156,14.4501872 -60.8554716,source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;tourism:viewpoint
+node/1149385187,14.4701237 -60.8916513,direction:130;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;tourism:viewpoint
+node/1149385211,14.5061351 -60.9066803,name:Distillerie La Mauny;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010;tourism:attraction
+node/1151464962,14.4687003 -60.9352024,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;name:Total;operator:Total;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1151464985,14.4683012 -60.9352156,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;name:Total;operator:Total;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1151721117,14.5111886 -60.9051984,name:Visite guidée distillerie;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;tourism:attraction
+node/1152317428,14.4610134 -60.8885062,bus:yes;highway:bus_stop;public_transport:platform;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1152858676,14.4655132 -60.9055209,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1152858694,14.4685047 -60.9319777,bus:yes;highway:bus_stop;public_transport:stop_position;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1152858708,14.4700507 -60.9072175,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1152858709,14.4605554 -60.9073905,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1152868070,14.4720819 -60.9534535,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/1152930231,14.4880424 -60.9663873,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/1152952049,14.5325854 -60.9827672,bench:yes;bus:yes;highway:bus_stop;name:Davila;public_transport:platform;shelter:yes
+node/1152952060,14.5322335 -60.9830672,bench:yes;bus:yes;highway:bus_stop;name:Mantous;public_transport:platform;shelter:yes
+node/1152952062,14.5448163 -60.9754524,bench:yes;bus:yes;highway:bus_stop;name:Pont Bac;public_transport:platform;shelter:yes
+node/1152952063,14.5713359 -60.9812538,bench:yes;bus:yes;highway:bus_stop;name:Cocotte;public_transport:platform;shelter:yes
+node/1152952065,14.5449756 -60.9750247,bench:yes;bus:yes;highway:bus_stop;name:Yak;public_transport:platform;shelter:yes
+node/1152974613,14.5765027 -60.9848588,bench:yes;bus:yes;highway:bus_stop;name:Champigny;public_transport:platform;shelter:yes
+node/1153001887,14.5945093 -60.984043,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/1157755997,14.8684537 -61.1218188,amenity:fuel;brand:Texaco;brand:wikidata:Q775060;brand:wikipedia:en:Texaco;name:Texaco
+node/1191320187,14.4817365 -60.8435724,amenity:school;name:École du Cap
+node/1236121677,14.7521594 -60.9427556,amenity:parking;direction:10;parking:surface;tourism:viewpoint
+node/1248100376,14.4293125 -60.8827816,name:Résidence Mélody;tourism:hotel
+node/1248100675,14.4277876 -60.8849013,name:Le Domaine de l'Anse Caritan;tourism:hotel
+node/1348000214,14.739655 -61.1750027,amenity:school;name:École;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+node/1349224382,14.7466278 -61.169139,"addr:city:Saint-Pierre;addr:postcode:97250;addr:street:Quartier Saint-James;amenity:school;name:Lycée Polyvalent Victor Anicet - Lycée des Métiers des Arts Appliqués, du Design et de la Communication Multimédia;operator:Académie de Martinique;operator:type:public;ref:UAI:9720516D;school:FR:lycée;source:data.gouv.fr:Éducation Nationale - 03/2018;website:https://lpovictoranicet.com"
+node/1438856397,14.605842 -61.0937599,direction:220;tourism:viewpoint
+node/1509317100,14.6314021 -61.0988439,direction:130;tourism:viewpoint
+node/1624928891,14.4776913 -61.0137534,name:Marina Hôtel;stars:3;tourism:hotel
+node/1626468629,14.6047963 -61.0717332,name:Shopping District;source:KG Ground Survey 2016;tourism:attraction
+node/1675479767,14.7417216 -61.0994811,tourism:viewpoint
+node/1675486363,14.7249461 -61.1051063,name:Cascade de Saut Gendarme;name:de:Wasserfall;tourism:attraction;waterway:waterfall
+node/1678773405,14.6143927 -61.013134,amenity:school;name:Supinfo Martinique
+node/1684783592,14.6377201 -61.0472708,amenity:school;name:Lycée professionel A.M.P. Raynald Sarcus;school:FR:lycée
+node/1684783598,14.6036273 -61.0637836,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783604,14.6094841 -61.0967856,bench:yes;bus:yes;highway:bus_stop;name:Anse Gouraud;network:Mozaik;public_transport:platform;shelter:yes
+node/1684783613,14.6122587 -61.0794856,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783615,14.6126758 -61.0963091,bus:yes;highway:bus_stop;name:Madiana PV;network:Mozaik;public_transport:platform;shelter:yes
+node/1684783619,14.61317 -61.0784841,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783623,14.6163291 -61.0993377,bench:yes;bin:no;bus:yes;highway:bus_stop;name:Pont RN2;network:Mozaik;public_transport:platform;shelter:yes;survey:date:2020-11-13;tactile_paving:no
+node/1684783624,14.6165905 -61.0845705,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/1684783625,14.616719 -61.0987669,bus:yes;highway:bus_stop;name:Flamboyants 1;operator:Mozaik;public_transport:platform
+node/1684783627,14.6176574 -61.0781204,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783628,14.6177322 -61.0968124,bench:yes;bus:yes;highway:bus_stop;name:Case Pilote;network:Mozaik;operator:Mozaik;public_transport:platform;shelter:yes;survey:date:2020-11-13
+node/1684783629,14.618098 -61.0781957,highway:bus_stop
+node/1684783630,14.6185255 -61.0956506,bin:yes;bus:yes;highway:bus_stop;name:Campus;network:Mozaik;public_transport:platform;shelter:yes
+node/1684783631,14.6183961 -61.0456689,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783634,14.620141 -61.0779323,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783635,14.62032 -61.0436069,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783641,14.621301 -61.0431442,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783642,14.6214574 -61.0950921,direction:180;tourism:viewpoint
+node/1684783643,14.6215162 -61.0935538,bench:yes;bus:yes;departures_board:no;highway:bus_stop;name:Venice;public_transport:platform;shelter:yes
+node/1684783647,14.6276664 -61.0398211,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783648,14.6282892 -61.0413245,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783650,14.6275603 -61.0405233,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783658,14.6299936 -61.0390264,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783666,14.6306298 -61.0376246,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783669,14.6310331 -61.0371446,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783671,14.6313887 -61.031099,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783674,14.6317664 -61.0308285,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783678,14.6323096 -61.0309214,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783686,14.6328878 -61.0407197,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783687,14.6337421 -61.0340636,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783689,14.6352596 -61.0317077,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783704,14.6365857 -61.0400472,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783737,14.6385236 -61.0406835,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783749,14.6392196 -61.0321076,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783763,14.6402716 -61.0329564,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783770,14.6433701 -61.0339392,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783777,14.6474133 -61.0440837,bus:yes;highway:bus_stop;public_transport:platform
+node/1684783794,14.6495654 -61.0360426,highway:bus_stop
+node/1684783796,14.6506427 -61.0370017,highway:bus_stop
+node/1684783798,14.6527229 -61.0394896,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817922,14.6171713 -61.0473143,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817923,14.6193495 -61.0392901,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817924,14.6199307 -61.0388851,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817925,14.6216181 -61.0388985,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817926,14.6219835 -61.0249794,highway:bus_stop
+node/1684817927,14.622174 -61.0240422,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817928,14.6225633 -61.0389485,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817929,14.6229168 -61.0189067,bench:no;highway:bus_stop;name:Acajou Prolongée;shelter:yes;tactile_paving:no
+node/1684817931,14.6240896 -61.024104,highway:bus_stop
+node/1684817932,14.6286159 -61.0276691,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817933,14.6297709 -61.0287009,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817936,14.6317926 -61.0242633,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817937,14.6322044 -61.0277051,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817939,14.6325599 -61.0229889,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817940,14.6333363 -61.0270217,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817941,14.6345295 -61.0181546,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817942,14.635774 -61.0204148,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817943,14.6359482 -61.0210536,bus:yes;highway:bus_stop;public_transport:platform
+node/1684817944,14.6341761 -61.0274504,addr:housename:École Gondeau Palmiste;addr:postcode:97232;addr:street:Lamentin;amenity:school;name:École Gondeau Palmiste
+node/1684819477,14.5960367 -61.0575929,bus:yes;highway:bus_stop;public_transport:platform
+node/1684819490,14.6031436 -61.0568672,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840235,14.6363543 -61.0208237,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840240,14.6384281 -61.021029,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840242,14.6409094 -61.0225656,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840245,14.6420959 -61.0234108,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840246,14.6442938 -61.0233532,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840251,14.653337 -61.0396965,highway:bus_stop
+node/1684840253,14.6534591 -61.0382925,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840258,14.6560599 -61.0422279,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840260,14.656284 -61.042565,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840269,14.6597563 -61.0447672,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840270,14.6606309 -61.0455298,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840271,14.6614447 -61.0457499,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840272,14.6657043 -61.0470041,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840274,14.666799 -61.047676,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840289,14.668571 -61.0484621,highway:bus_stop
+node/1684840291,14.6698929 -61.0488424,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840295,14.6712329 -61.0464967,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840296,14.6716664 -61.0461508,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840297,14.6718869 -61.0413356,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840298,14.672282 -61.0409151,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/1684840304,14.6724497 -61.0455376,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/1684840309,14.6727323 -61.0380448,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840314,14.6733776 -61.0421807,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840316,14.6742065 -61.0452074,bus:yes;highway:bus_stop;public_transport:platform
+node/1684840318,14.6746552 -61.0449087,bus:yes;highway:bus_stop;public_transport:platform
+node/1684844128,14.6061881 -61.0582232,bus:yes;highway:bus_stop;public_transport:platform
+node/1684844134,14.6102695 -61.0546785,bus:yes;highway:bus_stop;public_transport:platform
+node/1684844162,14.6260789 -61.0180282,bench:yes;highway:bus_stop;shelter:yes;survey:date:2020-11-20
+node/1684844174,14.6341566 -61.0176992,bus:yes;highway:bus_stop;public_transport:platform
+node/1684844181,14.6521238 -61.0291339,bus:yes;highway:bus_stop;public_transport:platform
+node/1684844193,14.6525487 -61.0306543,highway:bus_stop
+node/1684844197,14.653175 -61.0336257,bus:yes;highway:bus_stop;public_transport:platform
+node/1684844201,14.6533204 -61.0351376,highway:bus_stop
+node/1684908487,14.6461144 -61.0232624,bus:yes;highway:bus_stop;public_transport:platform
+node/1684908493,14.6511957 -61.0268494,highway:bus_stop
+node/1684908501,14.6670846 -61.0344093,bus:yes;highway:bus_stop;public_transport:platform
+node/1684908521,14.6682453 -61.0345033,bus:yes;highway:bus_stop;public_transport:platform
+node/1684908522,14.6697207 -61.0353209,bus:yes;highway:bus_stop;public_transport:platform
+node/1721118138,14.7005962 -61.0695005,name:Au Coeur de Bouliki;place:locality;tourism:picnic_site
+node/1723247184,14.4642367 -61.0463974,alt_name:Mémorial de l'Anse Caffard;artist_name:Laurent Valère;artwork_type:sculpture;historic:monument;name:Mémorial Cap 110;start_date:1998-05-22;tourism:artwork;wikidata:Q2936986;wikipedia:fr:Cap 110
+node/1758783608,14.7691451 -61.0854745,designation:Morne Ja cob;name:Morne Jacob;tourism:viewpoint
+node/1758812027,14.7189809 -61.1628136,designation:Canal de Beauregard;historic:monument;name:Canal de Beauregard
+node/1860697368,14.7404443 -61.0990332,tourism:viewpoint
+node/1866454976,14.4667526 -60.9236397,direction:135;tourism:viewpoint
+node/1892163358,14.7066026 -61.1779473,historic:ruins;man_made:works;name:Ancienne Distillerie Bally
+node/1920878480,14.3919484 -60.8677914,"image:https://s3.amazonaws.com/gs-waymarking-images/1a4d8664-2ad1-485b-bc22-fac34290dbe2.jpg;man_made:lighthouse;ref:admiralty:J5776;ref:nga:110-14940;seamark:information:White pylon, red top.;seamark:landmark:category:mast;seamark:landmark:colour:red;white;seamark:landmark:colour_pattern:horizontal;seamark:landmark:function:light_support;seamark:light:1:character:Fl;seamark:light:1:colour:white;seamark:light:1:group:4;seamark:light:1:height:35;seamark:light:1:period:15;seamark:light:1:range:15;seamark:light:1:sector_end:106;seamark:light:1:sector_start:235;seamark:light:2:character:Fl;seamark:light:2:colour:white;seamark:light:2:group:4;seamark:light:2:height:35;seamark:light:2:period:15;seamark:light:2:range:15;seamark:light:2:sector_end:108;seamark:light:2:sector_start:107;seamark:light:3:category:emergency;seamark:name:Îlet Cabrits;seamark:type:landmark;wikidata:Q3378447"
+node/1921009855,14.6176148 -61.0875363,amenity:school;name:Plateau Fofo élémentaire;school:FR:élémentaire
+node/1921010057,14.6177498 -61.0879333,amenity:school;name:Plateau Fofo maternelle;school:FR:maternelle
+node/1935609393,14.4574354 -60.891473,name:Pointe Marin;tourism:picnic_site
+node/1940686378,14.6107875 -61.0871983,amenity:school;name:Pointe des Nègres
+node/1940798227,14.6154876 -61.082155,addr:city:Fort-de-France;addr:housenumber:22;addr:postcode:97200;addr:street:Route de Cluny;amenity:school;denomination:catholic;name:Etablissement Saint Joseph de Cluny;religion:christian;school:FR:collège
+node/1940802048,14.6040259 -61.0770802,direction:140;name:Croix de Bellevue;tourism:viewpoint
+node/1977266790,14.5996589 -61.054857,amenity:place_of_worship;denomination:roman_catholic;name:Chapelle de Volga;religion:christian
+node/1977266974,14.6026702 -61.0526356,amenity:school;name:École maternelle de Volga Plage;school:FR:maternelle
+node/2123665760,14.776265 -61.0110673,addr:city:Sainte-Marire;addr:postcode:97230;addr:street:HABITATION LIMBE QUARTIER FOURNIOL;fee:yes;museum:nature;name:Musée de la Banane;name:en:Banana Museum;opening_hours:Su-Fr 09:00-17:00;opening_hours:covid19:ACCUEIL PUBLIC DE 9h à 16h FERMETURE à 17h;phone:+596 596 762709;tourism:museum;website:https://museedelabanane.fr/
+node/2191669881,14.7057046 -61.1102207,direction:360;ele:1120;natural:peak;tourism:viewpoint
+node/2193294714,14.7059278 -61.0917649,name:Aire d'Accueil de l'Alma;tourism:picnic_site
+node/2296081401,14.7617183 -60.9124096,historic:ruins
+node/2296111769,14.7598156 -60.9124168,name:Résidence La Goélette;tourism:hotel
+node/2302375597,14.5134167 -60.8251807,name:Hôtel Macabou;tourism:hotel
+node/2580520617,14.6172929 -60.8971414,amenity:school;name:Cité Scolaire;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2013
+node/2582764521,14.5058161 -60.9276312,direction:350;tourism:viewpoint
+node/2582765504,14.5200111 -60.9230334,tourism:viewpoint
+node/2590552314,14.4814739 -61.0186887,name:Diamant Beach Club;tourism:hotel
+node/2590673344,14.4663761 -60.9561423,tourism:hotel
+node/2597544779,14.5433993 -61.0468279,direction:100;tourism:viewpoint
+node/2602069875,14.5256476 -61.0846812,historic:ruins
+node/2603243699,14.4522383 -60.8519911,tourism:picnic_site
+node/2604477570,14.423541 -60.8890809,tourism:picnic_site
+node/2604530214,14.4154313 -60.8867412,tourism:picnic_site
+node/2604530226,14.4157877 -60.8875399,tourism:picnic_site
+node/2604530234,14.4166648 -60.8885247,tourism:picnic_site
+node/2604544331,14.4096338 -60.8869773,tourism:viewpoint
+node/2604544340,14.4104852 -60.8874473,tourism:viewpoint
+node/2606228049,14.4521927 -60.9004094,historic:ruins;name:Four
+node/2606228093,14.4519176 -60.899353,direction:225;tourism:viewpoint
+node/2606283780,14.4958702 -60.9786436,bus:yes;public_transport:stop_position
+node/2607853608,14.5192786 -61.0132986,email:mangofil2@wanadoo.fr;fax:+596 596680808;leisure:sports_centre;name:Mangofil;opening_hours:We-Su 09:00-17:00;phone:+596 596680808;sport:climbing_adventure;website:https://www.mangofil.fr/
+node/2614142178,14.4784309 -60.8115231,direction:100;tourism:viewpoint
+node/2650625132,14.7104996 -61.1809664,amenity:school;name:École élémentaire A Hermann Michel;operator:type:public;ref:UAI:9720107J;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 05/2016
+node/2670483277,14.5725252 -60.9735856,leisure:sports_centre;name:Hall des sports de Ducos;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014
+node/2687084185,14.7375264 -60.959552,amenity:fountain
+node/2690691375,14.7324917 -60.9584656,historic:monument;name:Pyramide
+node/2764053509,14.4429444 -60.8800302,addr:city:Sainte-Anne;addr:postcode:97227;addr:street:La Pointe Marin;email:contact@airstreamparadise.com;internet_access:wlan;name:Airstream Paradise;phone:+596 596 58 45 19;+596 696 19 86 76;tourism:camp_site;website:http://www.airstreamparadise.fr/
+node/2888071384,14.6149683 -61.0720391,bus:yes;public_transport:stop_position;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014
+node/2888071385,14.6156283 -61.0717994,bus:yes;public_transport:stop_position;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014
+node/2892783118,14.6114438 -61.0713491,bus:yes;highway:bus_stop;public_transport:platform
+node/2892783133,14.6087041 -61.0719918,bus:yes;highway:bus_stop;operator:Mozaïk;public_transport:platform;shelter:no
+node/2892783135,14.6082771 -61.0720787,bus:yes;highway:bus_stop;operator:Mozaïk;public_transport:platform;shelter:no
+node/2892783179,14.6081129 -61.0714996,bus:yes;highway:bus_stop;operator:Mozaïk;public_transport:platform;shelter:yes
+node/2892783189,14.6077562 -61.0679397,amenity:fountain
+node/2937245411,14.7576612 -60.9220328,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;name:Vito
+node/3020206508,14.4300268 -60.8850028,historic:ruins;name:Four à chaux
+node/3020206510,14.4266586 -60.8860674,tourism:picnic_site
+node/3020301742,14.3969592 -60.8728824,tourism:picnic_site
+node/3020301758,14.3992789 -60.8757971,tourism:picnic_site
+node/3020301767,14.4016124 -60.8765688,tourism:picnic_site
+node/3020301775,14.4030136 -60.8780108,tourism:picnic_site
+node/3020301777,14.4034442 -60.8784915,tourism:picnic_site
+node/3020301778,14.4036302 -60.8788357,tourism:picnic_site
+node/3020301783,14.4047551 -60.8807209,tourism:picnic_site
+node/3022091943,14.396293 -60.8709204,tourism:picnic_site
+node/3022221424,14.4219684 -60.8515342,historic:ruins;name:Ancien Moulin
+node/3022221425,14.4211432 -60.8489805,amenity:place_of_worship;man_made:cross;name:Vierge des Coolies;religion:christian
+node/3024460178,14.4971098 -60.9293961,amenity:shelter;tourism:picnic_site
+node/3024553450,14.4995633 -60.9290734,tourism:picnic_site
+node/3024597418,14.5000458 -60.9292283,amenity:shelter;tourism:picnic_site
+node/3032231578,14.7574944 -60.9324452,tourism:picnic_site
+node/3052601442,14.4360494 -60.8302978,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;name:Station du Cap;operator:Vito
+node/3052633634,14.4281179 -60.8338678,historic:ruins
+node/3063150999,14.8057933 -61.1530109,name:Table d'orientation;tourism:viewpoint
+node/3063835927,14.8079805 -61.1623414,historic:wayside_cross;name:Monument Dufrénois;tourism:attraction
+node/3063875957,14.8095254 -61.167252,tourism:viewpoint
+node/3075757775,14.7727896 -60.8868949,direction:0-180;tourism:viewpoint
+node/3075775880,14.7600587 -60.874544,direction:160;tourism:viewpoint
+node/3075775893,14.7627351 -60.8760569,tourism:viewpoint
+node/3104487095,14.4367445 -60.8264724,tourism:picnic_site
+node/3104487733,14.4372353 -60.8261601,tourism:picnic_site
+node/3104487746,14.4383534 -60.8257171,tourism:picnic_site
+node/3104518253,14.4408788 -60.824864,tourism:picnic_site
+node/3104518256,14.441424 -60.8249928,tourism:picnic_site
+node/3179236516,14.8690957 -61.116148,amenity:library;name:Bibliothèque municipale;source:Connaissance locale
+node/3179281940,14.867979 -61.1202071,addr:city:Basse-Pointe;addr:postcode:97218;addr:street:Rue du Docteur Morestin;amenity:school;name:Collège de Basse-Pointe;school:FR:collège;source:Connaissance locale
+node/3179291693,14.8681814 -61.122385,amenity:bank;brand:Crédit Agricole;brand:wikidata:Q590952;brand:wikipedia:fr:Crédit agricole;name:Crédit Agricole
+node/3180356969,14.8691109 -61.1195157,addr:city:BASSE-POINTE;addr:postcode:97218;addr:street:Rue du Docteur Morestin;amenity:school;name:École Mixte A;source:Connaissance locale
+node/3180373215,14.862845 -61.1305558,addr:city:BASSE-POINTE;addr:postcode:97218;addr:street:Chemin des Hauteurs Bourdon;amenity:school;name:École Les Hauteurs Bourdon;source:Connaissance locale
+node/3180384503,14.8345075 -61.1261408,amenity:school;name:École du Morne Balai;source:Connaissance locale
+node/3188662396,14.8602289 -61.1027061,historic:monument;name:Habitation Moulin l'Étang;source:Connaissance locale
+node/3188729443,14.833826 -61.0595881,amenity:school;name:Lycée polyvalent Joseph Pernock;school:FR:lycée;source:Connaissance locale
+node/3463593278,14.4786121 -61.0686185,direction:180;tourism:viewpoint
+node/3463994465,14.4998833 -61.0166829,direction:180;tourism:viewpoint
+node/3463994467,14.5291068 -61.0027484,email:contact@domaine-chateau-gaillard.fr;name:Domaine de Château Gaillard;name:fr:Domaine du château Gaillard;opening_hours:Mo-Su 09:00-18:00;tourism:museum;website:http://www.domaine-chateau-gaillard.fr
+node/3464092693,14.5428077 -60.8586217,leisure:adventure_park;name:Parcours Aventure;tourism:attraction
+node/3464092792,14.4314568 -60.8269823,tourism:picnic_site
+node/3464092821,14.4349999 -60.8806265,tourism:attraction
+node/3464092823,14.4361636 -60.8540404,historic:ruins;man_made:windmill
+node/3465989359,14.6904722 -61.0142274,craft:distillery;historic:manor;man_made:works;mhs:inscription_date:2005-05-23;name:Habitation Saint-Étienne;product:rum;ref:mhs:PA97200013;tourism:attraction
+node/3465989363,14.5559385 -60.8830044,ele:504;name:Montagne du Vauclin;natural:peak;tourism:viewpoint;wikidata:Q27728644
+node/3465989671,14.5659697 -60.8991834,tourism:viewpoint
+node/3465989680,14.5774125 -60.9030673,direction:65;tourism:viewpoint
+node/3465989686,14.5950637 -60.888755,direction:90;name:Point de vue Bois Soldat;tourism:viewpoint
+node/3510520073,14.6353035 -61.0080648,amenity:fuel;name:Station Service Total Long Pré
+node/3584015683,14.6022375 -61.0503188,amenity:community_centre;name:THINK TANK;note:cc.volgaplage@gmail.com;operator:Conseil citoyen de volga plage
+node/3602967158,14.7635336 -60.9052274,name:La Table de Mamy Nounou;tourism:hotel
+node/3655469982,14.7838889 -60.9981246,name:Distillerie Saint-James;operator:Distillerie Saint-James;shop:alcohol;tourism:museum;website:https://www.rhum-saintjames.com/;wikidata:Q3330473
+node/3778645130,14.7105554 -61.1814882,amenity:school;name:École élémentaire B;ref:UAI:9720108K;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 05/2016
+node/3883815809,14.642633 -61.1384744,amenity:library;name:Bibliothèque municipale
+node/3905247991,14.62396 -60.9380866,addr:city:Le François;addr:postcode:97240;addr:street:Morne Serpent;tourism:viewpoint
+node/3961885889,14.6673775 -61.08314,direction:180;tourism:viewpoint
+node/3961885907,14.670968 -61.084149,direction:90;tourism:viewpoint
+node/3971952027,14.3979079 -60.8561363,direction:180;tourism:viewpoint
+node/3972086832,14.4001026 -60.8594335,name:Savane des Pétrifications;tourism:attraction
+node/3988871253,14.8412265 -61.2177164,historic:farm;name:L'habitation d'Anse Couleuvre;ruins:yes;tourism:attraction
+node/3991435520,14.7689012 -60.8902718,tourism:picnic_site
+node/4008079878,14.475692 -61.0767564,name:Résidence La Palombiere;source:KG Ground Survey 2016;tourism:hotel
+node/4011858893,14.6049327 -61.0836778,amenity:bank;brand:BNP Paribas;brand:wikidata:Q499707;brand:wikipedia:en:BNP Paribas;name:BNP Paribas;source:KG Ground Survey 2016
+node/4013177919,14.6226126 -60.9892666,amenity:bank;brand:Groupama;brand:wikidata:Q3083531;brand:wikipedia:en:Groupama;name:Groupama;source:KG Ground Survey 2016
+node/4015138626,14.7393367 -60.9632343,addr:city:La Trinité;addr:street:Rue Victor Hugo;amenity:bank;atm:yes;brand:BRED;brand:wikidata:Q2877455;brand:wikipedia:fr:BRED Banque populaire;name:BRED Banque Populaire;official_name:Banque régionale d'escompte et de dépôts;official_name:en:Regional Discount and Deposit Bank;official_name:fr:Banque régionale d'escompte et de dépôts;source:KG Ground Survey 2016
+node/4015138630,14.739748 -60.9632764,addr:city:La Trinité;addr:street:Rue Victor Hugo;amenity:bank;atm:yes;brand:BNP Paribas;brand:wikidata:Q499707;name:BNP Paribas;source:KG Ground Survey 2016
+node/4015445228,14.8325994 -61.054908,addr:city:Le Lorrain;addr:street:Rue Victor Schoelcher;amenity:bank;atm:yes;brand:Crédit Agricole;brand:wikidata:Q590952;brand:wikipedia:fr:Crédit agricole;name:Crédit Agricole;source:KG Ground Survey 2016
+node/4015457142,14.6193476 -60.8971237,addr:street:Boulevard du Soleil Levant;leisure:sports_centre;name:Espace ludique sportif et culturel Filia;source:KG Ground Survey 2016
+node/4015519337,14.7838265 -60.9950399,amenity:bank;brand:Crédit Agricole;brand:wikidata:Q590952;brand:wikipedia:fr:Crédit agricole;name:Crédit Agricole;source:KG Ground Survey 2016
+node/4020011449,14.8329482 -61.0554907,addr:city:Le Lorrain;addr:street:Rue Victor Schoelcher;amenity:bank;atm:yes;brand:BRED;brand:wikidata:Q2877455;brand:wikipedia:fr:BRED Banque populaire;name:BRED Banque Populaire;official_name:Banque régionale d'escompte et de dépôts;official_name:en:Regional Discount and Deposit Bank;official_name:fr:Banque régionale d'escompte et de dépôts;source:KG Ground Survey 2016
+node/4020584842,14.6038213 -61.0685183,name:L'Imperatrice;source:KG Ground Survey 2016;tourism:hotel
+node/4020629344,14.4733314 -60.8746421,amenity:bank;brand:BNP Paribas;brand:wikidata:Q499707;brand:wikipedia:en:BNP Paribas;name:BNP Paribas;source:KG Ground Survey 2016
+node/4020629347,14.4734083 -60.873844,amenity:bank;brand:Crédit Agricole;brand:wikidata:Q590952;brand:wikipedia:fr:Crédit agricole;name:Crédit Agricole;source:KG Ground Survey 2016
+node/4020636854,14.6031026 -61.0688657,amenity:bank;atm:yes;brand:LCL;brand:wikidata:Q779722;brand:wikipedia:fr:Crédit lyonnais;name:LCL;source:KG Ground Survey 2016;wheelchair:yes
+node/4022169891,14.6172103 -61.0425463,amenity:bank;brand:La Banque Postale;brand:wikidata:Q3206431;brand:wikipedia:en:La Banque postale;name:La Banque Postale;source:KG Ground Survey 2016
+node/4022271997,14.6798635 -61.1690012,direction:230;name:Point de vue de l'Anse Marigot;name:fr:Point de vue de Anse Marigot.;source:KG Ground Survey 2016;tourism:viewpoint
+node/4022422076,14.6179796 -61.0828418,amenity:bank;atm:yes;brand:Caisse d'Épargne;brand:wikidata:Q1547738;brand:wikipedia:fr:Caisse d'épargne (banque);name:Caisse d'Épargne;source:KG Ground Survey 2016;survey:date:2020-12-02
+node/4026575809,14.4961018 -60.9767223,leisure:sports_centre;name:New Gym
+node/4070598692,14.7494961 -61.1014892,garden:type:botanical;leisure:garden;name:Domaine d'Emeraude;phone:+596 596 52 33 49;tourism:attraction;website:https://pnr-martinique.com/visiter/domaine-demeraude/
+node/4070606548,14.7317452 -61.1774074,historic:ruins;name:Habitation Latouche
+node/4139609591,14.4727589 -60.8759483,amenity:bank;name:Banque des Antilles Françaises
+node/4142601690,14.8334904 -61.2236571,tourism:picnic_site
+node/4159236193,14.5893988 -60.9724769,name:maison;tourism:motel
+node/4185296202,14.6761421 -60.9406037,amenity:bank;atm:yes;brand:Caisse d'Épargne;brand:wikidata:Q1547738;brand:wikipedia:fr:Caisse d'épargne (banque);name:Caisse d'Épargne
+node/4185298273,14.6736881 -60.9448288,amenity:bank;atm:yes;brand:Crédit Agricole;brand:wikidata:Q590952;brand:wikipedia:fr:Crédit agricole;name:Crédit Agricole
+node/4260489189,14.6159152 -61.0044544,bus:yes;highway:bus_stop;public_transport:platform
+node/4260578590,14.6153882 -61.0018046,bus:yes;highway:bus_stop;public_transport:platform
+node/4281811801,14.5503539 -61.0035537,tourism:picnic_site
+node/4297081319,14.6691235 -61.0084908,bus:yes;highway:bus_stop;name:Les Arums;network:Mozaik;public_transport:platform
+node/4299031201,14.4612137 -61.0553225,direction:180;natural:rock;tourism:viewpoint
+node/4299031228,14.4625791 -61.0528899,direction:120;natural:rock;tourism:viewpoint
+node/4579852291,14.4722466 -60.8687952,amenity:school;name:fr:École mixte A
+node/4706865203,14.5997077 -61.0663293,"description:Ancien édifice de défense de l'armée française. Toujours exploité aujourd'hui par la marine. Zone militaire, accès interdit. Possibilité de visite, s'adresser à l'office du tourisme. C'est aussi l'habitat d'une colonie d'iguanes terrestres.;heritage:2;heritage:operator:mhs;historic:castle;mhs:inscription_date:1973-03-15;name:Fort Saint-Louis;ref:mhs:PA00105942;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C17;wikidata:Q3078054;wikipedia:fr:Fort Saint-Louis (Martinique)"
+node/4706865205,14.607774 -60.9553203,"heritage:3;heritage:operator:mhs;historic:castle;mhs:inscription_date:1992-12-31;name:Château Aubéry;ref:mhs:PA00105980;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C20;wikidata:Q2967829;wikipedia:fr:Château Aubéry"
+node/4706865206,14.7115536 -61.183076,"heritage:3;heritage:operator:mhs;historic:monument;mhs:inscription_date:1978-12-29;name:Tombeau de la Dame Espagnole;ref:mhs:PA00105937;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q22957319"
+node/4725925546,14.633678 -61.1324209,direction:180;tourism:viewpoint
+node/4726111771,14.6673015 -61.1617162,direction:240;name:Les Falaises de Bellefontaine;tourism:viewpoint
+node/4726187593,14.6869914 -61.1328635,direction:245;ele:617;tourism:viewpoint
+node/4727732525,14.6760282 -61.1671626,leisure:sports_centre;name:Club de plongée de Fond Capot;sport:scuba_diving
+node/4727783671,14.7254936 -61.1724864,name:Habitation Beauregard;tourism:attraction
+node/4727900382,14.7352685 -61.1450887,direction:180;tourism:viewpoint
+node/4727900383,14.7347192 -61.1463779,direction:360;name:Observatoire du Morne des Cadets;tourism:viewpoint
+node/4727917380,14.7405264 -61.1435028,direction:50;ele:322;name:Point de vue de la Coulée d'Or;tourism:viewpoint
+node/4727940683,14.7358825 -61.174983,direction:310;ele:110;tourism:viewpoint
+node/4731348622,14.7686353 -60.9004969,name:Hôtel Résidence Océane;name:en:Hotel Residence Oceane;tourism:hotel
+node/4731349022,14.5719607 -60.9817445,"addr:postcode:97224;addr:street:petite cocotte, Ducos;name:Airport Hotel;opening_hours:24/7;tourism:motel"
+node/4732205445,14.8075193 -61.2261573,direction:230;tourism:viewpoint
+node/4732344751,14.7357609 -61.1773621,leisure:sports_centre;sport:scuba_diving
+node/4732525222,14.4702039 -60.9067705,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/4733684876,14.7748071 -61.1357296,direction:250;tourism:viewpoint
+node/4733893007,14.8060768 -61.1510491,direction:120;tourism:viewpoint
+node/4733960507,14.812927 -61.1636736,direction:360;name:Panorama du deuxième refuge;tourism:viewpoint
+node/4734178562,14.8091541 -61.1653231,direction:360;tourism:viewpoint
+node/4734369941,14.8686107 -61.184196,direction:315;tourism:viewpoint
+node/4734494963,14.8763297 -61.1468439,direction:0;tourism:viewpoint
+node/4735802104,14.8698194 -61.116786,direction:290;tourism:viewpoint
+node/4735885388,14.8327379 -61.1009679,name:Vieux Pont de la N3;tourism:attraction
+node/4736356167,14.8070434 -61.0159779,tourism:picnic_site
+node/4736378208,14.7910483 -60.9989942,direction:90;tourism:viewpoint
+node/4736406574,14.8076359 -61.0337865,direction:70;tourism:viewpoint
+node/4736450568,14.8180691 -61.0468314,historic:ruins;name:Ancienne Usine du Lorrain
+node/4737840111,14.7777572 -61.0430158,tourism:picnic_site
+node/4738074972,14.7743951 -60.9847229,direction:90;tourism:viewpoint
+node/4738082540,14.7634972 -60.986334,direction:120;tourism:viewpoint
+node/4738135582,14.7462856 -61.0495261,direction:60;tourism:viewpoint
+node/4738168218,14.7360458 -61.0643567,tourism:picnic_site
+node/4738211359,14.7190234 -61.0112986,name:Saut-Argis;source:survey;tourism:picnic_site
+node/4739572498,14.7677727 -60.9093604,direction:0;tourism:viewpoint
+node/4744702223,14.7305784 -60.9637337,direction:130;tourism:viewpoint
+node/4744836466,14.6963491 -60.9574782,direction:125;tourism:viewpoint
+node/4745073349,14.6794433 -60.9261444,leisure:sports_centre;sport:sailing
+node/4745075940,14.6748889 -60.9384262,direction:135;tourism:viewpoint
+node/4746679216,14.6697412 -61.0359353,direction:155;tourism:viewpoint
+node/4746925512,14.6489287 -61.0785798,direction:180;tourism:viewpoint
+node/4746977000,14.6769953 -61.0910649,tourism:picnic_site
+node/4750499383,14.6276404 -60.9508114,direction:230;tourism:viewpoint
+node/4750840304,14.6622082 -60.9106721,historic:ruins;name:Habitat Marlet;tourism:attraction
+node/4750892132,14.6362645 -60.9011951,name:Rocher Leclerc;natural:rock;tourism:attraction
+node/4757601221,14.500934 -60.8635912,direction:70;tourism:viewpoint
+node/4757602625,14.5001835 -60.8727215,direction:360;tourism:viewpoint
+node/4757660397,14.5453173 -60.9366359,historic:ruins;name:Ancienne Distillerie Zonzon
+node/4758026157,14.5263262 -60.9947848,historic:ruins;name:Tour
+node/4758119009,14.4952673 -60.9359574,"heritage:3;heritage:operator:mhs;historic:archaeological_site;mhs:inscription_date:1996-11-07;name:Gravure Rupestres;ref:mhs:PA97200001;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q22980891"
+node/4759237845,14.5023188 -60.9240418,direction:270;tourism:viewpoint
+node/4759262109,14.5059075 -60.9265697,direction:350;tourism:viewpoint
+node/4759264361,14.5078524 -60.9312408,direction:240;tourism:viewpoint
+node/4759439989,14.4969013 -60.9300685,direction:195;tourism:viewpoint
+node/4759886821,14.4835605 -60.8161387,direction:170;tourism:viewpoint
+node/4759886822,14.4858562 -60.8193786,direction:60;tourism:viewpoint
+node/4759886823,14.4911124 -60.8162457,direction:310;tourism:viewpoint
+node/4760359436,14.633932 -61.0730152,name:Bâtiment Les Amandiers Anacardier;tourism:viewpoint
+node/4760373526,14.8664778 -61.188674,tourism:viewpoint
+node/4760408621,14.865194 -61.18924,tourism:viewpoint
+node/4761711054,14.4366946 -60.8810491,direction:290;tourism:viewpoint
+node/4761996562,14.4717323 -60.890944,direction:360;name:Point de vue du Morne Gommier;tourism:viewpoint
+node/4763573776,14.4686898 -60.9140295,direction:180;tourism:viewpoint
+node/4764361145,14.5315322 -61.046915,leisure:sports_centre;name:Centre Équestre Black Horse;sport:equestrian
+node/4772283489,14.5619932 -61.0517429,name:10;tourism:viewpoint
+node/4772465365,14.5281941 -61.0899,direction:325;tourism:viewpoint
+node/4772691926,14.523925 -61.0670134,direction:345;tourism:viewpoint
+node/4793262225,14.4704712 -60.8719935,historic:memorial;memorial:war_memorial
+node/4807601528,14.6063988 -61.0657667,fee:yes;fee:conditional:no @ Sa[-1];name:Musée Régional d'Histoire et d'Éthnographie;ref:FR:museofile:M1066;tourism:museum;wikidata:Q15818376
+node/4813606647,14.7297898 -61.1267854,direction:255;tourism:viewpoint
+node/4819640761,14.5989634 -61.0664454,direction:0-360;tourism:viewpoint
+node/4820157309,14.7699589 -61.1334908,direction:270;tourism:viewpoint
+node/4832379193,14.7497693 -60.9230061,leisure:park;name:Base de loisirs de Spoutourne
+node/4846652922,14.6110333 -61.0843101,addr:housenumber:1;addr:postcode:97200;addr:street:Avenue des Caneficiers;name:fr:Parc Naturel Régional de la Martinique;tourism:caravan_site
+node/4853106901,14.6398389 -61.1000509,amenity:college;name:Rectorat de l'académie
+node/4967000025,14.6184336 -61.0819741,amenity:bank
+node/5089154040,14.6185797 -61.0394148,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Chateauboeuf;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5089242734,14.6182877 -61.004536,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Mahault;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5089277528,14.6096333 -61.0055057,bus:yes;highway:bus_stop;name:Lézarde;public_transport:stop_position
+node/5089428823,14.6145356 -61.0509813,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Morne Calebasse;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5091655054,14.6044903 -61.0637954,bus:yes;description:TCSP Martinique;highway:bus_stop;name:François Mitterrand;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5091655090,14.6047245 -61.0603059,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Maurice Bishop;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5144148913,14.5249232 -60.9822483,bench:yes;bus:yes;highway:bus_stop;name:Chemin de Fer;public_transport:platform;shelter:yes
+node/5148574743,14.513299 -60.9661496,amenity:school;name:Section d'enseignement professionnel du Lycée polyvalent Joseph Zobel;operator:type:public;ref:UAI:9720693W;school:FR:Lycée;source:data.gouv.fr:Éducation Nationale - 05/2016
+node/5148575684,14.5243792 -60.9739716,artwork_type:statue;name:Statue Alphonse Jean-Joseph;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2017;tourism:artwork
+node/5173298362,14.5310272 -61.048716,"heritage:3;heritage:operator:mhs;mhs:inscription_date:1979-08-17;name:Musée de l'Impératrice Joséphine;old_name:Sucrerie de la Pagerie;ref:mhs:PA00105956;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C18;tourism:museum;wikidata:Q22957330"
+node/5175159172,14.7471871 -61.1759667,"heritage:3;heritage:operator:mhs;historic:ruins;mhs:inscription_date:1979-07-25;name:Cachot de Cyparis;name:en:Cyparis's Dungeon;ref:mhs:PA00105949;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C18;wikidata:Q18578287;wikipedia:fr:Cachot de Cyparis"
+node/5175159173,14.7529713 -61.180509,"heritage:2;heritage:operator:mhs;historic:ruins;mhs:inscription_date:1996-12-12;name:Cimetière du Fort;ref:mhs:PA00105975;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C17;wikidata:Q22957345"
+node/5175159175,14.7489146 -61.175032,"heritage:3;heritage:operator:mhs;historic:ruins;mhs:inscription_date:1990-10-12;name:Pont Militaire;ref:mhs:PA00105964;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C19;wikidata:Q22957335"
+node/5175159176,14.7491857 -61.1763261,"heritage:3;heritage:operator:mhs;historic:ruins;mhs:inscription_date:1990-10-12;name:Pont Verger;ref:mhs:PA00105965;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C19;wikidata:Q22957336"
+node/5175159177,14.4524415 -60.8525634,"heritage:3;heritage:operator:mhs;historic:ruins;mhs:inscription_date:1992-06-02;name:Habitation Crève-Coeur;ref:mhs:PA00105987;ruins:yes;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C18;wikidata:Q22957353"
+node/5175159178,14.6286314 -61.0954964,"heritage:3;heritage:operator:mhs;historic:archaeological_site;mhs:inscription_date:1991-12-31;name:Habitation Fond Roussseau;ref:mhs:PA00105979;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q22957348"
+node/5180836188,14.545269 -60.9744414,bench:yes;bus:yes;highway:bus_stop;name:Laguillaud;public_transport:platform;shelter:yes;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2017
+node/5192562467,14.6023476 -61.0675317,historic:memorial;memorial:war_memorial;name:Monument Aux Morts
+node/5207404634,14.5241007 -60.9796572,amenity:kindergarten;name:Le Bourgeon;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2017
+node/5209402769,14.5398556 -61.0360909,historic:memorial;memorial:war_memorial;name:Mémorial Jean-Claude Carbety
+node/5211444153,14.5424147 -60.8301873,leisure:sports_centre;name:Centre nautique du Vauclin;operator:UCPA;sport:water_sports
+node/5239272022,14.4633965 -60.9349643,addr:postcode:97228;addr:street:Pointe Philippeau;amenity:dive_centre;email:karibaplongee@gmail.com;name:Kariba Plongée;phone:+596 696 18 10 72;tourism:attraction;website:https://www.karibaplongee.com/
+node/5263049417,14.6034803 -61.0713527,historic:monument;inscription:Place Gilbert Gratiant monument;name:Place Gilbert Gratiant
+node/5263049756,14.6057319 -61.0656198,amenity:fountain
+node/5284322322,14.8311949 -61.2223273,name:Habitation Céron;name:en:Habitation Céron;tourism:attraction
+node/5287633821,14.7450884 -61.1764329,name:Le Petit Train de Saint-Pierre - Cyparis Express;name:en:Historical Train - Cyparis Express;opening_hours:Mo-Sa 11:00-12:30;tourism:attraction
+node/5299409519,14.5362149 -61.0340953,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5299409525,14.5361962 -61.0323093,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5316433589,14.5386185 -61.0346673,amenity:library;name:Bibliothèque Marie-Thérèse Julien Lung-Fou
+node/5322305851,14.5393493 -61.033302,artwork_type:mural;tourism:artwork
+node/5322305857,14.5398997 -61.037786,artwork_type:statue;name:Le Nègre Marron;tourism:artwork
+node/5327600023,14.6878229 -60.9360331,bus:yes;highway:bus_stop;public_transport:platform
+node/5328322149,14.5290625 -61.0159515,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5328322152,14.526319 -60.9893695,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5328322153,14.5265665 -60.9897475,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5328322154,14.5247956 -60.9842664,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5334960250,14.5404164 -61.0379711,bus:yes;highway:bus_stop;public_transport:platform
+node/5334960525,14.5357248 -61.0291372,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5334960526,14.5348836 -61.0288475,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5349487864,14.5236235 -60.9808069,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5349487874,14.5203213 -60.9816581,email:filaeau@gmail.com;fee:yes;leisure:sports_centre;name:Le Fil à Eau;phone:+596 696 91 47 22;sport:swimming;website:https://www.filaeau.com
+node/5404616177,14.5396848 -61.0658374,bus:yes;covered:yes;highway:bus_stop;public_transport:platform;shelter:yes;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2018
+node/5418463364,14.5282975 -61.0500995,covered:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5418463385,14.5268461 -61.0511067,covered:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5418463463,14.535092 -61.053341,bench:no;bus:yes;covered:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/5495157835,14.5763271 -60.9727282,amenity:bank;atm:yes;brand:Crédit Agricole;brand:wikidata:Q590952;brand:wikipedia:fr:Crédit agricole;name:Crédit Agricole
+node/5506025522,14.4792663 -61.0034831,name:Madin Jet Tours to Diamond Rock;name:en:Madin Jet Tours to Diamond Rock;tourism:attraction
+node/5520136221,14.5527128 -61.0531821,tourism:viewpoint
+node/5562247068,14.7468437 -60.9628163,"heritage:3;heritage:operator:mhs;historic:fort;mhs:inscription_date:1991-12-31;name:Fort de la Trinité;ref:mhs:PA00105977;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q22957347"
+node/5562247073,14.4616455 -61.047472,"heritage:3;heritage:operator:mhs;historic:building;mhs:inscription_date:2009-12-08;name:Maison du Bagnard;ref:mhs:PA97200009;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;tourism:attraction;wikidata:Q22980898"
+node/5564641152,14.7456565 -61.1764828,"heritage:3;heritage:operator:mhs;historic:ruins;mhs:inscription_date:1979-10-09;name:Anciens entrepôts;ref:mhs:PA00105952;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C18;wikidata:Q22957327"
+node/5564641156,14.7130528 -61.1837669,"heritage:3;heritage:operator:mhs;historic:building;mhs:inscription_date:2009-12-08;name:Maison Taïlamé;ref:mhs:PA97200008;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q22980897"
+node/5564641163,14.6048657 -61.072311,"heritage:3;heritage:operator:mhs;historic:building;mhs:inscription_date:2010-02-26;ref:mhs:PA97200018;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C20;wikidata:Q22980907"
+node/5564641165,14.6250527 -61.0611926,"heritage:2;heritage:operator:mhs;historic:building;mhs:inscription_date:2014-12-02;name:Maison d'Aimé Césaire;ref:mhs:PA97200029;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C20;wikidata:Q22980922"
+node/5627368121,14.7039248 -60.9149721,name:fr:Madinina Kayaks;tourism:attraction
+node/5697743295,14.6255888 -60.9419954,addr:city:Le François;addr:postcode:97240;addr:street:Morne Serpent;tourism:viewpoint
+node/5697746931,14.6119828 -60.9459806,addr:city:Le François;addr:postcode:97240;addr:street:Chemin Morne Bel Air;ele:300;tourism:viewpoint
+node/5741138815,14.5240438 -60.9748535,"amenity:townhall;contact:email:secretariat@mairie-riviere-salee.fr;contact:phone:+596 596 68 01 90;contact:website:https://riviere-salee.fr;name:Mairie temporaire;opening_hours:Mo 07:00-13:00,14:30-17:00; Tu-We 07:00-13:00; Th 07:00-13:00,14:30-17:00; Fr 07:00-13:00;ref:FR:SIRET:21972221200012;source:Service-Public.fr - 11/2023;wheelchair:yes"
+node/5825873153,14.5403106 -60.830803,addr:postcode:97280;addr:street:Pointe Faula;email:macmeswebs@orange.fr;internet_access:wlan;name:en:Case Mabouya;name:fr:Case Mabouya;tourism:hostel;website:http://Casemabouya.com
+node/5840035868,14.5957688 -60.983857,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Carrère;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5840035873,14.5964945 -60.9994881,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Aéroport;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5840035875,14.6095658 -61.0061038,bus:yes;highway:bus_stop;name:Lézarde;public_transport:stop_position
+node/5840043285,14.6141703 -61.012654,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Mangles;network:Mozaïk;operator:Caraïbus;public_transport:platform
+node/5840043290,14.6181074 -61.0215439,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Acajou;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5840043291,14.6190261 -61.0223224,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Acajou;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5840043297,14.6183851 -61.0320286,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Californie;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5840043302,14.6176655 -61.0308679,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Californie;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5840043316,14.61459 -61.0472101,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Dillon;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5840043331,14.6130541 -61.0527031,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Kerlys;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5840043332,14.6087104 -61.0560829,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Croisée Manioc;network:Mozaïk;operator:Caraïbus;public_transport:stop_position
+node/5840043361,14.603088 -61.0741729,bus:yes;description:TCSP Martinique;highway:bus_stop;name:Almadies Bô Kannal;network:Mozaïk;operator:Caraïbus;public_transport:stop_position;short_name:Almadies
+node/5989770707,14.5224104 -60.9730648,amenity:school;name:École de transit Mixte A;operator:Mairie de Rivière-Salée;website:https://riviere-salee.fr/
+node/6025638431,14.6025589 -61.0774596,bus:yes;highway:bus_stop;name:Lycée Schoelcher;network:Mozaik;public_transport:platform
+node/6025638432,14.6031959 -61.0790417,bus:yes;highway:bus_stop;name:La Marne;network:Mozaik;public_transport:platform;shelter:yes
+node/6025638434,14.6049638 -61.0853522,bus:yes;highway:bus_stop;name:Bellevue;network:Mozaik;public_transport:platform
+node/6025638435,14.604827 -61.0871879,bin:yes;bus:yes;highway:bus_stop;name:Centre commercial Rond Point;network:Mozaik;public_transport:platform;shelter:yes
+node/6025714700,14.6053109 -61.0900055,bus:yes;highway:bus_stop;name:Echangeur;network:Mozaik;public_transport:platform;shelter:yes
+node/6025714701,14.6058924 -61.0912599,bus:yes;highway:bus_stop;name:Pointe de Jaham;network:Mozaik;public_transport:platform;shelter:yes
+node/6025714702,14.607624 -61.094136,bus:yes;highway:bus_stop;name:Casino;network:Mozaik;public_transport:platform;shelter:yes
+node/6028220012,14.6055655 -61.0909034,bench:yes;bin:yes;bus:yes;highway:bus_stop;name:Pointe de Jaham;network:Mozaik;public_transport:platform;shelter:yes
+node/6028220015,14.6190543 -61.1017417,bus:yes;highway:bus_stop;public_transport:platform
+node/6028220016,14.6192509 -61.1038165,bus:yes;highway:bus_stop;name:Anse Collat;public_transport:platform
+node/6028220017,14.6196349 -61.1048022,bus:yes;highway:bus_stop;name:Anse Collat;public_transport:platform;shelter:yes
+node/6028220018,14.6226557 -61.1069362,bus:yes;highway:bus_stop;name:Caplaous;public_transport:platform
+node/6028220020,14.6242402 -61.1100888,bus:yes;highway:bus_stop;name:Fond Collat;public_transport:platform
+node/6028220022,14.6274401 -61.1099576,bus:yes;highway:bus_stop;name:Lagrosillière;public_transport:platform
+node/6028220023,14.6279003 -61.1108356,bus:yes;highway:bus_stop;name:Fond Lahaye;public_transport:platform
+node/6028239753,14.6271333 -61.1137333,bus:yes;highway:bus_stop;name:Fond Bernier 2;public_transport:platform
+node/6028239757,14.6217811 -61.1025231,bus:yes;highway:bus_stop;public_transport:platform
+node/6028239759,14.6282393 -61.1039812,bus:yes;highway:bus_stop;public_transport:platform
+node/6028239761,14.6291819 -61.1031358,bus:yes;highway:bus_stop;public_transport:platform
+node/6028239762,14.628868 -61.101526,bus:yes;highway:bus_stop;public_transport:platform
+node/6028298153,14.6307234 -61.0995872,bus:yes;highway:bus_stop;name:Collège de Terreville;public_transport:platform
+node/6043017585,14.6691315 -61.0208908,amenity:fuel;brand:CAP;name:CAP
+node/6114728886,14.7131275 -61.0205301,amenity:fuel;name:fr:TOTAL MNE DES ESSES
+node/6139698185,14.8226732 -61.025153,name:en:Les baignoires Marigotines;tourism:viewpoint
+node/6141321395,14.69505 -61.1668129,bus:yes;public_transport:stop_position
+node/6142821302,14.5261126 -60.9757884,amenity:school;name:Section d'enseignement général et professionnel adapté du Collège Trenelle;operator:type:public;ref:UAI:9720497H;school:FR:collège;source:data.gouv.fr:Éducation Nationale - 05/2016
+node/6145420775,14.5377148 -61.0118714,amenity:arts_centre;name:L'Atelier de Val
+node/6145420783,14.5374441 -61.0122464,leisure:sports_centre;name:Kayak Nature Evasion;sport:canoe
+node/6148809637,14.575884 -60.9762295,amenity:fountain
+node/6150051110,14.5391173 -61.0645207,bus:yes;covered:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/6150051115,14.5398738 -61.066662,denomination:catholic;historic:wayside_shrine;name:La Vierge des Marins Pêcheurs;religion:christian;tourism:attraction
+node/6154482106,14.5497006 -61.0511541,amenity:school;email:ce.9720337j@ac-martinique.fr;name:École maternelle Ilet Thebloux;operator:type:public;phone:+596 596 68 31 48;ref:UAI:9720337J;school:FR:maternelle;source:data.gouv.fr:Éducation Nationale - 05/2016
+node/6169094415,14.4811613 -61.0230586,artist_name:Henri Charpentier;artwork_type:statue;start_date:1998;tourism:artwork
+node/6177094806,14.6091505 -61.0796875,amenity:kindergarten;name:Jardin d'Enfants de Clairière
+node/6177094808,14.6084173 -61.0801166,amenity:kindergarten;name:Les Marmousets
+node/6177291898,14.6560496 -61.154195,name:en:snorkeling;tourism:attraction
+node/6177291902,14.6914739 -60.9013988,name:fr:Kayak;tourism:attraction
+node/6188853097,14.4682431 -60.9494528,email:reservation-sainteluce@karibeahotel.com;internet_access:wlan;name:Karibéa;phone:+596 596 62 12 00;stars:3;tourism:hotel;website:https://www.karibea.com/hotels/karibea-sainte-luce-hotel/
+node/6188853190,14.4697208 -60.9493348,name:Karibéa;tourism:hotel
+node/6196727683,14.5394765 -61.0688594,direction:90-315;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2019;tourism:viewpoint
+node/6198947027,14.5750614 -60.9725426,tourism:viewpoint
+node/6213327598,14.4797139 -61.0256064,historic:memorial;memorial:war_memorial
+node/6217663404,14.4252429 -60.8875416,name:Club Résidence Igesa;tourism:hotel
+node/6221059776,14.6117677 -60.9019518,bus:yes;highway:bus_stop;name:Gendarmerie;public_transport:platform;shelter:yes
+node/6221059777,14.6120198 -60.9028105,bus:yes;highway:bus_stop;name:Gendarmerie;public_transport:platform;shelter:yes
+node/6221060293,14.6086262 -60.8967313,tourism:viewpoint
+node/6221318687,14.7351088 -60.8976206,name:en:Plage de la pointe Brunel;tourism:attraction
+node/6222162400,14.8090335 -61.0082541,tourism:attraction
+node/6222162401,14.8077381 -61.0020527,tourism:attraction
+node/6222202701,14.5274163 -61.0872647,leisure:sports_centre;name:Les Kayaks de l'Anse à l'Ane;sport:canoe
+node/6222202729,14.5269775 -61.0887265,historic:memorial;memorial:stele;name:Alexandre Stellio
+node/6226258630,14.7865686 -60.9904933,name:Tombolo de Sainte-Marie;tourism:attraction
+node/6226259036,14.7876983 -60.9899572,direction:0-360;tourism:viewpoint
+node/6226259057,14.7873029 -60.9907102,historic:memorial;memorial:stele;name:Félix Lorne
+node/6226269476,14.8754373 -61.1479376,name:Detou Hile;tourism:viewpoint
+node/6226287682,14.8733666 -61.1814187,amenity:marketplace
+node/6230078186,14.7735787 -61.1353039,artwork_type:sculpture;tourism:artwork
+node/6232919769,14.4884812 -61.0792188,bench:yes;bus:yes;highway:bus_stop;name:La Batterie;public_transport:platform;shelter:yes
+node/6232919986,14.4913759 -61.080123,amenity:library;name:Bibliothèque Aimé Césaire
+node/6237284583,14.8018702 -61.2254799,amenity:community_centre;name:Salle Félix Grelet
+node/6237914582,14.7339487 -61.178468,artist_name:Hervé Beuze;Patrick Arneton;artwork_type:sculpture;name:Tellurick;tourism:artwork
+node/6244730485,14.4809826 -61.0171919,name:Vue sur le Diamant;tourism:viewpoint
+node/6244730486,14.4785262 -61.0255452,tourism:viewpoint
+node/6252463685,14.7741834 -60.8767581,tourism:viewpoint
+node/6268067987,14.5574619 -60.9765504,amenity:kindergarten;name:La Petite Bulle Créative
+node/6269548586,14.8699542 -61.1865181,name:ca:Plataforma d'observació;name:en:Viewpoint platform;tourism:viewpoint
+node/6286794306,14.4892152 -61.0782459,amenity:school;name:Section d'enseignement général et professionnel adapté du Collège Alexandre Stellio;operator:type:public;ref:UAI:9720566H;source:data.gouv.fr:Éducation Nationale - 05/2016
+node/6311901843,14.6126208 -60.9972336,artwork_type:mural;tourism:artwork
+node/6332069588,14.59672 -61.0000114,bus:yes;highway:bus_stop;name:en:TCSP (to FDF Citycenter);public_transport:platform
+node/6342111887,14.766196 -60.9001998,bus:yes;description:Bus to and from La Trinité (Line 8);description:de:Bus von und nach La Trinité (Linie 8);highway:bus_stop;public_transport:platform
+node/6360527968,14.6167532 -61.0172635,amenity:bank;atm:yes;branch:Martinique;brand:BRED;brand:wikidata:Q2877455;brand:wikipedia:fr:BRED Banque populaire;name:BRED Panque Populaire;official_name:Banque régionale d'escompte et de dépôts;official_name:en:Regional Discount and Deposit Bank;official_name:fr:Banque régionale d'escompte et de dépôts
+node/6455158385,14.5288452 -60.9813066,amenity:townhall;name:Ancienne Mairie (en travaux);operator:Mairie de Rivière-Salée
+node/6471281188,14.5671755 -60.9443419,addr:postcode:97270;addr:street:Chemin des Icaquiers;email:AuCoeurDeMadinina@gmail.com;internet_access:wlan;name:Au Coeur De Madinina;opening_hours:24/7;phone:+596 696710303;tourism:hotel;website:https://www.aucoeurdemadinina.com
+node/6473223140,14.6513381 -61.0128623,addr:street:Chemin Balleu;amenity:kindergarten;name:Crèche Les Mini Trésors
+node/6482278886,14.4933466 -60.8565161,name:fr:Huvet;tourism:artwork
+node/6549546287,14.4661511 -60.8622218,name:en:Wild camping - Swamp Camp;tourism:camp_site
+node/6549573586,14.4724565 -60.8600269,name:en:Wild camping - Forest Camp;tourism:camp_site
+node/6600949190,14.6014659 -61.0856574,amenity:school
+node/6707435303,14.6194791 -61.0204164,amenity:bank;brand:Crédit Agricole;brand:wikidata:Q590952;brand:wikipedia:fr:Crédit agricole;name:Crédit Agricole;name:fr:crédit Agricole
+node/6772162880,14.7304931 -61.0720291,source:on-spot check;tourism:picnic_site
+node/6875123596,14.4345435 -60.8816133,name:La Dunette;tourism:hotel
+node/6925244803,14.5681612 -60.8257797,source:local knowledge;tourism:viewpoint
+node/6990538607,14.6696894 -61.0102118,bus:yes;highway:bus_stop;name:Bananeraie;network:Mozaik;public_transport:platform
+node/6990589074,14.67195 -61.0128268,bus:yes;highway:bus_stop;name:Figuier;network:Mozaik;public_transport:platform
+node/6990598207,14.6725584 -61.0185746,bus:yes;highway:bus_stop;name:Allée Choco;network:Mozaik;public_transport:platform
+node/7010052787,14.6088178 -61.0859245,addr:housenumber:142;addr:postcode:97200;addr:street:Boulevard de la Pointe des Nègres;internet_access:wlan;name:en:packit’s guest house;opening_hours:Mo-Su 07:00-20:00;phone:+596596613511;tourism:hostel
+node/7012370085,14.4390915 -60.833394,highway:bus_stop;name:en:Cap Chevalier
+node/7018343889,14.6933732 -60.888437,tourism:viewpoint
+node/7018344085,14.8203834 -61.1294118,name:en:société d’exploitation des gorges de la falaise;tourism:attraction
+node/7038679985,14.6496046 -61.079549,highway:bus_stop
+node/7105899704,14.6734262 -61.1648543,historic:memorial;memorial:stele
+node/7109254977,14.6358974 -60.8913394,"image:https://www.lightphotos.net/photos/albums/userpics/10112/normal_J5772-5.jpg;man_made:lighthouse;name:Feu de la Pointe Dégras;ref:admiralty:J5772.50;ref:nga:110-14934;seamark:information:White tower, red top;seamark:landmark:category:tower;seamark:landmark:colour:red;white;seamark:landmark:colour_pattern:horizontal;seamark:landmark:function:light_support;seamark:landmark:height:9;seamark:light:1:category:directional;seamark:light:1:character:Q;seamark:light:1:colour:red;seamark:light:1:height:28;seamark:light:1:range:6;seamark:light:1:sector_end:245;seamark:light:1:sector_start:200;seamark:light:2:category:directional;seamark:light:2:character:Q;seamark:light:2:colour:white;seamark:light:2:height:28;seamark:light:2:range:8;seamark:light:2:sector_end:248;seamark:light:2:sector_start:245;seamark:light:3:category:directional;seamark:light:3:character:Q;seamark:light:3:colour:green;seamark:light:3:height:28;seamark:light:3:range:6;seamark:light:3:sector_end:280;seamark:light:3:sector_start:248;seamark:name:Baie du François;seamark:type:landmark;wikidata:Q81058953"
+node/7122767245,14.6063472 -61.0208912,"leisure:sports_centre;source:Le ministère de la ville, de la jeunesse et des sports - 01/2018;sport:swimming;surface:concrete"
+node/7133210890,14.5352465 -61.0290051,artist_name:Jérome Radigois;artwork_type:sculpture;tourism:artwork
+node/7143786202,14.4713596 -60.8792782,amenity:bank;atm:yes;brand:Caisse d'Épargne;brand:wikidata:Q1547738;brand:wikipedia:fr:Caisse d'épargne (banque);name:Caisse d'Épargne
+node/7146544691,14.7568164 -60.920522,addr:housenumber:27;addr:street:lot Morne Pavillon Tartane;email:hotel.le.manguier@wanadoo.fr;mobile:0696704895;name:Hôtel Le Manguier;phone:0596584895;tourism:hotel;website:www.hotellemanguier.com
+node/7146547593,14.4331441 -60.8791905,name:Irena Séjour;phone:0596768816;tourism:hotel
+node/7164163412,14.6002076 -61.0835351,"addr:city:Fort-de-France;addr:postcode:97200;addr:street:Pointe de la Vierge, Texaco;leisure:sports_centre;name:H 2 Eaux;sport:canoe"
+node/7164163429,14.6002357 -61.0828213,"leisure:sports_centre;name:H 2 Eaux;phone:+596 596 60 43 36;source:Le ministère de la ville, de la jeunesse et des sports - 01/2018;sport:swimming;surface:concrete"
+node/7164316674,14.4620994 -60.9104897,name:Hôtel le Paradis de l'Anse;tourism:hotel
+node/7176417483,14.5755175 -60.9692567,bus:yes;public_transport:stop_position
+node/7176449616,14.5748189 -60.9694578,amenity:school;name:Welcom to Acp;operator:type:private;ref:UAI:9720898U;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+node/7220929385,14.6736552 -61.1652022,bus:yes;highway:bus_stop;name:en:bus stop;name:fr:arrêt de bus;name:ru:автобусная остановка;public_transport:platform
+node/7220929485,14.6987054 -61.1791778,bus:yes;highway:bus_stop;name:en:bus stop;name:ru:автобусная остановка;public_transport:platform
+node/7320642602,14.6240318 -61.0811066,addr:city:Fort-de-France;addr:housenumber:5;addr:postcode:97200;addr:street:Rue Georges Raveneau - Berny - Didier;amenity:music_school;name:Académie Caribéenne de la Musique
+node/7529074316,14.6402335 -61.0687637,bus:yes;highway:bus_stop;public_transport:platform
+node/7613296616,14.8079 -61.1572,ele:1107;name:L’Aileron;natural:peak;tourism:viewpoint
+node/7711190285,14.5649169 -60.9664361,bus:yes;highway:bus_stop;name:fr:Banane;public_transport:platform
+node/7711265667,14.7749826 -61.0096614,name:Le Train des Plantations;public_transport:station;railway:station;train:yes
+node/8086950168,14.6145384 -61.0964801,bench:no;bin:no;bus:yes;highway:bus_stop;name:Madiana;network:Mozaik;public_transport:platform;shelter:no
+node/8114414918,14.6164148 -61.100942,bench:no;bus:yes;highway:bus_stop;name:Victor Schoelcher;network:Mozaik;public_transport:platform;shelter:yes;survey:date:2020-11-13
+node/8114414921,14.6157402 -61.1026544,amenity:public_bookcase;brand:Little Free Library;brand:wikidata:Q6650101;brand:wikipedia:en:Little Free Library;lit:yes;name:Little Free Library;public_bookcase:type:shelf;survey:date:2020-11-13
+node/8122990067,14.6048189 -61.0841301,bus:yes;highway:bus_stop;name:Parking Relais Bellevue;network:Mozaik;public_transport:platform;shelter:no
+node/8154942848,14.6242457 -61.094299,highway:bus_stop
+node/8372032445,14.6413697 -61.1134889,bus:yes;highway:bus_stop;name:Clauzel;public_transport:platform
+node/8372032446,14.64018 -61.1127532,bus:yes;highway:bus_stop;name:Les Anglais;public_transport:platform
+node/8372032447,14.6385288 -61.1134558,bus:yes;highway:bus_stop;name:Les Cocotiers;public_transport:platform
+node/8372032452,14.6378281 -61.1127954,bus:yes;highway:bus_stop;name:Les Manguiers;public_transport:platform
+node/8372032453,14.6321668 -61.1123667,bus:yes;highway:bus_stop;name:Clemente;public_transport:platform
+node/8372032454,14.6307447 -61.1134309,bus:yes;highway:bus_stop;name:Beaunel;public_transport:platform
+node/8372032455,14.6280705 -61.1139629,bus:yes;highway:bus_stop;name:Estrade;public_transport:platform
+node/8438644357,14.6148364 -61.0625871,bus:yes;highway:bus_stop;public_transport:platform;source:local knowledge
+node/8440840458,14.6172988 -61.0319946,"amenity:bank;atm:yes;brand:LCL;brand:wikidata:Q779722;brand:wikipedia:fr:Crédit lyonnais;contact:phone:+596596425252;name:LCL;opening_hours:Mo,Tu,Fr 07:45-12:45,14:00-16:00; We 07:45-12:30; Tu 07:45-12:45,14:00-15:15;source:local knowledge"
+node/8524856178,14.6749437 -60.9467476,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/8623334055,14.5395764 -61.0228499,source:IGN - 09/2020;tourism:viewpoint
+node/8676484274,14.7114989 -61.1842149,leisure:park;name:place bleu
+node/8787324711,14.6018127 -61.0728332,direction:100;tourism:viewpoint
+node/8804430965,14.6155736 -61.1032012,artist_name:Henri Guédon;artwork_type:sculpture;name:L’arbre de la liberté;tourism:artwork
+node/8821422962,14.6200383 -61.1000954,leisure:sports_centre;name:AquaFit Attitude;sport:swimming
+node/9435773939,14.4751935 -60.8745506,amenity:school;name:Lycée Général et Technologique Montgérald;operator:type:public;ref:UAI:9720727H;school:FR:lycée;source:Ministère de l'Éducation nationale et de la Jeunesse - 2022-01
+node/9476425024,14.4715414 -60.8655739,description:This is a camp site frequently used by sailbaot hitchhikers open for everybody. You will find some kitchen equipment and tarps to make a shelter. Some shelters might already excist.;name:Zion wild camping;tourism:camp_pitch
+node/9506327153,14.7369442 -61.17743,artist_name:Laurent VALERE;artwork_type:sculpture;depth:6;material:stone;name:Maman d'lo;tourism:artwork
+node/9535836717,14.7757306 -60.9801386,tourism:viewpoint
+node/9641688600,14.5157735 -60.9612545,amenity:place_of_worship;religion:christian;source:IGN - 2021-06
+node/9758979586,14.6281604 -60.9884363,leisure:sports_centre;name:Institut Martiniquais du Sport
+node/9850522717,14.6036347 -61.0421548,amenity:college;contact:city:Fort-de-France;contact:phone:+33 5 96 52 12 00;contact:postcode:97200;contact:street:Route De La Pointe Des Sables;name:Keyce Santé Fort de France;official_name:Keyce Santé Fort De France;opening_hours:Mo-Fr 08:00-18:00;ref:FR:SIRET:51872913200069;website:https://keyce.fr/
+node/9923328276,14.8011919 -61.2245906,amenity:clock
+node/9923328282,14.8002959 -61.224401,artwork_type:sculpture;historic:memorial;tourism:artwork
+node/10031110253,14.7727926 -60.9851466,tourism:viewpoint
+node/10078003749,14.6578146 -61.1514394,highway:bus_stop;shelter:yes
+node/10087362545,14.7772911 -61.1380776,amenity:place_of_worship;denomination:roman_catholic;name:Grotte de Lourdes;religion:christian
+node/10139406037,14.784676 -60.9966666,bus:yes;highway:bus_stop;public_transport:platform
+node/10159839862,14.6406064 -61.1378527,tourism:viewpoint
+node/10166101615,14.872112 -61.1772682,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/10166375249,14.8257095 -61.1133511,bus:yes;highway:bus_stop;public_transport:platform
+node/10167234145,14.8332059 -61.0631001,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/10167234147,14.8335055 -61.0625895,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/10189069363,14.6217163 -61.0129887,addr:city:Le Lamentin;addr:housenumber:124;addr:postcode:97232;addr:street:Chemin du Courbaril;amenity:college;name:College Lisette Moutachy
+node/10290918109,14.6288901 -60.9890798,contact:city:Le Lamentin;contact:phone:+596 696 21 72 72;contact:postcode:97232;contact:street:Mangot Vulcin;leisure:sports_centre;name:Coach Gino Body And Soul Martinique;opening_hours:Mo 16:00-20:00; Tu-Fr 06:00-20:00; Sa 06:00-12:00;ref:FR:SIRET:81989845300017;website:https://coach.ginobodyandsoul.com/;wifi:free
+node/10589001978,14.7585286 -61.1654514,man_made:watermill;tourism:attraction
+node/10593001405,14.4236193 -60.8895312,name:en:The Swing;name:fr:La Balançoire;tourism:attraction
+node/10796185505,14.4645534 -60.8673492,name:Monsieur Clown;tourism:hostel
+node/10825030099,14.6093309 -61.0971688,amenity:bank;brand:Crédit Agricole;brand:wikidata:Q590952;name:Crédit Agricole
+node/10832820968,14.4667322 -61.0470289,historic:memorial;memorial:bust;name:Aimé Césaire
+node/10885451428,14.6783945 -60.9432252,addr:city:Le Robert;addr:street:Rue des Écoles;amenity:school;name:Ecole Elementaire Hector Sainte Rose
+node/10885451429,14.6779227 -60.9426007,addr:city:Le Robert;addr:street:Rue Gerard Nouvet;leisure:sports_centre
+node/10997690605,14.8151976 -61.1666074,tourism:viewpoint
+node/10997693505,14.8139535 -61.1704019,tourism:viewpoint
+node/11001925012,14.7107743 -60.9151972,name:Point de vue;tourism:viewpoint
+node/11210710843,14.5644659 -60.8796591,amenity:school;name:École Primaire de Cadette
+node/11224349856,14.5487841 -60.962249,highway:bus_stop
+node/11224349857,14.5485965 -60.962593,highway:bus_stop;name:Petit-Bourg Centre
+node/11244293271,14.6932549 -60.975708,amenity:fuel;name:Total
+node/11361345686,14.4334431 -60.8822715,amenity:marketplace;name:Halle
+node/11503362342,14.6043631 -61.0420827,leisure:sports_centre;name:ASPTT MARTINIQUE;website:https://martinique.asptt.com/
+node/11578658469,14.5550315 -61.0526285,contact:city:Les Trois-Îlets;contact:housenumber:9;contact:phone:+33 5 96 66 03 19;contact:postcode:97229;contact:street:Rue Des Amandiers;name:Résidence Kaouanne;ref:FR:SIRET:80400788800022;tourism:hotel;website:https://www.kaouanne.com/
+way/39485008,14.7786861 -61.1349734,addr:city:Le Mourne-Rouge;addr:street:Rue Emile Maurice;leisure:sports_centre;name:Stade Charles Alfred;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2008
+way/42443777,14.6452254 -61.1390309,amenity:school;name:École maternelle Les Abeilles
+way/42485763,14.8216521 -61.031242,amenity:place_of_worship;building:church;denomination:catholic;name:Église Saint-Pierre;religion:christian;wikidata:Q60391574
+way/42486752,14.8222486 -61.0302448,amenity:school;name:École
+way/42497243,14.7814016 -60.993352,amenity:townhall;building:civic;contact:email:secretariat.cabinet.vsm@gmail.com;contact:phone:+596 596 69 30 06;contact:website:http://www.ville-saintemarie.fr;name:Mairie de Sainte-Marie;opening_hours:Mo-Tu 07:00-17:00; We 07:00-13:00; Th 07:00-17:00; Fr 07:00-13:00;ref:FR:SIRET:21972228700014;source:Service-Public.fr - 11/2023;wheelchair:yes
+way/42624736,14.6788133 -60.9398645,amenity:school;name:École maternelle Félix Lican;school:FR:maternelle
+way/42624743,14.6798941 -60.9408377,amenity:school;name:École maternelle Lucien Laroche;school:FR:maternelle
+way/42624744,14.6792075 -60.9403297,amenity:school;name:École primaire Laure Marimont;school:FR:primaire
+way/42624771,14.6806128 -60.9388561,amenity:school;name:Collège Paul Symphorien;school:FR:collège;source:KG Ground Survey 2016
+way/42724935,14.5441427 -61.0789415,"building:yes;heritage:3;heritage:operator:mhs;historic:fort;mhs:inscription_date:2011-09-22;name:Fort de l'Ilet-à-Ramiers;ref:mhs:PA97200021;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q22980913"
+way/42793129,14.4681103 -60.9196268,amenity:school;school:FR:collège;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008
+way/42793139,14.4685271 -60.9192382,amenity:school;name:École;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008
+way/42794588,14.4873022 -60.9029511,amenity:school;name:École;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008
+way/42794610,14.4871449 -60.9032177,amenity:school;name:École;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008
+way/42826680,14.5444099 -60.8382087,amenity:school;name:Collège du Vauclin;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2008
+way/42984808,14.7373339 -61.1334888,amenity:school;name:École;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008
+way/42984818,14.7381745 -61.1317568,amenity:place_of_worship;building:yes;denomination:roman_catholic;name:Église Saint-Denis;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2008;wikidata:Q38495893
+way/42984820,14.7391585 -61.1317779,amenity:school;name:École;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008
+way/43016060,14.7094484 -60.9993571,amenity:school;name:École primaire La Fraîcheur;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008
+way/47075709,14.5537306 -60.8844812,amenity:school;name:École;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009
+way/50810083,14.6741213 -60.9419389,addr:city:Le Robert;addr:postcode:97231;leisure:stadium;name:Stade Georges Spitz;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2010;sport:soccer
+way/51441661,14.6512378 -60.9502663,amenity:school;name:École primaire Robert Platon;school:FR:primaire;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010
+way/51826921,14.6904517 -60.9742525,amenity:school;name:École élémentaire Occuline Amazan;school:FR:primaire;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010
+way/51826922,14.6907794 -60.9737952,amenity:school;name:École maternelle Simone Branglidor;school:FR:maternelle;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010
+way/51836892,14.6309172 -60.9674516,amenity:school;name:Ecole maternelle et primaire de Roches Carrées;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010
+way/51903445,14.6163059 -60.9899901,amenity:school;name:Collège Edouard Glissant;operator:type:public;ref:UAI:9720470D;school:FR:collège;source:data.gouv.fr:Éducation Nationale - 05/2016
+way/51903954,14.617743 -60.9912549,amenity:school;name:École Élémentaire Place d'Armes;school:FR:collège;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010
+way/59147028,14.6178001 -60.9992317,amenity:school;name:École Élémentaire Pierre Zobda Quitman;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010
+way/59195786,14.6236432 -61.0553173,amenity:school;name:Collège Roger Castendet;school:FR:collège;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010
+way/59287008,14.6156117 -60.9978162,leisure:stadium;name:Stade;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010;wheelchair:yes
+way/59288459,14.6123245 -60.9995934,amenity:school;name:Lycée Léopold Bissol;school:FR:lycée;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2010
+way/83536020,14.6742842 -61.0363121,leisure:sports_centre;name:Stade municipal Henri Murano;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;sport:multi
+way/84848824,14.4383094 -60.8761491,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:yes;name:Vito;source:KG Ground Survey 2016
+way/94851878,14.6100325 -61.0476549,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:Total (entreprise);building:yes;name:Total;operator:Total;source:amenity:local knowledge;source:geometry:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;wall:no
+way/94857885,14.6083045 -61.0591544,"amenity:place_of_worship;building:church;denomination:catholic;heritage:3;heritage:operator:mhs;mhs:inscription_date:2011-09-22;name:Église Sainte-Thérèse;ref:mhs:PA97200023;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q22980915"
+way/94859154,14.6769843 -61.0952535,building:yes;name:Ancienne Station Thermale d'Absalon;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;tourism:attraction
+way/94864704,14.6478569 -61.0566394,amenity:place_of_worship;building:temple;denomination:seventh_day_adventist;name:Église Adventiste du Septième Jour;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/94870526,14.5996293 -61.0901574,"building:yes;heritage:3;heritage:operator:mhs;historic:yes;image:https://mapio.net/images-p/24795738.jpg;man_made:lighthouse;mhs:inscription_date:2013-12-16;name:Phare de la Pointe des Nègres;ref:admiralty:J5780;ref:mhs:PA97200031;ref:nga:110-14948;seamark:information:White pylon, gray lantern;seamark:landmark:category:tower;seamark:landmark:colour:grey;white;seamark:landmark:colour_pattern:horizontal;seamark:landmark:height:28;seamark:light:1:character:Fl;seamark:light:1:colour:white;seamark:light:1:height:36;seamark:light:1:period:5;seamark:light:1:range:24;seamark:light:1:sector_end:126;seamark:light:1:sector_start:276;seamark:name:Pointe des Nègres;seamark:type:landmark;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C20;wikidata:Q3378489;wikipedia:fr:Phare de la Pointe des Nègres"
+way/94875433,14.6121833 -61.066468,addr:street:Avenue Pasteur;amenity:place_of_worship;building:yes;name:Temple Evangelique;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/94899461,14.6325433 -61.0542663,"amenity:place_of_worship;building:church;denomination:catholic;heritage:3;heritage:operator:mhs;mhs:inscription_date:2009-12-08;name:Église Notre-Dame du Rosaire;ref:mhs:PA97200014;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C20;wikidata:Q22980903"
+way/94900713,14.6237343 -61.0746683,amenity:university;building:yes;name:EGC;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/94935261,14.6282955 -61.0565334,amenity:fuel;brand:Texaco;building:yes;fuel:diesel:yes;fuel:octane_95:yes;shop:yes;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;wall:no
+way/94936125,14.6208275 -61.0617444,leisure:sports_centre;name:Piscine du Morne Desaix;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;sport:swimming
+way/94937889,14.6239296 -61.0723084,amenity:place_of_worship;building:yes;name:Centre Culturel Islamique de Martinique;religion:muslim;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/94940147,14.6166916 -61.0565308,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;building:yes;name:Total;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/94942632,14.6329118 -61.0542784,addr:street:Rue de la Retraite;amenity:fuel;brand:Total;brand:wikidata:Q154037;building:roof;name:Total;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;wall:no
+way/95007946,14.6336162 -61.0595512,addr:city:Fort-de-France;addr:street:Route de Ravine Vilaine;amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:roof;name:Vito;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;wall:no
+way/96432181,14.607862 -61.003349,amenity:place_of_worship;building:church;denomination:evangelical;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+way/96435965,14.616468 -60.988333,"amenity:community_centre;building:yes;name:Gymnase du Collège;source:data.gouv.fr:Le ministère des droits des femmes, de la ville, de la jeunesse et des sports - 11/2015;sport:multi;surface:concrete"
+way/96438396,14.617959 -60.991529,amenity:bank;atm:yes;building:yes;name:Crédit Mutuel;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+way/96446712,14.5969541 -60.9952816,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:roof;name:Vito;source:KG Ground Survey 2016
+way/96449619,14.618923 -60.993918,amenity:school;building:yes;name:École;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010
+way/96449878,14.5964145 -60.9953002,access:covid19:yes;amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:yes;delivery:covid19:no;name:Vito;opening_hours:covid19:Mo-Su 06:00-20:00;source:KG Ground Survey 2016;takeaway:covid19:no
+way/99374589,14.4409571 -60.87876,addr:city:Sainte-Anne;addr:postcode:97227;barrier:fence;fax:+596 5 96 76 78 95;fence_type:metal;height:2.2;internet_access:no;name:Camping Pointe-Marin;operator:Villes de Sainte-Anne;phone:+596 5 96 76 72 79;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011;tourism:camp_site
+way/100159739,14.8651427 -61.1167294,amenity:place_of_worship;historic:wayside_shrine;name:Temple Indou;religion:hindu
+way/107578772,14.7383226 -60.9663059,leisure:stadium;name:Stade;sport:multi
+way/108831203,14.456735 -60.8406033,leisure:stadium;sport:soccer
+way/109267617,14.485159 -60.9095535,leisure:stadium;name:Stade Municipal
+way/110314408,14.8700819 -61.1760609,leisure:stadium;name:Stade Municipal
+way/110314422,14.8750847 -61.1372072,leisure:stadium;name:Stade Municipal
+way/119897170,14.7428596 -61.1761277,addr:city:Saint-Pierre;addr:housenumber:151;addr:street:Place Felix Boisson;amenity:bank;atm:yes;brand:BRED;brand:wikidata:Q2877455;brand:wikipedia:fr:BRED Banque populaire;building:yes;name:BRED Banque Populaire;official_name:Banque régionale d'escompte et de dépôts;official_name:en:Regional Discount and Deposit Bank;official_name:fr:Banque régionale d'escompte et de dépôts;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/119897413,14.7494978 -61.1786859,amenity:marketplace;building:yes;name:Place du marché du Fort;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/119899287,14.7431632 -61.1750362,amenity:townhall;building:civic;contact:email:contact@saintpierre-mq.fr;contact:phone:+596 596 78 10 32;contact:website:http://www.saintpierre-mq.fr;name:Mairie de Saint-Pierre;opening_hours:Mo 07:00-17:00; Tu-We 07:00-13:00; Th 07:00-17:00; Fr 07:00-13:00;ref:FR:SIRET:21972225300016;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;Service-Public.fr - 11/2023;wheelchair:yes
+way/119900836,14.7420678 -61.1764412,amenity:marketplace;building:yes;building:levels:1;name:Marché de Saint-Pierre;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/120164012,14.7551718 -61.1792514,building:yes;name:Centre de Découverte des Sciences et de la Terre;tourism:museum;wikidata:Q16536978
+way/120359072,14.6989458 -61.1547617,leisure:sports_centre;name:Complexe Sportif Yves Sochand
+way/125071177,14.840913 -61.163759,building:yes;name:La Maison du Moine;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;tourism:attraction
+way/125071742,14.8721875 -61.1736932,"building:yes;heritage:2;heritage:operator:mhs;historic:manor;mhs:inscription_date:1996-08-09;name:Habitation Beauséjour;ref:mhs:PA00135667;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C18;tourism:attraction;wikidata:Q22995365"
+way/125080347,14.6760419 -61.1635014,amenity:place_of_worship;building:church;denomination:roman_catholic;name:Église Saint-Pierre-aux-Liens;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;wikidata:Q50822952
+way/125086584,14.8639519 -61.1327143,amenity:place_of_worship;building:chapel;name:Chapelle de Rivière-Roche;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;wikidata:Q113976671
+way/125093363,14.827071 -61.1104453,amenity:place_of_worship;building:yes;denomination:baptist;name:Eglise Evangelique Baptiste D'Ajoupa Bouillon;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/125098063,14.8196507 -61.112882,leisure:sports_centre;source:survey;sport:soccer
+way/125338094,14.8215352 -61.0282375,"amenity:townhall;building:civic;contact:email:ville@97225marigot.com;contact:phone:+596 596 53 50 09;name:Mairie du Marigot;opening_hours:Mo-Tu 08:00-12:00,14:00-17:30; We 08:00-13:30;ref:FR:SIRET:21972216200019;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;wheelchair:yes"
+way/125338945,14.8102489 -61.0216914,building:yes;historic:ruins;name:Habitation Charpentier;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;tourism:attraction
+way/125339134,14.8100703 -61.0353795,building:yes;historic:manor;name:Habitation Bellevue;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;tourism:attraction
+way/125341357,14.8219462 -61.0287074,amenity:library;building:yes;name:Bibliothèque Eugène Mona;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/125350812,14.8310417 -61.219631,building:yes;historic:manor;name:Habitation Céron;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;tourism:attraction
+way/125354263,14.7071805 -61.1445551,addr:city:Le Morne-vert;addr:street:Rue Louis Morin;amenity:place_of_worship;building:church;denomination:catholic;name:Église Saint-Martin;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;wikidata:Q60389024
+way/125354267,14.7076068 -61.144237,"addr:city:Le Morne-vert;addr:street:Rue Louis Morin;amenity:townhall;building:civic;contact:email:mairie@morne-vert.fr;contact:phone:+596 596 55 51 47;contact:website:http://www.morne-vert.fr;name:Mairie du Morne-Vert;opening_hours:Mo 07:00-13:00,14:30-16:30; Tu-We 07:00-13:30; Th 07:00-13:00,14:30-16:30; Fr 07:00-13:00;ref:FR:SIRET:21972233700017;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;Service-Public.fr - 11/2023;wheelchair:yes"
+way/125356124,14.7002267 -61.1347845,amenity:place_of_worship;building:yes;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/125364972,14.7389036 -61.1324134,"amenity:townhall;building:civic;contact:email:mairie.fondssaint-denis@wanadoo.fr;contact:phone:+596 596 55 88 88;name:Mairie de Fonds-Saint-Denis;opening_hours:Mo 07:30-13:30,14:30-17:00; Tu-We 07:30-13:30; Th 07:30-13:30,14:30-17:00; Fr 07:30-13:30;ref:FR:SIRET:21972208900014;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;Service-Public.fr - 11/2023;wheelchair:yes"
+way/125379729,14.483778 -61.0446725,building:yes;leisure:sports_centre;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;sport:equestrian
+way/125380378,14.4807552 -61.0006657,"building:house;heritage:3;heritage:operator:mhs;historic:building;mhs:inscription_date:1988-06-17;name:Maison du Gaoulé;ref:mhs:PA00105940;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q22957321"
+way/125385195,14.484753 -60.9944341,amenity:fuel;brand:WIP;building:yes;name:WIP;shop:yes;source:KG Ground Survey 2016;wall:no
+way/136791878,14.6197102 -60.9108092,leisure:sports_centre;name:Complexe Sportif de Trianon
+way/137760289,14.6161162 -61.0903836,addr:postcode:97233;addr:street:Avenue du Petit Florentin;amenity:place_of_worship;building:yes;name:fr:Église Plateau Fofo;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;wall:no
+way/163652050,14.5265436 -60.9722814,"building:sports_hall;leisure:sports_centre;name:Palais des sports de Trenelle;source:data.gouv.fr:Le ministère des droits des femmes, de la ville, de la jeunesse et des sports - 11/2015;sport:multi"
+way/177543528,14.636259 -61.135165,amenity:fuel;brand:Esso;brand:wikidata:Q867662;brand:wikipedia:en:Esso;name:Esso;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wall:no
+way/177724734,14.615258 -60.902547,"amenity:townhall;building:civic;contact:email:service.courrier@ville-francois.fr;contact:phone:+596 596 54 30 02;name:Mairie du François;opening_hours:Mo 07:30-13:30,14:30-17:30; Tu-We 07:30-13:30; Th 07:30-13:30,14:30-17:30; Fr 07:30-13:30;ref:FR:SIRET:21972210500018;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wheelchair:yes"
+way/177724750,14.616139 -60.9001278,amenity:place_of_worship;building:yes;denomination:protestant;name:Temple;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/177727396,14.614814 -60.903605,amenity:bank;brand:Crédit Agricole;brand:wikidata:Q590952;building:yes;name:Crédit Agricole;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/177728545,14.6142668 -60.9055064,amenity:bank;brand:BNP Paribas;brand:wikidata:Q499707;brand:wikipedia:en:BNP Paribas;building:yes;name:BNP Paribas;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/177728602,14.588449 -60.850728,building:yes;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;tourism:hotel
+way/177734249,14.61425 -60.905622,amenity:fuel;building:roof;operator:Total;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wall:no
+way/177739310,14.6140622 -60.9135228,amenity:fuel;brand:Esso;brand:wikidata:Q867662;brand:wikipedia:en:Esso;building:roof;name:Esso;operator:Esso;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wall:no
+way/177751060,14.614368 -60.902982,amenity:marketplace;building:yes;name:Marché couvert du François;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wall:no
+way/177751876,14.614555 -60.9045,amenity:library;building:yes;name:Bibliotheque;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/177752525,14.5887082 -60.867992,building:yes;historic:manor;name:Habitation du Simon;shop:alcohol;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;tourism:attraction
+way/177754724,14.626431 -60.853045,"building:house;heritage:3;heritage:operator:mhs;historic:building;mhs:inscription_date:2004-07-26;name:Maison de l'Îlet Oscar;ref:mhs:PA97200005;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C18;wikidata:Q22980894"
+way/177878543,14.6877955 -60.9389766,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:roof;layer:1;name:Vito;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/177884943,14.677714 -60.93855,amenity:bank;atm:yes;building:yes;name:BRED Banque Populaire;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/177892738,14.6924427 -60.973065,amenity:place_of_worship;building:church;denomination:catholic;name:Église Sainte-Jeanne-d'Arc;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wikidata:Q67110713
+way/178030004,14.5451438 -60.8401165,"amenity:townhall;building:civic;contact:phone:+596 596 74 40 40;contact:website:http://ville-vauclin.fr;name:Mairie du Vauclin;opening_hours:Mo-Tu 07:30-13:00,14:00-17:00; We-Fr 07:30-13:30;ref:FR:SIRET:21972232900014;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;Service-Public.fr - 11/2023;wheelchair:yes"
+way/178032143,14.5449725 -60.8400134,"building:house;heritage:3;heritage:operator:mhs;historic:building;mhs:inscription_date:2012-04-25;name:Maison Charlery;ref:mhs:PA97200028;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;wikidata:Q22980921"
+way/178034043,14.5067709 -60.8329543,building:yes;leisure:sports_centre;name:Ranch Anse Macabou;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;sport:equestrian;wall:no
+way/178034241,14.5466647 -60.8373803,amenity:marketplace;building:yes;image:https://www.communes.com/images/orig/martinique/martinique/le-vauclin_97280/le-vauclin_342096.jpg;name:Marché Couvert;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wall:no
+way/178037710,14.5471584 -60.8374847,amenity:place_of_worship;building:chapel;denomination:roman_catholic;name:Chapelle des marins;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wikidata:Q60341377
+way/178044733,14.5448458 -60.8417584,amenity:bank;atm:yes;building:yes;name:BRED Banque Populaire;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/178046415,14.544868 -60.8385254,amenity:place_of_worship;building:yes;denomination:baptist;name:Eglise Evangélique Baptiste du Vauclin;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/178053663,14.5461264 -60.8394537,amenity:place_of_worship;building:yes;denomination:roman_catholic;name:Église Saint-Jean-Baptiste;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wikidata:Q38640484
+way/178213097,14.710161 -61.004835,amenity:townhall;building:civic;contact:email:contact.mairie@ville-grosmorne.fr;contact:phone:+596 596 67 50 11;name:Mairie du Gros-Morne;opening_hours:Mo 07:30-17:30; Tu 07:30-13:30; We 07:30-13:00; Th 07:30-17:30; Fr 07:30-13:00;ref:FR:SIRET:21972212100015;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;Service-Public.fr - 11/2023;wheelchair:yes
+way/178213102,14.710627 -61.000814,building:sports_hall;leisure:sports_centre;name:Hall des Sports Félix Marceline;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/178213391,14.71047 -61.003275,amenity:bank;atm:yes;brand:Crédit Agricole;brand:wikidata:Q590952;building:yes;name:Crédit Agricole;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/178214257,14.711653 -61.004818,"amenity:place_of_worship;building:yes;denomination:seventh_day_adventist;name:Église Adventiste du Septième Jour,;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012"
+way/178216621,14.71182 -61.00171,amenity:community_centre;building:yes;name:Maison des Associations Yves Victorin;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/178224112,14.71029 -61.002657,amenity:place_of_worship;building:church;denomination:catholic;name:Église Notre-Dame-de-la-Visitation;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wikidata:Q56514653
+way/178382701,14.660035 -60.996663,building:yes;historic:manor;name:Habitation Rivière Lézarde;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;tourism:attraction
+way/178382828,14.673626 -61.0292045,amenity:fuel;brand:Total;building:yes;name:Total;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wall:no
+way/178391662,14.6754508 -61.0351169,building:yes;leisure:sports_centre;name:Hall des Sports de Saint-Joseph;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/178394042,14.669158 -60.998003,building:yes;historic:manor;name:Habitation Jonction;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;tourism:attraction;wall:no
+way/178864781,14.7279286 -61.1790867,building:yes;name:Musée Gauguin;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;tourism:museum
+way/178916482,14.8629109 -61.1079502,addr:city:Basse-Ppointe;addr:postcode:97218;amenity:community_centre;building:yes;name:Salle des fêtes;source:Connaissance locale
+way/178917610,14.8573988 -61.1006237,"building:yes;heritage:2;heritage:operator:mhs;historic:manor;mhs:inscription_date:1996-12-12;name:Habitation Pecoul;ref:mhs:PA00105935;source:Connaissance locale;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C18;tourism:attraction;wikidata:Q22957318"
+way/178919769,14.846789 -61.112491,"building:yes;heritage:3;heritage:operator:mhs;historic:manor;mhs:inscription_date:2014-05-09;name:Habitation Leyritz;ref:mhs:PA97200034;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C17;tourism:attraction;wikidata:Q57709558"
+way/179325990,14.789788 -61.137048,amenity:arts_centre;building:yes;name:Le Millenium;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/179326879,14.7838763 -61.1363489,addr:city:Le Morne-Rouge;addr:street:Rue Jean Jaurès;amenity:fuel;brand:Esso;brand:wikidata:Q867662;brand:wikipedia:en:Esso;name:Esso;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/179328993,14.779251 -61.136329,building:yes;name:Maison des Volcans;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;tourism:museum
+way/181143938,14.831191 -61.045013,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;name:Total;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/181164271,14.4681778 -60.9216709,"amenity:townhall;building:civic;contact:email:bienvenue@mairie-sainte-luce.fr;contact:phone:+596 596 62 50 01;contact:website:https://www.sainteluce.fr/accueil.php;name:Mairie de Sainte-Luce;opening_hours:Mo 07:30-13:15,14:30-17:15; Tu-We 07:30-13:30; Th 07:30-13:15,14:30-17:15; Fr 07:30-13:30;ref:FR:SIRET:21972227900011;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;Service-Public.fr - 11/2023;wheelchair:yes"
+way/181164949,14.4662215 -60.9270922,building:yes;name:Brise Marine;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;tourism:hotel
+way/181166561,14.479967 -60.9641145,building:commercial;man_made:windmill;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/181173273,14.468696 -60.9193964,amenity:place_of_worship;building:yes;denomination:roman_catholic;name:Église Sainte-Lucie;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wikidata:Q38518477
+way/181289043,14.560772 -60.937172,"amenity:townhall;building:civic;contact:email:secretariat@mairie-saint-esprit.fr;contact:phone:+596 596 56 61 02;contact:website:http://villedusaintesprit.fr;heritage:3;heritage:operator:mhs;heritage:since:1990-08-27;name:Mairie de Saint-Esprit;opening_hours:Mo 07:30-13:30,14:30-17:00; Tu-We 07:30-13:30; Th 07:30-13:30,14:30-17:00; Fr 07:30-13:30;ref:FR:SIRET:21972223800017;ref:mhs:PA00105963;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;Service-Public.fr - 11/2023;wheelchair:yes;wikidata:Q57629077"
+way/181289281,14.561194 -60.936988,amenity:library;building:yes;name:Médiathèque Alfred Melon-Dégras;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/181290652,14.567343 -60.947865,amenity:fuel;brand:Total;brand:wikidata:Q154037;building:yes;name:Total;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wall:no
+way/181297317,14.560091 -60.939685,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:yes;fuel:diesel:yes;fuel:octane_95:yes;name:Vito;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wall:no
+way/181299936,14.562096 -60.907499,amenity:school;name:Ecole élémentaire grand bassin;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/181300219,14.55911 -60.939816,building:yes;name:Musée des Arts et Traditions Populaires;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;tourism:museum
+way/181300912,14.562289 -60.936593,amenity:place_of_worship;building:church;denomination:catholic;name:Église du Saint-Esprit;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;source:name:clochers.org;wikidata:Q38386837
+way/182353162,14.4868075 -60.9033301,amenity:townhall;building:civic;contact:email:secretariat@mairie-riviere-pilote.fr;contact:phone:+596 596 62 60 03;name:Mairie de Rivière-Pilote;opening_hours:Mo 07:30-17:00; Tu-We 07:30-13:00; Th 07:30-17:00; Fr 07:30-13:00;ref:FR:SIRET:21972220400019;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;Service-Public.fr - 11/2023;wheelchair:yes
+way/182353163,14.4865378 -60.9024583,amenity:marketplace;building:yes;name:Marché;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wall:no
+way/182360357,14.526038 -60.882435,addr:city:Riviere-Pilote;amenity:school;name:Ecole Maternelle de Josseaud;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/182360894,14.525475 -60.882545,addr:city:Riviere-Pilote;addr:street:CR Chemin les morts;amenity:place_of_worship;building:church;name:Église du Saint-Cœur-de-Marie;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wikidata:Q38386700
+way/182368231,14.4869457 -60.9029741,amenity:bank;atm:yes;brand:Crédit Agricole;brand:wikidata:Q590952;brand:wikipedia:fr:Crédit agricole;building:yes;name:Crédit Agricole;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/182368376,14.4873204 -60.9037653,amenity:place_of_worship;building:yes;denomination:roman_catholic;name:Église de l'Immaculée Conception;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012;wikidata:Q38380962
+way/217350631,14.5334987 -61.023603,name:Maison de la Canne;ref:FR:museofile:M1067;tourism:museum;wikidata:Q3279749;wikipedia:fr:Maison de la canne
+way/256119737,14.5623617 -60.9573367,amenity:public_building;building:yes;name:Foyer rural Durivage;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012
+way/261715669,14.7541029 -61.036675,landuse:forest;leisure:park;name:Forêt départementalo-Domaniale du Pérou
+way/261718657,14.744824 -61.0176661,amenity:school;name:École élémentaire Félix Lorne;school:FR:élémentaire
+way/262124158,14.5621727 -60.9575433,amenity:school;name:École de Durivage;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014
+way/263080948,14.7438208 -60.9483584,addr:city:Trinité;addr:housename:Cité scolaire Frantz Fanon;addr:postcode:97220;amenity:school;name:Lycée Frantz Fanon;note:Pas de garage à vélo;phone:+596 0596582196;school:FR:lycée;website:http://etabs.ac-martinique.fr/lgtfrantzfanon/;wheelchair:limited
+way/263086504,14.7821737 -60.9922281,access:yes;leisure:sports_centre;name:Complexe sportif Coralie Balmy
+way/263687328,14.7475031 -60.9655234,amenity:school;name:École primaire Pierre Cirile;school:FR:primaire
+way/263687329,14.7477444 -60.9514565,leisure:sports_centre;name:Terrain de sport du lycée Frantz Fanon;sport:multi
+way/286614833,14.539389 -61.04123,"amenity:community_centre;building:yes;source:data.gouv.fr:Le ministère des droits des femmes, de la ville, de la jeunesse et des sports - 11/2015;sport:multi"
+way/287184286,14.546344 -60.963859,amenity:marketplace;building:yes;name:Marché de Petit-Bourg;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014
+way/287184345,14.5455921 -60.9709413,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:yes;name:Vito;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014;wall:no
+way/287255628,14.7451359 -61.0148882,amenity:place_of_worship;building:yes;denomination:roman_catholic;name:Église Saint-Pierre et Paul;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014;wikidata:Q117600021
+way/287481405,14.7318463 -60.951697,amenity:fuel;brand:Esso;brand:wikidata:Q867662;brand:wikipedia:en:Esso;building:roof;fuel:diesel:yes;fuel:octane_95:yes;fuel:octane_98:yes;name:Esso;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014;wall:no
+way/287482400,14.7303275 -60.9500826,amenity:fuel;brand:Total;brand:wikidata:Q154037;name:Total;source:cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014;wall:no
+way/334774264,14.5452053 -61.0542719,"building:yes;heritage:3;heritage:operator:mhs;historic:fort;mhs:inscription_date:2012-04-25;name:Fort d'Alet;ref:mhs:PA97200027;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C20;wikidata:Q22980920"
+way/335131443,14.550312 -61.0561856,building:yes;name:Auberge de l'Anse Mitan;source:KG Ground Survey 2016;tourism:hotel
+way/335131690,14.5470176 -61.0506281,building:yes;name:Suite Villa;stars:5;tourism:hotel
+way/335295236,14.5477157 -61.0429484,building:yes;leisure:sports_centre;name:Club Nautique des Trois Îlets;sport:sailing
+way/336664401,14.4742036 -60.9625369,leisure:stadium;sport:soccer
+way/368228850,14.470412 -60.9194961,building:yes;leisure:sports_centre
+way/385097753,14.57196 -60.9711716,amenity:school;name:Lycée Général et Technologique Centre Sud;operator:type:public;ref:UAI:9720825P;school:FR:lycée;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/397175277,14.5897299 -60.9826691,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;building:yes;name:Total;source:KG Ground Survey 2016
+way/397175535,14.5788988 -60.9770331,addr:city:Ducos;addr:street:Avenue Jean Jaurès;amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;building:yes;name:Total;source:KG Ground Survey 2015
+way/397186387,14.5959897 -60.9899403,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;building:roof;name:Total;source:KG Ground Survey 2016
+way/398030433,14.5253685 -61.0756964,amenity:school;email:ce.9720097y@ac-martinique.fr;operator:type:public;phone:+596 596 68 62 75;ref:UAI:9720097Y;school:FR:maternelle;source:KG Ground Survey 2016
+way/398387121,14.6067164 -61.0423519,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:yes;name:Vito;source:KG Ground Survey 2016
+way/398540183,14.6213213 -60.9911478,"amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:yes;name:Vito;opening_hours:Mo-Th 05:30-19:30; Fr 05:30-20:00; Sa 06:00-20:00; PH,Su 06:00-19:30;source:KG Ground Survey 2016;wheelchair:yes"
+way/398591210,14.6307815 -60.9778663,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;name:Total;source:KG Ground Survey 2016
+way/398618957,14.6311032 -60.9785239,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:TotalEnergies;name:Total;source:KG Ground Survey 2016
+way/398749720,14.729633 -60.9501113,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;name:Vito;source:KG Ground Survey 2016
+way/398754691,14.6281974 -61.0699789,addr:city:Fort-de-France;addr:street:Boulevard Huygues Despointes;amenity:place_of_worship;building:yes;religion:christian;source:KG Ground Survey 2016
+way/398754692,14.6283216 -61.0723546,addr:city:Fort-de-France;addr:street:Route de Balata;amenity:fuel;brand:Vito;brand:wikidata:Q62536473;building:roof;name:Vito;source:KG Ground Survey 2016
+way/398806862,14.827909 -61.0334439,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;name:Vito;source:KG Ground Survey 2016
+way/398811125,14.8324296 -61.048101,amenity:fuel;brand:Esso;brand:wikidata:Q867662;brand:wikipedia:en:Esso;name:Esso;source:KG Ground Survey 2016
+way/399284281,14.8002515 -61.1456234,addr:city:Le Morne-Rouge;addr:postcode:97260;addr:street:Route de la Montagne Pelée Route de l'Aileron;email:aubergedelamontagnepelee@orange.fr;name:L'Auberge de la Montagne Pelée;phone:+596 0596 523 209;source:KG Ground Survey 2016;tourism:hotel;website:https://www.aubergedelamontagnepelee.com/
+way/399508030,14.6669013 -61.1570642,amenity:fuel;brand:Vito;brand:wikidata:Q62536473;name:Vito;source:KG Ground Survey 2016
+way/399508049,14.6358197 -61.1354349,amenity:fuel;brand:Esso;brand:wikidata:Q867662;brand:wikipedia:en:Esso;name:Esso;source:KG Ground Survey 2016
+way/399525636,14.6077241 -61.0749732,amenity:school;name:Séminaire-Collège Sainte-Marie;operator:type:private;ref:UAI:9720829U;school:FR:lycée;source:KG Ground Survey 2016
+way/399747761,14.4671706 -60.9296797,addr:street:Avenue Des Amandiers;building:yes;name:Les Creolines;tourism:hotel
+way/404801905,14.5576955 -61.0520783,name:Le Bakoua;stars:4;tourism:hotel
+way/404804434,14.7507524 -61.1786126,"heritage:2;heritage:operator:mhs;historic:ruins;mhs:inscription_date:2002-06-04;name:Église du Fort;ref:mhs:PA00105951;religion:christian;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C17;wikidata:Q18609466;wikipedia:fr:Église du Fort de Saint-Pierre"
+way/428925396,14.6452946 -61.070043,addr:street:Parcours de santé Tivoli;amenity:place_of_worship;building:yes;religion:hindu
+way/442777115,14.6282716 -61.0579917,amenity:school;name:Lycée polyvalent A.M.E.P.;school:FR:lycée;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010
+way/479744030,14.7455722 -61.1630783,amenity:place_of_worship;religion:hindu
+way/480797112,14.795754 -61.0104928,"heritage:3;heritage:operator:mhs;historic:manor;mhs:inscription_date:1980-05-27;name:Habitation Saint-Jacques;ref:mhs:PA00105947;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C17;tourism:attraction;wikidata:Q22957326"
+way/482494251,14.5429768 -60.8528444,leisure:stadium;name:Stade Municipal du Vauclin;sport:soccer
+way/482982968,14.509783 -60.8377019,historic:ruins;name:Ancien Moulin;tourism:attraction
+way/492517864,14.6204365 -61.0646169,leisure:sports_centre;name:Stade du Morne Desaix;source:survey;sport:multi
+way/514556770,14.4694051 -61.0678092,amenity:place_of_worship;building:yes;denomination:seventh_day_adventist;name:Église Adventiste Du Septième Jour;religion:christian
+way/528793537,14.5276539 -60.9735169,amenity:school;barrier:fence;name:École élémentaire B;operator:type:public;ref:UAI:9720251R;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 05/2016
+way/530120092,14.5274651 -60.9736115,amenity:school;barrier:fence;email:seminaire-college.direction@orange.fr;name:Annexe Collège privé Séminaire-Collège Sainte-Marie;operator:type:private;phone:+596 596 76 59 77;ref:UAI:9720908E;school:FR:collège;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2017;website:https://seminairecollege.pagesperso-orange.fr/
+way/536160462,14.5584934 -61.0491073,name:Hôtel Carayou;tourism:hotel
+way/539710638,14.5098796 -60.9417564,amenity:place_of_worship;building:yes;religion:christian;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2017
+way/548183215,14.6662437 -61.1547854,amenity:school;name:Lycée Nord Caraïbe;school:FR:lycée;source:visite sur place
+way/552689039,14.6258422 -60.9448706,"addr:city:Le François;addr:postcode:97240;addr:street:Morne Pitault;amenity:school;name:Ecole Maternelle et Primaire de Morne Pitault ""B"""
+way/552691496,14.6228194 -60.9451088,addr:city:Le François;addr:postcode:97240;addr:street:Morne Pitault;amenity:place_of_worship;building:yes;denomination:seventh_day_adventist;name:Église Adventiste du Septième Jour;religion:christian
+way/552691497,14.6197264 -60.9440197,addr:city:Le François;addr:postcode:97240;addr:street:Morne Pitault;amenity:place_of_worship;building:chapel;building:levels:1;denomination:roman_catholic;name:Chapelle du Sacré-Coeur de Jésus;religion:christian
+way/552691498,14.6189217 -60.9424303,"addr:city:Le François;addr:postcode:97240;addr:street:Morne Pitault;amenity:school;name:Ecole Maternelle et Pirmaire Morne Pitault ""A"""
+way/552691499,14.6187739 -60.9441217,addr:city:Le François;addr:postcode:97240;addr:street:Morne Pitault;amenity:community_centre;building:yes;building:levels:2;name:Foyer Rural du Morne Pitault
+way/552691501,14.6179013 -60.9422569,amenity:school
+way/562016350,14.526814 -61.0409269,"addr:postcode:97229;addr:street:Quartier La Ferme;email:lasavanedesesclaves@wanadoo.fr;name:La Savane des Esclaves;opening_hours:Mo-Sa 09:00-12:00, 14:00-17:30; Su 09:00-12:00;phone:+596 596683391;tourism:museum;website:https://www.lasavanedesesclaves.fr/"
+way/570830035,14.4664637 -60.9421914,leisure:sports_centre;name:Club nautique de Sainte Luce
+way/571853085,14.5718603 -60.9712807,amenity:college;name:CFA
+way/585748625,14.6171458 -60.9073428,leisure:park;name:Parc Cité Eucaliptus
+way/585750640,14.6177611 -60.9415597,addr:city:Le François;addr:postcode:97240;addr:street:Bois Neuf;leisure:park;name:Terrain de sports
+way/595843928,14.6191466 -60.9104167,leisure:park
+way/598647049,14.62602 -60.9448555,addr:city:Le François;addr:postcode:97240;addr:street:Morne Pitault;amenity:place_of_worship;building:no;denomination:catholic;name:Croix Pélage;tourism:attraction
+way/598651889,14.6244805 -60.9448851,addr:city:Le François;addr:postcode:97240;addr:street:Morne Pitault;building:ruins;name:Ruine de fabrique de farine de Manioc;tourism:attraction
+way/602243878,14.6148271 -60.9032931,addr:city:Le François;addr:postcode:97240;addr:street:Rue François Arago;amenity:place_of_worship;building:church;denomination:catholic;name:Église Saint-Michel;religion:christian;wikidata:Q60389332
+way/602244441,14.6146953 -60.9035781,addr:city:Le François;addr:postcode:97240;addr:street:Rue François Arago;amenity:place_of_worship;building:chapel;religion:christian
+way/620114828,14.6144729 -61.025238,amenity:place_of_worship;building:yes;denomination:assemblies_of_god;name:Église Assemblée de Dieu;religion:christian
+way/620124324,14.609283 -61.0284111,amenity:place_of_worship;building:yes;name:Chapelle
+way/645072743,14.5174501 -60.9697353,amenity:school;name:École primaire Thoraille;operator:type:public;ref:UAI:9720830V;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 05/2016
+way/668562533,14.4693173 -60.8572073,amenity:fuel;building:roof;name:CAP
+way/673987692,14.6088245 -60.9974456,amenity:fuel;brand:Total;brand:wikidata:Q154037;brand:wikipedia:fr:Total (entreprise);building:roof;name:Total;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2019
+way/673998924,14.6089513 -60.9988928,leisure:sports_centre;sport:rc_car
+way/677908877,14.7020844 -61.176074,leisure:sports_centre;name:Piscine Départementale Jean Bally;sport:swimming
+way/677908882,14.7017379 -61.1769421,leisure:stadium;name:Stade Jacques Bally;sport:soccer
+way/679753906,14.7162506 -61.165561,addr:city:Le Carbet;addr:postcode:97221;addr:street:Route des Pitons;end_date:2013;leisure:water_park;name:Aqwaland;phone:+596596784000;start_date:2004
+way/710698711,14.618525 -61.0654165,"castle_type:fortress;heritage:operator:mhs;historic:castle;name:Fort Desaix;ref:mhs:PA97200015;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2019;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C18;type:fortress;wikidata:Q3077848;wikipedia:fr:Fort Desaix (Martinique)"
+way/741153581,14.6056686 -61.0453109,amenity:school;name:Lycée professionnel Marius Cultier
+way/741153601,14.6052287 -61.0456704,barrier:fence;leisure:sports_centre;name:Stade Pierre-Aliker
+way/741153602,14.6054903 -61.0470739,amenity:school;name:École maternelle Dillon A Les Libellules;operator:type:public;ref:UAI:9720138T;school:FR:maternelle;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/741153606,14.602351 -61.0462455,leisure:stadium;name:Stade Pierre Aliker;old_name:Stade de Dillon;sport:athletics;soccer;wikidata:Q282333
+way/770707107,14.4829788 -61.0023138,amenity:school;name:École maternelle O'Mullane;operator:type:public;ref:UAI:9720724E;school:FR:maternelle;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/793181942,14.4353922 -60.8706893,"building:yes;heritage:3;heritage:operator:mhs;man_made:windmill;mhs:inscription_date:1991-12-31;name:Habitation Val d'Or;ref:mhs:PA00105973;source:heritage:data.gouv.fr, Ministère de la Culture - 2016;start_date:C18;wikidata:Q22957343"
+way/803130968,14.5473692 -60.9689713,leisure:sports_centre;name:Stade Hermann Panzo
+way/826351114,14.5771159 -60.9644772,leisure:sports_centre;name:Stade de Syndic
+way/826437519,14.5590947 -60.9394951,leisure:stadium;name:Stade André Kabile
+way/836487361,14.5563441 -60.8897073,amenity:place_of_worship;building:chapel;religion:christian
+way/847735763,14.4714926 -61.0059748,historic:ruins
+way/883071782,14.6573877 -60.9791731,addr:city:Le Lamentin;addr:postcode:97232;addr:street:RD3;amenity:school;name:École élementaire de Pelletier
+way/903903647,14.5386249 -60.9349595,addr:city:Rivière-Salée;addr:postcode:97215;addr:street:Chemin de Fond Masson;amenity:school;name:École primaire Fond Masson;operator:type:public;ref:UAI:9720258Y;school:FR:primaire;source:Ministère de l'Éducation nationale et de la Jeunesse - 2021-02
+way/913475444,14.5451912 -60.8400768,leisure:park
+way/919205570,14.5422458 -60.9771853,"building:bridge;description:Pont Bac : trait d’union entre le nord et le sud Jusqu’à la fin du XIXè siècle la rivière qui sépare Grand-bourg de Petit-bourg ne pouvait être franchie qu’au moyen d’un bac confié à un gardien en contrepartie d’un péage. En lieu et place du bac, un pont;historic:building;layer:1;maxweight:0;name:Le Pont Bac"
+way/928278735,14.7900059 -61.1365094,leisure:park
+way/928289751,14.7874222 -61.1362695,leisure:sports_centre;name:Stade Maurice Roy Belleplaine
+way/929704043,14.545096 -60.838363,amenity:school;name:École Élémentaire les Algues Marines
+way/930158332,14.5471865 -60.8375125,leisure:park
+way/957234768,14.610217 -61.0917604,amenity:school;name:Lycée Professionnel Lumina Sophie
+way/969731823,14.6079021 -61.0634159,amenity:school;landuse:education;name:École élémentaire Emilie Fordant;operator:type:public;ref:UAI:9720864G;school:FR:élémentaire
+way/1007417074,14.5347655 -61.0129112,leisure:sports_centre;name:Acro'Kart Racing;sport:karting
+way/1030990449,14.70918 -60.9984568,leisure:park;name:Parc de loisirs de la Fraîcheur
+way/1049236677,14.4202946 -60.8441265,amenity:place_of_worship;building:yes;name:Vierge des Marins;religion:christian
+way/1097682583,14.6316038 -61.0148783,addr:city:Le Lamentin;amenity:school;area:yes;fax:05 96 50 09 13;name:Lycée LPO Acajou 2;phone:05 96 50 64 65;religion:none;school:FR:lycée;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;local knowledge;website:http://www.acajou2.com/
+way/1098586364,14.6287665 -61.0165602,addr:city:Le Lamentin;addr:postcode:97232;amenity:school;area:yes;name:École maternelle Arc-en-Ciel Acajou;school:FR:maternelle;source:cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011
+way/1100666631,14.6119575 -61.0430689,amenity:school;area:yes;name:Collège Dillon 2
+way/1101878578,14.6743193 -61.0331531,amenity:school;area:yes;name:Collège Belle Étoile
+way/1101878579,14.6729388 -61.0341774,amenity:school;area:yes;name:École Primaire Marceau Edouard
+way/1101878580,14.6731851 -61.0331974,amenity:school;area:yes;name:École Materne Jeanne Merton
+way/1102066737,14.7818874 -60.9921118,building:yes;leisure:sports_hall
+way/1102382688,14.7887285 -61.1383852,amenity:theatre;building:yes;name:Le Millénium
+way/1102655740,14.6204431 -60.8874886,area:yes;leisure:sports_centre;name:Piscine municipale du François;sport:swimming
+way/1104741066,14.5461912 -60.8434275,amenity:fuel;brand:Esso;brand:wikidata:Q867662;building:roof;name:Esso
+way/1104741067,14.4794979 -61.0312299,amenity:school;area:yes;name:École élementaire du Diamant;operator:type:public;ref:UAI:9720875U;school:FR:primaire;source:data.gouv.fr:Éducation Nationale - 03/2018
+way/1108128339,14.7868625 -60.9974802,leisure:park;name:Espace Clarissa Jean-Philippe
+way/1110509854,14.711964 -61.003759,amenity:fuel;brand:Total;brand:wikidata:Q154037;building:roof;name:Total
+way/1110509857,14.7135662 -60.9960133,amenity:school;area:yes;name:Collège Euzhan Palcy
+way/1111027405,14.8324611 -61.0786617,amenity:school;area:yes;name:École primaire de Maxime
+way/1111147959,14.8659873 -61.1097999,addr:city:Basse-Pointe;addr:postcode:97218;addr:street:Rue du Ramier;amenity:school;area:yes;name:École maternelle Les Coccinelles;school:FR:maternelle;source:Connaissance locale
+way/1111567859,14.6822241 -61.0187799,amenity:school;area:yes;name:École Primaire Lise Désir-Cartesse
+way/1113135867,14.6555876 -60.9360195,addr:city:Le Robert;amenity:school;name:Lycée Agricole du Robert
+way/1125754186,14.6664065 -61.1540038,building:yes;leisure:sports_hall;name:Gymnase du lycée Nord Caraïbe;operator:Lycée Nord Caraïbe
+way/1133503454,14.5869604 -60.9892412,alt_name:Hippodrome Départemental de Carrère;leisure:sports_centre;name:Hippodrome de Carrère;sport:horse_racing
+way/1210265424,14.5690011 -60.9313613,leisure:sports_centre;name:Piscine Communautaire de l'Espace Sud;sport:swimming
+way/1210519724,14.6825283 -61.0460942,amenity:school;name:École Primaire Corneille Firmin Luc-Cayol
+way/1212729363,14.7485274 -61.0116391,amenity:school;name:École élémentaire François Grosy
+way/1212729364,14.7491881 -61.0104553,amenity:school;name:École maternelle Le Kachibou
+way/1212729365,14.7475402 -61.0107224,leisure:stadium;name:Stade Claude Gélie;sport:soccer
+way/1212729370,14.7107586 -60.9998676,leisure:stadium;name:Stade Aristide Maugée;sport:soccer
+way/1212729371,14.7047547 -61.0260634,amenity:school;name:École primaire Rivière Lézarde
+way/1213668217,14.4413135 -60.8322552,area:yes;name:L'Oeil dans le Bleu;tourism:hotel
+way/1245684863,14.5433959 -60.8403225,amenity:school;name:Ecole élémentaire Mixte A
