@@ -1,0 +1,20 @@
+# Cron expression generator:
+# https://crontab.cronhub.io/
+
+Create new dungeons:
+  cron: "0/2 * * * *"
+  class: "DungeonCreateWorker"
+  queue: default
+  timezone: "UTC"
+
+Schedule dungeon expirations:
+  cron: "1/2 * * * *"
+  class: "DungeonExpirationScheduler"
+  queue: default
+  timezone: "UTC"
+
+Destroy expired dungeons:
+  cron: "0 * * * *"
+  class: "DungeonDestroyWorker"
+  queue: default
+  timezone: "UTC"
