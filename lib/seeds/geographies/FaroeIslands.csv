@@ -1,0 +1,530 @@
+ext_id,coordinates,tags
+node/32886059,62.0099106 -6.7707546,addr:housenumber:4-10;addr:street:Áarvegur;name:Hotel Hafnia;stars:3;tourism:hotel;website:http://www.hafnia.fo/;wheelchair:yes
+node/32897707,62.0077021 -6.7631626,man_made:lighthouse;name:de:Leuchtturm Skansin
+node/32897716,62.0084612 -6.7622362,bus:yes;public_transport:stop_position
+node/32897807,62.0277381 -6.7687854,bus:yes;name:Studentaskúlin;public_transport:stop_position
+node/302100288,62.0499973 -7.2166676,gns_classification:HLL;gns_uni:-3822368;is_in:Faroe Islands;is_in:country:Faroe Islands;is_in:country_code:fo;name:Vørðuklettar;natural:peak;source:GNS;tourism:viewpoint
+node/302104530,62.0120789 -6.7693761,access:yes;gns_classification:MNMT;gns_uni:-3810395;historic:memorial;memorial:obelisk;name:Kongaminnið;source:GNS;start_date:1874
+node/303579511,62.0203974 -6.7753934,bus:yes;name:Á Hálsi;public_transport:stop_position
+node/303582721,62.0104817 -6.7670376,bus:yes;public_transport:stop_position
+node/303599097,62.0176963 -6.776615,amenity:fuel;internet_access:wlan;internet_access:fee:no;operator:Effo
+node/305430445,62.1192131 -6.9838697,addr:city:Kollafjørður;addr:housenumber:6;addr:postcode:410;addr:street:Frammi í Dal;amenity:fuel;brand:Effo;name:Effo Kollafjørður;name:en:EFFO;phone:+298 343555;website:https://www.effo.fo/stodirnar/upplatingartidir/
+node/307701172,62.0001595 -6.7995151,bus:yes;public_transport:stop_position
+node/307701177,62.000304 -6.7983285,bus:yes;public_transport:stop_position
+node/331369289,62.158487 -6.7870972,name:Skáli;tourism:camp_site
+node/394860469,62.014918 -6.7648309,bus:yes;public_transport:stop_position
+node/439357221,62.242816 -6.8127835,addr:city:Fuglafjørður;addr:country:FO;addr:housenumber:7;addr:postcode:530;addr:street:Í Støð;amenity:bank;name:Bank Nordik;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:30656;us.fo:Galdandi_frá:12-12-2008;us.fo:Postnr:530;us.fo:Veganr:3226;us.fo:kommununr:11
+node/439365904,62.2425896 -6.8146079,addr:city:Fuglafjørður;addr:country:FO;addr:housenumber:1;addr:postcode:530;addr:street:Karvatoftir;amenity:library;name:Bókasavn;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:30594;us.fo:Galdandi_frá:12-12-2008;us.fo:Postnr:530;us.fo:Veganr:3221;us.fo:kommununr:11
+node/439366057,62.2420505 -6.8157481,addr:city:Fuglafjørður;addr:country:FO;addr:housenumber:5;addr:postcode:530;addr:street:Karvatoftir;amenity:arts_centre;name:Mentunarhúsið;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:30596;us.fo:Galdandi_frá:12-12-2008;us.fo:Postnr:530;us.fo:Veganr:3221;us.fo:kommununr:11
+node/440212729,62.0470472 -7.1636921,addr:city:Sandavágur;addr:country:FO;addr:housenumber:8;addr:postcode:360;addr:street:Á Hillingatanga;name:Á Giljanesi;source:Umhvørvisstovan www.us.fo;tourism:camp_site;us.fo:Adressutal:19500;us.fo:Galdandi_frá:06-07-2005;us.fo:Postnr:360;us.fo:Veganr:2161;us.fo:kommununr:34
+node/440220157,62.103661 -7.6455632,addr:city:Mykines;addr:country:FO;addr:housenumber:3;addr:postcode:388;addr:street:Túalsvegur;name:Gulahusid;phone:512914;source:Umhvørvisstovan www.us.fo;tourism:hostel;us.fo:Adressutal:30382;us.fo:Galdandi_frá:2008-10-28;us.fo:Postnr:388;us.fo:Veganr:3192;us.fo:kommununr:36;website:https://www.gulahusid.com
+node/444636944,62.092609 -6.7383449,addr:city:Toftir;addr:country:FO;addr:housenumber:3;addr:postcode:650;addr:street:Toftavegur;amenity:townhall;name:Nes Kommuna;source:Umhvørvisstovan www.us.fo;townhall:type:municipality;us.fo:Adressutal:16443;us.fo:Galdandi_frá:2005-7-5;us.fo:Postnr:650;us.fo:Veganr:1808;us.fo:kommununr:15;website:https://nes.fo/
+node/444637785,62.2114912 -6.7083607,addr:city:Leirvík;addr:country:FO;addr:housenumber:6;addr:postcode:520;addr:street:Bryggjan;museum:maritime;name:Bátasavn;source:Umhvørvisstovan www.us.fo;tourism:museum;us.fo:Adressutal:16870;us.fo:Galdandi_frá:2018-4-6;us.fo:Postnr:520;us.fo:Veganr:3398;us.fo:kommununr:12
+node/444639449,62.1254321 -6.756254,addr:city:Strendur;addr:country:FO;addr:housenumber:7;addr:postcode:490;addr:street:Á Byrgi;amenity:fuel;name:Effo;operator:Effo;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:17219;us.fo:Galdandi_frá:10-01-2005;us.fo:Postnr:490;us.fo:Veganr:1939;us.fo:kommununr:17
+node/444642432,62.2992988 -7.0933494,addr:city:Eiði;addr:country:FO;addr:housenumber:5;addr:postcode:470;addr:street:Heimtún;email:fornminnisfelag@eidi.fo;name:Látrið;phone:+298 595280;source:Umhvørvisstovan www.us.fo;tourism:museum;us.fo:Adressutal:22909;us.fo:Galdandi_frá:2006-2-14;us.fo:Postnr:470;us.fo:Veganr:2362;us.fo:kommununr:19;website:https://www.facebook.com/EidiMuseum
+node/444642499,62.2989175 -7.0970626,addr:city:Eiði;addr:country:FO;addr:housenumber:37;addr:postcode:470;addr:street:Brekkuvegur;amenity:townhall;name:Eiðis Kommuna;source:Umhvørvisstovan www.us.fo;townhall:type:municipality;us.fo:Adressutal:22972;us.fo:Galdandi_frá:14-02-2006;us.fo:Postnr:470;us.fo:Veganr:2361;us.fo:kommununr:19
+node/444643252,62.1115745 -6.7231888,addr:city:Saltangará;addr:country:FO;addr:housenumber:17;addr:postcode:600;addr:street:Heiðavegur;amenity:bank;atm:yes;name:Eik;name:en:Betri;opening_hours:09:30-16:00;operator:Eik;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:24118;us.fo:Galdandi_frá:17-05-2006;us.fo:Postnr:600;us.fo:Veganr:2603;us.fo:kommununr:14
+node/444643275,62.1130462 -6.7224797,addr:city:Saltangará;addr:country:FO;addr:housenumber:46;addr:postcode:600;addr:street:Heiðavegur;amenity:community_centre;community_centre:youth_centre;name:Gula Smiðja;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:24078;us.fo:Galdandi_frá:17-05-2006;us.fo:Postnr:600;us.fo:Veganr:2603;us.fo:kommununr:14;website:https://www.facebook.com/GulaSmidja/
+node/444643404,62.1243582 -6.7228058,addr:city:Glyvrar;addr:country:FO;addr:housenumber:14;addr:postcode:625;addr:street:Glyvravegur;name:Bygdasavnið Forni;source:Umhvørvisstovan www.us.fo;tourism:museum;us.fo:Adressutal:24469;us.fo:Galdandi_frá:17-05-2006;us.fo:Postnr:625;us.fo:Veganr:2576;us.fo:kommununr:14
+node/444647324,62.2061253 -6.9999045,addr:city:Oyrarbakki;addr:country:FO;addr:housenumber:1;addr:postcode:400;addr:street:Hólmagøta;amenity:community_centre;community_centre:youth_centre;name:Eydnan;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:25223;us.fo:Galdandi_frá:23-06-2006;us.fo:Postnr:400;us.fo:Veganr:2673;us.fo:kommununr:18;website:https://www.facebook.com/eydnana/
+node/444647353,62.2085648 -6.9991811,addr:city:Oyrarbakki;addr:country:FO;addr:housenumber:3;addr:postcode:400;addr:street:Oyrarbakkavegur;amenity:community_centre;email:sunda@sunda.fo;name:Sunda Kommuna;operator:Sunda Kommuna;phone:+298 667271;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:25197;us.fo:Galdandi_frá:2006-6-23;us.fo:Postnr:400;us.fo:Veganr:2672;us.fo:kommununr:18;website:https://sunda.fo/
+node/444649209,62.22812 -6.5945998,addr:city:Klaksvík;addr:country:FO;addr:housenumber:38;addr:postcode:700;addr:street:Víkavegur;email:hotelklaksvik@hotelklaksvik.fo;internet_access:wlan;name:Hotel Klaksvik;phone:+298 455333;source:Umhvørvisstovan www.us.fo;tourism:hotel;us.fo:Adressutal:14670;us.fo:Galdandi_frá:30-11-2004;us.fo:Postnr:700;us.fo:Veganr:737;us.fo:kommununr:5;website:https://www.hotelklaksvik.fo/
+node/444649366,62.2305019 -6.5967123,addr:city:Klaksvík;addr:country:FO;addr:housenumber:84;addr:postcode:700;addr:street:Klaksvíksvegur;name:en:Museum of North Islands;source:Umhvørvisstovan www.us.fo;tourism:museum;us.fo:Adressutal:14808;us.fo:Galdandi_frá:30-11-2004;us.fo:Postnr:700;us.fo:Veganr:698;us.fo:kommununr:5
+node/444650611,62.2925821 -6.5256555,addr:city:Norðdepil;addr:country:FO;addr:housename:Universitetið í Norðdepli;addr:housenumber:2;addr:postcode:730;addr:street:Oyravegur;name:Norðoya Motorsavn;source:Umhvørvisstovan www.us.fo;tourism:museum;us.fo:Adressutal:28911;us.fo:Galdandi_frá:22-01-2007;us.fo:Postnr:730;us.fo:Veganr:2998;us.fo:kommununr:4
+node/444650859,62.2530312 -6.5267595,addr:city:Árnafjørður;addr:country:FO;addr:housenumber:9;addr:postcode:727;addr:street:Í Urðini;amenity:bank;name:Norðoya Sparikassi;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:31397;us.fo:Galdandi_frá:18-02-2009;us.fo:Postnr:727;us.fo:Veganr:3265;us.fo:kommununr:5
+node/444651086,62.2861643 -6.5293747,addr:city:Depil;addr:country:FO;addr:housenumber:1;addr:postcode:735;addr:street:Í Depli;museum:history;name:Depilsgarðurin;source:Umhvørvisstovan www.us.fo;tourism:museum;us.fo:Adressutal:29031;us.fo:Galdandi_frá:09-02-2007;us.fo:Postnr:735;us.fo:Veganr:2997;us.fo:kommununr:4
+node/444658529,62.0343951 -6.7908545,addr:city:Hoyvík;addr:country:FO;addr:housenumber:175;addr:postcode:188;addr:street:Millum Gilja;amenity:kindergarten;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:5542;us.fo:Galdandi_frá:30-11-2004;us.fo:Postnr:188;us.fo:Veganr:1226;us.fo:kommununr:29
+node/444658573,62.0291367 -6.7800997,addr:city:Hoyvík;addr:country:FO;addr:housenumber:11;addr:postcode:188;addr:street:Per Mohrs vegur;amenity:kindergarten;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:5476;us.fo:Galdandi_frá:30-11-2004;us.fo:Postnr:188;us.fo:Veganr:1313;us.fo:kommununr:29
+node/444659363,62.0126251 -6.8018726,addr:city:Tórshavn;addr:country:FO;addr:housenumber:49;addr:postcode:100;addr:street:Oyggjarvegur;source:Umhvørvisstovan www.us.fo;tourism:hostel;us.fo:Adressutal:17404;us.fo:Galdandi_frá:10-02-2005;us.fo:Postnr:100;us.fo:Veganr:1259;us.fo:kommununr:29
+node/444660746,62.1539369 -7.1686228,addr:city:Vestmanna;addr:country:FO;addr:housenumber:8;addr:postcode:350;addr:street:Bakkavegur;amenity:community_centre;name:Vestmanna kommuna;operator:Vestmanna kommuna;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:18821;us.fo:Galdandi_frá:18-04-2005;us.fo:Postnr:350;us.fo:Veganr:2087;us.fo:kommununr:28;website:https://vestmanna.fo/
+node/444663506,62.1190041 -7.0769072,addr:city:Kvívík;addr:country:FO;addr:housenumber:1;addr:postcode:340;addr:street:Frammi í Gerði;amenity:community_centre;email:kvivik@kvivik.fo;name:Kvívíkar Kommuna;operator:Kvívíkar Kommuna;phone:+298 66 24 00;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:23363;us.fo:Galdandi_frá:20-02-2006;us.fo:Postnr:340;us.fo:Veganr:2455;us.fo:kommununr:27;website:https://www.kvivik.fo
+node/488903313,62.1094582 -6.7226634,addr:city:Runavík;addr:country:FO;addr:housenumber:6;addr:postcode:620;addr:street:Heiðavegur;amenity:restaurant;name:Hotel Runavík;opening_hours:Mo-Su 17:00-22:00;source:Umhvørvisstovan www.us.fo;tourism:hotel;us.fo:Adressutal:24060;us.fo:Galdandi_frá:17/05/2006;us.fo:Postnr:620;us.fo:Veganr:2608;us.fo:kommununr:14;website:https://www.hotelrunavik.fo/
+node/517328335,61.5552979 -6.8079252,name:Hotel Tvøroyri;tourism:hotel
+node/517328336,61.5559987 -6.8073736,amenity:cinema;name:Suður Bio
+node/564831920,62.0175433 -6.7806919,addr:city:Tórshavn;addr:housenumber:1;addr:postcode:100;addr:street:Oman Viðarlund;amenity:arts_centre;architect:J.P. Gregoriussen and Niels F. Truelsen;email:info@art.fo;name:Listaskálin;operator:Listasavn Føroya;phone:+298 22 35 79;website:https://art.fo/?_l=en
+node/564832266,62.0130626 -6.7761689,addr:city:Tórshavn;addr:housenumber:34;addr:postcode:100;addr:street:Niels Finsens gøta;amenity:theatre;email:sjonleik@sjonleik.fo;image:https://live.staticflickr.com/3401/3270740190_6c8f8391ff_z.jpg;name:Sjónleikarhúsið;operator:Havnar Sjónleikarfelag;phone:+298 28 11 31;website:https://sjonleik.fo/
+node/577614337,62.0139788 -6.7728667,public_transport:stop_position
+node/585343727,62.2067177 -6.7120288,addr:city:Leirvík;addr:country:FO;addr:housenumber:45;addr:postcode:520;addr:street:Garðsvegur;amenity:community_centre;name:Bygdarhúsið í Leirvík;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:31785;us.fo:Galdandi_frá:07-12-2009;us.fo:Postnr:520;us.fo:Veganr:1918;us.fo:kommununr:12
+node/597500906,62.1142696 -6.7224066,addr:city:Saltangará;addr:country:FO;addr:housenumber:54;addr:postcode:600;addr:street:Heiðavegur;amenity:bank;atm:yes;name:Bank Nordik;operator:Bank Nordik;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:24085;us.fo:Galdandi_frá:17/05/2006;us.fo:Postnr:600;us.fo:Veganr:2603;us.fo:kommununr:14
+node/600235512,62.1202577 -6.7222762,amenity:fuel;name:en:EFFO;operator:Magn
+node/604979887,62.0479059 -7.1917414,amenity:school
+node/604981485,62.0482742 -7.1932612,bus:yes;highway:bus_stop;public_transport:platform
+node/604981522,62.0485885 -7.1890526,highway:bus_stop
+node/604984930,62.0509175 -7.1889678,name:Kálvalíð;note:Call +298 332425 or +298 275325;tourism:museum;website:https://visitvagar.fo/welcome-to-vagar/about/about-vagar-and-mykines/midvagur/kalvalid/
+node/604992040,62.0676645 -7.2790277,bus:yes;highway:bus_stop;public_transport:platform
+node/612617136,62.0092614 -6.7728442,artist_name:Hans Pauli Olsen;artwork_type:sculpture;material:bronze;name:Nólsoyar Páll;tourism:artwork
+node/619530905,62.1090494 -6.7234152,bus:yes;highway:bus_stop;name:Runavík;public_transport:platform
+node/619530913,62.1228927 -6.7225077,bus:yes;highway:bus_stop;name:Glyvrar;public_transport:platform
+node/619530922,62.2009983 -6.8537422,highway:bus_stop;name:Skálabotn
+node/619530926,62.1682991 -6.7613972,bus:yes;highway:bus_stop;name:Skipanes;public_transport:platform
+node/625272340,61.5552837 -6.805531,amenity:school;name:Tvøroyrar Skúli
+node/638837218,61.9969555 -6.7841809,bus:yes;highway:bus_stop;name:Traðagøta;public_transport:platform;ref:170
+node/638861247,61.9998542 -6.8285046,bus:yes;highway:bus_stop;name:Norðasta Horn;public_transport:platform;shelter:yes
+node/678905723,62.2289089 -6.5857649,amenity:fuel;name:Klaksvik Effo;operator:Effo;wheelchair:yes
+node/678938591,62.1782547 -6.7645914,amenity:bench;tourism:picnic_site
+node/683373673,62.1880347 -6.7501903,bus:yes;highway:bus_stop;name:Syðrugota;public_transport:platform
+node/683373731,62.1791638 -6.7605412,name:Syðrugota;tourism:viewpoint
+node/683374065,62.1779701 -6.7652083,amenity:bench;tourism:picnic_site
+node/718905820,62.0801667 -7.461,ele:66.83;man_made:lighthouse;name:de:Leuchtturm Gåsholm;seamark:light:character:Fl;seamark:light:colour:white;seamark:light:group:2;seamark:light:height:32;seamark:light:period:5;seamark:light:range:5;seamark:light:reference:L 4454.6;seamark:light:sequence:0.7+(0.8)+0.7+(2.8);seamark:name:Gasholm;seamark:type:light_minor;source:Umhvørvisstovan www.us.fo;US NGA Pub. 115. 2010-09-09.;us.fo:fixpunkt_lysing:Gáshólmur vitin;us.fo:fixpunkt_nr:30009
+node/719113403,62.3417286 -6.261373,man_made:lighthouse;name:Fugloyar viti
+node/719113406,62.3702208 -6.8115903,man_made:lighthouse;name:Kalsoyar viti;name:da:Kallur Fyr;name:de:Leuchtturm Kallur;seamark:light:1:character:LFl;seamark:light:1:colour:white;seamark:light:1:height:240;seamark:light:1:period:15;seamark:light:1:range:10;seamark:light:1:sector_end:312;seamark:light:1:sector_start:10;seamark:light:1:sequence:3+(12);seamark:light:reference:L 4430;seamark:name:Kallur;seamark:type:light_major;source:US NGA Pub. 115. 2010-09-09.;wikidata:Q28374928;wikimedia_commons:Category:Kallur Lighthouse
+node/724912923,61.9324613 -6.8684807,man_made:lighthouse
+node/724912960,61.9817268 -6.8598253,"man_made:lighthouse;seamark:information:Shown July 15 to June 1;seamark:light:1:character:Fl;seamark:light:1:colour:red;seamark:light:1:group:2;seamark:light:1:period:10;seamark:light:1:range:8;seamark:light:1:sector_end:78;seamark:light:1:sector_start:0;seamark:light:1:sequence:1+(1),1+(7);seamark:light:2:character:Fl;seamark:light:2:colour:green;seamark:light:2:group:2;seamark:light:2:period:10;seamark:light:2:range:8;seamark:light:2:sector_end:108;seamark:light:2:sector_start:78;seamark:light:2:sequence:1+(1),1+(7);seamark:light:3:character:Fl;seamark:light:3:colour:white;seamark:light:3:group:2;seamark:light:3:period:10;seamark:light:3:range:12;seamark:light:3:sector_end:120;seamark:light:3:sector_start:108;seamark:light:3:sequence:1+(1),1+(7);seamark:light:4:character:Fl;seamark:light:4:colour:red;seamark:light:4:group:2;seamark:light:4:period:10;seamark:light:4:range:8;seamark:light:4:sector_end:135;seamark:light:4:sector_start:120;seamark:light:4:sequence:1+(1),1+(7);seamark:light:5:character:Fl;seamark:light:5:colour:green;seamark:light:5:group:2;seamark:light:5:period:10;seamark:light:5:range:8;seamark:light:5:sector_end:327;seamark:light:5:sector_start:288;seamark:light:5:sequence:1+(1),1+(7);seamark:light:6:character:Fl;seamark:light:6:colour:white;seamark:light:6:group:2;seamark:light:6:period:10;seamark:light:6:range:12;seamark:light:6:sector_end:0;seamark:light:6:sector_start:327;seamark:light:6:sequence:1+(1),1+(7);seamark:light:reference:L 4450;seamark:name:Velbestad;seamark:type:light_minor;source:US NGA Pub. 115. 2010-09-09."
+node/724912991,62.0286911 -6.7492799,man_made:lighthouse
+node/724912999,61.486866 -6.7049331,man_made:lighthouse;name:Porkeris Viti
+node/753747713,62.1189222 -6.9829485,bench:yes;bus:yes;highway:bus_stop;name:Kollfjarðardalur (effo støðin);public_transport:platform;shelter:yes
+node/778493158,62.0096921 -6.8167688,man_made:cairn;name:Vesturvarði;tourism:viewpoint
+node/793069504,62.0146125 -6.7732293,bench:yes;bus:yes;highway:bus_stop;name:SMS;public_transport:platform;shelter:yes
+node/793069740,62.0174327 -6.7756832,bench:yes;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/793070219,62.0300361 -6.7635643,bus:yes;highway:bus_stop;public_transport:platform
+node/793070673,62.0290967 -6.7742187,bus:yes;highway:bus_stop;public_transport:platform
+node/793071108,62.0340055 -6.7813041,highway:bus_stop
+node/803015289,62.1541237 -7.1665682,bench:yes;bus:yes;highway:bus_stop;name:Torgið;public_transport:platform;shelter:yes;tactile_paving:no
+node/803015295,62.1155435 -7.0517999,bench:yes;bus:yes;highway:bus_stop;name:Stykkið;public_transport:platform;shelter:yes;tactile_paving:no
+node/859539561,62.1084103 -6.725929,amenity:theatre;name:Løkshøll;website:https://loksholl.fo/
+node/878798816,62.1077425 -6.6859414,bus:yes;highway:bus_stop;name:Rituvík;public_transport:platform
+node/894751561,61.8339174 -6.8178107,amenity:bank;atm:yes;check_date:2023-08-05;name:Bank Nordik;opening_hours:Mo-Fr 09:00-16:00;operator:Bank Nordik
+node/896054193,62.2114774 -7.0004396,amenity:bank;atm:no;name:Eik;opening_hours:09:30-16:00;operator:Eik
+node/896054227,61.5553379 -6.8128431,amenity:bank;atm:yes;name:Eik Banki;opening_hours:Mo-Fr 09:30-16:00;operator:Eik
+node/896054246,62.0227796 -6.7654301,amenity:bank;atm:yes;name:Noroyðar Sparikassi;opening_hours:Mo-Fr 09:30-16:00;operator:Noroyðar Sparikassi
+node/896054298,62.2250836 -6.5825941,amenity:bank;atm:yes;check_date:2023-08-06;name:Betri Banki;opening_hours:Mo-Fr 09:30-16:00;operator:Eik;wheelchair:limited
+node/896054457,62.0710221 -7.3087084,amenity:bank;atm:yes;name:Eik Banki;opening_hours:Mo-Fr 09:30-16:00;operator:Eik
+node/903718878,62.1538904 -7.1751949,bus:yes;highway:bus_stop;name:Vestmanna;public_transport:platform;shelter:yes
+node/903719384,62.2263827 -6.5850488,bench:no;bus:yes;highway:bus_stop;name:Klaskvik;public_transport:platform;shelter:no;wheelchair:limited
+node/938122110,62.0957334 -6.944479,bus:yes;highway:bus_stop;name:Kollfjarðardalur (Tunnilin);public_transport:platform;shelter:yes
+node/1117218378,57.59589 9.9755886,amenity:ferry_terminal;ferry:yes;name:Hirtshals;operator:Fjord Line;Smyril Line;public_transport:stop_position
+node/1124688126,61.9030609 -6.8785315,bus:yes;highway:bus_stop;public_transport:platform
+node/1208591183,61.3940007 -6.6791663,"man_made:lighthouse;name:Akraberg;name:de:Leuchtturm Akraberg;seamark:fog_signal:category:horn;seamark:fog_signal:group:1;seamark:fog_signal:period:60;seamark:light:1:character:LFl;seamark:light:1:colour:white;seamark:light:1:group:2;seamark:light:1:height:94;seamark:light:1:period:20;seamark:light:1:range:20;seamark:light:1:sector_end:335;seamark:light:1:sector_start:214;seamark:light:1:sequence:2+(2),2+(14);seamark:light:2:character:LFl;seamark:light:2:colour:red;seamark:light:2:group:2;seamark:light:2:height:94;seamark:light:2:period:20;seamark:light:2:range:14;seamark:light:2:sector_end:355;seamark:light:2:sector_start:335;seamark:light:2:sequence:2+(2),2+(14);seamark:light:3:character:LFl;seamark:light:3:colour:green;seamark:light:3:group:2;seamark:light:3:height:94;seamark:light:3:period:20;seamark:light:3:range:14;seamark:light:3:sector_end:10;seamark:light:3:sector_start:355;seamark:light:3:sequence:2+(2),2+(14);seamark:light:4:character:LFl;seamark:light:4:colour:white;seamark:light:4:group:2;seamark:light:4:height:94;seamark:light:4:period:20;seamark:light:4:range:20;seamark:light:4:sector_end:80;seamark:light:4:sector_start:10;seamark:light:4:sequence:2+(2),2+(14);seamark:light:reference:L 4342;seamark:name:Akraberg;seamark:type:light_major;source:US NGA Pub. 115. 2010-09-09."
+node/1208591368,61.9572351 -6.6144701,man_made:lighthouse;name:Nólsoyar Viti;name:da:Nólsoy Fyr;name:de:Leuchtturm Nólsoy;name:en:Nólsoy Lighthouse;seamark:information:Shown July 20 to May 20;seamark:light:1:character:LFl;seamark:light:1:colour:white;seamark:light:1:height:72;seamark:light:1:period:30;seamark:light:1:range:21;seamark:light:1:sector_end:30;seamark:light:1:sector_start:190;seamark:light:1:sequence:2.5+(27.5);seamark:light:reference:L 4388;seamark:name:Nolsoy;seamark:type:light_minor;source:US NGA Pub. 115. 2010-09-09.;start_date:1893;wikidata:Q28374859;wikimedia_commons:File:Lighthouse Nólsoy.jpg
+node/1208591378,61.9486667 -6.6391667,man_made:lighthouse;name:da:Borðan Fyr;name:de:Leuchtturm Borðan;name:en:Borðan Lighthouse;seamark:fog_signal:category:horn;seamark:fog_signal:group:2;seamark:fog_signal:period:60;seamark:light:1:character:Iso;seamark:light:1:colour:white;seamark:light:1:height:39;seamark:light:1:period:2;seamark:light:1:range:9;seamark:light:1:sector_end:74.7;seamark:light:1:sector_start:303;seamark:light:2:character:Iso;seamark:light:2:colour:red;seamark:light:2:height:39;seamark:light:2:period:2;seamark:light:2:range:7;seamark:light:2:sector_end:96.6;seamark:light:2:sector_start:74.7;seamark:light:3:character:Iso;seamark:light:3:colour:green;seamark:light:3:height:39;seamark:light:3:period:2;seamark:light:3:range:7;seamark:light:3:sector_end:126.9;seamark:light:3:sector_start:96.6;seamark:light:4:character:Iso;seamark:light:4:colour:white;seamark:light:4:height:39;seamark:light:4:period:2;seamark:light:4:range:9;seamark:light:4:sector_end:150.1;seamark:light:4:sector_start:126.9;seamark:light:5:character:Iso;seamark:light:5:colour:red;seamark:light:5:height:39;seamark:light:5:period:2;seamark:light:5:range:7;seamark:light:5:sector_start:150.1;seamark:light:reference:L 4390;seamark:name:Borin;seamark:type:light_major;source:US NGA Pub. 115. 2010-09-09.;wikidata:Q28374630;wikimedia_commons:File:Borðan Lighthouse-2.jpg
+node/1208591796,62.0785439 -7.3886019,man_made:lighthouse;name:Mulin;name:de:Leuchtturm Mulin;seamark:light:1:character:Fl;seamark:light:1:colour:green;seamark:light:1:height:33;seamark:light:1:period:3;seamark:light:1:range:5;seamark:light:1:sector_end:121;seamark:light:1:sector_start:97;seamark:light:1:sequence:0.7+(2.3);seamark:light:2:character:Fl;seamark:light:2:colour:white;seamark:light:2:height:33;seamark:light:2:period:3;seamark:light:2:range:8;seamark:light:2:sector_end:125;seamark:light:2:sector_start:121;seamark:light:2:sequence:0.7+(2.3);seamark:light:3:character:Fl;seamark:light:3:colour:red;seamark:light:3:height:33;seamark:light:3:period:3;seamark:light:3:range:6;seamark:light:3:sector_end:267;seamark:light:3:sector_start:125;seamark:light:3:sequence:0.7+(2.3);seamark:light:reference:L 4455;seamark:name:Mulin;seamark:type:light_minor;source:US NGA Pub. 115. 2010-09-09.
+node/1209802121,62.0359167 -6.7678107,man_made:tower
+node/1250138237,62.0170788 -6.761549,bus:yes;highway:bus_stop;public_transport:platform;ref:221;shelter:no
+node/1250138239,62.0183094 -6.7655896,bus:yes;highway:bus_stop;public_transport:platform;ref:222;shelter:yes
+node/1250138240,62.0225083 -6.7637514,bus:yes;highway:bus_stop;name:Óðinshædd (Posthúsið);public_transport:platform;ref:223;shelter:yes
+node/1250138241,62.0140789 -6.758661,bus:yes;highway:bus_stop;name:Tórgarðsgøta;public_transport:platform;ref:219;shelter:no
+node/1250138242,62.0142142 -6.7621888,bus:yes;highway:bus_stop;name:Eysturskúlin;public_transport:platform;ref:220;shelter:yes
+node/1269850977,62.0027573 -6.7774959,bus:yes;highway:bus_stop;name:Landssjúkrahúsið;public_transport:platform;ref:108;shelter:no
+node/1269851103,62.0008844 -6.7845925,bus:yes;highway:bus_stop;public_transport:platform;shelter:no
+node/1269851165,62.00673 -6.7773564,bus:yes;highway:bus_stop;public_transport:platform;shelter:no
+node/1271101599,62.0210884 -6.7649994,bus:yes;highway:bus_stop;name:Óðinshædd (Posthúsið);public_transport:platform;shelter:no
+node/1314602866,62.0481186 -7.1834167,check_date:2023-08-08;leisure:sports_centre;name:Ven
+node/1416649139,62.01139 -6.7763006,bus:yes;highway:bus_stop;public_transport:platform
+node/1416649140,62.0131476 -6.77865,bus:yes;highway:bus_stop;public_transport:platform
+node/1416649141,62.014108 -6.7800024,bus:yes;highway:bus_stop;public_transport:platform
+node/1416649142,62.015974 -6.7830733,bus:yes;highway:bus_stop;public_transport:platform
+node/1416649143,62.0179143 -6.7857939,bus:yes;highway:bus_stop;public_transport:platform
+node/1416649144,62.0193379 -6.787204,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/1502254350,62.115129 -6.7234101,addr:city:Saltangará;addr:housenumber:41;addr:postcode:600;addr:street:Heiðavegur;amenity:fuel;brand:Magn;fuel:biodiesel:no;fuel:biogas:no;fuel:diesel:yes;name:Magn Saltangará;phone:+298 347445;website:https://www.magn.fo/fo/yvirlit-yvir-stodhir
+node/1577712214,62.0115148 -6.7592795,bus:yes;highway:bus_stop;public_transport:platform
+node/1580770158,62.1202814 -7.04473,bench:no;bus:yes;highway:bus_stop;name:Leynar;public_transport:platform;shelter:no
+node/1580770166,62.0368353 -6.766024,bus:yes;highway:bus_stop;public_transport:platform;ref:226;shelter:yes
+node/1582385410,62.0419334 -6.7708644,bus:yes;highway:bus_stop;name:Hvítanes;public_transport:platform;ref:227;shelter:yes
+node/1582385418,62.035937 -6.7656564,highway:bus_stop;shelter:yes
+node/1637883929,62.024023 -6.7850021,bus:yes;highway:bus_stop;public_transport:platform
+node/1637883934,62.0242195 -6.7858833,bus:yes;highway:bus_stop;public_transport:platform
+node/1637883936,62.0258418 -6.7887101,bus:yes;highway:bus_stop;public_transport:platform
+node/1637883943,62.0269206 -6.7881956,bus:yes;highway:bus_stop;public_transport:platform
+node/1637883948,62.0278954 -6.7763041,bus:yes;highway:bus_stop;public_transport:platform
+node/1637883956,62.0286809 -6.7826619,bus:yes;highway:bus_stop;public_transport:platform
+node/1637883958,62.0287199 -6.7706863,bus:yes;highway:bus_stop;public_transport:platform;ref:332
+node/1637883972,62.0325516 -6.7663593,highway:bus_stop;shelter:yes
+node/1637883973,62.0331436 -6.7662989,highway:bus_stop
+node/1637883989,62.0485648 -6.8026165,highway:bus_stop;shelter:no
+node/1637883992,62.0477911 -6.7939296,highway:bus_stop;name:Á Hjalla;shelter:yes
+node/1637883994,62.020734 -6.7757735,bus:yes;highway:bus_stop;name:Á Hálsi;public_transport:platform;shelter:yes
+node/1647922995,62.0007231 -6.7948413,bus:yes;highway:bus_stop;public_transport:platform
+node/1647922997,62.0034314 -6.8021556,bus:yes;highway:bus_stop;public_transport:platform
+node/1647922998,62.0049375 -6.7818763,bus:yes;departures_board:timetable;highway:bus_stop;name:1090 Frælsið;public_transport:platform;ref:1090 Frælsið;shelter:yes
+node/1647922999,62.006502 -6.7845929,bus:yes;highway:bus_stop;public_transport:platform
+node/1647923000,62.0072637 -6.8019291,bus:yes;highway:bus_stop;name:en:Handilsskùlin;public_transport:platform
+node/1647923001,62.0072375 -6.785567,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/1647923003,62.0086493 -6.8002478,bus:yes;highway:bus_stop;name:en:145;public_transport:platform;shelter:yes
+node/1647923004,62.0186264 -6.7888581,bus:yes;highway:bus_stop;public_transport:platform
+node/1647923005,62.020863 -6.7776343,bus:yes;highway:bus_stop;public_transport:platform
+node/1702691324,62.2632575 -6.8447019,highway:bus_stop;name:Hellur
+node/1769639252,61.8580324 -6.831013,covered:yes;leisure:sports_centre;sport:swimming
+node/1772988773,61.4230783 -6.7554084,name:Beinisvørð;tourism:viewpoint;wikidata:Q792079;wikipedia:en:Beinisvørð
+node/1772988775,61.5440681 -6.7594889,name:Kúlugjógv;tourism:viewpoint
+node/1811961012,62.032251 -6.7897212,highway:bus_stop
+node/1811961013,62.0292861 -6.7843761,bus:yes;highway:bus_stop;public_transport:platform
+node/1811961014,62.0302887 -6.7855771,bus:yes;highway:bus_stop;public_transport:platform
+node/1811961015,62.0331329 -6.7912479,highway:bus_stop
+node/1838112260,61.9026062 -6.8799919,amenity:townhall
+node/2284322973,62.0449965 -7.1864532,name:Pakkhúsið Gisting í Miðvági;source:http://www.facebook.com/lonapjohansen?fref=nf_fr;tourism:hostel
+node/2284323975,62.0478091 -7.1824033,name:Tórhús;source:http://www.facebook.com/pages/Torhus/230003150479864?fref=ts;tourism:hostel
+node/2284333027,62.0480698 -7.1656112,amenity:library
+node/2475147217,61.6850348 -6.7588386,amenity:place_of_worship;name:Kirkjugrundin;religion:christian
+node/3065239486,62.0404598 -6.8247474,historic:ruins;name:Fransatoftir
+node/3087872302,62.0334531 -6.8044254,historic:ruins
+node/3278483879,62.0030289 -6.7980383,bus:yes;highway:bus_stop;name:SEV Landavegin;public_transport:platform;ref:306;shelter:yes
+node/3278483883,62.0039585 -6.7937852,bus:yes;highway:bus_stop;public_transport:platform;ref:307;shelter:yes
+node/3278483884,62.0046952 -6.7916463,bus:yes;highway:bus_stop;name:Musikkskúlin;public_transport:platform;ref:308;shelter:yes
+node/3324119819,62.0093125 -6.7799615,bus:yes;highway:bus_stop;name:Jóannesar Paturssonar gøta;public_transport:platform;ref:151
+node/3368098076,62.0051442 -6.7739863,addr:city:Tórshavn;addr:postcode:100;kayak:put_in;leisure:sports_centre;name:Havnar kajakkfelag;name_1:Tórshavn Kayak Club;sport:canoe
+node/3523482481,61.9862346 -6.7524482,"historic:monument;inscription:""LOYSING"" and a faroese flag.;name:Loysing;name:en:Independence"
+node/3533493143,62.2463092 -7.2097893,tourism:viewpoint
+node/3587349323,61.9935435 -6.7748628,bus:yes;highway:bus_stop;name:Hamarin;operator:Tórshavnar kommuna;public_transport:stop_position
+node/4125978810,62.2247775 -6.5815246,addr:city:Klaksvík;addr:housenumber:5;addr:postcode:700;addr:street:Bøgøta;amenity:cinema;name:Atlantis Bio;wheelchair:no
+node/4227817891,61.562377 -6.8519684,name:Stadion TB Tvøroyri;tourism:attraction;wikidata:Q65119544;wikimedia_commons:Category:Við Stórá;wikipedia:en:Við Stórá
+node/4227858194,62.1941504 -7.0434694,name:Footballstadium EB/Streymur;tourism:attraction
+node/4231439705,62.3356112 -6.7630346,artwork_type:sculpture;name:Kópakonan;name:en:Seal woman;tourism:artwork
+node/4301281591,62.0476302 -7.1653272,highway:bus_stop;name:Midvagur
+node/4301281593,62.0118366 -6.7929338,bus:yes;highway:bus_stop;name:147;public_transport:platform
+node/4301321890,62.0535116 -7.1572649,highway:bus_stop
+node/4301323793,62.0568929 -7.1504413,highway:bus_stop
+node/4301332989,62.144874 -7.1755016,tourism:viewpoint
+node/4301333089,62.2033705 -6.7567214,highway:bus_stop
+node/4301333189,62.0095997 -6.6702091,tourism:viewpoint
+node/4301333289,62.0476889 -7.1769229,highway:bus_stop
+node/4334420892,62.2468442 -7.1764549,email:duvugardar@olivant.fo;name:Dúvugarðar;phone:+298596560;tourism:museum;website:https://www.facebook.com/duvugardar
+node/4348702914,62.3274065 -6.941655,tourism:viewpoint
+node/4368883990,62.129404 -7.3464577,name:de:Klippe hinter dem See Fjallavatn;tourism:viewpoint
+node/4369410190,62.1065461 -7.434789,tourism:viewpoint
+node/4369455489,62.0210314 -7.2292544,tourism:viewpoint
+node/4370234292,62.0293356 -6.7585445,"email:savn@savn.fo;museum:open_air,_local,history;name:Hoyvíksgarður;tourism:museum;website:https://www.tjodsavnid.fo/framsyningar/hoyviksgardur"
+node/4370234791,62.1186355 -7.0765156,bus:yes;highway:bus_stop;name:en:Kvívík;public_transport:platform
+node/4372005992,62.0466664 -7.2078865,highway:bus_stop
+node/4372035890,62.0726428 -7.2492944,bus:yes;highway:bus_stop;public_transport:platform
+node/4372035891,62.0973482 -7.6829031,name:Varpið;tourism:viewpoint
+node/4372035892,62.0701366 -7.3257322,amenity:fuel;name:Effo;name:en:Effo
+node/4372111389,62.0702436 -7.3130922,highway:bus_stop;shelter:yes
+node/4372111489,62.0723634 -7.3060116,highway:bus_stop;shelter:yes
+node/4374717098,62.3600329 -6.5309244,highway:bus_stop
+node/4374717310,62.2235056 -6.5738262,artwork_type:sculpture;description:Model of a Mustad Atlantic Limerick fishing hook.;material:steel;name:Húkurin;tourism:artwork;wheelchair:yes
+node/4374729603,62.2115336 -6.7096431,bus:yes;highway:bus_stop;public_transport:platform
+node/4374730306,62.2274343 -6.5914583,amenity:fountain
+node/4374735093,62.1517339 -6.9432664,bus:yes;highway:bus_stop;public_transport:platform
+node/4374746693,62.171866 -6.9724332,highway:bus_stop
+node/4374754690,62.2070435 -6.9985408,bus:yes;highway:bus_stop;name:en:Oyrarbakki;public_transport:platform
+node/4375385689,62.0088436 -6.7994902,bus:yes;highway:bus_stop;name:en:145;public_transport:platform
+node/4376061596,62.2855908 -7.0071035,tourism:picnic_site
+node/4376061597,62.0982257 -6.7149108,tourism:picnic_site
+node/4376074894,62.0992463 -6.7243369,tourism:artwork
+node/4377679205,61.9840003 -6.8577492,highway:bus_stop
+node/4377702500,61.9541958 -6.7980714,bench:yes;bin:yes;highway:bus_stop;name:en:Kirkjubøur;shelter:yes
+node/4377742392,61.9520554 -6.7941483,highway:bus_stop
+node/4377742393,61.9835851 -6.8540633,bus:yes;highway:bus_stop;public_transport:platform
+node/4379206096,62.0318647 -7.2189869,tourism:picnic_site
+node/4421764373,61.5326579 -6.8111897,bus:yes;highway:bus_stop;name:Øravík;public_transport:platform;source:Mapillary
+node/4440997679,62.1027485 -7.4217153,ele:434;mountain_pass:yes;name:Á Skarði;natural:saddle;tourism:viewpoint
+node/4625794589,62.0700107 -6.9423738,name:da:Færøerne Arrest;tourism:attraction
+node/4790055541,61.4716431 -6.82701,tourism:picnic_site
+node/4844252221,62.1247553 -7.0805749,tourism:picnic_site
+node/4881827799,62.2309559 -6.5893208,addr:city:Klaksvík;addr:housenumber:1;addr:postcode:700;addr:street:Stangavegur;amenity:fuel;brand:Magn;name:Magn Klaksvík;phone:+298 347449;website:https://www.magn.fo/fo/yvirlit-yvir-stodhir;wheelchair:yes
+node/4905804518,62.1039087 -7.6424022,name:Camping;tourism:camp_site
+node/4918755823,62.0447496 -7.1256869,name:Trøllkonufingur;tourism:viewpoint
+node/4921804721,62.335188 -6.7639275,tourism:viewpoint
+node/4945471351,62.0330487 -6.8667504,tourism:picnic_site
+node/4992753687,62.1293935 -6.5912737,man_made:lighthouse;name:Mjovanes lighthouse
+node/5007334722,62.0235362 -7.2286739,tourism:viewpoint
+node/5035320122,62.3504246 -6.582,tourism:picnic_site
+node/5035320221,62.3323545 -6.5752505,tourism:picnic_site
+node/5045101574,61.784433 -6.6745401,name:Dalur Campsite;tourism:camp_site
+node/5045101575,61.466765 -6.836441,name:Camping Vágseiði;tourism:camp_site
+node/5045101577,62.15629 -6.87904,name:Camping Selatrað;tourism:camp_site
+node/5061001521,62.213165 -6.7141718,addr:city:Leirvík;addr:country:FO;addr:housenumber:5;addr:postcode:520;addr:street:Høvdavegur;amenity:fuel;name:Effo;name:en:Effo;operator:Effo;source:Umhvørvisstovan www.us.fo;us.fo:Adressutal:16911;us.fo:Galdandi_frá:2004-12-2;us.fo:Postnr:520;us.fo:Veganr:1920;us.fo:kommununr:12
+node/5104868514,61.9975007 -6.7698356,description:Red beacon;man_made:lighthouse;source:http://www.portoftorshavn.com/get.file?ID=15644
+node/5376090599,62.1075049 -7.4357777,name:Múlafossur;tourism:attraction;waterway:waterfall
+node/5376177397,62.110543 -7.4386619,tourism:picnic_site
+node/5396384075,62.2222911 -6.585753,tourism:artwork
+node/5396384076,62.2293016 -6.5845946,tourism:artwork
+node/5594717560,62.0348724 -6.8288952,historic:ruins;name:við Gellingarklett
+node/5595083049,62.110452 -7.4371872,tourism:picnic_site
+node/5604686297,62.3602866 -6.5439107,tourism:viewpoint
+node/5612428460,62.3038286 -7.0569039,tourism:viewpoint
+node/5615304857,62.255056 -6.5361478,bus:yes;highway:bus_stop;public_transport:platform
+node/5616021805,62.1199752 -7.0752637,addr:city:Kvívík;addr:housenumber:6;addr:postcode:340;addr:street:Frammi í Gerði;leisure:sports_centre;sport:swimming
+node/5620284458,61.4732078 -6.818227,amenity:fuel;name:effo
+node/5620356882,61.4034278 -6.7115771,bus:yes;highway:bus_stop;public_transport:platform
+node/5620427072,61.5086744 -6.739871,name:curved basalt;tourism:attraction
+node/5622804180,61.5752231 -6.8239696,name:Hundagjógv;name:de:Hvannhagi;name:en:Hvannhagi;tourism:viewpoint
+node/5627442715,61.844903 -6.8928429,historic:monument
+node/5627443836,61.835682 -6.8291869,name:Knitted Stone;natural:stone;tourism:attraction
+node/5646353221,62.0702956 -7.2553289,artwork_type:sculpture;name:Nykurin;name:en:The Nix;tourism:artwork
+node/5646369827,62.0714011 -6.9413365,tourism:viewpoint
+node/5647873093,62.2518753 -7.0490189,name:Fossá waterfall view;tourism:viewpoint
+node/5650394621,62.1025451 -7.6449715,addr:city:Mykines;addr:housenumber:18;addr:postcode:388;addr:street:Gróthúsvegur;email:valla@olivant.fo;guide:sightseeing;name:Visit Mykines;office:guide;opening_hours:Mo-Su 11:00-11:30;phone:+298 285072;tourism:attraction;website:http://visitmykines.com/
+node/5651100117,62.2975936 -6.9615115,tourism:viewpoint
+node/5651139869,62.3287815 -6.9415523,tourism:viewpoint
+node/5652445332,62.1026005 -7.1433972,name:en:Viewpoint;name:ko:전망;tourism:viewpoint
+node/5652490232,62.2370315 -6.6172979,tourism:viewpoint;wheelchair:no
+node/5654620580,62.1159124 -7.0900508,tourism:viewpoint
+node/5658230363,62.3617001 -6.7866073,tourism:viewpoint
+node/5658230369,62.3715436 -6.8069993,tourism:viewpoint
+node/5658231134,62.3708697 -6.8125956,tourism:viewpoint
+node/5658231569,62.3317832 -6.9532856,tourism:viewpoint
+node/5661004312,62.3549693 -6.5809484,tourism:viewpoint
+node/5816653754,62.3337319 -6.7714573,name:en:Camping Mikladalur;tourism:camp_site
+node/5844823036,62.0058837 -6.7726731,"amenity:university;name:Náttúruvísindadeildin, Fróðskaparsetur Føroya"
+node/5859536485,62.3019569 -6.5367311,amenity:bench;tourism:picnic_site
+node/6036969552,62.223877 -6.5771176,tourism:caravan_site;wheelchair:limited
+node/6213996877,62.2204025 -6.808777,bus:yes;highway:bus_stop;public_transport:platform
+node/6283561115,62.2838052 -6.9186926,name:Elduvik Gorge;tourism:viewpoint
+node/6376625993,61.5482356 -6.7470821,name:Hol í Hellu Cave;name:en:Hol í Hellu Cave;tourism:attraction
+node/6482947083,62.0547385 -6.9188039,tourism:viewpoint
+node/6482947086,62.1728757 -6.9724262,name:Former Whaling Station;tourism:museum
+node/6498588793,61.5565653 -6.8171672,bus:yes;highway:bus_stop;public_transport:platform
+node/6498588795,61.5596952 -6.824188,artwork_type:sculpture;tourism:artwork
+node/6564531754,62.2994758 -7.0916182,bench:yes;bus:yes;departures_board:no;highway:bus_stop;name:Eiði;operator:Stran;public_transport:platform;ref:200;shelter:no
+node/6564904332,61.9834626 -6.8550021,direction:S;tourism:viewpoint
+node/6574661785,61.4657454 -6.8397612,tourism:picnic_site
+node/6614560466,62.0449592 -7.2178273,gns_classification:LCTY;gns_uni:-3806633;historic:archaeological_site;is_in:Faroe Islands;is_in:country:Faroe Islands;is_in:country_code:fo;name:Gróthústangi;place:hamlet;locality;source:GNS
+node/6625073359,62.1243301 -6.8749142,bus:yes;highway:bus_stop;public_transport:platform
+node/6625084889,62.190724 -7.0274132,highway:bus_stop
+node/6625091711,62.1013 -6.9398141,highway:bus_stop
+node/6629669395,62.2900743 -7.1494762,historic:ruins;name:Sawbuck
+node/6630850083,62.1533754 -7.1504587,name:The SagaMuseum;tourism:museum
+node/6631162285,62.0073226 -6.7680623,name:TInganes;tourism:viewpoint
+node/6718555685,61.8295941 -6.8097696,name:en:Sandoy campsite;tourism:camp_site
+node/6721129488,62.0086835 -6.6719436,tourism:camp_site
+node/6828475830,62.0193412 -6.7692667,bus:yes;highway:bus_stop;name:Tjaldursvegur4;public_transport:platform
+node/6832844235,62.1591429 -7.2450998,man_made:lighthouse;seamark:type:light_major
+node/6873348287,61.8414486 -6.9000823,name:en:Point of view with pedestral road;name:fr:Point de vue chemin de rando;tourism:viewpoint
+node/6935873413,62.1416525 -6.7262885,bus:yes;highway:bus_stop;public_transport:platform
+node/6958619862,62.3351868 -6.7654925,artwork_type:sculpture;name:Marjunar Hav;tourism:artwork
+node/7042385369,62.0826613 -6.7337325,historic:fort;name:Kánon (Seinni Heimsbardagi)
+node/7049757569,62.106571 -6.6838463,artwork_type:statue;tourism:artwork
+node/7073597308,62.197343 -6.7386204,artist_name:Hans Pauli Olsen;artwork_type:sculpture;name:Tróndur í Gøtu;tourism:artwork
+node/7277035057,62.2929918 -6.5198797,tourism:picnic_site
+node/7746133087,62.062595 -7.223917,name:en:Airplane watching;tourism:viewpoint
+node/7746133185,62.3359548 -6.7944332,name:en:View to Gjogv;tourism:viewpoint
+node/7796443554,61.4734159 -6.809483,historic:memorial;memorial:statue
+node/7796443945,61.4711226 -6.8256281,historic:memorial;memorial:statue
+node/7835458986,62.3259869 -6.943703,name:en:Gjógv natural harbor;tourism:viewpoint
+node/7849134385,61.4561458 -6.8316295,name:de:Eggjarnar;name:en:Eggjarnar;tourism:viewpoint
+node/7862209728,61.8387055 -6.8087333,leisure:firepit
+node/7937038936,61.6854491 -6.756253,tourism:hostel
+node/8200978485,61.4698878 -6.7665499,bench:no;bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/8244580195,61.5068957 -6.7603384,bus:yes;highway:bus_stop;name:Hov;public_transport:platform
+node/8248375697,61.5465467 -6.8165639,bus:yes;highway:bus_stop;name:Líðartún;public_transport:platform;source:Mapillary
+node/8248567846,61.548162 -6.818289,bus:yes;highway:bus_stop;public_transport:platform;source:Mapillary
+node/8262371525,61.5539245 -6.7432215,man_made:tower;tower:type:communication
+node/8447480517,62.2946298 -7.1338207,name:Udsigtspunkt til Jætten og Kællingen (Risin & Kellingin). Se over mod Eysturoy.;name:da:Udsigtspunkt til klippeformationerne Jætten og Kællingen (Risin & Kellingin). Se over mod Eysturoy.;name:en:Viewpoint for cliff formations The giant and the witch. Look towards Eysturoy.;tourism:viewpoint
+node/8715037533,62.0781112 -6.9344769,tourism:viewpoint
+node/8768010675,62.2230448 -6.5737672,bus:yes;highway:bus_stop;public_transport:platform
+node/8832810218,62.3179212 -6.5575702,tourism:picnic_site
+node/8861008839,62.2666757 -7.0602345,bus:yes;highway:bus_stop;operator:Strandfaraskip Landsins;public_transport:platform
+node/8861008840,62.2334437 -7.030441,bus:yes;highway:bus_stop;public_transport:platform
+node/8861008841,62.2209792 -7.0152226,bus:yes;highway:bus_stop;public_transport:platform
+node/8861008842,62.2126715 -7.0031066,bus:yes;highway:bus_stop;operator:Strandfaraskip Landsins;public_transport:platform
+node/8861008843,62.2012138 -6.996535,bus:yes;highway:bus_stop;operator:Strandfaraskip Landsins;public_transport:platform
+node/8901173165,62.2806453 -7.2204634,tourism:viewpoint
+node/8919936134,62.025598 -6.7796748,leisure:firepit
+node/8999504417,62.1005364 -7.6448969,tourism:viewpoint
+node/9043680963,61.9625369 -6.8190162,bus:yes;name:Ferry terminal Gamlarætt;public_transport:stop_position
+node/9056270117,62.0882099 -6.9435253,tourism:viewpoint
+node/9184138113,62.0101931 -6.7588119,internet_access:yes;internet_access:fee:no;name:Havgrím Seaside Hotel 1948;smoking:outside;tourism:hotel;website:https://www.hotelhavgrim.fo/;wheelchair:yes
+node/9189919500,61.5421667 -6.798,man_made:lighthouse;name:Gálgetangy front;name:de:Leuchtturm Gálgetangy Unterfeuer
+node/9189919501,61.5428333 -6.8026667,man_made:lighthouse;name:Gálgetangy rear;name:de:Leuchtturm Gálgetangy Oberfeuer
+node/9267813450,62.0028612 -6.7874975,bus:yes;departures_board:yes;highway:bus_stop;name:Heygsvegur;operator:Tórshavnar kommuna;public_transport:platform;shelter:yes
+node/9664528366,62.2929561 -6.5253316,historic:memorial;memorial:stone
+node/9815556215,61.9109265 -6.9472227,description:View of Hvalsryggur and Trøllhøvdi;tourism:viewpoint
+node/9874382770,62.009677 -6.7871397,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/9874504830,62.0464562 -7.2096919,bus:yes;highway:bus_stop;public_transport:platform;shelter:yes
+node/9892332117,62.2825377 -6.9123182,artist_name:Hans Pauli Olsen;artwork_type:sculpture;material:metal;name:Marmennilin;name:en:The Merman;tourism:artwork
+node/9926680527,62.2940247 -6.9637521,tourism:viewpoint
+node/9926894249,62.0445152 -6.8147142,description:Peat store. (krógv);historic:ruins
+node/9983011605,62.042654 -6.7843591,description:krógv;historic:archaeological_site
+node/9983079439,62.0454066 -6.8262723,archaeological_site:industrial;description:Old phone pole site;historic:archaeological_site;historic:civilization:modern
+node/9983079440,62.0452054 -6.8249956,archaeological_site:industrial;description:Old phone pole site;historic:archaeological_site
+node/9983079442,62.0446874 -6.8225494,archaeological_site:industrial;description:Old phone pole site;historic:archaeological_site
+node/9983079444,62.0438776 -6.8205538,archaeological_site:industrial;description:Old phone pole site;historic:archaeological_site
+node/9983079445,62.0413778 -6.8164125,archaeological_site:industrial;description:Two old phone poles;historic:archaeological_site
+node/9983079447,62.0394009 -6.8134621,archaeological_site:industrial;description:Old phone pole site;historic:archaeological_site
+node/9983079448,62.0360304 -6.808441,archaeological_site:industrial;description:Old phone pole site;historic:archaeological_site;historic:civilization:modern
+node/9983079449,62.0357185 -6.807926,archaeological_site:industrial;description:Old phone pole site;historic:archaeological_site;historic:civilization:modern
+node/9983079451,62.0402008 -6.817303,archaeological_site:industrial;description:Old phone pole site;historic:archaeological_site;historic:civilization:modern
+node/9983449888,62.0447021 -6.8036213,archaeological_site:industrial;description:Eye bolt;historic:archaeological_site;historic:civilization:modern
+node/9998377318,62.0256434 -7.2441881,name:en:View on the rocks;tourism:viewpoint
+node/10015551817,62.0261167 -7.2461434,name:en:Rocks;tourism:attraction
+node/10065934425,62.1543957 -7.1510743,artwork_type:statue;material:bronze;name:Ólavi á Heygum;tourism:artwork;website:https://fo.wikipedia.org/wiki/%C3%93lavur_%C3%A1_Heygum
+node/10121512760,62.3526033 -6.5183452,man_made:obelisk
+node/10157306637,62.3245892 -6.6492644,historic:monument
+node/10173929017,62.0752502 -7.4115468,name:Scenic Spot Drangarnir;tourism:viewpoint
+node/10247485905,62.0946692 -6.7689197,historic:monument
+node/10315761096,62.156444 -6.7779177,man_made:tower;tower:type:bell_tower
+node/10651989684,62.2762647 -6.8552892,bus:yes;highway:bus_stop;public_transport:platform
+node/10702356417,62.173432 -6.7721121,bus:yes;highway:bus_stop;public_transport:platform
+node/10735690323,62.1912943 -6.7474925,bus:yes;highway:bus_stop;public_transport:platform
+node/10764625256,62.201024 -6.7476573,bus:yes;highway:bus_stop;public_transport:platform
+node/10769397255,61.6328502 -6.9782473,tourism:viewpoint
+node/10769464037,62.2183451 -6.8108372,tourism:caravan_site
+node/10837445754,62.2420506 -6.8075862,amenity:community_centre;name:Fuglafjarðar Kommuna;website:https://fuglafjordur.fo/
+node/10883742393,62.2101013 -6.7079649,bus:yes;highway:bus_stop;public_transport:platform
+node/10896523939,62.2108493 -6.6998967,bus:yes;highway:bus_stop;public_transport:platform
+node/10896523940,62.2112547 -6.702051,bus:yes;highway:bus_stop;public_transport:platform
+node/10905778876,62.2088886 -6.704038,bus:yes;highway:bus_stop;public_transport:platform
+node/10911915805,62.2086412 -6.7000047,bus:yes;highway:bus_stop;public_transport:platform
+node/10915958440,62.1621699 -6.755459,historic:ruins
+node/10915959133,62.1595578 -6.7544328,bus:yes;highway:bus_stop;public_transport:platform
+node/10915959156,62.160009 -6.7542528,bus:yes;highway:bus_stop;public_transport:platform
+node/10926879795,62.157323 -6.7520771,artwork_type:sculpture;tourism:artwork
+node/10932240252,62.155836 -6.7478961,historic:ruins;ruins:school
+node/10934146094,62.1411007 -6.7303461,bus:yes;highway:bus_stop;public_transport:platform
+node/10947618361,62.1420537 -6.7115658,bus:yes;highway:bus_stop;public_transport:platform
+node/10951974077,62.1308591 -6.7266156,bus:yes;highway:bus_stop;public_transport:platform
+node/10951974222,62.1277113 -6.7256248,man_made:tower;tower:type:bell_tower
+node/10960612105,62.1978228 -6.7396305,addr:housenumber:10;addr:street:Tróndargøta;description:Open: 01 June - 31 August;name:Blásastova;note:Open: 01 June - 31 August;opening_hours:Tu-Sa 13:00-16:00;phone:+298222717;tourism:museum
+node/11004278353,62.1050333 -6.7202874,bus:yes;highway:bus_stop;public_transport:platform
+node/11017522336,62.1036783 -6.7437866,bus:yes;highway:bus_stop;public_transport:platform
+node/11062515988,62.0978286 -6.7397231,bus:yes;highway:bus_stop;public_transport:platform
+node/11062939206,62.0694413 -6.6941934,bus:yes;highway:bus_stop;public_transport:platform
+node/11090149686,62.056523 -7.1522039,check_date:2023-08-04;name:GiljaHome;phone:+298 271142;tourism:hotel
+node/11091237681,61.8342501 -6.8171346,amenity:library;check_date:2023-08-05;name:Sands Bókasavn;opening_hours:Mo-Fr 10:30-13:15
+node/11109357205,62.2824282 -6.9132569,man_made:tower;tower:type:bell_tower
+node/11146297089,62.3251537 -6.9438354,bus:yes;highway:bus_stop;public_transport:platform
+node/11208043933,62.0884644 -6.9279337,historic:ruins
+node/11216268728,62.0164535 -6.8018366,historic:ruins;historic:civilization:modern
+node/11217450108,62.2283973 -6.5928503,artwork_type:sculpture;tourism:artwork
+node/11217560859,62.1853436 -6.753337,amenity:events_venue;name:Sandurin;operator:G! Festival
+node/11405485009,61.9999005 -6.804886,bus:yes;highway:bus_stop;name:Akranesgøta;public_transport:platform
+node/11488383217,61.887668 -6.8446155,man_made:tower;tower:type:communication
+way/34228719,62.3058943 -7.0846195,disused:leisure:pitch;name:Camping Eiði;sport:soccer;tourism:camp_site
+way/34228827,62.3019837 -7.0972109,building:yes;tourism:gallery
+way/38855555,62.278813 -6.3431867,amenity:place_of_worship;building:church;name:Svínoyar kirkja;religion:christian;wikidata:Q104804403;wikimedia_commons:Category:Svínoyar kirkja
+way/43036767,62.0871162 -6.7386501,amenity:place_of_worship;building:church;denomination:lutheran;name:Fríðrikskirkja;religion:christian;wikidata:Q1471711;wikimedia_commons:Category:Fríðrikskirkjan
+way/43265991,61.9565676 -6.8849952,amenity:place_of_worship;building:church;name:Hests kirkja;religion:christian;wikidata:Q20618420;wikimedia_commons:Category:Hests kirkja
+way/43436931,62.0864101 -7.370561,addr:city:Bøur;addr:country:FO;addr:housenumber:2;addr:postcode:386;addr:street:Kirkjubreyt;amenity:place_of_worship;building:church;building:levels:1;denomination:lutheran;name:Bíggjar kirkja;religion:christian;roof:levels:1;roof:orientation:along;roof:shape:gabled;source:Umhvørvisstovan www.us.fo;wikidata:Q20616220;wikimedia_commons:Category:Bíggjar kirkja
+way/43440876,62.0665884 -7.2833719,man_made:tower
+way/43440883,62.0690591 -7.2861089,addr:housenumber:2;addr:postcode:380;addr:street:Djúpheiðar;building:yes;email:hv@hotelvagar.fo;internet_access:wlan;name:Hotel Vágar;phone:+298 309097;rooms:24;stars:3;tourism:hotel;website:https://hotelvagar.fo/
+way/43652933,61.9991542 -6.776853,amenity:school;building:yes;name:Argja skúli
+way/43652934,61.99931 -6.7762838,building:yes;name:Aquarium;tourism:attraction;website:https://www.sjosavn.net/
+way/44022795,62.2758516 -7.0922656,amenity:place_of_worship;building:church;name:Haldórsvíkar kirkja;religion:christian;wikidata:Q20618168;wikimedia_commons:Category:Haldórsvíkar kirkja
+way/44068687,61.9050252 -6.8888782,amenity:community_centre;building:yes;community_centre:for:juvenile;name:Ungmannahúsið Samljóð
+way/44115669,61.809403 -6.6785461,amenity:place_of_worship;building:yes;name:Húsavíkar Kirkja;religion:christian
+way/44361921,61.7700745 -6.8051995,amenity:place_of_worship;building:church;denomination:evangelical;name:Skúvoyar kirkja;religion:christian;wheelchair:no;wikidata:Q67446234;wikimedia_commons:Category:Skúvoyar kirkja
+way/44365160,61.5976787 -6.9534249,amenity:place_of_worship;building:church;denomination:lutheran;name:Hvalbiar kirkja;religion:christian;wikidata:Q25637508;wikimedia_commons:Category:Hvalbiar kirkja
+way/44581040,62.3185894 -6.318259,amenity:place_of_worship;building:church;denomination:lutheran;name:Kirkju kirkja;religion:christian;wikidata:Q11980768;wikimedia_commons:Category:Kirkju kirkja
+way/44581652,62.3289825 -6.2772475,amenity:place_of_worship;building:church;denomination:lutheran;name:Hattarvíkar kirkja;religion:christian;wikidata:Q104804414;wikimedia_commons:Category:Hattarvíkar kirkja
+way/44658075,62.2648171 -6.6957594,addr:housenumber:6;addr:postcode:796;addr:street:Kalsoyarvegur;amenity:place_of_worship;building:church;denomination:lutheran;name:Húsar Kirkja;religion:christian;wikidata:Q20618758;wikimedia_commons:Category:Húsar kirkja
+way/44700698,62.2868591 -6.9665138,amenity:place_of_worship;building:church;name:Funnings kirkja;religion:christian;wikidata:Q3379802;wikimedia_commons:Category:Funnings kirkja;wikipedia:da:Funnings kirkja
+way/44840542,61.562145 -6.8426441,addr:housenumber:26;addr:street:Ósavegur;amenity:fuel;brand:Magn;building:yes;name:Magn Trongisvágur;opening_hours:Mo-Fr 08:00-23:00; Sa 09:00-23:00; Su 13:00-23:00;operator:Magn;phone:+298 280466;website:https://www.magn.fo/fo/yvirlit-yvir-stodhir
+way/45421143,62.0178429 -6.7557956,name:Tórshavn Camping;tourism:caravan_site
+way/45424444,62.1965675 -6.8589393,amenity:place_of_worship;building:church;denomination:charismatic;name:Keldan;religion:christian;website:https://keldan.fo/;wikidata:Q25637555;wikipedia:fo:Keldan (samkoma)
+way/46587311,62.0593453 -6.8311602,amenity:school;building:yes;name:Skúlin
+way/46617903,62.1170208 -6.9018157,amenity:place_of_worship;building:church;name:Kollafjarðar kirkja;religion:christian;wikidata:Q20619296;wikimedia_commons:Category:Kollafjarðar kirkja
+way/48835638,62.1053882 -6.7703926,amenity:community_centre;building:yes;name:Bygdahúsið
+way/55546725,61.6334523 -6.9295834,amenity:place_of_worship;building:church;name:Sandvíkar kirkja;religion:christian;wikidata:Q104804394;wikimedia_commons:Category:Sandvíkar kirkja
+way/71881239,61.5538961 -6.8013921,amenity:place_of_worship;building:church;denomination:lutheran;name:Tvøroyrar Kirkja;religion:christian;wikidata:Q5117759;wikimedia_commons:Category:Tvøroyrar kirkja
+way/72133175,61.9953623 -6.8016399,addr:city:Argir;addr:housenumber:2A;addr:postcode:160;addr:street:Reynsgøta;building:yes;leisure:sports_centre;name:AB Húsið;sport:soccer;website:http://www.argjaboltfelag.com/;wikidata:Q287768;wikipedia:en:Argja Bóltfelag
+way/73466016,62.0292249 -6.7910597,amenity:kindergarten;name:Býlingshúsið á Ternuryggi
+way/73466025,62.0305386 -6.7959465,amenity:kindergarten;name:Dagstovnurin Sólareygað
+way/75797417,61.8410219 -6.809039,amenity:fuel;building:yes;fuel:octane_95:yes;name:Magn;operator:Magn;shop:kiosk
+way/75905150,62.1163965 -6.9068216,amenity:bank;building:yes;name:Bank Nordik;operator:Bank Nordik
+way/172652058,61.6036535 -6.9659462,amenity:school;name:Hvalbiar skúli
+way/229119005,62.0539238 -7.1513116,alt_name:Sandavágur kirke;amenity:place_of_worship;building:church;denomination:lutheran;name:Sandavágs kirkja;name:en:Church of Sandavágur;religion:christian;wikidata:Q3585633;wikimedia_commons:Category:Sandavágs kirkja
+way/337033358,61.8274886 -6.6755163,building:yes;building:levels:1;internet_access:yes;internet_access:fee:no;internet_access:ssid:HotelSkalavikGestir;name:Hotel Skálavík;stars:3;tourism:hotel;website:http://www.hotelskalavik.fo/
+way/373589109,62.0671847 -7.3013145,addr:city:Sørvágur;addr:street:Djúpheiðar;building:yes;name:Hotal Vagar;takeaway:no;tourism:hotel
+way/493300330,62.3253808 -6.9498632,building:yes;tourism:hotel
+way/494232709,61.9029715 -6.8894877,amenity:kindergarten
+way/494233382,61.9027838 -6.8847456,amenity:school;name:Skopunarskúli
+way/494255851,61.9501568 -6.7982789,barrier:wall;historic:ruins
+way/494255852,61.9500896 -6.7981207,barrier:wall;historic:ruins
+way/507491626,62.0889579 -6.7373454,amenity:place_of_worship;building:yes;name:Missiónshúsið Tabor;religion:christian;website:https://www.tabor.fo
+way/510129817,62.0813076 -6.7299317,amenity:place_of_worship;building:church;name:Nes kirkja;religion:christian;wikidata:Q20620274;wikimedia_commons:Category:Nes kirkja
+way/511781915,62.1937172 -6.7445618,amenity:place_of_worship;building:yes;name:Filadelfia;religion:christian
+way/539962505,61.6369832 -6.7119608,building:hut;tourism:wilderness_hut
+way/540060565,61.6294996 -6.7050388,building:yes;tourism:wilderness_hut
+way/551508254,62.2929071 -6.6716643,amenity:place_of_worship;building:church;denomination:lutheran;name:Kunoyar kirkja;religion:christian;wikidata:Q20619477;wikimedia_commons:Category:Kunoyar kirkja
+way/551508265,62.2925922 -6.6697549,amenity:community_centre;building:yes
+way/557144588,62.2925682 -6.6652035,landuse:forest;name:Viðarlundin í Kunoy;tourism:attraction;wheelchair:no
+way/559494755,62.2255261 -6.5632467,barrier:fence;leisure:park;name:Viðarlundin úti í grøv
+way/560094681,62.2245169 -6.5601832,leisure:dog_park
+way/578118147,62.3151592 -7.1046579,"description:Concrete house, part of radar station RAF Eide;historic:ruins;historic:civilization:modern;name:RAF Eide"
+way/589344651,61.8331602 -6.811875,amenity:place_of_worship;building:church;check_date:2023-08-05;name:Sands kirkja;religion:christian;wikidata:Q431648;wikimedia_commons:Category:Sands kirkja;wikipedia:da:Sands kirkja
+way/602082694,62.2160113 -7.0061174,amenity:place_of_worship;building:church;name:Norðskála kirkja;religion:christian;wikidata:Q104804400;wikimedia_commons:Category:Norðskála kirkja
+way/648765786,61.9955443 -6.8037581,alt_name:Skansi Arena;leisure:stadium;name:Inni í Vika Stadium;name:en:Argir Stadium;wikidata:Q776949;wikipedia:en:Inni í Vika
+way/669248844,61.8301427 -6.6696097,amenity:place_of_worship;building:church;denomination:lutheran;name:Skálavíkar kirkja;religion:christian;wikidata:Q12001296;wikimedia_commons:Category:Skálavíkar kirkja
+way/682389321,62.0687714 -6.9665961,building:yes;man_made:tower;tower:construction:dome;tower:type:radar
+way/690032579,62.2968571 -6.5272024,amenity:place_of_worship;building:yes;name:Hermon;religion:christian
+way/690899089,62.0582984 -6.832686,addr:city:Kaldbak;addr:country:FO;addr:housenumber:2;addr:postcode:180;addr:street:Krossgøta;amenity:place_of_worship;building:church;denomination:lutheran;name:Kaldbaks kirkja;religion:christian;source:Umhvørvisstovan www.us.fo;wikidata:Q67442775;wikimedia_commons:Category:Kaldbaks kirkja
+way/693544094,62.1167877 -6.9071556,building:yes;leisure:sports_centre;name:Svimjihøllin;sport:swimming
+way/693789209,62.1872561 -7.0357726,amenity:place_of_worship;building:church;name:Hvalvíkar kirkja;religion:christian;wikidata:Q104804416;wikimedia_commons:Category:Hvalvíkar kirkja
+way/693789261,62.1884534 -7.0398789,amenity:library;building:yes;name:Hvalvíkar Bókasavn
+way/693789284,62.1900521 -7.0405363,amenity:school
+way/718504078,62.3037923 -7.0904211,leisure:park
+way/723875185,61.4808044 -6.7464416,amenity:place_of_worship;building:church;name:Porkeris kirkja;religion:christian;wikidata:Q3425487;wikimedia_commons:Category:Porkeris kirkja
+way/723877975,62.117743 -6.754014,amenity:place_of_worship;building:church;name:Sjóvar kirkja;religion:christian;wikidata:Q67326959;wikimedia_commons:Category:Sjóvar kirkja
+way/724336667,61.5257422 -6.879629,addr:city:Fámjin;addr:country:FO;addr:housenumber:5;addr:postcode:870;addr:street:Fámjinsvegur;amenity:place_of_worship;building:church;denomination:lutheran;name:Fámjins kirkja;religion:christian;source:Umhvørvisstovan www.us.fo;wikidata:Q20617515;wikimedia_commons:Category:Fámjins kirkja
+way/743439576,62.3326748 -6.7631517,historic:ruins
+way/743439578,62.3381151 -6.7691068,historic:ruins
+way/743439579,62.338376 -6.7704238,historic:ruins
+way/743439586,62.3312366 -6.7813538,historic:ruins
+way/743439587,62.3319058 -6.782037,historic:ruins
+way/743439588,62.3292465 -6.7790213,historic:ruins
+way/743439589,62.3284655 -6.7803928,historic:ruins
+way/743480639,62.3189757 -6.7517992,historic:ruins
+way/743480640,62.3199104 -6.7575345,historic:ruins
+way/754396897,62.0667457 -6.6909071,name:Kamping Æduvík;tourism:camp_site;website:https://camping.fo/locations/location/73/aeduvik?_l=en
+way/764397108,62.0327923 -6.7723683,amenity:theatre;lit:no;theatre:type:amphi
+way/768807461,61.551282 -6.7922266,tourism:camp_site
+way/772964425,62.15709 -7.1772113,amenity:kindergarten
+way/775109027,62.0678833 -6.9667501,building:yes;man_made:tower;tower:type:radar
+way/775109033,62.0678872 -6.9675832,building:yes;man_made:tower;tower:type:communication
+way/782350067,61.5257518 -6.8807375,addr:city:Fámjin;addr:housenumber:4;addr:postcode:870;addr:street:Neystavegur;amenity:community_centre;building:yes;building:levels:2;name:Vesturhøll;website:http://famjin.fo/vesturholl
+way/784605999,61.9970779 -6.7920215,amenity:kindergarten;name:Dagstovnurin í Løkjatúni
+way/791920638,61.5981177 -6.9530726,amenity:townhall;building:yes
+way/791930741,61.6297957 -6.9303241,historic:memorial;memorial:stone;name:Skaðagrindin 13-02-1915
+way/791930742,61.6031181 -6.9452405,landuse:cemetery;memorial:stone;name:Gl kirkjugarðurin
+way/801732697,62.0167939 -6.7563625,"amenity:place_of_worship;branch:Tórshavn Menighed;building:kingdom_hall;denomination:jehovahs_witness;name:Ríkissalur hjá Jehova vitnum;name:da:Jehovas Vidners Rigssal;name:de:Königreichssaal Jehovas Zeugen;name:en:Kingdom Hall of Jehovah's Witnesses;name:nl:Koninkrijkszaal van Jehovah's Getuigen;opening_hours:Su 11:00-13:45, Th 19:00-20:45;religion:christian;website:https://www.jw.org"
+way/801732698,62.0178299 -6.75583,caravans:yes;dog:leashed;internet_access:yes;internet_access:fee:no;name:Tórshavnar Camping;nudism:no;phone:+298 302425;sanitary_dump_station:yes;stars:3;tents:yes;tourism:camp_site;website:https://camping.fo/locations/location/59/torshavn;wheelchair:yes
+way/823582390,62.2973159 -7.1948284,addr:city:Tjørnuvík;addr:postcode:445;addr:street:Fjallmannagøta;building:house;building:levels:2;internet_access:no;name:Sjeyndir;operator:Norðan fyri Kamb - Sjeyndir;phone:+298791084;tourism:wilderness_hut;website:https://www.facebook.com/pg/Sjeyndir-107594764282459/about/;wheelchair:no
+way/834351934,61.4679303 -6.8005887,leisure:sports_centre;name:Marghøllin;sport:multi;website:https://marghollin.fo/
+way/837432614,62.2782579 -7.0901351,name:Kampingpláss í Haldórsvík;tourism:camp_site
+way/839672173,61.9045202 -6.8897296,tourism:camp_site
+way/842209695,61.8370156 -6.8207205,amenity:library;building:yes;name:Sandoyar Bókasavn
+way/842209708,61.8369936 -6.8204406,amenity:school;name:Sands Skúli
+way/842759612,61.832077 -6.8124352,building:yes;name:Listasavnið á Sandi;tourism:museum
+way/844083248,61.59787 -6.9643738,capacity:16;capacity:caravans:12;capacity:tents:4;charge:50DDK/tents;100DDK/caravans;contact:website:http://hvalba.info/camping-in-hvalba;fee:yes;name:Camping Hvalba;operator:Hvalbiar Kommuna;tourism:camp_site;website:https://visitsuduroy.fo/camping-hvalba/
+way/850807214,61.6826206 -6.7622185,building:yes;man_made:lighthouse
+way/868137443,61.4508473 -6.7648183,amenity:school
+way/886550690,61.5067903 -6.7674003,historic:ruins
+way/886550782,61.4835977 -6.7445015,"description:The memorial Lost at Sea in Porkeri, in memory of the seamen and others who lost their lives at sea, most of them were fishermen.;historic:monument;name:Minnisvarðin;name:en:Memorial Lost at Sea;name:fo:Minnisvarðin;wikimedia_commons:File:Memorial Lost at Sea in Porkeri, Faroe Islands.JPG"
+way/886559050,61.5102804 -6.761067,historic:ruins
+way/886748742,61.5038673 -6.7748262,amenity:school;name:Miðnámsskulin
+way/886991794,61.4822537 -6.7437768,amenity:school
+way/887618960,61.5586456 -6.8540696,historic:ruins
+way/887674613,61.5665619 -6.8543806,historic:ruins
+way/888398166,61.5780651 -6.9200951,historic:ruins
+way/888688309,61.5641835 -6.8433755,"amenity:place_of_worship;branch:Suðuroy Menighed;building:kingdom_hall;denomination:jehovahs_witness;name:Ríkissalur hjá Jehova vitnum;name:da:Jehovas Vidners Rigssal;name:en:Kingdom Hall of Jehovah's Witnesses;name:nl:Koninkrijkszaal van Jehovah's Getuigen;opening_hours:Tu. 19:00-20:45, Su. 11:00-13:15;religion:christian;website:https://www.jw.org"
+way/888702240,61.5699148 -6.7905922,building:yes;man_made:tower;tower:type:communication
+way/889508189,61.5913984 -6.9628601,historic:ruins
+way/889508190,61.5904855 -6.9628585,historic:ruins
+way/889508191,61.5905072 -6.9628841,historic:ruins
+way/889508201,61.5934345 -6.9700318,historic:ruins
+way/889508241,61.5953282 -6.9559393,historic:ruins
+way/889508242,61.5952893 -6.9558083,historic:ruins
+way/891049243,61.5975752 -6.9559957,historic:ruins
+way/891049244,61.5975907 -6.956358,historic:ruins
+way/892427042,61.50699 -6.7700673,historic:ruins
+way/896650271,61.5640678 -6.8618437,historic:ruins
+way/911291758,61.6033911 -6.9460217,historic:ruins
+way/913244745,61.6052042 -6.9510538,historic:ruins
+way/913244749,61.6049444 -6.9523322,historic:ruins
+way/913244750,61.6049582 -6.9522643,historic:ruins
+way/913244787,61.6031435 -6.9521887,historic:ruins
+way/913244788,61.6031126 -6.9522618,historic:ruins
+way/1041818426,62.2788613 -6.3432048,building:yes;man_made:tower;tower:type:bell_tower
+way/1041848552,62.2787491 -6.342234,amenity:school;name:Svínoyar skúli
+way/1041848553,62.2781817 -6.3409351,amenity:school
+way/1046609291,62.2791324 -6.3395236,charge:100 DKK/person;50 DKK/child;fee:yes;name:Svínoy tentsite;shower:yes;toilets:yes;tourism:camp_site;website:https://visitnordoy.fo/frontpage/plan-your-stay/accommodation/tent-and-camping-2/
+way/1051679817,62.2956637 -6.5250516,leisure:park
+way/1051868068,62.3001094 -6.5316888,amenity:kindergarten;name:Barnahúsið Imba
+way/1051868076,62.3013378 -6.5320906,amenity:school;name:Skúlin á Fossánesi
+way/1103909584,61.6034642 -6.9539603,leisure:park;name:Skúlastykkið
+way/1109024038,62.2708866 -6.603317,amenity:school;name:Haraldssunds Skúli
+way/1112446675,62.2927184 -6.6696777,amenity:school
+way/1112698357,62.264712 -6.6966955,amenity:school;name:Húsa Skúli
+way/1117588991,62.3621064 -6.7922571,addr:housename:Brynsastova;barrier:wall;historic:ruins
+way/1123008319,62.1059121 -6.768925,amenity:kindergarten;name:Lítlifløttur
+way/1123008330,62.1094631 -6.7614429,amenity:school;name:Stranda Skúli
+way/1123459556,62.1175464 -6.754289,leisure:park
+way/1126198715,62.1505267 -6.7726898,leisure:park
+way/1134592422,62.1969053 -6.8578463,amenity:school;denomination:charismatic;name:Frískúlin Keldan;operator:Keldan;religion:christian;website:https://fsk.fo/;wikipedia:fo:Frískúlin Keldan
+way/1160301490,62.219156 -6.8155278,amenity:kindergarten
+way/1174753264,62.1637031 -6.7601635,amenity:kindergarten;name:Náttúrubarnagarðurin Sóljuhjarta
+way/1189228140,62.087396 -6.7373181,barrier:fence;leisure:park
+way/1189874591,62.1016892 -6.7385955,leisure:sports_centre;sport:soccer;athletics
+way/1195149585,62.2366212 -6.9305617,amenity:school;disused:yes;name:Funningsfjarðar Skúli
+way/1209819781,62.0496625 -6.84562,addr:city:Sund;addr:postcode:186;addr:street:Á Høvdanum;amenity:events_venue;building:yes;name:NAX;operator:NAX;phone:+298 20 76 76;website:https://nax.fo
