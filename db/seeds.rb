@@ -37,15 +37,20 @@ class SeedHelper
   end
 
   def init
-    unless ENV['globals'] || ENV['geographies']
+    unless ENV['globals'] || ENV['geographies'] || ENV['items']
       puts "INFO: db:seed requires at least one parameter to run. Available parameters are:
   globals=yes # Seeds non-geographical data such as monsters, items, etc
-  geographies=Sweden,Norway # Instructs which geographies to seed locations for"
+  geographies=Sweden,Norway # Instructs which geographies to seed locations for
+  items=yes # Re-seeds items from file. Ignores other parameters."
       exit
     end
 
     puts 'Seeding the database... This might take a while.'
     execution_time = Benchmark.measure do
+      if ENV['items']
+        seed(:items)
+        break
+      end
       if ENV['globals']
         seed(:monsters)
         seed(:items)
@@ -65,7 +70,7 @@ class SeedHelper
         puts "🙀 #{Spook.count} spooks in effect."
       end
     end
-    puts "Finished! (#{execution_time.real.round(2).to_fs(:delimited)}s)"
+    puts "Finished! (#{execution_time.real.round(2).to_fs(:delimited)}s)" if execution_time
   end
 
   def seed(func)
@@ -128,16 +133,13 @@ class SeedHelper
     csv_text = Rails.root.join('lib/seeds/items.csv').read
     csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
     csv.each do |row|
+      next if row['draft'] == 'TRUE' # Don't import draft items
+
+      throw('missing id for item') unless row['id']
       item = Item.find_or_initialize_by(id: row['id'])
       item.name = row['name']
       item.type = row['type'].downcase.tr(' ', '_')
       item.icon = row['icon']
-
-      # Lootable
-      item.rarity = row['rarity'].downcase
-      item.dropped_by_classifications = row['dropped_by_classifications']&.split(', ')
-      item.dropped_by_level = row['dropped_by_level']
-      item.drop_max_amount = row['drop_max_amount']
 
       # Equipable
       item.two_handed = row['two_handed']
@@ -148,6 +150,12 @@ class SeedHelper
       item.classification_defense_bonus = row['classification_defense_bonus']
       item.xp_bonus = row['xp_bonus']
       item.loot_bonus = row['loot_bonus']
+
+      # Lootable
+      item.rarity = row['rarity'].downcase if row['rarity'].present?
+      if row['dropped_by_monsters'].present?
+        item.monsters = Monster.where(id: row['dropped_by_monsters'].delete(' ').split(',').map(&:to_i))
+      end
 
       items << item
     end

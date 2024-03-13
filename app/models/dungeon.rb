@@ -7,9 +7,9 @@ class Dungeon < RealmLocation
   EXPIRATION_TIMER_LENGTH = 10.minutes # How much notice players get before dungeons are expired
 
   belongs_to :monster
-  has_many :conquests, dependent: :destroy
+  has_many :conquests, dependent: :delete_all
   has_many :users, through: :conquests
-  has_many :spooks, dependent: :destroy
+  has_many :spooks, dependent: :delete_all
   has_many :spooked_npcs, class_name: 'Npc', through: :spooks
   alias_attribute :defeated_by, :users
 
@@ -55,13 +55,11 @@ class Dungeon < RealmLocation
     boss? ? 1100 : 225 # meters
   end
 
-  def desc
-    "level #{level} #{monster.classification}"
-  end
+  delegate :desc, to: :monster
 
   def loot_container_for(user)
     loot_generator = LootGenerator.new(user.loot_bonus)
-    loot_generator.set_loot_table(monster.level, monster.classification)
+    loot_generator.set_loot_table(monster)
     loot_generator.generate_loot
   end
 

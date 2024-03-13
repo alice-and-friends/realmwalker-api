@@ -8,10 +8,9 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.string :icon,                           null: false
 
       # Obtainability
-      t.string :rarity,                         null: false
-      t.string :dropped_by_classifications,     array: true, default: []
-      t.integer :dropped_by_level
-      t.integer :drop_max_amount
+      t.string :rarity
+      t.integer :dropped_by_monsters,           array: true, default: []
+      t.integer :drop_max_amount,               null: false, default: 1
 
       # Equipment
       t.boolean :two_handed,                    null: false, default: false

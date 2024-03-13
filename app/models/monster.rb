@@ -3,6 +3,9 @@
 class Monster < ApplicationRecord
   # TAGS = %w[].freeze
 
+  has_many :monster_items, dependent: :delete_all
+  has_many :lootable_items, through: :monster_items, source: :item
+
   enum classification: {
     aberration: 'aberration',
     beast: 'beast',
@@ -25,9 +28,13 @@ class Monster < ApplicationRecord
   # validate :tags_are_valid
 
   def self.for_level(level)
-    m = Monster.where(level: level).sample
-    throw("No monsters for level #{level}") if m.nil?
-    m
+    monster = Monster.where(level: level).sample
+    throw("No monsters for level #{level}") if monster.nil?
+    monster
+  end
+
+  def desc
+    "level #{level} #{classification}"
   end
 
   def defense

@@ -1,166 +1,168 @@
-level,classification,tags,name,description
-1,beast,,Badger,Badger Badger Badger Badger Badger Badger Badger Badger ...
-1,beast,,Bat,"Nocturnal flying mammals, using echolocation to navigate in the dark. They are often found in caves or old ruins, hanging from the ceiling in large colonies."
-1,beast,,Cobra,Venomous snakes known for their deadly bite and mesmerizing dance.
-1,beast,,Dragonfly,"Swift and agile insects, masters of aerial maneuvers."
-1,beast,,Plague Rat,"Diseased rats that swarm and spread illness, thriving in unclean places."
-1,beast,,Scorpion,"Dangerous arachnids with a deadly sting in their tails, lurking in sandy and rocky terrains, waiting for unsuspecting prey."
-1,beast,,Snake,"Slithering serpents, silent and deadly in their approach."
-1,beast,,Spider,"Large, web-spinning arachnids, lying in wait for their prey."
-1,beast,,Stealing Monkey,"Clever and mischievous primates known for their thieving habits, often snatching items from unwary travelers."
-1,elemental,,Fire Salamander,A lizard-like elemental.
-1,elemental,,Spark spirit,"Tiny beings of flame and ash, dancing in fire and leaving trails of embers."
-1,fey,,Lunar Moth,"Enormous, luminescent moths that appear under moonlight, known for their hypnotic patterns."
-1,fey,,Wisp,"Elusive forest spirits, leading or misleading those who encounter them."
-1,ooze,,Slime,"This gelatinous creature slowly oozes through corridors, absorbing organic matter and growing larger with each meal."
-1,construct,,Clockwork Beetle,"A beetle-shaped construct with rotating wings. It buzzes around, capable of sudden dashes."
-2,aberration,,Shadow Leech,"Parasitic entities that thrive in darkness, draining energy from living beings."
-2,undead,,Zombie Pigeon,"Once ordinary city birds, now undead creatures. They flock in large numbers, pestering the living with their relentless presence and eerie cooing."
-2,beast,,Gargantuan Pigeon,"It's just a really, really big bird."
-2,beast,,Giant Centipede,"Enormous, multi-legged insects that scurry through the underbrush. Their venomous bite is feared by many smaller creatures."
-2,beast,,Giant Frog,Oversized amphibians with a powerful leap and a tongue that can snatch prey from a distance. They dwell in marshes and wetlands.
-2,beast,,Iron Viper,Metallic snakes known for their unyielding grip and lethal bite.
-2,beast,,Bear,"Mighty forest dwellers, formidable in size and strength."
-2,beast,,Boar,"Wild and unpredictable, these stout animals are known for their sharp tusks and aggressive behavior, especially when cornered or protecting their young."
-2,beast,,Bramble Wolf,"Wolves with thorn-covered fur, adept at moving through dense forests and underbrush."
-2,beast,,Crocodile,"Ambush predators, lurking just below the water's surface."
-2,beast,,Fire Snake,It will bite and it will burn.
-2,construct,,Awakened Book,A sentient book that babbles incessantly and can bore adventurers to death.
-2,construct,,Cursed Painting,Its subjects don't appreciate your critiques.
-2,construct,,Gargoyle,"Stone creatures that perch in caves and ruins, springing to life to guard their domain."
-2,elemental,,Inferno Spider,"Arachnids with the ability to weave webs of fire, found in volcanic regions."
-2,fey,,Aurora Fox,"Mystical foxes with shimmering fur, reflecting the colors of the aurora."
-2,humanoid,,Troll,"Large, brutish beings, known for their strength and aggression."
-2,ooze,,Acid Blob,"A pulsating mass of corrosive acid, this creature can dissolve metal, stone, and flesh with ease. It moves slowly, but its mere touch is deadly."
-2,ooze,,Aggressive Foam,A seemingly innocuous froth that rapidly expands and engulfs anything nearby. It is surprisingly forceful and can suffocate or crush its victims.
-2,ooze,,Ink Blob,"A dark, viscous ooze that secretes a thick ink. It can blind its enemies by shooting jets of ink and is capable of slipping through tiny cracks and crevices."
-2,undead,,Skeleton,Skeletons are undead monsters that live in dungeons. It is rumoured that they are the bodies of dead adventurers that have been revived by some evil power.
-2,plant,,Gloompuff,"A sentient flower with large, puffy petals. It releases spores that can induce sleep or hallucinations, making it a deceptive foe."
-2,monstrosity,,Venomorph,"Despite its beautiful, butterfly-like appearance, it has venomous spines hidden among its vibrant wings, making it a beautiful yet dangerous creature."
-2,fey,,Twisted Phouka,"Nature spirits in animal form, looking like big hares with a faintly glittering fur."
-2,monstrosity,,Skyfin,"Iridescent fish-bird hybrid, swoops from heights with a haunting call, razor-sharp talons."
-2,humanoid,,Gnome,"Small, inventive humanoid, long beard, loves crafting gadgets, lives in burrow or treehouse."
-3,undead,,Skeleton Warrior,An animated skeleton wielding a rusty sword and shield.
-3,beast,,Iron Boar,Metallic-skinned boars with incredible toughness.
-3,beast,,Mystic Stag,"A graceful, elusive creature radiating natural magic, sought for its earth connection."
-3,beast,,War Falcon,"A trained bird of prey, scouting and attacking with precision and agility."
-3,construct,,Rusty Automaton,"A clunky, old mechanical construct that may malfunction at any moment."
-3,beast,,Dire wolf,"Like a regular wolf, but dire."
-3,beast,,Panther,"Sleek, shadowy felines with onyx-black fur, stalking silently in the night."
-3,beast,,Tiger,"Stealthy and powerful felines, apex predators of their domain."
-3,celestial,,Sunbird,"Radiant birds that soar in daylight, embodying the sun's energy."
-3,construct,,Stone Golem,"Animated stone beings, often guardians of ancient sites and treasures."
-3,elemental,,Dust Devil,"Whirling air elementals found in arid places, stirring up clouds of dust and sand."
-3,fey,,Pixie,A tiny fairy with colorful wings. It's a real distraction.
-3,fey,,Centaur,"Half-human, half-horse creatures guarding sacred groves and ancient pathways."
-3,fey,,Dryad,Tree spirit guardian.
-3,fey,,Kirin,"Tiny, thorn-covered beings that protect natural groves with mischievous magic."
-3,giant,,Cyclops,"With a singular eye for detail, the Cyclops has a knack for seeing things from a unique perspective."
-3,giant,,Hill Giant,"Massive and often ill-tempered beings, Hill Giants roam hilly terrains, using their great size and strength to bully smaller creatures and take what they want with little regard for others."
-3,giant,,Ogre,A hulking and aggressive creature with a taste for violence.
-3,humanoid,,Blood Priest,"Dark summoner, worshipping the dark powers."
-3,humanoid,,Minotaur,Charges with determination but frequently trips.
-3,humanoid,,Orc,"Ferocious warriors, known for their brute strength and tribal loyalty."
-3,humanoid,,Sun Priest,"Devotees of the sun, wielding light and fire in divine rituals."
-3,monstrosity,,Troglodyte,"Primitive, cave-dwelling creatures, known for their stealth and savagery."
-3,ooze,,Gobbler,"A voracious creature that consumes everything in its path. Its endless hunger makes it a dangerous foe, as it can devour objects, creatures, and even magic."
-3,ooze,,Invisible Ink Blob,"A unique variant of the Ink Blob, this creature is nearly transparent and extremely hard to detect until it attacks, leaving its victims drenched in its revealing ink."
-3,plant,,Entangler,Plant-like beings that use their vines to ensnare and immobilize trespassers in forests.
-3,plant,,Hypnotic Flower,"Enchanting flowers with mesmerizing colors and patterns, capable of putting those who gaze upon them into a trance-like state."
-3,plant,,Shambling Mound,"Amalgams of rotting vegetation and plant matter, moving slowly but with overwhelming strength, engulfing and decomposing anything in their path."
-3,undead,,Ghost,"Ethereal spirits of the deceased, haunting the living world, their presence bringing chills and whispers from beyond the grave."
-3,undead,,Ghoul,"Flesh-eating undead, preying upon the living in desolate places."
-3,undead,,Mummy,"Ancient undead, wrapped in bandages."
-3,undead,,Undead Horse,"Fiery-maned horses from the underworld, capable of traversing dreams and nightmares."
-3,beast,,Rotworm,Rotworms dig in the earth and wait for unconscious victims which they devour in one piece.
-3,beast,,Sky Manta,"Manta-like creatures floating in the sky, blending seamlessly with clouds."
-4,construct,,Mechanical Spider,"Sleek, mechanical creatures, their origin and purpose both lost to history."
-4,beast,,Roc,"Gigantic birds, often referred to as Sky Titans."
-4,aberration,,Extractor,"Tiny, almost invisible entities, adept at extracting information or essence from targets without detection."
-4,beast,,Runebound Bear,"A massive bear covered in mystical runes, with enhanced strength and magical resistance."
-4,celestial,,Pegasus,"Majestic winged horses, soaring across the heavens."
-4,dragon,,Sky Serpent,"An enormous, flying serpent inhabiting high altitudes, majestic and awe-inspiring."
-4,elemental,,Air Elemental,"Ethereal beings of air, capable of creating powerful gusts and storms."
-4,elemental,,Earth Elemental,Seems pretty solid.
-4,fiend,,Bone Devil,"Beware, getting in a battle of wits with a Bone Devil might leave you ""bonely"" defeated."
-4,fiend,,Imp,Mischievous demons that whisper temptations and lead heroes astray.
-4,giant,,Frost Giant,"Towering beings of the frozen wastes, wielding icy power and immense strength."
-4,giant,,Stone Giant,"Their impressive bouldering skills and a penchant for sculpting masterpieces out of stone make them a ""rock""-star in their own right."
-4,humanoid,,Arcane Trickster,"A rogue with magical prowess, adept at illusions and sneak attacks."
-4,humanoid,,Ironclad Minotaur,"A heavily armored warrior, testing combat skills and strategic prowess."
-4,humanoid,,Vicious Grandmaster,Tis but a scratch!
-4,humanoid,,Siren,Her voice enchants... and annoys.
-4,humanoid,,Renegade Knight,"Armored warriors on horseback, wielding power from their steeds' speed and strength. They are skilled combatants, often driven by personal codes of honor, which may not always align with the common good."
-4,monstrosity,,Cyclops Spider,"Giant spiders with a singular, unnerving eye, stalking their prey in dark places."
-4,monstrosity,,Giant Spider,"Enormous arachnids, capable of ensnaring even the largest of creatures in their webs."
-4,monstrosity,,Harpy,"Winged creatures with shrill cries, known for their magical abilities and cunning."
-4,ooze,,Mutagen,Small creature with the ability to poison and create sickness wherever it goes.
-4,undead,,Zombie,"Undead creatures corrupted by dark magic, spreading decay wherever they roam."
-4,undead,,Shadow Stalker,"Ghostly predators that hunt in the shadows, barely visible to the naked eye."
-4,undead,,Bone Gnawer,A skeletal creature with an insatiable appetite for bones.
-4,undead,,Banshee,A ghostly apparition that emits eerie wails to unsettle its foes.
-5,construct,,Sentinel Automaton,A mechanical soldier built by a long-list civilization.
-5,ooze,,Midnight Spawn,"Born from the essence of darkness, this entity thrives in the absence of light. It's stronger under the cover of night and can meld into shadows."
-5,aberration,,Injector,"Tiny entities that poison and infiltrate living hosts, altering their thoughts and actions."
-5,aberration,,Eyestalk,"Mobile, sentient eyestalks, surveilling areas and reporting to their otherworldly masters."
-5,beast,,Griffin,"Majestic creatures with golden feathers, symbolizing nobility and courage."
-5,beast,,Manticore,"Body of a lion, wings of a bat, and a tail with venomous spikes."
-5,celestial,,Unicorn,Blblbl bl blbl blbl.
-5,dragon,,Dragon Wyrmling,"A tiny, newly hatched dragon with shimmering scales, it may be small, but it's already showing a big attitude."
-5,dragon,,Wyvern,"Winged reptiles with poisonous barbs, ruling the skies with terror."
-5,elemental,,Fire Elemental,"Ethereal beings of pure fire, leaving trails of embers and destruction."
-5,elemental,,Magma Bear,"Bears with molten fur, inhabiting areas with volcanic activity."
-5,elemental,,Magma Elemental,"Fiery beings born from volcanic eruptions, embodying the raw power of magma."
-5,giant,,Storm Giant,"Majestic, with a stormy personality, they toss lightning bolts like confetti and create weather with a flair for the dramatic."
-5,humanoid,,Necromancer,"Masters of the undead, summoning and controlling dark creatures."
-5,humanoid,,Raging Barbarian,"A fierce warrior consumed by battle rage, capable of dealing devastating blows."
-5,humanoid,,Witch,"""I'll get you, my pretty, and your little dog, too!"""
-5,humanoid,,Werewolf,"Cursed beings, transforming into ferocious wolves under the full moon."
-5,plant,,Treant,"Ancient and wise tree beings, guardians of the forest. They are slow to anger, but formidable in battle, using their massive limbs to crush those who threaten their home."
-5,undead,,Wraith,"A ghostly entity lurking in shadows, attacking with dark magic and stealth."
-5,undead,,Spectral Knight,"Ghostly warriors clad in ethereal armor, haunting battlefields and ancient castles."
-5,fiend,,Hellhound,"Demonic dogs with smoldering eyes and fiery breath, hunting in packs from the underworld."
-5,giant,,Behemoth,"A massive, tusked creature with a hide tough as steel. It charges with unstoppable force and can cause tremors with its stomps."
-6,aberration,,Onlooker,"Floating orbs with multiple eyes, observing and analyzing with a dispassionate curiosity"
-6,celestial,,Nebula Seraph,"Ethereal beings that embody the beauty and mystery of the cosmos, wielding starlight."
-6,elemental,,Phoenix,"A radiant bird that rejuvenates itself in flames, symbolizing rebirth and renewal."
-6,fiend,,Burning eye,"A floating orb of fire and malevolence, its gaze burns into the soul, instilling fear and pain in its victims."
-6,humanoid,,Ice Witch,"A solitary spellcaster in frozen lands, wielding ice magic with mastery."
-6,monstrosity,,Basilisk,"Reptilian predators with a petrifying gaze, camouflaged among rocks and cliffs."
-6,monstrosity,,Gorgon,"A creature with a petrifying gaze, reflecting the deepest fears of those who look at it."
-6,monstrosity,,Hydra,Each head has its own sassy personality.
-6,plant,,Forest Guardian,"An enchanted being resembling a tree, protecting natural order with wisdom."
-6,undead,,Vampire,"An ancient and powerful undead, ruling over cursed lands with dark authority."
-7,aberration,,Supervisor,"Tentacled overseers from another dimension, monitoring and controlling lesser aberrations."
-7,dragon,,Young Dragon,"Fiery and fierce, this ""teenage"" dragon has some serious scales to settle with adventurers who dare cross its path."
-7,elemental,,Lava Leviathan,"A colossal being residing in volcanic areas, formidable and dangerously powerful."
-7,humanoid,,Warlock,Deals in dark magic and dark humor.
-7,monstrosity,,Sphinx,Enigmatic creatures that pose riddles and guard ancient secrets.
-7,undead,,Vampire Lord,"An ancient and powerful undead, ruling over cursed lands with dark authority."
-7,construct,,Ancient Guardian,"A massive, ancient guardian built by a long-lost civilization. It combines formidable strength with advanced, almost magical technology."
-7,celestial,,Celestial Warden,"A guardian embodying celestial energy, challenging with light-based magic."
-8,aberration,,Dimensional Worm,Jumps between dimensions and eats everything.
-8,celestial,,Celestial Dice,Determines your fate
-8,dragon,,Adult Dragon,"Old, wise, and still very, very angry."
-8,fey,,Mischievous Archfey,Toying with mortals just for laughs.
-8,fiend,,Demon,CHAMEK ATH UTHUL ARAK!
-8,fiend,,Grim Reaper,Harbinger of death and collector of souls.
-8,fiend,,Pit Fiend,Not your pit friend. Definitely not.
-8,undead,,Lich,Laughs through eternity and beyond.
-9,celestial,,Luminarion,"A radiant, angelic being of light and energy, tasked with guarding sacred realms."
-9,fiend,,Soul Devourer,"Eerie creatures that feast on the souls of the living, leaving behind empty husks."
-9,aberration,,Supreme Cube,"A geometric anomaly, its shifting form disorients and confounds."
-9,aberration,,Time Manipulator,"Masters of temporal magic, capable of slowing or hastening the flow of time."
-9,dragon,,Ancient Dragon,"An ancient dragon, known for its cunning and power."
-9,elemental,,Elemental Lord,Commands the raw power of the elemental planes.
-9,giant,,Primordial Titan,An ancient and colossal force of primal power.
-9,humanoid,,Archmage,A master of arcane arts with unlimited power.
-9,undead,,Dracolich,"A terrifying fusion of draconic power and necromantic magic. Such creatures are often bound to the will of a powerful necromancer or act as guardians of ancient, cursed treasures."
-10,aberration,,Avatar of Destruction,Unleashes cataclysmic forces upon the world.
-10,aberration,,Nihilith,"An extradimensional horror, presenting bizarre challenges with formidable powers."
-10,aberration,,The Unbound,"Strange entities from the depths of space, defying physical laws and constraints."
-10,aberration,,Void Behemoth,"Gargantuan creatures of the void, swallowing worlds in their abyssal maw."
-10,celestial,,Celestial Arbiter,Enforces divine justice with unparalleled might.
-10,dragon,,Ether Drake,A dragon that soars through the fabric of reality.
-10,fey,,Shard,A crystalline entity that shatters expectations.
-10,monstrosity,,World Eater,Devours entire realms and civilizations.
+id,level,classification,tags,name,description,autospawn
+1,1,beast,,Badger,Badger Badger Badger Badger Badger Badger Badger Badger ...,TRUE
+2,1,beast,,Bat,"Nocturnal flying mammals, using echolocation to navigate in the dark. They are often found in caves or old ruins, hanging from the ceiling in large colonies.",TRUE
+3,1,beast,,Cobra,Venomous snakes known for their deadly bite and mesmerizing dance.,TRUE
+4,1,beast,,Dragonfly,"Swift and agile insects, masters of aerial maneuvers.",TRUE
+5,1,beast,,Plague Rat,"Diseased rats that swarm and spread illness, thriving in unclean places.",TRUE
+6,1,beast,,Scorpion,"Dangerous arachnids with a deadly sting in their tails, lurking in sandy and rocky terrains, waiting for unsuspecting prey.",TRUE
+7,1,beast,,Snake,"Slithering serpents, silent and deadly in their approach.",TRUE
+8,1,beast,,Spider,"Large, web-spinning arachnids, lying in wait for their prey.",TRUE
+9,1,beast,,Stealing Monkey,"Clever and mischievous primates known for their thieving habits, often snatching items from unwary travelers.",TRUE
+10,1,elemental,,Fire Salamander,A lizard-like elemental.,TRUE
+11,1,elemental,,Spark Spirit,"Tiny beings of flame and ash, dancing in fire and leaving trails of embers.",TRUE
+12,1,fey,,Lunar Moth,"Enormous, luminescent moths that appear under moonlight, known for their hypnotic patterns.",TRUE
+13,1,fey,,Wisp,"Elusive forest spirits, leading or misleading those who encounter them.",TRUE
+14,1,ooze,,Slime,"This gelatinous creature slowly oozes through corridors, absorbing organic matter and growing larger with each meal.",TRUE
+15,1,construct,,Clockwork Beetle,"A beetle-shaped construct with rotating wings. It buzzes around, capable of sudden dashes.",TRUE
+16,2,aberration,,Shadow Leech,"Parasitic entities that thrive in darkness, draining energy from living beings.",TRUE
+17,2,undead,,Zombie Pigeon,"Once ordinary city birds, now undead creatures. They flock in large numbers, pestering the living with their relentless presence and eerie cooing.",TRUE
+18,2,beast,,Gargantuan Pigeon,"It's just a really, really big bird.",TRUE
+19,2,beast,,Giant Centipede,"Enormous, multi-legged insects that scurry through the underbrush. Their venomous bite is feared by many smaller creatures.",TRUE
+20,2,beast,,Giant Frog,Oversized amphibians with a powerful leap and a tongue that can snatch prey from a distance. They dwell in marshes and wetlands.,TRUE
+21,2,beast,,Iron Viper,Metallic snakes known for their unyielding grip and lethal bite.,TRUE
+22,2,beast,,Bear,"Mighty forest dwellers, formidable in size and strength.",TRUE
+23,2,beast,,Boar,"Wild and unpredictable, these stout animals are known for their sharp tusks and aggressive behavior, especially when cornered or protecting their young.",TRUE
+24,2,beast,,Bramble Wolf,"Wolves with thorn-covered fur, adept at moving through dense forests and underbrush.",TRUE
+25,2,beast,,Crocodile,"Ambush predators, lurking just below the water's surface.",TRUE
+26,2,beast,,Fire Snake,It will bite and it will burn.,TRUE
+27,2,construct,,Awakened Book,A sentient book that babbles incessantly and can bore adventurers to death.,TRUE
+28,2,construct,,Cursed Painting,Its subjects don't appreciate your critiques.,TRUE
+29,2,construct,,Gargoyle,"Stone creatures that perch in caves and ruins, springing to life to guard their domain.",TRUE
+30,2,elemental,,Inferno Spider,"Arachnids with the ability to weave webs of fire, found in volcanic regions.",TRUE
+31,2,fey,,Aurora Fox,"Mystical foxes with shimmering fur, reflecting the colors of the aurora.",TRUE
+32,2,humanoid,,Troll,"Large, brutish beings, known for their strength and aggression.",TRUE
+33,2,ooze,,Acid Blob,"A pulsating mass of corrosive acid, this creature can dissolve metal, stone, and flesh with ease. It moves slowly, but its mere touch is deadly.",TRUE
+34,2,ooze,,Aggressive Foam,A seemingly innocuous froth that rapidly expands and engulfs anything nearby. It is surprisingly forceful and can suffocate or crush its victims.,TRUE
+35,2,ooze,,Ink Blob,"A dark, viscous ooze that secretes a thick ink. It can blind its enemies by shooting jets of ink and is capable of slipping through tiny cracks and crevices.",TRUE
+36,2,undead,,Skeleton,Skeletons are undead monsters that live in dungeons. It is rumoured that they are the bodies of dead adventurers that have been revived by some evil power.,TRUE
+37,2,plant,,Gloompuff,"A sentient flower with large, puffy petals. It releases spores that can induce sleep or hallucinations, making it a deceptive foe.",TRUE
+38,2,monstrosity,,Venomorph,"Despite its beautiful, butterfly-like appearance, it has venomous spines hidden among its vibrant wings, making it a beautiful yet dangerous creature.",TRUE
+39,2,fey,,Twisted Phouka,"Nature spirits in animal form, looking like big hares with a faintly glittering fur.",TRUE
+40,2,monstrosity,,Skyfin,"Iridescent fish-bird hybrid, swoops from heights with a haunting call, razor-sharp talons.",TRUE
+41,2,humanoid,,Gnome,"Small, inventive humanoid, long beard, loves crafting gadgets, lives in burrow or treehouse.",TRUE
+42,3,undead,,Skeleton Warrior,An animated skeleton wielding a rusty sword and shield.,TRUE
+43,3,beast,,Iron Boar,Metallic-skinned boars with incredible toughness.,TRUE
+44,3,beast,,Mystic Stag,"A graceful, elusive creature radiating natural magic, sought for its earth connection.",TRUE
+45,3,beast,,War Falcon,"A trained bird of prey, scouting and attacking with precision and agility.",TRUE
+46,3,construct,,Rusty Automaton,"A clunky, old mechanical construct that may malfunction at any moment.",TRUE
+47,3,beast,,Dire wolf,"Like a regular wolf, but dire.",TRUE
+48,3,beast,,Panther,"Sleek, shadowy felines with onyx-black fur, stalking silently in the night.",TRUE
+49,3,beast,,Tiger,"Stealthy and powerful felines, apex predators of their domain.",TRUE
+50,3,celestial,,Sunbird,"Radiant birds that soar in daylight, embodying the sun's energy.",TRUE
+51,3,construct,,Stone Golem,"Animated stone beings, often guardians of ancient sites and treasures.",TRUE
+52,3,elemental,,Dust Devil,"Whirling air elementals found in arid places, stirring up clouds of dust and sand.",TRUE
+53,3,fey,,Pixie,A tiny fairy with colorful wings. It's a real distraction.,TRUE
+54,3,fey,,Centaur,"Half-human, half-horse creatures guarding sacred groves and ancient pathways.",TRUE
+55,3,fey,,Dryad,Tree spirit guardian.,TRUE
+56,3,fey,,Kirin,"Tiny, thorn-covered beings that protect natural groves with mischievous magic.",TRUE
+57,3,giant,,Cyclops,"With a singular eye for detail, the Cyclops has a knack for seeing things from a unique perspective.",TRUE
+58,3,giant,,Hill Giant,"Massive and often ill-tempered beings, Hill Giants roam hilly terrains, using their great size and strength to bully smaller creatures and take what they want with little regard for others.",TRUE
+59,3,giant,,Ogre,A hulking and aggressive creature with a taste for violence.,TRUE
+60,3,humanoid,,Blood Priest,"Dark summoner, worshipping the dark powers.",TRUE
+61,3,humanoid,,Minotaur,Charges with determination but frequently trips.,TRUE
+62,3,humanoid,,Orc,"Ferocious warriors, known for their brute strength and tribal loyalty.",TRUE
+63,3,humanoid,,Sun Priest,"Devotees of the sun, wielding light and fire in divine rituals.",TRUE
+64,3,monstrosity,,Troglodyte,"Primitive, cave-dwelling creatures, known for their stealth and savagery.",TRUE
+65,3,ooze,,Gobbler,"A voracious creature that consumes everything in its path. Its endless hunger makes it a dangerous foe, as it can devour objects, creatures, and even magic.",TRUE
+66,3,ooze,,Invisible Ink Blob,"A unique variant of the Ink Blob, this creature is nearly transparent and extremely hard to detect until it attacks, leaving its victims drenched in its revealing ink.",TRUE
+67,3,plant,,Entangler,Plant-like beings that use their vines to ensnare and immobilize trespassers in forests.,TRUE
+68,3,plant,,Hypnotic Flower,"Enchanting flowers with mesmerizing colors and patterns, capable of putting those who gaze upon them into a trance-like state.",TRUE
+69,3,plant,,Shambling Mound,"Amalgams of rotting vegetation and plant matter, moving slowly but with overwhelming strength, engulfing and decomposing anything in their path.",TRUE
+70,3,undead,,Ghost,"Ethereal spirits of the deceased, haunting the living world, their presence bringing chills and whispers from beyond the grave.",TRUE
+71,3,undead,,Ghoul,"Flesh-eating undead, preying upon the living in desolate places.",TRUE
+72,3,undead,,Mummy,"Ancient undead, wrapped in bandages.",TRUE
+73,3,undead,,Undead Horse,"Fiery-maned horses from the underworld, capable of traversing dreams and nightmares.",TRUE
+74,3,beast,,Rotworm,Rotworms dig in the earth and wait for unconscious victims which they devour in one piece.,TRUE
+75,3,beast,,Sky Manta,"Manta-like creatures floating in the sky, blending seamlessly with clouds.",TRUE
+76,4,construct,,Mechanical Spider,"Sleek, mechanical creatures, their origin and purpose both lost to history.",TRUE
+77,4,beast,,Roc,"Gigantic birds, often referred to as Sky Titans.",TRUE
+78,4,aberration,,Extractor,"Tiny, almost invisible entities, adept at extracting information or essence from targets without detection.",TRUE
+79,4,beast,,Runebound Bear,"A massive bear covered in mystical runes, with enhanced strength and magical resistance.",TRUE
+80,4,celestial,,Pegasus,"Majestic winged horses, soaring across the heavens.",TRUE
+81,4,dragon,,Sky Serpent,"An enormous, flying serpent inhabiting high altitudes, majestic and awe-inspiring.",TRUE
+82,4,elemental,,Air Elemental,"Ethereal beings of air, capable of creating powerful gusts and storms.",TRUE
+83,4,elemental,,Earth Elemental,Seems pretty solid.,TRUE
+84,4,fiend,,Bone Devil,"Beware, getting in a battle of wits with a Bone Devil might leave you ""bonely"" defeated.",TRUE
+85,4,fiend,,Imp,Mischievous demons that whisper temptations and lead heroes astray.,TRUE
+86,4,giant,,Frost Giant,"Towering beings of the frozen wastes, wielding icy power and immense strength.",TRUE
+87,4,giant,,Stone Giant,"Their impressive bouldering skills and a penchant for sculpting masterpieces out of stone make them a ""rock""-star in their own right.",TRUE
+88,4,humanoid,,Arcane Trickster,"A rogue with magical prowess, adept at illusions and sneak attacks.",TRUE
+89,4,humanoid,,Ironclad Minotaur,"A heavily armored warrior, testing combat skills and strategic prowess.",TRUE
+90,4,humanoid,,Vicious Grandmaster,Tis but a scratch!,TRUE
+91,4,humanoid,,Siren,Her voice enchants... and annoys.,TRUE
+92,4,humanoid,,Renegade Knight,"Armored warriors on horseback, wielding power from their steeds' speed and strength. They are skilled combatants, often driven by personal codes of honor, which may not always align with the common good.",TRUE
+93,4,monstrosity,,Cyclops Spider,"Giant spiders with a singular, unnerving eye, stalking their prey in dark places.",TRUE
+94,4,monstrosity,,Giant Spider,"Enormous arachnids, capable of ensnaring even the largest of creatures in their webs.",TRUE
+95,4,monstrosity,,Harpy,"Winged creatures with shrill cries, known for their magical abilities and cunning.",TRUE
+96,4,ooze,,Mutagen,Small creature with the ability to poison and create sickness wherever it goes.,TRUE
+97,4,undead,,Zombie,"Undead creatures corrupted by dark magic, spreading decay wherever they roam.",TRUE
+98,4,undead,,Shadow Stalker,"Ghostly predators that hunt in the shadows, barely visible to the naked eye.",TRUE
+99,4,undead,,Bone Gnawer,A skeletal creature with an insatiable appetite for bones.,TRUE
+100,4,undead,,Banshee,A ghostly apparition that emits eerie wails to unsettle its foes.,TRUE
+101,5,construct,,Sentinel Automaton,A mechanical soldier built by a long-list civilization.,TRUE
+102,5,ooze,,Midnight Spawn,"Born from the essence of darkness, this entity thrives in the absence of light. It's stronger under the cover of night and can meld into shadows.",TRUE
+103,5,aberration,,Injector,"Tiny entities that poison and infiltrate living hosts, altering their thoughts and actions.",TRUE
+104,5,aberration,,Eyestalk,"Mobile, sentient eyestalks, surveilling areas and reporting to their otherworldly masters.",TRUE
+105,5,beast,,Griffin,"Majestic creatures with golden feathers, symbolizing nobility and courage.",TRUE
+106,5,beast,,Manticore,"Body of a lion, wings of a bat, and a tail with venomous spikes.",TRUE
+107,5,celestial,,Unicorn,Blblbl bl blbl blbl.,TRUE
+108,5,dragon,,Dragon Wyrmling,"A tiny, newly hatched dragon with shimmering scales, it may be small, but it's already showing a big attitude.",TRUE
+109,5,dragon,,Wyvern,"Winged reptiles with poisonous barbs, ruling the skies with terror.",TRUE
+110,5,elemental,,Fire Elemental,"Ethereal beings of pure fire, leaving trails of embers and destruction.",TRUE
+111,5,elemental,,Magma Bear,"Bears with molten fur, inhabiting areas with volcanic activity.",TRUE
+112,5,elemental,,Magma Elemental,"Fiery beings born from volcanic eruptions, embodying the raw power of magma.",TRUE
+113,5,giant,,Storm Giant,"Majestic, with a stormy personality, they toss lightning bolts like confetti and create weather with a flair for the dramatic.",TRUE
+114,5,humanoid,,Necromancer,"Masters of the undead, summoning and controlling dark creatures.",TRUE
+115,5,humanoid,,Raging Barbarian,"A fierce warrior consumed by battle rage, capable of dealing devastating blows.",TRUE
+116,5,humanoid,,Witch,"""I'll get you, my pretty, and your little dog, too!""",TRUE
+117,5,humanoid,,Werewolf,"Cursed beings, transforming into ferocious wolves under the full moon.",FALSE
+118,5,plant,,Treant,"Ancient and wise tree beings, guardians of the forest. They are slow to anger, but formidable in battle, using their massive limbs to crush those who threaten their home.",TRUE
+119,5,undead,,Wraith,"A ghostly entity lurking in shadows, attacking with dark magic and stealth.",TRUE
+120,5,undead,,Spectral Knight,"Ghostly warriors clad in ethereal armor, haunting battlefields and ancient castles.",TRUE
+121,5,fiend,,Hellhound,"Demonic dogs with smoldering eyes and fiery breath, hunting in packs from the underworld.",TRUE
+122,5,giant,,Behemoth,"A massive, tusked creature with a hide tough as steel. It charges with unstoppable force and can cause tremors with its stomps.",TRUE
+123,6,aberration,,Onlooker,"Floating orbs with multiple eyes, observing and analyzing with a dispassionate curiosity",TRUE
+124,6,celestial,,Nebula Seraph,"Ethereal beings that embody the beauty and mystery of the cosmos, wielding starlight.",TRUE
+125,6,elemental,,Phoenix,"A radiant bird that rejuvenates itself in flames, symbolizing rebirth and renewal.",TRUE
+126,6,fiend,,Burning eye,"A floating orb of fire and malevolence, its gaze burns into the soul, instilling fear and pain in its victims.",TRUE
+127,6,humanoid,,Ice Witch,"A solitary spellcaster in frozen lands, wielding ice magic with mastery.",TRUE
+128,6,monstrosity,,Basilisk,"Reptilian predators with a petrifying gaze, camouflaged among rocks and cliffs.",TRUE
+129,6,monstrosity,,Gorgon,"A creature with a petrifying gaze, reflecting the deepest fears of those who look at it.",TRUE
+130,6,monstrosity,,Hydra,Each head has its own sassy personality.,TRUE
+131,6,plant,,Forest Guardian,"An enchanted being resembling a tree, protecting natural order with wisdom.",TRUE
+132,6,undead,,Vampire,"An ancient and powerful undead, ruling over cursed lands with dark authority.",TRUE
+133,7,aberration,,Supervisor,"Tentacled overseers from another dimension, monitoring and controlling lesser aberrations.",TRUE
+134,7,dragon,,Young Dragon,"Fiery and fierce, this ""teenage"" dragon has some serious scales to settle with adventurers who dare cross its path.",TRUE
+135,7,elemental,,Lava Leviathan,"A colossal being residing in volcanic areas, formidable and dangerously powerful.",TRUE
+136,7,humanoid,,Warlock,Deals in dark magic and dark humor.,TRUE
+137,7,monstrosity,,Sphinx,Enigmatic creatures that pose riddles and guard ancient secrets.,TRUE
+138,7,undead,,Vampire Lord,"An ancient and powerful undead, ruling over cursed lands with dark authority.",TRUE
+139,7,construct,,Ancient Guardian,"A massive, ancient guardian built by a long-lost civilization. It combines formidable strength with advanced, almost magical technology.",TRUE
+140,7,celestial,,Celestial Warden,"A guardian embodying celestial energy, challenging with light-based magic.",TRUE
+141,8,aberration,,Dimensional Worm,Jumps between dimensions and eats everything.,TRUE
+142,8,celestial,,Celestial Dice,Determines your fate,TRUE
+143,8,dragon,,Adult Dragon,"Old, wise, and still very, very angry.",TRUE
+144,8,fey,,Mischievous Archfey,Toying with mortals just for laughs.,TRUE
+145,8,fiend,,Demon,CHAMEK ATH UTHUL ARAK!,TRUE
+146,8,fiend,,Grim Reaper,Harbinger of death and collector of souls.,TRUE
+147,8,fiend,,Pit Fiend,Not your pit friend. Definitely not.,TRUE
+148,8,undead,,Lich,Laughs through eternity and beyond.,TRUE
+149,9,celestial,,Luminarion,"A radiant, angelic being of light and energy, tasked with guarding sacred realms.",TRUE
+150,9,fiend,,Soul Devourer,"Eerie creatures that feast on the souls of the living, leaving behind empty husks.",TRUE
+151,9,aberration,,Supreme Cube,"A geometric anomaly, its shifting form disorients and confounds.",TRUE
+152,9,aberration,,Time Manipulator,"Masters of temporal magic, capable of slowing or hastening the flow of time.",TRUE
+153,9,dragon,,Ancient Dragon,"An ancient dragon, known for its cunning and power.",TRUE
+154,9,elemental,,Elemental Lord,Commands the raw power of the elemental planes.,TRUE
+155,9,giant,,Primordial Titan,An ancient and colossal force of primal power.,TRUE
+156,9,humanoid,,Archmage,A master of arcane arts with unlimited power.,TRUE
+157,9,undead,,Dracolich,"A terrifying fusion of draconic power and necromantic magic. Such creatures are often bound to the will of a powerful necromancer or act as guardians of ancient, cursed treasures.",TRUE
+158,10,aberration,,Avatar of Destruction,Unleashes cataclysmic forces upon the world.,TRUE
+159,10,aberration,,Nihilith,"An extradimensional horror, presenting bizarre challenges with formidable powers.",TRUE
+160,10,aberration,,The Unbound,"Strange entities from the depths of space, defying physical laws and constraints.",TRUE
+161,10,aberration,,Void Behemoth,"Gargantuan creatures of the void, swallowing worlds in their abyssal maw.",TRUE
+162,10,celestial,,Celestial Arbiter,Enforces divine justice with unparalleled might.,TRUE
+163,10,dragon,,Ether Drake,A dragon that soars through the fabric of reality.,TRUE
+164,10,fey,,Shard,A crystalline entity that shatters expectations.,TRUE
+165,10,monstrosity,,World Eater,Devours entire realms and civilizations.,TRUE
+167,7,elemental,,Knowledge Elemental,It is raw knowledge and power set free.,TRUE
+166,1,beast,,Armadillo,"Little armored creatures, usually not aggressive but can carry viruses and spead disease.",TRUE

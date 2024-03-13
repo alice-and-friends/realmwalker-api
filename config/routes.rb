@@ -47,7 +47,8 @@ Rails.application.routes.draw do
       end
 
       # Debug
-      get 'monsters', to: 'monsters#index', as: :monsters
+      get 'compendium/monsters', to: 'compendium#monsters', as: :monsters
+      get 'compendium/items', to: 'compendium#items', as: :items
     end
   end
 end

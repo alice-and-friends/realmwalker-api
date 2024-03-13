@@ -49,9 +49,8 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.string "name", null: false
     t.string "type", null: false
     t.string "icon", null: false
-    t.string "rarity", null: false
-    t.string "dropped_by_classifications", default: [], array: true
-    t.integer "dropped_by_level"
+    t.string "rarity"
+    t.integer "dropped_by_monsters", default: [], array: true
     t.integer "drop_max_amount"
     t.boolean "two_handed", default: false, null: false
     t.integer "attack_bonus", limit: 2, default: 0
@@ -64,6 +63,16 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_items_on_name", unique: true
+  end
+
+  create_table "monster_items", force: :cascade do |t|
+    t.bigint "monster_id", null: false
+    t.bigint "item_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["item_id"], name: "index_monster_items_on_item_id"
+    t.index ["monster_id", "item_id"], name: "index_monster_items_on_monster_id_and_item_id", unique: true
+    t.index ["monster_id"], name: "index_monster_items_on_monster_id"
   end
 
   create_table "monsters", force: :cascade do |t|
@@ -188,6 +197,8 @@ ActiveRecord::Schema[7.0].define(version: 601) do
   add_foreign_key "conquests", "users"
   add_foreign_key "inventory_items", "inventories"
   add_foreign_key "inventory_items", "items"
+  add_foreign_key "monster_items", "items"
+  add_foreign_key "monster_items", "monsters"
   add_foreign_key "npcs_trade_offer_lists", "realm_locations", column: "npc_id"
   add_foreign_key "realm_locations", "portraits"
   add_foreign_key "realm_locations", "users", column: "owner_id"

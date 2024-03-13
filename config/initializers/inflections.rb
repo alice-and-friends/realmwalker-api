@@ -19,4 +19,6 @@
 
 ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.acronym 'V1'
+  inflect.irregular 'ooze', 'ooze'
+  inflect.irregular 'undead', 'undead'
 end

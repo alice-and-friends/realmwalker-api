@@ -5,11 +5,11 @@ class LootGenerator
     @player_loot_bonus = player_loot_bonus
     @monster_classification = nil
     @loot_tiers = {
+      'common' => 0.1666,  # 1 in 6
+      'uncommon' => 0.05,  # 1 in 20
+      'rare' => 0.03,      # 1 in 33
+      'epic' => 0.02,      # 1 in 50
       'legendary' => 0.01, # 1 in 100
-      'epic' => 0.02, # 2 in 100
-      'rare' => 0.03, # 3 in 100
-      'uncommon' => 0.05, # 1 in 20
-      'common' => 0.1666, # 1 in 6
     }
     @loot_table = Item.none # We will populate this based on monster level and classification
     @gold_ranges = {
@@ -27,14 +27,10 @@ class LootGenerator
     @gold_range = nil # We will populate this based on monster level
   end
 
-  def set_loot_table(monster_level, monster_classification)
-    @monster_classification = monster_classification
-    @loot_table = Item.where(
-      ':classification = ANY(dropped_by_classifications) AND :level >= dropped_by_level',
-      classification: monster_classification,
-      level: monster_level,
-    )
-    @gold_range = @gold_ranges[monster_level]
+  def set_loot_table(monster)
+    @monster_classification = monster.classification
+    @loot_table = Monster.find(monster.id).lootable_items
+    @gold_range = @gold_ranges[monster.level]
   end
 
   # Returns a loot container, with a small chance of extra contents from a second generated container
