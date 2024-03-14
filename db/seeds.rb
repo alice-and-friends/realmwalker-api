@@ -41,7 +41,7 @@ class SeedHelper
       puts "INFO: db:seed requires at least one parameter to run. Available parameters are:
   globals=yes # Seeds non-geographical data such as monsters, items, etc
   geographies=Sweden,Norway # Instructs which geographies to seed locations for
-  items=yes # Re-seeds items from file. Ignores other parameters."
+  items=yes # Re-seeds items and trade offers from file. Ignores other parameters."
       exit
     end
 
@@ -49,6 +49,7 @@ class SeedHelper
     execution_time = Benchmark.measure do
       if ENV['items']
         seed(:items)
+        seed(:trade_offers)
         break
       end
       if ENV['globals']
@@ -165,31 +166,41 @@ class SeedHelper
   def trade_offers
     make_trade_offer_list = lambda do |list_name|
       list = TradeOfferList.find_or_create_by(name: list_name)
+      trade_offers = []
 
-      csv_text = Rails.root.join('lib/seeds/items.csv').read
+      # Reset this list before re-populating it with offers
+      list.trade_offer_ids = []
+
+      # Clean up trade offers that don't belong to any lists
+      TradeOffer.where.not(id: TradeOffer.joins(:trade_offer_list).select('trade_offers.id')).destroy_all
+
+      # Create new trade offers
+      csv_text = Rails.root.join('lib/seeds/trade offers.csv').read
       csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
       csv.each do |row|
-        next unless row["#{list_name}_buy"] || row["#{list_name}_sell"]
+        next unless row["#{list_name}_buy"] || row["#{list_name}_sell"] # Skip item
 
-        item = Item.find_by(name: row['name'])
+        item = Item.find(row['item_id'])
         if item.nil?
-          puts "⚠️  Item '#{row['name']}' not found when creating trade offer" if ENV['verbose']
+          puts "⚠️  Item '#{row['name']}##{row['id']}' not found when creating trade offer" if ENV['verbose']
           next
         end
 
-        trade_offer = TradeOffer.new(item: item)
+        trade_offer = TradeOffer.new(item: item, trade_offer_list: list)
         trade_offer.buy_offer = row["#{list_name}_buy"]&.delete('^0-9') if row["#{list_name}_buy"].present?
         trade_offer.sell_offer = row["#{list_name}_sell"]&.delete('^0-9') if row["#{list_name}_sell"].present?
-        if trade_offer.save
-          list.trade_offers << trade_offer
-        elsif ENV['verbose']
-          puts "🛑 #{trade_offer.errors.inspect}"
-        end
+        trade_offers << trade_offer
       end
-      puts "🧾 #{list.trade_offers.length} trade offers in list '#{list_name}'."
+
+      list_offer_count = import(TradeOffer, trade_offers, pre_validate: false, recursive: true)
+      puts "🧾 #{list_offer_count} trade offers in list '#{list_name}'."
+
+      list_offer_count
     end
 
-    %w[armorer jeweller magic_shop].each { |list_name| make_trade_offer_list.call(list_name) }
+    # For each desired list, run the lambda and create trade offers
+    %w[armorer jeweller magic].each { |list_name| make_trade_offer_list.call(list_name) }
+
     TradeOffer.count
   end
 
@@ -231,8 +242,8 @@ class SeedHelper
   end
 
   def shops
-    magic_shop_offer_list = TradeOfferList.find_by(name: 'magic_shop')
-    puts '⚠️ Error: magic_shop_offer_list should not be blank' and return 0 if magic_shop_offer_list.nil?
+    magic_offer_list = TradeOfferList.find_by(name: 'magic')
+    puts '⚠️ Error: magic_offer_list should not be blank' and return 0 if magic_offer_list.nil?
 
     jeweller_offer_list = TradeOfferList.find_by(name: 'jeweller')
     puts '⚠️ Error: jeweller_offer_list should not be blank' and return 0 if jeweller_offer_list.nil?
@@ -251,7 +262,7 @@ class SeedHelper
 
       if random_digit.in? 1..30
         npc.shop_type = 'magic'
-        npc.trade_offer_lists << magic_shop_offer_list
+        npc.trade_offer_lists << magic_offer_list
       elsif random_digit.in? 31..60
         npc.shop_type = 'jeweller'
         npc.trade_offer_lists << jeweller_offer_list
@@ -313,7 +324,7 @@ class SeedHelper
   private
 
   # Split into two (bulk- and non-bulk) import methods?
-  def import(model, data, bulk: true, pre_validate: true, validate: true, skip_duplicates: false, recycle_locations: '')
+  def import(model, data, bulk: true, pre_validate: true, validate: true, skip_duplicates: false, recycle_locations: '', recursive: false)
     count_before_seeding = model.count
     discarded_locations = []
 
@@ -330,7 +341,7 @@ class SeedHelper
       else
         data_to_import = data
       end
-      model.import(data_to_import, batch_size: @batch_size, validate: validate, on_duplicate_key_ignore: skip_duplicates)
+      model.import(data_to_import, batch_size: @batch_size, validate: validate, on_duplicate_key_ignore: skip_duplicates, recursive: recursive)
     else
       data.each do |o|
         if o.valid?

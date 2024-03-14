@@ -51,7 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.string "icon", null: false
     t.string "rarity"
     t.integer "dropped_by_monsters", default: [], array: true
-    t.integer "drop_max_amount"
+    t.integer "drop_max_amount", default: 1, null: false
     t.boolean "two_handed", default: false, null: false
     t.integer "attack_bonus", limit: 2, default: 0
     t.integer "defense_bonus", limit: 2, default: 0
@@ -162,20 +162,15 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "trade_offer_lists_trade_offers", id: false, force: :cascade do |t|
-    t.bigint "trade_offer_list_id"
-    t.bigint "trade_offer_id"
-    t.index ["trade_offer_id"], name: "index_trade_offer_lists_trade_offers_on_trade_offer_id"
-    t.index ["trade_offer_list_id"], name: "index_trade_offer_lists_trade_offers_on_trade_offer_list_id"
-  end
-
   create_table "trade_offers", force: :cascade do |t|
     t.bigint "item_id"
     t.integer "buy_offer"
     t.integer "sell_offer"
+    t.bigint "trade_offer_list_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["item_id"], name: "index_trade_offers_on_item_id"
+    t.index ["trade_offer_list_id"], name: "index_trade_offers_on_trade_offer_list_id"
   end
 
   create_table "users", force: :cascade do |t|

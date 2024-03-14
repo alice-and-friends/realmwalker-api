@@ -14,7 +14,7 @@ class Item < ApplicationRecord
   alias_attribute :lootable_from, :monsters
 
   validates :type, presence: true, inclusion: { in: ITEM_TYPES }
-  validates :rarity, presence: true, inclusion: { in: RARITIES }, if: :lootable?
+  validates :rarity, presence: true, inclusion: { in: RARITIES }, if: :lootable? || :equipment?
   validate :must_be_weapon_if_two_handed
   validates :name, presence: true, uniqueness: true
   validate :must_be_meaningful_bonus
