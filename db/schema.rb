@@ -117,6 +117,8 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.index ["coordinates"], name: "index_real_world_locations_on_coordinates", using: :gist
     t.index ["ext_id"], name: "index_real_world_locations_on_ext_id", unique: true
     t.index ["latitude", "longitude"], name: "index_real_world_locations_on_latitude_and_longitude", unique: true
+    t.index ["region"], name: "index_real_world_locations_on_region"
+    t.index ["type"], name: "index_real_world_locations_on_type"
   end
 
   create_table "realm_locations", force: :cascade do |t|
@@ -145,6 +147,8 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.index ["owner_id"], name: "index_realm_locations_on_owner_id", unique: true
     t.index ["portrait_id"], name: "index_realm_locations_on_portrait_id"
     t.index ["real_world_location_id"], name: "index_realm_locations_on_real_world_location_id", unique: true
+    t.index ["region"], name: "index_realm_locations_on_region"
+    t.index ["type"], name: "index_realm_locations_on_type"
   end
 
   create_table "spooks", force: :cascade do |t|

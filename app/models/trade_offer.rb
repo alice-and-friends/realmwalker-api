@@ -10,6 +10,6 @@ class TradeOffer < ApplicationRecord
   private
 
   def tradable
-    Errors.add(:base, 'Must have one of: buy_offer, sell_offer') if buy_offer.nil? && sell_offer.nil?
+    errors.add(:base, 'Must have one of: buy_offer, sell_offer') if buy_offer.nil? && sell_offer.nil?
   end
 end

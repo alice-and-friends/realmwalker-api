@@ -4,10 +4,10 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
   def change
     create_table :realm_locations do |t|
       # ALL
-      t.string :type # required for inheritance
+      t.string :type, index: true # required for inheritance
       t.belongs_to :real_world_location, null: false, index: { unique: true }
       t.st_point :coordinates, geographic: true, limit: { srid: 4326 }
-      t.string :region, null: false
+      t.string :region, null: false, index: true
       t.string :name
       t.timestamps
 
@@ -29,7 +29,7 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       t.string :expiry_job_id
       t.datetime :expires_at
 
-      # RunestonesHelper
+      # Runestones
       t.string :runestone_id
     end
 

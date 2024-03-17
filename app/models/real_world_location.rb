@@ -5,6 +5,8 @@ class RealWorldLocation < ApplicationRecord
 
   self.inheritance_column = nil
 
+  has_one :realm_location, dependent: :destroy
+
   enum type: {
     ley_line: 'ley_line',
     runestone: 'runestone',

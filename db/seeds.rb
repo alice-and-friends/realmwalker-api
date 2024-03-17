@@ -29,7 +29,7 @@ class SeedHelper
     elsif ENV['geographies']
       geographies = ENV['geographies'].split(',').map(&:strip)
       geographies.each do |geography|
-        Throw "Unknown geography '#{geography}'" unless directory.join("#{geography}.csv").exist?
+        throw "Unknown geography '#{geography}'" unless directory.join("#{geography}.csv").exist?
       end
       return geographies
     end
@@ -83,11 +83,19 @@ class SeedHelper
   end
 
   def real_world_locations
+    banned_locations = %w[
+      way/570719825
+      way/893075665
+      way/893075667
+      way/893075668
+    ]
     locations = []
     filename = "#{@geography}.csv"
     csv_text = Rails.root.join('lib', 'seeds', 'geographies', filename).read
     csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
     csv.each do |row|
+      next if banned_locations.include? row['ext_id']
+
       latitude, longitude = row['coordinates'].split
       location = RealWorldLocation.find_or_initialize_by(ext_id: row['ext_id'])
       location.assign_attributes(
@@ -100,10 +108,10 @@ class SeedHelper
         region: @geography,
       )
 
-      percentile = location.deterministic_rand(1..100)
-      location.type = RealWorldLocation.types[:ley_line] if percentile.in? 1..7
-      location.type = RealWorldLocation.types[:shop] if percentile.in? 10..20
-      location.type = RealWorldLocation.types[:runestone] if percentile == 100
+      type_index = location.deterministic_rand(1..1_000)
+      location.type = RealWorldLocation.types[:ley_line] if type_index.in? 1..70
+      location.type = RealWorldLocation.types[:shop] if type_index.in? 100..180
+      location.type = RealWorldLocation.types[:runestone] if type_index.in? 900..907
 
       locations << location
     end
@@ -178,7 +186,7 @@ class SeedHelper
       csv_text = Rails.root.join('lib/seeds/trade offers.csv').read
       csv = CSV.parse(csv_text, headers: true, encoding: 'UTF-8')
       csv.each do |row|
-        next unless row["#{list_name}_buy"] || row["#{list_name}_sell"] # Skip item
+        next unless row["#{list_name}_buy"] || row["#{list_name}_sell"] # Skip item, not relevant for this list
 
         item = Item.find(row['item_id'])
         if item.nil?
@@ -205,6 +213,7 @@ class SeedHelper
   end
 
   def portraits
+    # TODO: Maybe get rid of the portraits table, and move definitions to a new helper class
     portraits = []
     # portraits << Portrait.new(name: 'alchemist', species: %w[human elf dwarf giant troll goblin kenku], genders: %w[f m x], groups: %w[armorer jeweller magic])
     portraits << Portrait.new(name: 'barbarian', species: %w[human elf], genders: %w[m x], groups: %w[armorer])
@@ -271,7 +280,7 @@ class SeedHelper
         npc.trade_offer_lists << armorer_offer_list
       end
 
-      npcs << npc if npc.valid?
+      npcs << npc
     end
     import(Npc, npcs, bulk: false, recycle_locations: 'shop')
   end

@@ -3,10 +3,10 @@
 class CreateRealWorldLocations < ActiveRecord::Migration[7.0]
   def change
     create_table :real_world_locations do |t|
-      t.string    :type,            null: false
+      t.string    :type,            null: false, index: true
       t.string    :ext_id,          null: true, index: { unique: true } # Can be null for user-generated locations
       t.st_point  :coordinates,     geographic: true, limit: { srid: 4326 }
-      t.string    :region,          null: false
+      t.string    :region,          null: false, index: true
       t.float     :latitude,        null: false
       t.float     :longitude,       null: false
       t.jsonb     :tags

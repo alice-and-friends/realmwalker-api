@@ -22,7 +22,7 @@ Environment variables...
 ## Services
 Our application leverages Redis as a data store for Sidekiq, which is used for background job processing. Sidekiq-Cron is utilized to schedule recurring jobs, and Sidekiq-Web provides a web interface for monitoring and managing the job queue and scheduled jobs.
 * `redis-server` Start the Redis server
-* `bundle exec sidekiq` Start Sidekiq
+* `sidekiq` Start Sidekiq
 * `rake sidekiq purge` Purge all scheduled jobs (should probably not be used in production)
 
 Access the Sidekiq Web UI at http://localhost:3000/sidekiq to monitor and manage jobs.
