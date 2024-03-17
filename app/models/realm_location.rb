@@ -3,7 +3,7 @@
 class RealmLocation < ApplicationRecord
   include Coordinates
 
-  PLAYER_VISION_RADIUS = 100_000 # meters
+  PLAYER_VISION_RADIUS = 10_000 # meters
 
   belongs_to :real_world_location
   has_one :inventory, dependent: :destroy
