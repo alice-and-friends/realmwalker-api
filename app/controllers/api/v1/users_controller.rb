@@ -7,50 +7,21 @@ class Api::V1::UsersController < Api::V1::ApiController
     render json: @current_user, status: :ok
   end
 
-  # GET /api/v1/users
-  # def index
-  #   @api_v1_users = User.all
-  #   render json: @api_v1_users.to_json(:include => [:app_sessions])
-  # end
+  def update_preference
+    # Convert parameters to a hash and merge with existing preferences to retain other preferences
+    updated_preferences = @current_user.preferences.merge(preference_params.to_h)
 
-  # GET /api/v1/users/1
-  # def show
-  #   render json: @api_v1_user
-  # end
-
-  # POST /api/v1/users
-  # def create
-  #   @api_v1_user = User.new(api_v1_user_params)
-  #   if @api_v1_user.save
-  #     render json: @api_v1_user, status: :created and return
-  #   else
-  #     render json: @api_v1_user.errors, status: :unprocessable_entity
-  #   end
-  # end
-
-  # PATCH/PUT /api/v1/users/1
-  # def update
-  #   if @api_v1_user.update(api_v1_user_params)
-  #     render json: @api_v1_user
-  #   else
-  #     render json: @api_v1_user.errors, status: :unprocessable_entity
-  #   end
-  # end
-
-  # DELETE /api/v1/users/1
-  # def destroy
-  #   @api_v1_user.destroy
-  # end
+    if @current_user.update(preferences: updated_preferences)
+      render json: @current_user.preferences, status: :ok
+    else
+      render json: @current_user.errors, status: :unprocessable_entity
+    end
+  end
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
-  # def set_api_v1_user
-  #   @api_v1_user = User.find(params[:id])
-  # end
-  #
   # # Only allow a trusted parameter "white list" through.
-  # def api_v1_user_params
-  #   params.require(:user).permit(:id, :name)
-  # end
+  def preference_params
+    params.require(:preferences).permit(:developer)
+  end
 end

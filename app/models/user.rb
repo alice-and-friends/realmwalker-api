@@ -12,6 +12,7 @@ class User < ApplicationRecord
   has_many :dungeons, through: :conquests
 
   serialize :auth0_user_data, Auth0UserData
+  serialize :preferences, Hash
 
   validates :auth0_user_id, presence: true, uniqueness: true
   validate :must_have_valid_auth0_user_data
@@ -20,6 +21,7 @@ class User < ApplicationRecord
   validate :must_be_valid_runestone_ids
 
   # Create inventory and grant starting equipment to new players
+  after_initialize :set_default_preferences
   after_create { self.inventory = Inventory.create!(user: self) }
   after_create :give_starting_equipment
   before_destroy { RealmLocation.where(owner_id: id).destroy_all }
@@ -331,6 +333,11 @@ class User < ApplicationRecord
   end
 
   private
+
+  def set_default_preferences
+    self.preferences ||= {}
+    self.preferences['developer'] ||= false
+  end
 
   def must_be_valid_achievements
     # Should have only valid types

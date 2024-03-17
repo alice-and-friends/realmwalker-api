@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration[7.0]
     create_table :users do |t|
       t.string :auth0_user_id, null: false, index: { unique: true }
       t.json :auth0_user_data
-      t.hstore :preferences
+      t.json :preferences
       t.integer :xp,           default: 0
       t.integer :level,        default: 1
       t.text :achievements,    array: true, default: []

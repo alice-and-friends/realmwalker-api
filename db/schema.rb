@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema[7.0].define(version: 601) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "hstore"
   enable_extension "plpgsql"
   enable_extension "postgis"
 
@@ -180,7 +179,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
   create_table "users", force: :cascade do |t|
     t.string "auth0_user_id", null: false
     t.json "auth0_user_data"
-    t.hstore "preferences"
+    t.json "preferences"
     t.integer "xp", default: 0
     t.integer "level", default: 1
     t.text "achievements", default: [], array: true
