@@ -319,6 +319,43 @@ class User < ApplicationRecord
     false # Since we failed the save, it doesn't count as a new discovery
   end
 
+  # Only for testing purposes, f.ex. inventory layout changes
+  def give_assorted_loot
+    return unless Rails.env.development?
+
+    [
+      'Spear',
+      'Gearwheel Chain',
+      'Wedding Ring',
+      'Golden Armor',
+      'Amulet of Life',
+      'Broken Amulet',
+      'Sunfire Cloak',
+      'Opal',
+      'Nose Ring',
+      'Giant Sword',
+      'Giant Sword',
+      'Ghost in a Jar',
+      'Giant Topaz',
+      'Small Emerald',
+      'Small Emerald',
+      'Small Emerald',
+      'Moonlight Crystal',
+      'Moonlight Crystal',
+      'Piece of Cloth',
+      'Vial of Ink',
+      'Opal',
+      'Crusader Helmet',
+      'Small Diamond',
+      'Modified Crossbow',
+      'Small Diamond',
+      'Great Shield',
+    ].each do |query|
+      item = Item.find_by(name: query)
+      gain_item item unless item.nil?
+    end
+  end
+
   protected
 
   def must_have_valid_auth0_user_data
