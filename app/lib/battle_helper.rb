@@ -28,8 +28,7 @@ class BattleHelper
   end
 
   def battle_prediction
-    # Calculate baseline based on player level and dungeon level
-    base_difficulty_score = (difficulty_multiplier * (@user.level.to_f / 2)).floor.clamp(0, 100)
+    dungeon_difficulty_class = @dungeon.difficulty_class_for @user
 
     # Descriptions of modifiers which will be displayed to end user
     modifier_descriptors_positive = []
@@ -57,7 +56,7 @@ class BattleHelper
     # Calculate effective difficulty and possible overkill
     overkill = 0
     chance_of_success = (
-      base_difficulty_score + User::BASE_ATTACK + player_attack_bonus - player_attack_penalty - monster_defense
+      dungeon_difficulty_class + User::BASE_ATTACK + player_attack_bonus - player_attack_penalty - monster_defense
     ).clamp(0, 100)
 
     # Calculate chance of bad stuff
@@ -69,7 +68,7 @@ class BattleHelper
     # chance_of_equipment_loss = chance_of_death / 10
 
     {
-      base_chance: base_difficulty_score,
+      base_chance: dungeon_difficulty_class,
       chance_of_success: chance_of_success,
       overkill: overkill,
       modifiers_positive: modifier_descriptors_positive,

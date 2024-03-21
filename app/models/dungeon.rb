@@ -123,6 +123,26 @@ class Dungeon < RealmLocation
     remove_spooks!
   end
 
+  # Calculate baseline battle difficulty based on player level and dungeon level.
+  # This is a number between 0 and 100 which indicates the users chance % of winning the fight.
+  # For example, a difficulty class of 14 means the player has 14% chance of success.
+  def difficulty_class_for(user)
+    base = {
+      1 => 180.0,
+      2 => 22.2,
+      3 => 6.0,
+      4 => 3.0,
+      5 => 2.0,
+      6 => 1.8,
+      7 => 1.6,
+      8 => 1.4,
+      9 => 1.2,
+      10 => 1.0,
+    }[level]
+
+    (base * (user.level.to_f / 2)).floor.clamp(0, 100)
+  end
+
   private
 
   def must_have_defeated_at
