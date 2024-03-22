@@ -374,6 +374,7 @@ class User < ApplicationRecord
   def set_default_preferences
     self.preferences ||= {}
     self.preferences['developer'] ||= false
+    self.preferences['item_frames'] ||= 'None'
   end
 
   def must_be_valid_achievements

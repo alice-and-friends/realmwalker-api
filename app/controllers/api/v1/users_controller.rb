@@ -22,6 +22,6 @@ class Api::V1::UsersController < Api::V1::ApiController
 
   # # Only allow a trusted parameter "white list" through.
   def preference_params
-    params.require(:preferences).permit(:developer)
+    params.require(:preferences).permit(:developer, :item_frames)
   end
 end
