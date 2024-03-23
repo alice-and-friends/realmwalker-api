@@ -46,6 +46,9 @@ Rails.application.routes.draw do
         get 'analyze', to: 'dungeons#analyze', as: :analyze
         post 'battle', to: 'dungeons#battle', as: :battle
       end
+      resources :ley_lines, only: [:show] do
+        post 'capture', to: 'ley_lines#capture', as: :capture
+      end
 
       # Debug
       get 'compendium/monsters', to: 'compendium#monsters', as: :monsters

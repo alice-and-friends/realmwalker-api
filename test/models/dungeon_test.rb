@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class DungeonTest < ActiveSupport::TestCase
@@ -74,6 +76,6 @@ class DungeonTest < ActiveSupport::TestCase
     users.each do |user|
       dungeon.battle_as(user)
     end
-    assert_equal users.pluck(:id), dungeon.defeated_by.pluck(:id)
+    assert_equal users.pluck(:id).sort, dungeon.defeated_by.pluck(:id).sort
   end
 end

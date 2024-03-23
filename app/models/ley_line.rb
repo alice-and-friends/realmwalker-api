@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class LeyLine < RealmLocation
+  belongs_to :owner, class_name: 'User', optional: true
   # enum status: { active: 1, expired: 0 } # TODO: Define statuses in RealmLocation, and have validation here
   # store :properties, accessors: [ :level, :defeated_at, :defeated_by ], coder: JSON
   validate :must_obey_minimum_distance
@@ -8,6 +9,14 @@ class LeyLine < RealmLocation
 
   def name
     'Ley line'
+  end
+
+  def captured_by!(user)
+    LeyLine.transaction do
+      self.owner_id = user.id
+      self.captured_at = Time.current
+      save!
+    end
   end
 
   private

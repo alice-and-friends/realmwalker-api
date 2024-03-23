@@ -11,8 +11,8 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       t.string :name
       t.timestamps
 
-      # BASE (user-owned location)
-      t.references :owner, index: { unique: true }, foreign_key: { to_table: :users }, on_delete: :cascade
+      # Base + Ley Lines
+      t.references :owner, index: { unique: true, null: true }, foreign_key: { to_table: :users }, on_delete: :cascade
 
       # NPC
       t.string :species
@@ -31,6 +31,9 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
 
       # Runestones
       t.string :runestone_id
+
+      # Ley Lines
+      t.datetime :captured_at
     end
 
     # Coordinates GIST index
@@ -38,7 +41,7 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
 
     # Use this table to track which users defeated which dungeons
     create_table :conquests do |t|
-      t.references :dungeon, null: false, foreign_key: { to_table: :realm_locations }
+      t.references :ley_line, null: false, foreign_key: { to_table: :realm_locations }
       t.references :user, null: false, foreign_key: { to_table: :users }
 
       t.timestamps

@@ -141,6 +141,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.string "expiry_job_id"
     t.datetime "expires_at"
     t.string "runestone_id"
+    t.datetime "captured_at"
     t.index ["coordinates"], name: "index_realm_locations_on_coordinates", using: :gist
     t.index ["monster_id"], name: "index_realm_locations_on_monster_id"
     t.index ["owner_id"], name: "index_realm_locations_on_owner_id", unique: true
