@@ -8,6 +8,14 @@ class Api::V1::RunestonesController < Api::V1::ApiController
     render json: @runestone, status: :ok, serializer: RunestoneSerializer
   end
 
+  def add_to_journal
+    unless @current_user.has_discovered_runestone @runestone.id
+
+    end
+
+    render status: :ok
+  end
+
   private
 
   def find_runestone

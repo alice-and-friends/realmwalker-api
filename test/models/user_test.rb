@@ -185,4 +185,15 @@ class UserTest < ActiveSupport::TestCase
     assert_not return_value
     assert_equal 1, u.discovered_runestones.length
   end
+  test 'user has discovered runestone' do
+    runestone = RunestonesHelper.first
+    u = generate_test_user
+    u.discover_runestone runestone.id
+    assert u.discovered_runestone? runestone.id
+  end
+  test 'user has not discovered runestone' do
+    runestone = RunestonesHelper.first
+    u = generate_test_user
+    assert_not u.discovered_runestone? runestone.id
+  end
 end

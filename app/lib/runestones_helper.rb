@@ -29,6 +29,10 @@ class RunestonesHelper
   def self.exists?(id)
     @runestones.any? { |runestone| runestone.id == id }
   end
+
+  class << self
+    alias valid_runestone_id? exists?
+  end
 end
 
 RunestonesHelper.add(
