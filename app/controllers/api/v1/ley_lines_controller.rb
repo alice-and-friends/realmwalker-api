@@ -10,6 +10,8 @@ class Api::V1::LeyLinesController < Api::V1::ApiController
   end
 
   def capture
+    render status: :conflict if @ley_line.captured?
+
     @ley_line.captured_by! @current_user
     render json: @ley_line, serializer: LeyLineSerializer
   end

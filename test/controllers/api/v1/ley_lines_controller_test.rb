@@ -20,8 +20,7 @@ class Api::V1::LeyLinesControllerTest < ActionDispatch::IntegrationTest
     assert_equal location.id, response.parsed_body['id']
 
     jane = users(:jane_doe)
-    assert_not_nil response.parsed_body['owner']
-    assert_equal jane.name, response.parsed_body['owner']['name']
-    assert_safe_user_object response.parsed_body['owner']
+    assert_equal jane.name, response.parsed_body['capturedBy'][0]['name']
+    assert_safe_user_object response.parsed_body['capturedBy'][0]
   end
 end

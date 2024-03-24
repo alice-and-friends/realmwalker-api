@@ -1,13 +1,9 @@
 # frozen_string_literal: true
 
 class LeyLineSerializer < RealmLocationSerializer
-  attributes :captured_at, :owner
+  attributes :captured_at, :captured_by
 
-  def owner
-    return nil if object.owner.nil?
-
-    {
-      name: object.owner.name,
-    }
+  def captured_by
+    ActiveModelSerializers::SerializableResource.new(object.captured_by, each_serializer: UserSafeSerializer)
   end
 end

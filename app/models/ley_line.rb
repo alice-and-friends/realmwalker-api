@@ -1,20 +1,37 @@
 # frozen_string_literal: true
 
 class LeyLine < RealmLocation
+  include LocationStatus
+
   belongs_to :owner, class_name: 'User', optional: true
-  # enum status: { active: 1, expired: 0 } # TODO: Define statuses in RealmLocation, and have validation here
-  # store :properties, accessors: [ :level, :defeated_at, :defeated_by ], coder: JSON
+  alias_attribute :captured_by, :users
+
   validate :must_obey_minimum_distance
+  validates :status, presence: true, inclusion: [
+    statuses[:active],
+    statuses[:expired],
+  ]
+
   before_validation :set_region_and_coordinates!, on: :create
 
   def name
     'Ley line'
   end
 
+  def captured?
+    owner_id || captured_at
+  end
+
+  def captured!
+    throw('Use captured_by! instead')
+  end
+
   def captured_by!(user)
+    throw('Already captured (you should check before calling this method)') if captured?
+
     LeyLine.transaction do
-      self.owner_id = user.id
-      self.captured_at = Time.current
+      captured_by << user
+      self.captured_at = Time.current if captured_at.nil? # captured_at should always be the FIRST time a location was captured
       save!
     end
   end

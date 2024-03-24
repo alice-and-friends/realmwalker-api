@@ -1,24 +1,26 @@
 # frozen_string_literal: true
 
 class Dungeon < RealmLocation
+  include LocationStatus
+
   ACTIVE_DURATION = 2.days # How long dungeons stay active
   DEFEATED_DURATION = 2.days # How long defeated dungeons appear on map
   EXPIRED_DURATION = 1.day # How long expired dungeons are kept in the database
   EXPIRATION_TIMER_LENGTH = 10.minutes # How much notice players get before dungeons are expired
 
   belongs_to :monster
-  has_many :conquests, dependent: :delete_all
-  has_many :users, through: :conquests
   has_many :spooks, dependent: :delete_all
   has_many :spooked_npcs, class_name: 'Npc', through: :spooks
   alias_attribute :defeated_by, :users
 
-  enum status: { active: 'active', defeated: 'defeated', expired: 'expired' }
-
-  validates :level, :status, presence: true
+  validates :level, presence: true
+  validates :status, presence: true, inclusion: [
+    statuses[:active],
+    statuses[:defeated],
+    statuses[:expired],
+  ]
   validate :must_have_defeated_at
 
-  before_validation :set_active_status, on: :create
   before_validation :set_real_world_location!, on: :create
   before_validation :set_region_and_coordinates!, on: :create
   before_validation :randomize_level_and_monster!, on: :create
@@ -119,7 +121,7 @@ class Dungeon < RealmLocation
   end
 
   def expired!
-    update!(status: Dungeon.statuses[:expired])
+    update!(status: statuses[:expired])
     remove_spooks!
   end
 
@@ -154,10 +156,6 @@ class Dungeon < RealmLocation
 
     destroyed = spooks.destroy_all
     Rails.logger.debug { "❌ Removed #{destroyed.count} spooks" }
-  end
-
-  def set_active_status
-    self.status = Dungeon.statuses[:active] if status.nil?
   end
 
   def set_real_world_location!

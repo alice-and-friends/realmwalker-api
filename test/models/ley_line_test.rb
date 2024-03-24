@@ -10,7 +10,8 @@ class LeyLineTest < ActiveSupport::TestCase
     user = User.first
     ley_line = LeyLine.first
     ley_line.captured_by! user
-    assert_equal user.id, ley_line.owner_id
+    assert ley_line.captured?
+    assert_includes ley_line.captured_by, user
     assert_operator ley_line.captured_at, :>, 5.seconds.ago
   end
 end

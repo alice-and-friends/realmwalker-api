@@ -16,11 +16,11 @@ ActiveRecord::Schema[7.0].define(version: 601) do
   enable_extension "postgis"
 
   create_table "conquests", force: :cascade do |t|
-    t.bigint "dungeon_id", null: false
+    t.bigint "realm_location_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["dungeon_id"], name: "index_conquests_on_dungeon_id"
+    t.index ["realm_location_id"], name: "index_conquests_on_realm_location_id"
     t.index ["user_id"], name: "index_conquests_on_user_id"
   end
 
@@ -192,7 +192,7 @@ ActiveRecord::Schema[7.0].define(version: 601) do
     t.index ["auth0_user_id"], name: "index_users_on_auth0_user_id", unique: true
   end
 
-  add_foreign_key "conquests", "realm_locations", column: "dungeon_id"
+  add_foreign_key "conquests", "realm_locations"
   add_foreign_key "conquests", "users"
   add_foreign_key "inventory_items", "inventories"
   add_foreign_key "inventory_items", "items"
