@@ -46,7 +46,8 @@ class RealWorldLocation < ApplicationRecord
   end
 
   def inspected!
-    self.relevance_grade = RealWorldLocation.relevance_grades[:inspected]
+    current_value = RealWorldLocation.relevance_grades[relevance_grade]
+    self.relevance_grade = RealWorldLocation.relevance_grades[:inspected] if current_value < RealWorldLocation.relevance_grades[:inspected]
   end
 
   private
