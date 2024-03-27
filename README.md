@@ -19,6 +19,11 @@ Environment variables...
 ## Running the application
 * `rails s` Start the Rails server
 
+Or, to run the sever securely:
+1. `mkcert localhost 192.168.x.x` to generate a certificate
+2. Update the certificate path in /config/puma.rb
+3. `rails s` Start the rails server
+
 ## Services
 Our application leverages Redis as a data store for Sidekiq, which is used for background job processing. Sidekiq-Cron is utilized to schedule recurring jobs, and Sidekiq-Web provides a web interface for monitoring and managing the job queue and scheduled jobs.
 * `redis-server` Start the Redis server

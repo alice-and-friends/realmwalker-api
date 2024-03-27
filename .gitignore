@@ -43,3 +43,7 @@ dump.rdb
 
 # Environment variables
 .env
+
+# Key files (e.g. local ssl certificates used for development)
+**/*.pem
+**/*.cert
