@@ -1,30 +1,35 @@
 # frozen_string_literal: true
 
 class Api::V1::RunestonesController < Api::V1::ApiController
-  before_action :find_runestone, only: %i[show]
+  before_action :find_runestone
   before_action :location_inspected, only: %i[show]
+  before_action :location_interacted, only: %i[add_to_journal]
 
   def show
-    render json: @runestone, status: :ok, serializer: RunestoneSerializer
+    render json: @location, serializer: RunestoneSerializer, user: @current_user
   end
 
   def add_to_journal
-    unless @current_user.has_discovered_runestone @runestone.id
-
-    end
-
-    render status: :ok
+    new_discovery = @current_user.discover_runestone(@runestone.id)
+    show
   end
 
   private
 
   def find_runestone
-    runestone_id = params[:action] == 'show' ? params[:id] : params[:runestone_id]
-    @runestone = Runestone.find(runestone_id)
-    render status: :not_found if @runestone.nil?
+    location_id = params[:action] == 'show' ? params[:id] : params[:runestone_id]
+    @location = RealmLocation.find_by(id: location_id)
+    render status: :not_found and return unless @location
+
+    @runestone = RunestonesHelper.find(@location.runestone_id)
+    render status: :internal_server_error and return unless @runestone
   end
 
   def location_inspected
-    @runestone.real_world_location.inspected!
+    @location.real_world_location.inspected!
+  end
+
+  def location_interacted
+    @location.real_world_location.interacted!
   end
 end

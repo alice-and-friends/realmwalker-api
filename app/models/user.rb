@@ -306,7 +306,9 @@ class User < ApplicationRecord
   # @return [Boolean] whether this runestone counts as a new discovery
   def discover_runestone(runestone_id)
     unless RunestonesHelper.valid_runestone_id? runestone_id
-      Rails.logger.error("User attempted to discover runestone id #{runestone_id}, which is not valid.")
+      error_msg = "User attempted to discover runestone id '#{runestone_id}', which is not valid."
+      Rails.logger.error(error_msg)
+      throw(:invalid, error_msg) if Rails.env.test?
       return false
     end
 
@@ -320,7 +322,7 @@ class User < ApplicationRecord
   end
 
   def discovered_runestone?(runestone_id)
-    throw('not a valid runestone id') unless RunestonesHelper.valid_runestone_id? runestone_id
+    throw("'#{runestone_id}' is not a valid runestone id") unless RunestonesHelper.valid_runestone_id? runestone_id
 
     discovered_runestones.include? runestone_id
   end

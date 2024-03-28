@@ -9,7 +9,7 @@ class RealWorldLocation < ApplicationRecord
 
   enum type: {
     ley_line: 'ley_line',
-    runestone: 'runestone',
+    location: 'runestone',
     shop: 'shop',
     unassigned: 'unassigned',
     user_owned: 'user_owned',
@@ -28,7 +28,7 @@ class RealWorldLocation < ApplicationRecord
   scope :for_dungeon, -> { where(type: RealWorldLocation.types[:unassigned]) }
   scope :for_ley_line, -> { where(type: RealWorldLocation.types[:ley_line]) }
   scope :for_shop, -> { where(type: RealWorldLocation.types[:shop]) }
-  scope :for_runestone, -> { where(type: RealWorldLocation.types[:runestone]) }
+  scope :for_runestone, -> { where(type: RealWorldLocation.types[:location]) }
 
   def deterministic_rand(param)
     seed = Digest::SHA256.hexdigest("#{type}@#{ext_id}").to_i(16)

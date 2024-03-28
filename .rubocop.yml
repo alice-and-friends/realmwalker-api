@@ -5,6 +5,7 @@ require:
   - ./lib/custom_cops/custom_validator_name.rb
   - ./lib/custom_cops/sexy_migration.rb
   - ./lib/custom_cops/variable_name.rb
+  - ./lib/custom_cops/remove_status_ok.rb
 
 AllCops:
   NewCops: enable
@@ -26,6 +27,10 @@ Custom/UsePrefixForCustomValidator:
 Custom/UseSexyMigrationSyntax:
   Include:
     - 'db/migrate/*'
+
+Custom/RemoveRedundantStatusOk:
+  Include:
+    - 'app/controllers/**/*'
 
 Custom/VariableName:
   Enabled: true

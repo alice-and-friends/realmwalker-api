@@ -171,9 +171,9 @@ class UserTest < ActiveSupport::TestCase
     u = generate_test_user
 
     # Invalid runestone id
-    return_value = u.discover_runestone('I do not exist')
-    assert_not return_value
-    assert_empty u.discovered_runestones
+    assert_throws :invalid do
+      u.discover_runestone('I do not exist')
+    end
 
     # First discovery of valid runestone
     return_value = u.discover_runestone(runestone.id)

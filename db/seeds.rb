@@ -111,7 +111,7 @@ class SeedHelper
       type_index = location.deterministic_rand(1..1_000)
       location.type = RealWorldLocation.types[:ley_line] if type_index.in? 1..70
       location.type = RealWorldLocation.types[:shop] if type_index.in? 100..180
-      location.type = RealWorldLocation.types[:runestone] if type_index.in? 900..907
+      location.type = RealWorldLocation.types[:location] if type_index.in? 900..907
 
       locations << location
     end
