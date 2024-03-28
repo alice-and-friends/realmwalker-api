@@ -17,9 +17,9 @@ class Api::V1::TradeOffersController < Api::V1::ApiController
     render json: {
       inventory: {
         gold: @current_user.gold,
-        items: ActiveModelSerializers::SerializableResource.new(@current_user.inventory_items.alphabetical, each_serializer: InventoryItemSerializer)
-      }
-    }, status: :ok
+        items: ActiveModelSerializers::SerializableResource.new(@current_user.inventory_items.alphabetical, each_serializer: InventoryItemSerializer),
+      },
+    }
   end
 
   def sell
@@ -35,9 +35,9 @@ class Api::V1::TradeOffersController < Api::V1::ApiController
     render json: {
       inventory: {
         gold: @current_user.gold,
-        items: ActiveModelSerializers::SerializableResource.new(@current_user.inventory_items.alphabetical, each_serializer: InventoryItemSerializer, user: @current_user)
-      }
-    }, status: :ok
+        items: ActiveModelSerializers::SerializableResource.new(@current_user.inventory_items.alphabetical, each_serializer: InventoryItemSerializer, user: @current_user),
+      },
+    }
   end
 
   private
@@ -56,9 +56,9 @@ class Api::V1::TradeOffersController < Api::V1::ApiController
   def find_trade_offer
     render status: :internal_server_error, json: { error: 'Missing trade_offer_id parameter' } and return if params[:trade_offer_id].blank?
 
-    @trade_offer = @npc.trade_offers.find(params[:trade_offer_id])
-    render status: :not_found and return if @trade_offer.nil?
+    @trade_offer = @npc.trade_offers.find_by(id: params[:trade_offer_id])
+    render status: :not_found and return unless @trade_offer
 
-    render status: :internal_server_error and nil if @trade_offer.item.nil?
+    render status: :internal_server_error and return if @trade_offer.item.nil?
   end
 end

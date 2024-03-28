@@ -19,14 +19,12 @@ class Api::V1::InventoryItemsController < Api::V1::ApiController
   end
 
   def find_item
-    @inventory_item = InventoryItem.find(params[:id])
-    render json: { error: 'Item not found' }, status: :not_found if @inventory_item.nil?
+    @inventory_item = InventoryItem.find_by(id: params[:id])
+    render json: { error: 'Item not found' }, status: :not_found unless @inventory_item
     render json: { error: 'You are not the owner' }, status: :forbidden unless belongs_to_current_user
   end
 
   def belongs_to_current_user
-    # puts 'belongs to', @inventory_item.owner.inspect
-    # puts 'touched by', @current_user.inspect
     @inventory_item.owner == @current_user
   end
 end

@@ -10,7 +10,7 @@ class Api::V1::RunestonesController < Api::V1::ApiController
   end
 
   def add_to_journal
-    new_discovery = @current_user.discover_runestone(@runestone.id)
+    @current_user.discover_runestone(@runestone.id)
     show
   end
 

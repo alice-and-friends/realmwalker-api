@@ -20,8 +20,8 @@ class Api::V1::LeyLinesController < Api::V1::ApiController
 
   def find_ley_line
     ley_line_id = params[:action] == 'show' ? params[:id] : params[:ley_line_id]
-    @ley_line = LeyLine.find(ley_line_id)
-    render status: :not_found if @ley_line.nil?
+    @ley_line = LeyLine.find_by(id: ley_line_id)
+    render status: :not_found unless @ley_line
   end
 
   def location_inspected

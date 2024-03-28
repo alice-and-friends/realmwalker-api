@@ -4,7 +4,7 @@ class Api::V1::BaseController < Api::V1::ApiController
   before_action :find_base, only: %i[show upgrade]
 
   def show
-    render json: @base, status: :ok, serializer: BaseSerializer
+    render json: @base, serializer: BaseSerializer
   end
 
   def create
@@ -36,6 +36,6 @@ class Api::V1::BaseController < Api::V1::ApiController
     # render status: :internal_server_error, json: { error: 'Missing base_id parameter' } and return if params[:base_id].blank?
 
     @base = Base.find_by(owner: @current_user)
-    render status: :not_found if @base.nil?
+    render status: :not_found unless @base
   end
 end

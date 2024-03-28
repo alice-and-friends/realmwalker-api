@@ -25,8 +25,8 @@ class Api::V1::DungeonsController < Api::V1::ApiController
 
   def find_dungeon
     dungeon_id = params[:action] == 'show' ? params[:id] : params[:dungeon_id]
-    @ley_line = Dungeon.find(dungeon_id)
-    render status: :not_found if @ley_line.nil?
+    @ley_line = Dungeon.find_by(id: dungeon_id)
+    render status: :not_found unless @ley_line
   end
 
   def location_inspected

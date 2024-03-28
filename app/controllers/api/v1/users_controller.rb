@@ -4,7 +4,7 @@ class Api::V1::UsersController < Api::V1::ApiController
   # before_action :set_api_v1_user, only: [:show, :update, :destroy]
 
   def me
-    render json: @current_user, status: :ok
+    render json: @current_user
   end
 
   def update_preference
@@ -12,7 +12,7 @@ class Api::V1::UsersController < Api::V1::ApiController
     updated_preferences = @current_user.preferences.merge(preference_params.to_h)
 
     if @current_user.update(preferences: updated_preferences)
-      render json: @current_user.preferences, status: :ok
+      render json: @current_user.preferences
     else
       render json: @current_user.errors, status: :unprocessable_entity
     end
@@ -20,7 +20,7 @@ class Api::V1::UsersController < Api::V1::ApiController
 
   private
 
-  # # Only allow a trusted parameter "white list" through.
+  # Only allow trusted parameters through.
   def preference_params
     params.require(:preferences).permit(:developer, :item_frames)
   end
