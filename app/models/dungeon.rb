@@ -121,7 +121,7 @@ class Dungeon < RealmLocation
   end
 
   def expired!
-    update!(status: statuses[:expired])
+    update!(status: Dungeon.statuses[:expired])
     remove_spooks!
   end
 
