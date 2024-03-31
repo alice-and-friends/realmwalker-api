@@ -28,6 +28,7 @@ class Monster < ApplicationRecord
   # validate :tags_are_valid
 
   def self.for_level(level)
+    throw('Not a valid level') unless level.in? 1..10
     monster = Monster.where(level: level).sample
     throw("No monsters for level #{level}") if monster.nil?
     monster

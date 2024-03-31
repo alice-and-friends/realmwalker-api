@@ -57,6 +57,7 @@ class SeedHelper
         seed(:items)
         seed(:trade_offers)
         seed(:portraits)
+        seed(:events)
       end
       if ENV['geographies']
         geographies.each_with_index do |geography, index|
@@ -130,6 +131,7 @@ class SeedHelper
       monster.description = row['description']
       monster.level = row['level']
       monster.classification = row['classification']
+      monster.auto_spawn = row['auto_spawn'].to_boolean
       # monster.tags = row['tags'].split(' ')
       monsters << monster
     end
@@ -248,6 +250,14 @@ class SeedHelper
       end
     end
     count
+  end
+
+  def events
+    full_moon_event = Event.find_or_create_by(name: 'Full moon')
+    full_moon_event.update!(
+      description: 'The moon is full! Beware, traveler, for werewolves roam the lands beneath the silvered light. Will you hide from the darkness, or will you rise to meet it?',
+    )
+    Event.count
   end
 
   def shops

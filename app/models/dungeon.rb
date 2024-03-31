@@ -176,27 +176,35 @@ class Dungeon < RealmLocation
            .find_each(&:expired!)
   end
 
-  def randomize_level_and_monster!
-    if level.nil?
-
+  def randomize_level_and_monster!(allow_boss = false)
+    random_level = lambda do
       # Lower level = Should have higher chance of spawning
       # Higher level = Should have lower chance of spawning
-      # So we generate an array like [10, 9, 9, 9, 8, 8, 7, 7, 7, 7 ...] to be used for weighted randomization.
-      diffs = []
+      # So we generate an array like [10, 9, 9, 8, 8, 8, 7, 7, 7, 7 ...] to be used for weighted randomization.
+      levels = []
       (1..9).each do |level|
         (3 * (10 - level)).floor.times do
-          diffs << level
+          levels << level
         end
       end
 
       # Level 10 dungeons are considered bosses, there can only be one active at any time.
-      diffs << 10 if Dungeon.active.where(level: 10).count.zero?
-
-      # Pick the difficulty level
-      self.level = diffs.sample
+      levels << 10 if allow_boss && Dungeon.active.where(level: 10).count.zero?
+      levels.sample
     end
 
-    self.monster = Monster.for_level(self.level)
+    if level.nil? && monster.nil?
+      # Event
+      full_moon_event = Event.find_by(name: 'Full moon')&.active?
+      if full_moon_event && rand(0..3).zero?
+        werewolf = Monster.find_by(name: 'Werewolf')
+        self.level = werewolf.level
+        self.monster = werewolf
+      end
+    end
+
+    self.level = random_level.call if level.nil?
+    self.monster = Monster.where(auto_spawn: true).for_level(self.level) if monster.nil?
     self.name = monster.name
   end
 end

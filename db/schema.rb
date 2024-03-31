@@ -29,6 +29,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.text "description"
     t.datetime "start_at"
     t.datetime "finish_at"
+    t.boolean "announce", default: true, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -88,6 +89,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.string "description", null: false
     t.integer "level", null: false
     t.string "classification", null: false
+    t.boolean "auto_spawn", default: true, null: false
     t.text "tags", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

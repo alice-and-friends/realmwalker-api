@@ -1,4 +1,4 @@
-id,level,classification,tags,name,description,autospawn
+id,level,classification,tags,name,description,auto_spawn
 1,1,beast,,Badger,Badger Badger Badger Badger Badger Badger Badger Badger ...,TRUE
 2,1,beast,,Bat,"Nocturnal flying mammals, using echolocation to navigate in the dark. They are often found in caves or old ruins, hanging from the ceiling in large colonies.",TRUE
 3,1,beast,,Cobra,Venomous snakes known for their deadly bite and mesmerizing dance.,TRUE

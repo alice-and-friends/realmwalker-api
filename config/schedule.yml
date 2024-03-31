@@ -18,3 +18,9 @@ Destroy expired dungeons:
   class: "DungeonDestroyWorker"
   queue: default
   timezone: "UTC"
+
+Schedule events:
+  cron: "0 0 * * *"
+  class: "EventsScheduler"
+  queue: default
+  timezone: "UTC"

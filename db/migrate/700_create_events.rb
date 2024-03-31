@@ -7,6 +7,7 @@ class CreateEvents < ActiveRecord::Migration[7.0]
       t.text :description
       t.datetime :start_at
       t.datetime :finish_at
+      t.boolean :announce, null: false, default: true
       t.timestamps
     end
   end

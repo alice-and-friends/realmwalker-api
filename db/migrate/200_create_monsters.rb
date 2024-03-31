@@ -7,6 +7,7 @@ class CreateMonsters < ActiveRecord::Migration[7.0]
       t.string :description,    null: false
       t.integer :level,         null: false
       t.string :classification, null: false
+      t.boolean :auto_spawn,    null: false, default: true
       t.text :tags,             array: true, default: []
       t.timestamps
     end
