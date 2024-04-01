@@ -9,5 +9,6 @@ class Api::V1::HomeControllerTest < ActionDispatch::IntegrationTest
     assert response.parsed_body['serverTime']
     assert_instance_of Array, response.parsed_body['events']['active']
     assert_instance_of Array, response.parsed_body['events']['upcoming']
+    assert_not response.parsed_body['locations'].empty?
   end
 end
