@@ -4,7 +4,7 @@ class Item < ApplicationRecord
   self.inheritance_column = nil
   EQUIPMENT_TYPES = %w[amulet armor helmet ring shield weapon].freeze
   ITEM_TYPES = %w[valuable creature_product plants_and_herbs miscellaneous] + EQUIPMENT_TYPES.freeze
-  RARITIES = %w[always common uncommon rare epic legendary].freeze
+  RARITIES = %w[always very_common common uncommon rare epic legendary].freeze
 
   has_many :trade_offers, dependent: :delete_all
   has_many :inventory_items, dependent: :delete_all

@@ -5,11 +5,13 @@ class LootGenerator
     @player_loot_bonus = player_loot_bonus
     @monster_classification = nil
     @loot_tiers = {
-      'common' => 0.1666,  # 1 in 6
-      'uncommon' => 0.05,  # 1 in 20
-      'rare' => 0.03,      # 1 in 33
-      'epic' => 0.02,      # 1 in 50
-      'legendary' => 0.01, # 1 in 100
+      'always' => 1,        # 1 in 1
+      'very_common' => 0.5, # 1 in 2
+      'common' => 0.1666,   # 1 in 6
+      'uncommon' => 0.05,   # 1 in 20
+      'rare' => 0.03,       # 1 in 33
+      'epic' => 0.02,       # 1 in 50
+      'legendary' => 0.01,  # 1 in 100
     }
     @loot_table = Item.none # We will populate this based on monster level and classification
     @gold_ranges = {
