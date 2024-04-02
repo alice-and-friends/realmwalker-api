@@ -16,6 +16,12 @@ class Event < ApplicationRecord
   # Scope for events that will start in the next 24 hours
   scope :upcoming, -> { where('start_at > ? AND start_at <= ?', Time.current, 24.hours.from_now) }
 
+  def self.full_moon
+    event = find_by(name: FULL_MOON[:name])
+    throw "Can't find full moon event" if event.nil?
+    event
+  end
+
   # Checks if an event is currently active
   def active?
     return false if start_at.nil?

@@ -41,11 +41,16 @@ class Dungeon < RealmLocation
   def self.min_active_dungeons(region = '')
     return 10 if Rails.env.test?
 
+    # Calculate preferred lowest number of dungeons
     query = RealWorldLocation.for_dungeon
     query = query.where(region: region) if region.present?
     count = query.count
+    target = count / 100
 
-    [10, count / 100].max
+    # Event modifiers
+    target *= 1.2 if Event.full_moon.active?
+
+    [10, target.round].max
   end
 
   def boss?

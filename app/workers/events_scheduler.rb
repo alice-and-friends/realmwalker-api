@@ -8,7 +8,7 @@ class EventsScheduler
   end
 
   def full_moon_schedule
-    full_moon_event = Event.find_by(name: Event::FULL_MOON[:name])
+    full_moon_event = Event.full_moon
     return unless full_moon_event
 
     today = Time.zone.today
