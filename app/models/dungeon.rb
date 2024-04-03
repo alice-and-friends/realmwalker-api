@@ -23,6 +23,7 @@ class Dungeon < RealmLocation
 
   before_validation :set_real_world_location!, on: :create
   before_validation :set_region_and_coordinates!, on: :create
+  before_validation :set_timezone!, on: :create
   before_validation :randomize_level_and_monster!, on: :create
 
   after_create do |d|
@@ -168,6 +169,10 @@ class Dungeon < RealmLocation
 
     occupied = Dungeon.select(:real_world_location_id)
     self.real_world_location = RealWorldLocation.available.for_dungeon.where.not(id: occupied).first
+  end
+
+  def set_timezone!
+    self.timezone = real_world_location.timezone unless Rails.env.test?
   end
 
   def expire_nearby_dungeons!

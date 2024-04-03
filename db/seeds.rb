@@ -319,7 +319,7 @@ class SeedHelper
       )
       dungeons << dungeon
     end
-    import(Dungeon, dungeons, pre_validate: false, validate: true)
+    import(Dungeon, dungeons, bulk: false, pre_validate: true, validate: true)
   end
 
   def runestones

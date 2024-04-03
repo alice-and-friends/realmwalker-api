@@ -119,6 +119,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.string "region", null: false
     t.float "latitude", null: false
     t.float "longitude", null: false
+    t.string "timezone"
     t.jsonb "tags"
     t.string "source_file"
     t.integer "relevance_grade", default: 0, null: false
@@ -135,6 +136,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.string "type"
     t.bigint "real_world_location_id", null: false
     t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
+    t.string "timezone"
     t.string "region", null: false
     t.string "name"
     t.datetime "created_at", null: false

@@ -184,6 +184,7 @@ Metrics/BlockLength:
     - 'Rakefile'
     - '**/*.rake'
     - 'spec/**/*.rb'
+    - 'app/models/concerns/*.rb'
     - '**/*.gemspec'
     - 'config/routes.rb'
 

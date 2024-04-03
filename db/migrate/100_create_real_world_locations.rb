@@ -9,6 +9,7 @@ class CreateRealWorldLocations < ActiveRecord::Migration[7.0]
       t.string    :region,          null: false, index: true
       t.float     :latitude,        null: false
       t.float     :longitude,       null: false
+      t.string    :timezone
       t.jsonb     :tags
       t.string    :source_file
       t.integer   :relevance_grade, null: false, default: 0

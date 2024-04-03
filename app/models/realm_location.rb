@@ -27,7 +27,9 @@ class RealmLocation < ApplicationRecord
   private
 
   def set_region_and_coordinates!
-    self.region = real_world_location.region if real_world_location.present?
-    self.coordinates = real_world_location.coordinates if real_world_location.present?
+    return if real_world_location.blank?
+
+    self.region = real_world_location.region
+    self.coordinates = real_world_location.coordinates
   end
 end

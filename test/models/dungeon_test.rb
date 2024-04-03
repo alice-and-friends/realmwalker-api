@@ -78,4 +78,17 @@ class DungeonTest < ActiveSupport::TestCase
     end
     assert_equal users.pluck(:id).sort, dungeon.defeated_by.pluck(:id).sort
   end
+  test 'test environment does not use timezones' do
+    new_dungeon = Dungeon.create!
+    assert_nil new_dungeon.timezone
+    assert_raise do
+      new_dungeon.approximate_local_time
+    end
+    assert_raise do
+      new_dungeon.night?
+    end
+    assert_raise do
+      new_dungeon.day?
+    end
+  end
 end
