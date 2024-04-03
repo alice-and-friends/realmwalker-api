@@ -22,9 +22,14 @@ class Monster < ApplicationRecord
     plant: 'plant',
     undead: 'undead',
   }
+  enum spawn_time: {
+    day: 'day',
+    night: 'night',
+  }
 
   validates :name, presence: true, uniqueness: true
   validates :classification, presence: true
+  validate :must_be_valid_spawn_time
   # validate :tags_are_valid
 
   def self.for_level(level)
@@ -51,6 +56,12 @@ class Monster < ApplicationRecord
   end
 
   private
+
+  def must_be_valid_spawn_time
+    return if spawn_time.nil? || spawn_times.include?(spawn_time)
+
+    errors.add(:spawn_time, 'is not a valid spawn time')
+  end
 
   # def tags_are_valid
   #   # Should have only valid types

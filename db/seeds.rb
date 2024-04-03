@@ -132,6 +132,7 @@ class SeedHelper
       monster.level = row['level']
       monster.classification = row['classification']
       monster.auto_spawn = row['auto_spawn'].to_boolean
+      monster.spawn_time = row['spawn_time'].to_s
       # monster.tags = row['tags'].split(' ')
       monsters << monster
     end
@@ -319,7 +320,7 @@ class SeedHelper
       )
       dungeons << dungeon
     end
-    import(Dungeon, dungeons, bulk: false, pre_validate: true, validate: true)
+    import(Dungeon, dungeons, bulk: false, pre_validate: true, validate: false)
   end
 
   def runestones
