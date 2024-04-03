@@ -258,6 +258,11 @@ class SeedHelper
     full_moon_event.update!(
       description: 'The moon is full! Beware, traveler, for werewolves roam the lands beneath the silvered light. Will you hide from the darkness, or will you rise to meet it?',
     )
+    night_time_event = Event.find_or_create_by(name: 'Night time')
+    night_time_event.update!(
+      description: "As night falls, the undead rise. Brave the darkness to encounter unique monsters only found under the moon's gaze. Will you prevail against the night's shadows?",
+      start_at: 100.years.ago,
+    )
     Event.count
   end
 

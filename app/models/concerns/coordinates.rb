@@ -24,8 +24,8 @@ module Coordinates
       return self[:timezone] unless self[:timezone].nil?
 
       begin
-        timezone = Timezone.lookup(self.latitude, self.longitude)
-        update(timezone: timezone.name) # Update the record with the fetched timezone
+        timezone = DateTimeHelper.timezone_at_coordinates(self.latitude, self.longitude)
+        update(timezone: timezone) # Update the record with the fetched timezone
         self[:timezone] # Return the newly set timezone
       rescue StandardError => e
         Rails.logger.error "Failed to fetch timezone for #{self.class.name} #{id}: #{e.message}"
@@ -38,24 +38,13 @@ module Coordinates
     def approximate_local_time
       raise 'Timezone is blank' if timezone.blank?
 
-      begin
-        # Use ActiveSupport's in_time_zone method to convert Time.current to the location's timezone
-        Time.current.in_time_zone(timezone)
-      rescue StandardError => e
-        Rails.logger.error "Failed to calculate local time for #{self.class.name} #{id}: #{e.message}"
-        raise "Failed to calculate local time for #{self.class.name} #{id}: #{e.message}"
-      end
+      DateTimeHelper.time_in_zone timezone
     end
 
     def night?
-      raise 'Local time not available' unless approximate_local_time&.hour
+      raise 'Timezone is blank' if timezone.blank?
 
-      night_hours = (21..23).to_a + (0..7).to_a
-      current_hour = approximate_local_time.hour
-      night_hours.include?(current_hour)
-    rescue StandardError => e
-      Rails.logger.error "Failed to determine if it's night for #{self.class.name} #{id}: #{e.message}"
-      raise "Failed to determine if it's night for #{self.class.name} #{id}: #{e.message}"
+      DateTimeHelper.night_time_in_zone? timezone
     end
 
     def day?

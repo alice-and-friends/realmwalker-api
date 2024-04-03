@@ -32,12 +32,18 @@ class Monster < ApplicationRecord
   validate :must_be_valid_spawn_time
   # validate :tags_are_valid
 
-  def self.for_level(level)
-    throw('Not a valid level') unless level.in? 1..10
-    monster = Monster.where(level: level).sample
-    throw("No monsters for level #{level}") if monster.nil?
-    monster
-  end
+  scope :day_time, lambda {
+    spawn_time = arel_table[:spawn_time]
+    where(spawn_time.eq('day').or(spawn_time.eq(nil)))
+  }
+  scope :night_time, lambda {
+    spawn_time = arel_table[:spawn_time]
+    where(spawn_time.eq('night').or(spawn_time.eq(nil)))
+  }
+  scope :any_time, lambda {
+    spawn_time = arel_table[:spawn_time]
+    where(spawn_time.eq(nil))
+  }
 
   def desc
     "level #{level} #{classification}"
@@ -58,7 +64,7 @@ class Monster < ApplicationRecord
   private
 
   def must_be_valid_spawn_time
-    return if spawn_time.nil? || spawn_times.include?(spawn_time)
+    return if spawn_time.nil? || Monster.spawn_times.values.include?(spawn_time)
 
     errors.add(:spawn_time, 'is not a valid spawn time')
   end

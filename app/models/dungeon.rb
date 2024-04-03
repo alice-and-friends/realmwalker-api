@@ -205,6 +205,28 @@ class Dungeon < RealmLocation
       levels.sample
     end
 
+    random_monster = lambda do
+      monsters_list = Monster.where(auto_spawn: true, level: level)
+      begin
+        if real_world_location.day?
+          monsters_list = monsters_list.day_time
+        elsif real_world_location.night?
+          monsters_list = monsters_list.night_time
+
+          # Increase rate of undead at night
+          if rand(0..1)
+            undead_list = monsters_list.where(classification: Monster.classifications[:undead])
+            monsters_list = undead_list unless undead_list.empty?
+          end
+        end
+      rescue RuntimeError
+        monsters_list = monsters_list.any_time
+      end
+      raise "monster_list is empty! level:#{level}" if monsters_list.empty?
+
+      monsters_list.sample
+    end
+
     if level.nil? && monster.nil?
       # Event
       full_moon_event = Event.find_by(name: 'Full moon')&.active?
@@ -216,7 +238,7 @@ class Dungeon < RealmLocation
     end
 
     self.level = random_level.call if level.nil?
-    self.monster = Monster.where(auto_spawn: true).for_level(self.level) if monster.nil?
+    self.monster = random_monster.call if monster.nil?
     self.name = monster.name
   end
 end
