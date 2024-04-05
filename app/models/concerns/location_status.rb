@@ -10,6 +10,8 @@ module LocationStatus
 
     before_validation :set_active_status, on: :create
 
+    scope :visible, -> { where(status: [statuses[:active], statuses[:defeated]]) }
+
     def set_active_status
       self.status = self.class.statuses[:active] if status.nil?
     end

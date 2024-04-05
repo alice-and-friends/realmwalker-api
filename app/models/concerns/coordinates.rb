@@ -20,6 +20,22 @@ module Coordinates
         .first
     }
 
+    def self.night_time_zones
+      time_zones = select(:timezone).pluck(:timezone).uniq.compact
+      time_zones.filter_map do |tz|
+        current_hour = Time.current.in_time_zone(tz).hour
+        tz if current_hour < Event::NIGHT_TIME[:hours].first || current_hour > Event::NIGHT_TIME[:hours].last
+      end
+    end
+
+    def self.day_time_zones
+      time_zones = select(:timezone).distinct.pluck(:timezone).compact
+      time_zones.filter_map do |tz|
+        current_hour = Time.current.in_time_zone(tz).hour
+        tz unless current_hour < Event::NIGHT_TIME[:hours].last || current_hour >= Event::NIGHT_TIME[:hours].first
+      end
+    end
+
     def timezone
       return self[:timezone] unless self[:timezone].nil?
 

@@ -32,6 +32,8 @@ class Monster < ApplicationRecord
   validate :must_be_valid_spawn_time
   # validate :tags_are_valid
 
+  scope :day_only, -> { where(spawn_time: 'day') }
+  scope :night_only, -> { where(spawn_time: 'night') }
   scope :day_time, lambda {
     spawn_time = arel_table[:spawn_time]
     where(spawn_time.eq('day').or(spawn_time.eq(nil)))

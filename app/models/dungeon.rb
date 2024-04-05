@@ -109,7 +109,7 @@ class Dungeon < RealmLocation
   end
 
   def schedule_expiration!
-    throw 'Already scheduled' if expiry_job_id
+    raise 'Already scheduled' if expiry_job_id
 
     job_id = DungeonExpirationWorker.perform_in(Dungeon::EXPIRATION_TIMER_LENGTH, id)
     update!(expiry_job_id: job_id, expires_at: Dungeon::EXPIRATION_TIMER_LENGTH.from_now)
@@ -123,7 +123,7 @@ class Dungeon < RealmLocation
   end
 
   def defeated!
-    throw('Use defeated_by! instead')
+    raise('Use defeated_by! instead')
   end
 
   def expired!
