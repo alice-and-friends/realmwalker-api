@@ -219,6 +219,7 @@ class SeedHelper
     # TODO: Maybe get rid of the portraits table, and move definitions to a new helper class
     portraits = []
     # portraits << Portrait.new(name: 'alchemist', species: %w[human elf dwarf giant troll goblin kenku], genders: %w[f m x], groups: %w[armorer jeweller magic])
+    # portraits << Portrait.new(name: 'djinn', species: %w[djinn], genders: %w[m], groups: %w[armorer jeweller magic])
     portraits << Portrait.new(name: 'barbarian', species: %w[human elf], genders: %w[m x], groups: %w[armorer])
     portraits << Portrait.new(name: 'barbute', species: %w[human elf dwarf giant troll goblin kenku], genders: %w[m x], groups: %w[armorer])
     portraits << Portrait.new(name: 'bird-mask', species: %w[human goblin kenku], genders: %w[f m x], groups: %w[jeweller magic])
