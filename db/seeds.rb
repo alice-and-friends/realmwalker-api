@@ -256,7 +256,7 @@ class SeedHelper
   def events
     full_moon_event = Event.find_or_create_by(name: 'Full moon')
     full_moon_event.update!(
-      description: 'The moon is full! Beware, traveler, for werewolves roam the lands beneath the silvered light. Will you hide from the darkness, or will you rise to meet it?',
+      description: 'The moon is full! Beware, traveler, for werewolves roam the lands beneath the silvered light. Sages search for a cure for the were-sickness.',
     )
     night_time_event = Event.find_or_create_by(name: 'Night time')
     night_time_event.update!(
