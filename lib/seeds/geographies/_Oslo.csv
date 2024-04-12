@@ -1,4 +1,5 @@
 ext_id,coordinates,tags
+node/973803934,59.9103106 10.692192,"building:castle;castle_type:stately;description:Royal summer palace. Built by Oscar I 1847 - 1852 and is ""finest example of Neo-Gothic architecture in Norway."" Open as a museum since 1881.;fee:yes;historic:castle;name:Lystslottet Oscarshall;name:en:Oscarshall palace;name:no:Lystslottet Oscarshall;name:ru:Дворец короля Оскара;operator:Det Norske Kongehus;tourism:museum;website:https://www.kongehuset.no/c79771/seksjonstekst/vis.html?tid=79776;wikidata:Q1818601"
 node/755,59.9296625 10.7160479,bus:yes;name:Majorstuen (F);network:Ruter;public_transport:stop_position;ref:F
 node/79248,59.9478741 10.7641113,bus:yes;name:Nydalsveien;network:Ruter;public_transport:stop_position
 node/79349,59.9276662 10.6754387,bus:yes;name:Hoff terrasse;network:Ruter;public_transport:stop_position
@@ -838,7 +839,6 @@ node/966186755,59.9489646 10.6287743,bus:yes;name:Grini;network:Ruter;public_tra
 node/972427001,59.9845696 10.8222644,building:ruins;historic:ruins
 node/973668760,59.9410222 10.715509,amenity:kindergarten;capacity:59;max_age:5;min_age:1;name:Universitetets barnehage;no-barnehage:nsrid:975314960;operator:Kunnskapsdepartementet
 node/973793392,59.902833 10.698662,fee:yes;loc_name:Norsk Sjøfartsmuseum;name:Norsk Maritimt Museum;name:de:Norwegischen Seefahrtsmuseum;name:en:Norwegian Maritime Museum;name:fr:Museé Maritime Norvégien;name:no:Norsk Maritimt Museum;name:ru:Норвежский морской музей;old_name:Norsk Sjøfartsmuseum;opening_hours:Tu-Su 10:00-16:00;tourism:museum;website:https://marmuseum.no;wikidata:Q1334270
-node/973803934,59.9103106 10.692192,"description:Royal summer palace. Built by Oscar I 1847 - 1852 and is ""finest example of Neo-Gothic architecture in Norway."" Open as a museum since 1881.;fee:yes;name:Lystslottet Oscarshall;name:en:Oscarshall palace;name:no:Lystslottet Oscarshall;name:ru:Дворец короля Оскара;operator:Det Norske Kongehus;tourism:museum;website:https://www.kongehuset.no/c79771/seksjonstekst/vis.html?tid=79776;wikidata:Q1818601"
 node/973811131,59.931066 10.664238,amenity:school;email:postmottak@ude.oslo.kommune.no;fee:no;grades:11-13;isced:level:3;name:Ullern videregående skole;operator:Oslo kommune;operator:type:public;phone:+47 22517900;ref:udir_nsr:974590964;ref:udir_nsr_old:1005537;ref:vgs:3072;website:https://ullern.vgs.no;wikidata:Q19360091
 node/973872552,59.9229511 10.7223842,name:Ellingsens Pensjonat;tourism:hotel;website:https://www.ellingsenspensjonat.no/
 node/974731248,59.9471099 10.6926345,fee:yes;name:Emanuel Vigelands museum;opening_hours:Su 11:30-16:00;tourism:museum;website:http://www.emanuelvigeland.museum.no/;wikidata:Q17769549

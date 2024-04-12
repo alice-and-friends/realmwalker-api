@@ -40,7 +40,7 @@ class NpcTest < ActiveSupport::TestCase
     TRADE_OFFER = TradeOffer.create(item: ITEM, buy_offer: 500, sell_offer: 1000)
     LIST_1 = TradeOfferList.create(name: 'list_1', trade_offers: [TRADE_OFFER])
     LIST_2 = TradeOfferList.create(name: 'list_2', trade_offers: [TRADE_OFFER])
-    NPC = Npc.create(name: 'arnold', role: 'shopkeeper', shop_type: 'armorer', trade_offer_lists: [LIST_1, LIST_2])
+    NPC = Npc.create(name: 'arnold', role: 'shopkeeper', shop_type: 'test', trade_offer_lists: [LIST_1, LIST_2])
     assert_equal 1, NPC.buy_offers.count
     assert_equal 1, NPC.sell_offers.count
   end

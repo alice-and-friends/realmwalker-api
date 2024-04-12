@@ -119,8 +119,8 @@ class CSVWriter(o.SimpleHandler):
         if 'fixme' in obj.tags:
             return False  # Skip this node
 
-        if 'access' in obj.tags and obj.tags['access'] != 'yes':
-            return False  # Skip this node
+        if 'access' in obj.tags and obj.tags['access'] not in ['yes', 'permissive']:
+            return False  # Skip this node (it is not accessible)
 
         for category, tags in tag_categories.items():
             if category in obj.tags and obj.tags[category] in tags:

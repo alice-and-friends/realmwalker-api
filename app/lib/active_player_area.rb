@@ -21,9 +21,12 @@ class ActivePlayerArea
   ].freeze
 
   # TODO: Maybe some of this should be delegated to a worker, so that it doesn't slow down requests?
+  # TODO cont: Especially the spawning of shops! armorer, castle, etc
+  # TODO cont: Runestone?
   def self.activate(geolocation)
     add_dungeons(geolocation)
-    add_shops(geolocation)
+    add_npc(geolocation, shop_type: 'armorer', npc_role: 'shopkeeper', distance: 3_500, trade_offer_list_name: 'armorer')
+    add_npc(geolocation, shop_type: 'castle', npc_role: 'castle', distance: 7_000, trade_offer_list_name: 'castle')
   end
 
   def self.add_dungeons(geolocation)
@@ -52,30 +55,30 @@ class ActivePlayerArea
     end
   end
 
-  def self.add_shops(geolocation)
-    distance = 3_500 # There SHOULD be an armorer within x meters
-    nearby_armorers_count = Npc.shopkeepers.where(shop_type: 'armorer').near(geolocation[:latitude], geolocation[:longitude], distance).count
-    return if nearby_armorers_count.positive?
+  def self.add_npc(geolocation, shop_type:, npc_role:, distance:, trade_offer_list_name:)
+    nearby_npcs_count = Npc.where(shop_type: shop_type).near(geolocation[:latitude], geolocation[:longitude], distance).count
+    return if nearby_npcs_count.positive?
 
-    transaction do
+    Npc.transaction do
       # Check if there is an available location
-      suitable_location = RealWorldLocation.available.for_shop.near(geolocation[:latitude], geolocation[:longitude], distance).first
+      scope_method = npc_role == 'castle' ? :for_castle : :for_shop
+      suitable_location = RealWorldLocation.available.send(scope_method).near(geolocation[:latitude], geolocation[:longitude], distance).first
 
       if suitable_location.nil?
         # If no suitable location found, adapt one
         suitable_location = RealWorldLocation.available.near(geolocation[:latitude], geolocation[:longitude], distance).first
-        raise if suitable_location.nil?
+        raise 'Could not find any location' if suitable_location.nil?
 
-        suitable_location.update(type: 'shop')
+        suitable_location.update(type: RealWorldLocation.types[shop_type.to_sym])
       end
 
-      # Spawn the shop
+      # Spawn the NPC
       Npc.create(
         real_world_location_id: suitable_location.id,
-        role: 'shopkeeper',
-        shop_type: 'armorer',
+        role: npc_role,
+        shop_type: shop_type,
         coordinates: suitable_location.coordinates,
-        trade_offer_lists: [TradeOfferList.find_by(name: 'armorer')],
+        trade_offer_lists: [TradeOfferList.find_by(name: trade_offer_list_name)],
       )
     end
   end

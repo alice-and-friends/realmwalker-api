@@ -65,7 +65,7 @@ class SeedHelper
           @geography = geography
           seed(:real_world_locations)
           seed(:ley_lines)
-          seed(:shops)
+          seed(:npcs)
           seed(:dungeons)
           seed(:runestones)
         end
@@ -109,10 +109,17 @@ class SeedHelper
         region: @geography,
       )
 
-      type_index = location.deterministic_rand(1..1_000)
-      location.type = RealWorldLocation.types[:ley_line] if type_index.in? 1..70
-      location.type = RealWorldLocation.types[:shop] if type_index.in? 100..180
-      location.type = RealWorldLocation.types[:location] if type_index.in? 900..907
+      # Assign some location types based on tags
+      location.type = RealWorldLocation.types[:castle] if suitable_for_castle(location)
+
+      # Assign remaining location types randomly
+      if location.type == RealWorldLocation.types[:unassigned]
+        type_index = location.deterministic_rand(1..1_000)
+        location.type = RealWorldLocation.types[:ley_line] if type_index.in? 1..70
+        location.type = RealWorldLocation.types[:shop] if type_index.in? 100..180
+        # location.type = RealWorldLocation.types[:castle] if type_index.in? 200..201
+        location.type = RealWorldLocation.types[:runestone] if type_index.in? 900..907
+      end
 
       locations << location
     end
@@ -210,7 +217,7 @@ class SeedHelper
     end
 
     # For each desired list, run the lambda and create trade offers
-    %w[armorer jeweller magic].each { |list_name| make_trade_offer_list.call(list_name) }
+    %w[armorer jeweller magic castle].each { |list_name| make_trade_offer_list.call(list_name) }
 
     TradeOffer.count
   end
@@ -218,20 +225,20 @@ class SeedHelper
   def portraits
     # TODO: Maybe get rid of the portraits table, and move definitions to a new helper class
     portraits = []
-    # portraits << Portrait.new(name: 'alchemist', species: %w[human elf dwarf giant troll goblin kenku], genders: %w[f m x], groups: %w[armorer jeweller magic])
     # portraits << Portrait.new(name: 'djinn', species: %w[djinn], genders: %w[m], groups: %w[armorer jeweller magic])
+    portraits << Portrait.new(name: 'alchemist', species: %w[human], genders: %w[m x], groups: %w[castle])
     portraits << Portrait.new(name: 'barbarian', species: %w[human elf], genders: %w[m x], groups: %w[armorer])
-    portraits << Portrait.new(name: 'barbute', species: %w[human elf dwarf giant troll goblin kenku], genders: %w[m x], groups: %w[armorer])
+    portraits << Portrait.new(name: 'barbute', species: %w[human elf dwarf giant troll goblin kenku], genders: %w[m x], groups: %w[armorer castle])
     portraits << Portrait.new(name: 'bird-mask', species: %w[human goblin kenku], genders: %w[f m x], groups: %w[jeweller magic])
     portraits << Portrait.new(name: 'cleo', species: %w[human elf], genders: %w[f x], groups: %w[jeweller magic])
     portraits << Portrait.new(name: 'cowled', species: %w[human elf goblin kenku], genders: %w[f m x], groups: %w[armorer jeweller magic])
-    portraits << Portrait.new(name: 'dwarf', species: %w[dwarf], genders: %w[f m x], groups: %w[armorer jeweller])
+    portraits << Portrait.new(name: 'dwarf', species: %w[dwarf], genders: %w[f m x], groups: %w[armorer jeweller castle])
     portraits << Portrait.new(name: 'elf', species: %w[elf], genders: %w[f m x], groups: %w[jeweller])
-    portraits << Portrait.new(name: 'eyepatch', species: %w[human], genders: %w[m], groups: %w[jeweller])
-    portraits << Portrait.new(name: 'kenku', species: %w[kenku], genders: %w[f m x], groups: %w[armorer jeweller magic])
-    portraits << Portrait.new(name: 'monk', species: %w[human dwarf giant], genders: %w[m], groups: %w[armorer jeweller magic])
-    portraits << Portrait.new(name: 'nun', species: %w[human elf dwarf giant], genders: %w[f], groups: %w[armorer jeweller magic])
-    portraits << Portrait.new(name: 'pig-face', species: %w[human], genders: %w[m], groups: %w[armorer])
+    portraits << Portrait.new(name: 'eyepatch', species: %w[human], genders: %w[f m x], groups: %w[jeweller castle])
+    portraits << Portrait.new(name: 'kenku', species: %w[kenku], genders: %w[f m x], groups: %w[armorer jeweller magic castle])
+    portraits << Portrait.new(name: 'monk', species: %w[human dwarf giant], genders: %w[m], groups: %w[armorer jeweller magic castle])
+    portraits << Portrait.new(name: 'nun', species: %w[human elf dwarf giant], genders: %w[f], groups: %w[armorer jeweller magic castle])
+    portraits << Portrait.new(name: 'pig-face', species: %w[human], genders: %w[m], groups: %w[armorer castle])
     portraits << Portrait.new(name: 'pig-face', species: %w[giant troll], genders: %w[f m x], groups: %w[armorer jeweller magic])
     portraits << Portrait.new(name: 'troll', species: %w[giant troll], genders: %w[m], groups: %w[armorer])
     portraits << Portrait.new(name: 'vampire', species: %w[human elf], genders: %w[f], groups: %w[magic])
@@ -244,10 +251,12 @@ class SeedHelper
     Species::SPECIES.each do |species|
       Gender::GENDERS.each do |gender|
         Npc::SHOP_TYPES.each do |group|
+          next if group == 'castle'
+
           test = Portrait.find_by(':species = ANY(species) AND :gender = ANY(genders) and :group = ANY(groups)',
                                   species: species, gender: gender, group: group)
           # puts "#{test.count} portrait options for #{species} #{gender} #{group}"
-          puts "⚠️ Warning: No portrait match for #{species} #{gender} #{group}" if test.nil?
+          puts "⚠️  Warning: No portrait match for #{species} #{gender} #{group}" if test.nil?
         end
       end
     end
@@ -267,39 +276,37 @@ class SeedHelper
     Event.count
   end
 
-  def shops
-    magic_offer_list = TradeOfferList.find_by(name: 'magic')
-    puts '⚠️ Error: magic_offer_list should not be blank' and return 0 if magic_offer_list.nil?
-
-    jeweller_offer_list = TradeOfferList.find_by(name: 'jeweller')
-    puts '⚠️ Error: jeweller_offer_list should not be blank' and return 0 if jeweller_offer_list.nil?
-
-    armorer_offer_list = TradeOfferList.find_by(name: 'armorer')
-    puts '⚠️ Error: armorer_offer_list should not be blank' and return 0 if armorer_offer_list.nil?
-
+  def npcs
     npcs = []
+
     RealWorldLocation.available.for_shop.where(region: @geography).find_each do |rwl|
-      random_digit = rwl.deterministic_rand(100)
       npc = Npc.new({
                       role: 'shopkeeper',
                       real_world_location_id: rwl.id,
                       coordinates: rwl.coordinates,
                     })
-
-      if random_digit.in? 1..30
-        npc.shop_type = 'magic'
-        npc.trade_offer_lists << magic_offer_list
-      elsif random_digit.in? 31..60
-        npc.shop_type = 'jeweller'
-        npc.trade_offer_lists << jeweller_offer_list
-      else
-        npc.shop_type = 'armorer'
-        npc.trade_offer_lists << armorer_offer_list
-      end
-
+      random_digit = rwl.deterministic_rand(100)
+      npc.shop_type = if random_digit.in? 1..30
+                        'magic'
+                      elsif random_digit.in? 31..60
+                        'jeweller'
+                      else
+                        'armorer'
+                      end
       npcs << npc
     end
-    import(Npc, npcs, bulk: false, recycle_locations: 'shop')
+
+    RealWorldLocation.available.for_castle.where(region: @geography).find_each do |rwl|
+      npc = Npc.new({
+                      role: 'castle',
+                      shop_type: 'castle',
+                      real_world_location_id: rwl.id,
+                      coordinates: rwl.coordinates,
+                    })
+      npcs << npc
+    end
+
+    import(Npc, npcs, bulk: false, recycle_locations: 'npc')
   end
 
   def ley_lines
@@ -391,9 +398,29 @@ class SeedHelper
 
   def parse_tags(tags_str)
     tags_str.split(';').map do |tag|
-      key, value = tag.split(':')
+      if tag.include? ':'
+        key, value = tag.match(/(.*):(.*)/).captures
+      else
+        key, value = tag, nil
+      end
       { key => value }
     end.reduce({}, :merge)
+  end
+
+  def suitable_for_runestone
+    # TODO?
+  end
+
+  def suitable_for_castle(location)
+    return true if location.tagged?('building', 'castle')
+    return true if location.tagged?('historic', 'castle')
+    return true if location.tagged?('historic', 'fort')
+    return true if location.tagged?('castle_type')
+    return true if location.tagged?('building', 'palace')
+    return true if location.tagged?('tower:type', 'defensive')
+    return true if location.tagged?('wall', 'castle_wall')
+
+    false
   end
 end
 

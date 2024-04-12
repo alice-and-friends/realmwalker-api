@@ -9,8 +9,9 @@ class RealWorldLocation < ApplicationRecord
 
   enum type: {
     ley_line: 'ley_line',
-    location: 'runestone',
+    runestone: 'runestone',
     shop: 'shop',
+    castle: 'castle',
     unassigned: 'unassigned',
     user_owned: 'user_owned',
   }
@@ -28,7 +29,28 @@ class RealWorldLocation < ApplicationRecord
   scope :for_dungeon, -> { where(type: RealWorldLocation.types[:unassigned]) }
   scope :for_ley_line, -> { where(type: RealWorldLocation.types[:ley_line]) }
   scope :for_shop, -> { where(type: RealWorldLocation.types[:shop]) }
-  scope :for_runestone, -> { where(type: RealWorldLocation.types[:location]) }
+  scope :for_castle, -> { where(type: RealWorldLocation.types[:castle]) }
+  scope :for_runestone, -> { where(type: RealWorldLocation.types[:runestone]) }
+
+  def self.find_by_tag(tag_key, tag_value = nil)
+    if tag_value.nil?
+      # Return locations that have the tag_key with any value
+      where("tags ? :key", key: tag_key)
+    else
+      # Return locations that have the tag_key with the specific tag_value
+      where("tags ->> :key = :value", key: tag_key, value: tag_value)
+    end
+  end
+
+  def tagged?(tag_key, tag_value = nil)
+    if tag_value.nil?
+      # Check if the tag_key exists
+      tags.key?(tag_key.to_s)
+    else
+      # Check if the tag_key exists with the specific tag_value
+      tags[tag_key.to_s] == tag_value
+    end
+  end
 
   def deterministic_rand(param)
     seed = Digest::SHA256.hexdigest("#{type}@#{ext_id}").to_i(16)

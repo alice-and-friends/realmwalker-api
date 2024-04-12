@@ -212,6 +212,7 @@ class User < ApplicationRecord
     }
   end
 
+  # TODO: Should be handled by redis, so that we can retry on failure
   def gains_loot(loot_container)
     throw('not a loot container') unless loot_container.is_a? LootContainer
 

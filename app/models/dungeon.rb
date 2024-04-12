@@ -39,6 +39,7 @@ class Dungeon < RealmLocation
   end
 
   # This function sets targets for how many active dungeons there should be (in each region)
+  # TODO: Consider raising the minimum slightly during night, to support undead spawn?
   def self.min_active_dungeons(region = '')
     return 10 if Rails.env.test?
 
@@ -95,6 +96,7 @@ class Dungeon < RealmLocation
   def spook_nearby_shopkeepers!
     return unless active? # No one should be spooked by an inactive dungeon
 
+    # Shopkeeper scope excludes castles etc
     nearby_shopkeepers = Npc.shopkeepers.joins(:real_world_location).where(
       'ST_DWithin(real_world_locations.coordinates::geography, :coordinates, :distance)',
       coordinates: coordinates,
