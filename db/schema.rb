@@ -201,6 +201,8 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.text "discovered_runestones", default: [], array: true
     t.text "access_token"
     t.datetime "access_token_expires_at", precision: nil
+    t.datetime "reward_claimed_at", precision: nil
+    t.integer "reward_streak", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["auth0_user_id"], name: "index_users_on_auth0_user_id", unique: true

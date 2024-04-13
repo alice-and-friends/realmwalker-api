@@ -29,6 +29,9 @@ Rails.application.routes.draw do
       post 'base', to: 'base#create', as: :create_base
       get 'journal/runestones', to: 'journal#runestones', as: :runestones
       resources :inventory_items, only: [:update]
+      resource :daily_rewards, only: [:show] do
+        post 'claim', on: :collection
+      end
 
       # World info
       get 'home', to: 'home#home', as: :home
