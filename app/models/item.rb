@@ -2,7 +2,7 @@
 
 class Item < ApplicationRecord
   self.inheritance_column = nil
-  EQUIPMENT_TYPES = %w[amulet armor helmet ring shield weapon].freeze
+  EQUIPMENT_TYPES = %w[amulet helmet armor legs boots ring shield weapon].freeze
   ITEM_TYPES = %w[valuable creature_product plants_and_herbs miscellaneous] + EQUIPMENT_TYPES.freeze
   RARITIES = %w[always very_common common uncommon rare epic legendary].freeze
 
@@ -27,6 +27,14 @@ class Item < ApplicationRecord
   scope :epic, -> { where(rarity: 'epic') }
   scope :legendary, -> { where(rarity: 'legendary') }
 
+  def sell_offers
+    TradeOffer.where('trade_offers.sell_offer IS NOT NULL AND trade_offers.item_id IN (?)', id)
+  end
+
+  def buy_offers
+    TradeOffer.where('trade_offers.buy_offer IS NOT NULL AND trade_offers.item_id IN (?)', id)
+  end
+
   def sold_by_npc?(npc)
     id.in? npc.sell_offers.pluck(:item_id)
   end
@@ -40,8 +48,8 @@ class Item < ApplicationRecord
   end
 
   def value
-    highest_buy_offer = trade_offers.order(buy_offer: :desc).select(:buy_offer).pluck(:buy_offer).first
-    lowest_sell_offer = trade_offers.order(sell_offer: :asc).select(:sell_offer).pluck(:sell_offer).first
+    highest_buy_offer = buy_offers.order(buy_offer: :desc).select(:buy_offer).pluck(:buy_offer).first
+    lowest_sell_offer = sell_offers.order(sell_offer: :asc).select(:sell_offer).pluck(:sell_offer).first
 
     return lowest_sell_offer if lowest_sell_offer && equipable?
 
@@ -76,7 +84,7 @@ class Item < ApplicationRecord
   end
 
   def must_be_meaningful_bonus
-    if classification_bonus.present? && (classification_attack_bonus + classification_defense_bonus).zero?
+    if classification_bonus.present? && classification_attack_bonus.zero? && classification_defense_bonus.zero?
       errors.add(:base, 'Has a classification bonus without any added attack or defense')
     end
   end

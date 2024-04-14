@@ -161,13 +161,22 @@ class Npc < RealmLocation
   end
 
   def assign_trade_offers!
+    # SHOP TYPE
     shop_type_trade_offer_list = TradeOfferList.find_by(name: shop_type)
     if shop_type_trade_offer_list.nil?
       Rails.logger.warn "Could not find trade offer list for shop_type '#{shop_type}'"
       return
     end
-
     trade_offer_lists << shop_type_trade_offer_list
+
+    # SPECIES SPECIFIC
+    case species
+    when 'elf'
+      elf_trade_offer_list = TradeOfferList.find_by(name: 'elf')
+      return if elf_trade_offer_list.nil?
+
+      trade_offer_lists << elf_trade_offer_list
+    end
   end
 
   def must_have_shop_type

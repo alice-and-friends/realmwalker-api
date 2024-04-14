@@ -198,9 +198,9 @@ class SeedHelper
       csv.each do |row|
         next unless row["#{list_name}_buy"] || row["#{list_name}_sell"] # Skip item, not relevant for this list
 
-        item = Item.find(row['item_id'])
+        item = Item.find_by(id: row['item_id'])
         if item.nil?
-          puts "⚠️  Item '#{row['name']}##{row['id']}' not found when creating trade offer" if ENV['verbose']
+          puts "⚠️  Item '#{row['name']}##{row['item_id']}' not found when creating trade offer" if ENV['verbose']
           next
         end
 
@@ -217,7 +217,7 @@ class SeedHelper
     end
 
     # For each desired list, run the lambda and create trade offers
-    %w[armorer jeweller magic castle].each { |list_name| make_trade_offer_list.call(list_name) }
+    %w[armorer jeweller magic castle elf].each { |list_name| make_trade_offer_list.call(list_name) }
 
     TradeOffer.count
   end
