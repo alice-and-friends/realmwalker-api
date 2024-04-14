@@ -94,6 +94,8 @@ class Npc < RealmLocation
   end
 
   def assign_species!
+    return if species.present?
+
     # Define the species probabilities for the castle role and default role
     species_probabilities_castle = [
       ['human', 80], # 65%
@@ -101,13 +103,14 @@ class Npc < RealmLocation
       ['kenku', 5],  # 5%
     ]
     species_probabilities_default = [
-      ['human', 65], # 65%
+      ['human', 64], # 64%
       ['elf', 10],   # 10%
       ['giant', 5],  # 5%
       ['dwarf', 5],  # 5%
       ['troll', 5],  # 5%
       ['goblin', 5], # 5%
       ['kenku', 5],  # 5%
+      ['djinn', 1],  # 1%
     ]
 
     # Assign the appropriate species probabilities array based on the role
@@ -133,7 +136,9 @@ class Npc < RealmLocation
   def assign_gender!
     return if gender.present?
 
-    r = rand(11)
+    self.gender = 'm' and return if species == 'djinn' # All djinn are male
+
+    r = rand(0..10)
     self.gender = if r.zero?
                     'x'
                   elsif r.even?

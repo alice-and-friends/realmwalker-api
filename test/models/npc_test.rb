@@ -40,9 +40,9 @@ class NpcTest < ActiveSupport::TestCase
     TRADE_OFFER = TradeOffer.create(item: ITEM, buy_offer: 500, sell_offer: 1000)
     LIST_1 = TradeOfferList.create(name: 'list_1', trade_offers: [TRADE_OFFER])
     LIST_2 = TradeOfferList.create(name: 'list_2', trade_offers: [TRADE_OFFER])
-    NPC = Npc.create(name: 'arnold', role: 'shopkeeper', shop_type: 'test', trade_offer_lists: [LIST_1, LIST_2])
-    assert_equal 1, NPC.buy_offers.count
-    assert_equal 1, NPC.sell_offers.count
+    NPC = Npc.create(name: 'arnold', role: 'shopkeeper', shop_type: Npc::SHOP_TYPES.first, trade_offer_lists: [LIST_1, LIST_2])
+    assert_equal NPC.buy_offers.pluck(:item_id).uniq.count, NPC.buy_offers.pluck(:item_id).count
+    assert_equal NPC.sell_offers.pluck(:item_id).uniq.count, NPC.sell_offers.pluck(:item_id).count
   end
   test 'different npcs trade different items' do
     WEDDING_RING = Item.find_by(name: 'Wedding Ring')

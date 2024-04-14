@@ -3,6 +3,6 @@
 module Species
   extend ActiveSupport::Concern
   included do
-    SPECIES = %w[human elf dwarf giant troll goblin kenku].freeze
+    SPECIES = %w[human elf dwarf giant troll goblin kenku djinn].freeze
   end
 end
