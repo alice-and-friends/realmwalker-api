@@ -151,6 +151,8 @@ class Npc < RealmLocation
   def assign_name!
     return if name.present?
 
+    self.name = Faker::Name.djinn_name and return if species == 'djinn'
+
     self.name = if gender == 'm'
                   Faker::Name.male_first_name
                 elsif gender == 'f'
