@@ -225,27 +225,29 @@ class SeedHelper
   def portraits
     # TODO: Maybe get rid of the portraits table, and move definitions to a new helper class
     portraits = []
-    portraits << Portrait.new(name: 'djinn', species: %w[djinn], genders: %w[m], groups: %w[armorer jeweller magic])
     portraits << Portrait.new(name: 'alchemist', species: %w[human], genders: %w[m x], groups: %w[castle])
     portraits << Portrait.new(name: 'barbarian', species: %w[human elf], genders: %w[m x], groups: %w[armorer])
     portraits << Portrait.new(name: 'barbute', species: %w[human dwarf giant troll goblin kenku], genders: %w[m x], groups: %w[armorer castle])
     portraits << Portrait.new(name: 'bird-mask', species: %w[human goblin kenku], genders: %w[f m x], groups: %w[jeweller magic])
     portraits << Portrait.new(name: 'cleo', species: %w[human], genders: %w[f x], groups: %w[jeweller magic])
     portraits << Portrait.new(name: 'cowled', species: %w[human goblin kenku], genders: %w[f m x], groups: %w[armorer jeweller magic])
+    portraits << Portrait.new(name: 'djinn', species: %w[djinn], genders: %w[m], groups: %w[armorer jeweller magic])
     portraits << Portrait.new(name: 'dwarf', species: %w[dwarf], genders: %w[f m x], groups: %w[armorer jeweller castle])
     portraits << Portrait.new(name: 'elf', species: %w[elf], genders: %w[f], groups: %w[armorer])
     portraits << Portrait.new(name: 'elf', species: %w[elf], genders: %w[f m x], groups: %w[jeweller magic])
-    portraits << Portrait.new(name: 'eyepatch', species: %w[human], genders: %w[f m x], groups: %w[jeweller castle])
+    portraits << Portrait.new(name: 'eyepatch', species: %w[human], genders: %w[f m x], groups: %w[jeweller magic castle])
+    portraits << Portrait.new(name: 'hood', species: %w[human goblin kenku], genders: %w[f m x], groups: %w[jeweller magic])
     portraits << Portrait.new(name: 'kenku', species: %w[kenku], genders: %w[f m x], groups: %w[armorer jeweller magic castle])
     portraits << Portrait.new(name: 'monk', species: %w[human dwarf giant], genders: %w[m], groups: %w[armorer jeweller magic castle])
     portraits << Portrait.new(name: 'nun', species: %w[human dwarf giant], genders: %w[f], groups: %w[armorer jeweller magic castle])
     portraits << Portrait.new(name: 'pig-face', species: %w[human], genders: %w[m], groups: %w[armorer castle])
     portraits << Portrait.new(name: 'pig-face', species: %w[giant troll], genders: %w[f m x], groups: %w[armorer jeweller magic])
     portraits << Portrait.new(name: 'troll', species: %w[giant troll], genders: %w[m], groups: %w[armorer])
-    portraits << Portrait.new(name: 'vampire', species: %w[human], genders: %w[f], groups: %w[magic])
+    portraits << Portrait.new(name: 'vampire', species: %w[human elf], genders: %w[f], groups: %w[magic])
+    portraits << Portrait.new(name: 'visored-helm', species: %w[human elf], genders: %w[f m x], groups: %w[castle])
     portraits << Portrait.new(name: 'witch', species: %w[human elf dwarf giant troll goblin], genders: %w[f], groups: %w[magic])
     portraits << Portrait.new(name: 'wizard', species: %w[human dwarf], genders: %w[m x], groups: %w[magic])
-    # portraits << Portrait.new(name: '', species: %w[human elf dwarf giant troll goblin kenku], genders: %w[f m x], groups: %w[armorer jeweller magic])
+    # portraits << Portrait.new(name: '', species: %w[human elf dwarf giant troll goblin kenku], genders: %w[f m x], groups: %w[armorer jeweller magic castle])
     count = import(Portrait, portraits)
 
     # Post-import validation

@@ -75,7 +75,7 @@ class RealWorldLocation < ApplicationRecord
   private
 
   def set_latitude_and_longitude!
-    throw('Coordinates blank') if coordinates.blank?
+    raise('Coordinates blank') if coordinates.blank?
 
     return unless latitude.nil? || longitude.nil?
 
@@ -84,7 +84,9 @@ class RealWorldLocation < ApplicationRecord
   end
 
   def must_obey_minimum_distance
-    throw('Coordinates blank') if coordinates.blank?
+    raise('Coordinates blank') if coordinates.blank?
+
+    raise("Can't read longitude for rwl##{id}: #{coordinates.inspect}") unless coordinates.longitude
 
     point = "ST_GeographyFromText('POINT(#{coordinates.longitude} #{coordinates.latitude})')"
     distance_query = Arel.sql("ST_Distance(coordinates::geography, #{point}) <= 40.0")

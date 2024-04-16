@@ -151,15 +151,15 @@ class Npc < RealmLocation
   def assign_name!
     return if name.present?
 
-    self.name = Faker::Name.djinn_name and return if species == 'djinn'
+    method_name = case species
+                  when 'human', 'elf', 'dwarf', 'djinn', 'goblin'
+                    "#{species}_#{gender == 'm' ? 'male' : gender == 'f' ? 'female' : 'neutral'}_name"
+                  when 'giant', 'troll', 'kenku'
+                    "humanoid_#{gender == 'm' ? 'male' : gender == 'f' ? 'female' : 'neutral'}_name"
+                  end
+    raise 'no method name' if method_name.nil?
 
-    self.name = if gender == 'm'
-                  Faker::Name.male_first_name
-                elsif gender == 'f'
-                  Faker::Name.female_first_name
-                else
-                  Faker::Name.neutral_first_name
-                end
+    self.name = Faker::Name.send(method_name)
   end
 
   def assign_portrait!
