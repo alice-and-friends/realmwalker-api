@@ -2,10 +2,10 @@ require:
   - rubocop-rails
   - rubocop-performance
   - rubocop-rake
-  - ./lib/custom_cops/custom_validator_name.rb
-  - ./lib/custom_cops/sexy_migration.rb
-  - ./lib/custom_cops/variable_name.rb
-  - ./lib/custom_cops/remove_status_ok.rb
+  - ./lib/rubocop/cops/custom_validator_name.rb
+  - ./lib/rubocop/cops/sexy_migration.rb
+  - ./lib/rubocop/cops/variable_name.rb
+  - ./lib/rubocop/cops/remove_status_ok.rb
 
 AllCops:
   NewCops: enable
