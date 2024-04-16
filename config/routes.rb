@@ -22,6 +22,7 @@ Rails.application.routes.draw do
 
       # Player
       get 'users/me', to: 'users#me', as: :me
+      patch 'users/me', to: 'users#update', as: :update_user
       patch 'users/me/preferences', to: 'users#update_preference', as: :update_preference
       get 'inventory', to: 'inventory#show', as: :show_inventory
       post 'inventory/set_equipped', to: 'inventory#set_equipped', as: :set_equipped

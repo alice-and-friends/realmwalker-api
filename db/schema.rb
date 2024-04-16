@@ -195,12 +195,13 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.string "auth0_user_id", null: false
     t.json "auth0_user_data"
     t.json "preferences"
+    t.text "access_token"
+    t.datetime "access_token_expires_at", precision: nil
+    t.string "display_name"
     t.integer "xp", default: 0
     t.integer "level", default: 1
     t.text "achievements", default: [], array: true
     t.text "discovered_runestones", default: [], array: true
-    t.text "access_token"
-    t.datetime "access_token_expires_at", precision: nil
     t.datetime "reward_claimed_at", precision: nil
     t.integer "reward_streak", default: 0, null: false
     t.datetime "created_at", null: false

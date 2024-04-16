@@ -3,7 +3,7 @@
 class Api::V1::InventoryItemsController < Api::V1::ApiController
   before_action :find_item
 
-  # PATCH /api/v1/inventory_items/1
+  # PATCH /api/v1/inventory_items/:id
   def update
     if @inventory_item.update(inventory_item_params)
       render json: @inventory_item

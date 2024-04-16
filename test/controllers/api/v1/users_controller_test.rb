@@ -20,4 +20,16 @@ class Api::V1::UsersControllerTest < ActionDispatch::IntegrationTest
     # Preferences & Settings
     assert_equal false, response.parsed_body['preferences']['developer']
   end
+
+  test 'should edit my user' do
+    new__name = 'Princess Bubblegum'
+
+    patch '/api/v1/users/me', headers: generate_headers, params: {
+      user: {
+        name: new__name,
+      },
+    }
+    assert_response :ok
+    assert_equal new__name, response.parsed_body['name']
+  end
 end

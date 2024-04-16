@@ -43,8 +43,10 @@ class User < ApplicationRecord
     user.access_token_expires_at > Time.current ? user : nil
   end
 
+  alias_attribute :name, :display_name
+
   def name
-    auth0_user_data.given_name
+    display_name || auth0_user_data.given_name || 'User'
   end
 
   def player_tag
