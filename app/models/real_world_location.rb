@@ -25,7 +25,7 @@ class RealWorldLocation < ApplicationRecord
 
   before_validation :set_latitude_and_longitude!, on: :create
 
-  scope :available, -> { where.not(id: RealmLocation.select(:real_world_location_id)) }
+  scope :available, -> { where.not(id: RealmLocation.select(:real_world_location_id).pluck(:real_world_location_id)) }
   scope :for_dungeon, -> { where(type: RealWorldLocation.types[:unassigned]) }
   scope :for_ley_line, -> { where(type: RealWorldLocation.types[:ley_line]) }
   scope :for_shop, -> { where(type: RealWorldLocation.types[:shop]) }
