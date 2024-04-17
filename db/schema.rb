@@ -12,12 +12,13 @@
 
 ActiveRecord::Schema[7.0].define(version: 700) do
   # These are extensions that must be enabled in order to support this database
+  enable_extension "pgcrypto"
   enable_extension "plpgsql"
   enable_extension "postgis"
 
   create_table "conquests", force: :cascade do |t|
-    t.bigint "realm_location_id", null: false
-    t.bigint "user_id", null: false
+    t.uuid "realm_location_id", null: false
+    t.uuid "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["realm_location_id"], name: "index_conquests_on_realm_location_id"
@@ -35,8 +36,8 @@ ActiveRecord::Schema[7.0].define(version: 700) do
   end
 
   create_table "inventories", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "realm_location_id"
+    t.uuid "user_id"
+    t.uuid "realm_location_id"
     t.integer "gold", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -98,7 +99,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
   end
 
   create_table "npcs_trade_offer_lists", id: false, force: :cascade do |t|
-    t.bigint "npc_id"
+    t.uuid "npc_id"
     t.bigint "trade_offer_list_id"
     t.index ["npc_id"], name: "index_npcs_trade_offer_lists_on_npc_id"
     t.index ["trade_offer_list_id"], name: "index_npcs_trade_offer_lists_on_trade_offer_list_id"
@@ -133,7 +134,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.index ["type"], name: "index_real_world_locations_on_type"
   end
 
-  create_table "realm_locations", force: :cascade do |t|
+  create_table "realm_locations", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "type"
     t.bigint "real_world_location_id", null: false
     t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
@@ -142,7 +143,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "owner_id"
+    t.uuid "owner_id"
     t.string "species"
     t.string "gender", limit: 1
     t.string "role"
@@ -166,8 +167,8 @@ ActiveRecord::Schema[7.0].define(version: 700) do
   end
 
   create_table "spooks", force: :cascade do |t|
-    t.bigint "npc_id", null: false
-    t.bigint "dungeon_id", null: false
+    t.uuid "npc_id", null: false
+    t.uuid "dungeon_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["dungeon_id"], name: "index_spooks_on_dungeon_id"
@@ -191,7 +192,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.index ["trade_offer_list_id"], name: "index_trade_offers_on_trade_offer_list_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "auth0_user_id", null: false
     t.json "auth0_user_data"
     t.json "preferences"

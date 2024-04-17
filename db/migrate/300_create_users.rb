@@ -2,7 +2,7 @@
 
 class CreateUsers < ActiveRecord::Migration[7.0]
   def change
-    create_table :users do |t|
+    create_table :users, id: :uuid do |t|
       # Account
       t.string    :auth0_user_id,         null: false, index: { unique: true }
       t.json      :auth0_user_data

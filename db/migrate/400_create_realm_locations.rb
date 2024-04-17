@@ -2,7 +2,7 @@
 
 class CreateRealmLocations < ActiveRecord::Migration[7.0]
   def change
-    create_table :realm_locations do |t|
+    create_table :realm_locations, id: :uuid do |t|
       # ALL
       t.string      :type, index: true # required for inheritance
       t.belongs_to  :real_world_location, null: false, index: { unique: true }
@@ -13,7 +13,7 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       t.timestamps
 
       # Base
-      t.references :owner, index: { unique: true }, foreign_key: { to_table: :users }, on_delete: :cascade
+      t.references :owner, type: :uuid, index: { unique: true }, foreign_key: { to_table: :users }, on_delete: :cascade
 
       # NPC
       t.string      :species
@@ -42,8 +42,8 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
 
     # Use this table to track which users defeated which dungeons
     create_table :conquests do |t|
-      t.references :realm_location, null: false, foreign_key: { to_table: :realm_locations }
-      t.references :user, null: false, foreign_key: { to_table: :users }
+      t.references :realm_location, type: :uuid, null: false, foreign_key: { to_table: :realm_locations }
+      t.references :user, type: :uuid, null: false, foreign_key: { to_table: :users }
 
       t.timestamps
     end
