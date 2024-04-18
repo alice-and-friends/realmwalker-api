@@ -86,8 +86,7 @@ class BattleHelper
   end
 
   def generate_loot_container
-    loot_generator = LootGenerator.new(@user.loot_bonus)
-    loot_generator.set_loot_table(@monster)
+    loot_generator = LootGenerator.new(@dungeon, @user)
     loot_generator.generate_loot
   end
 
