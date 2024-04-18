@@ -10,7 +10,7 @@ class Api::V1::ApiController < ApplicationController
 
   def geolocate
     latitude, longitude = request.headers['Geolocation']&.split&.map(&:to_f)
-    if latitude.positive? && longitude.positive?
+    if latitude.present? && longitude.present?
       factory_store = RGeo::ActiveRecord::SpatialFactoryStore.instance # Access the SpatialFactoryStore instance
       point_factory = factory_store.factory(geo_type: 'point') # Fetch the factory registered for point columns
       @current_user_geolocation = {
@@ -19,7 +19,7 @@ class Api::V1::ApiController < ApplicationController
         point: point_factory.point(longitude, latitude), # Use the point factory to create a new point,
       }
     else
-      render render json: { message: 'Geolocation missing' }, status: :bad_geolocation
+      render json: { message: 'Geolocation missing' }, status: :bad_geolocation
     end
   end
 
@@ -30,7 +30,7 @@ class Api::V1::ApiController < ApplicationController
     end
 
     access_token = request.headers['Authorization']&.split&.last
-    render render json: { message: 'Token missing' }, status: :unauthorized and return if access_token.blank?
+    render json: { message: 'Token missing' }, status: :unauthorized and return if access_token.blank?
 
     user = User.find_by_access_token(access_token) # rubocop:disable Rails/DynamicFindBy
     if user.present?
