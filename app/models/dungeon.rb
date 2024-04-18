@@ -216,7 +216,7 @@ class Dungeon < RealmLocation
           monsters_list = monsters_list.night_time
 
           # Increase rate of undead at night
-          if rand(0..1)
+          if rand(3)
             undead_list = monsters_list.where(classification: Monster.classifications[:undead])
             monsters_list = undead_list unless undead_list.empty?
           end
