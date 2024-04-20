@@ -15,7 +15,15 @@ class Event < ApplicationRecord
   after_save :schedule_end_job
 
   # Scope for events that have started but not finished
-  scope :active, -> { where('start_at <= ? AND (finish_at >= ? OR finish_at IS NULL)', Time.current, Time.current) }
+  scope :active, lambda { |timezone|
+    active = where('start_at IS NOT NULL AND start_at <= ? AND (finish_at >= ? OR finish_at IS NULL)', Time.current, Time.current)
+
+    # Day time
+    return active.where.not(name: NIGHT_TIME[:name]) if DateTimeHelper.day_time_in_zone? timezone
+
+    # Night time
+    active
+  }
 
   # Scope for events that will start in the next 24 hours
   scope :upcoming, -> { where('start_at > ? AND start_at <= ?', Time.current, 24.hours.from_now) }
@@ -27,14 +35,20 @@ class Event < ApplicationRecord
   end
 
   def self.night_time
-    event = find_by(name: FULL_MOON[:name])
-    throw "Can't find full moon event" if event.nil?
+    event = find_by(name: NIGHT_TIME[:name])
+    throw "Can't find full night time event" if event.nil?
     event
   end
 
+  # alias now? active?
+
   # Checks if an event is currently active
-  def active?
-    return true if name == NIGHT_TIME[:name] # Night time event is always active (somewhere)
+  def active?(timezone = nil)
+    if name == NIGHT_TIME[:name]
+      return true if timezone.nil? # Night time event is always active (somewhere)
+
+      return DateTimeHelper.night_time_in_zone? timezone
+    end
 
     return false if start_at.nil?
 
