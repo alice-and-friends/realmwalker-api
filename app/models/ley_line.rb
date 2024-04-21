@@ -30,7 +30,7 @@ class LeyLine < RealmLocation
     throw('Already captured (you should check before calling this method)') if captured?
 
     LeyLine.transaction do
-      captured_by << user
+      Conquest.create!(realm_location: self, user: user)
       self.captured_at = Time.current if captured_at.nil? # captured_at should always be the FIRST time a location was captured
       save!
     end

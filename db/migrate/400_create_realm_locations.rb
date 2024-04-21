@@ -39,13 +39,5 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
 
     # Coordinates GIST index
     add_index :realm_locations, :coordinates, using: :gist
-
-    # Use this table to track which users defeated which dungeons
-    create_table :conquests do |t|
-      t.references :realm_location, type: :uuid, null: false, foreign_key: { to_table: :realm_locations }
-      t.references :user, type: :uuid, null: false, foreign_key: { to_table: :users }
-
-      t.timestamps
-    end
   end
 end

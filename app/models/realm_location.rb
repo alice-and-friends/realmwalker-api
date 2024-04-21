@@ -7,7 +7,7 @@ class RealmLocation < ApplicationRecord
 
   belongs_to :real_world_location
   has_one :inventory, dependent: :destroy
-  has_many :conquests, dependent: :delete_all
+  has_many :conquests, dependent: :nullify # When a RealmLocation (Dungeon) is deleted, the conquest is kept.
   has_many :users, through: :conquests
 
   validates :real_world_location_id, uniqueness: true

@@ -3,6 +3,7 @@
 class Monster < ApplicationRecord
   # TAGS = %w[].freeze
 
+  has_many :conquests, dependent: :delete_all
   has_many :monster_items, dependent: :delete_all
   has_many :lootable_items, through: :monster_items, source: :item
 
