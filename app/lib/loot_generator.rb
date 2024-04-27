@@ -58,6 +58,12 @@ class LootGenerator
       loot_container.add_item(random_valuable_or_none)
     end
 
+    # Dungeon bonus: Add whatever is in the dungeon's inventory
+    if @dungeon.inventory
+      loot_container.merge(@dungeon.inventory.as_loot_container)
+      @dungeon.inventory.destroy!
+    end
+
     loot_container
   end
 

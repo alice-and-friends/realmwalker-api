@@ -12,6 +12,15 @@ class Inventory < ApplicationRecord
     realm_location.present? ? realm_location.owner : user
   end
 
+  def as_loot_container
+    container = LootContainer.new
+    container.add_gold(gold)
+    inventory_items.each do |inventory_item|
+      container.add_item inventory_item.item
+    end
+    container
+  end
+
   private
 
   def must_belong_to_something
