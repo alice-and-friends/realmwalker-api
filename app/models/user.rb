@@ -230,7 +230,7 @@ class User < ApplicationRecord
     )
   end
 
-  def handle_death
+  def handle_death(dungeon = nil)
     inventory_changes = {
       inventory_lost: false,
       equipment_lost: false,
@@ -249,12 +249,22 @@ class User < ApplicationRecord
         amulet_of_loss.destroy!
         inventory_changes[:amulet_of_loss_consumed] = true
       else
-        inventory_items.where(is_equipped: false).destroy_all
+        if dungeon
+          # Move inventory contents to the dungeon's inventory
+          inventory_items.where(is_equipped: false).update(inventory: dungeon.inventory)
+        else
+          inventory_items.where(is_equipped: false).destroy_all
+        end
         inventory_changes[:inventory_lost] = true
 
         # 10% chance of equipment loss
         if equipped_items.empty? == false && rand(1..10) == 1
-          equipped_items.sample.destroy!
+          if dungeon
+            # Move a random equipment piece to the dungeon's inventory
+            equipped_items.sample.update(inventory: dungeon.inventory, is_equipped: false)
+          else
+            equipped_items.sample.destroy!
+          end
           inventory_changes[:equipment_lost] = true
         end
       end

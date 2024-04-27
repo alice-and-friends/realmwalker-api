@@ -196,4 +196,16 @@ class UserTest < ActiveSupport::TestCase
     u = generate_test_user
     assert_not u.discovered_runestone? runestone.id
   end
+  test 'user inventory is captured by dungeon upon death' do
+    # User has item
+    user = generate_test_user
+    particular_item = user.gain_item Item.find_by(type: 'valuable')
+
+    # User dies at dungeon
+    dungeon = Dungeon.create!(level: 9)
+    user.handle_death(dungeon)
+
+    # Dungeon has item
+    assert_includes dungeon.inventory_items, particular_item
+  end
 end

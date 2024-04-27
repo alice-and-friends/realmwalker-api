@@ -121,7 +121,7 @@ class BattleHelper
     else # user lost the battle
       user_died = (rand(1..100) <= prediction[:risk_of_death][:on_defeat])
       if user_died
-        xp_level_change, inventory_changes = @user.handle_death
+        xp_level_change, inventory_changes = @user.handle_death(@dungeon)
       else
         xp_level_change = @user.gains_or_loses_xp(0)
       end

@@ -25,6 +25,7 @@ class Dungeon < RealmLocation
   before_validation :set_region_and_coordinates!, on: :create
   before_validation :set_timezone!, on: :create
   before_validation :randomize_level_and_monster!, on: :create
+  after_create { Inventory.create!(realm_location: self) }
 
   after_create do |d|
     Rails.logger.debug {
