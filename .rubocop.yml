@@ -298,6 +298,10 @@ Style/FetchEnvVar:
   Exclude:
     - 'config/routes.rb'
 
+Style/OpenStructUse:
+  Exclude:
+    - 'test/lib/*.rb'
+
 Style/OptionalBooleanParameter:
   Enabled: false
 
