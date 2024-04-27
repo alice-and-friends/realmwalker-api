@@ -19,6 +19,13 @@ class Api::V1::HomeController < Api::V1::ApiController
       active: ActiveModelSerializers::SerializableResource.new(Event.active(timezone), each_serializer: EventSerializer),
       upcoming: ActiveModelSerializers::SerializableResource.new(Event.upcoming, each_serializer: EventSerializer),
     }
+  rescue StandardError => e
+    Rails.logger.error(e)
+    {
+      events_timezone: 'error',
+      active: [],
+      upcoming: [],
+    }
   end
 
   def realm_locations

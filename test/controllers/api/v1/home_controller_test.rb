@@ -6,6 +6,7 @@ class Api::V1::HomeControllerTest < ActionDispatch::IntegrationTest
   test 'get home' do
     get '/api/v1/home', headers: generate_headers
     assert_equal 200, status
+    puts "events: #{response.parsed_body['events'].inspect}"
     assert response.parsed_body['serverTime']
     assert_instance_of Array, response.parsed_body['events']['active']
     assert_instance_of Array, response.parsed_body['events']['upcoming']
