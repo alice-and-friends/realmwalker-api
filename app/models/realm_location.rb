@@ -21,7 +21,7 @@ class RealmLocation < ApplicationRecord
   scope :scheduled_for_expiration, -> { where.not(expiry_job_id: nil) }
 
   scope :player_vision_radius, lambda { |geolocation|
-    near(geolocation[:latitude], geolocation[:longitude], PLAYER_VISION_RADIUS)
+    near(geolocation.latitude, geolocation.longitude, PLAYER_VISION_RADIUS)
   }
 
   private

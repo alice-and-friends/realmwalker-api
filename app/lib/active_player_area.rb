@@ -25,7 +25,7 @@ class ActivePlayerArea
   # TODO cont: Runestone?
   def self.activate(geolocation)
     add_dungeons(geolocation)
-    AreaActivationWorker.perform_async(geolocation[:latitude], geolocation[:longitude])
+    AreaActivationWorker.perform_async(geolocation.latitude, geolocation.longitude)
   end
 
   def self.add_dungeons(geolocation)
@@ -33,11 +33,11 @@ class ActivePlayerArea
     max_new_dungeons_per_activation = 9 # The highest number of dungeons that can be spawned by a single call to this function
 
     DESIRED_DUNGEONS.each do |layer|
-      dungeons_in_range = Dungeon.visible.near(geolocation[:latitude], geolocation[:longitude], layer[:distance]).count
+      dungeons_in_range = Dungeon.visible.near(geolocation.latitude, geolocation.longitude, layer[:distance]).count
       missing = layer[:target] - dungeons_in_range
       next if missing <= 0
 
-      potential_locations = RealWorldLocation.available.near(geolocation[:latitude], geolocation[:longitude], layer[:distance]).pluck(:id)
+      potential_locations = RealWorldLocation.available.near(geolocation.latitude, geolocation.longitude, layer[:distance]).pluck(:id)
       next if potential_locations.empty?
 
       missing.times do

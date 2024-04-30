@@ -12,8 +12,7 @@ class Api::V1::HomeController < Api::V1::ApiController
   private
 
   def events
-    # TODO: would be nice if @current_user_geolocation was converted to a class. Could also have a method to get user's timezone
-    timezone = DateTimeHelper.timezone_at_coordinates(@current_user_geolocation[:latitude], @current_user_geolocation[:longitude])
+    timezone = DateTimeHelper.timezone_at_coordinates(@current_user_geolocation.latitude, @current_user_geolocation.longitude)
     {
       events_timezone: timezone,
       active: ActiveModelSerializers::SerializableResource.new(Event.active(timezone), each_serializer: EventSerializer),

@@ -14,7 +14,7 @@ class Api::V1::BaseController < Api::V1::ApiController
       render status: :forbidden, json: { error: `User #{@current_user.player_tag} already owns a structure` } and return
     end
 
-    @base = @current_user.construct_base_at(@current_user_geolocation[:point])
+    @base = @current_user.construct_base_at(@current_user_geolocation)
 
     render status: :internal_server_error and return if @base&.created_at.blank?
 
