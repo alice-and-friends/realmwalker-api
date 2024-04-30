@@ -4,7 +4,7 @@ class Api::V1::BaseController < Api::V1::ApiController
   before_action :find_base, only: %i[show upgrade]
 
   def show
-    render json: @base, serializer: BaseSerializer
+    render json: @base, serializer: BaseSerializer, seen_from: @current_user_geolocation
   end
 
   def create

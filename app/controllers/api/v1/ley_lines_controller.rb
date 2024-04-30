@@ -6,14 +6,14 @@ class Api::V1::LeyLinesController < Api::V1::ApiController
   before_action :location_interacted, only: %i[capture]
 
   def show
-    render json: @ley_line, serializer: LeyLineSerializer
+    render json: @ley_line, serializer: LeyLineSerializer, seen_from: @current_user_geolocation
   end
 
   def capture
     render status: :conflict if @ley_line.captured?
 
     @ley_line.captured_by! @current_user
-    render json: @ley_line, serializer: LeyLineSerializer
+    render json: @ley_line, serializer: LeyLineSerializer, seen_from: @current_user_geolocation
   end
 
   private

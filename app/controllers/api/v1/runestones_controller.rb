@@ -6,7 +6,7 @@ class Api::V1::RunestonesController < Api::V1::ApiController
   before_action :location_interacted, only: %i[add_to_journal]
 
   def show
-    render json: @location, serializer: RunestoneSerializer, user: @current_user
+    render json: @location, serializer: RunestoneSerializer, user: @current_user, seen_from: @current_user_geolocation
   end
 
   def add_to_journal

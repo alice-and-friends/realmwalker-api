@@ -5,7 +5,7 @@ class Api::V1::NpcsController < Api::V1::ApiController
   before_action :location_inspected, only: [:show]
 
   def show
-    render json: @npc, user: @current_user
+    render json: @npc, serializer: NpcSerializer, user: @current_user, seen_from: @current_user_geolocation
   end
 
   private

@@ -46,4 +46,11 @@ class Api::V1::DungeonsControllerTest < ActionDispatch::IntegrationTest
     assert_equal user.name, disclosed_user_info['name']
     assert_safe_user_object disclosed_user_info
   end
+  test 'should get distance to dungeon' do
+    dungeon = Dungeon.first
+    test_user_location = generate_test_user_location
+    distance_expected = test_user_location.distance(dungeon.coordinates)
+    get "/api/v1/dungeons/#{dungeon.id}", headers: generate_headers
+    assert_equal distance_expected, response.parsed_body['distanceFromUser']
+  end
 end
