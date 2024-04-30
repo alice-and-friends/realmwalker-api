@@ -395,8 +395,8 @@ class User < ApplicationRecord
   def set_default_preferences
     self.preferences ||= {}
     self.preferences['item_frames'] ||= 'None'
-    self.preferences['dungeon_levels'] ||= Rails.env.development? # Enabled by default in development
-    self.preferences['developer'] ||= Rails.env.development? # Enabled by default in development
+    self.preferences['dungeon_levels'] ||= Rails.env.development? if self.preferences['dungeon_levels'].nil?
+    self.preferences['developer'] ||= Rails.env.development? if self.preferences['developer'].nil?
   end
 
   def must_be_valid_achievements
