@@ -84,6 +84,11 @@ class RealWorldLocation < ApplicationRecord
   end
 
   def must_obey_minimum_distance
+    return if type == RealWorldLocation.types[:user_owned] # TODO: This might cause validation errors on nearby locations.
+    # TODO, cont. Should probably disallow base creation near NPCS, and for other nearby entities, delete them?
+    # TODO, cont. Also, a custom http code for "too close to object" might be nice.
+    # TODO, cont. Also consider potential usability issues when two map markers overlap
+
     raise('Coordinates blank') if coordinates.blank?
 
     raise("Can't read longitude for rwl##{id}: #{coordinates.inspect}") unless coordinates.longitude
@@ -93,6 +98,7 @@ class RealWorldLocation < ApplicationRecord
 
     exists_query = RealWorldLocation.where(region: region)
                                     .where.not(id: id)
+                                    .where.not(type: RealWorldLocation.types[:user_owned]) # TODO: Temporary fix to avoid validatione errors mentioned above
                                     .where(distance_query)
                                     .exists?
 
