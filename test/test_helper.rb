@@ -19,15 +19,15 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
 
   def generate_test_user_location
-    RealWorldLocation.point_factory.point(10.702654, 59.926097)
+    RealWorldLocation.point_factory.point(10.702654, 59.926097) # Do not edit
   end
 
   def generate_nearby_location
-    RealWorldLocation.point_factory.point(10.703246, 59.926556)
+    RealWorldLocation.point_factory.point(10.703246, 59.926556) # Do not edit
   end
 
   def generate_far_away_location
-    RealWorldLocation.point_factory.point(10.739660, 59.925807)
+    RealWorldLocation.point_factory.point(10.739660, 59.925807) # Do not edit
   end
 
   def generate_headers

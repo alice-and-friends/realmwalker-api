@@ -67,6 +67,15 @@ module Coordinates
       !night?
     end
 
+    # Destination can be either a Point or any class that implements the Coordinates module
+    def distance(point)
+      unless point.instance_of? RGeo::Geographic::SphericalPointImpl
+        Rails.logger.error 'Unable to calculate distance between locations'
+        return nil
+      end
+      coordinates.distance(point)
+    end
+
     def debug
       [
         'Cmd + double click to open link from terminal:',
