@@ -25,6 +25,9 @@ class DailyReward
     # Set reward_claimed_at to the current time
     @user.reward_claimed_at = Time.zone.now
 
+    # Dispense the reward
+    dispense
+
     @user.save
   end
 
@@ -53,6 +56,10 @@ class DailyReward
   end
 
   private
+
+  def dispense
+    # TODO: Give stuff to user
+  end
 
   def next_reward_reset_time
     now = Time.zone.now
