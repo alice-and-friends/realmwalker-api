@@ -16,10 +16,10 @@ class TradeOffer < ApplicationRecord
 
   # Make sure the item can't be sold for a higher price than it can be bought
   def must_not_be_exploitable
-    highest_buy_offer = item.buy_offers.order(buy_offer: :desc).select(:buy_offer).pluck(:buy_offer).first
+    highest_buy_offer = [buy_offer, item.buy_offers.order(buy_offer: :desc).select(:buy_offer).pluck(:buy_offer).first].compact.max
     return if highest_buy_offer.nil?
 
-    lowest_sell_offer = item.sell_offers.order(sell_offer: :asc).select(:sell_offer).pluck(:sell_offer).first
+    lowest_sell_offer = [sell_offer, item.sell_offers.order(sell_offer: :asc).select(:sell_offer).pluck(:sell_offer).first].compact.min
     return if lowest_sell_offer.nil?
 
     errors.add(:base, 'Infinite money exploit') if lowest_sell_offer < highest_buy_offer

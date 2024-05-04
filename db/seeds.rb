@@ -162,8 +162,8 @@ class SeedHelper
 
       # Equipable
       item.two_handed = row['two_handed']
-      item.attack_bonus = row['attack_bonus']
-      item.defense_bonus = row['defense_bonus']
+      item.attack_bonus = row['attack']
+      item.defense_bonus = row['defense']
       item.classification_bonus = row['classification_bonus']
       item.classification_attack_bonus = row['classification_attack_bonus']
       item.classification_defense_bonus = row['classification_defense_bonus']
@@ -171,7 +171,7 @@ class SeedHelper
       item.loot_bonus = row['loot_bonus']
 
       # Lootable
-      item.rarity = row['rarity'].downcase if row['rarity'].present?
+      item.rarity = row['rarity'].downcase.tr(' ', '_') if row['rarity'].present?
       if row['dropped_by_monsters'].present?
         item.monsters = Monster.where(id: row['dropped_by_monsters'].delete(' ').split(',').map(&:to_i))
       end
@@ -217,7 +217,7 @@ class SeedHelper
     end
 
     # For each desired list, run the lambda and create trade offers
-    %w[armorer jeweller magic castle elf].each { |list_name| make_trade_offer_list.call(list_name) }
+    %w[alchemist armorer castle druid elf equipment jeweller magic].each { |list_name| make_trade_offer_list.call(list_name) }
 
     TradeOffer.count
   end
@@ -376,6 +376,7 @@ class SeedHelper
             data_to_import << o
           elsif ENV['verbose']
             puts "🛑 #{o.errors.inspect}"
+            puts "Detail: #{o.inspect}"
           end
         end
       else
@@ -393,6 +394,7 @@ class SeedHelper
           next
         end
         puts "🛑 #{o.errors.inspect}" if ENV['verbose']
+        puts "Detail: #{o.inspect}" if ENV['verbose']
       end
       unless discarded_locations.empty?
         RealWorldLocation.where(id: discarded_locations).update!(type: RealWorldLocation.types[:unassigned])

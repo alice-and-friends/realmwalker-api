@@ -3,7 +3,7 @@
 class Item < ApplicationRecord
   self.inheritance_column = nil
   EQUIPMENT_TYPES = %w[amulet helmet armor legs boots ring shield weapon].freeze
-  ITEM_TYPES = %w[valuable creature_product plants_and_herbs miscellaneous] + EQUIPMENT_TYPES.freeze
+  ITEM_TYPES = %w[valuable creature_product plants_and_herbs tool miscellaneous] + EQUIPMENT_TYPES.freeze
   RARITIES = %w[always very_common common uncommon rare epic legendary].freeze
 
   has_many :trade_offers, dependent: :delete_all
@@ -21,6 +21,8 @@ class Item < ApplicationRecord
   validate :must_have_stats_for_equipment
   validate :must_have_appropriate_rarity
 
+  scope :always, -> { where(rarity: 'always') }
+  scope :very_common, -> { where(rarity: 'very_common') }
   scope :common, -> { where(rarity: 'common') }
   scope :uncommon, -> { where(rarity: 'uncommon') }
   scope :rare, -> { where(rarity: 'rare') }
@@ -84,7 +86,7 @@ class Item < ApplicationRecord
   end
 
   def must_be_meaningful_bonus
-    if classification_bonus.present? && classification_attack_bonus.zero? && classification_defense_bonus.zero?
+    if classification_bonus && classification_attack_bonus.zero? && classification_defense_bonus.zero?
       errors.add(:base, 'Has a classification bonus without any added attack or defense')
     end
   end
@@ -98,7 +100,7 @@ class Item < ApplicationRecord
   def must_have_appropriate_rarity
     return if equipable? # All rarities allowed for equipment
 
-    if type == 'valuable'
+    if type.in? %w[valuable tool plants_and_herbs]
       errors.add(:rarity, "#{name}: Rarity level '#{rarity}' not suitable for #{type}.") if rarity.in? %w[epic legendary]
       return
     end
