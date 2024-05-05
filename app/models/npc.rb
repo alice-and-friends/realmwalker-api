@@ -100,7 +100,7 @@ class Npc < RealmLocation
     probabilities = Species::DISTRIBUTION
 
     # Assign the appropriate species probabilities array based on the role
-    selected_probabilities = probabilities[role] || probabilities['default']
+    selected_probabilities = probabilities[shop_type] || probabilities[role] || probabilities['default']
 
     # Validate total probabilities add up to 100
     total_probability = selected_probabilities.sum { |_, probability| probability }
@@ -152,8 +152,13 @@ class Npc < RealmLocation
   end
 
   def assign_portrait!
-    self.portrait = Portrait.where(':species = ANY(species) AND :gender = ANY(genders) and :group = ANY(groups)',
-                                species: species, gender: gender, group: shop_type).sample
+    options = Portrait.where(':species = ANY(species) AND :gender = ANY(genders) and :group = ANY(groups)',
+                                species: species, gender: gender, group: shop_type)
+    if options.empty?
+      errors.add(:portrait, "No portrait options for #{species} #{gender} #{shop_type}")
+    else
+      self.portrait = options.sample
+    end
   end
 
   def assign_trade_offers!
