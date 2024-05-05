@@ -14,7 +14,7 @@ class TradeOfferTest < ActiveSupport::TestCase
 
     # With these trade offers, the player could buy and sell items repeatedly and generate infinite money
     TradeOffer.create!(trade_offer_list: trade_offer_list_a, item: item, sell_offer: 10_000_000)
-    trade_offer = TradeOffer.create!(trade_offer_list: trade_offer_list_b, item: item, buy_offer: 10_000_001)
+    trade_offer = TradeOffer.new(trade_offer_list: trade_offer_list_b, item: item, buy_offer: 10_000_001)
 
     assert_not trade_offer.valid?
     assert_not_nil trade_offer.errors
