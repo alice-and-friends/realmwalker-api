@@ -1,16 +1,49 @@
 # frozen_string_literal: true
 
 class NaturalLanguageHelper
-  FILTER_HATE = LanguageFilter::Filter.new matchlist: :hate, creative_letters: true
-  FILTER_PROFANITY = LanguageFilter::Filter.new matchlist: :profanity, creative_letters: true
-  FILTER_SEX = LanguageFilter::Filter.new matchlist: :sex, creative_letters: true
-  FILTER_VIOLENCE = LanguageFilter::Filter.new matchlist: :violence, creative_letters: true
-  FILTER_CUSTOM = LanguageFilter::Filter.new matchlist: %w[nigger retard murder kys hate idiot], creative_letters: true
+  FILTERS = [
+    (LanguageFilter::Filter.new matchlist: :hate, creative_letters: true),
+    (LanguageFilter::Filter.new matchlist: :profanity, creative_letters: true),
+    (LanguageFilter::Filter.new matchlist: :sex, creative_letters: true),
+    (LanguageFilter::Filter.new matchlist: :violence, creative_letters: true),
+    (LanguageFilter::Filter.new matchlist: %w[nigger retard murder kys hate idiot], creative_letters: true),
+  ].freeze
+
+  # Method to suppress warnings temporarily
+  def self.without_warnings
+    original_verbosity = $VERBOSE
+    $VERBOSE = nil
+    yield
+  ensure
+    $VERBOSE = original_verbosity
+  end
 
   def self.contains_offensive_language(text)
     normalized_text = normalize_text(text)
-    FILTER_HATE.match?(normalized_text) || FILTER_PROFANITY.match?(normalized_text) ||
-      FILTER_SEX.match?(normalized_text) || FILTER_VIOLENCE.match?(normalized_text) || FILTER_CUSTOM.match?(normalized_text)
+    without_warnings do
+      FILTERS.each do |filter|
+        return true if filter.match? normalized_text
+      end
+    end
+    false
+  end
+
+  def self.sanitize(text)
+    # Ensure the text is mutable by duplicating it first
+    sanitized_text = text.dup
+    # Normalize the text to handle leetspeak and other obfuscations
+    normalized_text = normalize_text(sanitized_text)
+
+    without_warnings do
+      FILTERS.each do |filter|
+        # Update sanitized_text only if it matches the offensive pattern
+        if filter.match?(normalized_text)
+          sanitized_text = filter.sanitize(sanitized_text)
+        end
+      end
+    end
+
+    sanitized_text
   end
 
   # Normalize the text by translating leetspeak and removing non-alphabetical characters

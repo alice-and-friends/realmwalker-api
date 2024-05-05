@@ -22,6 +22,7 @@ class User < ApplicationRecord
 
   # Create inventory and grant starting equipment to new players
   after_initialize :set_default_preferences
+  before_validation :sanitize_username
   after_create { self.inventory = Inventory.create!(user: self) }
   after_create :give_starting_equipment
   before_destroy { RealmLocation.where(owner_id: id).destroy_all }
@@ -397,6 +398,10 @@ class User < ApplicationRecord
     self.preferences['item_frames'] ||= 'None'
     self.preferences['dungeon_levels'] ||= Rails.env.development? if self.preferences['dungeon_levels'].nil?
     self.preferences['developer'] ||= Rails.env.development? if self.preferences['developer'].nil?
+  end
+
+  def sanitize_username
+    self.name = NaturalLanguageHelper.sanitize(name)
   end
 
   def must_be_valid_achievements

@@ -16,15 +16,6 @@ class ActiveSupport::TestCase
   self.use_instantiated_fixtures = true
   fixtures :all
 
-  # Method to suppress warnings temporarily
-  def without_warnings
-    original_verbosity = $VERBOSE
-    $VERBOSE = nil
-    yield
-  ensure
-    $VERBOSE = original_verbosity
-  end
-
   def generate_test_user_location
     RealWorldLocation.point_factory.point(10.702654, 59.926097) # Do not edit
   end

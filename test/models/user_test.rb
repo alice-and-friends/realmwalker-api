@@ -208,4 +208,11 @@ class UserTest < ActiveSupport::TestCase
     # Dungeon has item
     assert_includes dungeon.inventory_items, particular_item
   end
+  test "user can't have dirty name" do
+    user = generate_test_user
+
+    dirty_word = 'penis'
+    user.update!(name: dirty_word)
+    assert_not_equal dirty_word, user.reload.name
+  end
 end
