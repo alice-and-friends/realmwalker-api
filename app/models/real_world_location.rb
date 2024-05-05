@@ -8,10 +8,12 @@ class RealWorldLocation < ApplicationRecord
   has_one :realm_location, dependent: :destroy
 
   enum type: {
+    castle: 'castle',
     ley_line: 'ley_line',
+    observatory: 'observatory',
     runestone: 'runestone',
     shop: 'shop',
-    castle: 'castle',
+    treehouse: 'treehouse',
     unassigned: 'unassigned',
     user_owned: 'user_owned',
   }
@@ -26,11 +28,13 @@ class RealWorldLocation < ApplicationRecord
   before_validation :set_latitude_and_longitude!, on: :create
 
   scope :available, -> { where.not(id: RealmLocation.select(:real_world_location_id).pluck(:real_world_location_id)) }
+  scope :for_castle, -> { where(type: RealWorldLocation.types[:castle]) }
   scope :for_dungeon, -> { where(type: RealWorldLocation.types[:unassigned]) }
   scope :for_ley_line, -> { where(type: RealWorldLocation.types[:ley_line]) }
+  scope :for_observatory, -> { where(type: RealWorldLocation.types[:observatory]) }
   scope :for_shop, -> { where(type: RealWorldLocation.types[:shop]) }
-  scope :for_castle, -> { where(type: RealWorldLocation.types[:castle]) }
   scope :for_runestone, -> { where(type: RealWorldLocation.types[:runestone]) }
+  scope :for_treehouse, -> { where(type: RealWorldLocation.types[:treehouse]) }
 
   def self.find_by_tag(tag_key, tag_value = nil)
     if tag_value.nil?

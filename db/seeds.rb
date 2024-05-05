@@ -115,9 +115,16 @@ class SeedHelper
       # Assign remaining location types randomly
       if location.type == RealWorldLocation.types[:unassigned]
         type_index = location.deterministic_rand(1..1_000)
+
+        # Control points
         location.type = RealWorldLocation.types[:ley_line] if type_index.in? 1..70
+
+        # Shops and NPCs
         location.type = RealWorldLocation.types[:shop] if type_index.in? 100..180
-        # location.type = RealWorldLocation.types[:castle] if type_index.in? 200..201
+        location.type = RealWorldLocation.types[:observatory] if type_index.in? 200..201
+        location.type = RealWorldLocation.types[:treehouse] if type_index.in? 210..211
+
+        # Collectibles
         location.type = RealWorldLocation.types[:runestone] if type_index.in? 900..907
       end
 
@@ -225,43 +232,54 @@ class SeedHelper
   def portraits
     # TODO: Maybe get rid of the portraits table, and move definitions to a new helper class
     portraits = []
-    portraits << Portrait.new(name: 'alchemist', species: %w[human], genders: %w[m x], groups: %w[castle])
+    portraits << Portrait.new(name: 'alchemist', species: %w[human], genders: %w[m x], groups: %w[alchemist castle])
     portraits << Portrait.new(name: 'barbarian', species: %w[human elf], genders: %w[m x], groups: %w[armorer])
     portraits << Portrait.new(name: 'barbute', species: %w[human dwarf giant troll goblin kenku], genders: %w[m x], groups: %w[armorer castle])
     portraits << Portrait.new(name: 'bird-mask', species: %w[human goblin kenku], genders: %w[f m x], groups: %w[jeweller magic])
-    portraits << Portrait.new(name: 'cleo', species: %w[human], genders: %w[f x], groups: %w[jeweller magic])
-    portraits << Portrait.new(name: 'cowled', species: %w[human goblin kenku], genders: %w[f m x], groups: %w[armorer jeweller magic])
-    portraits << Portrait.new(name: 'djinn', species: %w[djinn], genders: %w[m], groups: %w[armorer jeweller magic])
-    portraits << Portrait.new(name: 'dwarf', species: %w[dwarf], genders: %w[f m x], groups: %w[armorer jeweller castle])
+    portraits << Portrait.new(name: 'bird-mask', species: %w[human], genders: %w[f x], groups: %w[alchemist])
+    portraits << Portrait.new(name: 'cleo', species: %w[human], genders: %w[f x], groups: %w[alchemist jeweller magic])
+    portraits << Portrait.new(name: 'cowled', species: %w[human goblin kenku], genders: %w[f m x], groups: %w[armorer equipment jeweller magic])
+    portraits << Portrait.new(name: 'djinn', species: %w[djinn], genders: %w[m], groups: %w[alchemist armorer druid equipment jeweller magic])
+    portraits << Portrait.new(name: 'dwarf', species: %w[dwarf], genders: %w[f m x], groups: %w[armorer equipment jeweller castle])
     portraits << Portrait.new(name: 'elf', species: %w[elf], genders: %w[f], groups: %w[armorer])
-    portraits << Portrait.new(name: 'elf', species: %w[elf], genders: %w[f m x], groups: %w[jeweller magic])
-    portraits << Portrait.new(name: 'eyepatch', species: %w[human], genders: %w[f m x], groups: %w[jeweller magic castle])
-    portraits << Portrait.new(name: 'hood', species: %w[human goblin kenku], genders: %w[f m x], groups: %w[jeweller magic])
-    portraits << Portrait.new(name: 'kenku', species: %w[kenku], genders: %w[f m x], groups: %w[armorer jeweller magic castle])
-    portraits << Portrait.new(name: 'monk', species: %w[human dwarf giant], genders: %w[m], groups: %w[armorer jeweller magic castle])
-    portraits << Portrait.new(name: 'nun', species: %w[human dwarf giant], genders: %w[f], groups: %w[armorer jeweller magic castle])
-    portraits << Portrait.new(name: 'pig-face', species: %w[human], genders: %w[m], groups: %w[armorer castle])
-    portraits << Portrait.new(name: 'pig-face', species: %w[giant troll], genders: %w[f m x], groups: %w[armorer jeweller magic])
-    portraits << Portrait.new(name: 'troll', species: %w[giant troll], genders: %w[m], groups: %w[armorer])
+    portraits << Portrait.new(name: 'elf', species: %w[elf], genders: %w[f m x], groups: %w[alchemist druid equipment jeweller magic])
+    portraits << Portrait.new(name: 'fox', species: %w[fox], genders: %w[f m x], groups: %w[druid])
+    portraits << Portrait.new(name: 'eyepatch', species: %w[human], genders: %w[f m x], groups: %w[equipment jeweller magic castle])
+    portraits << Portrait.new(name: 'goblin', species: %w[goblin], genders: %w[f m x], groups: %w[equipment])
+    portraits << Portrait.new(name: 'hood', species: %w[human goblin kenku], genders: %w[f m x], groups: %w[equipment jeweller magic])
+    portraits << Portrait.new(name: 'kenku', species: %w[kenku], genders: %w[f m x], groups: %w[alchemist armorer equipment jeweller magic castle])
+    portraits << Portrait.new(name: 'monk', species: %w[human dwarf giant], genders: %w[m], groups: %w[armorer equipment jeweller magic castle])
+    portraits << Portrait.new(name: 'nun', species: %w[human dwarf giant], genders: %w[f], groups: %w[armorer equipment jeweller magic castle])
+    portraits << Portrait.new(name: 'pig-face', species: %w[human], genders: %w[m], groups: %w[armorer equipment castle])
+    portraits << Portrait.new(name: 'pig-face', species: %w[giant troll], genders: %w[f m x], groups: %w[armorer equipment jeweller magic])
+    portraits << Portrait.new(name: 'troll', species: %w[giant troll], genders: %w[m], groups: %w[armorer equipment])
     portraits << Portrait.new(name: 'vampire', species: %w[human elf], genders: %w[f], groups: %w[magic])
     portraits << Portrait.new(name: 'visored-helm', species: %w[human elf], genders: %w[f m x], groups: %w[castle])
-    portraits << Portrait.new(name: 'witch', species: %w[human elf dwarf giant troll goblin], genders: %w[f], groups: %w[magic])
-    portraits << Portrait.new(name: 'wizard', species: %w[human dwarf], genders: %w[m x], groups: %w[magic])
+    portraits << Portrait.new(name: 'witch', species: %w[human elf dwarf giant troll goblin], genders: %w[f], groups: %w[druid magic])
+    portraits << Portrait.new(name: 'wizard', species: %w[human dwarf], genders: %w[m x], groups: %w[druid magic])
     # portraits << Portrait.new(name: '', species: %w[human elf dwarf giant troll goblin kenku], genders: %w[f m x], groups: %w[armorer jeweller magic castle])
     count = import(Portrait, portraits)
 
     # Post-import validation
     Species::SPECIES.each do |species|
       Gender::GENDERS.each do |gender|
-        next if species == 'djinn' && gender != 'm'
+        next if species == 'djinn' && gender != 'm' # All djinn are male
 
         Npc::SHOP_TYPES.each do |group|
-          next if group == 'castle'
+          if group == 'alchemist' && !species.in?(Species::DISTRIBUTION['alchemist'].map(&:first))
+            next
+          elsif group == 'castle' && !species.in?(Species::DISTRIBUTION['castle'].map(&:first))
+            next
+          elsif group == 'druid' && !species.in?(Species::DISTRIBUTION['druid'].map(&:first))
+            next
+          elsif !species.in?(Species::DISTRIBUTION['default'].map(&:first))
+            next
+          end
 
-          test = Portrait.find_by(':species = ANY(species) AND :gender = ANY(genders) and :group = ANY(groups)',
+          test = Portrait.where(':species = ANY(species) AND :gender = ANY(genders) and :group = ANY(groups)',
                                   species: species, gender: gender, group: group)
-          # puts "#{test.count} portrait options for #{species} #{gender} #{group}"
-          puts "⚠️  Warning: No portrait match for #{species} #{gender} #{group}" if test.nil?
+          # puts "👤 #{test.count} portrait options for #{species} #{gender} #{group}" if ENV['verbose']
+          puts "⚠️  Warning: No portrait match for #{species} #{gender} #{group}" if test.empty?
         end
       end
     end
@@ -290,16 +308,54 @@ class SeedHelper
                       coordinates: rwl.coordinates,
                     })
       random_digit = rwl.deterministic_rand(100)
-      npc.shop_type = if random_digit.in? 1..30
+      npc.shop_type = if random_digit.in? 1..20
                         'magic'
-                      elsif random_digit.in? 31..60
+                      elsif random_digit.in? 21..45
                         'jeweller'
+                      elsif random_digit.in? 46..70
+                        'equipment'
                       else
                         'armorer'
                       end
       npcs << npc
     end
     import(Npc, npcs, bulk: false, recycle_locations: 'shop')
+
+    npcs = []
+    RealWorldLocation.available.for_castle.where(region: @geography).find_each do |rwl|
+      npc = Npc.new({
+                      role: 'castle',
+                      shop_type: 'castle',
+                      real_world_location_id: rwl.id,
+                      coordinates: rwl.coordinates,
+                    })
+      npcs << npc
+    end
+    import(Npc, npcs, bulk: false, recycle_locations: 'castle')
+
+    npcs = []
+    RealWorldLocation.available.for_treehouse.where(region: @geography).find_each do |rwl|
+      npc = Npc.new({
+                      role: 'druid',
+                      shop_type: 'druid',
+                      real_world_location_id: rwl.id,
+                      coordinates: rwl.coordinates,
+                    })
+      npcs << npc
+    end
+    import(Npc, npcs, bulk: false, recycle_locations: 'treehouse')
+
+    npcs = []
+    RealWorldLocation.available.for_observatory.where(region: @geography).find_each do |rwl|
+      npc = Npc.new({
+                      role: 'alchemist',
+                      shop_type: 'alchemist',
+                      real_world_location_id: rwl.id,
+                      coordinates: rwl.coordinates,
+                    })
+      npcs << npc
+    end
+    import(Npc, npcs, bulk: false, recycle_locations: 'observatory')
 
     npcs = []
     RealWorldLocation.available.for_castle.where(region: @geography).find_each do |rwl|

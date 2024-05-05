@@ -4,7 +4,7 @@ class AreaActivationWorker
   include Sidekiq::Job
 
   def perform(latitude, longitude)
-    geolocation = { latitude: latitude, longitude: longitude }
+    geolocation = RealWorldLocation.point_factory.point(longitude, latitude)
 
     # Ensure that there is an armorer near the coordinates
     add_npc(geolocation, shop_type: 'armorer', npc_role: 'shopkeeper', distance: 3_500, trade_offer_list_name: 'armorer')
@@ -37,7 +37,7 @@ class AreaActivationWorker
         shop_type: shop_type,
         coordinates: suitable_location.coordinates,
         trade_offer_lists: [TradeOfferList.find_by(name: trade_offer_list_name)],
-        )
+      )
     end
   end
 end

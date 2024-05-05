@@ -4,8 +4,8 @@ class Npc < RealmLocation
   include Species
   include Gender
 
-  ROLES = %w[shopkeeper castle].freeze
-  SHOP_TYPES = %w[armorer jeweller magic castle].freeze
+  ROLES = %w[alchemist castle druid shopkeeper].freeze
+  SHOP_TYPES = %w[alchemist armorer castle druid equipment jeweller magic].freeze
 
   belongs_to :portrait
   has_and_belongs_to_many :trade_offer_lists, join_table: 'npcs_trade_offer_lists'
@@ -96,25 +96,11 @@ class Npc < RealmLocation
   def assign_species!
     return if species.present?
 
-    # Define the species probabilities for the castle role and default role
-    species_probabilities_castle = [
-      ['human', 80], # 65%
-      ['dwarf', 15], # 10%
-      ['kenku', 5],  # 5%
-    ]
-    species_probabilities_default = [
-      ['human', 64], # 64%
-      ['elf', 10],   # 10%
-      ['giant', 5],  # 5%
-      ['dwarf', 5],  # 5%
-      ['troll', 5],  # 5%
-      ['goblin', 5], # 5%
-      ['kenku', 5],  # 5%
-      ['djinn', 1],  # 1%
-    ]
+    # Define the species probabilities for various roles
+    probabilities = Species::DISTRIBUTION
 
     # Assign the appropriate species probabilities array based on the role
-    selected_probabilities = role == 'castle' ? species_probabilities_castle : species_probabilities_default
+    selected_probabilities = probabilities[role] || probabilities['default']
 
     # Validate total probabilities add up to 100
     total_probability = selected_probabilities.sum { |_, probability| probability }
@@ -130,13 +116,16 @@ class Npc < RealmLocation
 
     # Generate a random number and assign species based on the cumulative ranges
     r = rand(1..100)
-    self.species = species_ranges.find { |range, _| range === r }.last
+    self.species = species_ranges.find { |range, _| range.include? r }.last
   end
+
 
   def assign_gender!
     return if gender.present?
 
     self.gender = 'm' and return if species == 'djinn' # All djinn are male
+
+    self.gender = 'm' and return if role == 'alchemist' && rand(1..100) <= 80 # Alchemists are predominantly male
 
     r = rand(0..10)
     self.gender = if r.zero?
@@ -152,12 +141,12 @@ class Npc < RealmLocation
     return if name.present?
 
     method_name = case species
-                  when 'human', 'elf', 'dwarf', 'djinn', 'goblin'
-                    "#{species}_#{gender == 'm' ? 'male' : gender == 'f' ? 'female' : 'neutral'}_name"
                   when 'giant', 'troll', 'kenku'
                     "humanoid_#{gender == 'm' ? 'male' : gender == 'f' ? 'female' : 'neutral'}_name"
+                  else
+                    "#{species}_#{gender == 'm' ? 'male' : gender == 'f' ? 'female' : 'neutral'}_name"
                   end
-    raise 'no method name' if method_name.nil?
+    raise "no method name #{method_name}" if method_name.nil?
 
     self.name = Faker::Name.send(method_name)
   end

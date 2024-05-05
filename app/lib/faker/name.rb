@@ -43,6 +43,18 @@ module Faker
         fetch('name.elf_neutral_name')
       end
 
+      def fox_male_name
+        fetch('name.fox_male_name')
+      end
+
+      def fox_female_name
+        fetch('name.fox_female_name')
+      end
+
+      def fox_neutral_name
+        fetch('name.fox_neutral_name')
+      end
+
       def goblin_male_name
         fetch('name.goblin_male_name')
       end
