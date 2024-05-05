@@ -78,3 +78,6 @@ gem 'activerecord-postgis-adapter'
 gem 'rgeo'
 gem 'rgeo-activerecord'
 gem 'timezone'
+
+# Natural language processing
+gem 'language_filter'
