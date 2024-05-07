@@ -5,6 +5,7 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
     create_table :realm_locations, id: :uuid do |t|
       # ALL
       t.string      :type, index: true # required for inheritance
+      t.string      :sub_type
       t.belongs_to  :real_world_location, null: false, index: { unique: true }
       t.st_point    :coordinates, geographic: true, limit: { srid: 4326 }
       t.string      :timezone
@@ -18,12 +19,11 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       # NPC
       t.string      :species
       t.string      :gender, limit: 1
-      t.string      :role
-      t.string      :shop_type
+      t.string      :role, index: true
       t.references  :portrait, foreign_key: true
 
       # Dungeon
-      t.string      :status
+      t.string      :status, index: true
       t.integer     :level
       t.references  :monster
       t.datetime    :defeated_at

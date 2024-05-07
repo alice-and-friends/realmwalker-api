@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class RealmLocationSerializer < ActiveModel::Serializer
-  attributes :id, :type, :level, :status, :name, :coordinates, :expires_at
-  attribute :npc_details, if: :npc?
+  attributes :id, :type, :level, :status, :name, :coordinates, :expires_at, :shop_type, :renewable_type, :role
   attribute :distance_from_user, if: :user_location
+  attribute :spooked, if: :npc?
 
   def coordinates
     {
@@ -16,16 +16,24 @@ class RealmLocationSerializer < ActiveModel::Serializer
     object.type == Dungeon.name
   end
 
+  def renewable?
+    object.type == Renewable.name
+  end
+
   def npc?
     object.type == Npc.name
   end
 
-  def npc_details
-    {
-      role: object.role,
-      shop_type: object.shop_type,
-      spooked: object.spooked?,
-    }
+  def renewable_type
+    object.sub_type if renewable?
+  end
+
+  def shop_type
+    object.sub_type if npc?
+  end
+
+  def spooked
+    object.spooked?
   end
 
   def user_location

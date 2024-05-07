@@ -139,6 +139,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
 
   create_table "realm_locations", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "type"
+    t.string "sub_type"
     t.bigint "real_world_location_id", null: false
     t.geography "coordinates", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.string "timezone"
@@ -150,7 +151,6 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.string "species"
     t.string "gender", limit: 1
     t.string "role"
-    t.string "shop_type"
     t.bigint "portrait_id"
     t.string "status"
     t.integer "level"
@@ -166,6 +166,8 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.index ["portrait_id"], name: "index_realm_locations_on_portrait_id"
     t.index ["real_world_location_id"], name: "index_realm_locations_on_real_world_location_id", unique: true
     t.index ["region"], name: "index_realm_locations_on_region"
+    t.index ["role"], name: "index_realm_locations_on_role"
+    t.index ["status"], name: "index_realm_locations_on_status"
     t.index ["type"], name: "index_realm_locations_on_type"
   end
 

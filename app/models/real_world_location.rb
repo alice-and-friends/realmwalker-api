@@ -11,6 +11,7 @@ class RealWorldLocation < ApplicationRecord
     castle: 'castle',
     ley_line: 'ley_line',
     observatory: 'observatory',
+    renewable: 'renewable',
     runestone: 'runestone',
     shop: 'shop',
     treehouse: 'treehouse',
@@ -20,7 +21,6 @@ class RealWorldLocation < ApplicationRecord
 
   enum relevance_grade: { unseen: 0, seen: 1, inspected: 2, interacted: 3, user_generated: 10 }
 
-  validates :type, presence: true
   validates :ext_id, uniqueness: true, allow_nil: true
   validates :region, presence: true, region: true
   validate :must_obey_minimum_distance
@@ -33,6 +33,7 @@ class RealWorldLocation < ApplicationRecord
   scope :for_ley_line, -> { where(type: RealWorldLocation.types[:ley_line]) }
   scope :for_observatory, -> { where(type: RealWorldLocation.types[:observatory]) }
   scope :for_shop, -> { where(type: RealWorldLocation.types[:shop]) }
+  scope :for_renewable, -> { where(type: RealWorldLocation.types[:renewable]) }
   scope :for_runestone, -> { where(type: RealWorldLocation.types[:runestone]) }
   scope :for_treehouse, -> { where(type: RealWorldLocation.types[:treehouse]) }
 

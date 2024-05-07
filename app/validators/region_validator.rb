@@ -64,7 +64,6 @@ class RegionValidator < ActiveModel::EachValidator
   ].freeze
 
   def validate_each(record, attribute, value)
-
     # Regions that begin with "_" can bypass validation. These are used for development and testing purposes.
     return if value.first == '_'
 

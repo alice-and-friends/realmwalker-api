@@ -62,8 +62,9 @@ class User < ApplicationRecord
     inventory_items.joins(:item).where(is_equipped: true)
   end
 
+  # TODO: Should be handled by redis, so that we can retry on failure
   def gain_item(item)
-    inventory_items.create(item: item)
+    inventory_items.create!(item: item)
   end
 
   def lose_item(item)

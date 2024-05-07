@@ -13,6 +13,8 @@ class Npc < RealmLocation
   has_many :spooks, dependent: :destroy
   has_many :dungeons, through: :spooks
 
+  alias_attribute :shop_type, :sub_type
+
   validates :species, inclusion: { in: Species::SPECIES }
   validates :gender, inclusion: { in: Gender::GENDERS }
   validates :role, presence: true, inclusion: { in: ROLES }

@@ -39,6 +39,9 @@ Rails.application.routes.draw do
       resources :realm_locations, only: [:index]
 
       # Interactive locations
+      resources :renewables, only: [:show] do
+        post 'collect_all', to: 'renewables#collect_all', as: :collect_all
+      end
       resources :runestones, only: [:show] do
         post 'add_to_journal', to: 'runestones#add_to_journal', as: :add_runestone_to_journal
       end

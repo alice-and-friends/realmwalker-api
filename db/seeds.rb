@@ -67,6 +67,7 @@ class SeedHelper
           seed(:ley_lines)
           seed(:npcs)
           seed(:dungeons)
+          seed(:renewables)
           seed(:runestones)
         end
         puts "🙀 #{Spook.count} spooks in effect."
@@ -125,6 +126,7 @@ class SeedHelper
         location.type = RealWorldLocation.types[:treehouse] if type_index.in? 210..211
 
         # Collectibles
+        location.type = RealWorldLocation.types[:renewable] if type_index.in? 800..802
         location.type = RealWorldLocation.types[:runestone] if type_index.in? 900..907
       end
 
@@ -397,6 +399,17 @@ class SeedHelper
       dungeons << dungeon
     end
     import(Dungeon, dungeons, bulk: false, pre_validate: true, validate: false)
+  end
+
+  def renewables
+    renewables = []
+    RealWorldLocation.available.for_renewable.where(region: @geography).find_each do |rwl|
+      renewables << Renewable.new({
+                                    real_world_location_id: rwl.id,
+                                    coordinates: rwl.coordinates,
+                                  })
+    end
+    import(Renewable, renewables, bulk: false, pre_validate: true)
   end
 
   def runestones

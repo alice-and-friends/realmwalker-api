@@ -21,6 +21,12 @@ class Inventory < ApplicationRecord
     container
   end
 
+  def add(item)
+    raise 'not an item' unless item.instance_of? Item
+
+    inventory_items.create!(item: item)
+  end
+
   private
 
   def must_belong_to_something
