@@ -62,6 +62,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.string "name", null: false
     t.string "type", null: false
     t.string "icon", null: false
+    t.boolean "stackable", default: false, null: false
     t.string "rarity"
     t.integer "dropped_by_monsters", default: [], array: true
     t.integer "drop_max_amount", default: 1, null: false

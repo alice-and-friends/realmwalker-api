@@ -6,6 +6,7 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.string :name,                           null: false, index: { unique: true }
       t.string :type,                           null: false
       t.string :icon,                           null: false
+      t.boolean :stackable,                     null: false, default: false
 
       # Obtainability
       t.string :rarity

@@ -1,176 +1,176 @@
-id,draft,lootable,name,type,icon,faction,set,two_handed,attack,defense,classification_bonus,classification_attack_bonus,classification_defense_bonus,xp_bonus,loot_bonus,tier,rarity,value,dropped_by_monsters,monsters,drop_max_amount
-1,FALSE,TRUE,Sigil of Sanctuary,Amulet,sanctuary,sorcerers,celestial,FALSE,,0,undead,0,1,0,0,0.5,Rare,"$1,000","124, 126, 136, 140, 142, 156","Nebula Seraph, Burning eye, Warlock, Celestial Warden, Celestial Dice, Archmage",1
-2,FALSE,TRUE,Starshard Pendant,Amulet,star-shard-pendant,guardians,celestial,FALSE,,2,,0,0,0,0,2,Rare,"$14,000","142, 149, 154, 168","Celestial Dice, Luminarion, Elemental Lord, Visitor",1
-3,FALSE,TRUE,Fiendish Pendant,Amulet,pendant,sorcerers,demon,FALSE,,0,fiend,2,0,0,0,1,Rare,"$2,500","85, 121, 145, 147","Imp, Hellhound, Demon, Pit Fiend",1
-4,FALSE,TRUE,Soul Ward,Amulet,tribal-pendant,druids,druidic,FALSE,,0,undead,0,1,0,0,0.5,Rare,$500,"124, 127, 136, 137, 140, 142, 144, 149, 156","Nebula Seraph, Ice Witch, Warlock, Sphinx, Celestial Warden, Celestial Dice, Mischievous Archfey, Luminarion, Archmage",1
-5,FALSE,TRUE,Amulet of Life,Amulet,heart-necklace,,,FALSE,,0,,0,0,0,0,0,Epic,"$50,000","140, 142, 149, 152, 153, 156, 164","Celestial Warden, Celestial Dice, Luminarion, Time Manipulator, Ancient Dragon, Archmage, Shard",1
-6,FALSE,TRUE,Broken Amulet,Amulet,broken-amulet,,,FALSE,,0,,0,0,0,0,0,Rare,$50,"136, 156","Warlock, Archmage",1
-7,FALSE,TRUE,Ruby Necklace,Amulet,gem-necklace,,,FALSE,,0,,0,0,0,0,0,Rare,"$1,850","132, 136, 138","Vampire, Warlock, Vampire Lord",1
-8,FALSE,TRUE,Amulet of Loss,Amulet,necklace,,,FALSE,,0,,0,0,0,0,0,Rare,"$45,000","107, 134, 140, 152, 153, 160, 164, 168","Unicorn, Young Dragon, Celestial Warden, Time Manipulator, Ancient Dragon, The Unbound, Shard, Visitor",1
-9,FALSE,TRUE,Crystal Necklace,Amulet,pearl-necklace,,,FALSE,,0,,0,0,0,0,0,Rare,$400,"60, 63, 100, 108","Blood Priest, Sun Priest, Banshee, Dragon Wyrmling",1
-10,FALSE,TRUE,Silver Amulet,Amulet,pendant,,,FALSE,,0,,0,0,0,0,0,Rare,$210,"77, 88, 114, 115, 127","Roc, Arcane Trickster, Necromancer, Raging Barbarian, Ice Witch",1
-11,FALSE,TRUE,Scarab Amulet,Amulet,scarab,,,FALSE,,0,,0,0,0,0,0,Rare,"$1,000",137,Sphinx,1
-12,FALSE,TRUE,Amulet of Abundance,Amulet,gem-pendant,,,FALSE,,0,,0,0,0.1,0,1,Epic,"$34,000","142, 144, 148, 149, 152, 156, 160, 162, 164","Celestial Dice, Mischievous Archfey, Lich, Luminarion, Time Manipulator, Archmage, The Unbound, Celestial Arbiter, Shard",1
-13,FALSE,TRUE,Aetherial Talisman,Amulet,feather-necklace,druids,,FALSE,,0,elemental,0,2,0,0,1,Rare,"$1,050","52, 82, 83, 125, 167","Dust Devil, Air Elemental, Earth Elemental, Phoenix, Knowledge Elemental",1
-14,FALSE,TRUE,Gearwheel Chain,Amulet,gearwheel-chain,mechanists,,FALSE,,1,,0,0,0,0,1,Uncommon,$150,"46, 51, 76, 101, 139","Rusty Automaton, Stone Golem, Mechanical Spider, Sentinel Automaton, Ancient Guardian",1
-15,FALSE,TRUE,Divine Plate,Armor,chest-armor,guardians,celestial,FALSE,,6,fiend,0,1,0,0,6.5,Legendary,#N/A,162,Celestial Arbiter,1
-16,FALSE,TRUE,Demon Armor,Armor,abdominal-armor,,demon,FALSE,,3,fiend,0,1,0,0,3.5,Rare,"$50,000","145, 147","Demon, Pit Fiend",1
-17,FALSE,TRUE,Dragon Scale Mail,Armor,shoulder-armor,mechanists,dragon,FALSE,,3,dragon,0,1,0,0,3.5,Rare,"$40,000","143, 153","Adult Dragon, Ancient Dragon",1
-18,FALSE,TRUE,Feyweave Robe,Armor,robe,druids,fey,FALSE,,1,fey,0,2,0,0,2,Rare,"$13,000","88, 116, 127, 136, 144","Arcane Trickster, Witch, Ice Witch, Warlock, Mischievous Archfey",1
-19,FALSE,TRUE,Golden Armor,Armor,golden-armor,,golden,FALSE,,4,,0,0,0,0,4,Epic,"$70,000","134, 136, 145","Young Dragon, Warlock, Demon",1
-20,FALSE,TRUE,Knight Armor,Armor,armor-vest,knights,knight,FALSE,,3,,0,0,0,0,3,Uncommon,"$5,000","89, 90, 92, 95, 105, 106, 130","Ironclad Minotaur, Vicious Grandmaster, Renegade Knight, Harpy, Griffin, Manticore, Hydra",1
-21,FALSE,TRUE,Leather Armor,Armor,leather-armor,,leather,FALSE,,0,,0,0,0,0,0,Common,$10,"32, 36, 42, 61, 62, 71","Troll, Skeleton, Skeleton Warrior, Minotaur, Orc, Ghoul",1
-22,FALSE,TRUE,Prismatic Armor,Armor,shoulder-armor,guardians,prismatic,FALSE,,5,,0,0,0,0,5,Epic,"$100,000",162,Celestial Arbiter,1
-23,FALSE,TRUE,Robe of the Abyss,Armor,robe,sorcerers,void,FALSE,,1,aberration,0,3,0,0,2.5,Epic,"$30,000","136, 156, 159, 161","Warlock, Archmage, Nihilith, Void Behemoth",1
-24,FALSE,TRUE,Voidwalker Cloak,Armor,cloak,sorcerers,nightmare,FALSE,,1,monstrosity,0,2,0,0,2,Rare,"$12,500","156, 165","Archmage, World Eater",1
-25,FALSE,TRUE,Sunfire Cloak,Armor,cape,guardians,sunfire,FALSE,,1,,0,0,0,0,1,Rare,"$14,000","136, 144, 149","Warlock, Mischievous Archfey, Luminarion",1
-26,FALSE,TRUE,Scale Armor,Armor,scale-mail,,,FALSE,,2,,0,0,0,0,2,Common,$75,"89, 99","Ironclad Minotaur, Bone Gnawer",1
-27,FALSE,FALSE,Noble Armor,Armor,cape-armor,,,FALSE,,3,,0,0,0,0,3,Rare,"$6,000",,,
-28,FALSE,TRUE,Magic Plate Armor,Armor,breastplate,,,FALSE,,6,,0,0,0,0,6,Legendary,#N/A,"150, 151, 161, 163, 165","Soul Devourer, Supreme Cube, Void Behemoth, Ether Drake, World Eater",1
-29,FALSE,TRUE,Barkskin Boots,Boots,barkskin-boots,druids,druidic,FALSE,,1,plant,0,1,0,0,1.5,Rare,$900,"115, 118, 131","Raging Barbarian, Treant, Forest Guardian",1
-30,FALSE,TRUE,Steel Boots,Boots,steel-boots,knights,knight,FALSE,,2,,0,0,0,0,2,Rare,"$5,000","90, 101, 122, 135","Vicious Grandmaster, Sentinel Automaton, Behemoth, Lava Leviathan",1
-31,FALSE,TRUE,Leather Boots,Boots,leather-boots,,leather,FALSE,,1,,0,0,0,0,1,Common,$2,"32, 62","Troll, Orc",1
-32,FALSE,TRUE,Prismatic Boots,Boots,prismatic-boots,guardians,prismatic,FALSE,,3,,0,0,0,0,3,Epic,"$13,300","107, 142, 149, 153, 157","Unicorn, Celestial Dice, Luminarion, Ancient Dragon, Dracolich",1
-33,FALSE,TRUE,Voidwalker Boots,Boots,voidwalker-boots,sorcerers,nightmare,FALSE,,1,monstrosity,0,1,0,0,1.5,Rare,#N/A,161,Void Behemoth,
-34,FALSE,TRUE,Alchemist's Boots,Boots,alchemists-boots,mechanists,,FALSE,,1,ooze,0,2,0,0,2,Epic,"$9,500","34, 65, 96, 102","Aggressive Foam, Gobbler, Mutagen, Midnight Spawn",1
-35,FALSE,TRUE,Moonlight Crystal,Creature Product,crystal-growth,,,FALSE,,,,,,,,0,Always,$235,117,Werewolf,4
-36,FALSE,TRUE,Astral Glyph,Creature Product,glyph,,,FALSE,,,,,,,,0,Uncommon,"$1,000","50, 80, 107, 124, 140, 142, 149, 162","Sunbird, Pegasus, Unicorn, Nebula Seraph, Celestial Warden, Celestial Dice, Luminarion, Celestial Arbiter",1
-37,FALSE,TRUE,Demonic Essence,Creature Product,fire,,,FALSE,,,,,,,,0,Uncommon,"$1,000","85, 119, 120, 121, 141, 145, 147, 148, 150, 157, 158, 159, 160, 161","Imp, Wraith, Spectral Knight, Hellhound, Dimensional Worm, Demon, Pit Fiend, Lich, Soul Devourer, Dracolich, Avatar of Destruction, Nihilith, The Unbound, Void Behemoth",2
-38,FALSE,TRUE,Piece of Cloth,Creature Product,rolled-cloth,,,FALSE,,,,,,,,0,Uncommon,$200,"41, 60, 63, 90, 92, 115,","Gnome, Blood Priest, Sun Priest, Vicious Grandmaster, Renegade Knight, Raging Barbarian",1
-39,FALSE,TRUE,Automaton Core,Creature Product,automaton-core,mechanists,,FALSE,,,,,,,,0,Uncommon,$720,"46, 101, 139","Rusty Automaton, Sentinel Automaton, Ancient Guardian",1
-40,FALSE,TRUE,Gear Wheel,Creature Product,gear-wheel,mechanists,,FALSE,,,,,,,,0,Common,$190,"15, 46, 76, 101, 139","Clockwork Beetle, Rusty Automaton, Mechanical Spider, Sentinel Automaton, Ancient Guardian",4
-41,FALSE,TRUE,Gear Crystal,Creature Product,gear-crystal,mechanists,,FALSE,,,,,,,,0,Common,$380,"76, 101, 139","Mechanical Spider, Sentinel Automaton, Ancient Guardian",3
-42,TRUE,TRUE,Ooze Sample,Creature Product,,mechanists,,FALSE,,,,,,,,0,Uncommon,$495,"33,34,65,96,102","Acid Blob, Aggressive Foam, Gobbler, Mutagen, Midnight Spawn",1
-43,TRUE,TRUE,Compass,Creature Product,,,,FALSE,,,,,,,,0,,#N/A,,,1
-44,TRUE,TRUE,Energized Crystal,,,,,FALSE,,,,,,,,0,,#N/A,,,
-45,FALSE,TRUE,Star Map,Creature Product,star-map,guardians,,FALSE,,,,,,,,0,Common,$100,"124,137","Nebula Seraph, Sphinx",1
-47,FALSE,TRUE,Vial of Ink,Creature Product,ink-vial,,,FALSE,,,,,,,,0,Uncommon,$185,"35, 66","Ink Blob, Invisible Ink Blob",1
-48,FALSE,TRUE,Giant Quill,Creature Product,quill,,,FALSE,,,,,,,,0,Uncommon,$225,167,Knowledge Elemental,1
-49,FALSE,TRUE,Silken Bookmark,Creature Product,bookmark,,,FALSE,,,,,,,,0,Uncommon,$185,"27, 167","Awakened Book, Knowledge Elemental",1
-50,FALSE,TRUE,Book Page,Creature Product,book-page,,,FALSE,,,,,,,,0,Common,$50,"27, 167","Awakened Book, Knowledge Elemental",5
-51,FALSE,TRUE,Fox Tail,Creature Product,fox-tail,,,FALSE,,,,,,,,0,Common,$140,31,Aurora Fox,1
-52,TRUE,TRUE,Crown of Thorns,Helmet,crown-of-thorns,druids,druidic,FALSE,,-1,fey,,,,,-1,Epic,#N/A,,,
-53,FALSE,TRUE,Charmer's Tiara,Helmet,tiara,druids,fey,FALSE,,1,fey,0,2,0,0,2,Rare,"$3,100","91, 144","Siren, Mischievous Archfey",1
-54,FALSE,TRUE,Golden Helmet,Helmet,golden-helmet,,golden,FALSE,,5,,0,0,0,0,5,Epic,"$85,000","153, 163","Ancient Dragon, Ether Drake",1
-55,FALSE,TRUE,Leather Helmet,Helmet,leather-helmet,,leather,FALSE,,1,,0,0,0,0,1,Common,$3,"32, 41, 60, 61, 62, 63","Troll, Gnome, Blood Priest, Minotaur, Orc, Sun Priest",1
-56,FALSE,TRUE,Prismatic Helmet,Helmet,prismatic-helmet,guardians,prismatic,FALSE,,6,,0,0,0,0,6,Epic,"$97,100",155,Primordial Titan,1
-57,FALSE,TRUE,Ancient Tiara,Helmet,tiara,,relic,FALSE,,1,elemental,0,2,0,0,2,Rare,"$3,300","63, 82, 127, 137","Sun Priest, Air Elemental, Ice Witch, Sphinx",1
-58,FALSE,TRUE,Brass Helmet,Helmet,brodie-helmet,,,FALSE,,2,,0,0,0,0,2,Common,$150,"36, 42, 61, 62","Skeleton, Skeleton Warrior, Minotaur, Orc",1
-59,FALSE,TRUE,Warrior Helmet,Helmet,heavy-helm,,,FALSE,,4,,0,0,0,0,4,Uncommon,"$5,500","89, 99, 113, 122","Ironclad Minotaur, Bone Gnawer, Storm Giant, Behemoth",1
-60,FALSE,TRUE,Crusader Helmet,Helmet,visored-helm,knights,,FALSE,,5,,0,0,0,0,5,Rare,"$15,000","90, 101, 115, 122","Vicious Grandmaster, Sentinel Automaton, Raging Barbarian, Behemoth",1
-61,FALSE,FALSE,Nightshade Blossom,Plants and Herbs,nightshade-blossom,,,FALSE,,,,,,,,0,Rare,$190,,,
-62,FALSE,FALSE,Blood Herb,Plants and Herbs,blood-herb,,,FALSE,,,,,,,,0,Rare,$140,116,Witch,
-63,FALSE,TRUE,Arboreal Ring,Ring,ring,druids,druidic,FALSE,,0,plant,0,1,0,0,0.5,Uncommon,$400,"118, 131, 144","Treant, Forest Guardian, Mischievous Archfey",1
-64,FALSE,TRUE,Butterfly Ring,Ring,butterfly-ring,druids,fey,FALSE,,0,aberration,0,1,0,0,0.5,Epic,"$2,400","39, 56, 144","Twisted Phouka, Kirin, Mischievous Archfey",1
-65,FALSE,TRUE,Gold Ring,Ring,ring,,golden,FALSE,,0,,0,0,0,0,0,Uncommon,$300,"60, 63, 88, 143, 145","Blood Priest, Sun Priest, Arcane Trickster, Adult Dragon, Demon",1
-66,FALSE,TRUE,Ring of Treasure Hunter,Ring,power-ring,,relic,FALSE,,0,,0,0,0,0.2,1,Epic,"$20,000","141, 143, 150, 153, 163, 165","Dimensional Worm, Adult Dragon, Soul Devourer, Ancient Dragon, Ether Drake, World Eater",1
-67,FALSE,TRUE,Obsidian Ring,Ring,obsidian-ring,sorcerers,,FALSE,,0,,0,0,0,0,0,Rare,$150,"111, 112, 114, 121, 125, 135","Magma Bear, Magma Elemental, Necromancer, Hellhound, Phoenix, Lava Leviathan",1
-68,FALSE,TRUE,Amethyst Ring,Ring,globe-ring,,,FALSE,,0,,0,0,0,0,0,Rare,$700,"114, 136","Necromancer, Warlock",1
-69,FALSE,TRUE,Emerald Ring,Ring,globe-ring,,,FALSE,,0,,0,0,0,0,0,Rare,$800,"88, 91, 116, 134, 156","Arcane Trickster, Siren, Witch, Young Dragon, Archmage",1
-70,FALSE,TRUE,Silver Ring,Ring,ring,,,FALSE,,0,,0,0,0,0,0,Uncommon,$80,"88, 91, 114, 115, 127","Arcane Trickster, Siren, Necromancer, Raging Barbarian, Ice Witch",1
-71,FALSE,TRUE,Wedding Ring,Ring,ring,,,FALSE,,0,,0,0,0,0,0,Uncommon,$270,"41, 63, 72, 88, 100, 132, 138","Gnome, Sun Priest, Mummy, Arcane Trickster, Banshee, Vampire, Vampire Lord",1
-72,FALSE,TRUE,Blessed Shield,Shield,templar-shield,guardians,celestial,FALSE,,5,undead,0,1,0,0,5.5,Epic,"$90,000","149, 162","Luminarion, Celestial Arbiter",1
-73,FALSE,TRUE,Demon Shield,Shield,fire-shield,,demon,FALSE,,3,fiend,0,1,0,0,3.5,Uncommon,"$30,000","145, 147, 150","Demon, Pit Fiend, Soul Devourer",1
-74,FALSE,TRUE,Dragon Shield,Shield,layered-shield,mechanists,dragon,FALSE,,3,dragon,0,1,0,0,3.5,Uncommon,"$12,500","108, 134, 143, 153","Dragon Wyrmling, Young Dragon, Adult Dragon, Ancient Dragon",1
-75,FALSE,TRUE,Prismatic Shield,Shield,prismatic-shield,guardians,prismatic,FALSE,,4,,0,0,0,0,4,Epic,"$76,000","149, 162","Luminarion, Celestial Arbiter",1
-76,FALSE,TRUE,Shield of the Ancients,Shield,rosa-shield,,relic,FALSE,,4,,0,0,0,0,4,Epic,"$65,000","143, 148, 152, 153, 155, 157","Adult Dragon, Lich, Time Manipulator, Ancient Dragon, Primordial Titan, Dracolich",1
-77,FALSE,TRUE,Shield of Destiny,Shield,heart-shield,,relic,FALSE,,6,,0,0,0.1,0,7,Legendary,#N/A,"164, 165","Shard, World Eater",1
-78,FALSE,TRUE,Nightmare Shield,Shield,eye-shield,sorcerers,nightmare,FALSE,,3,monstrosity,0,1,0,0,3.5,Rare,"$16,000","126, 128, 129, 146, 150, 165","Burning eye, Basilisk, Gorgon, Grim Reaper, Soul Devourer, World Eater",1
-79,FALSE,TRUE,Wooden Shield,Shield,viking-shield,,,FALSE,,1,,0,0,0,0,1,Common,$5,"32, 36, 61, 62","Troll, Skeleton, Minotaur, Orc",1
-80,FALSE,TRUE,Castle Shield,Shield,castle-shield,,,FALSE,,3,,0,0,0,0,3,Uncommon,"$4,000","46, 90, 92","Rusty Automaton, Vicious Grandmaster, Renegade Knight",1
-81,FALSE,TRUE,Griffin Shield,Shield,griffin-shield,,,FALSE,,3,,0,0,0,0,3,Uncommon,"$4,200","90, 92","Vicious Grandmaster, Renegade Knight",1
-82,FALSE,TRUE,Great Shield,Shield,bordered-shield,,,FALSE,,5,,0,0,0,0,5,Epic,"$80,000","149, 153, 155, 161, 162, 163, 165","Luminarion, Ancient Dragon, Primordial Titan, Void Behemoth, Celestial Arbiter, Ether Drake, World Eater",1
-83,FALSE,TRUE,Bar of Gold,Valuable,metal-bar,,,FALSE,,,,,,,,0,Rare,"$10,000","128, 143, 153, 157, 163","Basilisk, Adult Dragon, Ancient Dragon, Dracolich, Ether Drake",1
-84,FALSE,TRUE,Gemmed Figurine,Valuable,figurine,,,FALSE,,,,,,,,0,Rare,"$1,500","134, 143","Young Dragon, Adult Dragon",1
-85,FALSE,TRUE,Nose Ring,Valuable,torc,,,FALSE,,,,,,,,0,Common,$60,"61, 89","Minotaur, Ironclad Minotaur",1
-86,FALSE,TRUE,Golden Brooch,Valuable,winged-shield,,,FALSE,,,,,,,,0,Rare,$300,"72, 132, 136, 138, 143","Mummy, Vampire, Warlock, Vampire Lord, Adult Dragon",1
-87,FALSE,TRUE,Ancient Coin,Valuable,crown-coin,,,FALSE,,,,,,,,0,Uncommon,$80,"72, 132, 138, 139, 143, 148, 153, 157","Mummy, Vampire, Vampire Lord, Ancient Guardian, Adult Dragon, Lich, Ancient Dragon, Dracolich",3
-88,FALSE,TRUE,Small Diamond,Valuable,cut-diamond,,,FALSE,,,,,,,,0,Uncommon,$300,"120, 132, 137, 138, 157","Spectral Knight, Vampire, Sphinx, Vampire Lord, Dracolich",4
-89,FALSE,TRUE,Small Emerald,Valuable,emerald,,,FALSE,,,,,,,,0,Uncommon,$250,"54, 55, 83, 108, 109, 129, 134, 167","Centaur, Dryad, Earth Elemental, Dragon Wyrmling, Wyvern, Gorgon, Young Dragon, Knowledge Elemental",4
-90,FALSE,TRUE,Small Ruby,Valuable,ruby,,,FALSE,,,,,,,,0,Uncommon,$250,"85, 111, 112, 121, 125, 126, 135, 147","Imp, Magma Bear, Magma Elemental, Hellhound, Phoenix, Burning eye, Lava Leviathan, Pit Fiend",4
-91,FALSE,TRUE,Small Sapphire,Valuable,sapphire,,,FALSE,,,,,,,,0,Uncommon,$250,"80, 82, 107, 124, 130, 140, 142, 154, 167","Pegasus, Air Elemental, Unicorn, Nebula Seraph, Hydra, Celestial Warden, Celestial Dice, Elemental Lord, Knowledge Elemental",4
-92,FALSE,TRUE,Giant Amethyst,Valuable,amethyst,,,FALSE,,,,,,,,0,Uncommon,"$5,000","141, 163","Dimensional Worm, Ether Drake",1
-93,FALSE,TRUE,Giant Topaz,Valuable,topaz,,,FALSE,,,,,,,,0,Uncommon,"$5,000","163, 165","Ether Drake, World Eater",1
-94,FALSE,TRUE,Giant Emerald,Valuable,emerald,,,FALSE,,,,,,,,0,Rare,"$7,500","143, 153, 154, 167","Adult Dragon, Ancient Dragon, Elemental Lord, Knowledge Elemental",1
-95,FALSE,TRUE,Giant Ruby,Valuable,ruby,,,FALSE,,,,,,,,0,Rare,"$7,500","135, 145, 147, 150, 154, 167","Lava Leviathan, Demon, Pit Fiend, Soul Devourer, Elemental Lord, Knowledge Elemental",1
-96,FALSE,TRUE,Giant Sapphire,Valuable,sapphire,,,FALSE,,,,,,,,0,Rare,"$7,500","130, 140, 142, 154, 162, 167","Hydra, Celestial Warden, Celestial Dice, Elemental Lord, Celestial Arbiter, Knowledge Elemental",1
-97,FALSE,TRUE,Opal,Valuable,shiny-sphere,,,FALSE,,,,,,,,0,Uncommon,$500,"107, 140, 149, 162, 164","Unicorn, Celestial Warden, Luminarion, Celestial Arbiter, Shard",3
-99,FALSE,TRUE,Small Amethyst,Valuable,amethyst,,,FALSE,,,,,,,,0,Uncommon,$200,"113, 122, 123, 148, 157","Storm Giant, Behemoth, Onlooker, Lich, Dracolich",4
-100,FALSE,TRUE,Small Topaz,Valuable,topaz,,,FALSE,,,,,,,,0,Uncommon,$200,"50, 96, 104, 121, 123, 126, 133","Sunbird, Mutagen, Eyestalk, Hellhound, Onlooker, Burning eye, Supervisor",4
-101,FALSE,TRUE,Shortsword,Weapon,gladius,,,FALSE,8,0,,0,0,0,0,8,Common,$10,"29, 32, 36, 41, 42, 46, 51, 61, 62","Gargoyle, Troll, Skeleton, Gnome, Skeleton Warrior, Rusty Automaton, Stone Golem, Minotaur, Orc",1
-102,FALSE,TRUE,Spear,Weapon,spear,,,FALSE,7,0,,0,0,0,0,7,Common,$3,"32, 54, 58, 62, 64, 86, 87, 90, 92","Troll, Centaur, Hill Giant, Orc, Troglodyte, Frost Giant, Stone Giant, Vicious Grandmaster, Renegade Knight",1
-103,FALSE,TRUE,Hatchet,Weapon,hatchet,,,FALSE,6,0,,0,0,0,0,6,Common,$7,"32, 36, 41, 61, 62, 71, 92","Troll, Skeleton, Gnome, Minotaur, Orc, Ghoul, Renegade Knight",1
-104,FALSE,TRUE,Crossbow,Weapon,crossbow,,,TRUE,9,0,,0,0,0,0,7,Common,$120,"29, 46, 62, 67, 69","Gargoyle, Rusty Automaton, Orc, Entangler, Shambling Mound",1
-105,FALSE,TRUE,Battle Axe,Weapon,battle-axe,,,TRUE,10,0,,0,0,0,0,8,Uncommon,$80,"42, 61, 86, 87, 89, 90, 113, 115, 122","Skeleton Warrior, Minotaur, Frost Giant, Stone Giant, Ironclad Minotaur, Vicious Grandmaster, Storm Giant, Raging Barbarian, Behemoth",1
-106,FALSE,TRUE,Broadsword,Weapon,broadsword,,,TRUE,10,0,,0,0,0,0,8,Uncommon,$400,"46, 58, 89, 90, 92, 101, 113, 115, 122","Rusty Automaton, Hill Giant, Ironclad Minotaur, Vicious Grandmaster, Renegade Knight, Sentinel Automaton, Storm Giant, Raging Barbarian, Behemoth",1
-107,FALSE,TRUE,Giant Sword,Weapon,giant-sword,,,TRUE,11,0,,0,0,0,0,9,Uncommon,"$10,000","46, 51, 58, 86, 87, 101, 113, 122","Rusty Automaton, Stone Golem, Hill Giant, Frost Giant, Stone Giant, Sentinel Automaton, Storm Giant, Behemoth",1
-108,FALSE,TRUE,Halberd,Weapon,sharp-halberd,,,TRUE,10,0,,0,0,0,0,8,Uncommon,$270,"46, 58, 86, 87, 90, 92, 101, 113, 115","Rusty Automaton, Hill Giant, Frost Giant, Stone Giant, Vicious Grandmaster, Renegade Knight, Sentinel Automaton, Storm Giant, Raging Barbarian",1
-109,FALSE,TRUE,Titan Axe,Weapon,big-axe,,,TRUE,11,0,,0,0,0,0,9,Uncommon,"$8,000","101, 113, 122, 155","Sentinel Automaton, Storm Giant, Behemoth, Primordial Titan",1
-110,FALSE,TRUE,Dragon Slayer,Weapon,dragon-slayer,mechanists,dragon,TRUE,11,0,dragon,1,0,0,0,9.5,Rare,"$15,000","113, 134, 143, 153, 155","Storm Giant, Young Dragon, Adult Dragon, Ancient Dragon, Primordial Titan",1
-111,FALSE,TRUE,Beast Slayer Axe,Weapon,special-axe,,,FALSE,9,0,beast,1,0,0,0,9.5,Common,$250,"84, 89, 101, 113, 115, 122, 145, 146, 157","Bone Devil, Ironclad Minotaur, Sentinel Automaton, Storm Giant, Raging Barbarian, Behemoth, Demon, Grim Reaper, Dracolich",1
-112,FALSE,TRUE,Ooze Divider,Weapon,battle-axe,,,FALSE,9,0,ooze,1,0,0,0,9.5,Uncommon,"$1,080","58, 87, 113","Hill Giant, Stone Giant, Storm Giant",1
-113,FALSE,TRUE,Hellforged Axe,Weapon,hellforged-axe,,demon,FALSE,11,0,celestial,1,0,0,0,11.5,Rare,"$29,000","84, 121, 145, 146, 147","Bone Devil, Hellhound, Demon, Grim Reaper, Pit Fiend",1
-114,FALSE,FALSE,Lightning Bow,Weapon,lightning-bow,,,TRUE,14,0,elemental,-1,0,0,0,11.5,Rare,"$30,000","82, 154","Air Elemental, Elemental Lord",
-115,FALSE,TRUE,Guardian Halberd,Weapon,halberd,knights,royal,TRUE,11,1,,0,0,0,0,10,Rare,"$12,800","101, 115","Sentinel Automaton, Raging Barbarian",1
-116,FALSE,TRUE,Royal Axe,Weapon,royal-axe,knights,royal,FALSE,11,0,,0,0,0,0,11,Rare,"$13,000","86, 87, 89, 90, 92, 113, 115","Frost Giant, Stone Giant, Ironclad Minotaur, Vicious Grandmaster, Renegade Knight, Storm Giant, Raging Barbarian",1
-117,FALSE,TRUE,Modified Crossbow,Weapon,crossbow,,,TRUE,10,0,,0,0,0,0,8,Uncommon,"$1,200","57, 58, 67, 69, 86, 90, 101, 113, 118","Cyclops, Hill Giant, Entangler, Shambling Mound, Frost Giant, Vicious Grandmaster, Sentinel Automaton, Storm Giant, Treant",1
-118,FALSE,TRUE,Crescent Staff,Weapon,crescent-staff,druids,druidic,FALSE,8,0,plant,1,0,0,0,8.5,Rare,"$1,800","118, 131, 156","Treant, Forest Guardian, Archmage",1
-119,FALSE,TRUE,Vine Whip,Weapon,vine-whip,druids,,FALSE,8,0,humanoid,1,0,0,0,8.5,Rare,#N/A,"67, 69, 118, 131","Entangler, Shambling Mound, Treant, Forest Guardian",1
-120,FALSE,TRUE,Angelic Axe,Weapon,fancy-axe,guardians,celestial,TRUE,13,1,fiend,1,1,0,0,13,Epic,"$102,500","162, 163","Celestial Arbiter, Ether Drake",1
-121,FALSE,TRUE,Relic Sword,Weapon,rune-sword,,relic,FALSE,10,0,,0,0,0,0.1,11,Rare,"$34,000","128, 129, 132, 137, 138, 143, 153, 157, 163","Basilisk, Gorgon, Vampire, Sphinx, Vampire Lord, Adult Dragon, Ancient Dragon, Dracolich, Ether Drake",1
-122,FALSE,TRUE,Mystic Blade,Weapon,mystic-blade,,relic,FALSE,13,0,,0,0,0,0,13,Epic,"$84,000","128, 130, 137, 138, 157","Basilisk, Hydra, Sphinx, Vampire Lord, Dracolich",1
-123,FALSE,TRUE,Sword of Valor,Weapon,sword-of-valor,knights,relic,TRUE,15,1,,0,0,0,0,14,Legendary,"$110,000","151, 155, 157, 162, 163, 164","Supreme Cube, Primordial Titan, Dracolich, Celestial Arbiter, Ether Drake, Shard",1
-124,FALSE,TRUE,Royal Crossbow,Weapon,crossbow,knights,royal,TRUE,12,0,,0,0,0,0,10,Rare,"$25,000","90, 92, 108, 109, 143","Vicious Grandmaster, Renegade Knight, Dragon Wyrmling, Wyvern, Adult Dragon",1
-125,FALSE,TRUE,Celestial Bow,Weapon,celestial-bow,guardians,celestial,TRUE,15,0,fiend,1,0,0,0,13.5,Epic,"$90,000","124, 140, 162","Nebula Seraph, Celestial Warden, Celestial Arbiter",1
-126,FALSE,FALSE,Mace,Weapon,mace,,,FALSE,8,0,,0,0,0,0,8,Common,$25,"42,61","Skeleton Warrior, Minotaur",
-127,FALSE,TRUE,Scepter of the Abyss,Weapon,scepter,sorcerers,void,FALSE,12,0,aberration,1,1,0,0,13,Epic,"$70,000","141, 159, 160, 161","Dimensional Worm, Nihilith, The Unbound, Void Behemoth",1
-128,FALSE,FALSE,Sun Blade,Weapon,sun-blade,,,FALSE,14,0,undead,1,0,0,0,14.5,Epic,"$120,000",149,Luminarion,
-129,FALSE,TRUE,Anguish,Weapon,anguish,sorcerers,void,TRUE,16,0,,0,0,0,0,14,Legendary,#N/A,"138,163","Vampire Lord, Ether Drake",1
-130,FALSE,TRUE,Blade of Eternity,Weapon,blade-of-eternity,,relic,FALSE,17,1,,0,0,0,0,18,Legendary,#N/A,"160, 161, 162, 164","The Unbound, Void Behemoth, Celestial Arbiter, Shard",1
-131,FALSE,TRUE,Bow of Destruction,Weapon,bow-of-destruction,sorcerers,void,TRUE,20,0,,0,0,0,0,18,Legendary,#N/A,158,Avatar of Destruction,1
-132,FALSE,FALSE,Ghost in a Jar,Creature Product,ghost-jar,,,FALSE,,,,,,,,0,Uncommon,"$1,000",156,Archmage,1
-133,TRUE,FALSE,Ley Line Compass,,,,,FALSE,,,,,,,,0,,#N/A,,,
-134,FALSE,FALSE,Brain in a Jar,Creature Product,brain-in-jar,,,FALSE,,,,,,,,0,Uncommon,$500,"136, 148, 168","Warlock, Lich, Visitor",1
-135,FALSE,TRUE,Katana,Weapon,katana,,,FALSE,7,0,,0,0,0,0,7,Common,$35,"74, 98","Rotworm, Shadow Stalker",1
-136,FALSE,FALSE,Present,Miscellaneous,present,,,FALSE,,,,,,,,0,,#N/A,,,
-137,FALSE,FALSE,Armadillo Tail,Creature Product,armadillo-tail,,,FALSE,,,,,,,,0,Uncommon,$31,166,Armadillo,1
-138,FALSE,TRUE,Mechanist's Wrench,Weapon,mechanists-wrench,,mechanist,FALSE,5,0,construct,1,1,0,0,6,Rare,$12,"46, 139","Rusty Automaton, Ancient Guardian",1
-139,FALSE,TRUE,Small Oil Lamp,Valuable,small-oil-lamp,,,FALSE,,,,,,,,0,Common,$120,172,Djinn,1
-140,FALSE,FALSE,Poem Scroll,Miscellaneous,tied-scroll,,,FALSE,,,,,,,,0,Uncommon,$0,,,
-141,FALSE,TRUE,Iron Helmet,Helmet,iron-helmet,,,FALSE,,3,,0,0,0,0,3,Uncommon,$390,"42, 74","Skeleton Warrior, Rotworm",
-142,FALSE,TRUE,Warlord Helmet,Helmet,warlord-helmet,,,FALSE,,4,,0,0,0,0,4,Rare,"$7,500","90, 92, 115","Vicious Grandmaster, Renegade Knight, Raging Barbarian",
-143,FALSE,TRUE,Legion Helmet,Helmet,legion-helmet,,,FALSE,,2,,0,0,0,0,2,Uncommon,$160,"61, 86, 87","Minotaur, Frost Giant, Stone Giant",
-144,FALSE,TRUE,Necromantic Shield,Shield,necromantic-shield,,,FALSE,,3,,0,0,0,0,3,Rare,#N/A,114,Necromancer,
-145,FALSE,TRUE,Plate Shield,Shield,plate-shield,,,FALSE,,2,,0,0,0,0,2,Common,$45,"46, 57, 61, 62, 89, 90, 92","Rusty Automaton, Cyclops, Minotaur, Orc, Ironclad Minotaur, Vicious Grandmaster, Renegade Knight",
-146,FALSE,TRUE,Shard Sword,Weapon,shard-sword,,void,FALSE,18,0,,0,0,0,0,18,Legendary,#N/A,164,Shard,
-147,FALSE,TRUE,Twin Hooks,Weapon,twin-hooks,,,TRUE,9,0,,0,0,0,0,7,Rare,$500,"115, 157","Raging Barbarian, Dracolich",
-148,FALSE,TRUE,Bow,Weapon,bow,,,TRUE,9,0,,0,0,0,0,7,Uncommon,$100,"67, 69","Entangler, Shambling Mound",
-149,FALSE,FALSE,Paladin Armor,Armor,cape-armor,,,FALSE,,3,,0,0,0,0,3,Rare,"$60,000",102,Midnight Spawn,
-150,FALSE,FALSE,Chain Armor,Armor,chain-armor,,,FALSE,,1,,0,0,0,0,1,Common,$50,"61, 62","Minotaur, Orc",
-151,FALSE,FALSE,Greaves,Legs,greaves,falcon,,FALSE,,5,,0,0,0,0,5,Rare,"$31,000","90, 92, 143","Vicious Grandmaster, Renegade Knight, Adult Dragon",
-152,FALSE,FALSE,Metal Skirt,Legs,metal-skirt,falcon,,FALSE,,2,,0,0,0,0,2,Uncommon,$110,"90, 92","Vicious Grandmaster, Renegade Knight",
-153,FALSE,FALSE,Sunfire Skirt,Legs,sunfire-skirt,,sunfire,FALSE,,1,,0,0,0,0,1,Epic,"$15,000",125,Phoenix,
-154,FALSE,FALSE,Leather Legs,Legs,leather-legs,,,FALSE,,1,,0,0,0,0,1,Common,$3,62,Orc,
-155,FALSE,FALSE,Plate Legs,Legs,plate-legs,,,FALSE,,3,,0,0,0,0,3,Uncommon,$115,"84, 94, 99, 146","Bone Devil, Giant Spider, Bone Gnawer, Grim Reaper",
-156,FALSE,TRUE,Dragonbone Staff,Weapon,dragonbone-staff,,,FALSE,10,0,,0,0,0,0,10,Rare,"$1,000","113, 114, 163","Storm Giant, Necromancer, Ether Drake",
-157,FALSE,TRUE,Dagger,Weapon,dagger,,,FALSE,6,0,,0,0,0,0,6,Common,$2,"60, 63, 71, 88","Blood Priest, Sun Priest, Ghoul, Arcane Trickster",
-158,FALSE,TRUE,Bone Knife,Weapon,bone-knife,,,FALSE,6,0,,0,0,0,0,6,Uncommon,$50,114,Necromancer,
-159,FALSE,FALSE,Club,Weapon,club,,,FALSE,6,0,,0,0,0,0,6,Common,$0,59,Ogre,
-160,FALSE,FALSE,Acorn,Plants and Herbs,acorn,,,FALSE,,,,,,,,0,Common,$10,173,Squirrel,
-161,FALSE,FALSE,Brown Mushroom,Plants and Herbs,brown-mushroom,,,FALSE,,,,,,,,0,Common,$4,59,Ogre,
-162,FALSE,FALSE,Fire Mushroom,Plants and Herbs,fire-mushroom,,,FALSE,,,,,,,,0,Common,$50,"111,121,145,147","Magma Bear, Hellhound, Demon, Pit Fiend",
-163,FALSE,FALSE,Demon Horn,Creature Product,demon-horn,,,FALSE,,,,,,,,0,Uncommon,"$1,000","145,147","Demon, Pit Fiend",
-164,FALSE,FALSE,Rose,Plants and Herbs,rose,,,FALSE,,,,,,,,0,Common,$5,,,
-165,FALSE,FALSE,Four-Leaf Clover,Plants and Herbs,four-leaf-clover,,,FALSE,,,,,,,,0,Rare,"$1,000","107,144,174","Unicorn, Mischievous Archfey, Ladybug",
-166,FALSE,FALSE,Fern,Plants and Herbs,fern,,,FALSE,,,,,,,,0,Common,$1,,,
-167,FALSE,FALSE,Wooden Key,Tool,key,,,FALSE,,,,,,,,0,Common,#N/A,,,
-168,FALSE,FALSE,Silver Key,Tool,key,,,FALSE,,,,,,,,0,Uncommon,#N/A,,,
-169,FALSE,FALSE,Golden Key,Tool,key,,,FALSE,,,,,,,,0,Uncommon,#N/A,,,
-170,FALSE,FALSE,Crystal Key,Tool,key,,,FALSE,,,,,,,,0,Rare,#N/A,,,
-171,FALSE,FALSE,Golem Repair Toolkit,Tool,golem-repair-toolkit,,,FALSE,,,,,,,,0,Rare,$800,,,
-172,FALSE,FALSE,Bat Wing,Creature Product,bat-wing,,,FALSE,,,,,,,,0,Common,$50,2,Bat,
-173,FALSE,FALSE,Scorpion Tail,Creature Product,scorpion-tail,,,FALSE,,,,,,,,0,Very Common,$7,6,Scorpion,
-174,FALSE,FALSE,Crowbar,Weapon,crowbar,,,FALSE,5,0,,0,0,0,0,5,Uncommon,$50,,,
-175,FALSE,FALSE,Machete,Weapon,machete,,,FALSE,8,0,,0,0,0,0,8,Common,$8,59,Ogre,
-176,FALSE,FALSE,Iron Ore,Creature Product,iron-ore,,,FALSE,,,,,,,,0,Common,$200,"46,51","Rusty Automaton, Stone Golem",
-177,FALSE,FALSE,Exotic Seeds Packet,Plants and Herbs,seeds,,,FALSE,,,,,,,,,Uncommon,,,,
+id,draft,stackable,lootable,name,type,icon,faction,set,two_handed,attack,defense,classification_bonus,classification_attack_bonus,classification_defense_bonus,xp_bonus,loot_bonus,tier,rarity,value,dropped_by_monsters,monsters,drop_max_amount
+50,FALSE,TRUE,TRUE,Book Page,Creature Product,book-page,,,FALSE,,,,,,,,0,Common,$50,"27, 167","Awakened Book, Knowledge Elemental",5
+35,FALSE,TRUE,TRUE,Moonlight Crystal,Creature Product,crystal-growth,,,FALSE,,,,,,,,0,Always,$235,117,Werewolf,4
+40,FALSE,TRUE,TRUE,Gear Wheel,Creature Product,gear-wheel,mechanists,,FALSE,,,,,,,,0,Common,$190,"15, 46, 76, 101, 139","Clockwork Beetle, Rusty Automaton, Mechanical Spider, Sentinel Automaton, Ancient Guardian",4
+88,FALSE,TRUE,TRUE,Small Diamond,Valuable,cut-diamond,,,FALSE,,,,,,,,0,Uncommon,$300,"120, 132, 137, 138, 157","Spectral Knight, Vampire, Sphinx, Vampire Lord, Dracolich",4
+89,FALSE,TRUE,TRUE,Small Emerald,Valuable,emerald,,,FALSE,,,,,,,,0,Uncommon,$250,"54, 55, 83, 108, 109, 129, 134, 167","Centaur, Dryad, Earth Elemental, Dragon Wyrmling, Wyvern, Gorgon, Young Dragon, Knowledge Elemental",4
+90,FALSE,TRUE,TRUE,Small Ruby,Valuable,ruby,,,FALSE,,,,,,,,0,Uncommon,$250,"85, 111, 112, 121, 125, 126, 135, 147","Imp, Magma Bear, Magma Elemental, Hellhound, Phoenix, Burning eye, Lava Leviathan, Pit Fiend",4
+91,FALSE,TRUE,TRUE,Small Sapphire,Valuable,sapphire,,,FALSE,,,,,,,,0,Uncommon,$250,"80, 82, 107, 124, 130, 140, 142, 154, 167","Pegasus, Air Elemental, Unicorn, Nebula Seraph, Hydra, Celestial Warden, Celestial Dice, Elemental Lord, Knowledge Elemental",4
+99,FALSE,TRUE,TRUE,Small Amethyst,Valuable,amethyst,,,FALSE,,,,,,,,0,Uncommon,$200,"113, 122, 123, 148, 157","Storm Giant, Behemoth, Onlooker, Lich, Dracolich",4
+100,FALSE,TRUE,TRUE,Small Topaz,Valuable,topaz,,,FALSE,,,,,,,,0,Uncommon,$200,"50, 96, 104, 121, 123, 126, 133","Sunbird, Mutagen, Eyestalk, Hellhound, Onlooker, Burning eye, Supervisor",4
+41,FALSE,TRUE,TRUE,Gear Crystal,Creature Product,gear-crystal,mechanists,,FALSE,,,,,,,,0,Common,$380,"76, 101, 139","Mechanical Spider, Sentinel Automaton, Ancient Guardian",3
+87,FALSE,TRUE,TRUE,Ancient Coin,Valuable,crown-coin,,,FALSE,,,,,,,,0,Uncommon,$85,"72, 132, 138, 139, 143, 148, 153, 157","Mummy, Vampire, Vampire Lord, Ancient Guardian, Adult Dragon, Lich, Ancient Dragon, Dracolich",3
+97,FALSE,TRUE,TRUE,Opal,Valuable,shiny-sphere,,,FALSE,,,,,,,,0,Uncommon,$500,"107, 140, 149, 162, 164","Unicorn, Celestial Warden, Luminarion, Celestial Arbiter, Shard",3
+37,FALSE,TRUE,TRUE,Demonic Essence,Creature Product,fire,,,FALSE,,,,,,,,0,Uncommon,"$1,000","85, 119, 120, 121, 141, 145, 147, 148, 150, 157, 158, 159, 160, 161","Imp, Wraith, Spectral Knight, Hellhound, Dimensional Worm, Demon, Pit Fiend, Lich, Soul Devourer, Dracolich, Avatar of Destruction, Nihilith, The Unbound, Void Behemoth",2
+12,FALSE,FALSE,TRUE,Amulet of Abundance,Amulet,gem-pendant,,,FALSE,,0,,0,0,0.1,0,1,Epic,"$34,000","142, 144, 148, 149, 152, 156, 160, 162, 164","Celestial Dice, Mischievous Archfey, Lich, Luminarion, Time Manipulator, Archmage, The Unbound, Celestial Arbiter, Shard",1
+5,FALSE,FALSE,TRUE,Amulet of Life,Amulet,heart-necklace,,,FALSE,,0,,0,0,0,0,0,Epic,"$50,000","140, 142, 149, 152, 153, 156, 164","Celestial Warden, Celestial Dice, Luminarion, Time Manipulator, Ancient Dragon, Archmage, Shard",1
+2,FALSE,FALSE,TRUE,Starshard Pendant,Amulet,star-shard-pendant,guardians,celestial,FALSE,,2,,0,0,0,0,2,Rare,"$14,000","142, 149, 154, 168","Celestial Dice, Luminarion, Elemental Lord, Visitor",1
+3,FALSE,FALSE,TRUE,Fiendish Pendant,Amulet,pendant,sorcerers,demon,FALSE,,0,fiend,2,0,0,0,1,Rare,"$2,500","85, 121, 145, 147","Imp, Hellhound, Demon, Pit Fiend",1
+13,FALSE,FALSE,TRUE,Aetherial Talisman,Amulet,feather-necklace,druids,,FALSE,,0,elemental,0,2,0,0,1,Rare,"$1,050","52, 82, 83, 125, 167","Dust Devil, Air Elemental, Earth Elemental, Phoenix, Knowledge Elemental",1
+1,FALSE,FALSE,TRUE,Sigil of Sanctuary,Amulet,sanctuary,sorcerers,celestial,FALSE,,0,undead,0,1,0,0,0.5,Rare,"$1,000","124, 126, 136, 140, 142, 156","Nebula Seraph, Burning eye, Warlock, Celestial Warden, Celestial Dice, Archmage",1
+4,FALSE,FALSE,TRUE,Soul Ward,Amulet,tribal-pendant,druids,druidic,FALSE,,0,undead,0,1,0,0,0.5,Rare,$500,"124, 127, 136, 137, 140, 142, 144, 149, 156","Nebula Seraph, Ice Witch, Warlock, Sphinx, Celestial Warden, Celestial Dice, Mischievous Archfey, Luminarion, Archmage",1
+6,FALSE,FALSE,TRUE,Broken Amulet,Amulet,broken-amulet,,,FALSE,,0,,0,0,0,0,0,Rare,$50,"136, 156","Warlock, Archmage",1
+7,FALSE,FALSE,TRUE,Ruby Necklace,Amulet,gem-necklace,,,FALSE,,0,,0,0,0,0,0,Rare,"$1,850","132, 136, 138","Vampire, Warlock, Vampire Lord",1
+8,FALSE,FALSE,TRUE,Amulet of Loss,Amulet,necklace,,,FALSE,,0,,0,0,0,0,0,Rare,"$45,000","107, 134, 140, 152, 153, 160, 164, 168","Unicorn, Young Dragon, Celestial Warden, Time Manipulator, Ancient Dragon, The Unbound, Shard, Visitor",1
+9,FALSE,FALSE,TRUE,Crystal Necklace,Amulet,pearl-necklace,,,FALSE,,0,,0,0,0,0,0,Rare,$400,"60, 63, 100, 108","Blood Priest, Sun Priest, Banshee, Dragon Wyrmling",1
+10,FALSE,FALSE,TRUE,Silver Amulet,Amulet,pendant,,,FALSE,,0,,0,0,0,0,0,Rare,$210,"77, 88, 114, 115, 127","Roc, Arcane Trickster, Necromancer, Raging Barbarian, Ice Witch",1
+11,FALSE,FALSE,TRUE,Scarab Amulet,Amulet,scarab,,,FALSE,,0,,0,0,0,0,0,Rare,"$1,000",137,Sphinx,1
+14,FALSE,FALSE,TRUE,Gearwheel Chain,Amulet,gearwheel-chain,mechanists,,FALSE,,1,,0,0,0,0,1,Uncommon,$150,"46, 51, 76, 101, 139","Rusty Automaton, Stone Golem, Mechanical Spider, Sentinel Automaton, Ancient Guardian",1
+21,FALSE,FALSE,TRUE,Leather Armor,Armor,leather-armor,,leather,FALSE,,1,,0,0,0,0,1,Common,$10,"32, 36, 42, 61, 62, 71","Troll, Skeleton, Skeleton Warrior, Minotaur, Orc, Ghoul",1
+23,FALSE,FALSE,TRUE,Robe of the Abyss,Armor,robe,sorcerers,void,FALSE,,2,aberration,0,3,0,0,3.5,Epic,"$30,000","136, 156, 159, 161","Warlock, Archmage, Nihilith, Void Behemoth",1
+18,FALSE,FALSE,TRUE,Feyweave Robe,Armor,robe,druids,fey,FALSE,,2,fey,0,2,0,0,3,Rare,"$13,000","88, 116, 127, 136, 144","Arcane Trickster, Witch, Ice Witch, Warlock, Mischievous Archfey",1
+24,FALSE,FALSE,TRUE,Voidwalker Cloak,Armor,cloak,sorcerers,nightmare,FALSE,,2,monstrosity,0,2,0,0,3,Rare,"$12,500","156, 165","Archmage, World Eater",1
+25,FALSE,FALSE,TRUE,Sunfire Cloak,Armor,cape,guardians,sunfire,FALSE,,2,,0,0,0,0,2,Rare,"$14,000","136, 144, 149","Warlock, Mischievous Archfey, Luminarion",1
+26,FALSE,FALSE,TRUE,Scale Armor,Armor,scale-mail,,,FALSE,,3,,0,0,0,0,3,Common,$75,"89, 99","Ironclad Minotaur, Bone Gnawer",1
+16,FALSE,FALSE,TRUE,Demon Armor,Armor,abdominal-armor,,demon,FALSE,,4,fiend,0,1,0,0,4.5,Rare,"$50,000","145, 147","Demon, Pit Fiend",1
+17,FALSE,FALSE,TRUE,Dragon Scale Mail,Armor,shoulder-armor,mechanists,dragon,FALSE,,4,dragon,0,1,0,0,4.5,Rare,"$40,000","143, 153","Adult Dragon, Ancient Dragon",1
+20,FALSE,FALSE,TRUE,Knight Armor,Armor,armor-vest,knights,knight,FALSE,,4,,0,0,0,0,4,Uncommon,"$5,000","89, 90, 92, 95, 105, 106, 130","Ironclad Minotaur, Vicious Grandmaster, Renegade Knight, Harpy, Griffin, Manticore, Hydra",1
+19,FALSE,FALSE,TRUE,Golden Armor,Armor,golden-armor,,golden,FALSE,,5,,0,0,0,0,5,Epic,"$70,000","134, 136, 145","Young Dragon, Warlock, Demon",1
+22,FALSE,FALSE,TRUE,Prismatic Armor,Armor,shoulder-armor,guardians,prismatic,FALSE,,6,,0,0,0,0,6,Epic,"$100,000",162,Celestial Arbiter,1
+15,FALSE,FALSE,TRUE,Divine Plate,Armor,chest-armor,guardians,celestial,FALSE,,7,fiend,0,1,0,0,7.5,Legendary,#N/A,162,Celestial Arbiter,1
+28,FALSE,FALSE,TRUE,Magic Plate Armor,Armor,breastplate,,,FALSE,,7,,0,0,0,0,7,Legendary,"$110,000","150, 151, 161, 163, 165","Soul Devourer, Supreme Cube, Void Behemoth, Ether Drake, World Eater",1
+31,FALSE,FALSE,TRUE,Leather Boots,Boots,leather-boots,,leather,FALSE,,1,,0,0,0,0,1,Common,$2,"32, 62","Troll, Orc",1
+32,FALSE,FALSE,TRUE,Prismatic Boots,Boots,prismatic-boots,guardians,prismatic,FALSE,,3,,0,0,0,0,3,Epic,"$13,300","107, 142, 149, 153, 157","Unicorn, Celestial Dice, Luminarion, Ancient Dragon, Dracolich",1
+34,FALSE,FALSE,TRUE,Alchemist's Boots,Boots,alchemists-boots,mechanists,,FALSE,,1,ooze,0,2,0,0,2,Epic,"$9,500","34, 65, 96, 102","Aggressive Foam, Gobbler, Mutagen, Midnight Spawn",1
+30,FALSE,FALSE,TRUE,Steel Boots,Boots,steel-boots,knights,knight,FALSE,,2,,0,0,0,0,2,Rare,"$5,000","90, 101, 122, 135","Vicious Grandmaster, Sentinel Automaton, Behemoth, Lava Leviathan",1
+29,FALSE,FALSE,TRUE,Barkskin Boots,Boots,barkskin-boots,druids,druidic,FALSE,,1,plant,0,1,0,0,1.5,Rare,$900,"115, 118, 131","Raging Barbarian, Treant, Forest Guardian",1
+45,FALSE,TRUE,TRUE,Star Map,Creature Product,star-map,guardians,,FALSE,,,,,,,,0,Common,$100,"124,137","Nebula Seraph, Sphinx",1
+51,FALSE,TRUE,TRUE,Fox Tail,Creature Product,fox-tail,,,FALSE,,,,,,,,0,Common,$140,31,Aurora Fox,1
+36,FALSE,FALSE,TRUE,Astral Glyph,Creature Product,glyph,,,FALSE,,,,,,,,0,Uncommon,"$1,000","50, 80, 107, 124, 140, 142, 149, 162","Sunbird, Pegasus, Unicorn, Nebula Seraph, Celestial Warden, Celestial Dice, Luminarion, Celestial Arbiter",1
+38,FALSE,TRUE,TRUE,Piece of Cloth,Creature Product,rolled-cloth,,,FALSE,,,,,,,,0,Uncommon,$200,"41, 60, 63, 90, 92, 115,","Gnome, Blood Priest, Sun Priest, Vicious Grandmaster, Renegade Knight, Raging Barbarian",1
+39,FALSE,FALSE,TRUE,Automaton Core,Creature Product,automaton-core,mechanists,,FALSE,,,,,,,,0,Uncommon,$800,"46, 101, 139","Rusty Automaton, Sentinel Automaton, Ancient Guardian",1
+42,TRUE,TRUE,TRUE,Ooze Sample,Creature Product,,mechanists,,FALSE,,,,,,,,0,Uncommon,$395,"65,96,102","Gobbler, Mutagen, Midnight Spawn",1
+47,FALSE,TRUE,TRUE,Vial of Ink,Creature Product,ink-vial,,,FALSE,,,,,,,,0,Uncommon,$185,"35, 66","Ink Blob, Invisible Ink Blob",1
+48,FALSE,TRUE,TRUE,Giant Quill,Creature Product,quill,,,FALSE,,,,,,,,0,Uncommon,$225,167,Knowledge Elemental,1
+49,FALSE,TRUE,TRUE,Silken Bookmark,Creature Product,bookmark,,,FALSE,,,,,,,,0,Uncommon,$185,"27, 167","Awakened Book, Knowledge Elemental",1
+132,FALSE,FALSE,FALSE,Ghost in a Jar,Creature Product,ghost-jar,,,FALSE,,,,,,,,0,Uncommon,"$1,000",156,Archmage,1
+134,FALSE,FALSE,FALSE,Brain in a Jar,Creature Product,brain-in-jar,,,FALSE,,,,,,,,0,Uncommon,$500,"136, 148, 168","Warlock, Lich, Visitor",1
+137,FALSE,TRUE,FALSE,Armadillo Tail,Creature Product,armadillo-tail,,,FALSE,,,,,,,,0,Uncommon,$31,166,Armadillo,1
+43,TRUE,TRUE,TRUE,Compass,Creature Product,,,,FALSE,,,,,,,,0,,#N/A,,,1
+58,FALSE,FALSE,TRUE,Brass Helmet,Helmet,brodie-helmet,,,FALSE,,2,,0,0,0,0,2,Common,$150,"36, 42, 61, 62","Skeleton, Skeleton Warrior, Minotaur, Orc",1
+55,FALSE,FALSE,TRUE,Leather Helmet,Helmet,leather-helmet,,leather,FALSE,,1,,0,0,0,0,1,Common,$3,"32, 41, 60, 61, 62, 63","Troll, Gnome, Blood Priest, Minotaur, Orc, Sun Priest",1
+56,FALSE,FALSE,TRUE,Prismatic Helmet,Helmet,prismatic-helmet,guardians,prismatic,FALSE,,6,,0,0,0,0,6,Epic,"$97,100",155,Primordial Titan,1
+54,FALSE,FALSE,TRUE,Golden Helmet,Helmet,golden-helmet,,golden,FALSE,,5,,0,0,0,0,5,Epic,"$85,000","153, 163","Ancient Dragon, Ether Drake",1
+60,FALSE,FALSE,TRUE,Crusader Helmet,Helmet,visored-helm,knights,,FALSE,,5,,0,0,0,0,5,Rare,"$15,000","90, 101, 115, 122","Vicious Grandmaster, Sentinel Automaton, Raging Barbarian, Behemoth",1
+53,FALSE,FALSE,TRUE,Charmer's Tiara,Helmet,tiara,druids,fey,FALSE,,1,fey,0,2,0,0,2,Rare,"$3,100","91, 144","Siren, Mischievous Archfey",1
+57,FALSE,FALSE,TRUE,Ancient Tiara,Helmet,tiara,,relic,FALSE,,1,elemental,0,2,0,0,2,Rare,"$3,300","63, 82, 127, 137","Sun Priest, Air Elemental, Ice Witch, Sphinx",1
+59,FALSE,FALSE,TRUE,Warrior Helmet,Helmet,heavy-helm,,,FALSE,,4,,0,0,0,0,4,Uncommon,"$5,500","89, 99, 113, 122","Ironclad Minotaur, Bone Gnawer, Storm Giant, Behemoth",1
+66,FALSE,FALSE,TRUE,Ring of Treasure Hunter,Ring,power-ring,,relic,FALSE,,0,,0,0,0,0.2,1,Epic,"$20,000","141, 143, 150, 153, 163, 165","Dimensional Worm, Adult Dragon, Soul Devourer, Ancient Dragon, Ether Drake, World Eater",1
+64,FALSE,FALSE,TRUE,Butterfly Ring,Ring,butterfly-ring,druids,fey,FALSE,,0,aberration,0,1,0,0,0.5,Rare,"$2,400","39, 56, 144","Twisted Phouka, Kirin, Mischievous Archfey",1
+67,FALSE,FALSE,TRUE,Obsidian Ring,Ring,obsidian-ring,sorcerers,,FALSE,,0,,0,0,0,0,0,Rare,$150,"111, 112, 114, 121, 125, 135","Magma Bear, Magma Elemental, Necromancer, Hellhound, Phoenix, Lava Leviathan",1
+68,FALSE,FALSE,TRUE,Amethyst Ring,Ring,globe-ring,,,FALSE,,0,,0,0,0,0,0,Rare,$700,"114, 136","Necromancer, Warlock",1
+69,FALSE,FALSE,TRUE,Emerald Ring,Ring,globe-ring,,,FALSE,,0,,0,0,0,0,0,Rare,$800,"88, 91, 116, 134, 156","Arcane Trickster, Siren, Witch, Young Dragon, Archmage",1
+63,FALSE,FALSE,TRUE,Arboreal Ring,Ring,ring,druids,druidic,FALSE,,0,plant,0,1,0,0,0.5,Uncommon,$400,"118, 131, 144","Treant, Forest Guardian, Mischievous Archfey",1
+65,FALSE,FALSE,TRUE,Gold Ring,Ring,ring,,golden,FALSE,,0,,0,0,0,0,0,Uncommon,$300,"60, 63, 88, 143, 145","Blood Priest, Sun Priest, Arcane Trickster, Adult Dragon, Demon",1
+70,FALSE,FALSE,TRUE,Silver Ring,Ring,ring,,,FALSE,,0,,0,0,0,0,0,Uncommon,$80,"88, 91, 114, 115, 127","Arcane Trickster, Siren, Necromancer, Raging Barbarian, Ice Witch",1
+71,FALSE,FALSE,TRUE,Wedding Ring,Ring,ring,,,FALSE,,0,,0,0,0,0,0,Uncommon,$270,"41, 63, 72, 88, 100, 132, 138","Gnome, Sun Priest, Mummy, Arcane Trickster, Banshee, Vampire, Vampire Lord",1
+79,FALSE,FALSE,TRUE,Wooden Shield,Shield,viking-shield,,,FALSE,,1,,0,0,0,0,1,Common,$5,"32, 36, 61, 62","Troll, Skeleton, Minotaur, Orc",1
+78,FALSE,FALSE,TRUE,Nightmare Shield,Shield,eye-shield,sorcerers,nightmare,FALSE,,3,monstrosity,0,1,0,0,3.5,Rare,"$16,000","126, 128, 129, 146, 150, 165","Burning eye, Basilisk, Gorgon, Grim Reaper, Soul Devourer, World Eater",1
+73,FALSE,FALSE,TRUE,Demon Shield,Shield,fire-shield,,demon,FALSE,,3,fiend,0,1,0,0,3.5,Uncommon,"$20,000","145, 147, 150","Demon, Pit Fiend, Soul Devourer",1
+74,FALSE,FALSE,TRUE,Dragon Shield,Shield,layered-shield,mechanists,dragon,FALSE,,3,dragon,0,1,0,0,3.5,Uncommon,"$12,500","108, 134, 143, 153","Dragon Wyrmling, Young Dragon, Adult Dragon, Ancient Dragon",1
+80,FALSE,FALSE,TRUE,Castle Shield,Shield,castle-shield,,,FALSE,,3,,0,0,0,0,3,Uncommon,"$4,000","46, 90, 92","Rusty Automaton, Vicious Grandmaster, Renegade Knight",1
+81,FALSE,FALSE,TRUE,Griffin Shield,Shield,griffin-shield,,,FALSE,,3,,0,0,0,0,3,Uncommon,"$4,200","90, 92","Vicious Grandmaster, Renegade Knight",1
+75,FALSE,FALSE,TRUE,Prismatic Shield,Shield,prismatic-shield,guardians,prismatic,FALSE,,4,,0,0,0,0,4,Epic,"$76,000","149, 162","Luminarion, Celestial Arbiter",1
+76,FALSE,FALSE,TRUE,Shield of the Ancients,Shield,rosa-shield,,relic,FALSE,,4,,0,0,0,0,4,Epic,"$65,000","143, 148, 152, 153, 155, 157","Adult Dragon, Lich, Time Manipulator, Ancient Dragon, Primordial Titan, Dracolich",1
+72,FALSE,FALSE,TRUE,Blessed Shield,Shield,templar-shield,guardians,celestial,FALSE,,5,undead,0,1,0,0,5.5,Epic,"$90,000","149, 162","Luminarion, Celestial Arbiter",1
+82,FALSE,FALSE,TRUE,Great Shield,Shield,bordered-shield,,,FALSE,,5,,0,0,0,0,5,Epic,"$80,000","149, 153, 155, 161, 162, 163, 165","Luminarion, Ancient Dragon, Primordial Titan, Void Behemoth, Celestial Arbiter, Ether Drake, World Eater",1
+77,FALSE,FALSE,TRUE,Shield of Destiny,Shield,heart-shield,,relic,FALSE,,6,,0,0,0.1,0,7,Legendary,#N/A,"164, 165","Shard, World Eater",1
+85,FALSE,FALSE,TRUE,Nose Ring,Valuable,torc,,,FALSE,,,,,,,,0,Common,$60,"61, 89","Minotaur, Ironclad Minotaur",1
+139,FALSE,FALSE,TRUE,Small Oil Lamp,Valuable,small-oil-lamp,,,FALSE,,,,,,,,0,Common,$120,172,Djinn,1
+83,FALSE,TRUE,TRUE,Bar of Gold,Valuable,metal-bar,,,FALSE,,,,,,,,0,Rare,"$10,000","128, 143, 153, 157, 163","Basilisk, Adult Dragon, Ancient Dragon, Dracolich, Ether Drake",1
+84,FALSE,FALSE,TRUE,Gemmed Figurine,Valuable,figurine,,,FALSE,,,,,,,,0,Rare,"$1,500","134, 143","Young Dragon, Adult Dragon",1
+86,FALSE,FALSE,TRUE,Golden Brooch,Valuable,winged-shield,,,FALSE,,,,,,,,0,Rare,$300,"72, 132, 136, 138, 143","Mummy, Vampire, Warlock, Vampire Lord, Adult Dragon",1
+94,FALSE,TRUE,TRUE,Giant Emerald,Valuable,emerald,,,FALSE,,,,,,,,0,Rare,"$7,500","143, 153, 154, 167","Adult Dragon, Ancient Dragon, Elemental Lord, Knowledge Elemental",1
+95,FALSE,TRUE,TRUE,Giant Ruby,Valuable,ruby,,,FALSE,,,,,,,,0,Rare,"$7,500","135, 145, 147, 150, 154, 167","Lava Leviathan, Demon, Pit Fiend, Soul Devourer, Elemental Lord, Knowledge Elemental",1
+96,FALSE,TRUE,TRUE,Giant Sapphire,Valuable,sapphire,,,FALSE,,,,,,,,0,Rare,"$7,500","130, 140, 142, 154, 162, 167","Hydra, Celestial Warden, Celestial Dice, Elemental Lord, Celestial Arbiter, Knowledge Elemental",1
+92,FALSE,TRUE,TRUE,Giant Amethyst,Valuable,amethyst,,,FALSE,,,,,,,,0,Uncommon,"$5,000","141, 163","Dimensional Worm, Ether Drake",1
+93,FALSE,TRUE,TRUE,Giant Topaz,Valuable,topaz,,,FALSE,,,,,,,,0,Uncommon,"$5,000","163, 165","Ether Drake, World Eater",1
+138,FALSE,FALSE,TRUE,Mechanist's Wrench,Weapon,mechanists-wrench,,mechanist,FALSE,5,0,construct,1,1,0,0,6,Rare,$12,"46, 139","Rusty Automaton, Ancient Guardian",1
+103,FALSE,FALSE,TRUE,Hatchet,Weapon,hatchet,,,FALSE,6,0,,0,0,0,0,6,Common,$7,"32, 36, 41, 61, 62, 71, 92","Troll, Skeleton, Gnome, Minotaur, Orc, Ghoul, Renegade Knight",1
+102,FALSE,FALSE,TRUE,Spear,Weapon,spear,,,FALSE,7,0,,0,0,0,0,7,Common,$3,"32, 54, 58, 62, 64, 86, 87, 90, 92","Troll, Centaur, Hill Giant, Orc, Troglodyte, Frost Giant, Stone Giant, Vicious Grandmaster, Renegade Knight",1
+135,FALSE,FALSE,TRUE,Katana,Weapon,katana,,,FALSE,7,0,,0,0,0,0,7,Common,$35,"74, 98","Rotworm, Shadow Stalker",1
+101,FALSE,FALSE,TRUE,Shortsword,Weapon,gladius,,,FALSE,8,0,,0,0,0,0,8,Common,$10,"29, 32, 36, 41, 42, 46, 51, 61, 62","Gargoyle, Troll, Skeleton, Gnome, Skeleton Warrior, Rusty Automaton, Stone Golem, Minotaur, Orc",1
+118,FALSE,FALSE,TRUE,Crescent Staff,Weapon,crescent-staff,druids,druidic,FALSE,8,0,plant,1,0,0,0,8.5,Rare,"$1,800","118, 131, 156","Treant, Forest Guardian, Archmage",1
+119,FALSE,FALSE,TRUE,Vine Whip,Weapon,vine-whip,druids,,FALSE,8,0,humanoid,1,0,0,0,8.5,Rare,#N/A,"67, 69, 118, 131","Entangler, Shambling Mound, Treant, Forest Guardian",1
+111,FALSE,FALSE,TRUE,Beast Slayer Axe,Weapon,special-axe,,,FALSE,9,0,beast,1,0,0,0,9.5,Common,$250,"84, 89, 101, 113, 115, 122, 145, 146, 157","Bone Devil, Ironclad Minotaur, Sentinel Automaton, Storm Giant, Raging Barbarian, Behemoth, Demon, Grim Reaper, Dracolich",1
+104,FALSE,FALSE,TRUE,Crossbow,Weapon,crossbow,,,TRUE,9,0,,0,0,0,0,7,Common,$120,"29, 46, 62, 67, 69","Gargoyle, Rusty Automaton, Orc, Entangler, Shambling Mound",1
+112,FALSE,FALSE,TRUE,Ooze Divider,Weapon,battle-axe,,,FALSE,9,0,ooze,1,0,0,0,9.5,Uncommon,"$1,080","58, 87, 113","Hill Giant, Stone Giant, Storm Giant",1
+121,FALSE,FALSE,TRUE,Relic Sword,Weapon,rune-sword,,relic,FALSE,10,0,,0,0,0,0.1,11,Rare,"$34,000","128, 129, 132, 137, 138, 143, 153, 157, 163","Basilisk, Gorgon, Vampire, Sphinx, Vampire Lord, Adult Dragon, Ancient Dragon, Dracolich, Ether Drake",1
+105,FALSE,FALSE,TRUE,Battle Axe,Weapon,battle-axe,,,TRUE,10,0,,0,0,0,0,8,Uncommon,$80,"42, 61, 86, 87, 89, 90, 113, 115, 122","Skeleton Warrior, Minotaur, Frost Giant, Stone Giant, Ironclad Minotaur, Vicious Grandmaster, Storm Giant, Raging Barbarian, Behemoth",1
+106,FALSE,FALSE,TRUE,Broadsword,Weapon,broadsword,,,TRUE,10,0,,0,0,0,0,8,Uncommon,$400,"46, 58, 89, 90, 92, 101, 113, 115, 122","Rusty Automaton, Hill Giant, Ironclad Minotaur, Vicious Grandmaster, Renegade Knight, Sentinel Automaton, Storm Giant, Raging Barbarian, Behemoth",1
+108,FALSE,FALSE,TRUE,Halberd,Weapon,sharp-halberd,,,TRUE,10,0,,0,0,0,0,8,Uncommon,$270,"46, 58, 86, 87, 90, 92, 101, 113, 115","Rusty Automaton, Hill Giant, Frost Giant, Stone Giant, Vicious Grandmaster, Renegade Knight, Sentinel Automaton, Storm Giant, Raging Barbarian",1
+117,FALSE,FALSE,TRUE,Modified Crossbow,Weapon,crossbow,,,TRUE,10,0,,0,0,0,0,8,Uncommon,"$1,200","57, 58, 67, 69, 86, 90, 101, 113, 118","Cyclops, Hill Giant, Entangler, Shambling Mound, Frost Giant, Vicious Grandmaster, Sentinel Automaton, Storm Giant, Treant",1
+113,FALSE,FALSE,TRUE,Hellforged Axe,Weapon,hellforged-axe,,demon,FALSE,11,0,celestial,1,0,0,0,11.5,Rare,"$29,000","84, 121, 145, 146, 147","Bone Devil, Hellhound, Demon, Grim Reaper, Pit Fiend",1
+116,FALSE,FALSE,TRUE,Royal Axe,Weapon,royal-axe,knights,royal,FALSE,11,0,,0,0,0,0,11,Rare,"$13,000","86, 87, 89, 90, 92, 113, 115","Frost Giant, Stone Giant, Ironclad Minotaur, Vicious Grandmaster, Renegade Knight, Storm Giant, Raging Barbarian",1
+115,FALSE,FALSE,TRUE,Guardian Halberd,Weapon,halberd,knights,royal,TRUE,11,1,,0,0,0,0,10,Rare,"$12,800","101, 115","Sentinel Automaton, Raging Barbarian",1
+110,FALSE,FALSE,TRUE,Dragon Slayer,Weapon,dragon-slayer,mechanists,dragon,TRUE,11,0,dragon,1,0,0,0,9.5,Rare,"$15,000","113, 134, 143, 153, 155","Storm Giant, Young Dragon, Adult Dragon, Ancient Dragon, Primordial Titan",1
+107,FALSE,FALSE,TRUE,Giant Sword,Weapon,giant-sword,,,TRUE,11,0,,0,0,0,0,9,Uncommon,"$10,000","46, 51, 58, 86, 87, 101, 113, 122","Rusty Automaton, Stone Golem, Hill Giant, Frost Giant, Stone Giant, Sentinel Automaton, Storm Giant, Behemoth",1
+109,FALSE,FALSE,TRUE,Titan Axe,Weapon,big-axe,,,TRUE,11,0,,0,0,0,0,9,Uncommon,"$8,000","101, 113, 122, 155","Sentinel Automaton, Storm Giant, Behemoth, Primordial Titan",1
+127,FALSE,FALSE,TRUE,Scepter of the Abyss,Weapon,scepter,sorcerers,void,FALSE,12,0,aberration,1,1,0,0,13,Epic,"$70,000","141, 159, 160, 161","Dimensional Worm, Nihilith, The Unbound, Void Behemoth",1
+124,FALSE,FALSE,TRUE,Royal Crossbow,Weapon,crossbow,knights,royal,TRUE,12,0,,0,0,0,0,10,Rare,"$25,000","90, 92, 108, 109, 143","Vicious Grandmaster, Renegade Knight, Dragon Wyrmling, Wyvern, Adult Dragon",1
+120,FALSE,FALSE,TRUE,Angelic Axe,Weapon,fancy-axe,guardians,celestial,TRUE,13,1,fiend,1,1,0,0,13,Epic,"$100,000","162, 163","Celestial Arbiter, Ether Drake",1
+122,FALSE,FALSE,TRUE,Mystic Blade,Weapon,mystic-blade,,relic,FALSE,13,0,,0,0,0,0,13,Epic,"$84,000","128, 130, 137, 138, 157","Basilisk, Hydra, Sphinx, Vampire Lord, Dracolich",1
+125,FALSE,FALSE,TRUE,Celestial Bow,Weapon,celestial-bow,guardians,celestial,TRUE,15,0,fiend,1,0,0,0,13.5,Epic,"$90,000","124, 140, 162","Nebula Seraph, Celestial Warden, Celestial Arbiter",1
+123,FALSE,FALSE,TRUE,Sword of Valor,Weapon,sword-of-valor,knights,relic,TRUE,15,1,,0,0,0,0,14,Legendary,"$110,000","151, 155, 157, 162, 163, 164","Supreme Cube, Primordial Titan, Dracolich, Celestial Arbiter, Ether Drake, Shard",1
+129,FALSE,FALSE,TRUE,Anguish,Weapon,anguish,sorcerers,void,TRUE,16,0,,0,0,0,0,14,Legendary,#N/A,"138,163","Vampire Lord, Ether Drake",1
+130,FALSE,FALSE,TRUE,Blade of Eternity,Weapon,blade-of-eternity,,relic,FALSE,17,1,,0,0,0,0,18,Legendary,#N/A,"160, 161, 162, 164","The Unbound, Void Behemoth, Celestial Arbiter, Shard",1
+131,FALSE,FALSE,TRUE,Bow of Destruction,Weapon,bow-of-destruction,sorcerers,void,TRUE,20,0,,0,0,0,0,18,Legendary,#N/A,158,Avatar of Destruction,1
+150,FALSE,FALSE,FALSE,Chain Armor,Armor,chain-armor,,,FALSE,,2,,0,0,0,0,2,Common,$50,"61, 62","Minotaur, Orc",
+27,FALSE,FALSE,FALSE,Noble Armor,Armor,cape-armor,,,FALSE,,4,,0,0,0,0,4,Rare,"$6,000",,,
+149,FALSE,FALSE,FALSE,Paladin Armor,Armor,cape-armor,,,FALSE,,4,,0,0,0,0,4,Rare,"$60,000",102,Midnight Spawn,
+33,FALSE,FALSE,TRUE,Voidwalker Boots,Boots,voidwalker-boots,sorcerers,nightmare,FALSE,,1,monstrosity,0,1,0,0,1.5,Rare,#N/A,161,Void Behemoth,
+172,FALSE,TRUE,FALSE,Bat Wing,Creature Product,bat-wing,,,FALSE,,,,,,,,0,Common,$50,2,Bat,
+176,FALSE,TRUE,FALSE,Iron Ore,Creature Product,iron-ore,,,FALSE,,,,,,,,0,Common,$200,"46,51","Rusty Automaton, Stone Golem",
+163,FALSE,TRUE,FALSE,Demon Horn,Creature Product,demon-horn,,,FALSE,,,,,,,,0,Uncommon,"$1,000","145,147","Demon, Pit Fiend",
+173,FALSE,TRUE,FALSE,Scorpion Tail,Creature Product,scorpion-tail,,,FALSE,,,,,,,,0,Very Common,$7,6,Scorpion,
+52,TRUE,FALSE,TRUE,Crown of Thorns,Helmet,crown-of-thorns,druids,druidic,FALSE,,-1,fey,,,,,-1,Epic,#N/A,,,
+142,FALSE,FALSE,TRUE,Warlord Helmet,Helmet,warlord-helmet,,,FALSE,,4,,0,0,0,0,4,Rare,"$7,500","90, 92, 115","Vicious Grandmaster, Renegade Knight, Raging Barbarian",
+141,FALSE,FALSE,TRUE,Iron Helmet,Helmet,iron-helmet,,,FALSE,,3,,0,0,0,0,3,Uncommon,$390,"42, 74","Skeleton Warrior, Rotworm",
+143,FALSE,FALSE,TRUE,Legion Helmet,Helmet,legion-helmet,,,FALSE,,2,,0,0,0,0,2,Uncommon,$160,"61, 86, 87","Minotaur, Frost Giant, Stone Giant",
+154,FALSE,FALSE,FALSE,Leather Legs,Legs,leather-legs,,,FALSE,,1,,0,0,0,0,1,Common,$3,62,Orc,
+153,FALSE,FALSE,FALSE,Sunfire Skirt,Legs,sunfire-skirt,,sunfire,FALSE,,1,,0,0,0,0,1,Epic,"$15,000",125,Phoenix,
+151,FALSE,FALSE,FALSE,Greaves,Legs,greaves,falcon,,FALSE,,5,,0,0,0,0,5,Rare,"$31,000","90, 92, 143","Vicious Grandmaster, Renegade Knight, Adult Dragon",
+155,FALSE,FALSE,FALSE,Plate Legs,Legs,plate-legs,,,FALSE,,3,,0,0,0,0,3,Uncommon,$115,"84, 94, 99, 146","Bone Devil, Giant Spider, Bone Gnawer, Grim Reaper",
+152,FALSE,FALSE,FALSE,Metal Skirt,Legs,metal-skirt,falcon,,FALSE,,2,,0,0,0,0,2,Uncommon,$110,"90, 92","Vicious Grandmaster, Renegade Knight",
+140,FALSE,FALSE,FALSE,Poem Scroll,Miscellaneous,tied-scroll,,,FALSE,,,,,,,,0,Uncommon,$0,,,
+136,FALSE,FALSE,FALSE,Present,Miscellaneous,present,,,FALSE,,,,,,,,0,,#N/A,,,
+160,FALSE,TRUE,FALSE,Acorn,Plants and Herbs,acorn,,,FALSE,,,,,,,,0,Common,$10,173,Squirrel,
+161,FALSE,TRUE,FALSE,Brown Mushroom,Plants and Herbs,brown-mushroom,,,FALSE,,,,,,,,0,Common,$4,59,Ogre,
+162,FALSE,TRUE,FALSE,Fire Mushroom,Plants and Herbs,fire-mushroom,,,FALSE,,,,,,,,0,Common,$50,"111,121,145,147","Magma Bear, Hellhound, Demon, Pit Fiend",
+164,FALSE,TRUE,FALSE,Rose,Plants and Herbs,rose,,,FALSE,,,,,,,,0,Common,$5,,,
+166,FALSE,TRUE,FALSE,Fern,Plants and Herbs,fern,,,FALSE,,,,,,,,0,Common,$1,,,
+61,FALSE,TRUE,FALSE,Nightshade Blossom,Plants and Herbs,nightshade-blossom,,,FALSE,,,,,,,,0,Rare,$190,,,
+62,FALSE,TRUE,FALSE,Blood Herb,Plants and Herbs,blood-herb,,,FALSE,,,,,,,,0,Rare,$170,116,Witch,
+165,FALSE,FALSE,FALSE,Four-Leaf Clover,Plants and Herbs,four-leaf-clover,,,FALSE,,,,,,,,0,Rare,"$1,000","107,144,174","Unicorn, Mischievous Archfey, Ladybug",
+177,FALSE,TRUE,FALSE,Exotic Seeds Packet,Plants and Herbs,seeds,,,FALSE,,,,,,,,,Uncommon,,,,
+145,FALSE,FALSE,TRUE,Plate Shield,Shield,plate-shield,,,FALSE,,2,,0,0,0,0,2,Common,$45,"46, 57, 61, 62, 89, 90, 92","Rusty Automaton, Cyclops, Minotaur, Orc, Ironclad Minotaur, Vicious Grandmaster, Renegade Knight",
+144,FALSE,FALSE,TRUE,Necromantic Shield,Shield,necromantic-shield,,,FALSE,,3,,0,0,0,0,3,Rare,#N/A,114,Necromancer,
+167,FALSE,FALSE,FALSE,Wooden Key,Tool,key,,,FALSE,,,,,,,,0,Common,#N/A,,,
+170,FALSE,FALSE,FALSE,Crystal Key,Tool,key,,,FALSE,,,,,,,,0,Rare,#N/A,,,
+171,FALSE,FALSE,FALSE,Golem Repair Toolkit,Tool,golem-repair-toolkit,,,FALSE,,,,,,,,0,Rare,$800,,,
+168,FALSE,FALSE,FALSE,Silver Key,Tool,key,,,FALSE,,,,,,,,0,Uncommon,#N/A,,,
+169,FALSE,FALSE,FALSE,Golden Key,Tool,key,,,FALSE,,,,,,,,0,Uncommon,#N/A,,,
+174,FALSE,FALSE,FALSE,Crowbar,Weapon,crowbar,,,FALSE,5,0,,0,0,0,0,5,Uncommon,$50,,,
+157,FALSE,FALSE,TRUE,Dagger,Weapon,dagger,,,FALSE,6,0,,0,0,0,0,6,Common,$2,"60, 63, 71, 88","Blood Priest, Sun Priest, Ghoul, Arcane Trickster",
+159,FALSE,FALSE,FALSE,Club,Weapon,club,,,FALSE,6,0,,0,0,0,0,6,Common,$0,59,Ogre,
+158,FALSE,FALSE,TRUE,Bone Knife,Weapon,bone-knife,,,FALSE,6,0,,0,0,0,0,6,Uncommon,$50,114,Necromancer,
+126,FALSE,FALSE,FALSE,Mace,Weapon,mace,,,FALSE,8,0,,0,0,0,0,8,Common,$25,"42,61","Skeleton Warrior, Minotaur",
+175,FALSE,FALSE,FALSE,Machete,Weapon,machete,,,FALSE,8,0,,0,0,0,0,8,Common,$8,59,Ogre,
+147,FALSE,FALSE,TRUE,Twin Hooks,Weapon,twin-hooks,,,TRUE,9,0,,0,0,0,0,7,Rare,$500,"115, 157","Raging Barbarian, Dracolich",
+148,FALSE,FALSE,TRUE,Bow,Weapon,bow,,,TRUE,9,0,,0,0,0,0,7,Uncommon,$100,"67, 69","Entangler, Shambling Mound",
+156,FALSE,FALSE,TRUE,Dragonbone Staff,Weapon,dragonbone-staff,,,FALSE,9,0,,0,0,0,0,9,Rare,"$1,000","113, 114, 163","Storm Giant, Necromancer, Ether Drake",
+128,FALSE,FALSE,FALSE,Sun Blade,Weapon,sun-blade,,,FALSE,14,0,undead,1,0,0,0,14.5,Legendary,"$120,000",149,Luminarion,
+114,FALSE,FALSE,FALSE,Lightning Bow,Weapon,lightning-bow,,,TRUE,14,0,elemental,-1,0,0,0,11.5,Rare,"$30,000","82, 154","Air Elemental, Elemental Lord",
+146,FALSE,FALSE,TRUE,Shard Sword,Weapon,shard-sword,,void,FALSE,18,0,,0,0,0,0,18,Legendary,#N/A,164,Shard,
+44,TRUE,FALSE,TRUE,Energized Crystal,,,,,FALSE,,,,,,,,0,,#N/A,,,
+133,TRUE,FALSE,FALSE,Ley Line Compass,,,,,FALSE,,,,,,,,0,,#N/A,,,

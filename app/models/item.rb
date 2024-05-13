@@ -20,6 +20,7 @@ class Item < ApplicationRecord
   validate :must_be_meaningful_bonus
   validate :must_have_stats_for_equipment
   validate :must_have_appropriate_rarity
+  validate :must_be_stackable
 
   scope :always, -> { where(rarity: 'always') }
   scope :very_common, -> { where(rarity: 'very_common') }
@@ -28,6 +29,7 @@ class Item < ApplicationRecord
   scope :rare, -> { where(rarity: 'rare') }
   scope :epic, -> { where(rarity: 'epic') }
   scope :legendary, -> { where(rarity: 'legendary') }
+  scope :stackable, -> { where(stackable: 'true') }
 
   def sell_offers
     TradeOffer.where('trade_offers.sell_offer IS NOT NULL AND trade_offers.item_id IN (?)', id)
@@ -108,5 +110,11 @@ class Item < ApplicationRecord
     if rarity.in? %w[rare epic legendary]
       errors.add(:rarity, "#{name}: Rarity level '#{rarity}' is only suitable for equipment.")
     end
+  end
+
+  def must_be_stackable
+    return unless drop_max_amount > 1
+
+    errors.add(:stackable, 'Must be stackable if drop_max_amount exceeds one') unless stackable
   end
 end

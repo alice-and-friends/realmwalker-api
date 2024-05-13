@@ -68,8 +68,9 @@ class Dungeon < RealmLocation
   delegate :desc, to: :monster
 
   def loot_container_for(user)
-    loot_generator = LootGenerator.new(user.loot_bonus)
-    loot_generator.set_loot_table(monster)
+    loot_generator = LootGenerator.new
+    loot_generator.set_dungeon self
+    loot_generator.set_player user
     loot_generator.generate_loot
   end
 

@@ -168,6 +168,7 @@ class SeedHelper
       item.name = row['name']
       item.type = row['type'].downcase.tr(' ', '_')
       item.icon = row['icon']
+      item.stackable = row['stackable']
 
       # Equipable
       item.two_handed = row['two_handed']
