@@ -7,11 +7,11 @@ class RenewableTest < ActiveSupport::TestCase
     assert_operator Renewable.count, :>, 0
   end
   test 'renewable has inventory' do
-    renewable = Renewable.create!(real_world_location: RealWorldLocation.available.sample)
+    renewable = generate_test_renewable
     assert_not_nil renewable.inventory
   end
   test 'renewable grows' do
-    renewable = Renewable.create!(real_world_location: RealWorldLocation.available.sample)
+    renewable = generate_test_renewable
     assert_equal 0, renewable.inventory_items.count
     2.times { renewable.grow! }
     assert_equal 2, renewable.inventory_items.count
@@ -20,7 +20,7 @@ class RenewableTest < ActiveSupport::TestCase
     assert_instance_of Integer, Renewable.max_items
   end
   test 'renewable does not exceed max items' do
-    renewable = Renewable.create!(real_world_location: RealWorldLocation.available.sample)
+    renewable = generate_test_renewable
     assert_equal 0, renewable.inventory.inventory_items.count
     (1 + Renewable.max_items).times { renewable.grow! }
     assert_equal Renewable.max_items, renewable.inventory_items.count

@@ -6,7 +6,7 @@ class Api::V1::RenewablesController < Api::V1::ApiController
   before_action :location_interacted, only: %i[collect_all]
 
   def show
-    render json: @location, serializer: RealmLocationSerializer, seen_from: @current_user_geolocation
+    render json: @location, serializer: RenewableSerializer, seen_from: @current_user_geolocation
   end
 
   def collect_all

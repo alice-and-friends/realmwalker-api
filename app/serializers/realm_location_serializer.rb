@@ -12,12 +12,8 @@ class RealmLocationSerializer < ActiveModel::Serializer
     }
   end
 
-  def dungeon?
-    object.type == Dungeon.name
-  end
-
   def renewable?
-    object.type == Renewable.name
+    object.is_a? Renewable
   end
 
   def npc?

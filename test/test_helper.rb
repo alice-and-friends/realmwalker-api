@@ -47,6 +47,10 @@ class ActiveSupport::TestCase
     )
   end
 
+  def generate_test_renewable
+    Renewable.create!(real_world_location: RealWorldLocation.available.sample)
+  end
+
   # Custom assertion to check a user object for sensitive data
   def assert_safe_user_object(user)
     assert_nil user['id']

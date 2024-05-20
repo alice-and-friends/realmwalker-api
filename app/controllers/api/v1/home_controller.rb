@@ -3,7 +3,7 @@
 class Api::V1::HomeController < Api::V1::ApiController
   def home
     render json: {
-      server_time: Time.current,
+      server_time: Time.now.utc,
       events: events,
       locations: realm_locations,
     }

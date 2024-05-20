@@ -10,10 +10,11 @@ class Api::V1::ApiController < ApplicationController
 
   def geolocate
     latitude, longitude = request.headers['Geolocation']&.split&.map(&:to_f)
-    if latitude.present? && longitude.present?
-      factory_store = RGeo::ActiveRecord::SpatialFactoryStore.instance # Access the SpatialFactoryStore instance
-      point_factory = factory_store.factory(geo_type: 'point') # Fetch the factory registered for point columns
-      @current_user_geolocation = point_factory.point(longitude, latitude) # Use the point factory to create a new point
+
+    if request.params['debug']
+      @current_user_geolocation = RealWorldLocation.point_factory.point(10.702654, 59.926097)
+    elsif latitude.present? && longitude.present?
+      @current_user_geolocation = RealWorldLocation.point_factory.point(longitude, latitude) # Use the point factory to create a new point
     else
       render json: { message: 'Geolocation missing' }, status: :bad_geolocation
     end

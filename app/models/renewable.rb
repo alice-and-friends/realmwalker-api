@@ -16,12 +16,12 @@ class Renewable < RealmLocation
     ],
     'mine' => [
       # COMMON
-      'Wooden Key',
+      # 'Wooden Key',
       'Iron Ore',
 
       # UNCOMMON
-      'Silver Key',
-      'Golden Key',
+      # 'Silver Key',
+      # 'Golden Key',
       'Small Diamond',
       'Small Emerald',
       'Small Ruby',
@@ -31,7 +31,7 @@ class Renewable < RealmLocation
       'Ooze Divider',
 
       # RARE
-      'Crystal Key',
+      # 'Crystal Key',
       'Golem Repair Toolkit',
     ],
   }.freeze
@@ -72,8 +72,24 @@ class Renewable < RealmLocation
     inventory_items.joins(:item).pluck('items.name')
   end
 
+  def full?
+    inventory_items.count >= Renewable.max_items
+  end
+
   def fill!
-    grow! until inventory_items.count >= Renewable.max_items
+    grow! until full?
+  end
+
+  def self.next_growth_at
+    now = Time.zone.now
+    ahead10 = now + 10.minutes
+    Time.new(ahead10.year, ahead10.month, ahead10.day, ahead10.hour, ahead10.min.floor(-1), 0, '+00:00')
+  end
+
+  def next_growth_at
+    return false if full?
+
+    self.class.next_growth_at + 10.seconds
   end
 
   private
@@ -112,5 +128,10 @@ class Renewable < RealmLocation
 
   def set_renewable_type!
     self.renewable_type = RENEWABLE_TYPES.sample
+
+    self.name = {
+      mine: 'Abandoned Mineshaft',
+      flower_forest: 'Flower Forest',
+    }[renewable_type.to_sym] || 'Resource'
   end
 end
