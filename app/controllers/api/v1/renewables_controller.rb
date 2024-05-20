@@ -10,7 +10,15 @@ class Api::V1::RenewablesController < Api::V1::ApiController
   end
 
   def collect_all
-    show
+    # NB: update_all skips validation, therefore we validate the user and inventory beforehand.
+    throw 'unable' unless @current_user.valid? && @current_user.inventory.valid?
+
+    if @location.inventory_items.empty?
+      render status: :gone, json: @location, serializer: RenewableSerializer, seen_from: @current_user_geolocation
+    else
+      @location.inventory_items.update_all(inventory_id: @current_user.inventory.id) # rubocop:disable Rails/SkipsModelValidations
+      show
+    end
   end
 
   private
