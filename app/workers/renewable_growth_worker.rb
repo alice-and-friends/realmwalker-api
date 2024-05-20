@@ -2,6 +2,7 @@
 
 class RenewableGrowthWorker
   include Sidekiq::Job
+  sidekiq_options queue: 'environment-fast'
 
   def perform
     Renewable.find_each(&:grow!)

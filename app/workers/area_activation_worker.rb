@@ -2,6 +2,7 @@
 
 class AreaActivationWorker
   include Sidekiq::Job
+  sidekiq_options queue: 'environment-normal'
 
   def perform(latitude, longitude)
     geolocation = RealWorldLocation.point_factory.point(longitude, latitude)

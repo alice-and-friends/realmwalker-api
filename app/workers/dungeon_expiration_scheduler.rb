@@ -2,6 +2,7 @@
 
 class DungeonExpirationScheduler
   include Sidekiq::Job
+  sidekiq_options queue: 'slow'
 
   def perform
     initial_count = Dungeon.where(expiry_job_id: nil).count

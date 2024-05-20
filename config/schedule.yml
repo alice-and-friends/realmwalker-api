@@ -4,23 +4,23 @@
 Create new dungeons:
   cron: "0/2 * * * *"
   class: "DungeonCreateWorker"
-  queue: default
+  queue: environment-normal
   timezone: "UTC"
 
 Schedule dungeon expirations:
   cron: "1/2 * * * *"
   class: "DungeonExpirationScheduler"
-  queue: default
+  queue: environment-normal
   timezone: "UTC"
 
 Destroy expired dungeons:
   cron: "0 * * * *"
   class: "DungeonDestroyWorker"
-  queue: default
+  queue: slow
   timezone: "UTC"
 
 Schedule events:
   cron: "0 0 * * *"
   class: "EventsScheduler"
-  queue: default
+  queue: environment-normal
   timezone: "UTC"

@@ -113,7 +113,7 @@ class Renewable < RealmLocation
       end
     end
 
-    # Select a new item if nothing applied above
+    # Select a new item randomly if nothing applied above
     present_item_ids = inventory_items.pluck(:item_id).uniq
     possible_new_items = item_table.where.not(id: present_item_ids)
     if possible_new_items.count.positive?

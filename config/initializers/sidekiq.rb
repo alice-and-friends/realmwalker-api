@@ -11,6 +11,15 @@ end
 
 Sidekiq.configure_server do |config|
   config.average_scheduled_poll_interval = 5
+  config.queues = %w[
+    critical
+    user-feedback
+    user-inventory
+    environment-fast
+    default
+    environment-normal
+    slow
+  ]
 
   schedule_file = 'config/schedule.yml'
   if File.exist?(schedule_file) && Sidekiq.server?

@@ -2,6 +2,7 @@
 
 class DungeonCreateWorker
   include Sidekiq::Job
+  sidekiq_options queue: 'environment-normal'
 
   def perform
     all_known_regions = RealWorldLocation.distinct.pluck(:region)

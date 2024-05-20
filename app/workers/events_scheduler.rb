@@ -2,6 +2,7 @@
 
 class EventsScheduler
   include Sidekiq::Job
+  sidekiq_options queue: 'default'
 
   def perform
     full_moon_schedule

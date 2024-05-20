@@ -2,6 +2,7 @@
 
 class DungeonDestroyWorker
   include Sidekiq::Job
+  sidekiq_options queue: 'slow'
 
   def perform
     destroyed_dungeons = Dungeon.expired.where('expires_at < ?', Dungeon::EXPIRED_DURATION.ago).destroy_all

@@ -2,6 +2,7 @@
 
 class LocationRelevanceWorker
   include Sidekiq::Job
+  sidekiq_options queue: 'slow'
 
   def perform(location_ids, grade)
     throw('location_ids is blank. Do not call this worker without at least one id') if location_ids.blank?

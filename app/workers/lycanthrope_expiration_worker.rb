@@ -2,6 +2,7 @@
 
 class LycanthropeExpirationWorker
   include Sidekiq::Job
+  sidekiq_options queue: 'environment-normal'
 
   # Expire all werewolves and similar creatures relating to the Full Moon event
   def perform

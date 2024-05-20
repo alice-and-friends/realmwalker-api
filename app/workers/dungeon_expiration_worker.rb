@@ -2,6 +2,7 @@
 
 class DungeonExpirationWorker
   include Sidekiq::Job
+  sidekiq_options queue: 'environment-normal'
 
   def perform(dungeon_id)
     Dungeon.find(dungeon_id).expired!
