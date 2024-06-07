@@ -18,7 +18,11 @@
 # end
 Rails.application.config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
   allow do
-    origins '*'
+    if Rails.env.development?
+      origins '*'
+    else
+      origins 'file://*'
+    end
     resource '*', headers: :any, methods: %i[get put patch post options]
   end
 end

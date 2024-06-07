@@ -42,5 +42,8 @@ module RealmwalkerApi
                           inflection:       'camel',
                           exclude_params:   excluded_routes,
                           exclude_response: excluded_routes
+
+    # Use RackAttack to prevent DDOS and similar
+    config.middleware.use Rack::Attack
   end
 end
