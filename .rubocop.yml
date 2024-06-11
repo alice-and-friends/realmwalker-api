@@ -64,6 +64,7 @@ Style/IpAddresses:
 Style/SymbolProc:
   Exclude:
     - 'db/migrate/**/*'
+    - 'config/**/*'
 
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: consistent_comma
