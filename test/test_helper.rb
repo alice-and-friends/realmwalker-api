@@ -35,6 +35,7 @@ class ActiveSupport::TestCase
 
   def generate_test_user
     test_user_name = Faker::Name.first_name
+    test_user_email = Faker::Internet.email(name: test_user_name)
     test_user_unique = Faker::Number.unique.number(digits: 10)
     User.create!(
       auth0_user_id: test_user_unique,
@@ -42,8 +43,9 @@ class ActiveSupport::TestCase
         sub: "test|#{test_user_unique}",
         given_name: test_user_name,
         family_name: '',
-        email: Faker::Internet.email(name: test_user_name),
-      )
+        email: test_user_email,
+      ),
+      email: test_user_email,
     )
   end
 

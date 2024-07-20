@@ -48,9 +48,10 @@ class Api::V1::ApiController < ApplicationController
     end
 
     # Check if we have a matching user, or create a new one
-    @current_user = User.find_or_initialize_by(auth0_user_id: auth0_user.sub)
+    @current_user = User.find_or_initialize_by(email: auth0_user.email)
     token_expiration = decoded_token[0]['exp']
     @current_user.update(
+      auth0_user_id: auth0_user.sub,
       auth0_user_data: auth0_user,
       access_token: access_token,
       access_token_expires_at: Time.at(token_expiration).in_time_zone.to_datetime,
@@ -59,6 +60,7 @@ class Api::V1::ApiController < ApplicationController
       @current_user.save!
     else
       puts '@current_user is not a valid object, see errors below:', @current_user.errors.inspect
+      puts 'auth0_user:', auth0_user.inspect
       render json: { message: 'Unable to set current user due to validation errors, please check the server log.' }, status: :internal_server_error
     end
   end

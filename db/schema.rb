@@ -199,6 +199,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
   end
 
   create_table "users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "email", null: false
     t.string "auth0_user_id", null: false
     t.json "auth0_user_data"
     t.json "preferences"
@@ -214,6 +215,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["auth0_user_id"], name: "index_users_on_auth0_user_id", unique: true
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
   add_foreign_key "conquests", "monsters"

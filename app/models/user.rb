@@ -15,6 +15,7 @@ class User < ApplicationRecord
   serialize :preferences, Hash
 
   validates :auth0_user_id, presence: true, uniqueness: true
+  validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP }
   validate :must_have_valid_auth0_user_data
   validate :must_be_valid_achievements
   validate :must_have_valid_access_token
@@ -29,7 +30,6 @@ class User < ApplicationRecord
 
   delegate :gold, to: :inventory
   delegate :inventory_items, to: :inventory
-  delegate :email, to: :auth0_user_data
 
   def self.total_xp_needed_for_level(level)
     ((10 * (level - 1))**2) + ((level - 1) * 100)

@@ -8,7 +8,8 @@
 jane_doe:
   auth0_user_id: '1'
   auth0_user_data: {
-                     sub: 'missive',
+                     sub: 'jane123',
                      given_name: 'Jane',
                      family_name: 'Doe',
   }
+  email: 'jane.doe@testuser.com'
