@@ -35,6 +35,9 @@ Custom/RemoveRedundantStatusOk:
 Custom/VariableName:
   Enabled: true
 
+Bundler/OrderedGems:
+  Enabled: false
+
 Gemspec/DependencyVersion:
   Enabled: true
 
@@ -60,6 +63,9 @@ Style/FormatStringToken:
 
 Style/IpAddresses:
   Exclude:
+
+Style/SymbolArray:
+  Enabled: false
 
 Style/SymbolProc:
   Exclude:

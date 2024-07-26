@@ -68,4 +68,13 @@ class Api::V1::ApiController < ApplicationController
   def auth_debug
     puts "📥 Processing request for authenticated user #{@current_user.auth0_user_id} AKA #{@current_user.name}"
   end
+
+  # Overwrite the default render method, ensure errors are logged
+  def render(options = nil, extra_options = {}, &block)
+    if options.is_a?(Hash) && options[:status]
+      status_code = Rack::Utils::SYMBOL_TO_STATUS_CODE[options[:status]] || options[:status]
+      Rails.logger.error "Rendered #{status_code}: #{options[:json] || options[:text]}" if status_code.to_i >= 400
+    end
+    super(options, extra_options, &block)
+  end
 end

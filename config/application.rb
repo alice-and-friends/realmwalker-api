@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'boot'
+require_relative '../lib/sentry_logger'
 
 require 'rails/all'
 
@@ -45,5 +46,10 @@ module RealmwalkerApi
 
     # Use RackAttack to prevent DDOS and similar
     config.middleware.use Rack::Attack
+
+    # Log errors to Sentry (see Sentry initializer for additional config)
+    Rails.application.configure do
+      config.logger = SentryLogger.new(STDOUT) unless Rails.env.test?
+    end
   end
 end
