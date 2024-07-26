@@ -51,6 +51,8 @@ class Item < ApplicationRecord
     dropped_by.any?
   end
 
+  # TODO: Refactor N+1 Query
+  # Suggestion: Materialized view item_price_index
   def value
     highest_buy_offer = buy_offers.order(buy_offer: :desc).select(:buy_offer).pluck(:buy_offer).first
     lowest_sell_offer = sell_offers.order(sell_offer: :asc).select(:sell_offer).pluck(:sell_offer).first
