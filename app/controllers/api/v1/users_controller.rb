@@ -31,6 +31,6 @@ class Api::V1::UsersController < Api::V1::ApiController
   end
 
   def preference_params
-    params.require(:preferences).permit(:developer, :item_frames, :dungeon_levels)
+    params.require(:preferences).permit(:sound, :music, :developer, :item_frames, :dungeon_levels)
   end
 end
