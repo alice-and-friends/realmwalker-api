@@ -59,7 +59,8 @@ Rails.application.routes.draw do
         post 'capture', to: 'ley_lines#capture', as: :capture
       end
 
-      # Debug
+      # Other
+      get 'users/experience_table', to: 'users#experience_table', as: :experience_table
       get 'compendium/monsters', to: 'compendium#monsters', as: :monsters
       get 'compendium/items', to: 'compendium#items', as: :items
     end

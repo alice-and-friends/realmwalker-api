@@ -24,6 +24,16 @@ class Api::V1::UsersController < Api::V1::ApiController
     end
   end
 
+  def experience_table
+    xp_table = []
+    # Index 0 will correspond to level 1 and so forth
+    100.times do |i|
+      xp_table << User.total_xp_needed_for_level(i + 1)
+    end
+
+    render json: xp_table
+  end
+
   private
 
   def user_params

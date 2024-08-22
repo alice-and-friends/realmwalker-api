@@ -22,14 +22,23 @@ class Api::V1::UsersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should edit my user' do
-    new__name = 'Princess Bubblegum'
+    new_name = 'Princess Bubblegum'
 
     patch '/api/v1/users/me', headers: generate_headers, params: {
       user: {
-        name: new__name,
+        name: new_name,
       },
     }
     assert_response :ok
-    assert_equal new__name, response.parsed_body['name']
+    assert_equal new_name, response.parsed_body['name']
+  end
+
+  test 'should get experience table' do
+    test_level = 42
+
+    get '/api/v1/users/experience_table', headers: generate_headers
+    assert_response :ok
+    assert_equal 0, response.parsed_body[0]
+    assert_equal User.total_xp_needed_for_level(test_level), response.parsed_body[test_level - 1]
   end
 end
