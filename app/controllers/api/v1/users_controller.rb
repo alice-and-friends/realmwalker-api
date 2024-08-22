@@ -24,6 +24,7 @@ class Api::V1::UsersController < Api::V1::ApiController
     end
   end
 
+  # TODO: Consider caching for this API endpoint
   def experience_table
     xp_table = []
     # Index 0 will correspond to level 1 and so forth
