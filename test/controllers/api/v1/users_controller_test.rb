@@ -21,6 +21,30 @@ class Api::V1::UsersControllerTest < ActionDispatch::IntegrationTest
     assert_equal false, response.parsed_body['preferences']['developer']
   end
 
+  test 'should include my ability scores' do
+    get '/api/v1/users/me', headers: generate_headers
+    assert_response :ok
+    assert_instance_of Array, response.parsed_body['abilityScores']
+    assert_equal response.parsed_body['abilityScores'].length, User.abilities.length
+  end
+
+  test 'should improve ability' do
+    api_user = users(:jane_doe)
+    api_user.gains_or_loses_xp User.total_xp_needed_for_level 5
+    ability_key = User.abilities.values.first
+    initial_value = api_user.ability_score(ability_key)
+
+    post '/api/v1/users/me/improve_ability', headers: generate_headers, params: {
+      ability: ability_key,
+    }
+    assert_response :ok
+    ability_data = response.parsed_body.find do |item|
+      item['key'] == ability_key
+    end
+    assert_not_nil ability_data
+    assert_equal (initial_value + 1), ability_data['value']
+  end
+
   test 'should edit my user' do
     new_name = 'Princess Bubblegum'
 

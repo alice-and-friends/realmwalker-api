@@ -24,6 +24,7 @@ Rails.application.routes.draw do
       get 'users/me', to: 'users#me', as: :me
       patch 'users/me', to: 'users#update', as: :update_user
       patch 'users/me/preferences', to: 'users#update_preference', as: :update_preference
+      post 'users/me/improve_ability', to: 'users#improve_ability', as: :improve_ability
       get 'inventory', to: 'inventory#show', as: :show_inventory
       post 'inventory/set_equipped', to: 'inventory#set_equipped', as: :set_equipped
       get 'base', to: 'base#show', as: :show_base

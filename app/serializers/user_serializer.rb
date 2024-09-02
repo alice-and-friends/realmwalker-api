@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :name, :xp_level_report, :base, :preferences, :daily_reward
+  attributes :id, :name, :xp_level_report, :base, :preferences, :daily_reward, :ability_scores
 
   def base
     return nil if object.base.nil?

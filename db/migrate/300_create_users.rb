@@ -4,8 +4,8 @@ class CreateUsers < ActiveRecord::Migration[7.0]
   def change
     create_table :users, id: :uuid do |t|
       # Account
-      t.string    :email,                 null: false, index: { unique: true }
-      t.string    :auth0_user_id,         null: false, index: { unique: true }
+      t.string    :email,                      null: false, index: { unique: true }
+      t.string    :auth0_user_id,              null: false, index: { unique: true }
       t.json      :auth0_user_data
       t.json      :preferences
       t.text      :access_token
@@ -13,12 +13,13 @@ class CreateUsers < ActiveRecord::Migration[7.0]
 
       # Game
       t.string    :display_name
-      t.integer   :xp,                    default: 0
-      t.integer   :level,                 default: 1
-      t.text      :achievements,          array: true, default: []
-      t.text      :discovered_runestones, array: true, default: []
+      t.integer   :xp,                         default: 0
+      t.integer   :level,                      default: 1
+      t.text      :ability_score_improvements, array: true, default: []
+      t.text      :achievements,               array: true, default: []
+      t.text      :discovered_runestones,      array: true, default: []
       t.timestamp :reward_claimed_at
-      t.integer   :reward_streak,         null: false, default: 0
+      t.integer   :reward_streak,              null: false, default: 0
       t.timestamps
     end
   end
