@@ -33,11 +33,11 @@ class ActiveSupport::TestCase
     { Geolocation: "#{location.latitude} #{location.longitude}" }
   end
 
-  def generate_test_user
+  def generate_test_user(level = 1)
     test_user_name = Faker::Name.first_name
     test_user_email = Faker::Internet.email(name: test_user_name)
     test_user_unique = Faker::Number.unique.number(digits: 10)
-    User.create!(
+    user = User.create!(
       auth0_user_id: test_user_unique,
       auth0_user_data: Auth0UserData.new(
         sub: "test|#{test_user_unique}",
@@ -47,6 +47,8 @@ class ActiveSupport::TestCase
       ),
       email: test_user_email,
     )
+    user.gains_or_loses_xp User.total_xp_needed_for_level(level) if level > 1
+    user
   end
 
   def generate_test_renewable

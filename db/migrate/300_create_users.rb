@@ -16,6 +16,7 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.references :portrait, foreign_key: true, null: true
       t.integer    :xp,                    default: 0
       t.integer    :level,                 default: 1
+      t.text       :ability_score_improvements, array: true, default: []
       t.text       :achievements,          array: true, default: []
       t.text       :discovered_runestones, array: true, default: []
       t.timestamp  :reward_claimed_at

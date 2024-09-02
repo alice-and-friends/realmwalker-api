@@ -236,6 +236,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.bigint "portrait_id"
     t.integer "xp", default: 0
     t.integer "level", default: 1
+    t.text "ability_score_improvements", default: [], array: true
     t.text "achievements", default: [], array: true
     t.text "discovered_runestones", default: [], array: true
     t.datetime "reward_claimed_at", precision: nil

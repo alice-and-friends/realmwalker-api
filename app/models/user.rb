@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+  include AbilityScores
+
   MAX_XP = 1_000_000
   BASE_ATTACK = 10
   BASE_DEFENSE = 10
@@ -34,6 +36,7 @@ class User < ApplicationRecord
 
   delegate :gold, to: :inventory
   delegate :inventory_items, to: :inventory
+  alias_attribute :asis, :ability_score_improvements # Terminal shortcut only, do not reference in code
 
   def self.total_xp_needed_for_level(level)
     ((10 * (level - 1))**2) + ((level - 1) * 100)
@@ -212,6 +215,7 @@ class User < ApplicationRecord
     self.xp = 0 if self.xp.negative? # xp can never be less than 0
     self.xp = User::MAX_XP if self.xp > User::MAX_XP # don't exceed xp limit, this enforces max level = 100
     set_level
+    trim_ability_score_improvements
     save!
     {
       prev_xp: prev_xp,

@@ -35,6 +35,18 @@ class Api::V1::UsersController < Api::V1::ApiController
     render json: xp_table
   end
 
+  def improve_ability
+    ability_key = params[:ability]
+    unless User.abilities.value?(ability_key)
+      render status: :unprocessable_entity, json: { error: "'#{ability_key}' is not a valid ability" }
+    end
+
+    render json: @current_user.improve_ability!(ability_key)
+  rescue StandardError => e
+    Rails.logger.error e
+    render status: :internal_server_error
+  end
+
   private
 
   def user_params
