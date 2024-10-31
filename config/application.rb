@@ -48,8 +48,10 @@ module RealmwalkerApi
     config.middleware.use Rack::Attack
 
     # Log errors to Sentry (see Sentry initializer for additional config)
-    Rails.application.configure do
-      config.logger = SentryLogger.new(STDOUT) unless Rails.env.test?
+    if defined? SentryLogger
+      Rails.application.configure do
+        config.logger = SentryLogger.new($stdout) unless Rails.env.test?
+      end
     end
   end
 end
