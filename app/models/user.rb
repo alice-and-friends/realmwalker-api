@@ -10,6 +10,7 @@ class User < ApplicationRecord
   has_one :base, inverse_of: :owner, foreign_key: 'owner_id', dependent: :destroy
   has_many :conquests, dependent: :destroy
   has_many :realm_locations, through: :conquests
+  has_many :writings, foreign_key: :author_id, dependent: :nullify
 
   serialize :auth0_user_data, Auth0UserData
   serialize :preferences, Hash

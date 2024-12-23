@@ -3,6 +3,7 @@
 class InventoryItem < ApplicationRecord
   belongs_to :inventory
   belongs_to :item
+  belongs_to :writing, optional: true, dependent: :delete
 
   before_save :unequip!, if: :will_save_change_to_inventory_id?
 

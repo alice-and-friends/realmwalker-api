@@ -51,11 +51,13 @@ ActiveRecord::Schema[7.0].define(version: 700) do
   create_table "inventory_items", force: :cascade do |t|
     t.bigint "inventory_id", null: false
     t.bigint "item_id", null: false
+    t.bigint "writing_id"
     t.boolean "is_equipped", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["inventory_id"], name: "index_inventory_items_on_inventory_id"
     t.index ["item_id"], name: "index_inventory_items_on_item_id"
+    t.index ["writing_id"], name: "index_inventory_items_on_writing_id"
   end
 
   create_table "items", force: :cascade do |t|
@@ -218,11 +220,23 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+  create_table "writings", force: :cascade do |t|
+    t.string "title", default: "", null: false
+    t.string "author_name", default: "", null: false
+    t.text "body", default: "", null: false
+    t.uuid "author_id"
+    t.boolean "core_content", default: false, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_writings_on_author_id"
+  end
+
   add_foreign_key "conquests", "monsters"
   add_foreign_key "conquests", "realm_locations"
   add_foreign_key "conquests", "users"
   add_foreign_key "inventory_items", "inventories"
   add_foreign_key "inventory_items", "items"
+  add_foreign_key "inventory_items", "writings"
   add_foreign_key "monster_items", "items"
   add_foreign_key "monster_items", "monsters"
   add_foreign_key "npcs_trade_offer_lists", "realm_locations", column: "npc_id"
@@ -231,4 +245,5 @@ ActiveRecord::Schema[7.0].define(version: 700) do
   add_foreign_key "spooks", "realm_locations", column: "dungeon_id"
   add_foreign_key "spooks", "realm_locations", column: "npc_id"
   add_foreign_key "trade_offers", "items"
+  add_foreign_key "writings", "users", column: "author_id"
 end
