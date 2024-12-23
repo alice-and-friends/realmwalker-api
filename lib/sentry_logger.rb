@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'logger'
+
 if defined? Logger
   class SentryLogger < Logger
     def error(progname = nil, &block)
