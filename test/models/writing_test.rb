@@ -3,56 +3,53 @@
 require 'test_helper'
 
 class WritingTest < ActiveSupport::TestCase
-  test 'should create and destroy writing' do
-    assert_nothing_raised do
-      writing = Writing.create!(body: 'unused writing')
-      assert_not_nil writing.id
-      writing.destroy!
-    end
+  setup do
+    @user = generate_test_user
+    @user.give_starting_equipment
+    @inventory_item = @user.inventory_items.first
   end
-  test 'should destroy writing when inventory item is destroyed' do
-    user = generate_test_user
-    user.give_starting_equipment
-    inventory_item = user.inventory_items.first
-    writing = Writing.create!(body: 'inscription')
-    inventory_item.update(writing: writing)
-    assert_equal 1, Writing.count
-    inventory_item.destroy!
-    assert_equal 0, Writing.count
+  test 'should create and destroy writing' do
+    writing = Writing.create!(body: 'unused writing')
+    writing.destroy!
+    assert writing.destroyed?
+  end
+  test 'should destroy writing (not core content) when inventory item is destroyed' do
+    writing = Writing.create!(body: 'inscription', core_content: false)
+    @inventory_item.update(writing: writing)
+    @inventory_item.destroy!
+    assert @inventory_item.destroyed?
+    assert writing.destroyed?
   end
   test 'should not destroy writing attached to item' do
-    user = generate_test_user
-    user.give_starting_equipment
-    inventory_item = user.inventory_items.first
-    writing = Writing.create!(body: 'inscription')
-    inventory_item.update(writing: writing)
-    assert_equal 1, Writing.count
-    assert_raise(Exception) do
+    writing = Writing.create!(body: 'weapon inscription')
+    @inventory_item.update(writing: writing)
+    assert_raise(ActiveRecord::RecordNotDestroyed) do
       # should fail
       writing.destroy!
     end
-    assert_equal 1, Writing.count
   end
   test 'should not destroy core content writing' do
-    @writing = nil
-    assert_nothing_raised do
-      @writing = Writing.create!(
-        body: 'lorem ipsum',
-        core_content: true,
-        )
-    end
-    assert_equal 1, Writing.count
-    assert_raise(Exception) do
+    writing = Writing.create!(
+      body: 'lorem ipsum',
+      core_content: true,
+    )
+    assert_raise(ActiveRecord::RecordNotDestroyed) do
       # should fail
-      @writing.destroy!
+      writing.destroy!
     end
-    assert_equal 1, Writing.count
+  end
+  test 'should only destroy item, not attached core content' do
+    writing = Writing.create!(body: 'book contents', core_content: true)
+    @inventory_item.update(writing: writing)
+
+    @inventory_item.destroy!
+    assert @inventory_item.destroyed?
+    assert writing.persisted?
   end
   test 'should nullify writing when author is destroyed' do
-    user = generate_test_user
-    writing = Writing.create!(author: user, body: 'lorem ipsum')
-    assert_equal user.id, writing.author_id
-    user.destroy!
+    writing = Writing.create!(author: @user, body: 'lorem ipsum')
+    assert_equal @user.id, writing.author_id
+    @user.destroy!
     assert_nil writing.reload.author_id
   end
 end

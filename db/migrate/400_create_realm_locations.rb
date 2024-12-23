@@ -32,6 +32,7 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
 
       # Runestones
       t.string :runestone_id
+      t.references :writing, null: true, foreign_key: true, on_delete: :cascade
 
       # Ley Lines
       t.datetime :captured_at
