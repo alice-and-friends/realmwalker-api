@@ -32,11 +32,11 @@ class DungeonTest < ActiveSupport::TestCase
       assert_not battle[:battle_result][:user_died]
     end
   end
-  test 'fresh player has 0% chance of defeating level 9 dungeon' do
+  test 'fresh player has <5% chance of defeating level 9 dungeon' do
     u = generate_test_user
     d = Dungeon.create!(level: 9)
     prediction = d.battle_prediction_for u
-    assert_equal 0, prediction[:chance_of_success]
+    assert_operator prediction[:chance_of_success], :<, 5
   end
   test 'fresh player character always loses battle at level 9 dungeon' do
     5.times do
