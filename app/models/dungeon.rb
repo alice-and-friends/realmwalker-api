@@ -67,10 +67,16 @@ class Dungeon < RealmLocation
 
   delegate :desc, to: :monster
 
-  def loot_container_for(user)
+  def search_defeated_dungeon(user)
+    raise "Can't search active dungeon" if active?
+
+    # Generally we don't expect users to search Expired dungeons, however this might happen on occasion,
+    # if they interact with a dungeon at the same moment that it expires, so we allow for that.
+
     loot_generator = LootGenerator.new
     loot_generator.set_dungeon self
     loot_generator.set_player user
+    loot_generator.reduced_mode! # Will generate less loot in this mode, because the looting is not related to winning a battle
     loot_generator.generate_loot
   end
 

@@ -78,7 +78,7 @@ class BattleHelper
       risk_of_death: {
         on_defeat: risk_of_death_on_defeat,
         overall: risk_of_death_on_defeat * chance_of_defeat / 100,
-      }
+      },
       # chance_of_inventory_loss: chance_of_inventory_loss,
       # chance_of_equipment_loss: chance_of_equipment_loss,
       # modifiers_death: modifier_descriptors_death,

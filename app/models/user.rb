@@ -324,7 +324,7 @@ class User < ApplicationRecord
     unless RunestonesHelper.valid_runestone_id? runestone_id
       error_msg = "User attempted to discover runestone id '#{runestone_id}', which is not valid."
       Rails.logger.error(error_msg)
-      throw(:invalid, error_msg) if Rails.env.test?
+      throw(:invalid, error_msg) if Rails.env.test? # TODO: why are we doing this? It would make more sense if test env behaved same as other env
       return false
     end
 

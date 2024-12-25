@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class LootGenerator
+  @reduced_mode = false
   LOOT_TIERS = {
     'always' => 1,        # 1 in 1
     'very_common' => 0.5, # 1 in 2
@@ -39,6 +40,10 @@ class LootGenerator
     @loot_table_rarity_tiers = @loot_table.pluck(:rarity).uniq
   end
 
+  def reduced_mode!
+    @reduced_mode = true
+  end
+
   # Returns a loot container, with a small chance of extra contents from a second generated container
   def generate_loot
     raise 'must set player before generating loot' unless @player.instance_of? User
@@ -75,7 +80,7 @@ class LootGenerator
     loot_container.add_item(random_creature_product_or_none)
 
     # Dragon bonus: Dragons can drop twice as much gold and valuables
-    if @monster_classification == 'dragon'
+    if @monster_classification == 'dragon' && !@reduced_mode
       loot_container.add_gold(random_gold_amount)
       loot_container.add_item(random_valuable_or_none)
     end
@@ -96,6 +101,7 @@ class LootGenerator
     tier = nil
     @loot_table_rarity_tiers.each do |loot_tier|
       probability = LOOT_TIERS[loot_tier]
+      probability /= 10 if @reduced_mode # Reduced probability if just searching an area, as opposed to battling
       if rand < probability && @loot_table.exists?(rarity: loot_tier, type: item_types)
         tier = loot_tier
         break
@@ -105,6 +111,7 @@ class LootGenerator
     if force
       raise 'force random item failed because loot table is empty' if @loot_table.empty?
 
+      # Use whatever the most common tier is
       return @loot_table_rarity_tiers.first if tier.nil?
     end
 
@@ -128,7 +135,10 @@ class LootGenerator
 
   # Returns a random amount of gold
   def random_gold_amount
-    # Check if gold should be dropped based on a 90% chance (10% chance of no gold)
-    rand >= 0.1 ? rand(@gold_range) : 0
+    # Check if gold should be dropped based on a 90% chance (10% chance of no gold), or 75% in reduced mode (25% chance of no gold)
+    chance_of_gold = @reduced_mode ? 0.9 : 0.75
+    gold_amount = rand < chance_of_gold ? rand(@gold_range) : 0
+    gold_amount /= 10 if @reduced_mode
+    gold_amount
   end
 end
