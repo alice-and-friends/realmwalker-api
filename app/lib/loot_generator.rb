@@ -52,6 +52,8 @@ class LootGenerator
 
     loot = generate_loot_single_set
 
+    return loot if @reduced_mode
+
     # Apply the chance of an additional loot roll based on player loot bonus
     loot += generate_loot_single_set if rand <= @player.loot_bonus
 
