@@ -53,4 +53,19 @@ class Api::V1::DungeonsControllerTest < ActionDispatch::IntegrationTest
     get "/api/v1/dungeons/#{dungeon.id}", headers: generate_headers
     assert_equal distance_expected, response.parsed_body['distanceFromUser']
   end
+  test 'should not be allowed to search active dungeon' do
+    dungeon = Dungeon.create!(level: 1)
+    post "/api/v1/dungeons/#{dungeon.id}/search", params: {}, headers: generate_headers
+    assert_includes 400..499, status # Should indicate a client error
+    assert_nil response.parsed_body['loot']
+    assert response.parsed_body['error']
+    assert_not_nil response.parsed_body['message']
+  end
+  test 'should search defeated dungeon' do
+    dungeon = Dungeon.create!(level: 1)
+    dungeon.defeated_by! User.first
+    post "/api/v1/dungeons/#{dungeon.id}/search", params: {}, headers: generate_headers
+    assert_equal 200, status
+    assert_not_nil response.parsed_body['loot']
+  end
 end

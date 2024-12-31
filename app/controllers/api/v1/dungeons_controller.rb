@@ -21,6 +21,17 @@ class Api::V1::DungeonsController < Api::V1::ApiController
     render json: battle_report
   end
 
+  def search
+    if @dungeon.active?
+      render json: ErrorResponse.new(
+        message: 'Not possible on active dungeon, try defeating any monster(s) first.',
+      ), status: :method_not_allowed and return
+    end
+
+    loot = @dungeon.search_defeated_dungeon(@current_user)
+    render json: { dungeon: @dungeon, loot: loot }
+  end
+
   private
 
   def find_dungeon
