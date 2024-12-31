@@ -8,16 +8,16 @@ class Api::V1::DungeonsController < Api::V1::ApiController
   before_action :must_not_be_defeated, only: %i[analyze battle]
 
   def show
-    render json: @ley_line, serializer: DungeonSerializer, seen_from: @current_user_geolocation
+    render json: @dungeon, serializer: DungeonSerializer, seen_from: @current_user_geolocation
   end
 
   def analyze
-    analysis = @ley_line.battle_prediction_for(@current_user)
+    analysis = @dungeon.battle_prediction_for(@current_user)
     render json: analysis
   end
 
   def battle
-    battle_report = @ley_line.battle_as(@current_user)
+    battle_report = @dungeon.battle_as(@current_user)
     render json: battle_report
   end
 
@@ -25,20 +25,20 @@ class Api::V1::DungeonsController < Api::V1::ApiController
 
   def find_dungeon
     dungeon_id = params[:action] == 'show' ? params[:id] : params[:dungeon_id]
-    @ley_line = Dungeon.find_by(id: dungeon_id)
-    render status: :not_found unless @ley_line
+    @dungeon = Dungeon.find_by(id: dungeon_id)
+    render status: :not_found unless @dungeon
   end
 
   def location_inspected
-    @ley_line.real_world_location.inspected!
+    @dungeon.real_world_location.inspected!
   end
 
   def location_interacted
-    @ley_line.real_world_location.interacted!
+    @dungeon.real_world_location.interacted!
   end
 
   def must_not_be_expired
-    return unless @ley_line.expired?
+    return unless @dungeon.expired?
 
     render json: {
       message: 'This dungeon is no longer active (expired).',
@@ -46,7 +46,7 @@ class Api::V1::DungeonsController < Api::V1::ApiController
   end
 
   def must_not_be_defeated
-    return unless @ley_line.defeated?
+    return unless @dungeon.defeated?
 
     render json: {
       message: 'This dungeon is no longer active (defeated).',
