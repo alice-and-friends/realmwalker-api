@@ -107,6 +107,7 @@ class BattleHelper
     roll = rand(1..100)
     user_won = (roll <= prediction[:chance_of_success])
     Rails.logger.debug { "⚔️ #{@user.name} rolled a #{roll} and #{user_won ? 'won' : 'lost'}" }
+
     if user_won
       @dungeon.defeated_by! @user # Update dungeon as defeated
 
