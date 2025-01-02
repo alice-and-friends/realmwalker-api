@@ -28,8 +28,12 @@ class Api::V1::DungeonsController < Api::V1::ApiController
       ), status: :method_not_allowed and return
     end
 
-    loot = @dungeon.search_defeated_dungeon(@current_user)
-    render json: { dungeon: @dungeon, loot: loot }
+    loot_container = @dungeon.search_defeated_dungeon(@current_user)
+    @current_user.gains_loot(loot_container)
+    render json: {
+      dungeon: ActiveModelSerializers::SerializableResource.new(@dungeon, serializer: DungeonSerializer),
+      loot: loot_container,
+    }
   end
 
   private
