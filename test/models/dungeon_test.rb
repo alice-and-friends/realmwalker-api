@@ -3,8 +3,13 @@
 require 'test_helper'
 
 class DungeonTest < ActiveSupport::TestCase
+  setup do
+    diversify_dungeons
+  end
   test 'there are dungeons in the test database' do
     assert_operator Dungeon.count, :>, 0
+    assert_operator Dungeon.active.count, :>, 0
+    assert_operator Dungeon.defeated.count, :>, 0
   end
   test 'can create random dungeon' do
     initial_count = Dungeon.count

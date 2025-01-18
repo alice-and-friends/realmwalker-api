@@ -68,4 +68,36 @@ class Api::V1::DungeonsControllerTest < ActionDispatch::IntegrationTest
     assert_equal 200, status
     assert_not_nil response.parsed_body['loot']
   end
+  test 'should not allow multiple searches of the same dungeon by the same user' do
+    dungeon = Dungeon.create!(level: 1)
+    dungeon.defeated_by! users(:jane_doe)
+
+    # First search should succeed
+    post "/api/v1/dungeons/#{dungeon.id}/search", headers: generate_headers
+    assert_response :success
+
+    # Second search should fail
+    post "/api/v1/dungeons/#{dungeon.id}/search", headers: generate_headers
+    assert_response :forbidden
+    assert_not_empty response.parsed_body['message']
+  end
+  test 'should indicate whether defeated dungeon is already searched or searchable' do
+    dungeon = Dungeon.create!(level: 1)
+
+    get "/api/v1/dungeons/#{dungeon.id}", headers: generate_headers
+    assert_equal false, response.parsed_body['searchable']
+    assert_equal false, response.parsed_body['alreadySearched']
+
+    dungeon.defeated_by! users(:jane_doe)
+
+    get "/api/v1/dungeons/#{dungeon.id}", headers: generate_headers
+    assert_equal true, response.parsed_body['searchable']
+    assert_equal false, response.parsed_body['alreadySearched']
+
+    _ = dungeon.handle_search_by users(:jane_doe)
+
+    get "/api/v1/dungeons/#{dungeon.id}", headers: generate_headers
+    assert_equal false, response.parsed_body['searchable']
+    assert_equal true, response.parsed_body['alreadySearched']
+  end
 end

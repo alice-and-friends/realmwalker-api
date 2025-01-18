@@ -28,6 +28,16 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.index ["user_id"], name: "index_conquests_on_user_id"
   end
 
+  create_table "dungeon_searches", force: :cascade do |t|
+    t.uuid "user_id", null: false
+    t.uuid "realm_location_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["realm_location_id"], name: "index_dungeon_searches_on_realm_location_id"
+    t.index ["user_id", "realm_location_id"], name: "index_dungeon_searches_on_user_id_and_realm_location_id", unique: true
+    t.index ["user_id"], name: "index_dungeon_searches_on_user_id"
+  end
+
   create_table "events", force: :cascade do |t|
     t.string "name", null: false
     t.text "description"
@@ -162,6 +172,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.string "expiry_job_id"
     t.datetime "expires_at"
     t.string "runestone_id"
+    t.bigint "writing_id"
     t.datetime "captured_at"
     t.index ["coordinates"], name: "index_realm_locations_on_coordinates", using: :gist
     t.index ["monster_id"], name: "index_realm_locations_on_monster_id"
@@ -172,6 +183,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.index ["role"], name: "index_realm_locations_on_role"
     t.index ["status"], name: "index_realm_locations_on_status"
     t.index ["type"], name: "index_realm_locations_on_type"
+    t.index ["writing_id"], name: "index_realm_locations_on_writing_id"
   end
 
   create_table "spooks", force: :cascade do |t|
@@ -234,6 +246,8 @@ ActiveRecord::Schema[7.0].define(version: 700) do
   add_foreign_key "conquests", "monsters"
   add_foreign_key "conquests", "realm_locations"
   add_foreign_key "conquests", "users"
+  add_foreign_key "dungeon_searches", "realm_locations"
+  add_foreign_key "dungeon_searches", "users"
   add_foreign_key "inventory_items", "inventories"
   add_foreign_key "inventory_items", "items"
   add_foreign_key "inventory_items", "writings"
@@ -242,6 +256,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
   add_foreign_key "npcs_trade_offer_lists", "realm_locations", column: "npc_id"
   add_foreign_key "realm_locations", "portraits"
   add_foreign_key "realm_locations", "users", column: "owner_id"
+  add_foreign_key "realm_locations", "writings"
   add_foreign_key "spooks", "realm_locations", column: "dungeon_id"
   add_foreign_key "spooks", "realm_locations", column: "npc_id"
   add_foreign_key "trade_offers", "items"

@@ -8,7 +8,7 @@ class Api::V1::DungeonsController < Api::V1::ApiController
   before_action :must_not_be_defeated, only: %i[analyze battle]
 
   def show
-    render json: @dungeon, serializer: DungeonSerializer, seen_from: @current_user_geolocation
+    render json: @dungeon, serializer: DungeonSerializer, seen_from: @current_user_geolocation, user: @current_user
   end
 
   def analyze
@@ -22,16 +22,26 @@ class Api::V1::DungeonsController < Api::V1::ApiController
   end
 
   def search
+
+    # Check if dungeon is searchable right now
     if @dungeon.active?
       render json: ErrorResponse.new(
         message: 'Not possible on active dungeon, try defeating any monster(s) first.',
-      ), status: :method_not_allowed and return
+      ), status: :conflict and return
     end
 
-    loot_container = @dungeon.search_defeated_dungeon(@current_user)
-    @current_user.gains_loot(loot_container)
+    # Check if the user has already searched this dungeon
+    if @current_user.searched_dungeon? @dungeon
+      render json: ErrorResponse.new(
+        message: 'You have already searched this dungeon.',
+      ).to_h, status: :forbidden
+      return
+    end
+
+    # Execute on request
+    loot_container = @dungeon.handle_search_by @current_user
     render json: {
-      dungeon: ActiveModelSerializers::SerializableResource.new(@dungeon, serializer: DungeonSerializer),
+      dungeon: ActiveModelSerializers::SerializableResource.new(@dungeon, serializer: DungeonSerializer, user: @current_user),
       loot: loot_container,
     }
   end

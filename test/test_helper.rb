@@ -53,6 +53,15 @@ class ActiveSupport::TestCase
     Renewable.create!(real_world_location: RealWorldLocation.available.sample)
   end
 
+  def diversify_dungeons
+    3.times do
+      dungeon = Dungeon.active.first!
+      dungeon.defeated_by! users(:jane_doe)
+    end
+    Dungeon.active.first!.schedule_expiration!
+    Dungeon.defeated.first!.schedule_expiration!
+  end
+
   # Custom assertion to check a user object for sensitive data
   def assert_safe_user_object(user)
     assert_nil user['id']

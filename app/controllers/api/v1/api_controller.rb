@@ -22,16 +22,18 @@ class Api::V1::ApiController < ApplicationController
 
   def authorize
     if Rails.env.test?
-      @current_user = User.first
+      @current_user = User.first # Should get test user "Jane Doe" from fixtures
       return
     end
 
     access_token = request.headers['Authorization']&.split&.last
     render json: { message: 'Token missing' }, status: :unauthorized and return if access_token.blank?
 
+    # NB: find_by_access_token will return nil if the token is expired
     user = User.find_by_access_token(access_token) # rubocop:disable Rails/DynamicFindBy
     if user.present?
       @current_user = user
+      puts "🔑✅ Successfully authenticated returning user #{current_user_log_str}"
       return
     end
 
@@ -56,8 +58,9 @@ class Api::V1::ApiController < ApplicationController
       access_token: access_token,
       access_token_expires_at: Time.at(token_expiration).in_time_zone.to_datetime,
     )
-    if @current_user.valid?
+    if @current_user&.valid?
       @current_user.save!
+      puts "🔑⚙️ Assigned new access token to user #{current_user_log_str}"
     else
       puts '@current_user is not a valid object, see errors below:', @current_user.errors.inspect
       puts 'auth0_user:', auth0_user.inspect
@@ -66,7 +69,7 @@ class Api::V1::ApiController < ApplicationController
   end
 
   def auth_debug
-    puts "📥 Processing request for authenticated user #{@current_user.auth0_user_id} AKA #{@current_user.name}"
+    puts "📥 Processing request for authenticated user #{current_user_log_str}"
   end
 
   # Overwrite the default render method, ensure errors are logged
@@ -76,5 +79,9 @@ class Api::V1::ApiController < ApplicationController
       Rails.logger.error "Rendered #{status_code}: #{options[:json] || options[:text]}" if status_code.to_i >= 400
     end
     super(options, extra_options, &block)
+  end
+
+  def current_user_log_str
+    "#{@current_user&.auth0_user_id} a.k.a. \"#{@current_user&.name}\""
   end
 end

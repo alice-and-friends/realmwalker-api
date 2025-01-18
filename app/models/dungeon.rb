@@ -11,6 +11,8 @@ class Dungeon < RealmLocation
   belongs_to :monster
   has_many :spooks, dependent: :delete_all
   has_many :spooked_npcs, class_name: 'Npc', through: :spooks
+  has_many :dungeon_searches, dependent: :delete_all
+  has_many :searching_users, through: :dungeon_searches, source: :user
   alias_attribute :defeated_by, :users
 
   validates :level, presence: true
@@ -159,6 +161,18 @@ class Dungeon < RealmLocation
     }[level]
 
     (base * (user.level.to_f / 2)).floor.clamp(0, 100)
+  end
+
+  # Handle the search process for a given user
+  def handle_search_by(user)
+    raise StandardError, 'Dungeon is active' if active?
+    raise StandardError, 'Dungeon already searched by user' if DungeonSearch.exists?(user: user, dungeon: self)
+
+    loot_container = search_defeated_dungeon(user)
+    user.gains_loot(loot_container)
+    DungeonSearch.create!(user: user, dungeon: self)
+
+    loot_container
   end
 
   private

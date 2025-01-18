@@ -288,6 +288,9 @@ Performance/StartWith:
 Rails/HasAndBelongsToMany:
   Enabled: false
 
+Rails/I18nLocaleTexts:
+  Enabled: False
+
 Rails/Output:
   Enabled: false
 

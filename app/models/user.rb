@@ -11,6 +11,8 @@ class User < ApplicationRecord
   has_many :conquests, dependent: :destroy
   has_many :realm_locations, through: :conquests
   has_many :writings, foreign_key: :author_id, inverse_of: :author, dependent: :nullify
+  has_many :dungeon_searches, dependent: :delete_all
+  has_many :searched_dungeons, through: :dungeon_searches, source: :dungeon
 
   serialize :auth0_user_data, Auth0UserData
   serialize :preferences, Hash
@@ -378,6 +380,13 @@ class User < ApplicationRecord
       item = Item.find_by(name: query)
       gain_item item unless item.nil?
     end
+  end
+
+  # Check if the user has searched a specific dungeon
+  def searched_dungeon?(dungeon)
+    raise ArgumentError, 'Expected a Dungeon object' unless dungeon.is_a?(Dungeon)
+
+    dungeon_searches.exists?(dungeon: dungeon)
   end
 
   protected

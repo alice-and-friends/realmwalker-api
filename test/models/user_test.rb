@@ -3,6 +3,9 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
+  setup do
+    diversify_dungeons
+  end
   test 'user fixtures loaded' do
     assert_operator User.count, :>, 0
   end
@@ -214,5 +217,34 @@ class UserTest < ActiveSupport::TestCase
     dirty_word = 'penis'
     user.update!(name: dirty_word)
     assert_not_equal dirty_word, user.reload.name
+  end
+  test 'searched_dungeon? returns true if the user has searched the dungeon' do
+    user = generate_test_user
+    dungeon = Dungeon.defeated.first
+    DungeonSearch.create!(user: user, dungeon: dungeon)
+
+    assert user.searched_dungeon?(dungeon)
+  end
+  test 'searched_dungeon? returns false if the user has not searched the dungeon' do
+    user = generate_test_user
+    dungeon = Dungeon.defeated.first
+
+    assert_not user.searched_dungeon?(dungeon)
+  end
+  test 'raises an error if parameter is not a Dungeon object' do
+    user = generate_test_user
+    invalid_param = 123
+
+    assert_raises(ArgumentError, 'Expected a Dungeon object') do
+      user.searched_dungeon?(invalid_param)
+    end
+  end
+  test 'does not raise an error for valid Dungeon objects' do
+    user = generate_test_user
+    dungeon = Dungeon.defeated.first
+
+    assert_nothing_raised do
+      user.searched_dungeon?(dungeon)
+    end
   end
 end
