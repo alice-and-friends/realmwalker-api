@@ -15,8 +15,7 @@ class AreaActivationWorker
   end
 
   def add_npc(geolocation, shop_type:, npc_role:, distance:, trade_offer_list_name:)
-    nearby_npcs_count = Npc.where(shop_type: shop_type).near(geolocation.latitude, geolocation.longitude, distance).count
-    return if nearby_npcs_count.positive?
+    return if Npc.where(shop_type: shop_type).near(geolocation.latitude, geolocation.longitude, distance).exists?
 
     Npc.transaction do
       # Check if there is an available location
@@ -24,11 +23,11 @@ class AreaActivationWorker
       suitable_location = RealWorldLocation.available.send(scope_method).near(geolocation.latitude, geolocation.longitude, distance).first
 
       if suitable_location.nil?
-        # If no suitable location found, adapt one
+        # If no suitable location found, transform a nearby available location
         suitable_location = RealWorldLocation.available.near(geolocation.latitude, geolocation.longitude, distance).first
         raise 'Could not find any location' if suitable_location.nil?
 
-        suitable_location.update(type: RealWorldLocation.types[shop_type.to_sym])
+        suitable_location.update(type: npc_role == 'castle' ? RealWorldLocation.types[:castle] : RealWorldLocation.types[:shop])
       end
 
       # Spawn the NPC
