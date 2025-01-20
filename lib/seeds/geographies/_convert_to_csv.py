@@ -122,6 +122,15 @@ class CSVWriter(o.SimpleHandler):
         if 'access' in obj.tags and obj.tags['access'] not in ['yes', 'permissive']:
             return False  # Skip this node (it is not accessible)
 
+        if 'tower:type' in obj.tags and obj.tags['tower:type'] in ['radar', 'cooling']:
+            return False  # Skip this node (it is not accessible)
+
+        if 'aeroway' in obj.tags and obj.tags['aeroway'] in ['tower']:
+            return False  # Skip this node (it is not accessible)
+
+        if 'service' in obj.tags and obj.tags['service'] in ['aircraft_control']:
+            return False  # Skip this node (it is not accessible)
+
         for category, tags in tag_categories.items():
             if category in obj.tags and obj.tags[category] in tags:
                 return True
