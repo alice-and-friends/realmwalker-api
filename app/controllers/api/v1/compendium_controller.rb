@@ -13,6 +13,11 @@ class Api::V1::CompendiumController < ApplicationController
     render json: @items, each_serializer: ItemSerializer, compendium: true
   end
 
+  def portraits
+    portraits = Portrait.all
+    render json: portraits, each_serializer: PortraitSerializer, compendium: true
+  end
+
   private
 
   def env_guard

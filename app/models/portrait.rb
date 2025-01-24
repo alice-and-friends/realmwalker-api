@@ -17,6 +17,6 @@ class Portrait < ApplicationRecord
   end
 
   def must_be_valid_groups
-    errors.add(:groups, :invalid) if groups.empty? || groups.any? { |i| !i.in? Npc::SHOP_TYPES }
+    errors.add(:groups, :invalid) if groups.any? { |i| !i.in? Npc::SHOP_TYPES }
   end
 end

@@ -4,7 +4,7 @@ module Species
   extend ActiveSupport::Concern
 
   included do
-    SPECIES = %w[elf djinn dwarf fox giant goblin human kenku troll].freeze
+    SPECIES = %w[elf djinn dwarf fox giant goblin human kenku troll ].freeze
   end
 
   DISTRIBUTION = {

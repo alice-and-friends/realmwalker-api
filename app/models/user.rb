@@ -13,6 +13,7 @@ class User < ApplicationRecord
   has_many :writings, foreign_key: :author_id, inverse_of: :author, dependent: :nullify
   has_many :dungeon_searches, dependent: :delete_all
   has_many :searched_dungeons, through: :dungeon_searches, source: :dungeon
+  belongs_to :portrait, optional: true
 
   serialize :auth0_user_data, Auth0UserData
   serialize :preferences, Hash

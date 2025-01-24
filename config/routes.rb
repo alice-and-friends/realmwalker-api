@@ -64,6 +64,7 @@ Rails.application.routes.draw do
       get 'users/experience_table', to: 'users#experience_table', as: :experience_table
       get 'compendium/monsters', to: 'compendium#monsters', as: :monsters
       get 'compendium/items', to: 'compendium#items', as: :items
+      get 'compendium/portraits', to: 'compendium#portraits', as: :portraits
     end
   end
 end
