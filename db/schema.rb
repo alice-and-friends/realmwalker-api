@@ -70,6 +70,19 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.index ["writing_id"], name: "index_inventory_items_on_writing_id"
   end
 
+  create_table "inventory_transactions", force: :cascade do |t|
+    t.string "description", null: false
+    t.jsonb "create_items", default: []
+    t.jsonb "transfer_items", default: []
+    t.jsonb "destroy_items", default: []
+    t.jsonb "add_gold", default: []
+    t.jsonb "transfer_gold", default: []
+    t.jsonb "subtract_gold", default: []
+    t.string "status", default: "staged", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "items", force: :cascade do |t|
     t.string "name", null: false
     t.string "type", null: false
@@ -220,6 +233,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.text "access_token"
     t.datetime "access_token_expires_at", precision: nil
     t.string "display_name"
+    t.bigint "portrait_id"
     t.integer "xp", default: 0
     t.integer "level", default: 1
     t.text "achievements", default: [], array: true
@@ -230,6 +244,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.datetime "updated_at", null: false
     t.index ["auth0_user_id"], name: "index_users_on_auth0_user_id", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["portrait_id"], name: "index_users_on_portrait_id"
   end
 
   create_table "writings", force: :cascade do |t|
@@ -260,5 +275,6 @@ ActiveRecord::Schema[7.0].define(version: 700) do
   add_foreign_key "spooks", "realm_locations", column: "dungeon_id"
   add_foreign_key "spooks", "realm_locations", column: "npc_id"
   add_foreign_key "trade_offers", "items"
+  add_foreign_key "users", "portraits"
   add_foreign_key "writings", "users", column: "author_id"
 end

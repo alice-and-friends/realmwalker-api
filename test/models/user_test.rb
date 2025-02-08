@@ -14,7 +14,7 @@ class UserTest < ActiveSupport::TestCase
   end
   test 'new user starts with a small amount of gold' do
     u = generate_test_user
-    assert_includes 1..100, u.gold
+    assert_includes 1..100, u.inventory.reload.gold
   end
   test 'user gains and loses gold' do
     u = generate_test_user

@@ -66,12 +66,15 @@ class User < ApplicationRecord
     inventory_items.joins(:item).where(is_equipped: true)
   end
 
-  # TODO: Should be handled by redis, so that we can retry on failure
   def gain_item(item)
+    Rails.logger.warn '⚠️ User.gain_item is deprecated! Use InventoryTransaction instead.'
+
     inventory_items.create!(item: item)
   end
 
   def lose_item(item)
+    Rails.logger.warn '⚠️ User.lose_item is deprecated! Use InventoryTransaction instead.'
+
     inventory_items.find_by(item: item).destroy
   end
 
@@ -185,6 +188,8 @@ class User < ApplicationRecord
   end
 
   def gains_or_loses_gold(amount)
+    Rails.logger.warn '⚠️ User.gains_or_loses_gold is deprecated! Use InventoryTransaction instead.'
+
     prev_gold = inventory.gold.freeze
 
     inventory.gold += amount
@@ -220,8 +225,8 @@ class User < ApplicationRecord
     }
   end
 
-  # TODO: Should be handled by redis, so that we can retry on failure
   def gains_loot(loot_container)
+    Rails.logger.warn '⚠️ User.gains_loot is deprecated! Use InventoryTransaction instead.'
     throw('not a loot container') unless loot_container.is_a? LootContainer
 
     gains_or_loses_gold(loot_container.gold) if loot_container.gold.positive?
@@ -269,7 +274,7 @@ class User < ApplicationRecord
             # Move a random equipment piece to the dungeon's inventory
             equipped_items.sample.update(inventory: dungeon.inventory, is_equipped: false)
           else
-            equipped_items.sample.destroy!
+            equipped_items.sample.destroy! # TODO: Should use InventoryTransaction
           end
           inventory_changes[:equipment_lost] = true
         end
@@ -283,14 +288,27 @@ class User < ApplicationRecord
     starting_equipment = ['Shortsword', 'Leather Armor', 'Brass Helmet'] # Changing this may result in failing tests
     # starting_equipment += ['Angelic Axe', 'Amulet of Loss', 'Amulet of Life', 'Amulet of Abundance', 'Ring of Treasure Hunter', 'Relic Sword', 'Shield of Destiny'] if Rails.env.development?
 
+    transaction = InventoryTransaction.create!(
+      description: "Give starting equipment to user#{id}",
+    )
+    transaction.order_add_gold(10, inventory)
+
+    # Items
     starting_equipment.each do |item_name|
       item = Item.find_by(name: item_name)
-      throw("No such item as #{item_name}") if item.nil?
-      inventory_item = gain_item(item)
-      equip_item(inventory_item, true)
+      throw "No such item as #{item_name}" if item.nil?
+      transaction.order_create_item(item, inventory)
+    end
+    success = transaction.save_and_apply!
+
+    if success
+      # Equip the new items
+      inventory_items.reload.each do |inventory_item|
+        equip_item(inventory_item, true)
+      end
     end
 
-    gains_or_loses_gold 10
+    success
   end
 
   def construct_base_at(point)

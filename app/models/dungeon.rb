@@ -169,7 +169,7 @@ class Dungeon < RealmLocation
     raise StandardError, 'Dungeon already searched by user' if DungeonSearch.exists?(user: user, dungeon: self)
 
     loot_container = search_defeated_dungeon(user)
-    user.gains_loot(loot_container)
+    loot_container.grant_to(user, "User #{user.id} searched battlefield #{id}") unless loot_container.empty?
     DungeonSearch.create!(user: user, dungeon: self)
 
     loot_container

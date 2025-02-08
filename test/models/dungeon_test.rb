@@ -58,9 +58,9 @@ class DungeonTest < ActiveSupport::TestCase
     d.battle_as(u)
     assert_equal 100_000 + d.monster.xp, u.xp
   end
-  test 'player gains gold+items from defeating monster' do
+  test 'player gains gold and items from defeating monster' do
     5.times do
-      u = generate_test_user
+      u = generate_test_user.reload
       u.gains_or_loses_xp User::MAX_XP
       items_before_battle = u.inventory_items.count
       gold_before_battle = u.gold
@@ -68,7 +68,7 @@ class DungeonTest < ActiveSupport::TestCase
       battle_data = d.battle_as(u)
       if battle_data[:battle_result][:user_won] && battle_data[:battle_result][:monster_died]
         assert_equal (items_before_battle + battle_data[:inventory_changes][:loot].items.length), u.inventory_items.count
-        assert_equal (gold_before_battle + battle_data[:inventory_changes][:loot].gold), u.gold
+        assert_equal (gold_before_battle + battle_data[:inventory_changes][:loot].gold), u.reload.gold
       end
     end
   end

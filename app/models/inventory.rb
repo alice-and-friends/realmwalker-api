@@ -1,12 +1,13 @@
 # frozen_string_literal: true
 
 class Inventory < ApplicationRecord
-  has_many :inventory_items, dependent: :delete_all
   belongs_to :user, optional: true
   belongs_to :realm_location, optional: true
+  has_many :inventory_items, dependent: :delete_all
+
   validates :user_id, :realm_location_id, uniqueness: true, allow_nil: true
-  validate :must_belong_to_something
   validates :gold, numericality: { greater_than_or_equal_to: 0 }
+  validate :must_belong_to_something
 
   def owner
     realm_location.present? ? realm_location.owner : user
@@ -22,6 +23,8 @@ class Inventory < ApplicationRecord
   end
 
   def add(item)
+    Rails.logger.warn '⚠️ Inventory.add is deprecated! Use InventoryTransaction instead.'
+
     raise 'not an item' unless item.instance_of? Item
 
     inventory_items.create!(item: item)

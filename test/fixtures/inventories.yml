@@ -7,3 +7,5 @@
 
 jane_does_inventory:
   user: jane_doe
+john_does_inventory:
+  user: john_doe

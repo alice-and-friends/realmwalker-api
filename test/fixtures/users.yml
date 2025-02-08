@@ -13,3 +13,11 @@ jane_doe:
                      family_name: 'Doe',
   }
   email: 'jane.doe@testuser.com'
+john_doe:
+  auth0_user_id: '2'
+  auth0_user_data: {
+                     sub: 'john123',
+                     given_name: 'John',
+                     family_name: 'Doe',
+  }
+  email: 'john.doe@testuser.com'

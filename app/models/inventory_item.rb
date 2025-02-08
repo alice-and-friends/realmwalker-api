@@ -16,6 +16,7 @@ class InventoryItem < ApplicationRecord
   end
 
   delegate :owner, to: :inventory
+  delegate :name, to: :item
 
   private
 

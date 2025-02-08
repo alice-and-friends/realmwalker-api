@@ -116,7 +116,7 @@ class BattleHelper
       monster_died = (rand(1..100) > monster.defense)
       if monster_died
         loot_container = generate_loot_container
-        @user.gains_loot(loot_container)
+        loot_container.grant_to(@user, "User #{@user.id} defeated dungeon #{@dungeon.id}")
         inventory_changes = {
           loot: loot_container,
         }
