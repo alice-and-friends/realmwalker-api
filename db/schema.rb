@@ -181,6 +181,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.string "status"
     t.integer "level"
     t.bigint "monster_id"
+    t.integer "hp"
     t.datetime "defeated_at"
     t.string "expiry_job_id"
     t.datetime "expires_at"

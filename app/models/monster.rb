@@ -52,6 +52,12 @@ class Monster < ApplicationRecord
     "level #{level} #{classification}"
   end
 
+  def hp
+    (
+      (level * 1.5)**1.367
+    ).floor + 7
+  end
+
   def defense
     (2 * level) - 2
   end

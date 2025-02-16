@@ -26,6 +26,7 @@ class CreateRealmLocations < ActiveRecord::Migration[7.0]
       t.string      :status, index: true
       t.integer     :level
       t.references  :monster
+      t.integer     :hp
       t.datetime    :defeated_at
       t.string      :expiry_job_id
       t.datetime    :expires_at

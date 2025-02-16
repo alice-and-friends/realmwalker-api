@@ -9,6 +9,11 @@ class Api::V1::DungeonsControllerTest < ActionDispatch::IntegrationTest
     assert_equal 200, status
     assert_equal d.id, response.parsed_body['id']
   end
+  test 'should get hp' do
+    d = Dungeon.active.first
+    get "/api/v1/dungeons/#{d.id}", headers: generate_headers
+    assert_equal d.hp, response.parsed_body['hp']
+  end
   test 'should get battle prediction' do
     d = Dungeon.create!(level: 1)
     get "/api/v1/dungeons/#{d.id}/analyze", headers: generate_headers

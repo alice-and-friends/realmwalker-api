@@ -22,6 +22,17 @@ class DungeonTest < ActiveSupport::TestCase
     assert_operator Dungeon.count, :>, initial_count
     assert_equal 7, d.level
   end
+  test 'dungeon gets hp from monster' do
+    d = Dungeon.create!
+    assert_equal d.monster.hp, d.hp
+  end
+  test 'validates presence of hp' do
+    d = Dungeon.active.last
+    d.hp = 0
+    assert d.valid?
+    d.hp = nil
+    assert_not d.valid?
+  end
   test 'fresh player has 100% chance of defeating level 1 dungeon' do
     u = generate_test_user
     d = Dungeon.create!(level: 1)

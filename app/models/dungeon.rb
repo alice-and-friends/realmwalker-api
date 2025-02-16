@@ -15,7 +15,7 @@ class Dungeon < RealmLocation
   has_many :searching_users, through: :dungeon_searches, source: :user
   alias_attribute :defeated_by, :users
 
-  validates :level, presence: true
+  validates :level, :hp, presence: true
   validates :status, presence: true, inclusion: [
     statuses[:active],
     statuses[:defeated],
@@ -264,5 +264,6 @@ class Dungeon < RealmLocation
     self.level = random_level.call if level.nil?
     self.monster = random_monster.call if monster.nil?
     self.name = monster.name
+    self.hp = monster.hp
   end
 end

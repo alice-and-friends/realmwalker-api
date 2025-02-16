@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class DungeonSerializer < RealmLocationSerializer
-  attributes :defeated_by, :monster
+  attributes :hp, :defeated_by, :monster
   attribute :searchable, if: :user
   attribute :already_searched, if: :user
 
