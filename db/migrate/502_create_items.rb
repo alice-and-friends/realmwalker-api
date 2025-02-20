@@ -14,6 +14,7 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.integer :drop_max_amount,               null: false, default: 1
 
       # Equipment
+      t.string :weapon_ability
       t.boolean :two_handed,                    null: false, default: false
       t.integer :attack_bonus,                  default: 0, limit: 1
       t.integer :defense_bonus,                 default: 0, limit: 1

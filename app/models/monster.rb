@@ -59,7 +59,9 @@ class Monster < ApplicationRecord
   end
 
   def defense
-    (2 * level) - 2
+    (
+      (level + 1) / 5
+    ).floor
   end
 
   def xp

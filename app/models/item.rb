@@ -98,7 +98,12 @@ class Item < ApplicationRecord
   def must_have_stats_for_equipment
     return unless equipable?
 
-    # TODO
+    # TODO: check other equipment
+
+    return unless weapon?
+
+    errors.add(:attack_bonus, 'Must be present on weapon') if weapon_ability.nil?
+    errors.add(:weapon_ability, 'Must be present on weapon') if weapon_ability.nil?
   end
 
   def must_have_appropriate_rarity

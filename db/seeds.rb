@@ -171,6 +171,7 @@ class SeedHelper
       item.stackable = row['stackable']
 
       # Equipable
+      item.weapon_ability = row['weapon_ability']
       item.two_handed = row['two_handed']
       item.attack_bonus = row['attack']
       item.defense_bonus = row['defense']

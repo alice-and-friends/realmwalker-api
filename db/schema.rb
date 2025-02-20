@@ -91,6 +91,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.string "rarity"
     t.integer "dropped_by_monsters", default: [], array: true
     t.integer "drop_max_amount", default: 1, null: false
+    t.string "weapon_ability"
     t.boolean "two_handed", default: false, null: false
     t.integer "attack_bonus", limit: 2, default: 0
     t.integer "defense_bonus", limit: 2, default: 0
