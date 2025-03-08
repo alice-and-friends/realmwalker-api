@@ -8,7 +8,7 @@ module Coordinates
     end
   end
   included do
-    validates :coordinates, presence: true, coordinates: true
+    validates :coordinates, presence: true, coordinates: true # app/validators/coordinates_validator.rb
 
     scope :near, lambda { |latitude, longitude, distance|
       where("ST_DWithin(coordinates, 'POINT(#{longitude} #{latitude})', #{distance})")
@@ -24,7 +24,7 @@ module Coordinates
       time_zones = select(:timezone).pluck(:timezone).uniq.compact
       time_zones.filter_map do |tz|
         current_hour = Time.current.in_time_zone(tz).hour
-        tz if current_hour < Event::NIGHT_TIME[:hours].first || current_hour > Event::NIGHT_TIME[:hours].last
+        tz if current_hour.in? Event::NIGHT_TIME[:hours]
       end
     end
 
@@ -32,20 +32,7 @@ module Coordinates
       time_zones = select(:timezone).distinct.pluck(:timezone).compact
       time_zones.filter_map do |tz|
         current_hour = Time.current.in_time_zone(tz).hour
-        tz unless current_hour < Event::NIGHT_TIME[:hours].last || current_hour >= Event::NIGHT_TIME[:hours].first
-      end
-    end
-
-    def timezone
-      return self[:timezone] unless self[:timezone].nil?
-
-      begin
-        timezone = DateTimeHelper.timezone_at_coordinates(self.latitude, self.longitude)
-        update(timezone: timezone) # Update the record with the fetched timezone
-        self[:timezone] # Return the newly set timezone
-      rescue StandardError => e
-        Rails.logger.error "Failed to fetch timezone for #{self.class.name} #{id}: #{e.message}"
-        nil # Gracefully handle errors by returning nil
+        tz unless current_hour.in? Event::NIGHT_TIME[:hours]
       end
     end
 
@@ -57,14 +44,14 @@ module Coordinates
       DateTimeHelper.time_in_zone timezone
     end
 
-    def night?
+    def night_time?
       raise 'Timezone is blank' if timezone.blank?
 
       DateTimeHelper.night_time_in_zone? timezone
     end
 
-    def day?
-      !night?
+    def day_time?
+      !night_time?
     end
 
     # Destination can be either a Point or any class that implements the Coordinates module

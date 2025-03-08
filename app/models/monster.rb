@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Monster < ApplicationRecord
+  CACHE_PREFIX = 'monster.pool'
   # TAGS = %w[].freeze
 
   has_many :conquests, dependent: :delete_all
@@ -27,26 +28,51 @@ class Monster < ApplicationRecord
     day: 'day',
     night: 'night',
   }
-
   validates :name, presence: true, uniqueness: true
   validates :classification, presence: true
   validate :must_be_valid_spawn_time
   # validate :tags_are_valid
+  after_commit -> { Rails.cache.delete_matched CACHE_PREFIX }
 
   scope :day_only, -> { where(spawn_time: 'day') }
   scope :night_only, -> { where(spawn_time: 'night') }
-  scope :day_time, lambda {
-    spawn_time = arel_table[:spawn_time]
-    where(spawn_time.eq('day').or(spawn_time.eq(nil)))
-  }
-  scope :night_time, lambda {
-    spawn_time = arel_table[:spawn_time]
-    where(spawn_time.eq('night').or(spawn_time.eq(nil)))
-  }
-  scope :any_time, lambda {
-    spawn_time = arel_table[:spawn_time]
-    where(spawn_time.eq(nil))
-  }
+  scope :day_time,   -> { where(spawn_time: ['day', nil]) }
+  scope :night_time, -> { where(spawn_time: ['night', nil]) }
+  scope :any_time,   -> { where(spawn_time: nil) }
+
+  def self.pool_for_timezone(timezone)
+    raise "#{timezone.inspect} is not a recognized timezone" unless timezone.in? Timezone.names
+
+    DateTimeHelper.day_time_in_zone?(timezone) ? pool(:day_time) : pool(:night_time)
+  end
+
+  def self.weighted_pool_for_timezone(timezone)
+    raise "#{timezone.inspect} is not a recognized timezone" unless timezone.in? Timezone.names
+
+    DateTimeHelper.day_time_in_zone?(timezone) ? weighted_pool(:day_time) : weighted_pool(:night_time)
+  end
+
+  def self.pool(scope_symbol)
+    cache_name = "#{CACHE_PREFIX}_#{scope_symbol}"
+    Rails.cache.fetch(cache_name, expires_in: 3.hours) do
+      send(scope_symbol).where(auto_spawn: true).pluck(:id, :level).map do |id, level|
+        { id: id, level: level }
+      end
+    end
+  rescue NoMethodError
+    raise 'Not a valid Monster scope, try one of [:all, :day_time, :night_time, :any_time]'
+  end
+
+  def self.weighted_pool(scope_symbol)
+    cache_name = "#{CACHE_PREFIX}_weighted_#{scope_symbol}"
+    Rails.cache.fetch(cache_name, expires_in: 3.hours) do
+      send(scope_symbol).where(auto_spawn: true).pluck(:id, :level).flat_map do |id, level|
+        Array.new(((100 - level) / 2) + 1, { id: id, level: level })
+      end
+    end
+  rescue NoMethodError
+    raise 'Not a valid Monster scope, try one of [:all, :day_time, :night_time, :any_time]'
+  end
 
   def desc
     "level #{level} #{classification}"
@@ -75,7 +101,7 @@ class Monster < ApplicationRecord
   private
 
   def must_be_valid_spawn_time
-    return if spawn_time.nil? || Monster.spawn_times.values.include?(spawn_time)
+    return if spawn_time.nil? || Monster.spawn_times.value?(spawn_time)
 
     errors.add(:spawn_time, 'is not a valid spawn time')
   end

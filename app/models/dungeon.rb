@@ -23,11 +23,11 @@ class Dungeon < RealmLocation
   ]
   validate :must_have_defeated_at
 
-  before_validation :set_real_world_location!, on: :create
+  before_validation :randomize_real_world_location!, on: :create
   before_validation :set_region_and_coordinates!, on: :create
   before_validation :set_timezone!, on: :create
   before_validation :randomize_level_and_monster!, on: :create
-  after_create { Inventory.create!(realm_location: self) }
+  after_create { Inventory.create!(realm_location: self) } # TODO: Consider performance implications. Not every Dungeon needs an inventory right away?
 
   after_create do |d|
     Rails.logger.debug {
@@ -59,7 +59,7 @@ class Dungeon < RealmLocation
   end
 
   def boss?
-    level == 10
+    level >= 90
   end
 
   # NPCs that are near an active dungeon may become "spooked"
@@ -188,17 +188,6 @@ class Dungeon < RealmLocation
     Rails.logger.debug { "❌ Removed #{destroyed.count} spooks" }
   end
 
-  def set_real_world_location!
-    return if real_world_location_id.present?
-
-    occupied = Dungeon.select(:real_world_location_id)
-    self.real_world_location = RealWorldLocation.available.for_dungeon.where.not(id: occupied).first
-  end
-
-  def set_timezone!
-    self.timezone = real_world_location.timezone unless Rails.env.test?
-  end
-
   def expire_nearby_dungeons!
     Dungeon.joins(:real_world_location)
            .where(
@@ -210,60 +199,41 @@ class Dungeon < RealmLocation
            .find_each(&:expired!)
   end
 
-  def randomize_level_and_monster!(allow_boss = false)
-    random_level = lambda do
-      # Lower level = Should have higher chance of spawning
-      # Higher level = Should have lower chance of spawning
-      # So we generate an array like [10, 9, 9, 8, 8, 8, 7, 7, 7, 7 ...] to be used for weighted randomization.
-      levels = []
-      (1..9).each do |level|
-        multiplier = 1.30
-        exponent = 1.70
-        (multiplier * (10 - level)**exponent + 1).floor.times do
-          levels << level
-        end
-      end
+  def randomize_real_world_location!
+    return if real_world_location_id.present?
 
-      # Level 10 dungeons are considered bosses, there can only be one active at any time.
-      levels << 10 if allow_boss && Dungeon.active.where(level: 10).count.zero?
-      levels.sample
+    self.real_world_location = RealWorldLocation.available.for_dungeon.first
+  end
+
+  def randomize_level_and_monster!
+    commit = lambda do |monster|
+      self.monster = monster
+      self.level = monster.level
+      self.name = monster.name
+      self.hp = monster.hp
+      self
     end
 
-    random_monster = lambda do
-      monsters_list = Monster.where(auto_spawn: true, level: level)
-      begin
-        if real_world_location.day?
-          monsters_list = monsters_list.day_time
-        elsif real_world_location.night?
-          monsters_list = monsters_list.night_time
-
-          # Increase rate of undead at night
-          if rand(3)
-            undead_list = monsters_list.where(classification: Monster.classifications[:undead])
-            monsters_list = undead_list unless undead_list.empty?
-          end
-        end
-      rescue RuntimeError
-        monsters_list = monsters_list.any_time
-      end
-      raise "monster_list is empty! level:#{level}" if monsters_list.empty?
-
-      monsters_list.sample
+    if monster.present?
+      return commit.call monster
     end
 
-    if level.nil? && monster.nil?
-      # Event
-      full_moon_event = Event.find_by(name: 'Full moon')&.active?
-      if full_moon_event && rand(0..3).zero?
-        werewolf = Monster.find_by(name: 'Werewolf')
-        self.level = werewolf.level
-        self.monster = werewolf
-      end
+    # Event
+    # NB: level parameter will be ignored if event block executes
+    full_moon_event = Event.find_by(name: 'Full moon')
+    if full_moon_event&.active? && rand(0..3).zero? # 1/4 chance to spawn a Werecreature
+      werewolf = Monster.find_by(name: 'Werewolf')
+      return commit.call werewolf
     end
 
-    self.level = random_level.call if level.nil?
-    self.monster = random_monster.call if monster.nil?
-    self.name = monster.name
-    self.hp = monster.hp
+    if level.present?
+      monster_pool = Monster.pool_for_timezone(timezone).select { |o| o[:level] == level }
+      raise "No monsters found for level #{level}" if monster_pool.empty?
+    else
+      monster_pool = Monster.weighted_pool_for_timezone(timezone)
+      raise 'No monsters found' if monster_pool.empty?
+    end
+
+    commit.call Monster.find(monster_pool.sample[:id])
   end
 end

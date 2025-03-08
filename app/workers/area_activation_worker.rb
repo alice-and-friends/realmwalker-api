@@ -12,6 +12,8 @@ class AreaActivationWorker
 
     # Ensure that there is a castle near the coordinates
     add_npc(geolocation, shop_type: 'castle', npc_role: 'castle', distance: 7_000, trade_offer_list_name: 'castle')
+
+    # TODO: Runestone(s)
   end
 
   def add_npc(geolocation, shop_type:, npc_role:, distance:, trade_offer_list_name:)

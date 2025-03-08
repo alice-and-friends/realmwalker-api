@@ -121,6 +121,7 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.integer "level", null: false
     t.string "classification", null: false
     t.boolean "auto_spawn", default: true, null: false
+    t.boolean "drops_gold", default: true, null: false
     t.string "spawn_time"
     t.text "tags", default: [], array: true
     t.datetime "created_at", null: false

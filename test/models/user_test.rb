@@ -205,7 +205,7 @@ class UserTest < ActiveSupport::TestCase
     particular_item = user.gain_item Item.find_by(type: 'valuable')
 
     # User dies at dungeon
-    dungeon = Dungeon.create!(level: 9)
+    dungeon = Dungeon.create!
     user.handle_death(dungeon)
 
     # Dungeon has item

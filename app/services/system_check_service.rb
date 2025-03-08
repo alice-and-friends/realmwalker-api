@@ -2,7 +2,7 @@
 
 class SystemCheckService
   def self.redis_running?
-    redis = Redis.new(url: "redis://#{ENV.fetch('REDIS_HOST')}:#{ENV.fetch('REDIS_PORT')}") # Update with your Redis config
+    redis = Redis.new(url: ENV.fetch('REDIS_URL'))
     redis.ping == 'PONG'
   rescue Redis::CannotConnectError
     false

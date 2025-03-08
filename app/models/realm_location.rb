@@ -27,9 +27,15 @@ class RealmLocation < ApplicationRecord
   private
 
   def set_region_and_coordinates!
-    return if real_world_location.blank?
+    raise 'Requires a real world location' if real_world_location.blank?
 
     self.region = real_world_location.region
     self.coordinates = real_world_location.coordinates
+  end
+
+  def set_timezone!
+    raise 'Requires a real world location' if real_world_location.blank?
+
+    self.timezone = real_world_location.timezone
   end
 end

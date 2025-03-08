@@ -27,7 +27,7 @@ class RealWorldLocation < ApplicationRecord
 
   before_validation :set_latitude_and_longitude!, on: :create
 
-  scope :available, -> { where.not(id: RealmLocation.select(:real_world_location_id).pluck(:real_world_location_id)) }
+  scope :available, -> { where.not(id: RealmLocation.select(:real_world_location_id)) }
   scope :for_castle, -> { where(type: RealWorldLocation.types[:castle]) }
   scope :for_dungeon, -> { where(type: RealWorldLocation.types[:unassigned]) }
   scope :for_ley_line, -> { where(type: RealWorldLocation.types[:ley_line]) }
@@ -75,6 +75,23 @@ class RealWorldLocation < ApplicationRecord
   def inspected!
     current_value = RealWorldLocation.relevance_grades[relevance_grade]
     self.relevance_grade = RealWorldLocation.relevance_grades[:inspected] if current_value < RealWorldLocation.relevance_grades[:inspected]
+  end
+
+  def timezone
+    if self[:timezone].nil?
+      begin
+        self.timezone = if Rails.env.test?
+                          DateTimeHelper::TEST_ENV_TIMEZONE
+                        else
+                          DateTimeHelper.timezone_at_coordinates(self.latitude, self.longitude)
+                        end
+        save(validate: false) # Update the record with the fetched timezone
+      rescue StandardError => e
+        Rails.logger.error "Failed to fetch timezone for #{self.class.name} #{id}: #{e.message}"
+      end
+    end
+
+    self[:timezone]
   end
 
   private

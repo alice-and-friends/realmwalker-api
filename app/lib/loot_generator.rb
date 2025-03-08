@@ -137,10 +137,12 @@ class LootGenerator
 
   # Returns a random amount of gold
   def random_gold_amount
+    return 0 unless @dungeon.monster.drops_gold
+
     # Check if gold should be dropped based on a 90% chance (10% chance of no gold), or 75% in reduced mode (25% chance of no gold)
-    chance_of_gold = @reduced_mode ? 0.9 : 0.75
+    chance_of_gold = @reduced_mode ? 0.75 : 0.9
     gold_amount = rand < chance_of_gold ? rand(@gold_range) : 0
     gold_amount /= 10 if @reduced_mode
-    gold_amount
+    gold_amount.to_i
   end
 end

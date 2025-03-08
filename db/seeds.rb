@@ -148,6 +148,7 @@ class SeedHelper
       monster.level = row['level']
       monster.classification = row['classification']
       monster.auto_spawn = row['auto_spawn'].to_boolean
+      monster.drops_gold = row['drops_gold'].to_boolean
       monster.spawn_time = row['spawn_time'].to_s
       # monster.tags = row['tags'].split(' ')
       monsters << monster

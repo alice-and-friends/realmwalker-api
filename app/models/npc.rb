@@ -23,7 +23,7 @@ class Npc < RealmLocation
   validate :must_have_trade_offer_list, if: :shop?
   validate :must_obey_minimum_distance, if: :shop?
 
-  before_validation :set_real_world_location!, on: :create
+  before_validation :randomize_real_world_location!, on: :create
   before_validation :set_region_and_coordinates!, on: :create
   before_validation :assign_species!, on: :create
   before_validation :assign_gender!, on: :create
@@ -91,7 +91,7 @@ class Npc < RealmLocation
 
   private
 
-  def set_real_world_location!
+  def randomize_real_world_location!
     self.real_world_location = RealWorldLocation.available.first if real_world_location_id.nil?
   end
 

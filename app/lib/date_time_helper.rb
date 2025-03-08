@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
 class DateTimeHelper
+  TEST_ENV_TIMEZONE = 'Europe/Oslo'
+
   def self.timezone_at_coordinates(*coordinates)
+    return TEST_ENV_TIMEZONE if Rails.env.test?
+
     Timezone.lookup(*coordinates).name
   rescue StandardError => e
     raise "Failed to fetch timezone: #{e.message}"
