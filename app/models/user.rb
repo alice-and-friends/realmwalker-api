@@ -10,8 +10,8 @@ class User < ApplicationRecord
 
   has_one :inventory, dependent: :destroy
   has_one :base, inverse_of: :owner, foreign_key: 'owner_id', dependent: :destroy
-  has_many :conquests, dependent: :destroy
-  has_many :realm_locations, through: :conquests
+  has_many :battles, dependent: :destroy
+  has_many :battle_locations, through: :battles, source: :realm_location
   has_many :writings, foreign_key: :author_id, inverse_of: :author, dependent: :nullify
   has_many :dungeon_searches, dependent: :delete_all
   has_many :searched_dungeons, through: :dungeon_searches, source: :dungeon

@@ -16,16 +16,16 @@ ActiveRecord::Schema[7.0].define(version: 700) do
   enable_extension "plpgsql"
   enable_extension "postgis"
 
-  create_table "conquests", force: :cascade do |t|
+  create_table "battles", force: :cascade do |t|
     t.uuid "realm_location_id"
     t.string "realm_location_type", null: false
     t.bigint "monster_id"
     t.uuid "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["monster_id"], name: "index_conquests_on_monster_id"
-    t.index ["realm_location_id"], name: "index_conquests_on_realm_location_id"
-    t.index ["user_id"], name: "index_conquests_on_user_id"
+    t.index ["monster_id"], name: "index_battles_on_monster_id"
+    t.index ["realm_location_id"], name: "index_battles_on_realm_location_id"
+    t.index ["user_id"], name: "index_battles_on_user_id"
   end
 
   create_table "dungeon_searches", force: :cascade do |t|
@@ -262,9 +262,9 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.index ["author_id"], name: "index_writings_on_author_id"
   end
 
-  add_foreign_key "conquests", "monsters"
-  add_foreign_key "conquests", "realm_locations"
-  add_foreign_key "conquests", "users"
+  add_foreign_key "battles", "monsters"
+  add_foreign_key "battles", "realm_locations"
+  add_foreign_key "battles", "users"
   add_foreign_key "dungeon_searches", "realm_locations"
   add_foreign_key "dungeon_searches", "users"
   add_foreign_key "inventory_items", "inventories"

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Conquest < ApplicationRecord
+class Battle < ApplicationRecord
   belongs_to :realm_location, optional: true
   belongs_to :monster, optional: true
   belongs_to :user

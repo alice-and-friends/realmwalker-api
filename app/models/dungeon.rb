@@ -95,7 +95,7 @@ class Dungeon < RealmLocation
   def defeated_by!(user)
     Dungeon.transaction do
       cancel_expiration!
-      Conquest.create!(realm_location: self, monster: monster, user: user)
+      Battle.create!(realm_location: self, monster: monster, user: user)
       self.status = Dungeon.statuses[:defeated]
       self.defeated_at = Time.current if defeated_at.nil? # defeated_at should always be the FIRST time a dungeon was defeated
       save!

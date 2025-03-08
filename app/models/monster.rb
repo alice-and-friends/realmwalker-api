@@ -4,7 +4,7 @@ class Monster < ApplicationRecord
   CACHE_PREFIX = 'monster.pool'
   # TAGS = %w[].freeze
 
-  has_many :conquests, dependent: :delete_all
+  has_many :battles, dependent: :delete_all
   has_many :monster_items, dependent: :delete_all
   has_many :lootable_items, through: :monster_items, source: :item
 
