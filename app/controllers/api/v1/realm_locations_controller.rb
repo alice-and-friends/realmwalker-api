@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Api::V1::RealmLocationsController < Api::V1::ApiController
+  before_action :geolocate
+
   def index
     # Activate the area around the player (spawn monsters and such)
     ActivePlayerArea.activate(@current_user_geolocation)

@@ -26,8 +26,8 @@ environment ENV.fetch('RAILS_ENV', 'development')
 # SSL config
 if Rails.env.development?
   ssl_bind '0.0.0.0', '3001', {
-    key: 'localhost+4-key.pem',
-    cert: 'localhost+4.pem',
+    key: 'localhost+3-key.pem',
+    cert: 'localhost+3.pem',
     verify_mode: 'none',
   }
 end

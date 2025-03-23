@@ -56,8 +56,8 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
 
   config.ssl_options = {
-    cert: Rails.root.join('localhost+4.pem'),
-    key: Rails.root.join('localhost+4-key.pem'),
+    cert: Rails.root.join('localhost+3.pem'),
+    key: Rails.root.join('localhost+3-key.pem'),
   }
 
   # Raises error for missing translations.

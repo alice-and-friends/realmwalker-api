@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Api::V1::HomeController < Api::V1::ApiController
+  before_action :geolocate
+
   def home
     render json: {
       server_time: Time.now.utc,

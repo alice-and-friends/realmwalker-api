@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Api::V1::LeyLinesController < Api::V1::ApiController
+  before_action :geolocate
   before_action :find_ley_line
   before_action :location_inspected, only: %i[show]
   before_action :location_interacted, only: %i[capture]

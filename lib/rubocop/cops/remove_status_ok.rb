@@ -6,7 +6,7 @@ require 'rubocop'
 module RuboCop
   module Cop
     module Custom
-      # Custom cop that checks for and auto-corrects redundant `status: :ok` in Rails controllers
+      # Custom cop that checks for and autocorrects redundant `status: :ok` in Rails controllers
       class RemoveRedundantStatusOk < Base
         extend AutoCorrector
 

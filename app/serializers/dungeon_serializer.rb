@@ -6,7 +6,7 @@ class DungeonSerializer < RealmLocationSerializer
   attribute :already_searched, if: :user
 
   def defeated_by
-    ActiveModelSerializers::SerializableResource.new(object.defeated_by, each_serializer: SafeUserSerializer)
+    ActiveModelSerializers::SerializableResource.new(object.defeated_by, each_serializer: SafeUserSerializer) if object.defeated?
   end
 
   def monster

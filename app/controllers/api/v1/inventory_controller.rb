@@ -4,7 +4,7 @@ class Api::V1::InventoryController < Api::V1::ApiController
   before_action :find_inventory
 
   def show
-    render json: @current_user_inventory, status: :ok, serializer: InventorySerializer
+    render json: @current_user_inventory, serializer: InventorySerializer
   end
 
   def set_equipped

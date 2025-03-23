@@ -10,8 +10,9 @@ class User < ApplicationRecord
 
   has_one :inventory, dependent: :destroy
   has_one :base, inverse_of: :owner, foreign_key: 'owner_id', dependent: :destroy
-  has_many :battles, dependent: :destroy
-  has_many :battle_locations, through: :battles, source: :realm_location
+  has_many :battles, foreign_key: :player_id, inverse_of: :player, dependent: :destroy
+  has_many :battle_turns, through: :battles
+  # has_many :battle_locations, through: :battles, source: :realm_location
   has_many :writings, foreign_key: :author_id, inverse_of: :author, dependent: :nullify
   has_many :dungeon_searches, dependent: :delete_all
   has_many :searched_dungeons, through: :dungeon_searches, source: :dungeon
@@ -410,6 +411,18 @@ class User < ApplicationRecord
     raise ArgumentError, 'Expected a Dungeon object' unless dungeon.is_a?(Dungeon)
 
     dungeon_searches.exists?(dungeon: dungeon)
+  end
+
+  def abandon_ongoing_battles!
+    Battle.transaction do
+      Battle.where(id: battles.ongoing.select(:id)).update_all(status: Battle.statuses[:abandoned])
+    end
+  end
+
+  def abandon_stale_battles!
+    Battle.transaction do
+      Battle.where(id: battles.stale.select(:id)).update_all(status: Battle.statuses[:abandoned])
+    end
   end
 
   protected

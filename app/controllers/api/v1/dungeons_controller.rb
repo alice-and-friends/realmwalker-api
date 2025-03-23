@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Api::V1::DungeonsController < Api::V1::ApiController
+  before_action :geolocate
   before_action :find_dungeon
   before_action :location_inspected, only: %i[show]
   before_action :must_not_be_expired

@@ -16,16 +16,42 @@ ActiveRecord::Schema[7.0].define(version: 700) do
   enable_extension "plpgsql"
   enable_extension "postgis"
 
+  create_table "battle_turns", force: :cascade do |t|
+    t.bigint "battle_id", null: false
+    t.integer "sequence", null: false
+    t.string "actor_type", null: false
+    t.uuid "actor_id", null: false
+    t.string "target_type", null: false
+    t.uuid "target_id", null: false
+    t.string "action"
+    t.integer "damage"
+    t.string "status", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["action"], name: "index_battle_turns_on_action"
+    t.index ["actor_id", "actor_type"], name: "index_battle_turns_on_actor_id_and_actor_type"
+    t.index ["actor_type", "actor_id"], name: "index_battle_turns_on_actor"
+    t.index ["battle_id", "sequence"], name: "index_battle_turns_on_battle_id_and_sequence", unique: true
+    t.index ["battle_id", "status"], name: "index_battle_turns_on_battle_id_and_status"
+    t.index ["battle_id"], name: "index_battle_turns_on_battle_id"
+    t.index ["target_id", "target_type"], name: "index_battle_turns_on_target_id_and_target_type"
+    t.index ["target_type", "target_id"], name: "index_battle_turns_on_target"
+  end
+
   create_table "battles", force: :cascade do |t|
-    t.uuid "realm_location_id"
-    t.string "realm_location_type", null: false
     t.bigint "monster_id"
-    t.uuid "user_id", null: false
+    t.uuid "player_id", null: false
+    t.string "opponent_type", null: false
+    t.uuid "opponent_id", null: false
+    t.string "status", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["monster_id"], name: "index_battles_on_monster_id"
-    t.index ["realm_location_id"], name: "index_battles_on_realm_location_id"
-    t.index ["user_id"], name: "index_battles_on_user_id"
+    t.index ["opponent_type", "opponent_id"], name: "index_battles_on_opponent"
+    t.index ["player_id", "status"], name: "index_battles_on_player_id_and_status"
+    t.index ["player_id"], name: "index_battles_on_player_id"
+    t.index ["status", "updated_at"], name: "index_battles_on_status_and_updated_at"
+    t.index ["status"], name: "index_battles_on_status"
   end
 
   create_table "dungeon_searches", force: :cascade do |t|
@@ -262,9 +288,9 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.index ["author_id"], name: "index_writings_on_author_id"
   end
 
+  add_foreign_key "battle_turns", "battles"
   add_foreign_key "battles", "monsters"
-  add_foreign_key "battles", "realm_locations"
-  add_foreign_key "battles", "users"
+  add_foreign_key "battles", "users", column: "player_id"
   add_foreign_key "dungeon_searches", "realm_locations"
   add_foreign_key "dungeon_searches", "users"
   add_foreign_key "inventory_items", "inventories"

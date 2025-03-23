@@ -54,11 +54,16 @@ Rails.application.routes.draw do
       end
       resources :dungeons, only: [:show] do
         get 'analyze', to: 'dungeons#analyze', as: :analyze
-        post 'battle', to: 'dungeons#battle', as: :battle
+        post 'battle', to: 'dungeons#battle', as: :battle # TODO: Remove
         post 'search', to: 'dungeons#search', as: :search
       end
       resources :ley_lines, only: [:show] do
         post 'capture', to: 'ley_lines#capture', as: :capture
+      end
+
+      # Battle
+      resources :battles, only: [:create, :show] do
+        resources :battle_turns, only: [:update]
       end
 
       # Other

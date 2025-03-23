@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Api::V1::BaseController < Api::V1::ApiController
+  before_action :geolocate
   before_action :find_base, only: %i[show upgrade]
 
   def show

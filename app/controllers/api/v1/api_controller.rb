@@ -2,7 +2,7 @@
 
 # All other API controllers are subclasses of this class
 class Api::V1::ApiController < ApplicationController
-  before_action :geolocate
+  # before_action :geolocate # Should not be used for every api controller
   before_action :authorize
   before_action :auth_debug if Rails.env.development?
 
@@ -73,13 +73,13 @@ class Api::V1::ApiController < ApplicationController
   end
 
   # Overwrite the default render method, ensure errors are logged
-  def render(options = nil, extra_options = {}, &block)
-    if options.is_a?(Hash) && options[:status]
-      status_code = Rack::Utils::SYMBOL_TO_STATUS_CODE[options[:status]] || options[:status]
-      Rails.logger.error "Rendered #{status_code}: #{options[:json] || options[:text]}" if status_code.to_i >= 400
-    end
-    super(options, extra_options, &block)
-  end
+  # def render(options = nil, extra_options = {}, &block)
+  #   if options.is_a?(Hash) && options[:status]
+  #     status_code = Rack::Utils::SYMBOL_TO_STATUS_CODE[options[:status]] || options[:status]
+  #     Rails.logger.error "Rendered #{status_code}: #{options[:json] || options[:text]}" if status_code.to_i >= 400
+  #   end
+  #   super(options, extra_options, &block)
+  # end
 
   def current_user_log_str
     "#{@current_user&.auth0_user_id} a.k.a. \"#{@current_user&.name}\""

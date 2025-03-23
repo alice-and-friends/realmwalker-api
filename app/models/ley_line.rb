@@ -4,7 +4,7 @@ class LeyLine < RealmLocation
   include LocationStatus
 
   belongs_to :owner, class_name: 'User', optional: true
-  alias_attribute :captured_by, :users
+  # alias_attribute :captured_by, :users
 
   validate :must_obey_minimum_distance
   validates :status, presence: true, inclusion: [
@@ -30,7 +30,7 @@ class LeyLine < RealmLocation
     throw('Already captured (you should check before calling this method)') if captured?
 
     LeyLine.transaction do
-      Battle.create!(realm_location: self, user: user)
+      # Battle.create!(realm_location: self, user: user)
       self.captured_at = Time.current if captured_at.nil? # captured_at should always be the FIRST time a location was captured
       save!
     end

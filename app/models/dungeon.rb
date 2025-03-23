@@ -67,6 +67,10 @@ class Dungeon < RealmLocation
     boss? ? 1100 : 225 # meters
   end
 
+  def name
+    attributes['name'] || monster.name
+  end
+
   delegate :desc, to: :monster
 
   def search_defeated_dungeon(user)
@@ -95,7 +99,7 @@ class Dungeon < RealmLocation
   def defeated_by!(user)
     Dungeon.transaction do
       cancel_expiration!
-      Battle.create!(realm_location: self, monster: monster, user: user)
+      # Battle.create!(realm_location: self, monster: monster, user: user)
       self.status = Dungeon.statuses[:defeated]
       self.defeated_at = Time.current if defeated_at.nil? # defeated_at should always be the FIRST time a dungeon was defeated
       save!
