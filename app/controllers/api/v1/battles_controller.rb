@@ -5,7 +5,11 @@ class Api::V1::BattlesController < Api::V1::ApiController
   before_action :find_battle, only: [:show]
 
   def show
-    render json: @battle, serializer: BattleSerializer, user: @current_user
+    # This locks the battle row, preventing updates during serialization.
+    @battle.locked_transaction do
+      @battle.current_turn&.lock!
+      render json: @battle, serializer: BattleSerializer, user: @current_user
+    end
   end
 
   def create
@@ -40,7 +44,7 @@ class Api::V1::BattlesController < Api::V1::ApiController
 
   def find_battle
     id = params[:id]
-    @battle = Battle.find(id)
+    @battle = Battle.with_preloads.find(id)
   rescue ActiveRecord::RecordNotFound
     render json: { error: "Battle##{id} not found" }, status: :not_found
   end

@@ -23,6 +23,8 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.integer :classification_defense_bonus,  default: 0, limit: 1
       t.float :xp_bonus,                        default: 0.0
       t.float :loot_bonus,                      default: 0.0
+      t.boolean :consumable,                    null: false, default: false
+      t.string :actions,                        array: true, default: []
 
       t.timestamps
     end

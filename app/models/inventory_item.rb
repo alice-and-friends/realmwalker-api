@@ -17,6 +17,7 @@ class InventoryItem < ApplicationRecord
 
   delegate :owner, to: :inventory
   delegate :name, to: :item
+  delegate :actions, to: :item
 
   private
 
@@ -30,7 +31,7 @@ class InventoryItem < ApplicationRecord
     begin
       writing.destroy!
     rescue ActiveRecord::RecordNotDestroyed
-      # this is fine
+      # this is fine, probably means the writing is used for something else
     end
   end
 end

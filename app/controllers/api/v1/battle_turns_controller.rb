@@ -6,7 +6,10 @@ class Api::V1::BattleTurnsController < Api::V1::ApiController
   before_action :authorize_actor, only: [:update]
 
   def update
-    # TODO: Do stuff to @turn and @battle
+    @battle.locked_transaction do
+      @turn.lock!
+      # TODO: Do stuff
+    end
   end
 
   private

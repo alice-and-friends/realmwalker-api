@@ -2,9 +2,10 @@
 
 # All other API controllers are subclasses of this class
 class Api::V1::ApiController < ApplicationController
-  # before_action :geolocate # Should not be used for every api controller
   before_action :authorize
   before_action :auth_debug if Rails.env.development?
+  before_action :set_lock_timeout
+  rescue_from ActiveRecord::StatementInvalid, with: :handle_lock_timeout
 
   private
 
@@ -83,5 +84,19 @@ class Api::V1::ApiController < ApplicationController
 
   def current_user_log_str
     "#{@current_user&.auth0_user_id} a.k.a. \"#{@current_user&.name}\""
+  end
+
+  def set_lock_timeout
+    ActiveRecord::Base.connection.execute("SET LOCAL lock_timeout = '1s'")
+  rescue ActiveRecord::StatementInvalid
+    # Ignore if not in transaction or if DB doesn't support it
+  end
+
+  def handle_lock_timeout(error)
+    if /lock timeout|could not obtain lock/i.match?(error.message)
+      render json: { error: 'Record is currently locked. Please try again shortly.' }, status: :locked
+    else
+      raise error
+    end
   end
 end

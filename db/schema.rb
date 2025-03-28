@@ -126,6 +126,8 @@ ActiveRecord::Schema[7.0].define(version: 700) do
     t.integer "classification_defense_bonus", limit: 2, default: 0
     t.float "xp_bonus", default: 0.0
     t.float "loot_bonus", default: 0.0
+    t.boolean "consumable", default: false, null: false
+    t.string "actions", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_items_on_name", unique: true

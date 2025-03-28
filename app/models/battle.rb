@@ -24,6 +24,19 @@ class Battle < ApplicationRecord
   scope :ongoing, -> { where(status: Battle.statuses[:ongoing]) }
   scope :stale, -> { ongoing.where('updated_at < ?', 1.hour.ago) }
 
+  def self.with_preloads
+    includes(
+      :battle_turns,
+      :opponent,
+      :player,
+      player: {
+        inventory: {
+          inventory_items: :item,
+        },
+      },
+    )
+  end
+
   def self.valid_opponent_type?(type)
     type.in? %w[User Dungeon]
   end
@@ -43,7 +56,7 @@ class Battle < ApplicationRecord
   end
 
   def current_turn
-    return unless battle_ongoing?
+    return nil unless battle_ongoing?
 
     turns.last
   end

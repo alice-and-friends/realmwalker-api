@@ -15,7 +15,8 @@ class BattleTurn < ApplicationRecord
   validates :sequence, :status, presence: true
 
   before_validation :set_initial_values, on: :create
-  after_commit :sync_battle_timestamp, on: [:create, :update]
+  around_update :lock_battle_and_sync_timestamp
+  around_create :lock_battle_and_sync_timestamp
 
   def description
     "#{actor.name} used #{action}."
@@ -35,7 +36,14 @@ class BattleTurn < ApplicationRecord
     self.sequence ||= 1
   end
 
-  def sync_battle_timestamp
-    battle.touch(time: updated_at)
+  def lock_battle_and_sync_timestamp
+    Battle.transaction do
+      battle.lock!
+
+      yield
+
+      # Re-read self.updated_at inside the transaction
+      battle.touch(time: updated_at)
+    end
   end
 end

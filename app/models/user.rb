@@ -9,6 +9,7 @@ class User < ApplicationRecord
   ACHIEVEMENTS = %w[].freeze
 
   has_one :inventory, dependent: :destroy
+  has_many :inventory_items, through: :inventory
   has_one :base, inverse_of: :owner, foreign_key: 'owner_id', dependent: :destroy
   has_many :battles, foreign_key: :player_id, inverse_of: :player, dependent: :destroy
   has_many :battle_turns, through: :battles
@@ -36,7 +37,6 @@ class User < ApplicationRecord
   before_destroy { RealmLocation.where(owner_id: id).destroy_all }
 
   delegate :gold, to: :inventory
-  delegate :inventory_items, to: :inventory
   alias_attribute :asis, :ability_score_improvements # Terminal shortcut only, do not reference in code
 
   def self.total_xp_needed_for_level(level)
@@ -67,7 +67,11 @@ class User < ApplicationRecord
   end
 
   def equipped_items
-    inventory_items.joins(:item).where(is_equipped: true)
+    @equipped_items ||= inventory_items.includes(:item).where(is_equipped: true).load
+  end
+
+  def consumable_items
+    @consumable_items ||= inventory_items.includes(:item).where(items: { consumable: true }).load
   end
 
   def gain_item(item)
